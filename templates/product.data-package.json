@@ -1,0 +1,1014 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ product.vendor }}"
+          }
+        },
+        "custom_liquid_6pDWQA": {
+          "type": "custom_liquid",
+          "disabled": true,
+          "settings": {
+            "custom_liquid": "{%- style -%}\n  .compact-sale-banner {\n    background: linear-gradient(135deg, #ff8c42 0%, #e96f24 100%);\n    border-radius: 6px;\n    padding: 12px 15px;\n    margin: 15px 0;\n    text-align: center;\n    position: relative;\n    overflow: hidden;\n    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);\n    border: 1px solid rgba(233, 111, 36, 0.4);\n  }\n  \n  .compact-sale-banner::before {\n    content: \"\";\n    position: absolute;\n    top: -10px;\n    left: -10px;\n    right: -10px;\n    bottom: -10px;\n    background: linear-gradient(45deg, transparent 45%, rgba(255,255,255,0.3) 50%, transparent 55%);\n    background-size: 200% 200%;\n    animation: shine 3s infinite;\n    z-index: 0;\n  }\n  \n  .compact-sale-content {\n    position: relative;\n    z-index: 1;\n  }\n  \n  .compact-sale-title {\n    font-size: 18px;\n    font-weight: 700;\n    color: white;\n    margin: 0 0 5px 0;\n    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);\n    letter-spacing: 0.3px;\n    line-height: 1.3;\n  }\n  \n  .compact-sale-highlight {\n    font-size: 20px;\n    font-weight: 800;\n    color: white;\n    display: block;\n    margin: 4px 0;\n    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);\n    line-height: 1.2;\n  }\n  \n  .compact-sale-note {\n    font-size: 12px;\n    color: rgba(255,255,255,0.9);\n    margin: 5px 0 0 0;\n    font-style: italic;\n    line-height: 1.2;\n  }\n  \n  @keyframes shine {\n    0% { background-position: -100% -100%; }\n    100% { background-position: 100% 100%; }\n  }\n  \n  /* Mobile responsive */\n  @media screen and (max-width: 749px) {\n    .compact-sale-banner {\n      padding: 10px 12px;\n      margin: 12px 0;\n    }\n    \n    .compact-sale-title {\n      font-size: 16px;\n    }\n    \n    .compact-sale-highlight {\n      font-size: 18px;\n    }\n    \n    .compact-sale-note {\n      font-size: 11px;\n    }\n  }\n{%- endstyle -%}\n\n<div class=\"compact-sale-banner\">\n  <div class=\"compact-sale-content\">\n    <div class=\"compact-sale-title\">Back-to-school Blowout!</div>\n    <div class=\"compact-sale-highlight\">GET 12% OFF ON CODE \"DATA12\"</div>\n    <div class=\"compact-sale-note\">Limited time offer.</div>\n  </div>\n</div>"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h3"
+          }
+        },
+        "judge_me_reviews_preview_badge_8U47zK": {
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "custom_liquid_wp3KDa": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div style=\"font-weight: bold; color: black; background-color: #ffe400; padding: 10px; border-radius: 5px;\">\n    The voucher code will be sent to your registered email automatically once the order is placed. (Please make sure the email provided is valid)\n</div>"
+          }
+        },
+        "inventory_ybzDtw": {
+          "type": "inventory",
+          "disabled": true,
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_quantity": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "country_checker": {
+          "type": "country_checker",
+          "settings": {}
+        },
+        "vitals_ub_product_bundles_DxRBEB": {
+          "type": "shopify://apps/vitals/blocks/ub-product-bundles/aeb48102-2a5a-4f39-bdbd-d8d49f4e20b8",
+          "settings": {}
+        },
+        "gift": {
+          "type": "gift",
+          "settings": {}
+        },
+        "add_ons": {
+          "type": "add_ons",
+          "settings": {}
+        },
+        "supported_devices": {
+          "type": "supported_devices",
+          "settings": {}
+        },
+        "text_with_icon_FJpD8f": {
+          "type": "text_with_icon",
+          "settings": {
+            "show_text_with_icon_1": true,
+            "icon_1": "delivery",
+            "text_1": "Fast Shipping",
+            "show_text_with_icon_2": true,
+            "icon_2": "shield",
+            "text_2": "High-quality Products",
+            "box_shadow": true,
+            "icon_style": "colored",
+            "icon_fill_type": "gradient"
+          }
+        },
+        "text_with_icon": {
+          "type": "text_with_icon",
+          "settings": {
+            "show_text_with_icon_1": true,
+            "icon_1": "wallet",
+            "text_1": "30 Day Return Guarantee",
+            "show_text_with_icon_2": true,
+            "icon_2": "user-1",
+            "text_2": "Professional Service Support",
+            "box_shadow": true,
+            "icon_style": "colored",
+            "icon_fill_type": "gradient"
+          }
+        },
+        "share_EAqH9P": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share",
+            "show_share_facebook": true,
+            "show_share_twitter": true,
+            "show_share_pinterest": true,
+            "show_share_copy": true
+          }
+        },
+        "popup_nzDhX7": {
+          "type": "popup",
+          "disabled": true,
+          "settings": {
+            "label": "Compare",
+            "heading": "",
+            "text": "",
+            "image": "shopify://shop_images/c23545ae333b999b21f3be3053b5c1cb.jpg",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "custom_liquid_6pDWQA",
+        "title",
+        "judge_me_reviews_preview_badge_8U47zK",
+        "variant_picker",
+        "price",
+        "custom_liquid_wp3KDa",
+        "inventory_ybzDtw",
+        "buy_buttons",
+        "country_checker",
+        "vitals_ub_product_bundles_DxRBEB",
+        "gift",
+        "add_ons",
+        "supported_devices",
+        "text_with_icon_FJpD8f",
+        "text_with_icon",
+        "share_EAqH9P",
+        "popup_nzDhX7"
+      ],
+      "custom_css": [
+        "@media only screen and (min-width: 1200px) {.rte div {margin-right: 180px; margin-left: -180px; }}"
+      ],
+      "settings": {
+        "desktop_alignment": "right",
+        "mobile_alignment": "before",
+        "gallery_type": "slider_previews",
+        "aspect_ratio": "1/1",
+        "image_fit": "contain",
+        "image_fit_modal": "contain",
+        "padding_bottom": "l"
+      }
+    },
+    "slideshow_7dfEX9": {
+      "type": "slideshow",
+      "disabled": true,
+      "settings": {
+        "layout": "overlay",
+        "full_width": false,
+        "color_scheme": "",
+        "enable_border": false,
+        "border_full": false,
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "subheading_icon": "none",
+        "heading": "",
+        "heading_size": "h2",
+        "heading_level": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "text": "",
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text_align": "left",
+        "height": "16/9",
+        "text_align_content": "bottom-left",
+        "enable_autoplay": true,
+        "enable_parallax": false,
+        "enable_pagination": true,
+        "pagination_type": "bullets",
+        "pagination_color_scheme": "",
+        "pagination_width": "medium",
+        "enable_navigation": false,
+        "navigation_color_scheme": "",
+        "slide_duration": 5,
+        "icon_size": "recommended",
+        "icon_style": "contrast",
+        "icon_fill_type": "solid",
+        "show_tab_icon": true,
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_with_text_qBWD8z": {
+      "type": "image-with-text",
+      "blocks": {
+        "column_aWwVwK": {
+          "type": "column",
+          "settings": {
+            "icon": "phone-1",
+            "icon_fill_type": "solid",
+            "heading": "1. Download GlocalMe App",
+            "text": ""
+          }
+        },
+        "column_r9cNqN": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "icon": "none",
+            "icon_fill_type": "solid",
+            "heading": "",
+            "text": ""
+          }
+        },
+        "column_pKf8YH": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "icon": "none",
+            "icon_fill_type": "solid",
+            "heading": "3. Click “voucher code” and input",
+            "text": ""
+          }
+        },
+        "column_icAUGq": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "icon": "none",
+            "icon_fill_type": "solid",
+            "heading": "4. Click “submit” and check “packages” in your account.",
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_aWwVwK",
+        "column_r9cNqN",
+        "column_pKf8YH",
+        "column_icAUGq"
+      ],
+      "disabled": true,
+      "settings": {
+        "layout": "image_center",
+        "color_scheme": "",
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "subheading_icon": "none",
+        "heading": "How to Redeem Your Data Plan?",
+        "heading_size": "h2",
+        "heading_level": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "left",
+        "inner_subheading": "",
+        "inner_heading": "",
+        "inner_heading_size": "h3",
+        "inner_heading_level": "h2",
+        "inner_heading_line": "simple",
+        "inner_line_color": "#1566e0",
+        "inner_word_break": false,
+        "description": "",
+        "text_align_inner": "top",
+        "image": "shopify://shop_images/1.png",
+        "height": "adapt",
+        "overlay_opacity": 0,
+        "logo_width": 75,
+        "add_text": "Some text",
+        "author_color_scheme": "",
+        "icon_size": "recommended",
+        "box_shadow": false,
+        "icon_style": "colored",
+        "show_button": false,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "show_button_2": false,
+        "button_label_2": "Button label",
+        "button_link_2": "",
+        "button_style_2": "simple",
+        "padding_top": "m",
+        "padding_bottom": "m",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_with_text_ykyqDW": {
+      "type": "image-with-text",
+      "blocks": {
+        "column_YnqhP4": {
+          "type": "column",
+          "settings": {
+            "icon": "wallet",
+            "icon_fill_type": "solid",
+            "heading": "2. Go to “Profile”, and click “Balance”",
+            "text": ""
+          }
+        },
+        "column_crRkj9": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "icon": "none",
+            "icon_fill_type": "solid",
+            "heading": "Some heading",
+            "text": "Some description"
+          }
+        },
+        "column_PW8AEx": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "icon": "none",
+            "icon_fill_type": "solid",
+            "heading": "Some heading",
+            "text": "Some description"
+          }
+        },
+        "column_38MX6E": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "icon": "none",
+            "icon_fill_type": "solid",
+            "heading": "Some heading",
+            "text": "Some description"
+          }
+        }
+      },
+      "block_order": [
+        "column_YnqhP4",
+        "column_crRkj9",
+        "column_PW8AEx",
+        "column_38MX6E"
+      ],
+      "disabled": true,
+      "settings": {
+        "layout": "image_center",
+        "color_scheme": "",
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "subheading_icon": "none",
+        "heading": "",
+        "heading_size": "h3",
+        "heading_level": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "left",
+        "inner_subheading": "",
+        "inner_heading": "",
+        "inner_heading_size": "h3",
+        "inner_heading_level": "h2",
+        "inner_heading_line": "simple",
+        "inner_line_color": "#1566e0",
+        "inner_word_break": false,
+        "description": "",
+        "text_align_inner": "top",
+        "image": "shopify://shop_images/2.png",
+        "height": "adapt",
+        "overlay_opacity": 0,
+        "logo_width": 75,
+        "add_text": "",
+        "author_color_scheme": "",
+        "icon_size": "recommended",
+        "box_shadow": false,
+        "icon_style": "colored",
+        "show_button": false,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "show_button_2": false,
+        "button_label_2": "",
+        "button_link_2": "",
+        "button_style_2": "simple",
+        "padding_top": "m",
+        "padding_bottom": "m",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_with_text_dQ9HFn": {
+      "type": "image-with-text",
+      "blocks": {
+        "column_dk9bye": {
+          "type": "column",
+          "settings": {
+            "icon": "arrow-bar",
+            "icon_fill_type": "solid",
+            "heading": "3. Click “voucher code” and input",
+            "text": ""
+          }
+        },
+        "column_rXefpw": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "icon": "none",
+            "icon_fill_type": "solid",
+            "heading": "Some heading",
+            "text": "Some description"
+          }
+        },
+        "column_fhbD3X": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "icon": "none",
+            "icon_fill_type": "solid",
+            "heading": "Some heading",
+            "text": "Some description"
+          }
+        },
+        "column_wDCERL": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "icon": "none",
+            "icon_fill_type": "solid",
+            "heading": "Some heading",
+            "text": "Some description"
+          }
+        }
+      },
+      "block_order": [
+        "column_dk9bye",
+        "column_rXefpw",
+        "column_fhbD3X",
+        "column_wDCERL"
+      ],
+      "disabled": true,
+      "settings": {
+        "layout": "image_center",
+        "color_scheme": "",
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "subheading_icon": "none",
+        "heading": "",
+        "heading_size": "h2",
+        "heading_level": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "left",
+        "inner_subheading": "",
+        "inner_heading": "",
+        "inner_heading_size": "h2",
+        "inner_heading_level": "h2",
+        "inner_heading_line": "simple",
+        "inner_line_color": "#1566e0",
+        "inner_word_break": false,
+        "description": "",
+        "text_align_inner": "top",
+        "image": "shopify://shop_images/3.png",
+        "height": "adapt",
+        "overlay_opacity": 0,
+        "logo_width": 75,
+        "add_text": "",
+        "author_color_scheme": "",
+        "icon_size": "recommended",
+        "box_shadow": false,
+        "icon_style": "colored",
+        "show_button": false,
+        "button_label": "Button label",
+        "button_link": "",
+        "button_style": "primary",
+        "show_button_2": false,
+        "button_label_2": "Button label",
+        "button_link_2": "",
+        "button_style_2": "simple",
+        "padding_top": "m",
+        "padding_bottom": "m",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_with_text_m3AniH": {
+      "type": "image-with-text",
+      "blocks": {
+        "column_3z7Qdj": {
+          "type": "column",
+          "settings": {
+            "icon": "check-1",
+            "icon_fill_type": "gradient",
+            "heading": "4. Click “submit” and check “packages” in your account.",
+            "text": ""
+          }
+        },
+        "column_ErAwMR": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "icon": "none",
+            "icon_fill_type": "solid",
+            "heading": "Some heading",
+            "text": "Some description"
+          }
+        },
+        "column_8pQizX": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "icon": "none",
+            "icon_fill_type": "solid",
+            "heading": "Some heading",
+            "text": "Some description"
+          }
+        },
+        "column_Ynxnyh": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "icon": "none",
+            "icon_fill_type": "solid",
+            "heading": "Some heading",
+            "text": "Some description"
+          }
+        }
+      },
+      "block_order": [
+        "column_3z7Qdj",
+        "column_ErAwMR",
+        "column_8pQizX",
+        "column_Ynxnyh"
+      ],
+      "disabled": true,
+      "settings": {
+        "layout": "image_center",
+        "color_scheme": "",
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "subheading_icon": "none",
+        "heading": "",
+        "heading_size": "h2",
+        "heading_level": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "left",
+        "inner_subheading": "",
+        "inner_heading": "",
+        "inner_heading_size": "h2",
+        "inner_heading_level": "h2",
+        "inner_heading_line": "simple",
+        "inner_line_color": "#1566e0",
+        "inner_word_break": false,
+        "description": "",
+        "text_align_inner": "top",
+        "image": "shopify://shop_images/4.png",
+        "height": "adapt",
+        "overlay_opacity": 0,
+        "logo_width": 75,
+        "add_text": "",
+        "author_color_scheme": "",
+        "icon_size": "recommended",
+        "box_shadow": false,
+        "icon_style": "colored",
+        "show_button": false,
+        "button_label": "Button label",
+        "button_link": "",
+        "button_style": "primary",
+        "show_button_2": false,
+        "button_label_2": "Button label",
+        "button_link_2": "",
+        "button_style_2": "simple",
+        "padding_top": "m",
+        "padding_bottom": "m",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "steps_giycAd": {
+      "type": "steps",
+      "blocks": {
+        "step_RWE6CP": {
+          "type": "step",
+          "settings": {
+            "number": "",
+            "heading": "Some heading",
+            "text": "Some description",
+            "show_button": true,
+            "button_style": "simple",
+            "button_label": "Know More",
+            "button_link": ""
+          }
+        },
+        "step_jYePEC": {
+          "type": "step",
+          "settings": {
+            "number": "",
+            "heading": "Some heading",
+            "text": "Some description",
+            "show_button": true,
+            "button_style": "simple",
+            "button_label": "Know More",
+            "button_link": ""
+          }
+        },
+        "step_kjNGFF": {
+          "type": "step",
+          "settings": {
+            "number": "",
+            "heading": "Some heading",
+            "text": "Some description",
+            "show_button": true,
+            "button_style": "simple",
+            "button_label": "Know More",
+            "button_link": ""
+          }
+        },
+        "step_3cViQz": {
+          "type": "step",
+          "settings": {
+            "number": "",
+            "heading": "Some heading",
+            "text": "Some description",
+            "show_button": true,
+            "button_style": "simple",
+            "button_label": "Know More",
+            "button_link": ""
+          }
+        },
+        "step_fq4WDT": {
+          "type": "step",
+          "settings": {
+            "number": "",
+            "heading": "Some heading",
+            "text": "Some description",
+            "show_button": true,
+            "button_style": "simple",
+            "button_label": "Know More",
+            "button_link": ""
+          }
+        },
+        "step_rBdwbP": {
+          "type": "step",
+          "settings": {
+            "number": "",
+            "heading": "Some heading",
+            "text": "Some description",
+            "show_button": true,
+            "button_style": "simple",
+            "button_label": "Know More",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "step_RWE6CP",
+        "step_jYePEC",
+        "step_kjNGFF",
+        "step_3cViQz",
+        "step_fq4WDT",
+        "step_rBdwbP"
+      ],
+      "disabled": true,
+      "settings": {
+        "layout": "columns",
+        "color_scheme": "",
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "subheading_icon": "none",
+        "heading": "",
+        "heading_size": "h2",
+        "heading_level": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "center",
+        "columns_to_show": 3,
+        "image_ratio": "landscape",
+        "number_size": "recommended",
+        "step_heading_size": "recommended",
+        "text_size": "recommended",
+        "padding_top": "l",
+        "padding_bottom": "l",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "product_markers_A7yzCr": {
+      "type": "product-markers",
+      "blocks": {
+        "product_markers_item_LaEgTg": {
+          "type": "product_markers_item",
+          "settings": {
+            "product_id": "",
+            "color_scheme_text": "",
+            "position_x": 23,
+            "position_y": 36,
+            "tooltip_open_position": "on-top"
+          }
+        },
+        "product_markers_item_ETgF98": {
+          "type": "product_markers_item",
+          "settings": {
+            "product_id": "",
+            "color_scheme_text": "",
+            "position_x": 62,
+            "position_y": 44,
+            "tooltip_open_position": "on-top"
+          }
+        },
+        "product_markers_item_YfFdfk": {
+          "type": "product_markers_item",
+          "settings": {
+            "product_id": "",
+            "color_scheme_text": "",
+            "position_x": 34,
+            "position_y": 75,
+            "tooltip_open_position": "on-top"
+          }
+        },
+        "product_markers_item_zNHFeA": {
+          "type": "product_markers_item",
+          "settings": {
+            "product_id": "",
+            "color_scheme_text": "background-3",
+            "position_x": 1,
+            "position_y": 1,
+            "tooltip_open_position": "on-top"
+          }
+        },
+        "product_markers_item_GbPeYR": {
+          "type": "product_markers_item",
+          "settings": {
+            "product_id": "",
+            "color_scheme_text": "background-3",
+            "position_x": 1,
+            "position_y": 1,
+            "tooltip_open_position": "on-top"
+          }
+        },
+        "product_markers_item_74hpRm": {
+          "type": "product_markers_item",
+          "settings": {
+            "product_id": "",
+            "color_scheme_text": "background-3",
+            "position_x": 1,
+            "position_y": 1,
+            "tooltip_open_position": "on-top"
+          }
+        }
+      },
+      "block_order": [
+        "product_markers_item_LaEgTg",
+        "product_markers_item_ETgF98",
+        "product_markers_item_YfFdfk",
+        "product_markers_item_zNHFeA",
+        "product_markers_item_GbPeYR",
+        "product_markers_item_74hpRm"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "subheading_icon": "none",
+        "heading": "",
+        "text": "",
+        "heading_size": "h2",
+        "heading_level": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text_align": "left",
+        "main_image_ratio": "adapt",
+        "image_ratio": "5/4",
+        "image_fit": "cover",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "padding_top": "l",
+        "padding_bottom": "l",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "rich_text_hEeGUN": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_7fWKXH": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "subheading": "Instructions"
+          }
+        },
+        "heading_JWjWNa": {
+          "type": "heading",
+          "settings": {
+            "heading": "INSTRUCTIONS",
+            "heading_size": "medium",
+            "heading_level": "h2"
+          }
+        },
+        "text_GMX7Yn": {
+          "type": "text",
+          "settings": {
+            "text": "<p>This Package is not available for WiFi Hotspot Devices in Maldives.</p><p>1. Activate Method: This data package will be automatically activated once you start the device at the usable destination. You are reminded to make sure the destination arrival day should be within 90 days after redeemed, otherwise, it will expire with no refund.</p><p>2. Validity: This data package will be valid for 365 x 24 hours after activation.<br/>3. Priority: This data package has a lower priority than the unlimited data package. You can use this data package after exceeding the high-speed data quota of the unlimited data package. The usage priority will be based on the purchase date for the same type of package, i.e., the package with the earliest purchase date will be used up first, while the priority of the single-region package is higher than the regional package. In addition, you can also manually adjust the priority in the mobile APP.<br/>4. Cancellation: The unactivated package can be fully refunded to your account balance within 90 days. However, all vouchers and promotion coupons are not refundable.<br/><br/><br/><br/></p>"
+          }
+        },
+        "button_9iBQHn": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_7fWKXH",
+        "heading_JWjWNa",
+        "text_GMX7Yn",
+        "button_9iBQHn"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "full_width": true,
+        "alignment": "center",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent",
+        "padding_top": "m",
+        "padding_bottom": "m"
+      }
+    },
+    "steps_YcV8En": {
+      "type": "steps",
+      "blocks": {
+        "step_HWDHRU": {
+          "type": "step",
+          "settings": {
+            "number": "",
+            "heading": "Activate Method",
+            "text": "This data package will be automatically activated once you start the device at the usable destination. You are reminded to make sure the destination arrival day should be within 90 days after redeemed, otherwise, it will expire with no refund.",
+            "show_button": false,
+            "button_style": "simple",
+            "button_label": "Know More",
+            "button_link": ""
+          }
+        },
+        "step_KWEUmm": {
+          "type": "step",
+          "settings": {
+            "number": "",
+            "heading": "Priority",
+            "text": "This data package has a lower priority than the unlimited data package. You can use this data package after exceeding the high-speed data quota of the unlimited data package. The usage priority will be based on the purchase date for the same type of package, i.e., the package with the earliest purchase date will be used up first, while the priority of the single-region package is higher than the regional package. In addition, you can also manually",
+            "show_button": false,
+            "button_style": "simple",
+            "button_label": "Know More",
+            "button_link": ""
+          }
+        },
+        "step_VJbfbG": {
+          "type": "step",
+          "settings": {
+            "number": "",
+            "heading": "Cancellation",
+            "text": "The unactivated package can be fully refunded to your account balance within 90 days. However, all vouchers and promotion coupons are not refundable.",
+            "show_button": false,
+            "button_style": "simple",
+            "button_label": "Know More",
+            "button_link": ""
+          }
+        },
+        "step_Fgcwib": {
+          "type": "step",
+          "settings": {
+            "number": "",
+            "heading": "Validity",
+            "text": "This data package will be valid for 365 x 24 hours after activation.",
+            "show_button": false,
+            "button_style": "simple",
+            "button_label": "Know More",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "step_HWDHRU",
+        "step_KWEUmm",
+        "step_VJbfbG",
+        "step_Fgcwib"
+      ],
+      "disabled": true,
+      "settings": {
+        "layout": "collapsible",
+        "color_scheme": "",
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "subheading_icon": "none",
+        "heading": "INSTRUCTIONS",
+        "heading_size": "h3",
+        "heading_level": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "center",
+        "columns_to_show": 4,
+        "image_ratio": "landscape",
+        "number_size": "h4",
+        "step_heading_size": "h4",
+        "text_size": "recommended",
+        "padding_top": "s",
+        "padding_bottom": "s",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "custom_liquid_4tenir": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"container\"><div class=\"product__description full{% if block.settings.description == blank and product.description != blank %} rte {% endif %}\">{{ product.description }}</div></div>"
+      }
+    },
+    "1755825351ba471a57": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_c7pNkJ": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_c7pNkJ"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "color_scheme": "background-1",
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "subheading_icon": "none",
+        "heading": "You May Also Like",
+        "heading_size": "h2",
+        "text": "",
+        "products_limit": 6,
+        "image_ratio": "1/1",
+        "image_fit": "cover",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_desc": false,
+        "padding_top": "l",
+        "padding_bottom": "l"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "slideshow_7dfEX9",
+    "image_with_text_qBWD8z",
+    "image_with_text_ykyqDW",
+    "image_with_text_dQ9HFn",
+    "image_with_text_m3AniH",
+    "steps_giycAd",
+    "product_markers_A7yzCr",
+    "rich_text_hEeGUN",
+    "steps_YcV8En",
+    "custom_liquid_4tenir",
+    "1755825351ba471a57",
+    "product-recommendations"
+  ]
+}

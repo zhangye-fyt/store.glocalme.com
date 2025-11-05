@@ -1,0 +1,168 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ product.vendor }}"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h3"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_quantity": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "custom_liquid_6pDWQA": {
+          "type": "custom_liquid",
+          "disabled": true,
+          "settings": {
+            "custom_liquid": "{%- style -%}\n  .product-coupon-container {\n    margin: 20px 0;\n    font-family: inherit;\n  }\n  \n  .coupon-card {\n    background: linear-gradient(135deg, #f5f7fa 0%, #f4e6cb 100%);\n    border-radius: 10px;\n    border: 1px dashed #d1d5db;\n    padding: 15px;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    text-align: center;\n    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);\n    position: relative;\n    overflow: hidden;\n  }\n  \n  .coupon-card::before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    background: radial-gradient(circle at 10% 20%, rgba(255,255,255,0.3) 0%, transparent 20%);\n    pointer-events: none;\n  }\n  \n  .coupon-title {\n    font-size: 18px;\n    font-weight: 600;\n    color: #1f2937;\n    margin-bottom: 8px;\n  }\n  \n  .coupon-description {\n    font-size: 16px;\n    color: #4b5563;\n    margin-bottom: 12px;\n    line-height: 1.4;\n  }\n  \n  .coupon-code-container {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    width: 100%;\n    margin-bottom: 10px;\n  }\n  \n  .coupon-code {\n    font-size: 20px;\n    font-weight: 700;\n    letter-spacing: 1px;\n    color: #d56040;\n    background-color: white;\n    padding: 8px 15px;\n    border-radius: 6px;\n    border: 1px solid #d1d5db;\n    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);\n    flex-grow: 1;\n    text-align: center;\n    max-width: 70%;\n    word-break: break-all;\n  }\n  \n  .copy-btn {\n    background-color: #3b82f6;\n    color: white;\n    border: none;\n    padding: 8px 12px;\n    border-radius: 6px;\n    margin-left: 8px;\n    font-size: 14px;\n    font-weight: 500;\n    cursor: pointer;\n    transition: background-color 0.2s;\n  }\n  \n  .copy-btn:hover {\n    background-color: #2563eb;\n  }\n  \n  .coupon-terms {\n    font-size: 12px;\n    color: #6b7280;\n    margin-top: 8px;\n  }\n  \n  /* 移动端适配 */\n  @media screen and (max-width: 749px) {\n    .coupon-card {\n      padding: 12px;\n    }\n    \n    .coupon-title {\n      font-size: 15px;\n    }\n    \n    .coupon-description {\n      font-size: 13px;\n    }\n    \n    .coupon-code {\n      font-size: 16px;\n      padding: 6px 12px;\n    }\n    \n    .copy-btn {\n      padding: 6px 10px;\n      font-size: 13px;\n    }\n  }\n{%- endstyle -%}\n\n{%- comment -%}\n  在这里设置你的优惠码和活动信息\n  你可以为不同产品设置不同的优惠码，或者使用相同的优惠码\n{%- endcomment -%}\n\n{%- assign current_product_handle = product.handle -%}\n\n{%- comment -%} 示例：根据产品handle设置不同的优惠码 {%- endcomment -%}\n{%- if current_product_handle == 'product-1-handle' -%}\n  {%- assign coupon_code = 'SUMMER20' -%}\n  {%- assign coupon_title = '夏季特惠' -%}\n  {%- assign coupon_description = '限时享受20%折扣，仅限本产品使用' -%}\n  {%- assign coupon_terms = '有效期至2023年8月31日，不可与其他优惠同时使用' -%}\n{%- elsif current_product_handle == 'product-2-handle' -%}\n  {%- assign coupon_code = 'FALL15' -%}\n  {%- assign coupon_title = '秋季促销' -%}\n  {%- assign coupon_description = '享受15%折扣，专为本产品定制' -%}\n  {%- assign coupon_terms = '有效期至2023年9月30日' -%}\n{%- else -%}\n  {%- assign coupon_code = 'CODE: JULY4' -%}\n  {%- assign coupon_title = 'Celebrate\nIndependence Day' -%}\n  {%- assign coupon_description = '15% OFF SITEWIDE' -%}\n  {%- assign coupon_terms = '' -%}\n{%- endif -%}\n\n{%- if coupon_code -%}\n<div class=\"product-coupon-container\">\n  <div class=\"coupon-card\">\n    <h3 class=\"coupon-title\">{{ coupon_title }}</h3>\n    <p class=\"coupon-description\">{{ coupon_description }}</p>\n    \n    <div class=\"coupon-code-container\">\n      <span class=\"coupon-code\" id=\"couponCode\">{{ coupon_code }}</span>\n     \n    </div>\n    \n    <p class=\"coupon-terms\">{{ coupon_terms }}</p>\n  </div>\n</div>\n\n\n{%- endif -%}"
+          }
+        },
+        "gift": {
+          "type": "gift",
+          "settings": {}
+        },
+        "add_ons": {
+          "type": "add_ons",
+          "settings": {}
+        },
+        "supported_devices": {
+          "type": "supported_devices",
+          "settings": {}
+        },
+        "description_jpjb9C": {
+          "type": "description",
+          "settings": {
+            "description": ""
+          }
+        },
+        "text_with_icon_FJpD8f": {
+          "type": "text_with_icon",
+          "settings": {
+            "show_text_with_icon_1": true,
+            "icon_1": "delivery",
+            "text_1": "Fast Shipping",
+            "show_text_with_icon_2": true,
+            "icon_2": "shield",
+            "text_2": "High-quality Products",
+            "box_shadow": true,
+            "icon_style": "colored",
+            "icon_fill_type": "gradient"
+          }
+        },
+        "text_with_icon": {
+          "type": "text_with_icon",
+          "settings": {
+            "show_text_with_icon_1": true,
+            "icon_1": "wallet",
+            "text_1": "30 Day Return Guarantee",
+            "show_text_with_icon_2": true,
+            "icon_2": "user-1",
+            "text_2": "Professional Service Support",
+            "box_shadow": true,
+            "icon_style": "colored",
+            "icon_fill_type": "gradient"
+          }
+        },
+        "share_EAqH9P": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share",
+            "show_share_facebook": true,
+            "show_share_twitter": true,
+            "show_share_pinterest": true,
+            "show_share_copy": true
+          }
+        },
+        "country_checker": {
+          "type": "country_checker",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "variant_picker",
+        "price",
+        "buy_buttons",
+        "custom_liquid_6pDWQA",
+        "gift",
+        "add_ons",
+        "supported_devices",
+        "description_jpjb9C",
+        "text_with_icon_FJpD8f",
+        "text_with_icon",
+        "share_EAqH9P",
+        "country_checker"
+      ],
+      "custom_css": [
+        "@media only screen and (min-width: 1200px) {.rte div {margin-right: 180px; margin-left: -180px; }}"
+      ],
+      "settings": {
+        "desktop_alignment": "right",
+        "mobile_alignment": "before",
+        "gallery_type": "slider_previews",
+        "aspect_ratio": "1/1",
+        "image_fit": "contain",
+        "image_fit_modal": "contain",
+        "padding_bottom": "l"
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "color_scheme": "background-1",
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "subheading_icon": "none",
+        "heading": "You May Also Like",
+        "heading_size": "h2",
+        "text": "",
+        "products_limit": 6,
+        "image_ratio": "1/1",
+        "image_fit": "cover",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_desc": false,
+        "padding_top": "l",
+        "padding_bottom": "l"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "product-recommendations"
+  ]
+}

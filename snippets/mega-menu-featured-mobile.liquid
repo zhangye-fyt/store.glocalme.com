@@ -1,0 +1,64 @@
+{% for block in blocks %}
+  {% assign mega_menu_featured_trigger = block.settings.mega_menu_featured_trigger | handle | strip %}
+  {% if link.handle == mega_menu_featured_trigger and block.type == 'mega_menu_featured' %}
+    {%- assign products = null -%}
+    {%- if block.settings.product_list != blank -%}
+      {%- assign products = block.settings.product_list -%}
+    {%- elsif link.type == 'collection_link' -%}
+      {%- assign products = link.object.products -%}
+    {%- endif -%}
+    {%- if products != blank -%}
+      <div class="mega-menu__featured">
+        {%- assign ratio_percent = 1 | divided_by: products[0].featured_media.aspect_ratio | times: 100 | round: 2 -%}
+        {%- for product_item in products limit: 7 -%}
+          <div class="mega-menu__featured-product">
+            <div class="mega-menu__featured-product-inner flex">
+              <div class="mega-menu__featured-product-media">
+                {% comment %} {{ ratio_percent }} {% endcomment %}
+                <a
+                  class="ratio"
+                  style="--ratio-percent: 100%"
+                  href="{{ product_item.url }}"
+                >
+                  {{
+                    product_item.featured_media
+                    | image_url: width: product_item.featured_media.width
+                    | image_tag:
+                      loading: 'lazy',
+                      widths: '360, 535, 720, 940, 1066, 1200, 1400, 1600, 1800, 2000, 2200, 2400, 2600',
+                      sizes: sizes,
+                      calss: 'object-cover'
+                  }}
+                </a>
+              </div>
+              <div class="mega-menu__featured-product-content flex-1 overflow-hidden">
+                <a class="block ellipsis no-underline" href="{{ product_item.url }}">
+                  {%- if product_item.metafields.custom.menu_title -%}
+                    {{ product_item.metafields.custom.menu_title | metafield_tag }}
+                  {%- else -%}
+                    {{- product_item.title -}}
+                  {%- endif -%}
+                </a>
+                <span class="line-clamp-2 body-small">
+                  {%- if product_item.metafields.custom.menu_description -%}
+                    {{ product_item.metafields.custom.menu_description | metafield_tag }}
+                  {%- else -%}
+                  {{ product_item.description | strip_html }}
+                  {%- endif -%}
+                </span>
+              </div>
+            </div>
+          </div>
+        {%- endfor -%}
+        {%- if products.size >= 7 -%}
+          <div class="mega-menu__featured-more flex items-center justify-center w-full h-full">
+            <a class="button button--simple_secondary button--arrow" href="{{ link.url }}">
+              <span>{{ 'sections.header.see_all' | t }}</span>
+              {% render 'icon-button-arrow' %}
+            </a>
+          </div>
+        {%- endif -%}
+      </div>
+    {%- endif -%}
+  {% endif %}
+{% endfor %}

@@ -1,0 +1,64 @@
+.free-gift__title + .free-gift__content {
+  margin-top: 1.6rem;
+}
+
+.free-gift__content {
+  padding: 1.6rem 2rem;
+  background-color: #fff8ea;
+  border-radius: 1.2rem;
+}
+
+@media screen and (min-width: 990px) {
+  .free-gift__content {
+    padding: 3.2rem 4rem;
+  }
+}
+
+.free-gift__selected {
+  gap: 1.6rem;
+}
+
+.free-gift__item:not(:first-child) {
+  margin-top: 2rem;
+}
+
+.free-gift__item-info {
+  padding-left: 1.5rem;
+}
+
+.free-gift__item-info > *:not(:first-child) {
+  margin-top: 0.5rem;
+}
+
+.free-gift__item-price > .price {
+  margin-left: 1rem;
+  text-decoration: line-through;
+}
+
+.free-gift__item-variants .dropdown {
+  display: inline-grid;
+  width: auto;
+}
+
+.free-gift__item-variants .dropdown .dropdown__list,
+.free-gift__item-variants .dropdown > input {
+  font-size: 1.3rem;
+}
+
+.free-gift__item-variants .dropdown > input {
+  padding: 0.6rem 3rem 0.6rem 1rem;
+  border-radius: 0.6rem;
+}
+
+.free-gift__item-variants .dropdown .dropdown__list {
+  top: calc(100% + 0.5rem);
+}
+
+.free-gift__item-variants .dropdown .dropdown__list .dropdown__item {
+  padding: 0.6rem 1rem;
+}
+
+.free-gift__item-variants .dropdown .icon {
+  width: 1.6rem;
+  height: 1.6rem;
+}

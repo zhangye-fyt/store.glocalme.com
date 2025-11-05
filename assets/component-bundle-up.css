@@ -1,0 +1,215 @@
+.bundle-up__wrapper {
+  border-radius: 1.2rem;
+  overflow: hidden;
+}
+
+.bundle-up__media-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 4.8rem 2.8rem;
+  background: none;
+}
+
+.bundle-up__media-text h3 {
+  margin: 0;
+  font-size: calc(var(--font-body-scale) * 2.4rem);
+  margin-bottom: 1.4rem;
+}
+
+.bundle-up__media-text p {
+  margin: 0;
+  font-size: calc(var(--font-body-scale) * 1.5rem);
+  font-weight: 400;
+}
+
+@media screen and (min-width: 990px) {
+  .bundle-up__wrapper {
+    display: flex;
+  }
+
+  .bundle-up__media-text h3 {
+    font-size: calc(var(--font-body-scale) * 3rem);
+  }
+
+  .bundle-up__media-text p {
+    font-size: calc(var(--font-body-scale) * 1.8rem);
+  }
+}
+
+.bundle-up__content {
+  padding: 2.2rem 1.2rem 3.2rem;
+  background: rgb(var(--color-background-secondary));
+}
+
+.bundle-up__products {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 1.6rem;
+}
+
+.bundle-up__product {
+  background-color: #ffffff;
+  border: 1px solid transparent;
+}
+
+.bundle-up__product.active {
+  border-color: rgba(var(--color-accent), 0.3);
+}
+
+@media (hover: hover) {
+  .bundle-up__product:hover {
+    border-color: rgba(var(--color-accent), 0.3);
+  }
+}
+
+.bundle-up__product-checkbox {
+  position: absolute;
+  top: 1.6rem;
+  right: 1.2rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  z-index: 10;
+}
+
+.bundle-up__product-checkbox input[type="checkbox"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  margin: 0;
+  opacity: 0;
+  visibility: hidden;
+  cursor: pointer;
+}
+
+.bundle-up__product-checkbox label {
+  color: transparent;
+  border-radius: 50%;
+  border: 1px solid rgb(var(--color-border));
+}
+
+.bundle-up__product-checkbox input[type="checkbox"]:checked + label {
+  color: rgba(var(--color-foreground));
+  background-color: rgb(var(--color-accent));
+}
+
+.bundle-up__product-checkbox input[type="checkbox"]:not(:checked):hover + label {
+  color: rgb(var(--color-accent));
+}
+
+.bundle-up__product modal-opener > button {
+  padding: 0;
+  text-align: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: transparent;
+}
+
+.bundle-up__product modal-opener > button.loading {
+  cursor: wait;
+}
+
+.bundle-up__product-wrapper {
+  padding: 2rem 1.4rem;
+}
+
+.bundle-up__product-content {
+  padding: 0 1.4rem;
+}
+
+.bundle-up__product-title {
+  font-size: 1.4rem;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.bundle-up__product-description {
+  margin-top: 0.2rem;
+  font-size: 1.4rem;
+  line-height: 1.4;
+  color: rgb(var(--color-foreground-secondary));
+}
+
+.bundle-up__product-price .price {
+  padding: 1.6rem 0 0;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.bundle-up__product-price .price .price__compare {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 2;
+}
+
+.bundle-up__buttons {
+  gap: 1.6rem;
+}
+
+@media screen and (max-width: 989px) {
+  .bundle-up__content {
+    margin-top: -20%;
+    background: rgba(var(--color-background-secondary), 0.5);
+  }
+
+  .bundle-up__product-wrapper {
+    align-items: flex-start;
+  }
+
+  .bundle-up__product-image {
+    width: 10.4rem;
+  }
+
+  .bundle-up__product-image img {
+    border-radius: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .bundle-up__content {
+    padding: 4rem;
+  }
+
+  .bundle-up__products {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin-bottom: 2.4rem;
+  }
+
+  .bundle-up__product-checkbox {
+    top: 2rem;
+    right: 2rem;
+    width: 3.3rem;
+    height: 3.3rem;
+  }
+
+  .bundle-up__product-wrapper {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .bundle-up__product-content {
+    padding: 2.4rem;
+  }
+
+  .bundle-up__product-title {
+    font-size: 1.6rem;
+    min-height: 4.4rem;
+  }
+
+  .bundle-up__product-price .price {
+    padding: 2rem 0;
+    font-size: 2rem;
+  }
+
+  .bundle-up__product-price .price .price__compare {
+    font-size: 1.6rem;
+  }
+}

@@ -1,0 +1,125 @@
+.add-ons__title + .add-ons__content {
+  margin-top: 1.6rem;
+}
+
+.add-ons__content {
+  padding: 1.6rem 2rem;
+  background-color: rgb(var(--color-background-secondary));
+  border-radius: 1.2rem;
+}
+
+.add-ons__content-top {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgb(var(--color-border));
+}
+
+.add-ons__selected,
+.add-ons__product {
+  gap: 1.6rem;
+}
+
+.add-ons__list {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.add-ons-dropdown .dropdown__list .dropdown__item {
+  padding: 1rem 2rem;
+}
+
+@media screen and (min-width: 990px) {
+  .add-ons__content {
+    padding: 3.2rem 4rem;
+  }
+  .add-ons-dropdown .dropdown__list .dropdown__item {
+    padding: 1rem 4rem;
+  }
+}
+
+.add-ons__product-media {
+  width: 5rem;
+}
+
+.add-ons__product-media img {
+  border-radius: 1.2rem;
+}
+
+.add-ons__product-info > * {
+  margin: 0;
+}
+
+.add-ons__product-info .add-ons__product-option {
+  margin-top: 0.5rem;
+}
+
+@media (min-width: 576px) {
+  .add-ons__list {
+    gap: 2rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.add-ons__descrption {
+  margin-top: 1.6rem;
+}
+
+.add-ons__descrption .metafield-rich_text_field > ul {
+  margin: 0;
+  padding-left: 2rem;
+  color: rgba(var(--color-button));
+}
+
+.add-ons__bottom {
+  margin-top: 3rem;
+}
+
+.add-ons__price .price {
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.add-ons__price .price-item--regular,
+.add-ons__price .price-item--sale {
+  color: #ff2a00;
+}
+
+.add-ons__price .price__badge--save {
+  padding: 0.2rem 0.6rem;
+  color: #ffffff;
+  background-color: #ff9900;
+}
+
+.add-ons__buttons {
+  margin-top: 1.6rem;
+  gap: 1rem;
+}
+
+.add-ons__product-variants .dropdown {
+  display: inline-grid;
+  width: auto;
+}
+
+.add-ons__product-variants .dropdown .dropdown__list,
+.add-ons__product-variants .dropdown > input {
+  font-size: 1.3rem;
+}
+
+.add-ons__product-variants .dropdown > input {
+  padding: 0.6rem 3rem 0.6rem 1rem;
+  border-radius: 0.6rem;
+}
+
+.add-ons__product-variants .dropdown .dropdown__list {
+  top: calc(100% + 0.5rem);
+}
+
+.add-ons__product-variants .dropdown .dropdown__list .dropdown__item {
+  padding: 0.6rem 1rem;
+}
+
+.add-ons__product-variants .dropdown .icon {
+  width: 1.6rem;
+  height: 1.6rem;
+}

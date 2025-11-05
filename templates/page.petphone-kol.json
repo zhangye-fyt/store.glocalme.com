@@ -1,0 +1,422 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": "no-indent",
+        "padding_bottom": "m"
+      }
+    },
+    "image_banner_KHyjhK": {
+      "type": "image-banner",
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "full_width": true,
+        "color_scheme": "scheme-2c247732-f527-4f63-99fd-72efcb82538d",
+        "image": "shopify://shop_images/20251021183019.jpg",
+        "image_mobile": "shopify://shop_images/20251021183051.jpg",
+        "image_ratio": "adapt",
+        "image_link": "",
+        "opacity_overlay": 0,
+        "icon": "none",
+        "icon_color_scheme": "",
+        "icon_size": "large",
+        "icon_style": "colored",
+        "icon_fill_type": "gradient",
+        "box_shadow": false,
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "heading": "",
+        "heading_size": "h2",
+        "heading_level": "h2",
+        "text_information": "",
+        "text_align": "left",
+        "text_width": "small",
+        "show_view_all": false,
+        "button_label": "Shop now",
+        "button_style": "primary",
+        "button_link": "",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_with_text_T8UqmD": {
+      "type": "image-with-text",
+      "blocks": {
+        "column_8iQftc": {
+          "type": "column",
+          "settings": {
+            "icon": "like",
+            "icon_fill_type": "gradient",
+            "heading": "• Top-tier (1M+ fans)",
+            "text": "Strong sales power, big influence"
+          }
+        },
+        "column_xXxfap": {
+          "type": "column",
+          "settings": {
+            "icon": "like",
+            "icon_fill_type": "gradient",
+            "heading": "Mid-tier (100k–1M)",
+            "text": "Strong fan loyalty, high-quality content, high ROI"
+          }
+        },
+        "column_CKKdcc": {
+          "type": "column",
+          "settings": {
+            "icon": "like",
+            "icon_fill_type": "gradient",
+            "heading": "• Rising stars (10k–100k)",
+            "text": "Authentic, high growth potential"
+          }
+        },
+        "column_GDBwYq": {
+          "type": "column",
+          "settings": {
+            "icon": "like",
+            "icon_fill_type": "gradient",
+            "heading": "• Priority niches",
+            "text": "Pets, tech, lifestyle creators"
+          }
+        }
+      },
+      "block_order": [
+        "column_8iQftc",
+        "column_xXxfap",
+        "column_CKKdcc",
+        "column_GDBwYq"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "layout": "image_last",
+        "color_scheme": "scheme-2c247732-f527-4f63-99fd-72efcb82538d",
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "subheading_icon": "none",
+        "heading": "",
+        "heading_size": "h2",
+        "heading_level": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "left",
+        "inner_subheading": "",
+        "inner_heading": "Target Influencer Partners",
+        "inner_heading_size": "h2",
+        "inner_heading_level": "h2",
+        "inner_heading_line": "simple",
+        "inner_line_color": "#1566e0",
+        "inner_word_break": false,
+        "description": "<p>PetPhone is not just a one-time influencer campaign, it's a deep and long-term partnership to jointly manage and maximize user Lifetime Value (LTV).</p>",
+        "text_align_inner": "top",
+        "image": "shopify://shop_images/1-02_1.jpg",
+        "height": "square",
+        "overlay_opacity": 0,
+        "logo_width": 75,
+        "add_text": "",
+        "author_color_scheme": "background-3",
+        "icon_size": "recommended",
+        "box_shadow": false,
+        "icon_style": "colored",
+        "show_button": false,
+        "button_label": "Button label",
+        "button_link": "",
+        "button_style": "primary",
+        "show_button_2": false,
+        "button_label_2": "Button label",
+        "button_link_2": "",
+        "button_style_2": "simple",
+        "padding_top": "m",
+        "padding_bottom": "m",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_banner_tkfLHJ": {
+      "type": "image-banner",
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "full_width": true,
+        "color_scheme": "",
+        "image": "shopify://shop_images/1-07_8ed07d64-4bbf-4a6c-9624-f37f0e344e53.jpg",
+        "image_mobile": "shopify://shop_images/1-07_8ed07d64-4bbf-4a6c-9624-f37f0e344e53.jpg",
+        "image_ratio": "adapt",
+        "image_link": "",
+        "opacity_overlay": 0,
+        "icon": "none",
+        "icon_color_scheme": "",
+        "icon_size": "large",
+        "icon_style": "colored",
+        "icon_fill_type": "gradient",
+        "box_shadow": false,
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "heading": "",
+        "heading_size": "h2",
+        "heading_level": "h2",
+        "text_information": "",
+        "text_align": "left",
+        "text_width": "small",
+        "show_view_all": false,
+        "button_label": "Shop now",
+        "button_style": "primary",
+        "button_link": "",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_banner_mpaVqU": {
+      "type": "image-banner",
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "full_width": true,
+        "color_scheme": "",
+        "image": "shopify://shop_images/1-03_7aeb198e-c7fc-4559-a118-a937c057890d.jpg",
+        "image_mobile": "shopify://shop_images/1-03_7aeb198e-c7fc-4559-a118-a937c057890d.jpg",
+        "image_ratio": "adapt",
+        "image_link": "",
+        "opacity_overlay": 0,
+        "icon": "none",
+        "icon_color_scheme": "",
+        "icon_size": "large",
+        "icon_style": "colored",
+        "icon_fill_type": "gradient",
+        "box_shadow": false,
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "heading": "",
+        "heading_size": "h2",
+        "heading_level": "h2",
+        "text_information": "",
+        "text_align": "left",
+        "text_width": "small",
+        "show_view_all": false,
+        "button_label": "Shop now",
+        "button_style": "primary",
+        "button_link": "",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "multicolumn_iKxpdi": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_yqcK9R": {
+          "type": "column",
+          "settings": {
+            "icon": "none",
+            "icon_color_scheme": "background-1",
+            "icon_fill_type": "gradient",
+            "image": "shopify://shop_images/icon_Hassle_3840x_b1bf805a-0571-4fe3-a528-1a85443c5c8d.jpg",
+            "heading": "Partnership Proposal",
+            "text": "",
+            "show_button": true,
+            "button_label": "View More",
+            "button_link": "https://cdn.shopify.com/s/files/1/0658/8963/2410/files/PetPhone_Influencer_KOL_Partnership_Proposal.pdf?v=1761644135",
+            "button_style": "simple"
+          }
+        },
+        "column_CQTgbN": {
+          "type": "column",
+          "settings": {
+            "icon": "none",
+            "icon_color_scheme": "",
+            "icon_fill_type": "gradient",
+            "image": "shopify://shop_images/icon_Back_Guarantee_3840x_098150c1-3808-455a-bc45-f15d6bc3ab5c.jpg",
+            "heading": "Business Commission Proposal",
+            "text": "",
+            "show_button": true,
+            "button_label": "View More",
+            "button_link": "https://cdn.shopify.com/s/files/1/0658/8963/2410/files/PetPhone_Diversified_Business_Commission_Proposal.pdf?v=1761644135",
+            "button_style": "simple"
+          }
+        }
+      },
+      "block_order": [
+        "column_yqcK9R",
+        "column_CQTgbN"
+      ],
+      "disabled": true,
+      "custom_css": [],
+      "name": "t:sections.multicolumn.name",
+      "settings": {
+        "section_type": "separators",
+        "color_scheme": "scheme-2c247732-f527-4f63-99fd-72efcb82538d",
+        "enable_border": false,
+        "border_full": true,
+        "multicolumn_to_show": 2,
+        "gap": "medium",
+        "enable_mobile_overflow_slider": true,
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "subheading_icon": "none",
+        "heading": "Download Official Partnership Proposal",
+        "heading_size": "h2",
+        "heading_level": "h1",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "rolling",
+        "word_break_an": false,
+        "text": "This proposal authorizes to promote Petphone’s smart gadgets via social media with defined deliverables, timelines, and compensation.",
+        "text_align": "left",
+        "icon_size": "recommended",
+        "box_shadow": true,
+        "icon_style": "colored",
+        "image_width": "small",
+        "image_ratio": "square",
+        "object_fit": "cover",
+        "card_heading_size": "h5",
+        "padding_top": "m",
+        "padding_bottom": "m",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "multicolumn_GwJMXJ": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_fnD6QN": {
+          "type": "column",
+          "settings": {
+            "icon": "none",
+            "icon_color_scheme": "",
+            "icon_fill_type": "gradient",
+            "image": "shopify://shop_images/WPS_1.png",
+            "heading": "IFA Innovatoin Awards",
+            "text": "Honoree",
+            "show_button": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        },
+        "column_eibPhe": {
+          "type": "column",
+          "settings": {
+            "icon": "none",
+            "icon_color_scheme": "",
+            "icon_fill_type": "gradient",
+            "image": "shopify://shop_images/WPS_2.png",
+            "heading": "Yanko Design",
+            "text": "The Best of IFA2025",
+            "show_button": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        },
+        "column_68VUhC": {
+          "type": "column",
+          "settings": {
+            "icon": "none",
+            "icon_color_scheme": "",
+            "icon_fill_type": "gradient",
+            "image": "shopify://shop_images/WPS_4.png",
+            "heading": "ME Review",
+            "text": "The Best of IFA2025",
+            "show_button": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        },
+        "column_MizbbC": {
+          "type": "column",
+          "settings": {
+            "icon": "none",
+            "icon_color_scheme": "",
+            "icon_fill_type": "gradient",
+            "image": "shopify://shop_images/WPS_3.png",
+            "heading": "Annual Rising Star Pet Brand",
+            "text": "Award of PFA2025",
+            "show_button": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        }
+      },
+      "block_order": [
+        "column_fnD6QN",
+        "column_eibPhe",
+        "column_68VUhC",
+        "column_MizbbC"
+      ],
+      "name": "t:sections.multicolumn.name",
+      "settings": {
+        "section_type": "separators",
+        "color_scheme": "scheme-2c247732-f527-4f63-99fd-72efcb82538d",
+        "enable_border": false,
+        "border_full": false,
+        "multicolumn_to_show": 4,
+        "gap": "small",
+        "enable_mobile_overflow_slider": false,
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "subheading_icon": "none",
+        "heading": "<strong>PetPhone - Awards’Summary</strong>",
+        "heading_size": "h2",
+        "heading_level": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "left",
+        "icon_size": "recommended",
+        "box_shadow": true,
+        "icon_style": "colored",
+        "image_width": "full-width",
+        "image_ratio": "landscape",
+        "object_fit": "cover",
+        "card_heading_size": "h4",
+        "padding_top": "m",
+        "padding_bottom": "m",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "17600781631909bca6": {
+      "type": "apps",
+      "blocks": {
+        "powerful_form_builder_app_block_iNdCwp": {
+          "type": "shopify://apps/powerful-form-builder/blocks/app-block/e4bcb1eb-35b2-42e6-bc37-bfe0e1542c9d",
+          "settings": {
+            "shortcode": "<div class=\"globo-formbuilder\" data-id=\"MTEzMjM0\"></div>"
+          }
+        }
+      },
+      "block_order": [
+        "powerful_form_builder_app_block_iNdCwp"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_banner_KHyjhK",
+    "image_with_text_T8UqmD",
+    "image_banner_tkfLHJ",
+    "image_banner_mpaVqU",
+    "multicolumn_iKxpdi",
+    "multicolumn_GwJMXJ",
+    "17600781631909bca6"
+  ]
+}

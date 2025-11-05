@@ -1,0 +1,66 @@
+@keyframes pulse {
+  0% {
+    transform: scale(0.33);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.marker-number {
+  position: absolute;
+  width: 3.3rem;
+  height: 3.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: rgb(var(--color-accent));
+  z-index: 2;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.marker-number::before {
+  content: '';
+  position: absolute;
+  left: -22.5%;
+  right: 22.5%;
+  top: -22.5%;
+  bottom: -22.5%;
+  display: block;
+  width: 145%;
+  height: 145%;
+  box-sizing: border-box;
+  border-radius: 50%;
+  background-color: rgba(var(--color-accent));
+  animation: pulse 1.25s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+  transition: background-color var(--duration-default);
+  z-index: 2;
+}
+
+.marker-content {
+  position: absolute;
+  display: none;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 68%;
+  padding: 0.6rem;
+  font-weight: var(--font-heading-weight);
+  z-index: 1;
+}
+
+.marker-content__inner {
+  border-radius: 1.2rem;
+  background-color: rgb(var(--color-foreground), 0.12);
+}
+
+.marker-number:hover + .marker-content,
+.marker-number:active + .marker-content,
+.marker-content:hover {
+  display: block;
+}
+
+.marker-content .card-horizontal__image {
+  width: 30%;
+}

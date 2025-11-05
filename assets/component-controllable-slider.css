@@ -1,0 +1,51 @@
+.container .controllable-slider .swiper-slide {
+  border-radius: 1.2rem;
+  overflow: hidden;
+}
+
+.controllable-slider .swiper-pagination {
+  margin-top: 2rem;
+}
+
+.controllable-slider__tabs .controllable-slider__tabs-item {
+  border: 1px solid rgb(var(--color-foreground));
+  cursor: pointer;
+  padding: 0.8rem 1rem;
+  border-radius: 0.4rem;
+  text-align: center;
+  border-radius: 2rem;
+  transition: all 0.3s;
+}
+
+.controllable-slider__tabs .controllable-slider__tabs-item.active {
+  color: rgb(var(--color-background));
+  background-color: rgb(var(--color-foreground));
+}
+
+@media (min-width: 767px) {
+  .controllable-slider__tabs {
+    position: absolute;
+    top: 4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    gap: 2rem;
+  }
+
+  .controllable-slider__tabs .controllable-slider__tabs-item {
+    min-width: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .controllable-slider__tabs {
+    margin-top: 2.8rem;
+    flex-direction: column-reverse;
+    gap: 1.4rem;
+  }
+
+  .controllable-slider__tabs .controllable-slider__tabs-item {
+    width: 20rem;
+    max-width: 100%;
+  }
+}

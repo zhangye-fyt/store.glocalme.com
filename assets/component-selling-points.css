@@ -1,0 +1,55 @@
+.selling-points__wrapper {
+  padding: 4rem 1rem;
+}
+
+.container .selling-points__wrapper,
+.selling-points__point-media {
+  border-radius: 1.2rem;
+  overflow: hidden;
+}
+
+.selling-points__title h2 {
+  margin: 0 0 1rem;
+  --font-body-scale: 1.8;
+}
+
+.selling-points__points {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.selling-points__point-text {
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.selling-points__note {
+  margin-top: 0.8rem;
+  color: rgb(var(--color-foreground-secondary));
+}
+
+@media (min-width: 767px) {
+  .selling-points__wrapper {
+    padding: 8rem 0;
+  }
+
+  .selling-points__title h2 {
+    margin: 0 0 2.4rem;
+    --font-body-scale: 2.8;
+  }
+
+  .selling-points__points {
+    gap: 3rem;
+  }
+
+  .selling-points__point-text {
+    margin-bottom: 1.4rem;
+    --font-body-scale: 1.8;
+  }
+
+  .selling-points__note {
+    margin-top: 1.6rem;
+    --font-body-scale: 1.4;
+  }
+}

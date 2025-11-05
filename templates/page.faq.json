@@ -1,0 +1,213 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": "no-indent",
+        "padding_bottom": "m"
+      }
+    },
+    "collapsible_content_pD9WDT": {
+      "type": "collapsible-content",
+      "blocks": {
+        "accordion_i63wzj": {
+          "type": "accordion",
+          "settings": {
+            "question": "How can I pay for my order and is the payment environment secure?",
+            "answer": "<p>We accept multiple payments including Visa, MasterCard, American Express, Discover, JCB cards and PayPal. GlocalMe uses the secure system, which ensures the entire payment process is fully secure. Protection of your personal and financial data is guaranteed.</p>",
+            "opened": false
+          }
+        },
+        "accordion_BmJbMr": {
+          "type": "accordion",
+          "settings": {
+            "question": "How long does it take for me to receive my GlocalMe hotspot device?",
+            "answer": "<p>This depends on the delivery method you choose and the country where you want your GlocalMe device shipped. Tracked & trace delivery: 2 – 14 days Express delivery: 1- 5 days</p><p>The shipping time depends on the country of delivery. You will find precise information about shipping time on the checkout page. </p>",
+            "opened": false
+          }
+        },
+        "accordion_WDzjV9": {
+          "type": "accordion",
+          "settings": {
+            "question": "What are the shipping costs for GlocalMe device?",
+            "answer": "<p>We are happy to offer </p><p>a. FREE ground shipping (5-8 business days) via USPS, </p><p>b. Express Shipping (3-5 business days for USD 9.90) </p><p>c. Next Day Shipping (1-2 business days for USD 29.90) </p><p>for all US domestic orders. For order outside the US, the shipping time depends on the country of delivery. You will find precise information about shipping charges and time on the checkout page.</p>",
+            "opened": false
+          }
+        },
+        "accordion_VRKit7": {
+          "type": "accordion",
+          "settings": {
+            "question": "Who is responsible for the custom duty and import tax?",
+            "answer": "<p>Please note that international orders may be subject to customs import duties, tax charges, customs clearance fees once the devices reach your destination country outside of the US. We do not cover this cost so you will be responsible for paying any import charges that may be added.</p>",
+            "opened": false
+          }
+        },
+        "accordion_78LiyN": {
+          "type": "accordion",
+          "settings": {
+            "question": "Can I return my GlocalMe device?",
+            "answer": "<p>Our return policy is simple, you can return the device(s) you bought within 30 days of product dispatch following the below guidelines. If your GlocalMe portable device is within the warranty period, please contact your purchase channel. If your GlocalMe is out of warranty, or for further assistance kindly email support@glocalme.com with your order number.</p><p>Before returning the device, please note the following problems can be solved by a simple restarting your GlocalMe hotspot.</p><p>· Data failed to synchronize with APP</p><p>· Fail to respond to actions</p><p>· Charged device cannot be switched on</p><p>· Fail to connect</p><p>· Unsatisfactory network</p><p>Return Process</p><p>Simply follow these instructions. Please note, the GlocalMe portable device must be damage free and returned in perfect condition.</p><p>· Wrap the return item(s) in the original packing.</p><p>· Enclose a copy of (or original) receipt.</p><p>· Return via your preferred shipping method.</p><p>· Please allow 10 business days for the credit to be reflected in your account after we confirm receipt of your returns.</p>",
+            "opened": false
+          }
+        },
+        "accordion_9Wrn34": {
+          "type": "accordion",
+          "settings": {
+            "question": "What are the terms of guarantee for my GlocalMe hotspot device?",
+            "answer": "<p>GlocalMe mobile hotspots purchased directly from us have a 1-year guarantee from date of purchase. </p><p>If your travel hotspot device is defective within the guarantee period, please contact our customer service team.</p><p>Tel: +1 (877) 715-9177 (Monday – Friday 10 AM – 5 PM EST)</p><p>Purchase Inquiry: support@glocalme.com</p><p>Skype ID: uCloudlink Hong Kong</p><p>24/7 Technical Support.</p>",
+            "opened": false
+          }
+        }
+      },
+      "block_order": [
+        "accordion_i63wzj",
+        "accordion_BmJbMr",
+        "accordion_WDzjV9",
+        "accordion_VRKit7",
+        "accordion_78LiyN",
+        "accordion_9Wrn34"
+      ],
+      "settings": {
+        "layout": "background",
+        "color_scheme": "background-2",
+        "enable_border": false,
+        "border_full": false,
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "subheading_icon": "none",
+        "heading": "Orders and Delivery",
+        "heading_size": "h3",
+        "heading_level": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566E0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "center",
+        "row_color_scheme": "",
+        "padding_top": "l",
+        "padding_bottom": "l",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "collapsible_content_FiMCaB": {
+      "type": "collapsible-content",
+      "blocks": {
+        "accordion_eMDaAM": {
+          "type": "accordion",
+          "settings": {
+            "question": "How to rent a GlocalMe WiFi",
+            "answer": "<ol><li>Enter your destinations and choose your preferred data plan.</li><li>Choose your activation start date and end date. The activation start date is when you want your WiFi service to start. For example, if you’re traveling to Europe, and you want to have WiFi from the day you land, you pick that day to be your activation day. Please note device activation time follows Eastern Standard Time.</li><li>Choose a shipping method and leave enough time for delivery.</li><li>Make the payment.</li><li>An order confirmation will be sent to your email once we receive your order.</li></ol>",
+            "opened": false
+          }
+        },
+        "accordion_w6fRKJ": {
+          "type": "accordion",
+          "settings": {
+            "question": "How to use the WiFi",
+            "answer": "<ol><li>Charge the device before using.</li><li>Power on the device and wait for around 1 min. If the device is activating with data plan, it will automatically locates a mobile network to connect.</li><li>Find the WiFi hotspot name and password located on the back of the device.</li><li>Select the WiFi hotspot name from your networks and connect.</li></ol>",
+            "opened": false
+          }
+        },
+        "accordion_3FFQei": {
+          "type": "accordion",
+          "settings": {
+            "question": "Rental Activation Date",
+            "answer": "<p>Is the activation date when I start using the device or the date I would receive my device?</p><p>Activation date is when you want your WiFi service to start. We will deliver your order ahead of your trip.</p><p>If you need the device earlier, please contact us to expedite your shipment.</p>",
+            "opened": false
+          }
+        },
+        "accordion_WcENig": {
+          "type": "accordion",
+          "settings": {
+            "question": "Travel for an Extended Period",
+            "answer": "<p>I am travelling for an extended period. Am I able to use this device for 2 months?</p><p>We recommend purchasing a WiFi instead of renting one in this case. It will save you more with more flexible data plans. Shop <a href=\"/collections/portable-wifi\" target=\"_blank\" title=\"Portable Wifi\">HERE</a>.</p><p>If you prefer to rent, please contact us directly at support@glocalme.com or call us at +1 (877) 715-9177.</p>",
+            "opened": false
+          }
+        },
+        "accordion_Cy3Jzi": {
+          "type": "accordion",
+          "settings": {
+            "question": "What if the order arrives after I have left for my destination?",
+            "answer": "<p>We apologize for the inconvenience. We do our best to make sure you receive the device before leaving for your trip. However, if for any reason, you don’t receive the device, we will issue you a refund.</p>",
+            "opened": false
+          }
+        },
+        "accordion_VRPURW": {
+          "type": "accordion",
+          "settings": {
+            "question": "Can I change the shipping address or other information for my order?",
+            "answer": "<p>We will be happy to change the shipping address, or extend the rental period for your order! </p><p>Please email our customer care team (support@glocalme.com) with your order number and the updated information ASAP, as we are only able to make changes to your order when it has not yet been shipped.</p>",
+            "opened": false
+          }
+        },
+        "accordion_QMXVNt": {
+          "type": "accordion",
+          "settings": {
+            "question": "How can I return the device?",
+            "answer": "<p>Please contact us (E: support@glocalme.com , T: +1 (877) 715-9177 for a return label after</p><p>your rental day come to the end.  And then attach the return label to a box containing the device</p><p>and drop off at any US post offices within 2 business days after the end date of your order.</p><p>Alternatively, if you choose not to use the label offered, please ship your return prepaid and insured to:</p><p><strong>GlocalMe Returns</strong></p><p><strong> 47-15 160th street FL2, Flushing, NY 11358</strong></p>",
+            "opened": false
+          }
+        },
+        "accordion_yrDb8x": {
+          "type": "accordion",
+          "settings": {
+            "question": "What devices does it work with?",
+            "answer": "<p>Any Wi-Fi enabled device, such as smartphones, laptops and tablets, will work with our  WiFi hotspot device. Up to 10 devices may be connected simultaneously.</p>",
+            "opened": false
+          }
+        }
+      },
+      "block_order": [
+        "accordion_eMDaAM",
+        "accordion_w6fRKJ",
+        "accordion_3FFQei",
+        "accordion_WcENig",
+        "accordion_Cy3Jzi",
+        "accordion_VRPURW",
+        "accordion_QMXVNt",
+        "accordion_yrDb8x"
+      ],
+      "settings": {
+        "layout": "background",
+        "color_scheme": "background-2",
+        "enable_border": false,
+        "border_full": false,
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "subheading_icon": "none",
+        "heading": "Rental Service",
+        "heading_size": "h3",
+        "heading_level": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566E0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "center",
+        "row_color_scheme": "",
+        "padding_top": "l",
+        "padding_bottom": "l",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "collapsible_content_pD9WDT",
+    "collapsible_content_FiMCaB"
+  ]
+}

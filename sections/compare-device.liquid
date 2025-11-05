@@ -1,0 +1,279 @@
+{{ 'component-compare-device.css' | asset_url | stylesheet_tag }}
+
+<script src="{{ 'compare-device.js' | asset_url }}" defer="defer"></script>
+
+{%- style -%}
+  {% render 'section-padding' %}
+  {% render 'section-margin' %}
+
+  {%- if section.settings.display_devices == 'desktop' -%}
+    #CompareDevice-{{ section.id }} {
+      display: none;
+    }
+    @media screen and (min-width: 750px) {
+      #CompareDevice-{{ section.id }} {
+        display: block;
+      }
+    }
+  {%- elsif section.settings.display_devices == 'mobile' -%}
+    @media screen and (min-width: 750px) {
+      #CompareDevice-{{ section.id }} {
+        display: none;
+      }
+    }
+  {%- endif -%}
+{%- endstyle -%}
+
+<div id="CompareDevice-{{ section.id }}" class="compare-device section-{{ section.id }}-padding">
+  <div class="container">
+    <compare-device>
+      <div class="compare-device__container">
+        <swiper-component
+          class="compare-device__swiper relative"
+          data-options='{"slidesPerView":2,"spaceBetween":15}'
+          data-pagination="true"
+        >
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              {% for compare_device in section.settings.compare_device_group.compare_device.value %}
+                <div class="swiper-slide">
+                  <div class="compare-device__item text-center">
+                    <div class="compare-device__item-surface">
+                      <div class="compare-device__item-title">
+                        {%- if compare_device.title != blank -%}
+                          {{ compare_device.title }}
+                        {%- else -%}
+                          {{ compare_device.product.value.title }}
+                        {%- endif -%}
+                      </div>
+                      <div class="compare-device__item-media">
+                        {%- liquid
+                          assign image = compare_device.product.value.featured_media
+                          if compare_device.image
+                            assign image = compare_device.image
+                          endif
+                        %}
+                        {{
+                          image
+                          | image_url: width: image.width
+                          | image_tag:
+                            loading: 'lazy',
+                            sizes: '(min-width: 1100px) 750, (min-width: 750px) 550, 275',
+                            widths: '275, 550, 750',
+                            width: image.width,
+                            height: image.height,
+                            class: 'w-full h-auto'
+                        }}
+                      </div>
+                      <div class="compare-device__item-description">
+                        {% for description in compare_device.description.value %}
+                          <p>{{ description }}</p>
+                        {% endfor %}
+                      </div>
+                      <a class="compare-device__item-link body-small" href="{{ compare_device.product.value.url }}">
+                        {{ 'products.product.view_more' | t }}
+                      </a>
+                    </div>
+                    <div class="compare-device__item-back">
+                      <div class="compare-device__item-back-inner">
+                        <ul class="list-unstyled">
+                          {% for parameters in compare_device.parameters.value %}
+                            {%- liquid
+                              assign split_param = parameters | split: ':'
+                              assign key = split_param[0]
+                              assign value = split_param[1]
+                            %}
+                            <li>
+                              <strong>{{ key }}</strong>
+                              <p>{{ value }}</p>
+                            </li>
+                          {% endfor %}
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </swiper-component>
+      </div>
+    </compare-device>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.compare-device.name",
+  "class": "section-compare-device spaced-section",
+  "enabled_on": {
+    "templates": ["product"]
+  },
+  "settings": [
+    {
+      "type": "select",
+      "id": "display_devices",
+      "label": "t:sections.all.display_devices.label",
+      "options": [
+        {
+          "value": "desktop",
+          "label": "t:sections.all.display_devices.options__1.label"
+        },
+        {
+          "value": "mobile",
+          "label": "t:sections.all.display_devices.options__2.label"
+        }
+      ],
+      "default": "desktop"
+    },
+    {
+      "type": "metaobject",
+      "id": "compare_device_group",
+      "label": "t:sections.compare-device.settings.compare_device_group.label",
+      "metaobject_type": "compare_device_group"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.section-padding.header.content"
+    },
+    {
+      "type": "select",
+      "id": "padding_top",
+      "options": [
+        {
+          "value": "no-indent",
+          "label": "t:sections.all.section-padding.options__1.label"
+        },
+        {
+          "value": "xs",
+          "label": "t:sections.all.section-padding.options__2.label"
+        },
+        {
+          "value": "s",
+          "label": "t:sections.all.section-padding.options__3.label"
+        },
+        {
+          "value": "m",
+          "label": "t:sections.all.section-padding.options__4.label"
+        },
+        {
+          "value": "l",
+          "label": "t:sections.all.section-padding.options__5.label"
+        },
+        {
+          "value": "xl",
+          "label": "t:sections.all.section-padding.options__6.label"
+        }
+      ],
+      "default": "l",
+      "label": "t:sections.all.section-padding.padding_top.label"
+    },
+    {
+      "type": "select",
+      "id": "padding_bottom",
+      "options": [
+        {
+          "value": "no-indent",
+          "label": "t:sections.all.section-padding.options__1.label"
+        },
+        {
+          "value": "xs",
+          "label": "t:sections.all.section-padding.options__2.label"
+        },
+        {
+          "value": "s",
+          "label": "t:sections.all.section-padding.options__3.label"
+        },
+        {
+          "value": "m",
+          "label": "t:sections.all.section-padding.options__4.label"
+        },
+        {
+          "value": "l",
+          "label": "t:sections.all.section-padding.options__5.label"
+        },
+        {
+          "value": "xl",
+          "label": "t:sections.all.section-padding.options__6.label"
+        }
+      ],
+      "default": "l",
+      "label": "t:sections.all.section-padding.padding_bottom.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.section-margin.header.content"
+    },
+    {
+      "type": "select",
+      "id": "margin_top",
+      "options": [
+        {
+          "value": "no-indent",
+          "label": "t:sections.all.section-margin.options__1.label"
+        },
+        {
+          "value": "xs",
+          "label": "t:sections.all.section-margin.options__2.label"
+        },
+        {
+          "value": "s",
+          "label": "t:sections.all.section-margin.options__3.label"
+        },
+        {
+          "value": "m",
+          "label": "t:sections.all.section-margin.options__4.label"
+        },
+        {
+          "value": "l",
+          "label": "t:sections.all.section-margin.options__5.label"
+        },
+        {
+          "value": "xl",
+          "label": "t:sections.all.section-margin.options__6.label"
+        }
+      ],
+      "default": "no-indent",
+      "label": "t:sections.all.section-margin.margin_top.label"
+    },
+    {
+      "type": "select",
+      "id": "margin_bottom",
+      "options": [
+        {
+          "value": "no-indent",
+          "label": "t:sections.all.section-margin.options__1.label"
+        },
+        {
+          "value": "xs",
+          "label": "t:sections.all.section-margin.options__2.label"
+        },
+        {
+          "value": "s",
+          "label": "t:sections.all.section-margin.options__3.label"
+        },
+        {
+          "value": "m",
+          "label": "t:sections.all.section-margin.options__4.label"
+        },
+        {
+          "value": "l",
+          "label": "t:sections.all.section-margin.options__5.label"
+        },
+        {
+          "value": "xl",
+          "label": "t:sections.all.section-margin.options__6.label"
+        }
+      ],
+      "default": "no-indent",
+      "label": "t:sections.all.section-margin.margin_bottom.label"
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.compare-device.presets.name"
+    }
+  ]
+}
+{% endschema %}

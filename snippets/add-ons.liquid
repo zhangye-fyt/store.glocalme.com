@@ -1,0 +1,145 @@
+{%- liquid
+  assign product_collections_handles = ''
+  for collection_item in product.collections
+    if forloop.last
+      assign product_collections_handles = product_collections_handles | append: collection_item.handle
+    else
+      assign product_collections_handles = product_collections_handles | append: collection_item.handle | append: ';'
+    endif
+  endfor
+
+  assign target_data = null
+  for data_item in settings.add_ons_data
+    for tag_item in data_item.for_which_tags.value
+      if product.tags contains tag_item
+        if target_data == blank or target_data.priority == blank or target_data.priority < data_item.priority
+          assign target_data = data_item
+        endif
+      endif
+    endfor
+
+    for collection_item in data_item.for_which_collections.value
+      if product_collections_handles contains collection_item.handle
+        if target_data == blank or target_data.priority == blank or target_data.priority < data_item.priority
+          assign target_data = data_item
+        endif
+      endif
+    endfor
+  endfor
+-%}
+
+{%- if target_data != null -%}
+  {{ 'component-add-ons.css' | asset_url | stylesheet_tag }}
+
+  <script src="{{ 'add-ons.js' | asset_url }}" defer="defer"></script>
+
+  {% liquid
+    assign selected_product = null
+    assign products_count = 0
+    for product_item in target_data.products.value
+      if forloop.first
+        assign selected_product = product_item
+      endif
+      assign products_count = products_count | plus: 1
+    endfor
+  %}
+
+  <div class="product__add-ons">
+    <add-ons
+      data-variant-id="{{ selected_product.selected_or_first_available_variant.id }}"
+      data-products-count="{{ products_count }}"
+    >
+      <div class="add-ons cursor-pointer">
+        <div class="add-ons__title subtitle">
+          {{ settings.add_ons_title }}
+        </div>
+        <div class="add-ons__content">
+          <div class="add-ons__content-top">
+            <div class="add-ons__dropdown">
+              {%- if products_count > 1 -%}
+                <dropdown-component class="dropdown add-ons-dropdown">
+                  <input class="dropdown__input" id="add-ons-value" type="text" placeholder hidden>
+                  <label for="add-ons-value" hidden>{{ 'snippets.add_ons.add_ons' | t }}</label>
+
+                  <div class="add-ons__selected flex items-center">
+                    <div class="add-ons__selected-product flex-1">
+                      {% render 'add-ons-product', product_item: selected_product, has_variants: true %}
+                    </div>
+                    <div class="add-ons__selected-quantity">
+                      <span class="body-small">×1</span>
+                    </div>
+                    {% render 'icon-caret' %}
+                  </div>
+
+                  <ul class="dropdown__list">
+                    {%- for product_item in target_data.products.value -%}
+                      <li
+                        class="dropdown__item"
+                        data-value="{{ product_item.selected_or_first_available_variant.id }}"
+                        data-param="{{ product_item.selected_or_first_available_variant.id }}"
+                        data-variant-count="{{ product_item.variants_count }}"
+                      >
+                        {% render 'add-ons-product', product_item: product_item %}
+                        <script type="text/html" data-type="product">
+                          {% render 'add-ons-product', product_item: product_item, has_variants: true %}
+                        </script>
+                        <script type="text/html" data-type="price">
+                          {%- if target_data.discount_amount != blank or target_data.discount_percentage != blank -%}
+                            {% render 'estimated-discount-price',
+                              product: product_item,
+                              use_calculated_price: true,
+                              discount_amount: target_data.discount_amount.value,
+                              discount_percentage: target_data.discount_percentage.value
+                            %}
+                          {%- else -%}
+                            {% render 'price', product: product_item, use_variant: true %}
+                          {%- endif -%}
+                        </script>
+                      </li>
+                    {%- endfor -%}
+                  </ul>
+                </dropdown-component>
+              {%- else -%}
+                <div class="add-ons__selected flex items-center">
+                  <div class="add-ons__selected-product flex-1">
+                    {% render 'add-ons-product', product_item: selected_product %}
+                  </div>
+                </div>
+              {%- endif -%}
+            </div>
+            {%- if target_data.description != blank -%}
+              <div class="add-ons__descrption">
+                {{ target_data.description | metafield_tag }}
+              </div>
+            {%- endif -%}
+          </div>
+          <div class="add-ons__bottom">
+            <div class="add-ons__price flex items-center body-large">
+              {%- if target_data.discount_amount != blank or target_data.discount_percentage != blank -%}
+                {% render 'estimated-discount-price',
+                  product: selected_product,
+                  use_calculated_price: true,
+                  discount_amount: target_data.discount_amount.value,
+                  discount_percentage: target_data.discount_percentage.value
+                %}
+              {%- else -%}
+                {% render 'price', product: selected_product, use_variant: true %}
+              {%- endif -%}
+            </div>
+            <div class="add-ons__buttons flex">
+              <button class="button button--secondary flex-1" data-type="add-to-cart">
+                {{ 'products.product.add_to_cart' | t }}
+              </button>
+              <button
+                class="button button--primary flex-1{% if selected_product.variants_count > 1 %} hidden{% endif %}"
+                data-type="buy-now"
+              >
+                {{ 'products.product.buy_now' | t }}
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </add-ons>
+  </div>
+{%- endif -%}

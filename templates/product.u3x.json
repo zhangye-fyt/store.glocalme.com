@@ -1,0 +1,1517 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ product.vendor }}"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h3"
+          }
+        },
+        "judge_me_reviews_preview_badge_9eXC3K": {
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "description": ""
+          }
+        },
+        "custom_liquid_iqtk84": {
+          "type": "custom_liquid",
+          "disabled": true,
+          "settings": {
+            "custom_liquid": "{%- style -%}\n  .product-coupon-container {\n    margin: 20px 0;\n    font-family: inherit;\n  }\n  \n  .coupon-card {\n    background: linear-gradient(135deg, #e3b337 0%, #f4e6cb 100%);\n    border-radius: 10px;\n    border: 1px dashed #d1d5db;\n    padding: 15px;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    text-align: center;\n    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);\n    position: relative;\n    overflow: hidden;\n  }\n  \n  .coupon-card::before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    background: radial-gradient(circle at 10% 20%, rgba(255,255,255,0.3) 0%, transparent 20%);\n    pointer-events: none;\n  }\n  \n  .coupon-title {\n    font-size: 24px;\n    font-weight: 600;\n    color: #1f2937;\n    margin-bottom: 8px;\n  }\n  \n  .coupon-description {\n    font-size: 18px;\n    color: #97520c;\n    margin-bottom: 12px;\n    line-height: 1.4;\n  }\n  \n  .coupon-code-container {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    width: 100%;\n    margin-bottom: 10px;\n  }\n  \n  .coupon-code {\n    font-size: 20px;\n    font-weight: 700;\n    letter-spacing: 1px;\n    color: #97520c;\n    background-color: white;\n    padding: 8px 15px;\n    border-radius: 6px;\n    border: 1px solid #d1d5db;\n    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);\n    flex-grow: 1;\n    text-align: center;\n    max-width: 70%;\n    word-break: break-all;\n  }\n  \n  .copy-btn {\n    background-color: #3b82f6;\n    color: white;\n    border: none;\n    padding: 8px 12px;\n    border-radius: 6px;\n    margin-left: 8px;\n    font-size: 14px;\n    font-weight: 500;\n    cursor: pointer;\n    transition: background-color 0.2s;\n  }\n  \n  .copy-btn:hover {\n    background-color: #2563eb;\n  }\n  \n  .coupon-terms {\n    font-size: 12px;\n    color: #6b7280;\n    margin-top: 8px;\n  }\n  \n  /* 移动端适配 */\n  @media screen and (max-width: 749px) {\n    .coupon-card {\n      padding: 12px;\n    }\n    \n    .coupon-title {\n      font-size: 15px;\n    }\n    \n    .coupon-description {\n      font-size: 13px;\n    }\n    \n    .coupon-code {\n      font-size: 16px;\n      padding: 6px 12px;\n    }\n    \n    .copy-btn {\n      padding: 6px 10px;\n      font-size: 13px;\n    }\n  }\n{%- endstyle -%}\n\n{%- comment -%}\n  在这里设置你的优惠码和活动信息\n  你可以为不同产品设置不同的优惠码，或者使用相同的优惠码\n{%- endcomment -%}\n\n{%- assign current_product_handle = product.handle -%}\n\n{%- comment -%} 示例：根据产品handle设置不同的优惠码 {%- endcomment -%}\n{%- if current_product_handle == 'product-1-handle' -%}\n  {%- assign coupon_code = 'SUMMER20' -%}\n  {%- assign coupon_title = '夏季特惠' -%}\n  {%- assign coupon_description = '限时享受20%折扣，仅限本产品使用' -%}\n  {%- assign coupon_terms = '有效期至2023年8月31日，不可与其他优惠同时使用' -%}\n{%- elsif current_product_handle == 'product-2-handle' -%}\n  {%- assign coupon_code = 'FALL15' -%}\n  {%- assign coupon_title = '秋季促销' -%}\n  {%- assign coupon_description = '享受15%折扣，专为本产品定制' -%}\n  {%- assign coupon_terms = '有效期至2023年9月30日' -%}\n{%- else -%}\n  {%- assign coupon_code = 'CODE: PD15' -%}\n  {%- assign coupon_title = 'Prime Day sale is on!' -%}\n  {%- assign coupon_description = '15% OFF SITEWIDE' -%}\n  {%- assign coupon_terms = '' -%}\n{%- endif -%}\n\n{%- if coupon_code -%}\n<div class=\"product-coupon-container\">\n  <div class=\"coupon-card\">\n    <h3 class=\"coupon-title\">{{ coupon_title }}</h3>\n    <p class=\"coupon-description\">{{ coupon_description }}</p>\n    \n    <div class=\"coupon-code-container\">\n      <span class=\"coupon-code\" id=\"couponCode\">{{ coupon_code }}</span>\n     \n    </div>\n    \n    <p class=\"coupon-terms\">{{ coupon_terms }}</p>\n  </div>\n</div>\n\n\n{%- endif -%}"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "inventory_ybzDtw": {
+          "type": "inventory",
+          "settings": {}
+        },
+        "gift": {
+          "type": "gift",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_quantity": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "add_ons": {
+          "type": "add_ons",
+          "settings": {}
+        },
+        "country_checker_xTLpPb": {
+          "type": "country_checker",
+          "settings": {}
+        },
+        "popup_nzDhX7": {
+          "type": "popup",
+          "settings": {
+            "label": "Compare Hotspot Device",
+            "heading": "",
+            "text": "",
+            "image": "shopify://shop_images/0702.jpg",
+            "page": ""
+          }
+        },
+        "popup_qAb4cQ": {
+          "type": "popup",
+          "settings": {
+            "label": "Supported Languages",
+            "heading": "",
+            "text": "",
+            "image": "shopify://shop_images/U40_1.jpg",
+            "image_mobile": "shopify://shop_images/glocalme_1.jpg",
+            "page": ""
+          }
+        },
+        "dropdown_information_C7AB9r": {
+          "type": "dropdown_information",
+          "settings": {
+            "characteristics": false,
+            "heading": "User Manual",
+            "description": "<h6><a href=\"https://cdn.shopify.com/s/files/1/0658/8963/2410/files/U3X.pdf?v=1745475415\" target=\"_blank\" title=\"https://cdn.shopify.com/s/files/1/0658/8963/2410/files/U3X.pdf?v=1745475415\">DuoTurbo </a></h6>",
+            "button_show": false,
+            "button_label": "Button label",
+            "button_link": "",
+            "default_open": false
+          }
+        },
+        "vitals_ub_product_bundles_RcH4E8": {
+          "type": "shopify://apps/vitals/blocks/ub-product-bundles/aeb48102-2a5a-4f39-bdbd-d8d49f4e20b8",
+          "settings": {}
+        },
+        "supported_devices": {
+          "type": "supported_devices",
+          "settings": {}
+        },
+        "text_with_icon_FJpD8f": {
+          "type": "text_with_icon",
+          "settings": {
+            "show_text_with_icon_1": true,
+            "icon_1": "delivery",
+            "text_1": "Fast Shipping",
+            "show_text_with_icon_2": true,
+            "icon_2": "shield",
+            "text_2": "High-quality Products",
+            "box_shadow": true,
+            "icon_style": "colored",
+            "icon_fill_type": "gradient"
+          }
+        },
+        "text_with_icon": {
+          "type": "text_with_icon",
+          "settings": {
+            "show_text_with_icon_1": true,
+            "icon_1": "wallet",
+            "text_1": "30 Day Return Guarantee",
+            "show_text_with_icon_2": true,
+            "icon_2": "user-1",
+            "text_2": "Professional Service Support",
+            "box_shadow": true,
+            "icon_style": "colored",
+            "icon_fill_type": "gradient"
+          }
+        },
+        "share_EAqH9P": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share",
+            "show_share_facebook": true,
+            "show_share_twitter": true,
+            "show_share_pinterest": true,
+            "show_share_copy": true
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "judge_me_reviews_preview_badge_9eXC3K",
+        "description",
+        "custom_liquid_iqtk84",
+        "variant_picker",
+        "price",
+        "inventory_ybzDtw",
+        "gift",
+        "buy_buttons",
+        "add_ons",
+        "country_checker_xTLpPb",
+        "popup_nzDhX7",
+        "popup_qAb4cQ",
+        "dropdown_information_C7AB9r",
+        "vitals_ub_product_bundles_RcH4E8",
+        "supported_devices",
+        "text_with_icon_FJpD8f",
+        "text_with_icon",
+        "share_EAqH9P"
+      ],
+      "custom_css": [
+        "@media only screen and (min-width: 1200px) {.rte div {margin-right: 180px; margin-left: -180px; }}"
+      ],
+      "settings": {
+        "desktop_alignment": "right",
+        "mobile_alignment": "before",
+        "gallery_type": "slider_previews",
+        "aspect_ratio": "1/1",
+        "image_fit": "contain",
+        "image_fit_modal": "contain",
+        "padding_bottom": "m"
+      }
+    },
+    "image_text_separation_01": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_abNEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/U3X_01.jpg",
+            "image_link": ""
+          }
+        },
+        "text_abLEyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>GlocalMe Duoturbo 4G WiFi Mobile Hotspot</strong></p>",
+            "text_color": "#3a3a3c",
+            "text_gradient_background": "linear-gradient(119deg, rgba(0, 207, 225, 1) 20%, rgba(45, 204, 104, 1) 60%)",
+            "text_font_size": 52,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 44,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rlt",
+            "direction_y": "ttb",
+            "position_x": 6,
+            "position_y": 38
+          }
+        },
+        "text_abUEyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Better Connections for a Better Life</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 36,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "text_letter_spacing": 0.8,
+            "max_text_container_max_width": 44,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rlt",
+            "direction_y": "ttb",
+            "position_x": 6,
+            "position_y": 60
+          }
+        }
+      },
+      "block_order": [
+        "image_abNEyF",
+        "text_abLEyF",
+        "text_abUEyF"
+      ],
+      "custom_css": [],
+      "settings": {
+        "display_devices": "desktop",
+        "padding_top": "m",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_02": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_bbNEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/U3X_02.jpg",
+            "image_link": ""
+          }
+        },
+        "text_XUPaQA": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Safer and Reliable</strong></p><p><strong>Mobile Hotspot</strong></p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 38,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "text_letter_spacing": 0.8,
+            "max_text_container_max_width": 34,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 8,
+            "position_y": 5
+          }
+        },
+        "text_y4p3en": {
+          "type": "text",
+          "settings": {
+            "text": "<p>GlocalMe WiFi hotspot uses the most security protocol to keep your connection safe, no worries about the unsafe public WiFi anymore.</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 26,
+            "text_font_weight": 300,
+            "text_line_height": 1.4,
+            "text_align": "left",
+            "max_text_container_max_width": 34,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 8,
+            "position_y": 15
+          }
+        },
+        "text_PUPaQA": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Dual Modem</strong></p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 38,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "text_letter_spacing": 0.8,
+            "max_text_container_max_width": 42,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 4,
+            "position_y": 42
+          }
+        },
+        "text_w4p3en": {
+          "type": "text",
+          "settings": {
+            "text": "<p>More flexible switching in complex<br/> environment.</p><p>One modem in operation while the other is alwavs on standby to provide backup.</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 26,
+            "text_font_weight": 300,
+            "text_line_height": 1.4,
+            "text_align": "left",
+            "max_text_container_max_width": 42,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 4,
+            "position_y": 33
+          }
+        },
+        "text_eUPaQA": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Long-lasting battery life</strong></p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 38,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "text_letter_spacing": 0.8,
+            "max_text_container_max_width": 38,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "btt",
+            "position_x": 9,
+            "position_y": 42
+          }
+        },
+        "text_Q4p3en": {
+          "type": "text",
+          "settings": {
+            "text": "<p>3, 500mAh battery capacity for up to 12 hours of use.</p><p>A portable mobile WiFi hotspot for travelling, family outings, business trips, camping</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 26,
+            "text_font_weight": 300,
+            "text_line_height": 1.4,
+            "text_align": "left",
+            "max_text_container_max_width": 38,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "btt",
+            "position_x": 9,
+            "position_y": 33
+          }
+        },
+        "text_oUPaQA": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Super lightweight WiFi Device</strong></p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 38,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "text_letter_spacing": 0.8,
+            "max_text_container_max_width": 42,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 6,
+            "position_y": 17
+          }
+        },
+        "text_w6p3en": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lightweight and portable: only 148 g, fits easily in your bag, suitcase, backpack for connectivity anywhere, anytime.</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 26,
+            "text_font_weight": 300,
+            "text_line_height": 1.4,
+            "text_align": "left",
+            "max_text_container_max_width": 42,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 6,
+            "position_y": 7.5
+          }
+        }
+      },
+      "block_order": [
+        "image_bbNEyF",
+        "text_XUPaQA",
+        "text_y4p3en",
+        "text_PUPaQA",
+        "text_w4p3en",
+        "text_eUPaQA",
+        "text_Q4p3en",
+        "text_oUPaQA",
+        "text_w6p3en"
+      ],
+      "settings": {
+        "display_devices": "desktop",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_03": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_cbNEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/U3X_03.jpg",
+            "image_link": ""
+          }
+        },
+        "text_w4p3en": {
+          "type": "text",
+          "settings": {
+            "text": "<p>International Trip</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 36,
+            "text_font_weight": 400,
+            "text_line_height": 1.4,
+            "text_align": "left",
+            "max_text_container_max_width": 24,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 4.2,
+            "position_y": 27.6
+          }
+        },
+        "text_e4p3en": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Buisness Trip</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 36,
+            "text_font_weight": 400,
+            "text_line_height": 1.4,
+            "text_align": "left",
+            "max_text_container_max_width": 24,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 50.6,
+            "position_y": 27.6
+          }
+        },
+        "text_r4p3en": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Surfing at Home</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 36,
+            "text_font_weight": 400,
+            "text_line_height": 1.4,
+            "text_align": "left",
+            "max_text_container_max_width": 24,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 4.2,
+            "position_y": 60.6
+          }
+        },
+        "text_l4p3en": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Surfing at Dormitory</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 36,
+            "text_font_weight": 400,
+            "text_line_height": 1.4,
+            "text_align": "left",
+            "max_text_container_max_width": 24,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 50.6,
+            "position_y": 60.6
+          }
+        },
+        "text_u4p3en": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Outdoor Camping</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 36,
+            "text_font_weight": 400,
+            "text_line_height": 1.4,
+            "text_align": "left",
+            "max_text_container_max_width": 24,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 4.2,
+            "position_y": 2.6
+          }
+        },
+        "text_x4p3en": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Outdoor Work</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 36,
+            "text_font_weight": 400,
+            "text_line_height": 1.4,
+            "text_align": "left",
+            "max_text_container_max_width": 24,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 50.6,
+            "position_y": 2.6
+          }
+        }
+      },
+      "block_order": [
+        "image_cbNEyF",
+        "text_w4p3en",
+        "text_e4p3en",
+        "text_r4p3en",
+        "text_l4p3en",
+        "text_u4p3en",
+        "text_x4p3en"
+      ],
+      "settings": {
+        "display_devices": "desktop",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_04": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_dbNEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/U3X_04.jpg",
+            "image_link": ""
+          }
+        },
+        "text_OUPaQA": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>GlocalMe CloudsIM technology can automatically switch to the best signal network anytime, anywhere. Ensuring that you are on the best network at all times.</strong></p>",
+            "text_color": "#000000",
+            "text_gradient_background": "",
+            "text_font_size": 36,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "text_letter_spacing": 0.8,
+            "max_text_container_max_width": 26.8,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 2,
+            "position_y": 26
+          }
+        }
+      },
+      "block_order": [
+        "image_dbNEyF",
+        "text_OUPaQA"
+      ],
+      "settings": {
+        "display_devices": "desktop",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_05": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_ebNEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/G40_05.jpg",
+            "image_link": "shopify://pages/coverage"
+          }
+        },
+        "text_kCdJWM": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Coverage 200+ Countries and Regions</strong></p>",
+            "text_color": "#101011",
+            "text_gradient_background": "",
+            "text_font_size": 32,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 1.5,
+            "position_y": 14
+          }
+        },
+        "text_RCgWWR": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>5G Network Covers 90+ Countries and Regions</strong></p>",
+            "text_color": "#101011",
+            "text_gradient_background": "",
+            "text_font_size": 32,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 1.5,
+            "position_y": 26.4
+          }
+        },
+        "text_EUyB8T": {
+          "type": "text",
+          "settings": {
+            "text": "<p>North America: United States, Canada, Mexico</p><p>South America: Brazil, Peru</p><p>Europe: United Kingdom, Germany, France, Italy, Spain, Austria, Belgium, Bulgaria,</p><p>Switzerland, Netherlands, Portugal, Czech Republic, Denmark, Finland, Greece,</p><p>Slovenia, Vatican, Monaco, San Marino, Cyprus, Hungary, Latvia, Poland, Sweden,</p><p>Slovakia, Croatia, Ireland, Iceland, Lithuania, Luxembourg, Malta, Romania, Norway, </p><p>Andorra</p><p>Asia: Japan, Korea, United Arab Emirates, China,</p><p>Hong Kong, Macau, Taiwan, Indonesia, Malaysia,</p><p>Saudi Arabia, Singapore, Thailand, Vietnam,</p><p>Bahrain, Philippines, India, Kuwait, Oman, </p><p>Maldives</p><p>Oceania: Australia, New Zealand</p><p>Africa: South Africa, Mauritius, Qatar</p>",
+            "text_color": "#666666",
+            "text_gradient_background": "",
+            "text_font_size": 21,
+            "text_font_weight": 300,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 52,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 1.5,
+            "position_y": 37
+          }
+        },
+        "text_kbE6X3": {
+          "type": "text",
+          "settings": {
+            "text": "<p><a href=\"/pages/coverage\" target=\"_blank\" title=\"GlocaMe Coverage Area\">Learn more&gt;&gt;</a></p>",
+            "text_color": "#011624",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 2,
+            "position_y": 2
+          }
+        }
+      },
+      "block_order": [
+        "image_ebNEyF",
+        "text_kCdJWM",
+        "text_RCgWWR",
+        "text_EUyB8T",
+        "text_kbE6X3"
+      ],
+      "settings": {
+        "display_devices": "desktop",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_06": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_01": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/U3X_06.jpg",
+            "image_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_01"
+      ],
+      "settings": {
+        "display_devices": "desktop",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_07": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_gbNEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/U3X_07.jpg",
+            "image_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_gbNEyF"
+      ],
+      "settings": {
+        "display_devices": "desktop",
+        "padding_top": "no-indent",
+        "padding_bottom": "m",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_m_01": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_abNEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/U3X_m_01.jpg",
+            "image_link": ""
+          }
+        },
+        "text_pbLEyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>GlocalMe Duoturbo 4G WiFi Mobile Hotspot</strong></p>",
+            "text_color": "#3a3a3c",
+            "text_gradient_background": "linear-gradient(119deg, rgba(0, 207, 225, 1) 20%, rgba(45, 204, 104, 1) 60%)",
+            "text_font_size": 32,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 44,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rlt",
+            "direction_y": "ttb",
+            "position_x": 2,
+            "position_y": 28
+          }
+        },
+        "text_abUcyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Better Connections for a Better Life</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 14,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "text_letter_spacing": 0.8,
+            "max_text_container_max_width": 44,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rlt",
+            "direction_y": "ttb",
+            "position_x": 2,
+            "position_y": 54
+          }
+        }
+      },
+      "block_order": [
+        "image_abNEyF",
+        "text_pbLEyF",
+        "text_abUcyF"
+      ],
+      "custom_css": [],
+      "settings": {
+        "display_devices": "mobile",
+        "padding_top": "m",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_m_02": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_bbNEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/U3X_m_02.jpg",
+            "image_link": ""
+          }
+        },
+        "text_TL6QG7": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Safer and Reliable</strong></p><p><strong>Mobile Hotspot</strong></p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 26,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "text_letter_spacing": 0.8,
+            "max_text_container_max_width": 40,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 10,
+            "position_y": 6.8
+          }
+        },
+        "text_y4p3en": {
+          "type": "text",
+          "settings": {
+            "text": "<p>GlocalMe WiFi hotspot uses the most security protocol to keep your connection safe, no worries about the unsafe public WiFi anymore.</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 16,
+            "text_font_weight": 300,
+            "text_line_height": 1.4,
+            "text_align": "left",
+            "text_letter_spacing": 0.4,
+            "max_text_container_max_width": 40,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 10,
+            "position_y": 22
+          }
+        },
+        "text_PUPaQA": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Dual Modem</strong></p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 26,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "text_letter_spacing": 0.8,
+            "max_text_container_max_width": 42,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 4.8,
+            "position_y": 25
+          }
+        },
+        "text_w4p3en": {
+          "type": "text",
+          "settings": {
+            "text": "<p>More flexible switching in complex environment.</p><p>One modem in operation while the other is alwavs on standby to provide backup.</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 16,
+            "text_font_weight": 300,
+            "text_line_height": 1.4,
+            "text_align": "left",
+            "text_letter_spacing": 0.4,
+            "max_text_container_max_width": 42,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 4.8,
+            "position_y": 9
+          }
+        },
+        "text_eUPaQA": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Long-lasting battery life</strong></p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 26,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "text_letter_spacing": 0.8,
+            "max_text_container_max_width": 38,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "btt",
+            "position_x": 8,
+            "position_y": 21
+          }
+        },
+        "text_Q4p3en": {
+          "type": "text",
+          "settings": {
+            "text": "<p>3, 500mAh battery capacity for up to 12 hours of use.</p><p>A portable mobile WiFi hotspot for travelling, family outings, business trips, camping</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 16,
+            "text_font_weight": 300,
+            "text_line_height": 1.4,
+            "text_align": "left",
+            "text_letter_spacing": 0.4,
+            "max_text_container_max_width": 38,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "btt",
+            "position_x": 8,
+            "position_y": 4
+          }
+        }
+      },
+      "block_order": [
+        "image_bbNEyF",
+        "text_TL6QG7",
+        "text_y4p3en",
+        "text_PUPaQA",
+        "text_w4p3en",
+        "text_eUPaQA",
+        "text_Q4p3en"
+      ],
+      "settings": {
+        "display_devices": "mobile",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_m_03": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_cbNEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/U3X_m_03.jpg",
+            "image_link": ""
+          }
+        },
+        "text_oUPaQA": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Super lightweight WiFi Device</strong></p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 26,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "text_letter_spacing": 0.8,
+            "max_text_container_max_width": 38,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 6,
+            "position_y": 16
+          }
+        },
+        "text_w6p3en": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lightweight and portable: only 148 g, fits easily in your bag, suitcase, backpack for connectivity anywhere, anytime.</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 16,
+            "text_font_weight": 300,
+            "text_line_height": 1.4,
+            "text_align": "left",
+            "text_letter_spacing": 0.4,
+            "max_text_container_max_width": 38,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 6,
+            "position_y": 44
+          }
+        }
+      },
+      "block_order": [
+        "image_cbNEyF",
+        "text_oUPaQA",
+        "text_w6p3en"
+      ],
+      "settings": {
+        "display_devices": "mobile",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_m_04": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_dbNEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/U3X_m_04.jpg",
+            "image_link": ""
+          }
+        },
+        "text_g5p3en": {
+          "type": "text",
+          "settings": {
+            "text": "<p>International Trip</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 18,
+            "text_font_weight": 400,
+            "text_line_height": 1.4,
+            "text_align": "left",
+            "max_text_container_max_width": 24,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 5.4,
+            "position_y": 29.1
+          }
+        },
+        "text_e5p3en": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Buisness Trip</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 18,
+            "text_font_weight": 400,
+            "text_line_height": 1.4,
+            "text_align": "left",
+            "max_text_container_max_width": 24,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 54.6,
+            "position_y": 29.6
+          }
+        },
+        "text_r5p3en": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Surfing at Home</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 18,
+            "text_font_weight": 400,
+            "text_line_height": 1.4,
+            "text_align": "left",
+            "max_text_container_max_width": 24,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 5.4,
+            "position_y": 61
+          }
+        },
+        "text_l5p3en": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Surfing at Dormitory</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 18,
+            "text_font_weight": 400,
+            "text_line_height": 1.4,
+            "text_align": "left",
+            "max_text_container_max_width": 24,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 54.6,
+            "position_y": 61.4
+          }
+        },
+        "text_u5p3en": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Outdoor Camping</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 18,
+            "text_font_weight": 400,
+            "text_line_height": 1.4,
+            "text_align": "left",
+            "max_text_container_max_width": 24,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 5.4,
+            "position_y": 2.6
+          }
+        },
+        "text_x5p3en": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Outdoor Work</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 18,
+            "text_font_weight": 400,
+            "text_line_height": 1.4,
+            "text_align": "left",
+            "max_text_container_max_width": 24,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 54.6,
+            "position_y": 2.6
+          }
+        }
+      },
+      "block_order": [
+        "image_dbNEyF",
+        "text_g5p3en",
+        "text_e5p3en",
+        "text_r5p3en",
+        "text_l5p3en",
+        "text_u5p3en",
+        "text_x5p3en"
+      ],
+      "settings": {
+        "display_devices": "mobile",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_m_05": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_01": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/U3X_m_05.jpg",
+            "image_link": ""
+          }
+        },
+        "text_JUPaQA": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>GlocalMe CloudsIM technology can automatically switch to the best signal network anytime, anywhere. Ensuring that you are on the best network at all times.</strong></p>",
+            "text_color": "#000000",
+            "text_gradient_background": "",
+            "text_font_size": 22,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "text_letter_spacing": 0.4,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 4.6,
+            "position_y": 8
+          }
+        }
+      },
+      "block_order": [
+        "image_01",
+        "text_JUPaQA"
+      ],
+      "settings": {
+        "display_devices": "mobile",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_m_06": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_ebNEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/G40_m_05.jpg",
+            "image_link": "shopify://pages/coverage"
+          }
+        },
+        "text_tCdJWM": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Coverage 200+ Countries and Regions</strong></p>",
+            "text_color": "#101011",
+            "text_gradient_background": "",
+            "text_font_size": 16,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 4,
+            "position_y": 6
+          }
+        },
+        "text_PCgWWR": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>5G Network Covers 90+ Countries and Regions</strong></p>",
+            "text_color": "#101011",
+            "text_gradient_background": "",
+            "text_font_size": 16,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 4,
+            "position_y": 12
+          }
+        },
+        "text_EUhB8T": {
+          "type": "text",
+          "settings": {
+            "text": "<p>North America: United States, Canada, Mexico</p><p>South America: Brazil, Peru</p><p>Europe: United Kingdom, Germany, France, Italy, Spain, Austria, Belgium, Bulgaria, Switzerland, Netherlands, Portugal, Czech Republic, Denmark, Finland, Greece, Slovenia, Vatican, Monaco, San Marino, Cyprus, Hungary, Latvia, Poland, Sweden, Slovakia, Croatia, Ireland, Iceland, Lithuania, Luxembourg, Malta, Romania, Norway, Andorra</p><p>Asia: Japan, Korea, United Arab Emirates, China, Hong Kong, Macau, Taiwan, Indonesia, Malaysia, Saudi Arabia, Singapore, Thailand, Vietnam, Bahrain, Philippines, India, Kuwait, Oman,  Maldives</p><p>Oceania: Australia, New Zealand</p><p>Africa: South Africa, Mauritius, Qatar</p>",
+            "text_color": "#011624",
+            "text_gradient_background": "",
+            "text_font_size": 13,
+            "text_font_weight": 300,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 4,
+            "position_y": 18
+          }
+        },
+        "text_tMaUMK": {
+          "type": "text",
+          "settings": {
+            "text": "<p><a href=\"/pages/coverage\" target=\"_blank\" title=\"GlocaMe Coverage Area\">Learn more&gt;&gt;</a></p>",
+            "text_color": "#101011",
+            "text_gradient_background": "",
+            "text_font_size": 20,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 4,
+            "position_y": 42
+          }
+        }
+      },
+      "block_order": [
+        "image_ebNEyF",
+        "text_tCdJWM",
+        "text_PCgWWR",
+        "text_EUhB8T",
+        "text_tMaUMK"
+      ],
+      "settings": {
+        "display_devices": "mobile",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_m_07": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_gbNEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/U3X_m_07.jpg",
+            "image_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_gbNEyF"
+      ],
+      "settings": {
+        "display_devices": "mobile",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_m_08": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_gbNEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/U3X_m_08.jpg",
+            "image_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_gbNEyF"
+      ],
+      "settings": {
+        "display_devices": "mobile",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "17558334140a8a0f2c": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_QkkNce": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_QkkNce"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "product_recommendations_dhyXk3": {
+      "type": "product-recommendations",
+      "settings": {
+        "color_scheme": "",
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "subheading_icon": "none",
+        "heading": "You May Also Like",
+        "heading_size": "h2",
+        "text": "",
+        "products_limit": 6,
+        "image_ratio": "1/1",
+        "image_fit": "cover",
+        "show_secondary_image": true,
+        "show_vendor": true,
+        "show_desc": false,
+        "padding_top": "s",
+        "padding_bottom": "m"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_text_separation_01",
+    "image_text_separation_02",
+    "image_text_separation_03",
+    "image_text_separation_04",
+    "image_text_separation_05",
+    "image_text_separation_06",
+    "image_text_separation_07",
+    "image_text_separation_m_01",
+    "image_text_separation_m_02",
+    "image_text_separation_m_03",
+    "image_text_separation_m_04",
+    "image_text_separation_m_05",
+    "image_text_separation_m_06",
+    "image_text_separation_m_07",
+    "image_text_separation_m_08",
+    "17558334140a8a0f2c",
+    "product_recommendations_dhyXk3"
+  ]
+}

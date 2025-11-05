@@ -1,0 +1,62 @@
+@media (min-width: 767px) {
+  .product__compare-device {
+    display: none;
+  }
+}
+
+.compare-device__item-surface {
+  position: relative;
+  padding: 2rem;
+  background-color: #f1f3f7;
+  border-radius: 1.2rem;
+  z-index: 2;
+}
+
+.compare-device__item-description p {
+  margin: 0 0 0.6rem;
+}
+
+.compare-device__item-link {
+  display: inline-block;
+  margin: 0.2rem 0 0;
+  padding: 0.4rem 1.4rem;
+  color: #ffffff;
+  background-color: #43cf93;
+  border-radius: 2rem;
+  text-decoration: none;
+}
+
+.compare-device__item-back {
+  position: relative;
+  margin-top: -2.4rem;
+  padding: 4rem 0 0;
+  background-color: #e0e1ec;
+  border-radius: 1.6rem;
+  z-index: 1;
+}
+
+.compare-device__item-back ul {
+  padding: 0 2rem 2rem;
+}
+
+.compare-device__item-back ul li {
+  padding: 0.8rem 0;
+}
+
+.compare-device__item-back ul li:not(:last-child) {
+  border-bottom: 1px solid #000000;
+}
+
+.compare-device__item-back p {
+  margin: 0;
+}
+
+.compare-device__swiper .swiper-pagination {
+  margin-top: 2rem;
+}
+
+.compare-device__item-back-inner {
+  height: 0;
+  overflow: hidden;
+  transition: height 1s;
+}

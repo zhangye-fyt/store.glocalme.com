@@ -1,0 +1,179 @@
+{% comment %}
+   Renders section text
+   Accepts:
+   section: {Object} Section
+  class: {String} Class (optional)
+   Usage:
+   {% render 'section-text', section: section, class: '' %}
+{% endcomment %}
+
+{% if section.settings.heading_line == 'rounded' %}
+  {% assign color = section.settings.line_color | remove: '#' %}
+    {% style %}
+      #shopify-section-{{ section.id }} .titles .title--rounded span[style*="text-decoration:underline"].title--rounded-xs { 
+        background-image: url('data:image/svg+xml,\
+        <svg xmlns="http://www.w3.org/2000/svg" width="78" height="14" viewBox="0 0 78 14" fill="none">\
+          <path d="M3 11C15.1361 4.50757 39.4887 -3.17051 75 11" stroke="%23{{ color }}" stroke-width="6" stroke-linecap="round"/>\
+        </svg>');
+      }
+
+      #shopify-section-{{ section.id }} .titles .title--rounded span[style*="text-decoration:underline"].title--rounded-s { 
+        background-image: url('data:image/svg+xml,\
+        <svg xmlns="http://www.w3.org/2000/svg" width="172" height="14" viewBox="0 0 172 14" fill="none">\
+          <path d="M3 11C30.9803 4.50757 87.1267 -3.17051 169 11" stroke="%23{{ color }}" stroke-width="6" stroke-linecap="round"/>\
+        </svg>');
+      }
+
+      #shopify-section-{{ section.id }} .titles .title--rounded span[style*="text-decoration:underline"].title--rounded-m { 
+        background-image: url('data:image/svg+xml,\
+        <svg xmlns="http://www.w3.org/2000/svg" width="321" height="14" viewBox="0 0 321 14" fill="none">\
+          <path d="M3 11C56.0952 4.50757 162.638 -3.17051 318 11" stroke="%23{{ color }}" stroke-width="6" stroke-linecap="round"/>\
+        </svg>');
+      }
+
+      #shopify-section-{{ section.id }} .titles .title--rounded span[style*="text-decoration:underline"].title--rounded-l { 
+        background-image: url('data:image/svg+xml,\
+        <svg xmlns="http://www.w3.org/2000/svg" width="373" height="14" viewBox="0 0 373 14" fill="none">\
+          <path d="M3 11C64.8602 4.50757 188.991 -3.17051 370 11" stroke="%23{{ color }}" stroke-width="6" stroke-linecap="round"/>\
+        </svg>');
+      }
+
+      #shopify-section-{{ section.id }} .titles .title--rounded span[style*="text-decoration:underline"].title--rounded-xl { 
+        background-image: url('data:image/svg+xml,\
+        <svg xmlns="http://www.w3.org/2000/svg" width="568" height="14" viewBox="0 0 568 14" fill="none">\
+          <path d="M3 11C97.7286 4.50757 287.814 -3.17051 565 11" stroke="%23{{ color }}" stroke-width="6" stroke-linecap="round"/>\
+        </svg>');
+      }
+
+      #shopify-section-{{ section.id }} .titles .title--rounded span[style*="text-decoration:underline"].title--rounded-xxl { 
+        background-image: url('data:image/svg+xml,\
+        <svg xmlns="http://www.w3.org/2000/svg" width="714" height="14" viewBox="0 0 714 14" fill="none">\
+          <path d="M3 11C122.338 4.50757 361.805 -3.17051 711 11" stroke="%23{{ color }}" stroke-width="6" stroke-linecap="round"/>\
+        </svg>');
+      }
+
+      [data-scheme="dark"] {
+        #shopify-section-{{ section.id }} .titles .title--rounded span[style*="text-decoration:underline"].title--rounded-xs { 
+          background-image: url('data:image/svg+xml,\
+          <svg xmlns="http://www.w3.org/2000/svg" width="78" height="14" viewBox="0 0 78 14" fill="none">\
+            <path d="M3 11C15.1361 4.50757 39.4887 -3.17051 75 11" stroke="%234A4A4C" stroke-width="6" stroke-linecap="round"/>\
+          </svg>');
+        }
+
+        #shopify-section-{{ section.id }} .titles .title--rounded span[style*="text-decoration:underline"].title--rounded-s { 
+          background-image: url('data:image/svg+xml,\
+          <svg xmlns="http://www.w3.org/2000/svg" width="172" height="14" viewBox="0 0 172 14" fill="none">\
+            <path d="M3 11C30.9803 4.50757 87.1267 -3.17051 169 11" stroke="%234A4A4C" stroke-width="6" stroke-linecap="round"/>\
+          </svg>');
+        }
+
+        #shopify-section-{{ section.id }} .titles .title--rounded span[style*="text-decoration:underline"].title--rounded-m { 
+          background-image: url('data:image/svg+xml,\
+          <svg xmlns="http://www.w3.org/2000/svg" width="321" height="14" viewBox="0 0 321 14" fill="none">\
+            <path d="M3 11C56.0952 4.50757 162.638 -3.17051 318 11" stroke="%234A4A4C" stroke-width="6" stroke-linecap="round"/>\
+          </svg>');
+        }
+
+        #shopify-section-{{ section.id }} .titles .title--rounded span[style*="text-decoration:underline"].title--rounded-l { 
+          background-image: url('data:image/svg+xml,\
+          <svg xmlns="http://www.w3.org/2000/svg" width="373" height="14" viewBox="0 0 373 14" fill="none">\
+            <path d="M3 11C64.8602 4.50757 188.991 -3.17051 370 11" stroke="%234A4A4C" stroke-width="6" stroke-linecap="round"/>\
+          </svg>');
+        }
+
+        #shopify-section-{{ section.id }} .titles .title--rounded span[style*="text-decoration:underline"].title--rounded-xl { 
+          background-image: url('data:image/svg+xml,\
+          <svg xmlns="http://www.w3.org/2000/svg" width="568" height="14" viewBox="0 0 568 14" fill="none">\
+            <path d="M3 11C97.7286 4.50757 287.814 -3.17051 565 11" stroke="%234A4A4C" stroke-width="6" stroke-linecap="round"/>\
+          </svg>');
+        }
+
+        #shopify-section-{{ section.id }} .titles .title--rounded span[style*="text-decoration:underline"].title--rounded-xxl { 
+          background-image: url('data:image/svg+xml,\
+          <svg xmlns="http://www.w3.org/2000/svg" width="714" height="14" viewBox="0 0 714 14" fill="none">\
+            <path d="M3 11C122.338 4.50757 361.805 -3.17051 711 11" stroke="%234A4A4C" stroke-width="6" stroke-linecap="round"/>\
+          </svg>');
+        }
+      }
+
+      @media (prefers-color-scheme: dark) {
+        [data-scheme="auto"] {
+          #shopify-section-{{ section.id }} .titles .title--rounded span[style*="text-decoration:underline"].title--rounded-xs { 
+            background-image: url('data:image/svg+xml,\
+            <svg xmlns="http://www.w3.org/2000/svg" width="78" height="14" viewBox="0 0 78 14" fill="none">\
+              <path d="M3 11C15.1361 4.50757 39.4887 -3.17051 75 11" stroke="%234A4A4C" stroke-width="6" stroke-linecap="round"/>\
+            </svg>');
+          }
+
+          #shopify-section-{{ section.id }} .titles .title--rounded span[style*="text-decoration:underline"].title--rounded-s { 
+            background-image: url('data:image/svg+xml,\
+            <svg xmlns="http://www.w3.org/2000/svg" width="172" height="14" viewBox="0 0 172 14" fill="none">\
+              <path d="M3 11C30.9803 4.50757 87.1267 -3.17051 169 11" stroke="%234A4A4C" stroke-width="6" stroke-linecap="round"/>\
+            </svg>');
+          }
+
+          #shopify-section-{{ section.id }} .titles .title--rounded span[style*="text-decoration:underline"].title--rounded-m { 
+            background-image: url('data:image/svg+xml,\
+            <svg xmlns="http://www.w3.org/2000/svg" width="321" height="14" viewBox="0 0 321 14" fill="none">\
+              <path d="M3 11C56.0952 4.50757 162.638 -3.17051 318 11" stroke="%234A4A4C" stroke-width="6" stroke-linecap="round"/>\
+            </svg>');
+          }
+
+          #shopify-section-{{ section.id }} .titles .title--rounded span[style*="text-decoration:underline"].title--rounded-l { 
+            background-image: url('data:image/svg+xml,\
+            <svg xmlns="http://www.w3.org/2000/svg" width="373" height="14" viewBox="0 0 373 14" fill="none">\
+              <path d="M3 11C64.8602 4.50757 188.991 -3.17051 370 11" stroke="%234A4A4C" stroke-width="6" stroke-linecap="round"/>\
+            </svg>');
+          }
+
+          #shopify-section-{{ section.id }} .titles .title--rounded span[style*="text-decoration:underline"].title--rounded-xl { 
+            background-image: url('data:image/svg+xml,\
+            <svg xmlns="http://www.w3.org/2000/svg" width="568" height="14" viewBox="0 0 568 14" fill="none">\
+              <path d="M3 11C97.7286 4.50757 287.814 -3.17051 565 11" stroke="%234A4A4C" stroke-width="6" stroke-linecap="round"/>\
+            </svg>');
+          }
+
+          #shopify-section-{{ section.id }} .titles .title--rounded span[style*="text-decoration:underline"].title--rounded-xxl { 
+            background-image: url('data:image/svg+xml,\
+            <svg xmlns="http://www.w3.org/2000/svg" width="714" height="14" viewBox="0 0 714 14" fill="none">\
+              <path d="M3 11C122.338 4.50757 361.805 -3.17051 711 11" stroke="%234A4A4C" stroke-width="6" stroke-linecap="round"/>\
+            </svg>');
+          }
+        }
+      }
+    {% endstyle %}
+{% endif %}
+
+{%- if section.settings.subheading != blank or section.settings.heading != blank -%}
+  <div class="{% if class %}{{ class }}__titles{% endif %} titles 
+    {% if section.settings.heading == blank and section.settings.text == blank %} titles_margin-medium {% endif %}
+    {% if text_align %} titles--{{ text_align }} {% endif %}">
+    {%- if section.settings.subheading != blank -%}
+      <div class="{% if class %}{{ class }}__subtitle{% endif %} {{ section.settings.subheading_style }}">
+        {% if section.settings.subheading_icon != "none" %}
+          <i class="icon icon-pack icon-{{ section.settings.subheading_icon }}"></i>
+        {% endif %}
+        {{ section.settings.subheading }}
+      </div>
+    {% endif %}
+    {%- if section.settings.heading != blank -%}
+      <{{ heading_level | default: "h2" }}
+        class="{{ section.settings.heading_size }} {% if class %}{{ class }}__title{% endif %} title title--{{ section.settings.heading_line }} 
+        {% if section.settings.word_break and section.settings.heading_line != 'none' %} title--word_break {% endif %}
+        {% if section.settings.word_break_an and section.settings.heading_animation != 'none' %} title--word_break_an {% endif %}
+        js-anim-{{ section.settings.heading_animation }}"
+        style="--color-line: {{ section.settings.line_color }}"
+        data-content="{{ section.settings.heading | escape }}"
+      >
+        {% if section.settings.heading_animation == 'none' or section.settings.heading_animation != 'true' -%}
+          {{- section.settings.heading -}}
+        {%- endif %}
+      </{{ heading_level | default: "h2" }}>
+    {% endif %}
+  </div>
+{% endif %}
+{%- if section.settings.text != blank -%}
+  <div class="{% if class %}{{ class }}__description{% endif %} description body-large {% if text_align %} description--{{ text_align }} {% endif %}">
+    {{ section.settings.text }}
+  </div>
+{% endif %}

@@ -1,0 +1,43 @@
+.supported-devices__title + .supported-devices__content {
+  margin-top: 1.6rem;
+}
+
+.supported-devices__content {
+  max-height: 20.4rem;
+  overflow-y: auto;
+  padding: 1.6rem 2rem;
+  background-color: rgb(var(--color-background-secondary));
+  border-radius: 1.2rem;
+}
+
+@media screen and (min-width: 990px) {
+  .supported-devices__content {
+    padding: 3.2rem 4rem;
+  }
+}
+
+.supported-devices__list {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.supported-devices__item {
+  gap: 1rem;
+  text-decoration: none;
+}
+
+.supported-devices__item-media {
+  width: 5rem;
+}
+
+.supported-devices__item-media img {
+  border-radius: 1.2rem;
+}
+
+@media (min-width: 576px) {
+  .supported-devices__list {
+    gap: 2rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

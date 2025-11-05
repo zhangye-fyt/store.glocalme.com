@@ -1,0 +1,196 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": "no-indent",
+        "padding_bottom": "m"
+      }
+    },
+    "rich_text_LVNkHf": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_efWdHh": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "subheading": "Subheading"
+          }
+        },
+        "heading_i3FcfH": {
+          "type": "heading",
+          "settings": {
+            "heading": "Africa-4G",
+            "heading_size": "medium",
+            "heading_level": "h2"
+          }
+        },
+        "text_UjA9GH": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Algeria, Angola, Botswana, Cote D'Ivoire, Egypt, Ghana, Kenya, Mayotte, Madagascar, Mauritius, Morocco, Nigeria, Namibia, Reunion, Seychelles, Sierra Leone, South Africa, Tanzania, Tunisia, Uganda, Zambia, Western Sahara.<br/><br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_efWdHh",
+        "heading_i3FcfH",
+        "text_UjA9GH"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "full_width": true,
+        "alignment": "center",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent",
+        "padding_top": "m",
+        "padding_bottom": "m"
+      }
+    },
+    "multicolumn_JcF3aJ": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_YJQAq7": {
+          "type": "column",
+          "settings": {
+            "icon": "none",
+            "icon_color_scheme": "",
+            "icon_fill_type": "gradient",
+            "heading": "5G Coverage",
+            "text": "Andorra, Argentina, Australia, Austria, Bahrain, Belgium, Brazil, Brunei Darussalam, Bulgaria, Canada, China (Mainland), Colombia, Croatia, Cyprus, Czech Republic, Denmark, Estonia, Faroe Islands, Finland, France, Germany, Greece, Guam, Guatemala, Hong Kong (China), Hungary, Iceland, India, Indonesia, Ireland, Italy, Japan, Jordan, Kazakhstan, Kenya, Kuwait, Latvia, Liechtenstein, Lithuania, Luxembourg, Macao (China), Malaysia, Maldives, Malta, Mauritius, Mexico, Monaco, Montenegro, Netherlands, New Zealand, Northern Mariana Islands, Norway, Oman, Peru, Philippines, Poland, Portugal, Qatar, Romania, San Marino, Saudi Arabia, Seychelles, Singapore, Slovakia, Slovenia, South Africa, South Korea, Spain, Sri Lanka, Sweden, Switzerland, Taiwan (China), Tanzania, Thailand, Turkey, United Arab Emirates, United Kingdom, United States, Vatican City, Vietnam, Laos, Georgia, Israel, United States Virgin Islands, Puerto Rico, Egypt, Nigeria, Réunion, Tunisia, Albania, Uruguay.",
+            "show_button": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        },
+        "column_4xky6g": {
+          "type": "column",
+          "settings": {
+            "icon": "none",
+            "icon_color_scheme": "",
+            "icon_fill_type": "gradient",
+            "heading": "America-4G",
+            "text": "Anguilla, Antigua & Barbuda, Argentina, Aruba, Barbados, Bermuda, Bolivia, Brazil, British Virgin Islands, Canada, Cayman Islands, Chile, Colombia, Costa Rica, Curacao, Dominica, Dominican Republic, Ecuador, El Salvador, French Guiana, Grenada, Guatemala, Guadeloupe, Guyana, Haiti, Honduras, Jamaica, Martinique, Mexico, Nicaragua, Panama, Paraguay, Peru, Puerto Rico, Saint Barthelemy, Saint Kitts and Nevis, Saint Lucia, Saint Martin (France), Saint Vincent & the Grenadines, Suriname, Trinidad and Tobago, Turks & Caicos Islands, United States, United States Virgin Islands, Uruguay, Venezuela.",
+            "show_button": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        },
+        "column_8dxw4c": {
+          "type": "column",
+          "settings": {
+            "icon": "none",
+            "icon_color_scheme": "background-1",
+            "icon_fill_type": "gradient",
+            "heading": "Europe-4G",
+            "text": "Albania, Aland Islands, Andorra, Armenia, Austria, Azerbaijan, Belgium, Bosnia & Herzegovina, Cyprus, Croatia, Czech Republic, Denmark, Estonia, Finland, France, Germany, Gibraltar, Greece, Guernsey, Hungary, Iceland, Ireland, Isle of Man, Italy, Jersey, Latvia, Liechtenstein, Lithuania, Luxembourg, Malta, Moldova, Monaco, Montenegro, Netherlands, North Macedonia, Norway, Poland, Portugal, Romania, San Marino, Serbia, Slovakia, Slovenia, Sweden, Switzerland, Ukraine, United Kingdom, Vatican City.",
+            "show_button": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        },
+        "column_b8MdqM": {
+          "type": "column",
+          "settings": {
+            "icon": "none",
+            "icon_color_scheme": "background-1",
+            "icon_fill_type": "gradient",
+            "heading": "Asia-4G",
+            "text": "Bangladesh, Bahrain, Brunei Darussalam, Cambodia, Mainland China, Hong Kong (China), Macao (China), India, Indonesia, Israel, Japan, Jordan, Kazakhstan, Kuwait, Kyrgyzstan, Laos, Malaysia, Mongolia, Nepal, Oman, Pakistan, Philippines, Qatar, Saudi Arabia, Singapore, South Korea, Sri Lanka, Taiwan (China), Tajikistan, Thailand, Turkey, United Arab Emirates, Uzbekistan, Vietnam, Georgia.",
+            "show_button": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        },
+        "column_rRXAHQ": {
+          "type": "column",
+          "settings": {
+            "icon": "none",
+            "icon_color_scheme": "",
+            "icon_fill_type": "gradient",
+            "heading": "Africa-4G",
+            "text": "Algeria, Angola, Botswana, Cote D'Ivoire, Egypt, Ghana, Kenya, Mayotte, Madagascar, Mauritius, Morocco, Nigeria, Namibia, Reunion, Seychelles, Sierra Leone, South Africa, Tanzania, Tunisia, Uganda, Zambia, Western Sahara.",
+            "show_button": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        },
+        "column_AadTfU": {
+          "type": "column",
+          "settings": {
+            "icon": "none",
+            "icon_color_scheme": "background-1",
+            "icon_fill_type": "gradient",
+            "heading": "Oceania-4G",
+            "text": "Australia, Fiji, French Polynesia, Guam, Northern Mariana Islands, Papua New Guinea, New Zealand.",
+            "show_button": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        }
+      },
+      "block_order": [
+        "column_YJQAq7",
+        "column_4xky6g",
+        "column_8dxw4c",
+        "column_b8MdqM",
+        "column_rRXAHQ",
+        "column_AadTfU"
+      ],
+      "settings": {
+        "section_type": "transparent",
+        "color_scheme": "",
+        "enable_border": false,
+        "border_full": false,
+        "multicolumn_to_show": 3,
+        "gap": "large",
+        "enable_mobile_overflow_slider": false,
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "subheading_icon": "none",
+        "heading": "",
+        "heading_size": "h2",
+        "heading_level": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "left",
+        "icon_size": "recommended",
+        "box_shadow": true,
+        "icon_style": "colored",
+        "image_width": "medium",
+        "image_ratio": "square",
+        "object_fit": "cover",
+        "card_heading_size": "h4",
+        "padding_top": "m",
+        "padding_bottom": "m",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_LVNkHf",
+    "multicolumn_JcF3aJ"
+  ]
+}

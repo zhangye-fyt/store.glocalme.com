@@ -1,0 +1,108 @@
+{%- liquid
+  assign product_collections_handles = ''
+  for collection_item in product.collections
+    if forloop.last
+      assign product_collections_handles = product_collections_handles | append: collection_item.handle
+    else
+      assign product_collections_handles = product_collections_handles | append: collection_item.handle | append: ';'
+    endif
+  endfor
+
+  assign gift_product_handles_str = ''
+  for gift_item in settings.gifts_data
+    assign has_current_gift = false
+    for product_item in gift_item.for_which_products.value
+      if product_item.handle == product.handle
+        assign has_current_gift = true
+        assign gift_product_handles_part = ''
+        if gift_item.products != blank
+          for gift_product_item in gift_item.products.value
+            if forloop.last
+              assign gift_product_handles_part = gift_product_handles_part | append: gift_product_item.handle
+            else
+              assign gift_product_handles_part = gift_product_handles_part | append: gift_product_item.handle | append: ','
+            endif
+          endfor
+        endif
+        assign gift_product_handles_str = gift_product_handles_str | append: gift_product_handles_part | append: ';'
+        break
+      endif
+    endfor
+    if has_current_gift == true
+      continue
+    endif
+    for collection_item in gift_item.for_which_collections.value
+      if product_collections_handles contains collection_item.handle
+        assign has_current_gift = true
+        assign gift_product_handles_part = ''
+        if gift_item.products != blank
+          for gift_product_item in gift_item.products.value
+            if forloop.last
+              assign gift_product_handles_part = gift_product_handles_part | append: gift_product_item.handle
+            else
+              assign gift_product_handles_part = gift_product_handles_part | append: gift_product_item.handle | append: ','
+            endif
+          endfor
+          assign gift_product_handles_str = gift_product_handles_str | append: gift_product_handles_part | append: ';'
+        endif
+        break
+      endif
+    endfor
+  endfor
+  assign gift_product_handles = gift_product_handles_str | split: ';'
+-%}
+
+{%- if gift_product_handles.size > 0 -%}
+  {{ 'component-free-gift.css' | asset_url | stylesheet_tag }}
+
+  <script src="{{ 'free-gift.js' | asset_url }}" defer="defer"></script>
+
+  <free-gift>
+    <div class="product__free-gift" data-section-id="{{ section_id }}">
+      <div class="free-gift__title subtitle">{{ settings.gifts_title }}</div>
+      <div class="free-gift__content">
+        <div class="free-gift__list">
+          {%- for handles_item in gift_product_handles -%}
+            {% if handles_item == blank %}
+              {% continue %}
+            {% endif %}
+            {%- liquid
+              assign handles = handles_item | split: ','
+              assign first_product_item = all_products[handles.first]
+            %}
+            <div class="free-gift__item">
+              <dropdown-component class="dropdown free-gift-dropdown">
+                <input class="dropdown__input" id="free-gift-value-{{ forloop.index }}" type="text" placeholder hidden>
+                <label for="free-gift-value-{{ forloop.index }}" hidden>{{ 'snippets.free_gift.free_gift' | t }}</label>
+
+                <div class="free-gift__selected flex items-center cursor-pointer">
+                  <div class="free-gift__selected-product flex-1">
+                    {% render 'free-gift-product', product_item: first_product_item, has_variants: true %}
+                  </div>
+                  {% render 'icon-caret' %}
+                </div>
+
+                <ul class="dropdown__list">
+                  {%- for handle_item in handles -%}
+                    {% assign product_item = all_products[handle_item] %}
+                    <li
+                      class="dropdown__item"
+                      data-value="{{ product_item.selected_or_first_available_variant.id }}"
+                      data-param="{{ product_item.selected_or_first_available_variant.id }}"
+                      data-variant-count="{{ product_item.variants_count }}"
+                    >
+                      {% render 'free-gift-product', product_item: product_item %}
+                      <script type="text/html">
+                        {% render 'free-gift-product', product_item: product_item, has_variants: true %}
+                      </script>
+                    </li>
+                  {%- endfor -%}
+                </ul>
+              </dropdown-component>
+            </div>
+          {%- endfor -%}
+        </div>
+      </div>
+    </div>
+  </free-gift>
+{%- endif -%}

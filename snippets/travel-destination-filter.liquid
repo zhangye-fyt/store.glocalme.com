@@ -1,0 +1,45 @@
+<travel-destination-filter>
+  <dropdown-component class="dropdown{% if class != blank %} {{ class }}{% endif %}">
+    <input
+      class="dropdown__input"
+      id="country-value"
+      type="text"
+      placeholder="{{ 'general.travel_plans.where_are_you_going' | t }}"
+    >
+    <ul class="dropdown__list">
+      {%- assign country_list = settings.country_list | split: ',' -%}
+      {%- for country_item in country_list -%}
+        {%- liquid
+          assign country_values = country_item | split: ':'
+          assign country_name = country_values[0] | strip
+          assign country_code = country_values[1] | strip
+
+          assign travel_destination_data_mapping = settings.travel_destination_data_mapping | split: '.'
+          assign travel_destination_tags = ''
+          for travel_destination_item in travel_destination_data_mapping
+            assign travel_destination_value = travel_destination_item | split: ':'
+            if travel_destination_value[1] contains country_code
+              assign travel_destination_value_tag = travel_destination_value[0] | strip
+              if forloop.first
+                assign travel_destination_tags = travel_destination_value_tag
+              else
+                assign travel_destination_tags = travel_destination_tags | append: ',' | append: travel_destination_value_tag
+              endif
+            endif
+          endfor
+        %}
+        <li
+          class="dropdown__item"
+          data-value="{{- country_name -}}"
+          data-param="{{- country_code -}}"
+          {% if travel_destination_tags != blank %}
+            data-tags="{{- travel_destination_tags -}}"
+          {% endif %}
+        >
+          {{- country_name -}}
+        </li>
+      {%- endfor -%}
+    </ul>
+    {% render 'icon-caret' %}
+  </dropdown-component>
+</travel-destination-filter>

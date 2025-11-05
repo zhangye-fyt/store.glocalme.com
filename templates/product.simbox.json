@@ -1,0 +1,401 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h3"
+          }
+        },
+        "judge_me_reviews_preview_badge_paAwTN": {
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        },
+        "custom_liquid_VbxKLL": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div class=\"special-offer\">\n  <p style=\"font-weight: bold; color: red; font-size: 1.2em;\"><strong></strong></p>\n</div>\n\n<div class=\"price-note\">\n  <p>*Please note this price ($179) only includes the hardware and it is free to receive calls and receive/send SMS. If you need to use the calling service, please buy our VIP service which is $10/month on GlocalMe Call APP.</p>\n</div>\n\n<div class=\"network-info\">\n  <p>Support 2G/3G network only.</p>\n</div>\n\n<div class=\"sim-slot-info\">\n  <p>Although the SIMBOX has 4 SIM CARD slots and can be used to insert 4 SIM CARDs, only 2 slots can be activated at the same time.</p>\n</div>"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "inventory_ybzDtw": {
+          "type": "inventory",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_quantity": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "custom_liquid_6pDWQA": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div id=\"izyrent\"></div>"
+          }
+        },
+        "gift": {
+          "type": "gift",
+          "settings": {}
+        },
+        "add_ons": {
+          "type": "add_ons",
+          "settings": {}
+        },
+        "supported_devices": {
+          "type": "supported_devices",
+          "settings": {}
+        },
+        "text_with_icon_FJpD8f": {
+          "type": "text_with_icon",
+          "settings": {
+            "show_text_with_icon_1": true,
+            "icon_1": "delivery",
+            "text_1": "Fast Shipping",
+            "show_text_with_icon_2": true,
+            "icon_2": "shield",
+            "text_2": "High-quality Products",
+            "box_shadow": true,
+            "icon_style": "colored",
+            "icon_fill_type": "gradient"
+          }
+        },
+        "text_with_icon": {
+          "type": "text_with_icon",
+          "settings": {
+            "show_text_with_icon_1": true,
+            "icon_1": "wallet",
+            "text_1": "30 Day Return Guarantee",
+            "show_text_with_icon_2": true,
+            "icon_2": "user-1",
+            "text_2": "Professional Service Support",
+            "box_shadow": true,
+            "icon_style": "colored",
+            "icon_fill_type": "gradient"
+          }
+        },
+        "share_EAqH9P": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share",
+            "show_share_facebook": true,
+            "show_share_twitter": true,
+            "show_share_pinterest": true,
+            "show_share_copy": true
+          }
+        },
+        "description_kMmzhz": {
+          "type": "description",
+          "settings": {
+            "description": ""
+          }
+        },
+        "dropdown_information_xpRtc9": {
+          "type": "dropdown_information",
+          "settings": {
+            "characteristics": false,
+            "heading": "User Manual",
+            "description": "<h6><a href=\"https://cdn.shopify.com/s/files/1/0658/8963/2410/files/SIMBOX.pdf?v=1745475740\" target=\"_blank\" title=\"https://cdn.shopify.com/s/files/1/0658/8963/2410/files/SIMBOX.pdf?v=1745475740\">SIMBOX</a></h6>",
+            "button_show": false,
+            "button_label": "Button label",
+            "button_link": "",
+            "default_open": false
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "judge_me_reviews_preview_badge_paAwTN",
+        "custom_liquid_VbxKLL",
+        "variant_picker",
+        "price",
+        "inventory_ybzDtw",
+        "buy_buttons",
+        "custom_liquid_6pDWQA",
+        "gift",
+        "add_ons",
+        "supported_devices",
+        "text_with_icon_FJpD8f",
+        "text_with_icon",
+        "share_EAqH9P",
+        "description_kMmzhz",
+        "dropdown_information_xpRtc9"
+      ],
+      "custom_css": [
+        "@media only screen and (min-width: 1200px) {.rte div {margin-right: 180px; margin-left: -180px; }}"
+      ],
+      "settings": {
+        "desktop_alignment": "right",
+        "mobile_alignment": "before",
+        "gallery_type": "stacked_gallery",
+        "aspect_ratio": "1/1",
+        "image_fit": "contain",
+        "image_fit_modal": "contain",
+        "padding_bottom": "l"
+      }
+    },
+    "image_banner_PVRtP7": {
+      "type": "image-banner",
+      "settings": {
+        "full_width": false,
+        "color_scheme": "",
+        "image": "shopify://shop_images/SIMBOX_02.jpg",
+        "image_mobile": "shopify://shop_images/SIMBOX_02.jpg",
+        "image_ratio": "adapt",
+        "image_link": "",
+        "opacity_overlay": 0,
+        "icon": "none",
+        "icon_color_scheme": "",
+        "icon_size": "large",
+        "icon_style": "colored",
+        "icon_fill_type": "gradient",
+        "box_shadow": false,
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "heading": "",
+        "heading_size": "h2",
+        "heading_level": "h2",
+        "text_information": "",
+        "text_align": "left",
+        "text_width": "small",
+        "show_view_all": false,
+        "button_label": "Shop now",
+        "button_style": "primary",
+        "button_link": "",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_banner_mP6gx7": {
+      "type": "image-banner",
+      "settings": {
+        "full_width": false,
+        "color_scheme": "",
+        "image": "shopify://shop_images/SIMBOX_03.jpg",
+        "image_mobile": "shopify://shop_images/SIMBOX_03.jpg",
+        "image_ratio": "adapt",
+        "image_link": "",
+        "opacity_overlay": 0,
+        "icon": "none",
+        "icon_color_scheme": "",
+        "icon_size": "large",
+        "icon_style": "colored",
+        "icon_fill_type": "gradient",
+        "box_shadow": false,
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "heading": "",
+        "heading_size": "h2",
+        "heading_level": "h2",
+        "text_information": "",
+        "text_align": "left",
+        "text_width": "small",
+        "show_view_all": false,
+        "button_label": "Shop now",
+        "button_style": "primary",
+        "button_link": "",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_banner_eEK9gF": {
+      "type": "image-banner",
+      "settings": {
+        "full_width": false,
+        "color_scheme": "",
+        "image": "shopify://shop_images/SIMBOX_04.jpg",
+        "image_mobile": "shopify://shop_images/SIMBOX_04.jpg",
+        "image_ratio": "adapt",
+        "image_link": "",
+        "opacity_overlay": 0,
+        "icon": "none",
+        "icon_color_scheme": "",
+        "icon_size": "large",
+        "icon_style": "colored",
+        "icon_fill_type": "gradient",
+        "box_shadow": false,
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "heading": "",
+        "heading_size": "h2",
+        "heading_level": "h2",
+        "text_information": "",
+        "text_align": "left",
+        "text_width": "small",
+        "show_view_all": false,
+        "button_label": "Shop now",
+        "button_style": "primary",
+        "button_link": "",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_banner_UnwKr6": {
+      "type": "image-banner",
+      "settings": {
+        "full_width": false,
+        "color_scheme": "",
+        "image": "shopify://shop_images/SIMBOX_05.jpg",
+        "image_mobile": "shopify://shop_images/SIMBOX_05.jpg",
+        "image_ratio": "adapt",
+        "image_link": "",
+        "opacity_overlay": 0,
+        "icon": "none",
+        "icon_color_scheme": "",
+        "icon_size": "large",
+        "icon_style": "colored",
+        "icon_fill_type": "gradient",
+        "box_shadow": false,
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "heading": "",
+        "heading_size": "h2",
+        "heading_level": "h2",
+        "text_information": "",
+        "text_align": "left",
+        "text_width": "small",
+        "show_view_all": false,
+        "button_label": "Shop now",
+        "button_style": "primary",
+        "button_link": "",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_banner_FfLrqz": {
+      "type": "image-banner",
+      "settings": {
+        "full_width": false,
+        "color_scheme": "",
+        "image": "shopify://shop_images/SIMBOX_06.jpg",
+        "image_mobile": "shopify://shop_images/SIMBOX_06.jpg",
+        "image_ratio": "adapt",
+        "image_link": "",
+        "opacity_overlay": 0,
+        "icon": "none",
+        "icon_color_scheme": "",
+        "icon_size": "large",
+        "icon_style": "colored",
+        "icon_fill_type": "gradient",
+        "box_shadow": false,
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "heading": "",
+        "heading_size": "h2",
+        "heading_level": "h2",
+        "text_information": "",
+        "text_align": "left",
+        "text_width": "small",
+        "show_view_all": false,
+        "button_label": "Shop now",
+        "button_style": "primary",
+        "button_link": "",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_banner_WKJKLB": {
+      "type": "image-banner",
+      "settings": {
+        "full_width": false,
+        "color_scheme": "",
+        "image": "shopify://shop_images/SIMBOX_07.jpg",
+        "image_mobile": "shopify://shop_images/SIMBOX_07.jpg",
+        "image_ratio": "adapt",
+        "image_link": "",
+        "opacity_overlay": 0,
+        "icon": "none",
+        "icon_color_scheme": "",
+        "icon_size": "large",
+        "icon_style": "colored",
+        "icon_fill_type": "gradient",
+        "box_shadow": false,
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "heading": "",
+        "heading_size": "h2",
+        "heading_level": "h2",
+        "text_information": "",
+        "text_align": "left",
+        "text_width": "small",
+        "show_view_all": false,
+        "button_label": "Shop now",
+        "button_style": "primary",
+        "button_link": "",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "1755825590d64fe115": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_GbXLrJ": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_GbXLrJ"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "color_scheme": "background-1",
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "subheading_icon": "none",
+        "heading": "You May Also Like",
+        "heading_size": "h2",
+        "text": "",
+        "products_limit": 6,
+        "image_ratio": "5/4",
+        "image_fit": "cover",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_desc": false,
+        "padding_top": "l",
+        "padding_bottom": "l"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_banner_PVRtP7",
+    "image_banner_mP6gx7",
+    "image_banner_eEK9gF",
+    "image_banner_UnwKr6",
+    "image_banner_FfLrqz",
+    "image_banner_WKJKLB",
+    "1755825590d64fe115",
+    "product-recommendations"
+  ]
+}

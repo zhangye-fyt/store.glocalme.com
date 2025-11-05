@@ -1,0 +1,58 @@
+.video-grid__list {
+  display: grid;
+  gap: 2rem;
+}
+
+.video-grid__item modal-opener button {
+  border: none;
+  outline: none;
+  background: none;
+  padding: 0;
+}
+
+.video-grid__media {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1.2rem;
+  cursor: pointer;
+}
+
+.video-grid__media .video-grid__media-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-grid__media .video-grid__play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 6.4rem;
+  height: 6.4rem;
+  background-color: #fff;
+  border-radius: 100%;
+}
+
+.video-grid__subheading,
+.video-grid__heading {
+  margin-top: 1.6rem;
+}
+
+.video-popup-modal .video-popup-modal__iframe {
+  position: relative;
+}
+
+.video-popup-modal iframe,
+.video-popup-modal video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: none;
+}

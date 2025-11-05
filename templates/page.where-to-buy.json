@@ -1,0 +1,162 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": "no-indent",
+        "padding_bottom": "m"
+      }
+    },
+    "collections_grid_gHMBPz": {
+      "type": "collections-grid",
+      "blocks": {
+        "collection_z9Ky4g": {
+          "type": "collection",
+          "settings": {
+            "collection": "life-series"
+          }
+        },
+        "collection_T3FfzB": {
+          "type": "collection",
+          "settings": {
+            "collection": "portable-wifi"
+          }
+        },
+        "collection_R8pHPn": {
+          "type": "collection",
+          "settings": {
+            "collection": "data-package"
+          }
+        },
+        "collection_neLXfr": {
+          "type": "collection",
+          "settings": {
+            "collection": "sim-card"
+          }
+        },
+        "collection_9UK6cn": {
+          "type": "collection",
+          "settings": {
+            "collection": "refurbished-portable-wifi"
+          }
+        },
+        "collection_nLMpzR": {
+          "type": "collection",
+          "settings": {
+            "collection": "get-device-free"
+          }
+        }
+      },
+      "block_order": [
+        "collection_z9Ky4g",
+        "collection_T3FfzB",
+        "collection_R8pHPn",
+        "collection_neLXfr",
+        "collection_9UK6cn",
+        "collection_nLMpzR"
+      ],
+      "name": "t:sections.collections-grid.name",
+      "settings": {
+        "layout": "simple",
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "subheading_icon": "none",
+        "heading": "",
+        "heading_size": "h2",
+        "heading_level": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566E0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "left",
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_fit": "cover",
+        "show_desc": true,
+        "alt_desc": false,
+        "overlay_opacity": 0,
+        "collections_to_show": 6,
+        "columns_mobile": "2",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent"
+      }
+    },
+    "logo_list_byk3fN": {
+      "type": "logo-list",
+      "blocks": {
+        "logo_3AMKhT": {
+          "type": "logo",
+          "settings": {
+            "image_1": "shopify://shop_images/B_H.jpg",
+            "image_width": 300,
+            "logo_link": "https://www.bhphotovideo.com/c/search?q=glocalme&sts=ma"
+          }
+        },
+        "logo_eGkzWn": {
+          "type": "logo",
+          "settings": {
+            "image_1": "shopify://shop_images/Bestbuy.jpg",
+            "image_width": 300,
+            "logo_link": "https://www.bestbuy.com/site/glocalme-u3x-duoturbo-4g-wi-fi-hotspot-white/6519719.p?skuId=6519719"
+          }
+        },
+        "logo_XgN9yt": {
+          "type": "logo",
+          "settings": {
+            "image_1": "shopify://shop_images/wellbots.png",
+            "image_width": 300,
+            "logo_link": "https://www.wellbots.com/search?type=product&options%5Bprefix%5D=last&options%5Bunavailable_products%5D=last&q=glocalme"
+          }
+        }
+      },
+      "block_order": [
+        "logo_3AMKhT",
+        "logo_eGkzWn",
+        "logo_XgN9yt"
+      ],
+      "name": "t:sections.logo-list.name",
+      "settings": {
+        "layout": "static",
+        "color_scheme": "",
+        "enable_border": false,
+        "border_full": false,
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "subheading_icon": "none",
+        "heading": "Distributor",
+        "heading_size": "h2",
+        "heading_level": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "horizontal_alignment": "center",
+        "vertical_alignment": "middle",
+        "speed_slider_1": 4000,
+        "speed_slider_2": 6000,
+        "padding_top": "m",
+        "padding_bottom": "m",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "collections_grid_gHMBPz",
+    "logo_list_byk3fN"
+  ]
+}

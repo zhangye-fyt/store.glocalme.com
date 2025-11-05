@@ -1,0 +1,69 @@
+{%- liquid
+  assign product_collections_handles = ''
+  for collection_item in product.collections
+    if forloop.last
+      assign product_collections_handles = product_collections_handles | append: collection_item.handle
+    else
+      assign product_collections_handles = product_collections_handles | append: collection_item.handle | append: ';'
+    endif
+  endfor
+
+  assign target_data = null
+  for data_item in settings.supported_devices_data
+    for tag_item in data_item.for_which_tags.value
+      if product.tags contains tag_item
+        assign target_data = data_item
+        break
+      endif
+    endfor
+
+    if target_data != null
+      break
+    endif
+
+    for collection_item in data_item.for_which_collections.value
+      if product_collections_handles contains collection_item.handle
+        assign target_data = data_item
+        break
+      endif
+    endfor
+  endfor
+-%}
+
+{%- if target_data != null -%}
+  {{ 'component-supported-devices.css' | asset_url | stylesheet_tag }}
+
+  <div class="product__supported-devices">
+    <div class="supported-devices__title subtitle">{{ settings.supported_devices_title }}</div>
+    <div class="supported-devices__content">
+      <div class="supported-devices__list">
+        {%- for device_item in target_data.devices.value -%}
+          <a class="supported-devices__item flex flex-wrap items-center" href="{{ device_item.url }}">
+            {%- if device_item.featured_media -%}
+              <div class="supported-devices__item-media">
+                <div
+                  class="ratio"
+                  style="--ratio-percent: {{ 1 | divided_by: device_item.featured_media.aspect_ratio | times: 100 | round: 2 }}%"
+                >
+                  {{
+                    device_item.featured_media
+                    | image_url: width: 550
+                    | image_tag:
+                      loading: 'lazy',
+                      sizes: '(min-width: 1100px) 750, (min-width: 750px) 550, 275',
+                      widths: '275, 550, 750',
+                      width: device_item.featured_media.width,
+                      height: device_item.featured_media.height
+                  }}
+                </div>
+              </div>
+            {%- else -%}
+              {{ 'product-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
+            {%- endif -%}
+            <div class="supported-devices__item-title flex-1 line-clamp-2 body-small">{{ device_item.title }}</div>
+          </a>
+        {%- endfor -%}
+      </div>
+    </div>
+  </div>
+{%- endif -%}

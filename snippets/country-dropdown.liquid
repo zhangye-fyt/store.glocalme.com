@@ -1,0 +1,19 @@
+<dropdown-component class="dropdown dropdown--v1 country-dropdown{% if class != blank %} {{ class }}{% endif %}">
+  <input class="dropdown__input" id="country-value" type="text" placeholder>
+  <label for="country-value">{{ 'general.country_dropdown.select_a_country' | t }}</label>
+  <ul class="dropdown__list">
+    {%- assign country_list = settings.country_list | split: ',' -%}
+    {%- for country_item in country_list -%}
+      {%- liquid
+        assign country_values = country_item | split: ':'
+        assign country_name = country_values[0] | strip
+        assign country_code = country_values[1] | strip
+      -%}
+
+      <li class="dropdown__item" data-value="{{ country_name }}" data-param="{{- country_code -}}">
+        {{- country_name -}}
+      </li>
+    {%- endfor -%}
+  </ul>
+  {% render 'icon-caret' %}
+</dropdown-component>

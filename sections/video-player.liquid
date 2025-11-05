@@ -1,0 +1,260 @@
+{%- style -%}
+  .video-section-{{ section.id }} {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .video-section-{{ section.id }}__media {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 50%; /* 16:9 Aspect Ratio */
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .video-section-{{ section.id }}__media video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .video-section-{{ section.id }}__cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+  }
+
+  .video-section-{{ section.id }}__media.is-playing .video-section-{{ section.id }}__cover {
+    display: none;
+  }
+
+  @media (min-width: 768px) {
+    .video-section-{{ section.id }}__content {
+      position: absolute;
+      left: calc(50% - 600px);
+      top: 50%;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      z-index: 2;
+      color: #fff;
+      pointer-events: none;
+      padding: 10px;
+    }
+  }
+
+  .video-section-{{ section.id }}__title {
+    font-size: 5rem;
+    font-weight: bold;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    z-index: 1;
+  }
+  .video-section-{{ section.id }}__button {
+    margin-top: 2rem;
+    padding: 12px 32px;
+    background: #fff;
+    color: #333;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    border: 2px solid #fff;
+    display: inline-block;
+    pointer-events: auto;
+  }
+
+  .video-section-{{ section.id }}__button:hover {
+    background: transparent;
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  }
+
+  @media (max-width: 768px) {
+    .video-section-{{ section.id }}__content {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      z-index: 2;
+      color: #fff;
+      pointer-events: none;
+      padding: 10px;
+      width: 100%;
+    }
+    .video-section-{{ section.id }}__media {
+      padding-bottom: 150% !important;
+    }
+    .video-section-{{ section.id }}__button {
+      padding: 8px 15px;
+      margin-top: 0rem !important;
+    }
+    .video-section-{{ section.id }}__title {
+      font-size: 2.2rem;
+      margin-bottom: 0rem;    
+    }
+    .video-section-{{ section.id }}__subtitle {
+      font-size: 1.5rem !important;
+    }
+  }
+
+  /* Removed .video-section__highlight and its ::after CSS */
+
+  .video-section-{{ section.id }}__subtitle {
+    font-size: 3.1rem;
+    color: #fff;
+    margin-top: 6px;
+    line-height: 36px;
+    font-weight: 700;
+    text-shadow: 1px 1px 6px #00000033;
+  }
+
+  /* 播放时隐藏内容 */
+  .video-section-{{ section.id }}__content.is-hidden {
+    display: none !important;
+  }
+{%- endstyle -%}
+
+<div class="video-section-{{ section.id }}">
+  <div class="video-section-{{ section.id }}__media">
+    {%- if section.settings.video != null -%}
+      {%- if section.settings.cover_image != blank -%}
+        {{ section.settings.cover_image | image_url: width: 1920 | image_tag: 
+          class: 'video-section-' | append: section.id | append: '__cover',
+          loading: 'lazy',
+          alt: section.settings.cover_image.alt | escape
+        }}
+      {%- endif -%}
+      {{
+        section.settings.video
+        | video_tag:
+          autoplay: true,
+          loop: section.settings.enable_video_looping,
+          controls: false,
+          muted: true,
+          playsinline: true,
+          preload: 'auto',
+          class: 'video-section__video'
+      }}
+
+      <div class="video-section-{{ section.id }}__content">
+        <h1 class="video-section-{{ section.id }}__title">
+          {{ section.settings.title | escape }}
+        </h1>
+        <div class="video-section-{{ section.id }}__subtitle">
+          {{ section.settings.subtitle | escape }}
+        </div>
+        {%- if section.settings.button_text != blank  -%}
+          <a href="{{ section.settings.button_link }}" class="video-section-{{ section.id }}__button">
+            {{ section.settings.button_text | escape }}
+          </a>
+        {%- endif -%}
+      </div>
+    {%- else -%}
+      {{ 'hero-apparel-3' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
+    {%- endif -%}
+  </div>
+</div>
+
+{% comment %} <script>
+document.addEventListener("DOMContentLoaded", function () {
+  var sectionId = "{{ section.id }}";
+  var video = document.querySelector(".video-section-" + sectionId + " video");
+  var content = document.querySelector(".video-section-" + sectionId + "__content");
+
+  if (video && content) {
+    video.addEventListener("play", function () {
+      content.classList.add("is-hidden");
+    });
+    video.addEventListener("pause", function () {
+      content.classList.remove("is-hidden");
+    });
+  }
+});
+</script> {% endcomment %}
+
+{% schema %}
+{
+  "name": "Video Player",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "enable_video_looping",
+      "label": "Enable video looping",
+      "default": false
+    },
+    {
+      "type": "video",
+      "id": "video",
+      "label": "Video"
+    },
+    {
+      "type": "image_picker",
+      "id": "cover_image",
+      "label": "Cover image",
+      "info": "Shows before video plays"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title (before highlight)",
+      "default": "Let your"
+    },
+    {
+      "type": "text",
+      "id": "highlight",
+      "label": "Highlight text",
+      "default": "joy out!"
+    },
+    {
+      "type": "textarea",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "8K 360 DroneCo-Engineered With Insta360"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button text",
+      "default": "LEARN MORE"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Video Player"
+    }
+  ]
+}
+{% endschema %}

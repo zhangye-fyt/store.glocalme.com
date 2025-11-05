@@ -1,0 +1,272 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.vendor }}"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h3"
+          }
+        },
+        "custom_liquid_jghxJY": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "Global 5G Mobile Hotspot with Touch Screen"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_quantity": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "gift": {
+          "type": "gift",
+          "settings": {}
+        },
+        "add_ons": {
+          "type": "add_ons",
+          "settings": {}
+        },
+        "supported_devices": {
+          "type": "supported_devices",
+          "settings": {}
+        },
+        "text_with_icon_FJpD8f": {
+          "type": "text_with_icon",
+          "settings": {
+            "show_text_with_icon_1": true,
+            "icon_1": "delivery",
+            "text_1": "Fast Worldwide Shipping",
+            "show_text_with_icon_2": true,
+            "icon_2": "mark",
+            "text_2": "Hassle-Free Warranty",
+            "box_shadow": true,
+            "icon_style": "colored",
+            "icon_fill_type": "gradient"
+          }
+        },
+        "text_with_icon": {
+          "type": "text_with_icon",
+          "settings": {
+            "show_text_with_icon_1": true,
+            "icon_1": "wallet",
+            "text_1": "30 days Money Back Guarantee",
+            "show_text_with_icon_2": true,
+            "icon_2": "user-1",
+            "text_2": "24\/7 Technical Support",
+            "box_shadow": true,
+            "icon_style": "colored",
+            "icon_fill_type": "gradient"
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "description": ""
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "custom_liquid_jghxJY",
+        "variant_picker",
+        "price",
+        "buy_buttons",
+        "gift",
+        "add_ons",
+        "supported_devices",
+        "text_with_icon_FJpD8f",
+        "text_with_icon",
+        "description"
+      ],
+      "settings": {
+        "desktop_alignment": "right",
+        "mobile_alignment": "before",
+        "gallery_type": "slider_previews",
+        "aspect_ratio": "1\/1",
+        "image_fit": "cover",
+        "image_fit_modal": "contain",
+        "padding_bottom": "l"
+      }
+    },
+    "6284d95d-0127-47a7-b977-2a630c6f9383": {
+      "type": "numbers",
+      "blocks": {
+        "template--15231063359549__6284d95d-0127-47a7-b977-2a630c6f9383-column-1": {
+          "type": "column",
+          "settings": {
+            "number": "1000",
+            "heading": "Heading",
+            "description": "Some description",
+            "icon": "battery-3",
+            "icon_color": "subtle",
+            "icon_fill_type": "gradient",
+            "show_button": false,
+            "button_label": "Label",
+            "button_link": ""
+          }
+        },
+        "template--15231063359549__6284d95d-0127-47a7-b977-2a630c6f9383-column-2": {
+          "type": "column",
+          "settings": {
+            "number": "1000",
+            "heading": "Heading",
+            "description": "Some description",
+            "icon": "computer",
+            "icon_color": "subtle",
+            "icon_fill_type": "solid",
+            "show_button": false,
+            "button_label": "Label",
+            "button_link": ""
+          }
+        },
+        "template--15231063359549__6284d95d-0127-47a7-b977-2a630c6f9383-column-3": {
+          "type": "column",
+          "settings": {
+            "number": "1000",
+            "heading": "Heading",
+            "description": "Some description",
+            "icon": "check-3",
+            "icon_color": "subtle",
+            "icon_fill_type": "solid",
+            "show_button": false,
+            "button_label": "Label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15231063359549__6284d95d-0127-47a7-b977-2a630c6f9383-column-1",
+        "template--15231063359549__6284d95d-0127-47a7-b977-2a630c6f9383-column-2",
+        "template--15231063359549__6284d95d-0127-47a7-b977-2a630c6f9383-column-3"
+      ],
+      "disabled": true,
+      "settings": {
+        "layout": "columns",
+        "block_type": "subtle",
+        "columns_to_row": 3,
+        "color_scheme": "",
+        "enable_border": false,
+        "border_full": false,
+        "subheading": "Subheading",
+        "subheading_style": "subtitle",
+        "subheading_icon": "none",
+        "heading": "Heading",
+        "heading_size": "h2",
+        "heading_level": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "text": "Some description",
+        "text_align": "left",
+        "number_size": "recommended",
+        "icon_size": "recommended",
+        "card_heading_size": "recommended",
+        "number_size_first": "large",
+        "icon_size_first": "extra-large",
+        "card_heading_size_first": "h4",
+        "padding_top": "l",
+        "padding_bottom": "l"
+      }
+    },
+    "7dba930a-4503-4b98-ad20-1d9ec5fe1eac": {
+      "type": "slideshow",
+      "disabled": true,
+      "settings": {
+        "layout": "overlay",
+        "full_width": true,
+        "color_scheme": "",
+        "enable_border": false,
+        "border_full": false,
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "subheading_icon": "none",
+        "heading": "",
+        "heading_size": "h2",
+        "heading_level": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "text": "",
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text_align": "left",
+        "height": "16\/9",
+        "text_align_content": "top-left",
+        "enable_autoplay": true,
+        "enable_parallax": false,
+        "enable_pagination": true,
+        "pagination_type": "tabs_full",
+        "pagination_color_scheme": "",
+        "pagination_width": "medium",
+        "enable_navigation": false,
+        "navigation_color_scheme": "",
+        "slide_duration": 5,
+        "icon_size": "recommended",
+        "icon_style": "contrast",
+        "icon_fill_type": "solid",
+        "show_tab_icon": true,
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "color_scheme": "background-1",
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "subheading_icon": "none",
+        "heading": "You May Also Like",
+        "heading_size": "h2",
+        "text": "",
+        "products_limit": 6,
+        "image_ratio": "5\/4",
+        "image_fit": "cover",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_desc": true,
+        "padding_top": "l",
+        "padding_bottom": "l"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "6284d95d-0127-47a7-b977-2a630c6f9383",
+    "7dba930a-4503-4b98-ad20-1d9ec5fe1eac",
+    "product-recommendations"
+  ]
+}

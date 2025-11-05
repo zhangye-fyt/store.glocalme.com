@@ -1,0 +1,637 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": "no-indent",
+        "padding_bottom": "m"
+      }
+    },
+    "image_banner_cTCFra": {
+      "type": "image-banner",
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "full_width": true,
+        "color_scheme": "",
+        "image": "shopify://shop_images/glocalme_Halloween_1.jpg",
+        "image_mobile": "shopify://shop_images/glocalme_Halloween_2.jpg",
+        "image_ratio": "adapt",
+        "image_link": "",
+        "opacity_overlay": 0,
+        "icon": "none",
+        "icon_color_scheme": "",
+        "icon_size": "large",
+        "icon_style": "colored",
+        "icon_fill_type": "gradient",
+        "box_shadow": false,
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "heading": "",
+        "heading_size": "h2",
+        "heading_level": "h2",
+        "text_information": "",
+        "text_align": "left",
+        "text_width": "small",
+        "show_view_all": false,
+        "button_label": "Shop now",
+        "button_style": "primary",
+        "button_link": "",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "steps_z3Yj6R": {
+      "type": "steps",
+      "blocks": {
+        "step_XQ3xeN": {
+          "type": "step",
+          "settings": {
+            "image": "shopify://shop_images/X103_m_s03.jpg",
+            "number": "",
+            "heading": "X103-50% OFF",
+            "text": "",
+            "show_button": false,
+            "button_style": "simple",
+            "button_label": "Know More",
+            "button_link": ""
+          }
+        },
+        "step_3bqjhY": {
+          "type": "step",
+          "settings": {
+            "image": "shopify://shop_images/g40_wifi_hotspot_5_baeb5061-a9d6-48a7-b3a7-c14fdaaf7f45.jpg",
+            "number": "",
+            "heading": "G40-40% OFF",
+            "text": "",
+            "show_button": false,
+            "button_style": "simple",
+            "button_label": "Know More",
+            "button_link": ""
+          }
+        },
+        "step_mzBgBM": {
+          "type": "step",
+          "settings": {
+            "image": "shopify://shop_images/U3X_m_01.jpg",
+            "number": "",
+            "heading": "U3X-40% OFF",
+            "text": "",
+            "show_button": false,
+            "button_style": "simple",
+            "button_label": "Know More",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "step_XQ3xeN",
+        "step_3bqjhY",
+        "step_mzBgBM"
+      ],
+      "name": "t:sections.steps.name",
+      "settings": {
+        "layout": "columns-with-mobile-slider",
+        "color_scheme": "scheme-e5bfcc85-6666-48fc-801f-1154a7d89ed1",
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "subheading_icon": "none",
+        "heading": "🎁Wheel Rewards",
+        "heading_size": "h2",
+        "heading_level": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "Play the wheel to win bigger discount",
+        "text_align": "center",
+        "columns_to_show": 3,
+        "image_ratio": "landscape",
+        "number_size": "recommended",
+        "step_heading_size": "recommended",
+        "text_size": "recommended",
+        "padding_top": "l",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "popular_products_hCbb93": {
+      "type": "popular-products",
+      "name": "t:sections.popular-products.presets.name",
+      "settings": {
+        "color_scheme": "scheme-e5bfcc85-6666-48fc-801f-1154a7d89ed1",
+        "enable_border": false,
+        "border_full": false,
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "subheading_icon": "none",
+        "heading": "Up To $50 OFF on Best Sellers",
+        "heading_size": "h2",
+        "heading_level": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "🎁Free Gift Canvas Bag & Portable Case",
+        "product_list": [
+          "numen-air",
+          "meowgo-g40-pro",
+          "u3",
+          "upp",
+          "duoturbo",
+          "g4-pro"
+        ],
+        "products_to_show": 3,
+        "image_ratio": "1/1",
+        "image_fit": "cover",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_desc": false,
+        "columns_mobile": "2",
+        "enable_mobile_overflow_slider": false,
+        "button_show": true,
+        "button_label": "View More",
+        "button_style": "primary",
+        "button_link": "shopify://collections/all-products",
+        "padding_top": "l",
+        "padding_bottom": "l",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "bundle_up_iAMiHB": {
+      "type": "bundle-up",
+      "blocks": {
+        "product_w78EnM": {
+          "type": "product",
+          "settings": {
+            "product": "petphone",
+            "description": ""
+          }
+        },
+        "product_C6L7WL": {
+          "type": "product",
+          "settings": {
+            "product": "unicord",
+            "description": "Get The Power and Internet at Once."
+          }
+        },
+        "product_DxkUKN": {
+          "type": "product",
+          "settings": {
+            "product": "roamplug",
+            "description": "Four-in-One Universal Travel Adapter."
+          }
+        }
+      },
+      "block_order": [
+        "product_w78EnM",
+        "product_C6L7WL",
+        "product_DxkUKN"
+      ],
+      "name": "t:sections.bundle-up.presets.name",
+      "settings": {
+        "color_scheme": "scheme-e5bfcc85-6666-48fc-801f-1154a7d89ed1",
+        "cover_width": 30,
+        "cover": "shopify://shop_images/20251021164115.jpg",
+        "cover_ratio": "adapt",
+        "title": "Save Up To 30%!",
+        "sub_title": "🎁Free Gift Canvas Bag",
+        "title_color_scheme": "scheme-e5bfcc85-6666-48fc-801f-1154a7d89ed1",
+        "marker_color_scheme": "scheme-e5bfcc85-6666-48fc-801f-1154a7d89ed1",
+        "marker_heading_color_scheme": "scheme-e5bfcc85-6666-48fc-801f-1154a7d89ed1",
+        "checkbox_color_scheme": "scheme-e5bfcc85-6666-48fc-801f-1154a7d89ed1",
+        "image_ratio": "1/1",
+        "image_fit": "cover",
+        "padding_top": "s",
+        "padding_bottom": "l",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "popular_products_Ba3DN6": {
+      "type": "popular-products",
+      "name": "t:sections.popular-products.presets.name",
+      "settings": {
+        "color_scheme": "scheme-e5bfcc85-6666-48fc-801f-1154a7d89ed1",
+        "enable_border": false,
+        "border_full": false,
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "subheading_icon": "none",
+        "heading": "<strong>Limited-Time </strong>1<strong>2% OFF</strong>",
+        "heading_size": "h2",
+        "heading_level": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "✈️Global Roaming, Local Prices",
+        "product_list": [
+          "15gb-90-day-global-biz-94-countries-data-package",
+          "120gb-30-day-north-america-data-package",
+          "20gb-30-day-europe-data-package",
+          "20gb-north-america-monthly-pass",
+          "30gb-90-day-asia-data-package",
+          "36gb-365-day-na-data-package",
+          "3gb-15-day-usa-data-package",
+          "5g-lte-100gb-30-day-usa-high-speed-data-package",
+          "5g-lte-10gb-7-day-south-east-asia-data-package",
+          "5g-lte-50gb-30-day-usa-high-speed-data-package",
+          "5g-lte-10gb-30-day-global-data-package",
+          "15gb-n-a-30-days-high-speed-data-package"
+        ],
+        "products_to_show": 4,
+        "image_ratio": "1/1",
+        "image_fit": "cover",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_desc": false,
+        "columns_mobile": "2",
+        "enable_mobile_overflow_slider": false,
+        "button_show": true,
+        "button_label": "View More",
+        "button_style": "primary",
+        "button_link": "https://store.glocalme.com/collections/data-package",
+        "padding_top": "s",
+        "padding_bottom": "l",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "popular_products_7GiCT4": {
+      "type": "popular-products",
+      "name": "t:sections.popular-products.presets.name",
+      "settings": {
+        "color_scheme": "scheme-e5bfcc85-6666-48fc-801f-1154a7d89ed1",
+        "enable_border": false,
+        "border_full": false,
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "subheading_icon": "none",
+        "heading": "<strong>Travel smart on 12% OFF</strong>",
+        "heading_size": "h3",
+        "heading_level": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566E0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "Activate local plans instantly with SIM Card & eSIM!",
+        "product_list": [
+          "glocalme-esim",
+          "glocalme-ota-sim-card",
+          "glocalme-esim-trio"
+        ],
+        "products_to_show": 3,
+        "image_ratio": "1/1",
+        "image_fit": "cover",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_desc": false,
+        "columns_mobile": "2",
+        "enable_mobile_overflow_slider": true,
+        "button_show": false,
+        "button_label": "Button label",
+        "button_style": "primary",
+        "button_link": "",
+        "padding_top": "s",
+        "padding_bottom": "l",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "discovery_collections_Yn4ea3": {
+      "type": "discovery-collections",
+      "blocks": {
+        "collection_rndUCY": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify://shop_images/20251021191445_e09d7d17-80c9-4c0f-b051-504d73107514.jpg",
+            "collection": "portable-wifi",
+            "products": []
+          }
+        },
+        "collection_WbjPxm": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify://shop_images/20251021191440_90434ced-c2ab-49e5-9566-fdfbae0a5c21.jpg",
+            "collection": "life-series",
+            "products": []
+          }
+        },
+        "collection_GDYFeB": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify://shop_images/20251021191436.jpg",
+            "collection": "sim-card",
+            "products": []
+          }
+        },
+        "collection_BKDg7d": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify://shop_images/20251021191425.jpg",
+            "collection": "refurbished-portable-wifi",
+            "products": []
+          }
+        }
+      },
+      "block_order": [
+        "collection_rndUCY",
+        "collection_WbjPxm",
+        "collection_GDYFeB",
+        "collection_BKDg7d"
+      ],
+      "name": "t:sections.discovery-collections.presets.name",
+      "settings": {
+        "color_scheme": "scheme-e5bfcc85-6666-48fc-801f-1154a7d89ed1",
+        "title": "Shop the Best by Category",
+        "cover_ratio": "adapt",
+        "cover_fit": "cover",
+        "link_text": "",
+        "text_color_scheme": "scheme-e5bfcc85-6666-48fc-801f-1154a7d89ed1",
+        "direction_x": "ltr",
+        "direction_y": "ttb",
+        "position_x": 0,
+        "position_y": 0,
+        "product_color_scheme": "scheme-e5bfcc85-6666-48fc-801f-1154a7d89ed1",
+        "image_ratio": "1/1",
+        "image_fit": "cover",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "products_limit": 6,
+        "button_text": "Shop Now",
+        "padding_top": "m",
+        "padding_bottom": "l",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_with_text_yknKjm": {
+      "type": "image-with-text",
+      "blocks": {
+        "column_VQDptw": {
+          "type": "column",
+          "settings": {
+            "icon": "check-1",
+            "icon_fill_type": "solid",
+            "heading": "Durable and Shareable",
+            "text": ""
+          }
+        },
+        "column_XdTNQd": {
+          "type": "column",
+          "settings": {
+            "icon": "check-1",
+            "icon_fill_type": "solid",
+            "heading": "Smart and Secure Network",
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_VQDptw",
+        "column_XdTNQd"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "layout": "image_last",
+        "color_scheme": "scheme-e5bfcc85-6666-48fc-801f-1154a7d89ed1",
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "subheading_icon": "none",
+        "heading": "",
+        "heading_size": "h2",
+        "heading_level": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566E0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "left",
+        "inner_subheading": "",
+        "inner_heading": "Rent a GlocalMe WIFi Hotspot",
+        "inner_heading_size": "h2",
+        "inner_heading_level": "h2",
+        "inner_heading_line": "simple",
+        "inner_line_color": "#1566E0",
+        "inner_word_break": false,
+        "description": "<p>Global Network in 200+ Countries. 5G network covers 90 countries and regions</p>",
+        "text_align_inner": "top",
+        "image": "shopify://shop_images/20251022104252.png",
+        "height": "landscape",
+        "overlay_opacity": 0,
+        "logo_width": 75,
+        "add_text": "",
+        "author_color_scheme": "",
+        "icon_size": "recommended",
+        "box_shadow": false,
+        "icon_style": "colored",
+        "show_button": true,
+        "button_label": "Rent Now",
+        "button_link": "https://www.glocalme.com/US/rent-wifi",
+        "button_style": "primary",
+        "show_button_2": false,
+        "button_label_2": "Button label",
+        "button_link_2": "",
+        "button_style_2": "simple",
+        "padding_top": "m",
+        "padding_bottom": "m",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "multicolumn_6KUHnQ": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_cJQBrP": {
+          "type": "column",
+          "settings": {
+            "icon": "none",
+            "icon_color_scheme": "",
+            "icon_fill_type": "gradient",
+            "image": "shopify://shop_images/icon_Charging_Mode_3840x_db272339-b60e-44b0-9837-43a761a3069b.jpg",
+            "heading": "Fast Shipping Worldwide",
+            "text": "Lightning-fast shipping, ensuring speedy arrival of your order!",
+            "show_button": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        },
+        "column_8rBNFX": {
+          "type": "column",
+          "settings": {
+            "icon": "none",
+            "icon_color_scheme": "",
+            "icon_fill_type": "gradient",
+            "image": "shopify://shop_images/icon_Hassle_3840x_b1bf805a-0571-4fe3-a528-1a85443c5c8d.jpg",
+            "heading": "Quality Guaranteed",
+            "text": "Each product meets stringent quality and performance standards.",
+            "show_button": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        },
+        "column_hWc9cK": {
+          "type": "column",
+          "settings": {
+            "icon": "none",
+            "icon_color_scheme": "",
+            "icon_fill_type": "gradient",
+            "image": "shopify://shop_images/icon_Back_Guarantee_3840x_098150c1-3808-455a-bc45-f15d6bc3ab5c.jpg",
+            "heading": "30-Day Money-Back Guarantee",
+            "text": "Get a 30-day refund guarantee, shop with zero risk!",
+            "show_button": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        },
+        "column_4QgxED": {
+          "type": "column",
+          "settings": {
+            "icon": "none",
+            "icon_color_scheme": "",
+            "icon_fill_type": "gradient",
+            "image": "shopify://shop_images/icon_Cart_3840x_5ff914a7-b6a5-4b8f-acaf-fffc38d464ae.jpg",
+            "heading": "Competitive Price",
+            "text": "Buy more, save more,\nand earn more.",
+            "show_button": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        }
+      },
+      "block_order": [
+        "column_cJQBrP",
+        "column_8rBNFX",
+        "column_hWc9cK",
+        "column_4QgxED"
+      ],
+      "name": "t:sections.multicolumn.name",
+      "settings": {
+        "section_type": "separators",
+        "color_scheme": "scheme-e5bfcc85-6666-48fc-801f-1154a7d89ed1",
+        "enable_border": false,
+        "border_full": false,
+        "multicolumn_to_show": 4,
+        "gap": "large",
+        "enable_mobile_overflow_slider": false,
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "subheading_icon": "none",
+        "heading": "<strong>Begin Your GlocalMe Experience</strong>",
+        "heading_size": "h2",
+        "heading_level": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "left",
+        "icon_size": "recommended",
+        "box_shadow": true,
+        "icon_style": "colored",
+        "image_width": "small",
+        "image_ratio": "square",
+        "object_fit": "cover",
+        "card_heading_size": "h4",
+        "padding_top": "m",
+        "padding_bottom": "m",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "collapsible_content_nRrRqK": {
+      "type": "collapsible-content",
+      "blocks": {
+        "accordion_BFdxct": {
+          "type": "accordion",
+          "settings": {
+            "question": "Promotion Period",
+            "answer": "<p><strong>Valid for orders placed from October 22th to October 31st, 2025.</strong></p>",
+            "opened": true
+          }
+        },
+        "accordion_GTtX6b": {
+          "type": "accordion",
+          "settings": {
+            "question": "Terms and Conditions",
+            "answer": "<p>1. The discount cannot be combined with other promotions, including the  first order discount</p><p> 2. The discount cannot be used with product-specific discounts. </p><p>3. The discount is valid only during the promotion period.</p>",
+            "opened": true
+          }
+        },
+        "accordion_FEVTYR": {
+          "type": "accordion",
+          "settings": {
+            "question": "General Provisions",
+            "answer": "<p>1. This promotion is available for a limited time and subject to availability.</p><p>2. Abnormal activity, including fraud or misuse, may result in cancellation of the coupon or the associated order.</p><p>3. The platform reserves the right to interpret, modify, or adjust these terms in accordance with applicable law.<br/><br/></p>",
+            "opened": true
+          }
+        }
+      },
+      "block_order": [
+        "accordion_BFdxct",
+        "accordion_GTtX6b",
+        "accordion_FEVTYR"
+      ],
+      "name": "t:sections.collapsible-content.name",
+      "settings": {
+        "layout": "border",
+        "color_scheme": "scheme-e5bfcc85-6666-48fc-801f-1154a7d89ed1",
+        "enable_border": false,
+        "border_full": false,
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "subheading_icon": "none",
+        "heading": "<strong>Terms and Conditions</strong>",
+        "heading_size": "h2",
+        "heading_level": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "Participation in this promotion constitutes acceptance of the following terms:",
+        "text_align": "center",
+        "row_color_scheme": "",
+        "padding_top": "l",
+        "padding_bottom": "l",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_banner_cTCFra",
+    "steps_z3Yj6R",
+    "popular_products_hCbb93",
+    "bundle_up_iAMiHB",
+    "popular_products_Ba3DN6",
+    "popular_products_7GiCT4",
+    "discovery_collections_Yn4ea3",
+    "image_with_text_yknKjm",
+    "multicolumn_6KUHnQ",
+    "collapsible_content_nRrRqK"
+  ]
+}

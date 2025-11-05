@@ -1,0 +1,131 @@
+{%- liquid
+  if use_variant
+    assign target = product.selected_or_first_available_variant
+  else
+    assign target = product
+  endif
+  assign available = target.available | default: false
+
+  assign compare_at_price = target.compare_at_price
+  assign compare_at_price_min = target.compare_at_price_min
+  assign compare_at_price_max = target.compare_at_price_max
+
+  if use_calculated_price
+    assign compare_at_price = target.price
+    assign compare_at_price_min = target.price_min
+    assign compare_at_price_max = target.price_max
+  endif
+
+  assign price = target.price | default: 1999
+  assign price_min = target.price_min
+  assign price_max = target.price_max
+
+  if discount_amount != blank
+    assign price_discount_amount = discount_amount
+
+    if use_calculated_price
+      assign price = price | minus: discount_amount
+      assign price_min = target.price_min | minus: discount_amount
+      assign price_max = target.price_max | minus: discount_amount
+    endif
+  elsif discount_percentage != blank
+    assign price_discount_amount = price | times: discount_percentage | divided_by: 100.0 | floor
+    assign price_min_discount_amount = target.price_min | times: discount_percentage | divided_by: 100.0 | floor
+    assign price_max_discount_amount = target.price_max | times: discount_percentage | divided_by: 100.0 | floor
+
+    if use_calculated_price
+      assign price = price | minus: price_discount_amount
+      assign price_min = target.price_min | minus: price_min_discount_amount
+      assign price_max = target.price_max | minus: price_max_discount_amount
+    endif
+  endif
+
+  if settings.currency_code_enabled
+    assign money_compare_at_price = compare_at_price | money_with_currency
+    assign compare_at_price_min = compare_at_price_min | money_with_currency
+    assign compare_at_price_max = compare_at_price_max | money_with_currency
+
+    assign money_price = price | money_with_currency
+    assign price_min = price_min | money_with_currency
+    assign price_max = price_max | money_with_currency
+  else
+    assign money_compare_at_price = compare_at_price | money
+    assign compare_at_price_min = compare_at_price_min | money
+    assign compare_at_price_max = compare_at_price_max | money
+
+    assign money_price = price | money
+    assign price_min = price_min | money
+    assign price_max = price_max | money
+  endif
+
+  if target == product and product.price_varies
+    assign money_price = price_min | append: ' - ' | append: price_max
+    assign money_compare_at_price = compare_at_price_min | append: ' - ' | append: compare_at_price_max
+  endif
+-%}
+
+<div
+  class="
+    price
+    {%- if price_class %} {{ price_class }}{% endif -%}
+    {%- if available == false %} price--sold-out {% endif -%}
+    {%- if compare_at_price > price %} price--on-sale {% endif -%}
+  "
+>
+  <dl>
+    <div class="price__regular">
+      <dt class="visually-hidden">
+        <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
+      </dt>
+      <dd
+        {% if show_badges == false %}
+          class="price__last"
+        {% endif %}
+      >
+        <span class="price-item price-item--regular">
+          {{ money_price }}
+        </span>
+      </dd>
+    </div>
+    <div class="price__sale">
+      <dt class="visually-hidden">
+        <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.sale_price' | t }}</span>
+      </dt>
+      <dd
+        {% if show_badges == false %}
+          class="price__last"
+        {% endif %}
+      >
+        <span class="price-item price-item--sale">
+          {{ money_price }}
+        </span>
+      </dd>
+      <dt class="price__compare visually-hidden">
+        <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
+      </dt>
+      <dd class="price__compare">
+        <s class="price-item price-item--regular">
+          {{ money_compare_at_price }}
+        </s>
+      </dd>
+    </div>
+  </dl>
+
+  {%- unless show_badge == false -%}
+    {%- if discount_amount != blank or discount_percentage != blank -%}
+      <div class="price__badge body-small">
+        {%- if target == product and product.price_varies and price_min_discount_amount != price_max_discount_amount -%}
+          <span class="price__badge--save">
+            {{ 'products.product.save' | t }}
+            {{ price_min_discount_amount | money }} - {{ price_max_discount_amount | money }}
+          </span>
+        {%- else -%}
+          <span class="price__badge--save">
+            {{ 'products.product.save' | t }}
+            {{ price_discount_amount | money }}
+          </span>
+        {%- endif -%}
+      </div>
+    {%- endif -%}
+  {%- endunless -%}
+</div>

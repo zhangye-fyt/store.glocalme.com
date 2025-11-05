@@ -1,0 +1,1997 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ product.vendor }}"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h3"
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "description": ""
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "inventory_ybzDtw": {
+          "type": "inventory",
+          "settings": {}
+        },
+        "gift": {
+          "type": "gift",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_quantity": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "dropdown_information_bQGrxY": {
+          "type": "dropdown_information",
+          "disabled": true,
+          "settings": {
+            "characteristics": false,
+            "heading": "Some heading",
+            "description": "<p>Some description</p>",
+            "button_show": true,
+            "button_label": "Button label",
+            "button_link": "",
+            "default_open": false
+          }
+        },
+        "add_ons": {
+          "type": "add_ons",
+          "settings": {}
+        },
+        "country_checker": {
+          "type": "country_checker",
+          "settings": {}
+        },
+        "popup_nzDhX7": {
+          "type": "popup",
+          "settings": {
+            "label": "Compare Hotspot Device",
+            "heading": "",
+            "text": "",
+            "image": "shopify://shop_images/0702.jpg",
+            "page": ""
+          }
+        },
+        "popup_3fXzHx": {
+          "type": "popup",
+          "settings": {
+            "label": "Supported Languages",
+            "heading": "",
+            "text": "",
+            "image": "shopify://shop_images/U40_1.jpg",
+            "image_mobile": "shopify://shop_images/glocalme_1.jpg",
+            "page": ""
+          }
+        },
+        "supported_devices": {
+          "type": "supported_devices",
+          "settings": {}
+        },
+        "text_with_icon_FJpD8f": {
+          "type": "text_with_icon",
+          "settings": {
+            "show_text_with_icon_1": true,
+            "icon_1": "delivery",
+            "text_1": "Fast Shipping",
+            "show_text_with_icon_2": true,
+            "icon_2": "shield",
+            "text_2": "High-quality Products",
+            "box_shadow": true,
+            "icon_style": "colored",
+            "icon_fill_type": "gradient"
+          }
+        },
+        "text_with_icon": {
+          "type": "text_with_icon",
+          "settings": {
+            "show_text_with_icon_1": true,
+            "icon_1": "wallet",
+            "text_1": "30 Day Return Guarantee",
+            "show_text_with_icon_2": true,
+            "icon_2": "user-1",
+            "text_2": "Professional Service Support",
+            "box_shadow": true,
+            "icon_style": "colored",
+            "icon_fill_type": "gradient"
+          }
+        },
+        "share_EAqH9P": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share",
+            "show_share_facebook": true,
+            "show_share_twitter": true,
+            "show_share_pinterest": true,
+            "show_share_copy": true
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "description",
+        "variant_picker",
+        "price",
+        "inventory_ybzDtw",
+        "gift",
+        "buy_buttons",
+        "dropdown_information_bQGrxY",
+        "add_ons",
+        "country_checker",
+        "popup_nzDhX7",
+        "popup_3fXzHx",
+        "supported_devices",
+        "text_with_icon_FJpD8f",
+        "text_with_icon",
+        "share_EAqH9P"
+      ],
+      "custom_css": [
+        "@media only screen and (min-width: 1200px) {.rte div {margin-right: 180px; margin-left: -180px; }}"
+      ],
+      "settings": {
+        "desktop_alignment": "right",
+        "mobile_alignment": "before",
+        "gallery_type": "slider_previews",
+        "aspect_ratio": "1/1",
+        "image_fit": "contain",
+        "image_fit_modal": "contain",
+        "padding_bottom": "l"
+      }
+    },
+    "image_banner_TDL7wJ": {
+      "type": "image-banner",
+      "settings": {
+        "full_width": false,
+        "color_scheme": "background-4",
+        "image": "shopify://shop_images/20251023100113_3_13.jpg",
+        "image_mobile": "shopify://shop_images/20251023100113_4_13.jpg",
+        "image_ratio": "adapt",
+        "image_link": "",
+        "opacity_overlay": 0,
+        "icon": "none",
+        "icon_color_scheme": "",
+        "icon_size": "large",
+        "icon_style": "colored",
+        "icon_fill_type": "gradient",
+        "box_shadow": false,
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "heading": "",
+        "heading_size": "h2",
+        "heading_level": "h2",
+        "text_information": "",
+        "text_align": "left",
+        "text_width": "small",
+        "show_view_all": false,
+        "button_label": "Shop now",
+        "button_style": "primary",
+        "button_link": "",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_banner_zcR6zP": {
+      "type": "image-banner",
+      "settings": {
+        "full_width": false,
+        "color_scheme": "background-4",
+        "image": "shopify://shop_images/4g_hotspot_1.jpg",
+        "image_ratio": "adapt",
+        "image_link": "",
+        "opacity_overlay": 0,
+        "icon": "none",
+        "icon_color_scheme": "",
+        "icon_size": "large",
+        "icon_style": "colored",
+        "icon_fill_type": "gradient",
+        "box_shadow": false,
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "heading": "",
+        "heading_size": "h2",
+        "heading_level": "h2",
+        "text_information": "",
+        "text_align": "left",
+        "text_width": "small",
+        "show_view_all": false,
+        "button_label": "Shop now",
+        "button_style": "primary",
+        "button_link": "",
+        "margin_top": "xs",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_kkXYmU": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_6dJhWH": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/20250918184006.jpg",
+            "image_link": ""
+          }
+        },
+        "image_JV6PH7": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/20250918184010.jpg",
+            "image_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_6dJhWH",
+        "image_JV6PH7"
+      ],
+      "name": "t:sections.image-text-separation.presets.name",
+      "settings": {
+        "display_devices": "mobile",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_banner_78nk7Y": {
+      "type": "image-banner",
+      "settings": {
+        "full_width": false,
+        "color_scheme": "background-3",
+        "image": "shopify://shop_images/meow_go_g40_pro1_1.jpg",
+        "image_mobile": "shopify://shop_images/meow_go_g40_pro_1.jpg",
+        "image_ratio": "adapt",
+        "image_link": "",
+        "opacity_overlay": 0,
+        "icon": "none",
+        "icon_color_scheme": "background-3",
+        "icon_size": "large",
+        "icon_style": "colored",
+        "icon_fill_type": "gradient",
+        "box_shadow": false,
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "heading": "One Device, One Account, No More Internet Anxiety!",
+        "heading_size": "h4",
+        "heading_level": "h2",
+        "text_information": "<p>HyperConn™ technology ensures seamless connectivity through intelligent wireless evaluation, AI-driven network switching (4G/3G/Wi-Fi), and three-layer access. It monitors real-time performance and automatically switches to optimal networks for uninterrupted connections.</p>",
+        "text_align": "bottom-left",
+        "text_width": "full",
+        "show_view_all": false,
+        "button_label": "Shop now",
+        "button_style": "primary",
+        "button_link": "",
+        "margin_top": "s",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "banner_column_cnpHUD": {
+      "type": "banner-column",
+      "blocks": {
+        "column_tPtp6L": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/1-26_fc9e51fd-7b5b-4ab3-8ae8-609ccdf31d11.jpg",
+            "link": "",
+            "title": "Automatic Connection to Airplane Wi-Fi",
+            "description": "Stay connected, Never Go Offline."
+          }
+        },
+        "column_czXfP7": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/1-24_22102661-aac2-423a-877e-f3b46899b651.jpg",
+            "link": "",
+            "title": "Supports Multiple Mobile Operator",
+            "description": "4G、3G Mobile Network"
+          }
+        },
+        "column_9YKaq9": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/1-25_db674b6c-8629-4376-b8fe-be98d8ddb363.jpg",
+            "link": "",
+            "title": "Switch to the Best Network",
+            "description": "More Comfortable to Use"
+          }
+        },
+        "column_aPHPA8": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/1-23_efe450ff-9ef6-404e-8065-83f724c5ac06.jpg",
+            "link": "",
+            "title": "Ensure the Reliable Connection",
+            "description": "Keeping a productive office"
+          }
+        }
+      },
+      "block_order": [
+        "column_tPtp6L",
+        "column_czXfP7",
+        "column_9YKaq9",
+        "column_aPHPA8"
+      ],
+      "settings": {
+        "full_width": false,
+        "image_ratio": "2/3",
+        "image_fit": "cover",
+        "color_scheme": "",
+        "show_button": false,
+        "button_text": "Learn More",
+        "opacity_overlay": 0,
+        "image_ratio_mobile": "1/1",
+        "color_scheme_mobile": "",
+        "title_alignment_mobile": "center",
+        "enable_autoplay": true,
+        "slide_duration": 3,
+        "enable_loop": true,
+        "enable_pagination": true,
+        "padding_top": "s",
+        "padding_bottom": "xs",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_with_text_YeW3hE": {
+      "type": "image-with-text",
+      "settings": {
+        "layout": "image_last",
+        "color_scheme": "",
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "subheading_icon": "none",
+        "heading": "",
+        "heading_size": "h2",
+        "heading_level": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "left",
+        "inner_subheading": "",
+        "inner_heading": "4G Qualcomm Snapdragon",
+        "inner_heading_size": "h3",
+        "inner_heading_level": "h3",
+        "inner_heading_line": "simple",
+        "inner_line_color": "#1566e0",
+        "inner_word_break": false,
+        "description": "<p>Experience 4G full-speed connectivity on-the-go with MeowGo G40 Pro portable WiFi hotspot powered by Qualcomm advanced chipset. Enjoy reliable and high-performance internet access wherever you are.<br/><br/></p>",
+        "text_align_inner": "center",
+        "image": "shopify://shop_images/1-04_1.jpg",
+        "height": "landscape",
+        "overlay_opacity": 0,
+        "logo_width": 75,
+        "add_text": "",
+        "author_color_scheme": "",
+        "icon_size": "recommended",
+        "box_shadow": false,
+        "icon_style": "colored",
+        "show_button": false,
+        "button_label": "Button label",
+        "button_link": "",
+        "button_style": "primary",
+        "show_button_2": false,
+        "button_label_2": "Button label",
+        "button_link_2": "",
+        "button_style_2": "simple",
+        "padding_top": "no-indent",
+        "padding_bottom": "xs",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_with_text_RgLYcw": {
+      "type": "image-with-text",
+      "settings": {
+        "layout": "text_last",
+        "color_scheme": "",
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "subheading_icon": "none",
+        "heading": "",
+        "heading_size": "h2",
+        "heading_level": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "left",
+        "inner_subheading": "",
+        "inner_heading": "High-speed 4G CAT-13 LTE connection + Wi-Fi 5 technology",
+        "inner_heading_size": "h3",
+        "inner_heading_level": "h2",
+        "inner_heading_line": "simple",
+        "inner_line_color": "#1566e0",
+        "inner_word_break": false,
+        "description": "<p>Download Speed up to 390Mbps, Nearly three times the speed of previous-generation technology. Always connect to the best 4G internet.</p>",
+        "text_align_inner": "center",
+        "image": "shopify://shop_images/1-03_1.jpg",
+        "height": "landscape",
+        "overlay_opacity": 0,
+        "logo_width": 75,
+        "add_text": "",
+        "author_color_scheme": "",
+        "icon_size": "recommended",
+        "box_shadow": false,
+        "icon_style": "colored",
+        "show_button": false,
+        "button_label": "Button label",
+        "button_link": "",
+        "button_style": "primary",
+        "show_button_2": false,
+        "button_label_2": "Button label",
+        "button_link_2": "",
+        "button_style_2": "simple",
+        "padding_top": "no-indent",
+        "padding_bottom": "m",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "rich_text_cfxwxG": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_LP9zyq": {
+          "type": "heading",
+          "settings": {
+            "heading": "Low Burden, Portable with High-Capacity Battery",
+            "heading_size": "medium",
+            "heading_level": "h2"
+          }
+        },
+        "text_L6bHx6": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Slim design weighing only 128g, MeowGo G40 Pro fits into your palm and is ideal to carry with you wherever you go. 3200mAh high-performance lithium battery, lasts for 15 hours<br/><br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_LP9zyq",
+        "text_L6bHx6"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "full_width": true,
+        "alignment": "left",
+        "margin_top": "l",
+        "margin_bottom": "no-indent",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent"
+      }
+    },
+    "banner_grid_QdimbL": {
+      "type": "banner-grid",
+      "blocks": {
+        "card_ciPBUc": {
+          "type": "card",
+          "settings": {
+            "color_scheme": "",
+            "image": "shopify://shop_images/1_b9b89c18-ae8b-48ec-a92c-28a805bca8e6.jpg",
+            "overlay_opacity": 0,
+            "icon": "none",
+            "icon_size": "recommended",
+            "logo_width": 135,
+            "heading": "Slim design weighing only 128g",
+            "heading_size": "h5",
+            "heading_level": "h3",
+            "show_button": true,
+            "button_style": "simple_link",
+            "button_label": "MeowGo G40 Pro fits into your palm and is ideal to carry with you wherever you go",
+            "button_link": "",
+            "full_link": true
+          }
+        },
+        "card_4KDgcr": {
+          "type": "card",
+          "settings": {
+            "color_scheme": "",
+            "image": "shopify://shop_images/2_047c00eb-d35c-4a6d-b7b2-5378c25a2799.jpg",
+            "overlay_opacity": 0,
+            "icon": "none",
+            "icon_size": "recommended",
+            "logo_width": 135,
+            "heading": "3200mAh high-performance lithium battery, lasts for up to 15 hours",
+            "heading_size": "h5",
+            "heading_level": "h3",
+            "show_button": false,
+            "button_style": "simple_link",
+            "button_label": "",
+            "button_link": "",
+            "full_link": true
+          }
+        }
+      },
+      "block_order": [
+        "card_ciPBUc",
+        "card_4KDgcr"
+      ],
+      "settings": {
+        "layout": "columns",
+        "columns": 2,
+        "enable_mobile_overflow_slider": false,
+        "color_scheme": "",
+        "enable_border": false,
+        "border_full": false,
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "subheading_icon": "none",
+        "heading": "",
+        "heading_size": "h2",
+        "heading_level": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "left",
+        "gap": "4",
+        "border_radius": true,
+        "text_align_content": "bottom-left",
+        "icon_style": "subtle",
+        "icon_fill_type": "gradient",
+        "padding_top": "s",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "banner_grid_HAeNd4": {
+      "type": "banner-grid",
+      "blocks": {
+        "card_WFffC7": {
+          "type": "card",
+          "settings": {
+            "color_scheme": "",
+            "image": "shopify://shop_images/meowgo_g40pro_6735c866-32d0-4acf-8e75-678028698a35.jpg",
+            "overlay_opacity": 0,
+            "icon": "none",
+            "icon_size": "recommended",
+            "logo_width": 135,
+            "heading": "Share Wi-Fi up to 10 devices with fast multiplayer link speeds",
+            "heading_size": "h5",
+            "heading_level": "h3",
+            "show_button": false,
+            "button_style": "simple_link",
+            "button_label": "",
+            "button_link": "",
+            "full_link": true
+          }
+        },
+        "card_Y8a7LU": {
+          "type": "card",
+          "settings": {
+            "color_scheme": "",
+            "image": "shopify://shop_images/meowgo_g40pro_1.jpg",
+            "overlay_opacity": 0,
+            "icon": "none",
+            "icon_size": "recommended",
+            "logo_width": 135,
+            "heading": "Roaming-Free International Travel",
+            "heading_size": "h5",
+            "heading_level": "h3",
+            "show_button": true,
+            "button_style": "simple_link",
+            "button_label": "Localized tariffs, no expensive roaming charges，Flexible pay as you go",
+            "button_link": "",
+            "full_link": true
+          }
+        }
+      },
+      "block_order": [
+        "card_WFffC7",
+        "card_Y8a7LU"
+      ],
+      "settings": {
+        "layout": "columns",
+        "columns": 2,
+        "enable_mobile_overflow_slider": false,
+        "color_scheme": "",
+        "enable_border": false,
+        "border_full": false,
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "subheading_icon": "none",
+        "heading": "",
+        "heading_size": "h2",
+        "heading_level": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "left",
+        "gap": "4",
+        "border_radius": true,
+        "text_align_content": "bottom-left",
+        "icon_style": "subtle",
+        "icon_fill_type": "gradient",
+        "padding_top": "s",
+        "padding_bottom": "s",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_Gy8jGq": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_UybqVd": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/20250723160407.jpg",
+            "image_link": "https://store.glocalme.com/pages/coverage"
+          }
+        },
+        "text_L6dALx": {
+          "type": "text",
+          "settings": {
+            "text": "<p>4G Network Covers 200+ Countries and Regions</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 37,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 1,
+            "position_y": 9
+          }
+        },
+        "text_xYkLNU": {
+          "type": "text",
+          "settings": {
+            "text": "<p>America: United States, Canada, Mexico, Guatemala, Brazil, Argentina, Colombia, Peru ..</p><p><br/>Europe: United Kingdom, Germany, Denmark, Spain, Finland, France, Italy, Greece.</p><p>Austria, Belgium, Bulgaria, Switzerland,  the Czech Republic, Netherlands, Portugal,  Slovenia, </p><p>Turkey, Liechtenstein, Vatican City, Monaco, San Marino, Cyprus, Hungary, Latvia, Poland,</p><p> Sweden, Slovakia, Estonia, Croatia, Ireland, Iceland, Lithuania, Luxembourg, Malta, Romania, </p><p>Norway, Montenegro, Andorra, Faroe Islands ..</p><p><br/>Asia: Japan, South Korea, Mainland China, Hong Kong (China), Macau (China), Taiwan(China), </p><p>Indonesia, United Arab Emirates, Sri Lanka, Malaysia, Saudi Arabia, Singapore,Thailand, </p><p>Vietnam, Bahrain, Jordan, Philippines, Kazakhstan, Qatar, India, Kuwait, Oman,</p><p>Brunei Darussalam, Maldives ..</p><p><br/>Oceania: Australia, New Zealand, Guam, Northern Mariana Islands ..</p><p><br/>Africa: South Africa, Kenya, Mauritius, Tanzania, Seychelles ..</p>",
+            "text_color": "#dedbdb",
+            "text_gradient_background": "",
+            "text_font_size": 23,
+            "text_font_weight": 200,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 1,
+            "position_y": 15
+          }
+        },
+        "text_9JApAz": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Learn more&gt;&gt;</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 25,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 2,
+            "position_y": 4
+          }
+        }
+      },
+      "block_order": [
+        "image_UybqVd",
+        "text_L6dALx",
+        "text_xYkLNU",
+        "text_9JApAz"
+      ],
+      "name": "t:sections.image-text-separation.presets.name",
+      "settings": {
+        "display_devices": "desktop",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_JEEqRM": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_YWCCM9": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/20250723160433.jpg",
+            "image_link": "shopify://pages/coverage"
+          }
+        },
+        "text_3xLwFG": {
+          "type": "text",
+          "settings": {
+            "text": "<p>4G Network Covers 200+ Countries and Regions</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 27,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 1,
+            "position_y": 7
+          }
+        },
+        "text_QQtyNh": {
+          "type": "text",
+          "settings": {
+            "text": "<p>America: United States, Canada, Mexico, Peru,</p><p>Guatemala, Brazil, Argentina, Colombia...</p><p><br/>Europe: United Kingdom, Germany, </p><p>Spain, France, Italy, Greece, Turkey, </p><p>Poland, Sweden,  Ireland, Iceland...</p><p><br/>Asia: Japan, South Korea, Mainland </p><p>china, Hong Kong, Macau, Taiwan(China),</p><p> Indonesia, United Arab Emirates, </p><p>Sri Lanka, Malaysia, Saudi Arabia, </p><p>Singapore, Thailand, Vietnam,</p><p> Bahrain, Jordan, Philippines...</p><p><br/>Oceania: Australia, New Zealand, Guam, Northern Mariana Islands ..</p><p><br/>Africa: South Africa, Kenya, Mauritius, Tanzania, Seychelles ..</p>",
+            "text_color": "#dedbdb",
+            "text_gradient_background": "",
+            "text_font_size": 20,
+            "text_font_weight": 100,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 2,
+            "position_y": 12
+          }
+        },
+        "text_7JLE8a": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Learn more&gt;&gt;</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 20,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 3,
+            "position_y": 4
+          }
+        }
+      },
+      "block_order": [
+        "image_YWCCM9",
+        "text_3xLwFG",
+        "text_QQtyNh",
+        "text_7JLE8a"
+      ],
+      "name": "t:sections.image-text-separation.presets.name",
+      "settings": {
+        "display_devices": "mobile",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_banner_7KPFET": {
+      "type": "image-banner",
+      "settings": {
+        "full_width": false,
+        "color_scheme": "background-4",
+        "image": "shopify://shop_images/1-27_5f65ed80-2ec4-4f9d-92d8-227f860b9036.jpg",
+        "image_mobile": "shopify://shop_images/1-28_f5bc68bc-b545-4e6b-9dcb-bd71aeb0d10a.jpg",
+        "image_ratio": "adapt",
+        "image_link": "",
+        "opacity_overlay": 0,
+        "icon": "none",
+        "icon_color_scheme": "",
+        "icon_size": "large",
+        "icon_style": "colored",
+        "icon_fill_type": "gradient",
+        "box_shadow": false,
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "heading": "",
+        "heading_size": "h2",
+        "heading_level": "h2",
+        "text_information": "",
+        "text_align": "left",
+        "text_width": "small",
+        "show_view_all": false,
+        "button_label": "Shop now",
+        "button_style": "primary",
+        "button_link": "",
+        "margin_top": "xs",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "rich_text_hFwdCW": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_PU6xe6": {
+          "type": "heading",
+          "settings": {
+            "heading": "Use Case",
+            "heading_size": "medium",
+            "heading_level": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "heading_PU6xe6"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "full_width": true,
+        "alignment": "left",
+        "margin_top": "m",
+        "margin_bottom": "no-indent",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent"
+      }
+    },
+    "image_slider_jbByNt": {
+      "type": "image-slider",
+      "blocks": {
+        "slide_E6Dyyz": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/1-21_e2038e2c-1cd1-48a7-b3ae-54785d146490.jpg"
+          }
+        },
+        "slide_WzXT9m": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/1-23_d76fc1e3-8e2a-4b80-8839-70edb33e504f.jpg"
+          }
+        },
+        "slide_NJdqXt": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/1-22_8149d442-1cfb-48a5-ab5d-e4fdf585be10.jpg"
+          }
+        },
+        "slide_7WiKpi": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/1-24_23f745b3-6100-4de0-be36-a7c5db75c6a2.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "slide_E6Dyyz",
+        "slide_WzXT9m",
+        "slide_NJdqXt",
+        "slide_7WiKpi"
+      ],
+      "settings": {
+        "display_devices": "desktop",
+        "cover_ratio": "adapt",
+        "enable_autoplay": true,
+        "slide_duration": 5,
+        "enable_pagination": true,
+        "enable_navigation": true,
+        "padding_top": "s",
+        "padding_bottom": "m",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_slider_qmtzz4": {
+      "type": "image-slider",
+      "blocks": {
+        "slide_4xCCEp": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/1-21_e2038e2c-1cd1-48a7-b3ae-54785d146490.jpg"
+          }
+        },
+        "slide_WtULpK": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/1-23_d76fc1e3-8e2a-4b80-8839-70edb33e504f.jpg"
+          }
+        },
+        "slide_HyrFtX": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/1-22_8149d442-1cfb-48a5-ab5d-e4fdf585be10.jpg"
+          }
+        },
+        "slide_9MnxUH": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/1-24_23f745b3-6100-4de0-be36-a7c5db75c6a2.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "slide_4xCCEp",
+        "slide_WtULpK",
+        "slide_HyrFtX",
+        "slide_9MnxUH"
+      ],
+      "settings": {
+        "display_devices": "mobile",
+        "cover_ratio": "adapt",
+        "enable_autoplay": true,
+        "slide_duration": 5,
+        "enable_pagination": true,
+        "enable_navigation": true,
+        "padding_top": "s",
+        "padding_bottom": "xs",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_LGiFqa": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_FWWBiB": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/meowgo_g40pro_2_ca6e69e1-0732-4157-989f-bd1042d8806f.jpg",
+            "image_link": ""
+          }
+        },
+        "text_tWQpUb": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Type</p>",
+            "text_color": "#83ec3f",
+            "text_gradient_background": "",
+            "text_font_size": 28,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 44,
+            "position_y": 9
+          }
+        },
+        "text_ecxUHy": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Details</p>",
+            "text_color": "#83ec3f",
+            "text_gradient_background": "",
+            "text_font_size": 28,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 58,
+            "position_y": 9
+          }
+        },
+        "text_JW4jKB": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Chipset</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 20,
+            "text_font_weight": 300,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 44,
+            "position_y": 18
+          }
+        },
+        "text_hLKfP7": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Qualcomm QCM2290</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 20,
+            "text_font_weight": 300,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 58,
+            "position_y": 18
+          }
+        },
+        "text_ziaiLg": {
+          "type": "text",
+          "settings": {
+            "text": "<p>WiFi</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 20,
+            "text_font_weight": 300,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 44,
+            "position_y": 26
+          }
+        },
+        "text_zLR8fB": {
+          "type": "text",
+          "settings": {
+            "text": "<p>2.4G or 5G; 802.11 a/b/g/n/ac 1x1 (Wi-Fi Wireless Offloading)<br/>Max.10 Wi-Fi access</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 20,
+            "text_font_weight": 300,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 58,
+            "position_y": 26
+          }
+        },
+        "text_JwyNPV": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Mobile Network</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 20,
+            "text_font_weight": 300,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 44,
+            "position_y": 38
+          }
+        },
+        "text_4kFXEb": {
+          "type": "text",
+          "settings": {
+            "text": "<p>R12 DL/UL 390Mbps/150Mbps (CAT13)</p><p>FDD - LTE: B1/2/3/4/5/7/8/9/12/13/17/18/19/20/25/26/28/66</p><p>TDD-LTE: B34/38/39/40/41(194M)</p><p>WCDMA: B1/2/3/4/5/6/8/9/19</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 20,
+            "text_font_weight": 300,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 58,
+            "position_y": 38
+          }
+        },
+        "text_zPrVMC": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Size</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 20,
+            "text_font_weight": 300,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 44,
+            "position_y": 58
+          }
+        },
+        "text_byjbbY": {
+          "type": "text",
+          "settings": {
+            "text": "<p>4.53*2.48*0.55in</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 20,
+            "text_font_weight": 300,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 58,
+            "position_y": 58
+          }
+        },
+        "text_zrgmpY": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Weight</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 20,
+            "text_font_weight": 300,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 44,
+            "position_y": 66
+          }
+        },
+        "text_iTAKmT": {
+          "type": "text",
+          "settings": {
+            "text": "<p>0.28lb</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 20,
+            "text_font_weight": 300,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 58,
+            "position_y": 66
+          }
+        },
+        "text_a79V87": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Screen</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 20,
+            "text_font_weight": 300,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 44,
+            "position_y": 74
+          }
+        },
+        "text_MTEMyd": {
+          "type": "text",
+          "settings": {
+            "text": "<p>IPS 2.0inch, QVGA(240*320)</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 20,
+            "text_font_weight": 300,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 58,
+            "position_y": 74
+          }
+        },
+        "text_tLwTBz": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Battery</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 20,
+            "text_font_weight": 300,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 44,
+            "position_y": 80
+          }
+        },
+        "text_bNFDx6": {
+          "type": "text",
+          "settings": {
+            "text": "<p>4.40V，3200 mAh(typical), Charing: 10w (input)</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 20,
+            "text_font_weight": 300,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 58,
+            "position_y": 80
+          }
+        },
+        "text_bJtcQ8": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Interface</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 20,
+            "text_font_weight": 300,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 44,
+            "position_y": 88
+          }
+        },
+        "text_LPLUrq": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Type-C</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 20,
+            "text_font_weight": 300,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 58,
+            "position_y": 88
+          }
+        }
+      },
+      "block_order": [
+        "image_FWWBiB",
+        "text_tWQpUb",
+        "text_ecxUHy",
+        "text_JW4jKB",
+        "text_hLKfP7",
+        "text_ziaiLg",
+        "text_zLR8fB",
+        "text_JwyNPV",
+        "text_4kFXEb",
+        "text_zPrVMC",
+        "text_byjbbY",
+        "text_zrgmpY",
+        "text_iTAKmT",
+        "text_a79V87",
+        "text_MTEMyd",
+        "text_tLwTBz",
+        "text_bNFDx6",
+        "text_bJtcQ8",
+        "text_LPLUrq"
+      ],
+      "name": "t:sections.image-text-separation.presets.name",
+      "settings": {
+        "display_devices": "desktop",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_XKU6Jx": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_QHADWc": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/meowgo_g40pro_1_9213b8ea-23d9-4d01-8ecb-1fa3ea85999c.jpg",
+            "image_link": ""
+          }
+        },
+        "text_B8LeyJ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Type</p>",
+            "text_color": "#83ec3f",
+            "text_gradient_background": "",
+            "text_font_size": 20,
+            "text_font_weight": 400,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 44,
+            "position_y": 6
+          }
+        },
+        "text_63FKnr": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Details</p>",
+            "text_color": "#83ec3f",
+            "text_gradient_background": "",
+            "text_font_size": 20,
+            "text_font_weight": 400,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 60,
+            "position_y": 6
+          }
+        },
+        "text_TnWpmf": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Chipset</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 14,
+            "text_font_weight": 100,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 44,
+            "position_y": 15
+          }
+        },
+        "text_AxaMfY": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Qualcomm QCM2290</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 14,
+            "text_font_weight": 100,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 60,
+            "position_y": 15
+          }
+        },
+        "text_3egzhr": {
+          "type": "text",
+          "settings": {
+            "text": "<p>WiFi</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 14,
+            "text_font_weight": 100,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 44,
+            "position_y": 22
+          }
+        },
+        "text_cqB4aG": {
+          "type": "text",
+          "settings": {
+            "text": "<p>2.4G or 5G; 802.11 a/b/g/n/ac </p><p>1x1 (Wi-Fi Wireless Offloading)<br/>Max. 10 Wi-Fi access</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 14,
+            "text_font_weight": 100,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 60,
+            "position_y": 22
+          }
+        },
+        "text_ret6W4": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Mobile Network</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 14,
+            "text_font_weight": 100,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 44,
+            "position_y": 38
+          }
+        },
+        "text_fi9ecJ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>R12 DL/UL 390Mbps/150Mbps (CAT13)</p><p>FDD - LTE: B1/2/3/4/5/7/8/9/12/</p><p>13/17/18/19/20/25/26/28/66</p><p>TDD-LTE: B34/38/39/40/41(194M)</p><p>WCDMA: B1/2/3/4/5/6/8/9/19</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 14,
+            "text_font_weight": 100,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 60,
+            "position_y": 38
+          }
+        },
+        "text_qdiKpx": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Size</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 14,
+            "text_font_weight": 100,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 44,
+            "position_y": 60
+          }
+        },
+        "text_qLFXEh": {
+          "type": "text",
+          "settings": {
+            "text": "<p>4.53*2.48*0.55in</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 14,
+            "text_font_weight": 100,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 60,
+            "position_y": 60
+          }
+        },
+        "text_6dB6NQ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Weight</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 14,
+            "text_font_weight": 100,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 44,
+            "position_y": 66
+          }
+        },
+        "text_HzRqJm": {
+          "type": "text",
+          "settings": {
+            "text": "<p>0.28lb</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 14,
+            "text_font_weight": 100,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 60,
+            "position_y": 66
+          }
+        },
+        "text_Yc4kPn": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Screen</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 14,
+            "text_font_weight": 100,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 44,
+            "position_y": 72
+          }
+        },
+        "text_VeHEPB": {
+          "type": "text",
+          "settings": {
+            "text": "<p>IPS 2.0inch, QVGA(240*320)</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 14,
+            "text_font_weight": 100,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 60,
+            "position_y": 72
+          }
+        },
+        "text_3ibhFx": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Battery</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 14,
+            "text_font_weight": 100,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 44,
+            "position_y": 80
+          }
+        },
+        "text_BNxJt9": {
+          "type": "text",
+          "settings": {
+            "text": "<p>4.40V，3200 mAh(typical), </p><p>Charing: 10w (input)</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 14,
+            "text_font_weight": 100,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 60,
+            "position_y": 80
+          }
+        },
+        "text_77gb78": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Interface</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 14,
+            "text_font_weight": 100,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 44,
+            "position_y": 90
+          }
+        },
+        "text_kfACwq": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Type-C</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 14,
+            "text_font_weight": 100,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 60,
+            "position_y": 90
+          }
+        }
+      },
+      "block_order": [
+        "image_QHADWc",
+        "text_B8LeyJ",
+        "text_63FKnr",
+        "text_TnWpmf",
+        "text_AxaMfY",
+        "text_3egzhr",
+        "text_cqB4aG",
+        "text_ret6W4",
+        "text_fi9ecJ",
+        "text_qdiKpx",
+        "text_qLFXEh",
+        "text_6dB6NQ",
+        "text_HzRqJm",
+        "text_Yc4kPn",
+        "text_VeHEPB",
+        "text_3ibhFx",
+        "text_BNxJt9",
+        "text_77gb78",
+        "text_kfACwq"
+      ],
+      "name": "t:sections.image-text-separation.presets.name",
+      "settings": {
+        "display_devices": "mobile",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_banner_T6Mbdp": {
+      "type": "image-banner",
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "color_scheme": "",
+        "image": "shopify://shop_images/meowgo_g40pro_20.jpg",
+        "image_mobile": "shopify://shop_images/meowgo_g40pro_5_0d8e258a-fe17-453c-b803-6fd535529b1b.jpg",
+        "image_ratio": "adapt",
+        "image_link": "",
+        "opacity_overlay": 0,
+        "icon": "none",
+        "icon_color_scheme": "",
+        "icon_size": "large",
+        "icon_style": "colored",
+        "icon_fill_type": "gradient",
+        "box_shadow": false,
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "heading": "",
+        "heading_size": "h2",
+        "heading_level": "h2",
+        "text_information": "",
+        "text_align": "left",
+        "text_width": "small",
+        "show_view_all": false,
+        "button_label": "Shop now",
+        "button_style": "primary",
+        "button_link": "",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_banner_PGMc68": {
+      "type": "image-banner",
+      "settings": {
+        "full_width": false,
+        "color_scheme": "",
+        "image": "shopify://shop_images/meowgo_g40pro_1_7ebe3bde-f16f-4849-a100-b990615c32fb.jpg",
+        "image_mobile": "shopify://shop_images/meowgo_g40pro_12.jpg",
+        "image_ratio": "adapt",
+        "image_link": "",
+        "opacity_overlay": 0,
+        "icon": "none",
+        "icon_color_scheme": "",
+        "icon_size": "large",
+        "icon_style": "colored",
+        "icon_fill_type": "gradient",
+        "box_shadow": false,
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "heading": "",
+        "heading_size": "h2",
+        "heading_level": "h2",
+        "text_information": "",
+        "text_align": "left",
+        "text_width": "small",
+        "show_view_all": false,
+        "button_label": "Shop now",
+        "button_style": "primary",
+        "button_link": "",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "collapsible_content_EXiNNx": {
+      "type": "collapsible-content",
+      "blocks": {
+        "accordion_TxEjiH": {
+          "type": "accordion",
+          "settings": {
+            "question": "Does MeowGo G40 Pro support physical cards?",
+            "answer": "<p>Yes, MeowGo G40 Pro supports physical SlM card. You can insert a physical SIM card into the device to get internet access. Except using the physical SlM card, you can also buy our data plan from specific country to global coverage. To view our different travel data plans for different countries, please visit our <a href=\"https://store.glocalme.com/collections/data-package\" title=\"https://store.glocalme.com/collections/data-package\">Data Plans</a> page.</p>",
+            "opened": false
+          }
+        },
+        "accordion_8ncNTM": {
+          "type": "accordion",
+          "settings": {
+            "question": "Is there a user manual for the MeowGo G40 Pro?",
+            "answer": "<p>We are sorry that the user manual for the MeowGo G40 Pro is not available now. Actually the user manual is the same as the G4 Pro. You can also check it from <a href=\"https://cdn.shopify.com/s/files/1/0658/8963/2410/files/G4P.pdf?v=1745475415\" title=\"https://cdn.shopify.com/s/files/1/0658/8963/2410/files/G4P.pdf?v=1745475415\">here</a>.</p>",
+            "opened": false
+          }
+        },
+        "accordion_VTYTzb": {
+          "type": "accordion",
+          "settings": {
+            "question": "What is the difference between Numen Air and the new MeowGo G40 Pro?",
+            "answer": "<p>MeowGo G40 Pro is a 4G device, Numen Air is a 5G device. Numen Air is the best seller on our website, not only supports 5G but also 4G/3G, if you go to a place without a 5G signal, you can also use the 4G data plan, and the speed will be faster than using the 4G data plan in a 4G device.</p>",
+            "opened": false
+          }
+        },
+        "accordion_BcYxCK": {
+          "type": "accordion",
+          "settings": {
+            "question": "How many devices can I connect at once, and will the speed drop a lot?",
+            "answer": "<p>MeowGo G40 Pro can connect up to 10 devices. It’s Wi‑Fi 5 with 4G CAT‑13 (up to 390 Mbps down/150 Mbps up), so for typical use (email, video calls, streaming) it should be smooth for a small group. If all 10 are streaming HD at once, I should expect some slowdown.</p>",
+            "opened": false
+          }
+        },
+        "accordion_DqNXUL": {
+          "type": "accordion",
+          "settings": {
+            "question": "How long does the battery really last for my day out?",
+            "answer": "<p>The built‑in 3200 mAh battery is rated up to around 13–15 hours. For a full workday with a laptop and phone connected, I can reasonably expect it to last through meetings and commuting; heavy video streaming or tethering many devices will shorten that time. It charges via Type-C (10W input).</p>",
+            "opened": false
+          }
+        },
+        "accordion_DWdHKz": {
+          "type": "accordion",
+          "settings": {
+            "question": "What does “4G Qualcomm Snapdragon” mean for my everyday use?",
+            "answer": "<p>It’s powered by the Qualcomm QCM2290 platform, so you can get a stable 4G CAT‑13 connection with efficient power usage. In daily use, that translates to quicker network attach, more consistent speeds for video calls/streams, and better battery efficiency compared with older chipsets.</p>",
+            "opened": false
+          }
+        },
+        "accordion_KH3PfY": {
+          "type": "accordion",
+          "settings": {
+            "question": "Will it work when I travel internationally?",
+            "answer": "<p>Yes. It covers 200+ countries and regions and can switch among multiple mobile operators automatically with HyperConn. I can check specific availability with the Country Checker and use the included Global 1GB (90‑day) gift to get started.</p>",
+            "opened": false
+          }
+        },
+        "accordion_ytfftY": {
+          "type": "accordion",
+          "settings": {
+            "question": "How seamless is the connection in daily use (subway, office, café)?",
+            "answer": "<p>The HyperConn technology constantly evaluates networks and can switch between 4G/3G/Wi‑Fi for the best link, aiming to keep me online without manual fiddling. In practice, I may notice brief handoff delays in weak‑signal areas (elevators, underground), but it’s designed to minimize drops and keep a reliable connection for work and streaming.</p>",
+            "opened": false
+          }
+        }
+      },
+      "block_order": [
+        "accordion_TxEjiH",
+        "accordion_8ncNTM",
+        "accordion_VTYTzb",
+        "accordion_BcYxCK",
+        "accordion_DqNXUL",
+        "accordion_DWdHKz",
+        "accordion_KH3PfY",
+        "accordion_ytfftY"
+      ],
+      "name": "t:sections.collapsible-content.name",
+      "settings": {
+        "layout": "background",
+        "color_scheme": "",
+        "enable_border": false,
+        "border_full": false,
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "subheading_icon": "none",
+        "heading": "Let's Answer Your Questions",
+        "heading_size": "h2",
+        "heading_level": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "center",
+        "row_color_scheme": "",
+        "padding_top": "l",
+        "padding_bottom": "l",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "color_scheme": "background-1",
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "subheading_icon": "none",
+        "heading": "You May Also Like",
+        "heading_size": "h2",
+        "text": "",
+        "products_limit": 6,
+        "image_ratio": "1/1",
+        "image_fit": "cover",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_desc": false,
+        "padding_top": "s",
+        "padding_bottom": "l"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_banner_TDL7wJ",
+    "image_banner_zcR6zP",
+    "image_text_separation_kkXYmU",
+    "image_banner_78nk7Y",
+    "banner_column_cnpHUD",
+    "image_with_text_YeW3hE",
+    "image_with_text_RgLYcw",
+    "rich_text_cfxwxG",
+    "banner_grid_QdimbL",
+    "banner_grid_HAeNd4",
+    "image_text_separation_Gy8jGq",
+    "image_text_separation_JEEqRM",
+    "image_banner_7KPFET",
+    "rich_text_hFwdCW",
+    "image_slider_jbByNt",
+    "image_slider_qmtzz4",
+    "image_text_separation_LGiFqa",
+    "image_text_separation_XKU6Jx",
+    "image_banner_T6Mbdp",
+    "image_banner_PGMc68",
+    "collapsible_content_EXiNNx",
+    "product-recommendations"
+  ]
+}

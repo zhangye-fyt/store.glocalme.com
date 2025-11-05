@@ -1,0 +1,90 @@
+.country-checker {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  gap: 2.5rem;
+}
+
+.country-checker .country-checker__headline {
+  margin: 0;
+}
+
+.country-checker .country-checker__sub-headline {
+  margin: 1.5rem 0 2rem;
+  color: #5c606e;
+}
+
+.country-checker__result {
+  display: grid;
+  place-items: center center;
+  width: 100%;
+}
+
+.country-checker__image {
+  grid-area: 1 / 1;
+  width: 100%;
+}
+
+.country-checker__image img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.country-checker__icon svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  width: 20rem;
+  height: auto;
+}
+
+.country-checker__icon .country-checker__flag {
+  box-sizing: content-box;
+  object-fit: cover;
+}
+
+.country-checker__content {
+  position: relative;
+  display: grid;
+  grid-area: 1 / 1;
+  gap: 0.75rem;
+  width: 28rem;
+  padding: 1.5rem;
+  text-align: left;
+  background: #fff;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 32px rgba(0, 0, 0, 0.12);
+  transform: rotate(4deg);
+  background-color: #1566e0;
+}
+
+.country-checker__content[data-available="false"] {
+  background-color: #b42f4f;
+}
+
+.country-checker__content[data-available="true"] {
+  background-color: #0d854d;
+}
+
+.country-checker__content .country-checker__description {
+  color: #ffffff;
+}
+
+.country-checker__content strong {
+  margin-bottom: 0.4rem;
+}
+
+@media (min-width: 1024px) {
+  .country-checker {
+    flex-direction: row;
+    gap: 3.5rem;
+  }
+
+  .country-checker__content {
+    gap: 1.5rem;
+    width: 32rem;
+  }
+}

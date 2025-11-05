@@ -1,0 +1,1406 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h3"
+          }
+        },
+        "judge_me_reviews_preview_badge_rPihx6": {
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "description": ""
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "inventory_ybzDtw": {
+          "type": "inventory",
+          "settings": {}
+        },
+        "custom_liquid_fXgwD8": {
+          "type": "custom_liquid",
+          "disabled": true,
+          "settings": {
+            "custom_liquid": "{%- style -%}\n  .product-coupon-container {\n    margin: 20px 0;\n    font-family: inherit;\n  }\n  \n  .coupon-card {\n    background: linear-gradient(135deg, #e3b337 0%, #f4e6cb 100%);\n    border-radius: 10px;\n    border: 1px dashed #d1d5db;\n    padding: 15px;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    text-align: center;\n    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);\n    position: relative;\n    overflow: hidden;\n  }\n  \n  .coupon-card::before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    background: radial-gradient(circle at 10% 20%, rgba(255,255,255,0.3) 0%, transparent 20%);\n    pointer-events: none;\n  }\n  \n  .coupon-title {\n    font-size: 24px;\n    font-weight: 600;\n    color: #1f2937;\n    margin-bottom: 8px;\n  }\n  \n  .coupon-description {\n    font-size: 18px;\n    color: #97520c;\n    margin-bottom: 12px;\n    line-height: 1.4;\n  }\n  \n  .coupon-code-container {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    width: 100%;\n    margin-bottom: 10px;\n  }\n  \n  .coupon-code {\n    font-size: 20px;\n    font-weight: 700;\n    letter-spacing: 1px;\n    color: #97520c;\n    background-color: white;\n    padding: 8px 15px;\n    border-radius: 6px;\n    border: 1px solid #d1d5db;\n    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);\n    flex-grow: 1;\n    text-align: center;\n    max-width: 70%;\n    word-break: break-all;\n  }\n  \n  .copy-btn {\n    background-color: #3b82f6;\n    color: white;\n    border: none;\n    padding: 8px 12px;\n    border-radius: 6px;\n    margin-left: 8px;\n    font-size: 14px;\n    font-weight: 500;\n    cursor: pointer;\n    transition: background-color 0.2s;\n  }\n  \n  .copy-btn:hover {\n    background-color: #2563eb;\n  }\n  \n  .coupon-terms {\n    font-size: 12px;\n    color: #6b7280;\n    margin-top: 8px;\n  }\n  \n  /* 移动端适配 */\n  @media screen and (max-width: 749px) {\n    .coupon-card {\n      padding: 12px;\n    }\n    \n    .coupon-title {\n      font-size: 15px;\n    }\n    \n    .coupon-description {\n      font-size: 13px;\n    }\n    \n    .coupon-code {\n      font-size: 16px;\n      padding: 6px 12px;\n    }\n    \n    .copy-btn {\n      padding: 6px 10px;\n      font-size: 13px;\n    }\n  }\n{%- endstyle -%}\n\n{%- comment -%}\n  在这里设置你的优惠码和活动信息\n  你可以为不同产品设置不同的优惠码，或者使用相同的优惠码\n{%- endcomment -%}\n\n{%- assign current_product_handle = product.handle -%}\n\n{%- comment -%} 示例：根据产品handle设置不同的优惠码 {%- endcomment -%}\n{%- if current_product_handle == 'product-1-handle' -%}\n  {%- assign coupon_code = 'SUMMER20' -%}\n  {%- assign coupon_title = '夏季特惠' -%}\n  {%- assign coupon_description = '限时享受20%折扣，仅限本产品使用' -%}\n  {%- assign coupon_terms = '有效期至2023年8月31日，不可与其他优惠同时使用' -%}\n{%- elsif current_product_handle == 'product-2-handle' -%}\n  {%- assign coupon_code = 'FALL15' -%}\n  {%- assign coupon_title = '秋季促销' -%}\n  {%- assign coupon_description = '享受15%折扣，专为本产品定制' -%}\n  {%- assign coupon_terms = '有效期至2023年9月30日' -%}\n{%- else -%}\n  {%- assign coupon_code = 'CODE: PD15' -%}\n  {%- assign coupon_title = 'Prime Day sale is on!' -%}\n  {%- assign coupon_description = '15% OFF SITEWIDE' -%}\n  {%- assign coupon_terms = '' -%}\n{%- endif -%}\n\n{%- if coupon_code -%}\n<div class=\"product-coupon-container\">\n  <div class=\"coupon-card\">\n    <h3 class=\"coupon-title\">{{ coupon_title }}</h3>\n    <p class=\"coupon-description\">{{ coupon_description }}</p>\n    \n    <div class=\"coupon-code-container\">\n      <span class=\"coupon-code\" id=\"couponCode\">{{ coupon_code }}</span>\n     \n    </div>\n    \n    <p class=\"coupon-terms\">{{ coupon_terms }}</p>\n  </div>\n</div>\n\n\n{%- endif -%}"
+          }
+        },
+        "gift": {
+          "type": "gift",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_quantity": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "add_ons": {
+          "type": "add_ons",
+          "settings": {}
+        },
+        "country_checker_JVJqaf": {
+          "type": "country_checker",
+          "settings": {}
+        },
+        "popup_nzDhX7": {
+          "type": "popup",
+          "settings": {
+            "label": "Compare Hotspot Device",
+            "heading": "",
+            "text": "",
+            "image": "shopify://shop_images/0702.jpg",
+            "page": ""
+          }
+        },
+        "popup_Y8UyQ4": {
+          "type": "popup",
+          "settings": {
+            "label": "Supported Languages",
+            "heading": "",
+            "text": "",
+            "image": "shopify://shop_images/G40_1.jpg",
+            "image_mobile": "shopify://shop_images/glocalme_3.jpg",
+            "page": ""
+          }
+        },
+        "vitals_ub_product_bundles_9aHPrd": {
+          "type": "shopify://apps/vitals/blocks/ub-product-bundles/aeb48102-2a5a-4f39-bdbd-d8d49f4e20b8",
+          "settings": {}
+        },
+        "supported_devices": {
+          "type": "supported_devices",
+          "settings": {}
+        },
+        "dropdown_information_nRBqQV": {
+          "type": "dropdown_information",
+          "settings": {
+            "characteristics": false,
+            "heading": "User Manual",
+            "description": "<h6><a href=\"https://cdn.shopify.com/s/files/1/0658/8963/2410/files/G4P.pdf?v=1745475415\" target=\"_blank\" title=\"https://cdn.shopify.com/s/files/1/0658/8963/2410/files/G4P.pdf?v=1745475415\">G4 Pro</a></h6>",
+            "button_show": false,
+            "button_label": "Button label",
+            "button_link": "",
+            "default_open": false
+          }
+        },
+        "text_with_icon_FJpD8f": {
+          "type": "text_with_icon",
+          "settings": {
+            "show_text_with_icon_1": true,
+            "icon_1": "delivery",
+            "text_1": "Fast Shipping",
+            "show_text_with_icon_2": true,
+            "icon_2": "shield",
+            "text_2": "High-quality Products",
+            "box_shadow": true,
+            "icon_style": "colored",
+            "icon_fill_type": "gradient"
+          }
+        },
+        "text_with_icon": {
+          "type": "text_with_icon",
+          "settings": {
+            "show_text_with_icon_1": true,
+            "icon_1": "wallet",
+            "text_1": "30 Day Return Guarantee",
+            "show_text_with_icon_2": true,
+            "icon_2": "user-1",
+            "text_2": "Professional Service Support",
+            "box_shadow": true,
+            "icon_style": "colored",
+            "icon_fill_type": "gradient"
+          }
+        },
+        "share_EAqH9P": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share",
+            "show_share_facebook": true,
+            "show_share_twitter": true,
+            "show_share_pinterest": true,
+            "show_share_copy": true
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "judge_me_reviews_preview_badge_rPihx6",
+        "description",
+        "variant_picker",
+        "price",
+        "inventory_ybzDtw",
+        "custom_liquid_fXgwD8",
+        "gift",
+        "buy_buttons",
+        "add_ons",
+        "country_checker_JVJqaf",
+        "popup_nzDhX7",
+        "popup_Y8UyQ4",
+        "vitals_ub_product_bundles_9aHPrd",
+        "supported_devices",
+        "dropdown_information_nRBqQV",
+        "text_with_icon_FJpD8f",
+        "text_with_icon",
+        "share_EAqH9P"
+      ],
+      "custom_css": [
+        "@media only screen and (min-width: 1200px) {.rte div {margin-right: 180px; margin-left: -180px; }}"
+      ],
+      "settings": {
+        "desktop_alignment": "right",
+        "mobile_alignment": "before",
+        "gallery_type": "slider_previews",
+        "aspect_ratio": "1/1",
+        "image_fit": "contain",
+        "image_fit_modal": "contain",
+        "padding_bottom": "m"
+      }
+    },
+    "image_text_separation_01": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_abNEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/G40_01.jpg",
+            "image_link": ""
+          }
+        },
+        "text_abLEyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>G4 Pro 4G LTE Mobile Hotspot</strong></p>",
+            "text_color": "#3a3a3c",
+            "text_gradient_background": "",
+            "text_font_size": 46,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 10,
+            "position_y": 34
+          }
+        },
+        "text_abUEyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pay As You Go.<br/>Stay Connected Anywhere, Anytime.</p>",
+            "text_color": "#3a3a3c",
+            "text_gradient_background": "",
+            "text_font_size": 46,
+            "text_font_weight": 400,
+            "text_line_height": 1.3,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 10,
+            "position_y": 28
+          }
+        }
+      },
+      "block_order": [
+        "image_abNEyF",
+        "text_abLEyF",
+        "text_abUEyF"
+      ],
+      "custom_css": [],
+      "settings": {
+        "display_devices": "desktop",
+        "padding_top": "xs",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "selling_points_qJkRBU": {
+      "type": "selling-points",
+      "blocks": {
+        "point_XaKPn4": {
+          "type": "point",
+          "settings": {
+            "text": "No SlM Card Required",
+            "image_desktop": "shopify://shop_images/G40pc_-08_cd6232aa-a1f3-4fed-813c-ad739ed60d01.jpg"
+          }
+        },
+        "point_CdH6mf": {
+          "type": "point",
+          "settings": {
+            "text": "Your Travel Companion",
+            "image_desktop": "shopify://shop_images/G40pc_-09_5bca97ae-c992-476a-a2bf-bcd250c95bca.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "point_XaKPn4",
+        "point_CdH6mf"
+      ],
+      "name": "t:sections.selling-points.presets.name",
+      "settings": {
+        "full_width": false,
+        "display_devices": "desktop",
+        "color_scheme": "",
+        "title": "4G Cloud SlM",
+        "image_ratio": "adapt",
+        "image_ratio_mobile": "adapt",
+        "note": "Automatic Switching to the Best Available 4G Operator",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "selling_points_PmKEWe": {
+      "type": "selling-points",
+      "blocks": {
+        "point_xtrDij": {
+          "type": "point",
+          "settings": {
+            "text": "5\" HD Touchscreen",
+            "image_desktop": "shopify://shop_images/G40pc_-10_6f205775-009f-44ff-8afb-b437c6c98137.jpg"
+          }
+        },
+        "point_J8PAXL": {
+          "type": "point",
+          "settings": {
+            "text": "Large Battery Capacity",
+            "image_desktop": "shopify://shop_images/G40pc_-11_bfcba14d-d127-4d7b-84b3-4af72d75a002.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "point_xtrDij",
+        "point_J8PAXL"
+      ],
+      "name": "t:sections.selling-points.presets.name",
+      "settings": {
+        "full_width": false,
+        "display_devices": "desktop",
+        "color_scheme": "",
+        "title": "Easy Operation and Management",
+        "image_ratio": "adapt",
+        "image_ratio_mobile": "adapt",
+        "note": "More than 12 Hours of Continuous Operation",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "selling_points_JmJXqh": {
+      "type": "selling-points",
+      "blocks": {
+        "point_YqgPhT": {
+          "type": "point",
+          "settings": {
+            "text": "Share WiFi with others",
+            "image_desktop": "shopify://shop_images/G40pc_-12_34568ca5-2b1e-462d-9dc5-75fd4a74533d.jpg"
+          }
+        },
+        "point_qP8HEe": {
+          "type": "point",
+          "settings": {
+            "text": "Private and Secure Data",
+            "image_desktop": "shopify://shop_images/G40pc_-13_875fa6d5-7cd0-4f01-bc0c-82adbe731cf6.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "point_YqgPhT",
+        "point_qP8HEe"
+      ],
+      "name": "t:sections.selling-points.presets.name",
+      "settings": {
+        "full_width": false,
+        "display_devices": "desktop",
+        "color_scheme": "",
+        "title": "Share Private Secure WiFi",
+        "image_ratio": "adapt",
+        "image_ratio_mobile": "adapt",
+        "note": "Simultaneous Connection of up to 10 Devices",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_03": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_cbNEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/G40_03.jpg",
+            "image_link": ""
+          }
+        },
+        "text_XUPaQA": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Connected to the Best Network</strong></p>",
+            "text_color": "#42e860",
+            "text_gradient_background": "",
+            "text_font_size": 38,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "text_letter_spacing": 0.8,
+            "max_text_container_max_width": 42,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 10,
+            "position_y": 6
+          }
+        },
+        "text_y4p3en": {
+          "type": "text",
+          "settings": {
+            "text": "<p>With network congestion monitoring, you always have the best available connection, no matter where you are.</p>",
+            "text_color": "#dddddd",
+            "text_gradient_background": "",
+            "text_font_size": 26,
+            "text_font_weight": 300,
+            "text_line_height": 1.4,
+            "text_align": "left",
+            "max_text_container_max_width": 42,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 10,
+            "position_y": 12
+          }
+        },
+        "text_PUPaQA": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Safer and Reliable Hotspot</strong></p>",
+            "text_color": "#42e860",
+            "text_gradient_background": "",
+            "text_font_size": 38,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "text_letter_spacing": 0.8,
+            "max_text_container_max_width": 42,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 8,
+            "position_y": 31
+          }
+        },
+        "text_w4p3en": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Connection via 4G LTE cellular on up to 10 devices while your family streams, surfs, chats and emails at the same time.</p>",
+            "text_color": "#dddddd",
+            "text_gradient_background": "",
+            "text_font_size": 26,
+            "text_font_weight": 300,
+            "text_line_height": 1.4,
+            "text_align": "left",
+            "max_text_container_max_width": 42,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 8,
+            "position_y": 37
+          }
+        },
+        "text_eUPaQA": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Long Battery life-3900mAh</strong></p>",
+            "text_color": "#42e860",
+            "text_gradient_background": "",
+            "text_font_size": 38,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "text_letter_spacing": 0.8,
+            "max_text_container_max_width": 42,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "btt",
+            "position_x": 10,
+            "position_y": 42
+          }
+        },
+        "text_Q4p3en": {
+          "type": "text",
+          "settings": {
+            "text": "<p>A battery life of 12 hours ensure that your hotspot can support you every day on your journey with 4G LTE.</p>",
+            "text_color": "#dddddd",
+            "text_gradient_background": "",
+            "text_font_size": 26,
+            "text_font_weight": 300,
+            "text_line_height": 1.4,
+            "text_align": "left",
+            "max_text_container_max_width": 42,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "btt",
+            "position_x": 10,
+            "position_y": 34
+          }
+        },
+        "text_oUPaQA": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>5\" simple, Intuitive Display</strong></p>",
+            "text_color": "#42e860",
+            "text_gradient_background": "",
+            "text_font_size": 38,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "text_letter_spacing": 0.8,
+            "max_text_container_max_width": 42,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 8,
+            "position_y": 17
+          }
+        },
+        "text_w6p3en": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The large 5-inch LCD touchscreen provides you with information on data usage monitoring, mobile signal strength and network management.</p>",
+            "text_color": "#dddddd",
+            "text_gradient_background": "",
+            "text_font_size": 26,
+            "text_font_weight": 300,
+            "text_line_height": 1.4,
+            "text_align": "left",
+            "max_text_container_max_width": 42,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 8,
+            "position_y": 7.5
+          }
+        }
+      },
+      "block_order": [
+        "image_cbNEyF",
+        "text_XUPaQA",
+        "text_y4p3en",
+        "text_PUPaQA",
+        "text_w4p3en",
+        "text_eUPaQA",
+        "text_Q4p3en",
+        "text_oUPaQA",
+        "text_w6p3en"
+      ],
+      "settings": {
+        "display_devices": "desktop",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_04": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_dbNEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/G40_04.jpg",
+            "image_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_dbNEyF"
+      ],
+      "settings": {
+        "display_devices": "desktop",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_05": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_ebNEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/G40_05.jpg",
+            "image_link": ""
+          }
+        },
+        "text_kCdJWM": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>4G Coverage 200+ Countries and Regions</strong></p>",
+            "text_color": "#101011",
+            "text_gradient_background": "",
+            "text_font_size": 32,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 1.5,
+            "position_y": 7
+          }
+        },
+        "text_RCgWWR": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>5G Network Covers 90+ Countries and Regions</strong></p>",
+            "text_color": "#101011",
+            "text_gradient_background": "",
+            "text_font_size": 32,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 1.5,
+            "position_y": 18.4
+          }
+        },
+        "text_EUyB8T": {
+          "type": "text",
+          "settings": {
+            "text": "<p>North America: United States, Canada, Mexico</p><p>South America: Brazil, Peru</p><p>Europe: United Kingdom, Germany, France, Italy, Spain, Austria, Belgium, Bulgaria,</p><p>Switzerland, Netherlands, Portugal, Czech Republic, Denmark, Finland, Greece,</p><p>Slovenia, Vatican, Monaco, San Marino, Cyprus, Hungary, Latvia, Poland, Sweden,</p><p>Slovakia, Croatia, Ireland, Iceland, Lithuania, Luxembourg, Malta, Romania, Norway, </p><p>Andorra</p><p>Asia: Japan, Korea, United Arab Emirates, China,</p><p>Hong Kong, Macau, Taiwan, Indonesia, Malaysia,</p><p>Saudi Arabia, Singapore, Thailand, Vietnam,</p><p>Bahrain, Philippines, India, Kuwait, Oman, </p><p>Maldives</p><p>Oceania: Australia, New Zealand</p><p>Africa: South Africa, Mauritius, Qatar</p>",
+            "text_color": "#666666",
+            "text_gradient_background": "",
+            "text_font_size": 21,
+            "text_font_weight": 300,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 52,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 1.5,
+            "position_y": 30
+          }
+        },
+        "text_DNeFdp": {
+          "type": "text",
+          "settings": {
+            "text": "<p><a href=\"/pages/coverage\" target=\"_blank\" title=\"GlocaMe Coverage Area\">Learn more&gt;&gt;</a></p>",
+            "text_color": "#011624",
+            "text_gradient_background": "",
+            "text_font_size": 22,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 2,
+            "position_y": 7
+          }
+        }
+      },
+      "block_order": [
+        "image_ebNEyF",
+        "text_kCdJWM",
+        "text_RCgWWR",
+        "text_EUyB8T",
+        "text_DNeFdp"
+      ],
+      "settings": {
+        "display_devices": "desktop",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_06": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_01": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/G40_06.jpg",
+            "image_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_01"
+      ],
+      "settings": {
+        "display_devices": "desktop",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_07": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_gbNEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/G40_07.jpg",
+            "image_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_gbNEyF"
+      ],
+      "settings": {
+        "display_devices": "desktop",
+        "padding_top": "no-indent",
+        "padding_bottom": "m",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_m_01": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_abNEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/G40_m_01.jpg",
+            "image_link": ""
+          }
+        },
+        "text_pbLEyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>G4 Pro 4G LTE Mobile Hotspot</strong></p>",
+            "text_color": "#3a3a3c",
+            "text_gradient_background": "",
+            "text_font_size": 26,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 3,
+            "position_y": 42
+          }
+        },
+        "text_abUcyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pay As You Go.<br/>Stay Connected Anywhere, Anytime.</p>",
+            "text_color": "#3a3a3c",
+            "text_gradient_background": "",
+            "text_font_size": 22,
+            "text_font_weight": 400,
+            "text_line_height": 1.3,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 3,
+            "position_y": 38
+          }
+        }
+      },
+      "block_order": [
+        "image_abNEyF",
+        "text_pbLEyF",
+        "text_abUcyF"
+      ],
+      "custom_css": [],
+      "settings": {
+        "display_devices": "mobile",
+        "padding_top": "m",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "selling_points_L8n63r": {
+      "type": "selling-points",
+      "blocks": {
+        "point_n6Dc4E": {
+          "type": "point",
+          "settings": {
+            "text": "No SlM Card Required",
+            "image_desktop": "shopify://shop_images/G40pc_-08_cd6232aa-a1f3-4fed-813c-ad739ed60d01.jpg"
+          }
+        },
+        "point_GzjR3d": {
+          "type": "point",
+          "settings": {
+            "text": "Your Travel Companion",
+            "image_desktop": "shopify://shop_images/G40pc_-09_5bca97ae-c992-476a-a2bf-bcd250c95bca.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "point_n6Dc4E",
+        "point_GzjR3d"
+      ],
+      "name": "t:sections.selling-points.presets.name",
+      "settings": {
+        "full_width": true,
+        "display_devices": "mobile",
+        "color_scheme": "",
+        "title": "4G Cloud SlM",
+        "image_ratio": "adapt",
+        "image_ratio_mobile": "adapt",
+        "note": "Automatic Switching to the Best Available 4G Operator",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "selling_points_8Efnfr": {
+      "type": "selling-points",
+      "blocks": {
+        "point_QFcwpP": {
+          "type": "point",
+          "settings": {
+            "text": "5\" HD Touchscreen",
+            "image_desktop": "shopify://shop_images/G40pc_-10_6f205775-009f-44ff-8afb-b437c6c98137.jpg"
+          }
+        },
+        "point_pHCH9e": {
+          "type": "point",
+          "settings": {
+            "text": "Large Battery Capacity",
+            "image_desktop": "shopify://shop_images/G40pc_-11_bfcba14d-d127-4d7b-84b3-4af72d75a002.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "point_QFcwpP",
+        "point_pHCH9e"
+      ],
+      "name": "t:sections.selling-points.presets.name",
+      "settings": {
+        "full_width": true,
+        "display_devices": "mobile",
+        "color_scheme": "",
+        "title": "Easy Operation and Management",
+        "image_ratio": "adapt",
+        "image_ratio_mobile": "adapt",
+        "note": "More than 12 Hours of Continuous Operation",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "selling_points_WUEbh7": {
+      "type": "selling-points",
+      "blocks": {
+        "point_hhgW8D": {
+          "type": "point",
+          "settings": {
+            "text": "Share WiFi with others",
+            "image_desktop": "shopify://shop_images/G40pc_-12_34568ca5-2b1e-462d-9dc5-75fd4a74533d.jpg"
+          }
+        },
+        "point_Dm8awM": {
+          "type": "point",
+          "settings": {
+            "text": "Private and Secure Data",
+            "image_desktop": "shopify://shop_images/G40pc_-13_875fa6d5-7cd0-4f01-bc0c-82adbe731cf6.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "point_hhgW8D",
+        "point_Dm8awM"
+      ],
+      "name": "t:sections.selling-points.presets.name",
+      "settings": {
+        "full_width": true,
+        "display_devices": "mobile",
+        "color_scheme": "",
+        "title": "Share Private Secure WiFi",
+        "image_ratio": "adapt",
+        "image_ratio_mobile": "adapt",
+        "note": "Simultaneous Connection of up to 10 Devices",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_m_03": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_cbNEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/G40_m_03.jpg",
+            "image_link": ""
+          }
+        },
+        "text_1UPaQA": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Connected to the Best Network</strong></p>",
+            "text_color": "#42e860",
+            "text_gradient_background": "",
+            "text_font_size": 20,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "text_letter_spacing": 0.1,
+            "max_text_container_max_width": 42,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 6,
+            "position_y": 7.4
+          }
+        },
+        "text_ytp3en": {
+          "type": "text",
+          "settings": {
+            "text": "<p>With network congestion monitoring, you always have the best available connection, no matter where you are.</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 15,
+            "text_font_weight": 300,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "text_letter_spacing": 0,
+            "max_text_container_max_width": 42,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 6,
+            "position_y": 12
+          }
+        },
+        "text_PUlaQA": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Safer and Reliable Hotspot</strong></p>",
+            "text_color": "#42e860",
+            "text_gradient_background": "",
+            "text_font_size": 20,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "text_letter_spacing": 0.1,
+            "max_text_container_max_width": 42,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 2.4,
+            "position_y": 32.4
+          }
+        },
+        "text_w4m3en": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Connection via 4G LTE cellular on up to 10 devices while your family streams, surfs, chats and emails at the same time.</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 15,
+            "text_font_weight": 300,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "text_letter_spacing": 0,
+            "max_text_container_max_width": 42,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 2.4,
+            "position_y": 37
+          }
+        },
+        "text_eUPapA": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Long Battery life-3900mAh</strong></p>",
+            "text_color": "#42e860",
+            "text_gradient_background": "",
+            "text_font_size": 20,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "text_letter_spacing": 0.1,
+            "max_text_container_max_width": 42,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "btt",
+            "position_x": 6,
+            "position_y": 40.8
+          }
+        },
+        "text_Q1p3en": {
+          "type": "text",
+          "settings": {
+            "text": "<p>A battery life of 12 hours ensure that your hotspot can support you every day on your journey with 4G LTE.</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 15,
+            "text_font_weight": 300,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "text_letter_spacing": 0,
+            "max_text_container_max_width": 42,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "btt",
+            "position_x": 6,
+            "position_y": 32
+          }
+        },
+        "text_oUPauA": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>5\" simple, Intuitive Display</strong></p>",
+            "text_color": "#42e860",
+            "text_gradient_background": "",
+            "text_font_size": 20,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "text_letter_spacing": 0.1,
+            "max_text_container_max_width": 42,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 2.4,
+            "position_y": 16.6
+          }
+        },
+        "text_wxj3en": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The large 5-inch LCD touchscreen provides you with information on data usage monitoring, mobile signal strength and network management.</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 15,
+            "text_font_weight": 300,
+            "text_line_height": 1.4,
+            "text_align": "left",
+            "text_letter_spacing": 0,
+            "max_text_container_max_width": 42,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 2.4,
+            "position_y": 6
+          }
+        }
+      },
+      "block_order": [
+        "image_cbNEyF",
+        "text_1UPaQA",
+        "text_ytp3en",
+        "text_PUlaQA",
+        "text_w4m3en",
+        "text_eUPapA",
+        "text_Q1p3en",
+        "text_oUPauA",
+        "text_wxj3en"
+      ],
+      "settings": {
+        "display_devices": "mobile",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "rich_text_LCrRxN": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_r3YN7Y": {
+          "type": "heading",
+          "settings": {
+            "heading": "Comparing GlocalMe Hotspot Devices",
+            "heading_size": "medium",
+            "heading_level": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "heading_r3YN7Y"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "color_scheme": "",
+        "full_width": true,
+        "alignment": "center",
+        "margin_top": "s",
+        "margin_bottom": "no-indent",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent"
+      }
+    },
+    "compare_device_NTb9jh": {
+      "type": "compare-device",
+      "name": "t:sections.compare-device.presets.name",
+      "settings": {
+        "display_devices": "desktop",
+        "compare_device_group": "compare-device-group-eojlw9bx",
+        "padding_top": "no-indent",
+        "padding_bottom": "xs",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "compare_device_Hz8nXq": {
+      "type": "compare-device",
+      "name": "t:sections.compare-device.presets.name",
+      "settings": {
+        "display_devices": "mobile",
+        "compare_device_group": "compare-device-group-eojlw9bx",
+        "padding_top": "s",
+        "padding_bottom": "s",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_m_04": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_dbNEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/G40_m_04.jpg",
+            "image_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_dbNEyF"
+      ],
+      "settings": {
+        "display_devices": "mobile",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_m_05": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_ebNEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/G40_m_05.jpg",
+            "image_link": "shopify://pages/coverage"
+          }
+        },
+        "text_tCdJWM": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Coverage 200+ Countries and Regions</strong></p>",
+            "text_color": "#101011",
+            "text_gradient_background": "",
+            "text_font_size": 16,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 4,
+            "position_y": 6
+          }
+        },
+        "text_PCgWWR": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>5G Network Covers 90+ Countries and Regions</strong></p>",
+            "text_color": "#101011",
+            "text_gradient_background": "",
+            "text_font_size": 16,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 4,
+            "position_y": 12
+          }
+        },
+        "text_EUhB8T": {
+          "type": "text",
+          "settings": {
+            "text": "<p>North America: United States, Canada, Mexico</p><p>South America: Brazil, Peru</p><p>Europe: United Kingdom, Germany, France, Italy, Spain, Austria, Belgium, Bulgaria, Switzerland, Netherlands, Portugal, Czech Republic, Denmark, Finland, Greece, Slovenia, Vatican, Monaco, San Marino, Cyprus, Hungary, Latvia, Poland, Sweden, Slovakia, Croatia, Ireland, Iceland, Lithuania, Luxembourg, Malta, Romania, Norway, Andorra</p><p>Asia: Japan, Korea, United Arab Emirates, China, Hong Kong, Macau, Taiwan, Indonesia, Malaysia, Saudi Arabia, Singapore, Thailand, Vietnam, Bahrain, Philippines, India, Kuwait, Oman,  Maldives</p><p>Oceania: Australia, New Zealand</p><p>Africa: South Africa, Mauritius, Qatar</p>",
+            "text_color": "#666666",
+            "text_gradient_background": "",
+            "text_font_size": 15,
+            "text_font_weight": 300,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 4,
+            "position_y": 18
+          }
+        },
+        "text_cnawVP": {
+          "type": "text",
+          "settings": {
+            "text": "<p><a href=\"/pages/coverage\" target=\"_blank\" title=\"GlocaMe Coverage Area\">Learn More</a></p>",
+            "text_color": "#101011",
+            "text_gradient_background": "",
+            "text_font_size": 18,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 4,
+            "position_y": 80
+          }
+        }
+      },
+      "block_order": [
+        "image_ebNEyF",
+        "text_tCdJWM",
+        "text_PCgWWR",
+        "text_EUhB8T",
+        "text_cnawVP"
+      ],
+      "settings": {
+        "display_devices": "mobile",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_m_06": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_01": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/G40_m_06.jpg",
+            "image_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_01"
+      ],
+      "settings": {
+        "display_devices": "mobile",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_m_07": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_gbNEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/G40_m_07.jpg",
+            "image_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_gbNEyF"
+      ],
+      "settings": {
+        "display_devices": "mobile",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "1755833375712f79ae": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_xjdCLf": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_xjdCLf"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "product_recommendations_n9jfVB": {
+      "type": "product-recommendations",
+      "settings": {
+        "color_scheme": "",
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "subheading_icon": "none",
+        "heading": "You May Also Like",
+        "heading_size": "h3",
+        "text": "",
+        "products_limit": 6,
+        "image_ratio": "1/1",
+        "image_fit": "cover",
+        "show_secondary_image": true,
+        "show_vendor": true,
+        "show_desc": false,
+        "padding_top": "s",
+        "padding_bottom": "m"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_text_separation_01",
+    "selling_points_qJkRBU",
+    "selling_points_PmKEWe",
+    "selling_points_JmJXqh",
+    "image_text_separation_03",
+    "image_text_separation_04",
+    "image_text_separation_05",
+    "image_text_separation_06",
+    "image_text_separation_07",
+    "image_text_separation_m_01",
+    "selling_points_L8n63r",
+    "selling_points_8Efnfr",
+    "selling_points_WUEbh7",
+    "image_text_separation_m_03",
+    "rich_text_LCrRxN",
+    "compare_device_NTb9jh",
+    "compare_device_Hz8nXq",
+    "image_text_separation_m_04",
+    "image_text_separation_m_05",
+    "image_text_separation_m_06",
+    "image_text_separation_m_07",
+    "1755833375712f79ae",
+    "product_recommendations_n9jfVB"
+  ]
+}

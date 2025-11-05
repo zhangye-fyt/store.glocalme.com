@@ -1,0 +1,515 @@
+<!-- sections/static-shipping-protection.liquid -->
+
+<section class="section static-shipping-info">
+  <div class="responsive-container">
+    <style>
+      .responsive-container {
+        max-width: 1200px;
+        margin: 50px auto;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+      .static-shipping-info {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        line-height: 1.6;
+        color: #333;
+      }
+      .static-shipping-info h1 {
+        font-size: 2em;
+        margin-bottom: 1em;
+        font-weight: 600;
+      }
+      .static-shipping-info h2 {
+        margin-top: 2em;
+        font-size: 1.6em;
+        font-weight: 600;
+        color: #111;
+      }
+      .static-shipping-info strong {
+        font-weight: 600;
+      }
+      .static-shipping-info ul,
+      .static-shipping-info ol {
+        margin-bottom: 1.2em;
+        padding-left: 1.8em;
+      }
+      .static-shipping-info .note {
+        margin-top: 10px;
+        font-weight: 600;
+        color: #444;
+      }
+      .static-shipping-info a {
+        color: #0066cc;
+        text-decoration: underline;
+      }
+
+      @media (max-width: 768px) {
+        .responsive-container {
+          padding: 16px;
+        }
+      }
+    </style>
+
+    {% case request.locale.iso_code %}
+      {% when 'de' %}
+        <!-- German Version -->
+        <h1 class="h2">Versandschutz FAQ</h1>
+        <p><strong>F1: Was ist Versandschutz?</strong></p>
+        <p>A1: Beim Kauf in Xcotton-Partner-Shops können Sie optional Versandschutz hinzubuchen, der Ihre Bestellung gegen Verlust, Beschädigung oder Fehlzustellung während des Transports absichert.</p>
+
+        <p><strong>F2: Wann kann ich einen Anspruch geltend machen?</strong></p>
+        <p>A2: Sie können einen Anspruch unter folgenden Umständen einreichen:</p>
+        <ul>
+          <li><strong>Inlandssendungen, die nach 30 Tagen</strong> oder <strong>internationale Sendungen, die nach 60 Tagen</strong> ab Versanddatum nicht zugestellt wurden.</li>
+          <li><strong>Sichtbare Beschädigung des Pakets bei Lieferung.</strong></li>
+          <li><strong>Paket als "zugestellt" markiert, aber nicht erhalten</strong> (erfordert Nachweise wie Polizeibericht oder Überwachungsaufnahmen).</li>
+          <li><strong>Fehlzustellung an falsche Adresse</strong> aufgrund von System-/Bearbeitungsfehlern (sofern die korrekte Adresse beim Checkout angegeben wurde).</li>
+        </ul>
+
+        <p><strong>F3: Wie reiche ich einen Anspruch ein?</strong></p>
+        <p>A3: So melden Sie verlorene, beschädigte oder fehlgeleitete Pakete:</p>
+        <ol>
+          <li>Besuchen Sie das <strong><a href="https://sp.xcottons.com/parcel#/parcel/parcel-login" target="_blank" rel="noopener noreferrer">Xcotton Lösungszentrum</a></strong></li>
+          <li>E-Mail an <strong>support@xcottons.com</strong></li>
+        </ol>
+        <p class="note">Hinweis: Alle Ansprüche müssen <strong>innerhalb von 90 Tagen</strong> ab Bestelldatum eingereicht werden.</p>
+
+        <p><strong>F4: Kann ich den Versandschutz stornieren?</strong></p>
+        <p><strong>Vor dem Versand:</strong> Wenden Sie sich direkt an den Händler für eine Rückerstattung.</p>
+        <p><strong>Nach dem Versand:</strong> Nicht erstattungsfähig sobald die Bestellung versandt wurde.</p>
+
+      {% when 'fr' %}
+        <!-- French Version -->
+        <h1 class="h2">FAQ Protection d'Expédition</h1>
+        <p><strong>Q1 : Qu'est-ce que la Protection d'Expédition ?</strong></p>
+        <p>R1 : Lors d'un achat dans les boutiques partenaires de Xcotton, vous pouvez opter pour la Protection d'Expédition qui couvre votre commande contre la perte, les dommages ou une livraison erronée pendant le transport.</p>
+
+        <p><strong>Q2 : Quand puis-je faire une réclamation ?</strong></p>
+        <p>R2 : Vous pouvez soumettre une réclamation dans les cas suivants :</p>
+        <ul>
+          <li><strong>Commandes nationales non livrées après 30 jours</strong> ou <strong>commandes internationales non livrées après 60 jours</strong> à partir de la date d'expédition.</li>
+          <li><strong>Dommages visibles sur le colis livré.</strong></li>
+          <li><strong>Colis marqué comme "livré" mais non reçu</strong> (nécessite des justificatifs comme un rapport de police ou des images de surveillance).</li>
+          <li><strong>Livraison à une mauvaise adresse</strong> due à des erreurs système/traitement (à condition que l'adresse correcte ait été fournie au checkout).</li>
+        </ul>
+
+        <p><strong>Q3 : Comment faire une réclamation ?</strong></p>
+        <p>R3 : Pour signaler des colis perdus, endommagés ou mal livrés :</p>
+        <ol>
+          <li>Visitez le <strong><a href="https://sp.xcottons.com/parcel#/parcel/parcel-login" target="_blank" rel="noopener noreferrer">Centre de Résolution Xcotton</a></strong></li>
+          <li>Envoyez un email à <strong>support@xcottons.com</strong></li>
+        </ol>
+        <p class="note">Note : Toutes les réclamations doivent être soumises <strong>dans les 90 jours</strong> suivant la date de commande.</p>
+
+        <p><strong>Q4 : Puis-je annuler la Protection d'Expédition ?</strong></p>
+        <p><strong>Avant l'expédition :</strong> Contactez directement le marchand pour un remboursement.</p>
+        <p><strong>Après l'expédition :</strong> Non remboursable une fois la commande expédiée.</p>
+
+      {% when 'fi' %}
+        <!-- Finnish -->
+        <h1 class="h2">Lähetyssuojaus UKK</h1>
+        <p><strong>K1: Mikä on Lähetyssuojaus?</strong></p>
+        <p>V1: Ostettaessa Xcottonin kumppanikaupoista voit valita Lähetyssuojauksen, joka suojaa tilauksesi katoamiselta, vahingoittumiselta tai väärälle toimitukselle kuljetuksen aikana.</p>
+
+        <p><strong>K2: Milloin voin tehdä korvausvaatimuksen?</strong></p>
+        <p>V2: Voit tehdä vaatimuksen seuraavissa tilanteissa:</p>
+        <ul>
+          <li><strong>Kotimaiset tilaukset jotka eivät ole saapuneet 30 päivän kuluessa</strong> tai <strong>kansainväliset tilaukset 60 päivän kuluessa</strong> lähetyksestä.</li>
+          <li><strong>Näkyvät vauriot toimitettussa paketissa.</strong></li>
+          <li><strong>Paketti merkitty "toimitettu" mutta ei saapunut</strong> (vaatii todisteita kuten poliisiraportin tai valvontakameran kuvat).</li>
+          <li><strong>Väärälle osoitteelle toimitettu</strong> järjestelmä-/käsittelyvirheen vuoksi (jos oikea osoite annettiin kassalla).</li>
+        </ul>
+
+        <p><strong>K3: Miten teen korvausvaatimuksen?</strong></p>
+        <p>V3: Ilmoita kadonneista, vahingoittuneista tai väärin toimitetuista paketeista:</p>
+        <ol>
+          <li>Vieraile <strong><a href="https://sp.xcottons.com/parcel#/parcel/parcel-login" target="_blank" rel="noopener noreferrer">Xcottonin ratkaisukeskuksessa</a></strong></li>
+          <li>Sähköpostia <strong>support@xcottons.com</strong></li>
+        </ol>
+        <p class="note">Huom: Kaikki vaatimukset on tehtävä <strong>90 päivän kuluessa</strong> tilauspäivästä.</p>
+
+        <p><strong>K4: Voinko peruuttaa Lähetyssuojauksen?</strong></p>
+        <p><strong>Ennen lähetystä:</strong> Ota yhteyttä suoraan kauppiaaseen hyvitystä varten.</p>
+        <p><strong>Lähetyksen jälkeen:</strong> Ei hyvityskelpoinen lähetyksen jälkeen.</p>
+
+      {% when 'no' %}
+        <!-- Norwegian -->
+        <h1 class="h2">Fraktbeskyttelse FAQ</h1>
+        <p><strong>S1: Hva er Fraktbeskyttelse?</strong></p>
+        <p>V1: Når du handler fra Xcotton-partnerbutikker, kan du velge Fraktbeskyttelse for å sikre bestillingen din mot tap, skade eller feillevering under transport.</p>
+
+        <p><strong>S2: Når kan jeg gjøre et krav?</strong></p>
+        <p>V2: Du kan sende inn et krav under følgende omstendigheter:</p>
+        <ul>
+          <li><strong>Innenlandske bestillinger ikke levert etter 30 dager</strong> eller <strong>internasjonale bestillinger ikke levert etter 60 dager</strong> fra forsendelsesdato.</li>
+          <li><strong>Synlig skade på den leverte pakken.</strong></li>
+          <li><strong>Pakke merket "levert" men ikke mottatt</strong> (krever dokumentasjon f.eks. politirapport eller overvåkningsbilder).</li>
+          <li><strong>Feillevering til feil adresse</strong> på grunn av system-/behandlingsfeil (forutsatt at riktig adresse ble oppgitt ved kassen).</li>
+        </ul>
+
+        <p><strong>S3: Hvordan sender jeg inn et krav?</strong></p>
+        <p>V3: Rapporter tapte, skadde eller feilleverte pakker:</p>
+        <ol>
+          <li>Besøk <strong><a href="https://sp.xcottons.com/parcel#/parcel/parcel-login" target="_blank" rel="noopener noreferrer">Xcotton løsningssenter</a></strong></li>
+          <li>Send e-post til <strong>support@xcottons.com</strong></li>
+        </ol>
+        <p class="note">Merk: Alle krav må sendes inn <strong>innen 90 dager</strong> fra bestillingsdato.</p>
+
+        <p><strong>S4: Kan jeg kansellere Fraktbeskyttelse?</strong></p>
+        <p><strong>Før forsendelse:</strong> Kontakt selger direkte for refusjon.</p>
+        <p><strong>Etter forsendelse:</strong> Ikke refunderbart etter at bestillingen er sendt.</p>
+
+      {% when 'es' %}
+        <!-- Spanish -->
+        <h1 class="h2">Protección de Envío Preguntas</h1>
+        <p><strong>P1: ¿Qué es la Protección de Envío?</strong></p>
+        <p>R1: Al comprar en tiendas asociadas de Xcotton, puedes optar por la Protección de Envío para proteger tu pedido contra pérdida, daño o entrega incorrecta durante el transporte.</p>
+
+        <p><strong>P2: ¿Cuándo puedo presentar un reclamo?</strong></p>
+        <p>R2: Puedes presentar un reclamo en las siguientes circunstancias:</p>
+        <ul>
+          <li><strong>Pedidos nacionales no entregados después de 30 días</strong> o <strong>pedidos internacionales no entregados después de 60 días</strong> desde la fecha de envío.</li>
+          <li><strong>Daño visible en el paquete entregado.</strong></li>
+          <li><strong>Paquete marcado como "entregado" pero no recibido</strong> (requiere documentación como informe policial o imágenes de seguridad).</li>
+          <li><strong>Entrega a dirección incorrecta</strong> por errores del sistema/procesamiento (siempre que se proporcionó la dirección correcta al finalizar la compra).</li>
+        </ul>
+
+        <p><strong>P3: ¿Cómo presento un reclamo?</strong></p>
+        <p>R3: Para reportar paquetes perdidos, dañados o mal entregados:</p>
+        <ol>
+          <li>Visita el <strong><a href="https://sp.xcottons.com/parcel#/parcel/parcel-login" target="_blank" rel="noopener noreferrer">Centro de Resolución Xcotton</a></strong></li>
+          <li>Envía un correo a <strong>support@xcottons.com</strong></li>
+        </ol>
+        <p class="note">Nota: Todos los reclamos deben presentarse <strong>dentro de los 90 días</strong> posteriores a la fecha del pedido.</p>
+
+        <p><strong>P4: ¿Puedo cancelar la Protección de Envío?</strong></p>
+        <p><strong>Antes del envío:</strong> Contacta directamente al vendedor para un reembolso.</p>
+        <p><strong>Después del envío:</strong> No reembolsable una vez enviado el pedido.</p>
+
+      {% when 'ru' %}
+        <!-- Russian -->
+        <h1 class="h2">Защита доставки ЧАВО</h1>
+        <p><strong>В1: Что такое Защита доставки?</strong></p>
+        <p>О1: При покупке в магазинах-партнерах Xcotton вы можете выбрать Защиту доставки, которая страхует ваш заказ от потери, повреждения или ошибочной доставки во время транспортировки.</p>
+
+        <p><strong>В2: Когда я могу подать претензию?</strong></p>
+        <p>О2: Вы можете подать претензию в следующих случаях:</p>
+        <ul>
+          <li><strong>Внутренние заказы не доставлены через 30 дней</strong> или <strong>международные заказы не доставлены через 60 дней</strong> с даты отправки.</li>
+          <li><strong>Видимые повреждения у доставленной посылки.</strong></li>
+          <li><strong>Посылка помечена как "доставлена", но не получена</strong> (требуется подтверждение, например, полицейский отчет или записи камер наблюдения).</li>
+          <li><strong>Ошибочная доставка по неверному адресу</strong> из-за системной/обработочной ошибки (при условии, что правильный адрес был указан при оформлении).</li>
+        </ul>
+
+        <p><strong>В3: Как подать претензию?</strong></p>
+        <p>О3: Чтобы сообщить о потерянных, поврежденных или ошибочно доставленных посылках:</p>
+        <ol>
+          <li>Посетите <strong><a href="https://sp.xcottons.com/parcel#/parcel/parcel-login" target="_blank" rel="noopener noreferrer">Центр решений Xcotton</a></strong></li>
+          <li>Напишите на <strong>support@xcottons.com</strong></li>
+        </ol>
+        <p class="note">Примечание: Все претензии должны быть поданы <strong>в течение 90 дней</strong> с даты заказа.</p>
+
+        <p><strong>В4: Могу ли я отменить Защиту доставки?</strong></p>
+        <p><strong>До отправки:</strong> Обратитесь напрямую к продавцу для возврата средств.</p>
+        <p><strong>После отправки:</strong> Возврату не подлежит после отправки заказа.</p>
+
+      {% when 'pl' %}
+        <!-- Polish -->
+        <h1 class="h2">Ochrona Wysyłki FAQ</h1>
+        <p><strong>P1: Co to jest Ochrona Wysyłki?</strong></p>
+        <p>O1: Kupując w sklepach partnerskich Xcotton, możesz wybrać Ochronę Wysyłki, która zabezpiecza Twoje zamówienie przed utratą, uszkodzeniem lub błędną dostawą podczas transportu.</p>
+
+        <p><strong>P2: Kiedy mogę złożyć reklamację?</strong></p>
+        <p>O2: Możesz złożyć reklamację w następujących przypadkach:</p>
+        <ul>
+          <li><strong>Zamówienia krajowe niedostarczone po 30 dniach</strong> lub <strong>zamówienia międzynarodowe niedostarczone po 60 dniach</strong> od daty wysyłki.</li>
+          <li><strong>Widoczne uszkodzenia dostarczonej paczki.</strong></li>
+          <li><strong>Paczka oznaczona jako "dostarczona" ale nieotrzymana</strong> (wymaga dokumentacji np. zgłoszenia policji lub nagrań monitoringu).</li>
+          <li><strong>Błędna dostawa pod niewłaściwy adres</strong> z powodu błędu systemu/przetwarzania (pod warunkiem podania prawidłowego adresu przy zamówieniu).</li>
+        </ul>
+
+        <p><strong>P3: Jak złożyć reklamację?</strong></p>
+        <p>O3: Aby zgłosić zagubione, uszkodzone lub błędnie dostarczone paczki:</p>
+        <ol>
+          <li>Odwiedź <strong><a href="https://sp.xcottons.com/parcel#/parcel/parcel-login" target="_blank" rel="noopener noreferrer">Centrum Rozwiązań Xcotton</a></strong></li>
+          <li>Wyślij email na <strong>support@xcottons.com</strong></li>
+        </ol>
+        <p class="note">Uwaga: Wszystkie reklamacje muszą być złożone <strong>w ciągu 90 dni</strong> od daty zamówienia.</p>
+
+        <p><strong>P4: Czy mogę anulować Ochronę Wysyłki?</strong></p>
+        <p><strong>Przed wysyłką:</strong> Skontaktuj się bezpośrednio ze sprzedawcą w celu zwrotu pieniędzy.</p>
+        <p><strong>Po wysyłce:</strong> Nie podlega zwrotowi po wysłaniu zamówienia.</p>
+
+      {% when 'sv' %}
+        <!-- Swedish -->
+        <h1 class="h2">Fraktskydd FAQ</h1>
+        <p><strong>F1: Vad är Fraktskydd?</strong></p>
+        <p>S1: När du handlar från Xcottons partnerbutiker kan du välja Fraktskydd för att skydda din beställning mot förlust, skada eller felaktig leverans under transport.</p>
+
+        <p><strong>F2: När kan jag göra en skadeanmälan?</strong></p>
+        <p>S2: Du kan lämna in en skadeanmälan under följande omständigheter:</p>
+        <ul>
+          <li><strong>Inrikes beställningar inte levererade efter 30 dagar</strong> eller <strong>internationella beställningar inte levererade efter 60 dagar</strong> från försändelsedatum.</li>
+          <li><strong>Synlig skada på den levererade förpackningen.</strong></li>
+          <li><strong>Paket markerat som "levererat" men inte mottaget</strong> (kräver stödjande dokumentation t.ex. polisanmälan eller övervakningsbilder).</li>
+          <li><strong>Felleverans till fel adress</strong> på grund av system-/behandlingsfel (förutsatt att rätt adress angavs vid kassan).</li>
+        </ul>
+
+        <p><strong>F3: Hur gör jag en skadeanmälan?</strong></p>
+        <p>S3: För att rapportera förlorade, skadade eller felaktigt levererade paket:</p>
+        <ol>
+          <li>Besök <strong><a href="https://sp.xcottons.com/parcel#/parcel/parcel-login" target="_blank" rel="noopener noreferrer">Xcottons lösningscenter</a></strong></li>
+          <li>Skicka e-post till <strong>support@xcottons.com</strong></li>
+        </ol>
+        <p class="note">Obs: Alla skadeanmälningar måste lämnas in <strong>inom 90 dagar</strong> från beställningsdatum.</p>
+
+        <p><strong>F4: Kan jag avbryta Fraktskyddet?</strong></p>
+        <p><strong>Försändelse:</strong> Kontakta säljaren direkt för återbetalning.</p>
+        <p><strong>Efter försändelse:</strong> Återbetalningsbart inte efter att beställningen har skickats.</p>
+
+      {% when 'nl' %}
+        <!-- Dutch -->
+        <h1 class="h2">Verzendbescherming FAQ</h1>
+        <p><strong>V1: Wat is Verzendbescherming?</strong></p>
+        <p>A1: Bij aankoop bij Xcotton-partnerwinkels kunt u optioneel Verzendbescherming toevoegen om uw bestelling te beschermen tegen verlies, schade of verkeerde levering tijdens het transport.</p>
+
+        <p><strong>V2: Wanneer kom ik in aanmerking voor een claim?</strong></p>
+        <p>A2: U kunt een claim indienen onder de volgende omstandigheden:</p>
+        <ul>
+          <li><strong>Binnenlandse bestellingen niet geleverd na 30 dagen</strong> of <strong>internationale bestellingen niet geleverd na 60 dagen</strong> vanaf verzenddatum.</li>
+          <li><strong>Zichtbare schade aan het geleverde pakket.</strong></li>
+          <li><strong>Pakket gemarkeerd als "geleverd" maar niet ontvangen</strong> (vereist ondersteunende documentatie zoals politierapport of bewakingsbeelden).</li>
+          <li><strong>Verkeerde levering aan verkeerd adres</strong> door systeem-/verwerkingsfouten (mits het juiste adres bij het afrekenen is opgegeven).</li>
+        </ul>
+
+        <p><strong>V3: Hoe dien ik een claim in?</strong></p>
+        <p>A3: Om verloren, beschadigde of verkeerd geleverde pakketten te melden:</p>
+        <ol>
+          <li>Bezoek het <strong><a href="https://sp.xcottons.com/parcel#/parcel/parcel-login" target="_blank" rel="noopener noreferrer">Xcotton Oplossingscentrum</a></strong></li>
+          <li>E-mail naar <strong>support@xcottons.com</strong></li>
+        </ol>
+        <p class="note">Opmerking: Alle claims moeten worden ingediend <strong>binnen 90 dagen</strong> na de besteldatum.</p>
+
+        <p><strong>V4: Kan ik Verzendbescherming annuleren?</strong></p>
+        <p><strong>Voor verzending:</strong> Neem rechtstreeks contact op met de verkoper voor een terugbetaling.</p>
+        <p><strong>Na verzending:</strong> Niet terugbetaalbaar zodra de bestelling is verzonden.</p>
+
+      {% when 'it' %}
+        <!-- Italian -->
+        <h1 class="h2">Protezione Spedizione FAQ</h1>
+        <p><strong>D1: Cos'è la Protezione Spedizione?</strong></p>
+        <p>R1: Quando acquisti dai negozi partner di Xcotton, puoi optare per la Protezione Spedizione che tutela il tuo ordine da perdita, danni o consegna errata durante il trasporto.</p>
+
+        <p><strong>D2: Quando posso presentare un reclamo?</strong></p>
+        <p>R2: Puoi presentare un reclamo nelle seguenti circostanze:</p>
+        <ul>
+          <li><strong>Ordini nazionali non consegnati dopo 30 giorni</strong> o <strong>ordini internazionali non consegnati dopo 60 giorni</strong> dalla data di spedizione.</li>
+          <li><strong>Danni visibili alla confezione consegnata.</strong></li>
+          <li><strong>Pacco segnato come "consegnato" ma non ricevuto</strong> (richiede documentazione come denuncia alla polizia o riprese di sicurezza).</li>
+          <li><strong>Consegna a indirizzo errato</strong> per errori di sistema/elaborazione (purché l'indirizzo corretto sia stato fornito al checkout).</li>
+        </ul>
+
+        <p><strong>D3: Come presento un reclamo?</strong></p>
+        <p>R3: Per segnalare pacchi persi, danneggiati o consegnati erroneamente:</p>
+        <ol>
+          <li>Visita il <strong><a href="https://sp.xcottons.com/parcel#/parcel/parcel-login" target="_blank" rel="noopener noreferrer">Centro Risoluzioni Xcotton</a></strong></li>
+          <li>Invia un'email a <strong>support@xcottons.com</strong></li>
+        </ol>
+        <p class="note">Nota: Tutti i reclami devono essere presentati <strong>entro 90 giorni</strong> dalla data dell'ordine.</p>
+
+        <p><strong>D4: Posso annullare la Protezione Spedizione?</strong></p>
+        <p><strong>Pre-spedizione:</strong> Contatta direttamente il venditore per un rimborso.</p>
+        <p><strong>Post-spedizione:</strong> Non rimborsabile una volta spedito l'ordine.</p>
+
+      {% when 'pt' %}
+        <!-- Portuguese -->
+        <h1 class="h2">Proteção de Envio FAQ</h1>
+        <p><strong>P1: O que é Proteção de Envio?</strong></p>
+        <p>R1: Ao comprar em lojas parceiras da Xcotton, você pode optar pela Proteção de Envio para proteger seu pedido contra perda, danos ou entrega incorreta durante o transporte.</p>
+
+        <p><strong>P2: Quando posso fazer uma reclamação?</strong></p>
+        <p>R2: Você pode enviar uma reclamação nas seguintes circunstâncias:</p>
+        <ul>
+          <li><strong>Pedidos nacionais não entregues após 30 dias</strong> ou <strong>pedidos internacionais não entregues após 60 dias</strong> da data de envio.</li>
+          <li><strong>Danos visíveis na embalagem entregue.</strong></li>
+          <li><strong>Pacote marcado como "entregue" mas não recebido</strong> (requer documentação como boletim de ocorrência ou imagens de segurança).</li>
+          <li><strong>Entrega em endereço incorreto</strong> por erros de sistema/processamento (desde que o endereço correto tenha sido fornecido no checkout).</li>
+        </ul>
+
+        <p><strong>P3: Como faço uma reclamação?</strong></p>
+        <p>R3: Para reportar pacotes perdidos, danificados ou entregues incorretamente:</p>
+        <ol>
+          <li>Visite o <strong><a href="https://sp.xcottons.com/parcel#/parcel/parcel-login" target="_blank" rel="noopener noreferrer">Centro de Soluções Xcotton</a></strong></li>
+          <li>Envie email para <strong>support@xcottons.com</strong></li>
+        </ol>
+        <p class="note">Nota: Todas as reclamações devem ser enviadas <strong>dentro de 90 dias</strong> da data do pedido.</p>
+
+        <p><strong>P4: Posso cancelar a Proteção de Envio?</strong></p>
+        <p><strong>Pré-envio:</strong> Contate o vendedor diretamente para reembolso.</p>
+        <p><strong>Pós-envio:</strong> Não reembolsável após o envio do pedido.</p>
+
+      {% when 'uk' %}
+        <!-- Ukrainian -->
+        <h1 class="h2">Захист доставки FAQ</h1>
+        <p><strong>З1: Що таке Захист доставки?</strong></p>
+        <p>В1: При покупці в магазинах-партнерах Xcotton ви можете обрати Захист доставки для захисту вашого замовлення від втрати, пошкодження або помилкової доставки під час транспортування.</p>
+
+        <p><strong>З2: Коли я можу подати претензію?</strong></p>
+        <p>В2: Ви можете подати претензію в таких випадках:</p>
+        <ul>
+          <li><strong>Внутрішні замовлення не доставлені через 30 днів</strong> або <strong>міжнародні замовлення не доставлені через 60 днів</strong> з дати відправлення.</li>
+          <li><strong>Видимі пошкодження доставленої посилки.</strong></li>
+          <li><strong>Посилка позначена як "доставлена", але не отримана</strong> (потрібні підтверджуючі документи, наприклад, поліцейний протокол або записи з камер спостереження).</li>
+          <li><strong>Помилкова доставка за неправильною адресою</strong> через системні/обробні помилки (за умови, що правильна адреса була вказана при оформленні).</li>
+        </ul>
+
+        <p><strong>З3: Як подати претензію?</strong></p>
+        <p>В3: Щоб повідомити про втрачені, пошкоджені або помилково доставлені посилки:</p>
+        <ol>
+          <li>Відвідайте <strong><a href="https://sp.xcottons.com/parcel#/parcel/parcel-login" target="_blank" rel="noopener noreferrer">Центр вирішення Xcotton</a></strong></li>
+          <li>Напишіть на <strong>support@xcottons.com</strong></li>
+        </ol>
+        <p class="note">Примітка: Всі претензії повинні бути подані <strong>протягом 90 днів</strong> з дати замовлення.</p>
+
+        <p><strong>З4: Чи можу я скасувати Захист доставки?</strong></p>
+        <p><strong>До відправлення:</strong> Зверніться безпосередньо до продавця для повернення коштів.</p>
+        <p><strong>Після відправлення:</strong> Не підлягає поверненню після відправлення замовлення.</p>
+
+      {% when 'ro' %}
+        <!-- Romanian -->
+        <h1 class="h2">Protectie Livrare FAQ</h1>
+        <p><strong>Î1: Ce este Protectia Livrare?</strong></p>
+        <p>R1: Când cumperi de la magazinele partenere Xcotton, poți opta pentru Protectia Livrare care îți protejează comanda împotriva pierderii, deteriorării sau livrării greșite în timpul transportului.</p>
+
+        <p><strong>Î2: Când pot depune o cerere?</strong></p>
+        <p>R2: Poți depune o cerere în următoarele situații:</p>
+        <ul>
+          <li><strong>Comenzi interne nelivrate după 30 de zile</strong> sau <strong>comenzi internaționale nelivrate după 60 de zile</strong> de la data expedierii.</li>
+          <li><strong>Avarii vizibile la pachetul livrat.</strong></li>
+          <li><strong>Pachet marcat "livrat" dar neprimit</strong> (necesită documente justificative precum raport de poliție sau imagini de supraveghere).</li>
+          <li><strong>Livrare greșită la adresă incorectă</strong> din cauza erorilor de sistem/procesare (cu condiția ca adresa corectă să fi fost furnizată la finalizare).</li>
+        </ul>
+
+        <p><strong>Î3: Cum depun o cerere?</strong></p>
+        <p>R3: Pentru a raporta pachete pierdute, deteriorate sau livrate greșit:</p>
+        <ol>
+          <li>Vizitează <strong><a href="https://sp.xcottons.com/parcel#/parcel/parcel-login" target="_blank" rel="noopener noreferrer">Centrul de Rezolvare Xcotton</a></strong></li>
+          <li>Trimite email la <strong>support@xcottons.com</strong></li>
+        </ol>
+        <p class="note">Notă: Toate cererile trebuie depuse <strong>în termen de 90 de zile</strong> de la data comenzii.</p>
+
+        <p><strong>Î4: Pot anula Protectia Livrare?</strong></p>
+        <p><strong>Pre-expediere:</strong> Contactează direct vânzătorul pentru rambursare.</p>
+        <p><strong>Post-expediere:</strong> Nerambursabil după expedierea comenzii.</p>
+
+      {% when 'ko' %}
+        <!-- Korean -->
+        <h1 class="h2">배송 보호 FAQ</h1>
+        <p><strong>Q1: 배송 보호란 무엇입니까?</strong></p>
+        <p>A1: Xcotton 제휴 스토어에서 구매할 때 배송 보호를 선택할 수 있으며, 이는 운송 중 분실, 손상 또는 잘못된 배송으로부터 주문을 보호합니다.</p>
+
+        <p><strong>Q2: 언제 클레임을 제기할 수 있나요?</strong></p>
+        <p>A2: 다음 상황에서 클레임을 제출할 수 있습니다:</p>
+        <ul>
+          <li><strong>국내 주문 30일 후 미배송</strong> 또는 <strong>국제 주문 60일 후 미배송</strong> (발송일 기준).</li>
+          <li><strong>배송된 패키지의 가시적 손상.</strong></li>
+          <li><strong>"배송 완료"로 표시되었지만 수신되지 않은 패키지</strong> (경찰 리포트 또는 보안 영상 등의 증빙 서류 필요).</li>
+          <li><strong>시스템/처리 오류로 인한 잘못된 주소 배송</strong> (결제 시 정확한 주소가 제공된 경우).</li>
+        </ul>
+
+        <p><strong>Q3: 어떻게 클레임을 제기하나요?</strong></p>
+        <p>A3: 분실, 손상 또는 잘못 배송된 패키지를 신고하려면:</p>
+        <ol>
+          <li><strong><a href="https://sp.xcottons.com/parcel#/parcel/parcel-login" target="_blank" rel="noopener noreferrer">Xcotton 해결 센터</a></strong>를 방문하세요</li>
+          <li><strong>support@xcottons.com</strong>으로 이메일을 보내세요</li>
+        </ol>
+        <p class="note">참고: 모든 클레임은 주문일로부터 <strong>90일 이내</strong>에 제출되어야 합니다.</p>
+
+        <p><strong>Q4: 배송 보호를 취소할 수 있나요?</strong></p>
+        <p><strong>발송 전:</strong> 환불을 위해 판매자에게 직접 문의하세요.</p>
+        <p><strong>발송 후:</strong> 주문이 발송되면 환불이 불가능합니다.</p>
+
+{% when 'ja' %}
+        <!-- Japanese Version -->
+        <h1 class="h2">配送保護に関するよくある質問</h1>
+        <p><strong>Q1: 配送保護とは何ですか？</strong></p>
+        <p>A1: Xcottonのパートナー店舗で購入する際、配送中の紛失、破損、誤配に対する保護として配送保護をオプションで追加できます。</p>
+
+        <p><strong>Q2: クレームを申請できるのはどのような場合ですか？</strong></p>
+        <p>A2: 以下の状況でクレームを提出できます：</p>
+        <ul>
+          <li><strong>国内配送：発送日から30日以上経っても届かない場合</strong> または <strong>国際配送：発送日から60日以上経っても届かない場合</strong></li>
+          <li><strong>配送されたパッケージに明らかな損傷がある場合</strong></li>
+          <li><strong>「配送済み」と表示されているが受け取っていない場合</strong>（警察報告書や監視カメラ映像などの証明書類が必要）</li>
+          <li><strong>システム/処理エラーによる誤った住所への配送</strong>（チェックアウト時に正しい住所が入力されている場合）</li>
+        </ul>
+
+        <p><strong>Q3: クレームはどのように申請しますか？</strong></p>
+        <p>A3: 紛失、破損、誤配されたパッケージを報告するには：</p>
+        <ol>
+          <li><strong><a href="https://sp.xcottons.com/parcel#/parcel/parcel-login" target="_blank" rel="noopener noreferrer">Xcotton解決センター</a></strong> にアクセス</li>
+          <li><strong>support@xcottons.com</strong> にメール</li>
+        </ol>
+        <p class="note">注：すべてのクレームは注文日から<strong>90日以内</strong>に提出する必要があります。</p>
+
+        <p><strong>Q4: 配送保護をキャンセルできますか？</strong></p>
+        <p><strong>発送前：</strong> 返金については直接販売店に連絡してください。</p>
+        <p><strong>発送後：</strong> 注文が発送された後は返金できません。</p>
+
+      {% when 'da' %}
+        <!-- Danish -->
+        <h1 class="h2">Forsendelsesbeskyttelse FAQ</h1>
+        <p><strong>S1: Hvad er Forsendelsesbeskyttelse?</strong></p>
+        <p>V1: Når du køber fra Xcotton-partnerbutikker, kan du vælge Forsendelsesbeskyttelse for at beskytte din ordre mod tab, skade eller fejllevering under transport.</p>
+
+        <p><strong>S2: Hvornår kan jeg indgive et krav?</strong></p>
+        <p>V2: Du kan indgive et krav under følgende omstændigheder:</p>
+        <ul>
+          <li><strong>Indenlandske ordrer ikke leveret efter 30 dage</strong> eller <strong>internationale ordrer ikke leveret efter 60 dage</strong> fra afsendelsesdatoen.</li>
+          <li><strong>Synlig skade på den leverede pakke.</strong></li>
+          <li><strong>Pakke markeret "leveret" men ikke modtaget</strong> (kræver dokumentation f.eks. politirapport eller overvågningsbilleder).</li>
+          <li><strong>Fejllevering til forkert adresse</strong> på grund af system-/behandlingsfejl (forudsat at den korrekte adresse blev angivet ved checkout).</li>
+        </ul>
+
+        <p><strong>S3: Hvordan indgiver jeg et krav?</strong></p>
+        <p>V3: For at rapportere tabte, beskadigede eller fejlleverede pakker:</p>
+        <ol>
+          <li>Besøg <strong><a href="https://sp.xcottons.com/parcel#/parcel/parcel-login" target="_blank" rel="noopener noreferrer">Xcotton Løsningscenter</a></strong></li>
+          <li>Send en e-mail til <strong>support@xcottons.com</strong></li>
+        </ol>
+        <p class="note">Bemærk: Alle krav skal indgives <strong>inden for 90 dage</strong> fra ordredatoen.</p>
+
+        <p><strong>S4: Kan jeg annullere Forsendelsesbeskyttelsen?</strong></p>
+        <p><strong>Før afsendelse:</strong> Kontakt sælger direkte for tilbagebetaling.</p>
+        <p><strong>Efter afsendelse:</strong> Ikke-refunderbar efter ordren er afsendt.</p>
+
+    
+      {% else %}
+        <!-- Default English Version -->
+        <h1 class="h2">Shipping Protection FAQ</h1>
+        <p><strong>Q1: What is Shipping Protection?</strong></p>
+        <p>A1: When purchasing from Xcotton-partnered stores, you may opt for Shipping Protection to safeguard your order against loss, damage, or misdelivery during transit.</p>
+
+        <p><strong>Q2: When am I eligible to file a claim?</strong></p>
+        <p>A2: You may submit a claim under the following circumstances:</p>
+        <ul>
+          <li><strong>Domestic orders undelivered after 30 days</strong> or <strong>international orders undelivered after 60 days</strong> from the shipment date.</li>
+          <li><strong>Visible damage to the delivered package.</strong></li>
+          <li><strong>Package marked "delivered" but not received</strong> (requires supporting documentation, e.g., police report or security footage).</li>
+          <li><strong>Misdelivery to an incorrect address</strong> due to system/processing errors (provided the correct address was submitted at checkout).</li>
+        </ul>
+
+        <p><strong>Q3: How do I file a claim?</strong></p>
+        <p>A3: To report lost, damaged, or misdelivered packages:</p>
+        <ol>
+          <li>Visit the <strong><a href="https://sp.xcottons.com/parcel#/parcel/parcel-login" target="_blank" rel="noopener noreferrer">Xcotton Resolution Center</a></strong></li>
+          <li>Email <strong>support@xcottons.com</strong></li>
+        </ol>
+        <p class="note">Note: All claims must be submitted <strong>within 90 days</strong> of the order date.</p>
+
+        <p><strong>Q4: Can I cancel Shipping Protection?</strong></p>
+        <p><strong>Pre-shipment:</strong> Contact the merchant directly for a refund.</p>
+        <p><strong>Post-shipment:</strong> Non-refundable once the order is shipped.</p>
+    {% endcase %}
+  </div>
+</section>

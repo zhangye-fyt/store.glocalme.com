@@ -1,0 +1,18 @@
+.image-slider .swiper-slide {
+  width: calc(100% / 3);
+  height: auto;
+}
+
+.image-slider .swiper-slide img {
+  border-radius: 1.2rem;
+}
+
+.image-slider .swiper-pagination {
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 989px) {
+  .image-slider .swiper-navigation {
+    display: none;
+  }
+}

@@ -1,0 +1,110 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "banks_banner_FCQWaz": {
+      "type": "banks-banner",
+      "disabled": true,
+      "name": "Jewelry Hero",
+      "settings": {
+        "container_width": "fullscreen",
+        "position_2": "",
+        "padding_top": 20,
+        "padding_bottom": 20,
+        "subtitle": "Which Recliner Sofa is Right for You?",
+        "description": "<p>Searching for the perfect recliner sofa? Click to explore AlivingHome's exceptional design, superior comfort, and great value—helping you find your ideal match!</p>",
+        "background_image_desktop": "shopify://shop_images/20250514093422_f3235682-7b8a-4a62-8bf1-d61ec53343b0.png",
+        "background_image_mobile": "shopify://shop_images/g-form-0-appearance.backgroundImage-mgkfjuub-__20251010114719.jpg",
+        "background_color": "#ffffff",
+        "text_color": "#333333",
+        "text_bg_color": "rgba(0,0,0,0)",
+        "text_align": "left",
+        "text_position_desktop": "top-left",
+        "text_width_desktop": 40,
+        "text_margin_top_desktop": 40,
+        "text_margin_right_desktop": 50,
+        "text_margin_bottom_desktop": 100,
+        "text_margin_left_desktop": 50,
+        "subtitle_font_size_desktop": 20,
+        "description_font_size_desktop": 16,
+        "text_position_mobile": "top-right",
+        "text_width_mobile": 90,
+        "text_margin_top_mobile": 50,
+        "text_margin_right_mobile": 20,
+        "text_margin_bottom_mobile": 50,
+        "text_margin_left_mobile": 20,
+        "subtitle_font_size_mobile": 18,
+        "description_font_size_mobile": 14
+      }
+    },
+    "banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "color_scheme": "",
+        "image_ratio": "16/9",
+        "show_collection_description": true,
+        "show_collection_image": true,
+        "margin_top": "no-indent",
+        "margin_bottom": "s"
+      }
+    },
+    "rich_text_PNYxNw": {
+      "type": "rich-text",
+      "blocks": {
+        "text_WfVynG": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Type and search for a country below to check if GlocalMe is supported there. </p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_WfVynG"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "color_scheme": "",
+        "full_width": true,
+        "alignment": "center",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent",
+        "padding_top": "no-indent",
+        "padding_bottom": "xs"
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 12,
+        "columns": 4,
+        "image_ratio": "1/1",
+        "image_fit": "cover",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_desc": false,
+        "enable_filtering": true,
+        "filter_type": "horizontal_united",
+        "enable_sorting": true,
+        "image_filter_ratio": "5/4",
+        "image_filter_fit": "cover",
+        "image_filter_columns": 2,
+        "columns_mobile": "2",
+        "padding_top": "no-indent",
+        "padding_bottom": "l"
+      }
+    }
+  },
+  "order": [
+    "banks_banner_FCQWaz",
+    "banner",
+    "rich_text_PNYxNw",
+    "product-grid"
+  ]
+}

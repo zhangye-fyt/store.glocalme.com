@@ -1,0 +1,52 @@
+<div class="add-ons__product flex items-center">
+  <div class="add-ons__product-media">
+    {%- if product_item.featured_media -%}
+      <div
+        class="ratio"
+        style="--ratio-percent: {{ 1 | divided_by: product_item.featured_media.aspect_ratio | times: 100 | round: 2 }}%"
+      >
+        {{
+          product_item.featured_media
+          | image_url: width: 550
+          | image_tag:
+            loading: 'lazy',
+            sizes: '(min-width: 1100px) 750, (min-width: 750px) 550, 275',
+            widths: '275, 550, 750',
+            width: product_item.featured_media.width,
+            height: product_item.featured_media.height
+        }}
+      </div>
+    {%- else -%}
+      {{ 'product-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
+    {%- endif -%}
+  </div>
+  <div class="add-ons__product-info flex-1">
+    <h2 class="add-ons__product-title body-small">{{ product_item.title }}</h2>
+    {% if has_variants %}
+      <div class="add-ons__product-variants{% if product_item.variants.size < 2 %} hidden{% endif %}">
+        {%- assign current_variant = product_item.selected_or_first_available_variant -%}
+        <dropdown-component class="dropdown">
+          <input
+            class="dropdown__input"
+            type="text"
+            name="gift-variant-id"
+            value="{{ current_variant.title }}"
+            data-param="{{ current_variant.id }}"
+            data-gift-bound-product="{{ product.id }}"
+            aria-label="{{ 'products.product.choose_product_options' | t: product_name: product_item.title | escape }}"
+            placeholder
+            readonly
+          >
+          <ul class="dropdown__list">
+            {%- for variant in product_item.variants -%}
+              <li class="dropdown__item" data-value="{{ variant.title }}" data-param="{{ variant.id }}">
+                {{ variant.title }}
+              </li>
+            {%- endfor -%}
+          </ul>
+          {% render 'icon-caret' %}
+        </dropdown-component>
+      </div>
+    {% endif %}
+  </div>
+</div>

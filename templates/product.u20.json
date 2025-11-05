@@ -1,0 +1,1875 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ product.vendor }}"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h3"
+          }
+        },
+        "judge_me_reviews_preview_badge_KpdGiU": {
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "description": ""
+          }
+        },
+        "custom_liquid_tTHiUh": {
+          "type": "custom_liquid",
+          "disabled": true,
+          "settings": {
+            "custom_liquid": "{%- style -%}\n  .product-coupon-container {\n    margin: 20px 0;\n    font-family: inherit;\n  }\n  \n  .coupon-card {\n    background: linear-gradient(135deg, #e3b337 0%, #f4e6cb 100%);\n    border-radius: 10px;\n    border: 1px dashed #d1d5db;\n    padding: 15px;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    text-align: center;\n    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);\n    position: relative;\n    overflow: hidden;\n  }\n  \n  .coupon-card::before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    background: radial-gradient(circle at 10% 20%, rgba(255,255,255,0.3) 0%, transparent 20%);\n    pointer-events: none;\n  }\n  \n  .coupon-title {\n    font-size: 24px;\n    font-weight: 600;\n    color: #1f2937;\n    margin-bottom: 8px;\n  }\n  \n  .coupon-description {\n    font-size: 18px;\n    color: #97520c;\n    margin-bottom: 12px;\n    line-height: 1.4;\n  }\n  \n  .coupon-code-container {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    width: 100%;\n    margin-bottom: 10px;\n  }\n  \n  .coupon-code {\n    font-size: 20px;\n    font-weight: 700;\n    letter-spacing: 1px;\n    color: #97520c;\n    background-color: white;\n    padding: 8px 15px;\n    border-radius: 6px;\n    border: 1px solid #d1d5db;\n    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);\n    flex-grow: 1;\n    text-align: center;\n    max-width: 70%;\n    word-break: break-all;\n  }\n  \n  .copy-btn {\n    background-color: #3b82f6;\n    color: white;\n    border: none;\n    padding: 8px 12px;\n    border-radius: 6px;\n    margin-left: 8px;\n    font-size: 14px;\n    font-weight: 500;\n    cursor: pointer;\n    transition: background-color 0.2s;\n  }\n  \n  .copy-btn:hover {\n    background-color: #2563eb;\n  }\n  \n  .coupon-terms {\n    font-size: 12px;\n    color: #6b7280;\n    margin-top: 8px;\n  }\n  \n  /* 移动端适配 */\n  @media screen and (max-width: 749px) {\n    .coupon-card {\n      padding: 12px;\n    }\n    \n    .coupon-title {\n      font-size: 15px;\n    }\n    \n    .coupon-description {\n      font-size: 13px;\n    }\n    \n    .coupon-code {\n      font-size: 16px;\n      padding: 6px 12px;\n    }\n    \n    .copy-btn {\n      padding: 6px 10px;\n      font-size: 13px;\n    }\n  }\n{%- endstyle -%}\n\n{%- comment -%}\n  在这里设置你的优惠码和活动信息\n  你可以为不同产品设置不同的优惠码，或者使用相同的优惠码\n{%- endcomment -%}\n\n{%- assign current_product_handle = product.handle -%}\n\n{%- comment -%} 示例：根据产品handle设置不同的优惠码 {%- endcomment -%}\n{%- if current_product_handle == 'product-1-handle' -%}\n  {%- assign coupon_code = 'SUMMER20' -%}\n  {%- assign coupon_title = '夏季特惠' -%}\n  {%- assign coupon_description = '限时享受20%折扣，仅限本产品使用' -%}\n  {%- assign coupon_terms = '有效期至2023年8月31日，不可与其他优惠同时使用' -%}\n{%- elsif current_product_handle == 'product-2-handle' -%}\n  {%- assign coupon_code = 'FALL15' -%}\n  {%- assign coupon_title = '秋季促销' -%}\n  {%- assign coupon_description = '享受15%折扣，专为本产品定制' -%}\n  {%- assign coupon_terms = '有效期至2023年9月30日' -%}\n{%- else -%}\n  {%- assign coupon_code = 'CODE: PD15' -%}\n  {%- assign coupon_title = 'Prime Day sale is on!' -%}\n  {%- assign coupon_description = '15% OFF SITEWIDE' -%}\n  {%- assign coupon_terms = '' -%}\n{%- endif -%}\n\n{%- if coupon_code -%}\n<div class=\"product-coupon-container\">\n  <div class=\"coupon-card\">\n    <h3 class=\"coupon-title\">{{ coupon_title }}</h3>\n    <p class=\"coupon-description\">{{ coupon_description }}</p>\n    \n    <div class=\"coupon-code-container\">\n      <span class=\"coupon-code\" id=\"couponCode\">{{ coupon_code }}</span>\n     \n    </div>\n    \n    <p class=\"coupon-terms\">{{ coupon_terms }}</p>\n  </div>\n</div>\n\n\n{%- endif -%}"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "inventory_ybzDtw": {
+          "type": "inventory",
+          "settings": {}
+        },
+        "gift": {
+          "type": "gift",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_quantity": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "add_ons": {
+          "type": "add_ons",
+          "settings": {}
+        },
+        "country_checker_jkg98P": {
+          "type": "country_checker",
+          "settings": {}
+        },
+        "popup_nzDhX7": {
+          "type": "popup",
+          "settings": {
+            "label": "Compare Hotspot Device",
+            "heading": "",
+            "text": "",
+            "image": "shopify://shop_images/0702.jpg",
+            "page": ""
+          }
+        },
+        "dropdown_information_Uyff7V": {
+          "type": "dropdown_information",
+          "settings": {
+            "characteristics": false,
+            "heading": "User Manual",
+            "description": "<h6><a href=\"https://cdn.shopify.com/s/files/1/0658/8963/2410/files/U20.pdf?v=1745475742\" target=\"_blank\" title=\"https://cdn.shopify.com/s/files/1/0658/8963/2410/files/U20.pdf?v=1745475742\">UPP</a></h6>",
+            "button_show": false,
+            "button_label": "Button label",
+            "button_link": "",
+            "default_open": false
+          }
+        },
+        "vitals_ub_product_bundles_6LzNe6": {
+          "type": "shopify://apps/vitals/blocks/ub-product-bundles/aeb48102-2a5a-4f39-bdbd-d8d49f4e20b8",
+          "settings": {}
+        },
+        "supported_devices": {
+          "type": "supported_devices",
+          "settings": {}
+        },
+        "text_with_icon_FJpD8f": {
+          "type": "text_with_icon",
+          "settings": {
+            "show_text_with_icon_1": true,
+            "icon_1": "delivery",
+            "text_1": "Fast Shipping",
+            "show_text_with_icon_2": true,
+            "icon_2": "shield",
+            "text_2": "High-quality Products",
+            "box_shadow": true,
+            "icon_style": "colored",
+            "icon_fill_type": "gradient"
+          }
+        },
+        "text_with_icon": {
+          "type": "text_with_icon",
+          "settings": {
+            "show_text_with_icon_1": true,
+            "icon_1": "wallet",
+            "text_1": "30 Day Return Guarantee",
+            "show_text_with_icon_2": true,
+            "icon_2": "user-1",
+            "text_2": "Professional Service Support",
+            "box_shadow": true,
+            "icon_style": "colored",
+            "icon_fill_type": "gradient"
+          }
+        },
+        "share_EAqH9P": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share",
+            "show_share_facebook": true,
+            "show_share_twitter": true,
+            "show_share_pinterest": true,
+            "show_share_copy": true
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "judge_me_reviews_preview_badge_KpdGiU",
+        "description",
+        "custom_liquid_tTHiUh",
+        "variant_picker",
+        "price",
+        "inventory_ybzDtw",
+        "gift",
+        "buy_buttons",
+        "add_ons",
+        "country_checker_jkg98P",
+        "popup_nzDhX7",
+        "dropdown_information_Uyff7V",
+        "vitals_ub_product_bundles_6LzNe6",
+        "supported_devices",
+        "text_with_icon_FJpD8f",
+        "text_with_icon",
+        "share_EAqH9P"
+      ],
+      "custom_css": [
+        "@media only screen and (min-width: 1200px) {.rte div {margin-right: 180px; margin-left: -180px; }}"
+      ],
+      "settings": {
+        "desktop_alignment": "right",
+        "mobile_alignment": "before",
+        "gallery_type": "slider_previews",
+        "aspect_ratio": "1/1",
+        "image_fit": "contain",
+        "image_fit_modal": "contain",
+        "padding_bottom": "m"
+      }
+    },
+    "image_text_separation_01": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_abNEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/U20_01.jpg",
+            "image_link": ""
+          }
+        },
+        "text_abLEyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>GlocalMe UPP</strong></p>",
+            "text_color": "#3a3a3c",
+            "text_gradient_background": "linear-gradient(119deg, rgba(5, 6, 34, 1) 20%, rgba(0, 67, 145, 1) 60%)",
+            "text_font_size": 78,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 34,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 7,
+            "position_y": 39
+          }
+        },
+        "text_abUEyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Faster & smarter international 4G WiFi hotspot</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 36,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 34,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 7,
+            "position_y": 56
+          }
+        }
+      },
+      "block_order": [
+        "image_abNEyF",
+        "text_abLEyF",
+        "text_abUEyF"
+      ],
+      "custom_css": [],
+      "settings": {
+        "display_devices": "desktop",
+        "padding_top": "m",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "selling_points_BCQepc": {
+      "type": "selling-points",
+      "blocks": {
+        "point_CU4AJf": {
+          "type": "point",
+          "settings": {
+            "text": "Multi-Network Access",
+            "image_desktop": "shopify://shop_images/1-05_bdb3493b-d95a-4293-9422-4d4c4d3d6801.jpg"
+          }
+        },
+        "point_z6hEp4": {
+          "type": "point",
+          "settings": {
+            "text": "No Roaming Fees",
+            "image_desktop": "shopify://shop_images/1-02_48355051-d489-4bf7-885a-eb692bcd6c2f.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "point_CU4AJf",
+        "point_z6hEp4"
+      ],
+      "name": "t:sections.selling-points.presets.name",
+      "settings": {
+        "full_width": false,
+        "display_devices": "desktop",
+        "color_scheme": "",
+        "title": "Travel without extra charges",
+        "image_ratio": "adapt",
+        "image_ratio_mobile": "adapt",
+        "note": "Connect to the best local networks effortlessly",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "selling_points_EjMd9C": {
+      "type": "selling-points",
+      "blocks": {
+        "point_pt6TBL": {
+          "type": "point",
+          "settings": {
+            "text": "No SIM Card Required",
+            "image_desktop": "shopify://shop_images/1-04_daf6f4e5-73d0-4e3b-ba3a-e531eb3a74f3.jpg"
+          }
+        },
+        "point_PwhM6F": {
+          "type": "point",
+          "settings": {
+            "text": "Pay as You Go",
+            "image_desktop": "shopify://shop_images/1-07_029fd9b4-c45f-4cb2-946f-e0123520f6fd.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "point_pt6TBL",
+        "point_PwhM6F"
+      ],
+      "name": "t:sections.selling-points.presets.name",
+      "settings": {
+        "full_width": false,
+        "display_devices": "desktop",
+        "color_scheme": "",
+        "title": "SIM-Free",
+        "image_ratio": "adapt",
+        "image_ratio_mobile": "adapt",
+        "note": "No contracts, no monthly fees, cancel anytime",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "selling_points_czCmpa": {
+      "type": "selling-points",
+      "blocks": {
+        "point_HViMBA": {
+          "type": "point",
+          "settings": {
+            "text": "Smart and Security",
+            "image_desktop": "shopify://shop_images/1-06_4c83b8c5-e1a9-4ab6-b5f1-64888e15f66e.jpg"
+          }
+        },
+        "point_VaJE6m": {
+          "type": "point",
+          "settings": {
+            "text": "Auto-select secure connections",
+            "image_desktop": "shopify://shop_images/1-03_96cd4d57-9b1b-4042-b506-37dce23edba4.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "point_HViMBA",
+        "point_VaJE6m"
+      ],
+      "name": "t:sections.selling-points.presets.name",
+      "settings": {
+        "full_width": false,
+        "display_devices": "desktop",
+        "color_scheme": "",
+        "title": "Information security",
+        "image_ratio": "adapt",
+        "image_ratio_mobile": "adapt",
+        "note": "Private WiFi for the security of your data",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_02": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_bbNEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/U20_02.jpg",
+            "image_link": ""
+          }
+        },
+        "text_XUPaQA": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>No Roaming Fees</strong></p>",
+            "text_color": "#182e56",
+            "text_gradient_background": "",
+            "text_font_size": 28,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 20,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 8,
+            "position_y": 18.6
+          }
+        },
+        "text_w4p3en": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Travel without extra charges</p>",
+            "text_color": "#464c48",
+            "text_gradient_background": "",
+            "text_font_size": 22,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 20,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 8,
+            "position_y": 24.6
+          }
+        },
+        "text_XUPiQA": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Multi-Network Access</strong></p>",
+            "text_color": "#182e56",
+            "text_gradient_background": "",
+            "text_font_size": 28,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 20,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 9,
+            "position_y": 16.6
+          }
+        },
+        "text_w4E3en": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Connect to the </p><p>best local networks effortlessly</p>",
+            "text_color": "#464c48",
+            "text_gradient_background": "",
+            "text_font_size": 22,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 20,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 9,
+            "position_y": 22.6
+          }
+        },
+        "text_yUPaQA": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Smart</strong></p>",
+            "text_color": "#182e56",
+            "text_gradient_background": "",
+            "text_font_size": 28,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 20,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 4.6,
+            "position_y": 45
+          }
+        },
+        "text_w4p7en": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Automatically</p><p>selects secure connections</p>",
+            "text_color": "#464c48",
+            "text_gradient_background": "",
+            "text_font_size": 22,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 20,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 4.6,
+            "position_y": 50.6
+          }
+        },
+        "text_exPiQA": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Information security</strong></p>",
+            "text_color": "#182e56",
+            "text_gradient_background": "",
+            "text_font_size": 28,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 20,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 3.2,
+            "position_y": 45
+          }
+        },
+        "text_w4o2en": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Private WiFi for the</p><p>security of your data</p>",
+            "text_color": "#464c48",
+            "text_gradient_background": "",
+            "text_font_size": 22,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 20,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 3.2,
+            "position_y": 51
+          }
+        },
+        "text_yxPaQA": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>SIM-Free</strong></p>",
+            "text_color": "#182e56",
+            "text_gradient_background": "",
+            "text_font_size": 28,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 20,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 8,
+            "position_y": 22.6
+          }
+        },
+        "text_T4p7en": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Easy setup with no</p><p>physical SIM card required</p>",
+            "text_color": "#464c48",
+            "text_gradient_background": "",
+            "text_font_size": 22,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 20,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 8,
+            "position_y": 14.6
+          }
+        },
+        "text_NxPaQA": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Pay as You Go</strong></p>",
+            "text_color": "#182e56",
+            "text_gradient_background": "",
+            "text_font_size": 28,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 20,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "btt",
+            "position_x": 9,
+            "position_y": 22.6
+          }
+        },
+        "text_T4p5en": {
+          "type": "text",
+          "settings": {
+            "text": "<p>No contracts, no monthly fees,</p><p>cancel anytime</p>",
+            "text_color": "#464c48",
+            "text_gradient_background": "",
+            "text_font_size": 22,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 20,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "btt",
+            "position_x": 9,
+            "position_y": 14.6
+          }
+        }
+      },
+      "block_order": [
+        "image_bbNEyF",
+        "text_XUPaQA",
+        "text_w4p3en",
+        "text_XUPiQA",
+        "text_w4E3en",
+        "text_yUPaQA",
+        "text_w4p7en",
+        "text_exPiQA",
+        "text_w4o2en",
+        "text_yxPaQA",
+        "text_T4p7en",
+        "text_NxPaQA",
+        "text_T4p5en"
+      ],
+      "disabled": true,
+      "settings": {
+        "display_devices": "desktop",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_03": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_cbNEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/U20_03.jpg",
+            "image_link": ""
+          }
+        },
+        "text_xbLEyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>International Trip</strong></p>",
+            "text_color": "#3a3a3c",
+            "text_gradient_background": "linear-gradient(119deg, rgba(5, 6, 34, 1) 20%, rgba(0, 67, 145, 1) 60%)",
+            "text_font_size": 48,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 30,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "bbt",
+            "position_x": 1.6,
+            "position_y": 3.8
+          }
+        },
+        "text_abLvyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Business Trip</strong></p>",
+            "text_color": "#3a3a3c",
+            "text_gradient_background": "linear-gradient(119deg, rgba(5, 6, 34, 1) 20%, rgba(0, 67, 145, 1) 60%)",
+            "text_font_size": 48,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 30,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "bbt",
+            "position_x": 18.2,
+            "position_y": 3.8
+          }
+        }
+      },
+      "block_order": [
+        "image_cbNEyF",
+        "text_xbLEyF",
+        "text_abLvyF"
+      ],
+      "settings": {
+        "display_devices": "desktop",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_04": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_dbNEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/U20_04.jpg",
+            "image_link": ""
+          }
+        },
+        "text_xbQEyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Outdoor camping</strong></p>",
+            "text_color": "#3a3a3c",
+            "text_gradient_background": "linear-gradient(119deg, rgba(5, 6, 34, 1) 20%, rgba(0, 67, 145, 1) 60%)",
+            "text_font_size": 48,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 30,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "bbt",
+            "position_x": 1.6,
+            "position_y": 3.8
+          }
+        },
+        "text_abBvyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Outdoor Work</strong></p>",
+            "text_color": "#3a3a3c",
+            "text_gradient_background": "linear-gradient(119deg, rgba(5, 6, 34, 1) 20%, rgba(0, 67, 145, 1) 60%)",
+            "text_font_size": 48,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 30,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "bbt",
+            "position_x": 18.2,
+            "position_y": 3.8
+          }
+        }
+      },
+      "block_order": [
+        "image_dbNEyF",
+        "text_xbQEyF",
+        "text_abBvyF"
+      ],
+      "settings": {
+        "display_devices": "desktop",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_05": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_dbNEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/U20_05.jpg",
+            "image_link": ""
+          }
+        },
+        "text_xbQEeF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Surfing at Home</strong></p>",
+            "text_color": "#3a3a3c",
+            "text_gradient_background": "linear-gradient(119deg, rgba(5, 6, 34, 1) 20%, rgba(0, 67, 145, 1) 60%)",
+            "text_font_size": 48,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 30,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "bbt",
+            "position_x": 1.6,
+            "position_y": 3.8
+          }
+        },
+        "text_pbBvyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Surfing at Dormitory</strong></p>",
+            "text_color": "#3a3a3c",
+            "text_gradient_background": "linear-gradient(119deg, rgba(5, 6, 34, 1) 20%, rgba(0, 67, 145, 1) 60%)",
+            "text_font_size": 48,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 30,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "bbt",
+            "position_x": 18.2,
+            "position_y": 3.8
+          }
+        }
+      },
+      "block_order": [
+        "image_dbNEyF",
+        "text_xbQEeF",
+        "text_pbBvyF"
+      ],
+      "settings": {
+        "display_devices": "desktop",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_06": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_ebNEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/G40_05.jpg",
+            "image_link": ""
+          }
+        },
+        "text_kCdJWM": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Coverage 200+ Countries and Regions</strong></p>",
+            "text_color": "#101011",
+            "text_gradient_background": "",
+            "text_font_size": 32,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 1.5,
+            "position_y": 14
+          }
+        },
+        "text_RCgWWR": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>5G Network Covers 90+ Countries and Regions</strong></p>",
+            "text_color": "#101011",
+            "text_gradient_background": "",
+            "text_font_size": 32,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 1.5,
+            "position_y": 26.4
+          }
+        },
+        "text_EUyB8T": {
+          "type": "text",
+          "settings": {
+            "text": "<p>North America: United States, Canada, Mexico</p><p>South America: Brazil, Peru</p><p>Europe: United Kingdom, Germany, France, Italy, Spain, Austria, Belgium, Bulgaria,</p><p>Switzerland, Netherlands, Portugal, Czech Republic, Denmark, Finland, Greece,</p><p>Slovenia, Vatican, Monaco, San Marino, Cyprus, Hungary, Latvia, Poland, Sweden,</p><p>Slovakia, Croatia, Ireland, Iceland, Lithuania, Luxembourg, Malta, Romania, Norway, </p><p>Andorra</p><p>Asia: Japan, Korea, United Arab Emirates, China,</p><p>Hong Kong, Macau, Taiwan, Indonesia, Malaysia,</p><p>Saudi Arabia, Singapore, Thailand, Vietnam,</p><p>Bahrain, Philippines, India, Kuwait, Oman, </p><p>Maldives</p><p>Oceania: Australia, New Zealand</p><p>Africa: South Africa, Mauritius, Qatar</p>",
+            "text_color": "#666666",
+            "text_gradient_background": "",
+            "text_font_size": 21,
+            "text_font_weight": 300,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 52,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 1.5,
+            "position_y": 37
+          }
+        },
+        "text_99JJwJ": {
+          "type": "text",
+          "settings": {
+            "text": "<p><a href=\"/pages/coverage\" target=\"_blank\" title=\"GlocaMe Coverage Area\">Learn More&gt;&gt;&gt;</a></p>",
+            "text_color": "#101011",
+            "text_gradient_background": "",
+            "text_font_size": 20,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 1,
+            "position_y": 93
+          }
+        }
+      },
+      "block_order": [
+        "image_ebNEyF",
+        "text_kCdJWM",
+        "text_RCgWWR",
+        "text_EUyB8T",
+        "text_99JJwJ"
+      ],
+      "settings": {
+        "display_devices": "desktop",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_07": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_01": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/U20_07.jpg",
+            "image_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_01"
+      ],
+      "settings": {
+        "display_devices": "desktop",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_08": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_gbNEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/U20_08.jpg",
+            "image_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_gbNEyF"
+      ],
+      "settings": {
+        "display_devices": "desktop",
+        "padding_top": "no-indent",
+        "padding_bottom": "m",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_m_01": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_abNEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/U20_m_01.jpg",
+            "image_link": ""
+          }
+        },
+        "text_obLEyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>GlocalMe UPP</strong></p>",
+            "text_color": "#3a3a3c",
+            "text_gradient_background": "linear-gradient(119deg, rgba(5, 6, 34, 1) 20%, rgba(0, 67, 145, 1) 60%)",
+            "text_font_size": 44,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 46,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 4,
+            "position_y": 42
+          }
+        },
+        "text_ebUEyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Faster & smarter international 4G WiFi hotspot</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 22,
+            "text_font_weight": 600,
+            "text_line_height": 1.4,
+            "text_align": "left",
+            "max_text_container_max_width": 46,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 4,
+            "position_y": 63
+          }
+        }
+      },
+      "block_order": [
+        "image_abNEyF",
+        "text_obLEyF",
+        "text_ebUEyF"
+      ],
+      "custom_css": [],
+      "settings": {
+        "display_devices": "mobile",
+        "padding_top": "m",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "selling_points_xF7zNG": {
+      "type": "selling-points",
+      "blocks": {
+        "point_EjwwT7": {
+          "type": "point",
+          "settings": {
+            "text": "Multi-Network Access",
+            "image_desktop": "shopify://shop_images/1-05_bdb3493b-d95a-4293-9422-4d4c4d3d6801.jpg"
+          }
+        },
+        "point_4PpdfJ": {
+          "type": "point",
+          "settings": {
+            "text": "No Roaming Fees",
+            "image_desktop": "shopify://shop_images/1-02_48355051-d489-4bf7-885a-eb692bcd6c2f.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "point_EjwwT7",
+        "point_4PpdfJ"
+      ],
+      "name": "t:sections.selling-points.presets.name",
+      "settings": {
+        "full_width": true,
+        "display_devices": "mobile",
+        "color_scheme": "",
+        "title": "Travel without extra charges",
+        "image_ratio": "adapt",
+        "image_ratio_mobile": "adapt",
+        "note": "Connect to the best local networks effortlessly",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "selling_points_nLG9nH": {
+      "type": "selling-points",
+      "blocks": {
+        "point_GJp9mq": {
+          "type": "point",
+          "settings": {
+            "text": "No SIM Card Required",
+            "image_desktop": "shopify://shop_images/1-04_daf6f4e5-73d0-4e3b-ba3a-e531eb3a74f3.jpg"
+          }
+        },
+        "point_nDKeLE": {
+          "type": "point",
+          "settings": {
+            "text": "Pay as You Go",
+            "image_desktop": "shopify://shop_images/1-07_029fd9b4-c45f-4cb2-946f-e0123520f6fd.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "point_GJp9mq",
+        "point_nDKeLE"
+      ],
+      "name": "t:sections.selling-points.presets.name",
+      "settings": {
+        "full_width": true,
+        "display_devices": "mobile",
+        "color_scheme": "",
+        "title": "SIM-Free",
+        "image_ratio": "adapt",
+        "image_ratio_mobile": "adapt",
+        "note": "No contracts, no monthly fees, cancel anytime",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "selling_points_AbE8XF": {
+      "type": "selling-points",
+      "blocks": {
+        "point_kkGtqC": {
+          "type": "point",
+          "settings": {
+            "text": "Smart and Security Protection",
+            "image_desktop": "shopify://shop_images/1-06_4c83b8c5-e1a9-4ab6-b5f1-64888e15f66e.jpg"
+          }
+        },
+        "point_gBwrzT": {
+          "type": "point",
+          "settings": {
+            "text": "Auto-select secure connections",
+            "image_desktop": "shopify://shop_images/1-03_96cd4d57-9b1b-4042-b506-37dce23edba4.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "point_kkGtqC",
+        "point_gBwrzT"
+      ],
+      "name": "t:sections.selling-points.presets.name",
+      "settings": {
+        "full_width": true,
+        "display_devices": "mobile",
+        "color_scheme": "",
+        "title": "Information security",
+        "image_ratio": "adapt",
+        "image_ratio_mobile": "adapt",
+        "note": "Private WiFi for the security of your data",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_m_02": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_bbNEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/U20_m_02.jpg",
+            "image_link": ""
+          }
+        },
+        "text_XePaQA": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>No Roaming Fees</strong></p>",
+            "text_color": "#182e56",
+            "text_gradient_background": "",
+            "text_font_size": 14,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 26,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 6.6,
+            "position_y": 36.6
+          }
+        },
+        "text_w4p3on": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Travel without extra charges</p>",
+            "text_color": "#464c48",
+            "text_gradient_background": "",
+            "text_font_size": 13,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 26,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 6.6,
+            "position_y": 40
+          }
+        },
+        "text_XnPiQA": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Multi-Network Access</strong></p>",
+            "text_color": "#182e56",
+            "text_gradient_background": "",
+            "text_font_size": 14,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 26,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 4.6,
+            "position_y": 35.6
+          }
+        },
+        "text_w4A3en": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Connect to the </p><p>best local networks effortlessly</p>",
+            "text_color": "#464c48",
+            "text_gradient_background": "",
+            "text_font_size": 13,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 26,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 4.6,
+            "position_y": 39
+          }
+        },
+        "text_yxpaQA": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Smart</strong></p>",
+            "text_color": "#182e56",
+            "text_gradient_background": "",
+            "text_font_size": 14,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 22,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 2.6,
+            "position_y": 53.6
+          }
+        },
+        "text_eqp7en": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Automatically</p><p>selects secure connections</p>",
+            "text_color": "#464c48",
+            "text_gradient_background": "",
+            "text_font_size": 13,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 24,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 2.6,
+            "position_y": 56.6
+          }
+        },
+        "text_exPpXA": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Information security</strong></p>",
+            "text_color": "#182e56",
+            "text_gradient_background": "",
+            "text_font_size": 14,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 22,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 2.6,
+            "position_y": 53.6
+          }
+        },
+        "text_w4eq2n": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Private WiFi for the</p><p>security of your data</p>",
+            "text_color": "#464c48",
+            "text_gradient_background": "",
+            "text_font_size": 13,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 22,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 2.6,
+            "position_y": 57.4
+          }
+        },
+        "text_yxPEaA": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>SIM-Free</strong></p>",
+            "text_color": "#182e56",
+            "text_gradient_background": "",
+            "text_font_size": 14,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 24,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 6.6,
+            "position_y": 25.6
+          }
+        },
+        "text_T4d7en": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Easy setup with no</p><p>physical SIM card required</p>",
+            "text_color": "#464c48",
+            "text_gradient_background": "",
+            "text_font_size": 13,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 24,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 6.6,
+            "position_y": 19.6
+          }
+        },
+        "text_NoP8QA": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Pay as You Go</strong></p>",
+            "text_color": "#182e56",
+            "text_gradient_background": "",
+            "text_font_size": 14,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 26,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "btt",
+            "position_x": 5.6,
+            "position_y": 25.6
+          }
+        },
+        "text_Txp3en": {
+          "type": "text",
+          "settings": {
+            "text": "<p>No contracts, no monthly fees,</p><p>cancel anytime</p>",
+            "text_color": "#464c48",
+            "text_gradient_background": "",
+            "text_font_size": 13,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 26,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "btt",
+            "position_x": 5.6,
+            "position_y": 19.6
+          }
+        }
+      },
+      "block_order": [
+        "image_bbNEyF",
+        "text_XePaQA",
+        "text_w4p3on",
+        "text_XnPiQA",
+        "text_w4A3en",
+        "text_yxpaQA",
+        "text_eqp7en",
+        "text_exPpXA",
+        "text_w4eq2n",
+        "text_yxPEaA",
+        "text_T4d7en",
+        "text_NoP8QA",
+        "text_Txp3en"
+      ],
+      "disabled": true,
+      "settings": {
+        "display_devices": "mobile",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_m_03": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_cbNEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/U20_m_03.jpg",
+            "image_link": ""
+          }
+        },
+        "text_TvLEyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>International Trip</strong></p>",
+            "text_color": "#3a3a3c",
+            "text_gradient_background": "linear-gradient(119deg, rgba(5, 6, 34, 1) 20%, rgba(0, 67, 145, 1) 60%)",
+            "text_font_size": 24,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 44,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 1.6,
+            "position_y": 40.6
+          }
+        },
+        "text_abScyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Business Trip</strong></p>",
+            "text_color": "#3a3a3c",
+            "text_gradient_background": "linear-gradient(119deg, rgba(5, 6, 34, 1) 20%, rgba(0, 67, 145, 1) 60%)",
+            "text_font_size": 24,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 44,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "bbt",
+            "position_x": 1.6,
+            "position_y": 3.8
+          }
+        }
+      },
+      "block_order": [
+        "image_cbNEyF",
+        "text_TvLEyF",
+        "text_abScyF"
+      ],
+      "settings": {
+        "display_devices": "mobile",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_m_04": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_dbNEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/U20_m_04.jpg",
+            "image_link": ""
+          }
+        },
+        "text_CvLEyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Outdoor Camping</strong></p>",
+            "text_color": "#3a3a3c",
+            "text_gradient_background": "linear-gradient(119deg, rgba(5, 6, 34, 1) 20%, rgba(0, 67, 145, 1) 60%)",
+            "text_font_size": 24,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 44,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 1.6,
+            "position_y": 40.6
+          }
+        },
+        "text_EbScyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Outdoor Work</strong></p>",
+            "text_color": "#3a3a3c",
+            "text_gradient_background": "linear-gradient(119deg, rgba(5, 6, 34, 1) 20%, rgba(0, 67, 145, 1) 60%)",
+            "text_font_size": 24,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 44,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "bbt",
+            "position_x": 1.6,
+            "position_y": 3.8
+          }
+        }
+      },
+      "block_order": [
+        "image_dbNEyF",
+        "text_CvLEyF",
+        "text_EbScyF"
+      ],
+      "settings": {
+        "display_devices": "mobile",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_m_05": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_01": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/U20_m_05.jpg",
+            "image_link": ""
+          }
+        },
+        "text_CvLsyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Surfing at Home</strong></p>",
+            "text_color": "#3a3a3c",
+            "text_gradient_background": "linear-gradient(119deg, rgba(5, 6, 34, 1) 20%, rgba(0, 67, 145, 1) 60%)",
+            "text_font_size": 24,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 44,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 1.6,
+            "position_y": 40.6
+          }
+        },
+        "text_EbdcyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Surfing at Dormitory</strong></p>",
+            "text_color": "#3a3a3c",
+            "text_gradient_background": "linear-gradient(119deg, rgba(5, 6, 34, 1) 20%, rgba(0, 67, 145, 1) 60%)",
+            "text_font_size": 24,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 44,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "bbt",
+            "position_x": 1.6,
+            "position_y": 3.8
+          }
+        }
+      },
+      "block_order": [
+        "image_01",
+        "text_CvLsyF",
+        "text_EbdcyF"
+      ],
+      "settings": {
+        "display_devices": "mobile",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_m_06": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_ebNEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/G40_m_05.jpg",
+            "image_link": ""
+          }
+        },
+        "text_tCdJWM": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Coverage 200+ Countries and Regions</strong></p>",
+            "text_color": "#101011",
+            "text_gradient_background": "",
+            "text_font_size": 14,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 4,
+            "position_y": 6
+          }
+        },
+        "text_PCgWWR": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>5G Network Covers 80 Countries and Regions</strong></p>",
+            "text_color": "#101011",
+            "text_gradient_background": "",
+            "text_font_size": 14,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 4,
+            "position_y": 12
+          }
+        },
+        "text_EUhB8T": {
+          "type": "text",
+          "settings": {
+            "text": "<p>North America: United States, Canada, Mexico</p><p>South America: Brazil, Peru</p><p>Europe: United Kingdom, Germany, France, Italy, Spain, Austria, Belgium, Bulgaria, Switzerland, Netherlands, Portugal, Czech Republic, Denmark, Finland, Greece, Slovenia, Vatican, Monaco, San Marino, Cyprus, Hungary, Latvia, Poland, Sweden, Slovakia, Croatia, Ireland, Iceland, Lithuania, Luxembourg, Malta, Romania, Norway, Andorra</p><p>Asia: Japan, Korea, United Arab Emirates, China, Hong Kong, Macau, Taiwan, Indonesia, Malaysia, Saudi Arabia, Singapore, Thailand, Vietnam, Bahrain, Philippines, India, Kuwait, Oman,  Maldives</p><p>Oceania: Australia, New Zealand</p><p>Africa: South Africa, Mauritius, Qatar</p>",
+            "text_color": "#666666",
+            "text_gradient_background": "",
+            "text_font_size": 13,
+            "text_font_weight": 300,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 4,
+            "position_y": 18
+          }
+        },
+        "text_i38Czc": {
+          "type": "text",
+          "settings": {
+            "text": "<p><a href=\"/pages/coverage\" target=\"_blank\" title=\"GlocaMe Coverage Area\">Learn More&gt;&gt;&gt;</a></p>",
+            "text_color": "#101011",
+            "text_gradient_background": "",
+            "text_font_size": 18,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 4,
+            "position_y": 70
+          }
+        }
+      },
+      "block_order": [
+        "image_ebNEyF",
+        "text_tCdJWM",
+        "text_PCgWWR",
+        "text_EUhB8T",
+        "text_i38Czc"
+      ],
+      "settings": {
+        "display_devices": "mobile",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_m_07": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_gbNEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/U20_m_07.jpg",
+            "image_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_gbNEyF"
+      ],
+      "settings": {
+        "display_devices": "mobile",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_m_08": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_gbNEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/U20_m_08.jpg",
+            "image_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_gbNEyF"
+      ],
+      "settings": {
+        "display_devices": "mobile",
+        "padding_top": "no-indent",
+        "padding_bottom": "m",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "17558332278a79efb2": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_4yGQBP": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_4yGQBP"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "product_recommendations_jQ4w3c": {
+      "type": "product-recommendations",
+      "settings": {
+        "color_scheme": "",
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "subheading_icon": "none",
+        "heading": "You May Also Like",
+        "heading_size": "h2",
+        "text": "",
+        "products_limit": 6,
+        "image_ratio": "1/1",
+        "image_fit": "cover",
+        "show_secondary_image": true,
+        "show_vendor": true,
+        "show_desc": false,
+        "padding_top": "s",
+        "padding_bottom": "m"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_text_separation_01",
+    "selling_points_BCQepc",
+    "selling_points_EjMd9C",
+    "selling_points_czCmpa",
+    "image_text_separation_02",
+    "image_text_separation_03",
+    "image_text_separation_04",
+    "image_text_separation_05",
+    "image_text_separation_06",
+    "image_text_separation_07",
+    "image_text_separation_08",
+    "image_text_separation_m_01",
+    "selling_points_xF7zNG",
+    "selling_points_nLG9nH",
+    "selling_points_AbE8XF",
+    "image_text_separation_m_02",
+    "image_text_separation_m_03",
+    "image_text_separation_m_04",
+    "image_text_separation_m_05",
+    "image_text_separation_m_06",
+    "image_text_separation_m_07",
+    "image_text_separation_m_08",
+    "17558332278a79efb2",
+    "product_recommendations_jQ4w3c"
+  ]
+}

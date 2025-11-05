@@ -1,0 +1,44 @@
+<div class="free-gift__item flex items-center">
+  <div class="free-gift__item-media">
+    <img
+      src="{{ product_item.featured_image | image_url: width: 300 }}"
+      alt="{{ product_item.featured_image.alt | escape }}"
+      loading="lazy"
+      width="60"
+      height="{{ 60 | divided_by: product_item.featured_image.aspect_ratio | ceil }}"
+    >
+  </div>
+  <div class="free-gift__item-info flex-1">
+    <div class="free-gift__item-title">{{ product_item.title }}</div>
+    {% if has_variants %}
+      <div class="free-gift__item-variants{% if product_item.variants.size < 2 %} hidden{% endif %}">
+        {%- assign current_variant = product_item.selected_or_first_available_variant -%}
+        <dropdown-component class="dropdown">
+          <input
+            class="dropdown__input"
+            type="text"
+            name="gift-variant-id"
+            value="{{ current_variant.title }}"
+            data-param="{{ current_variant.id }}"
+            data-gift-bound-product="{{ product.id }}"
+            aria-label="{{ 'products.product.choose_product_options' | t: product_name: product_item.title | escape }}"
+            placeholder
+            readonly
+          >
+          <ul class="dropdown__list">
+            {%- for variant in product_item.variants -%}
+              <li class="dropdown__item" data-value="{{ variant.title }}" data-param="{{ variant.id }}">
+                {{ variant.title }}
+              </li>
+            {%- endfor -%}
+          </ul>
+          {% render 'icon-caret' %}
+        </dropdown-component>
+      </div>
+    {% endif %}
+    <div class="free-gift__item-price flex items-center">
+      <span style="color: {{ settings.gifts_keyword_color }};">{{ 'products.product.free' | t }}</span>
+      {% render 'price', product: product_item %}
+    </div>
+  </div>
+</div>

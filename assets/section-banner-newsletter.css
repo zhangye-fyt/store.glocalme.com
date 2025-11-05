@@ -1,0 +1,89 @@
+@media screen and (min-width: 990px) {
+  .banner-newsletter {
+    height: 100%;
+  }
+  .banner-newsletter__wrapper {
+    padding: 0 10px;
+  }
+  .banner__media .banner__media-img--mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 989px) {
+  .banner-newsletter__wrapper {
+    padding: 10.66666667vw 6.4vw 0;
+  }
+  .banner__media .banner__media-img--desktop {
+    display: none;
+  }
+}
+
+.banner-newsletter__heading {
+  margin: 0;
+}
+
+@media screen and (min-width: 990px) {
+  .banner-newsletter__heading {
+    margin: 0 0 0.8rem;
+  }
+}
+
+.banner-newsletter__form {
+  margin-top: 3.2rem;
+  padding: 2rem;
+  border-radius: 1.2rem;
+  width: 100%;
+  max-width: 45.4rem;
+}
+
+.banner-newsletter__form-head p {
+  font-size: 2rem;
+  margin: 0 0 1.8rem;
+}
+
+.banner-newsletter__form-main {
+  margin-bottom: 2.4rem;
+}
+
+.banner-newsletter__form-main form {
+  max-width: 35.8rem;
+}
+
+.banner-newsletter__form-main form .field .field__input {
+  border-radius: 0.8rem 0 0 0.8rem;
+}
+
+.banner-newsletter__form-main form .button {
+  border-radius: 0 0.8rem 0.8rem 0;
+}
+
+.banner-newsletter__form-foot {
+  margin-bottom: 0.8rem;
+}
+
+.banner-newsletter__form-agreement {
+  gap: 0.5rem;
+}
+
+.banner-newsletter__form-agreement p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.banner-newsletter__form-agreement a {
+  text-decoration: underline;
+}
+
+.banner-newsletter-form__message {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  outline: none;
+}
+
+.banner-newsletter-form__message svg {
+  width: 1.6rem;
+  height: auto;
+}

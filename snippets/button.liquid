@@ -1,0 +1,27 @@
+{% comment %}
+  Renders button
+  Accepts:
+  link: {Object} Button link
+  label: {Object} Button label
+  style: {Object} Button style
+	class: {String} Class (optional)
+  Usage:
+  {% render 'button', link: section.settings.button_link, label: section.settings.button_label, style: section.settings.button_style, class: '' %}
+{% endcomment %}
+
+<a
+  {% if link != blank %}
+    href="{{ link }}"
+  {% endif %}
+  class="{% if class %}{{ class }}__button{% endif %} button button--{{ style }} {% if style == 'simple' or style == 'simple_secondary' or style == 'simple_link' %}button--arrow{% endif %} {% if full_link %} button--full-link {% endif %} focus-inset"
+  {% if link == blank %}
+    aria-disabled="true"
+  {% endif %}
+>
+  {% if style == 'simple' or style == 'simple_secondary' or style == 'simple_link' %}
+    <span>{{ label }}</span>
+    {% render 'icon-button-arrow' %}
+  {% else %}
+    {{ label }}
+  {% endif %}
+</a>

@@ -1,0 +1,2899 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ product.vendor }}"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h3"
+          }
+        },
+        "judge_me_reviews_preview_badge_dGyw7q": {
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "dropdown"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "custom_liquid_wcHhw7": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<span style=\"color: red;\">eSIM can be activated by scanning the QR code with mobile phone, no need to use on GlocalMe WiFi devices"
+          }
+        },
+        "custom_liquid_F9zUct": {
+          "type": "custom_liquid",
+          "disabled": true,
+          "settings": {
+            "custom_liquid": "{%- style -%}\n  .product-coupon-container {\n    margin: 20px 0;\n    font-family: inherit;\n  }\n  \n  .coupon-card {\n    background: linear-gradient(135deg, #f5f7fa 0%, #f4e6cb 100%);\n    border-radius: 10px;\n    border: 1px dashed #d1d5db;\n    padding: 15px;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    text-align: center;\n    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);\n    position: relative;\n    overflow: hidden;\n  }\n  \n  .coupon-card::before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    background: radial-gradient(circle at 10% 20%, rgba(255,255,255,0.3) 0%, transparent 20%);\n    pointer-events: none;\n  }\n  \n  .coupon-title {\n    font-size: 20px;\n    font-weight: 600;\n    color: #1f2937;\n    margin-bottom: 8px;\n  }\n  \n  .coupon-description {\n    font-size: 18px;\n    color: #4b5563;\n    margin-bottom: 12px;\n    line-height: 1.4;\n  }\n  \n  .coupon-code-container {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    width: 100%;\n    margin-bottom: 10px;\n  }\n  \n  .coupon-code {\n    font-size: 20px;\n    font-weight: 700;\n    letter-spacing: 1px;\n    color: #d56040;\n    background-color: white;\n    padding: 8px 15px;\n    border-radius: 6px;\n    border: 1px solid #d1d5db;\n    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);\n    flex-grow: 1;\n    text-align: center;\n    max-width: 70%;\n    word-break: break-all;\n  }\n  \n  .copy-btn {\n    background-color: #3b82f6;\n    color: white;\n    border: none;\n    padding: 8px 12px;\n    border-radius: 6px;\n    margin-left: 8px;\n    font-size: 14px;\n    font-weight: 500;\n    cursor: pointer;\n    transition: background-color 0.2s;\n  }\n  \n  .copy-btn:hover {\n    background-color: #2563eb;\n  }\n  \n  .coupon-terms {\n    font-size: 12px;\n    color: #6b7280;\n    margin-top: 8px;\n  }\n  \n  /* 移动端适配 */\n  @media screen and (max-width: 749px) {\n    .coupon-card {\n      padding: 12px;\n    }\n    \n    .coupon-title {\n      font-size: 15px;\n    }\n    \n    .coupon-description {\n      font-size: 13px;\n    }\n    \n    .coupon-code {\n      font-size: 16px;\n      padding: 6px 12px;\n    }\n    \n    .copy-btn {\n      padding: 6px 10px;\n      font-size: 13px;\n    }\n  }\n{%- endstyle -%}\n\n{%- comment -%}\n  在这里设置你的优惠码和活动信息\n  你可以为不同产品设置不同的优惠码，或者使用相同的优惠码\n{%- endcomment -%}\n\n{%- assign current_product_handle = product.handle -%}\n\n{%- comment -%} 示例：根据产品handle设置不同的优惠码 {%- endcomment -%}\n{%- if current_product_handle == 'product-1-handle' -%}\n  {%- assign coupon_code = 'SUMMER20' -%}\n  {%- assign coupon_title = '夏季特惠' -%}\n  {%- assign coupon_description = '限时享受20%折扣，仅限本产品使用' -%}\n  {%- assign coupon_terms = '有效期至2023年8月31日，不可与其他优惠同时使用' -%}\n{%- elsif current_product_handle == 'product-2-handle' -%}\n  {%- assign coupon_code = 'FALL15' -%}\n  {%- assign coupon_title = '秋季促销' -%}\n  {%- assign coupon_description = '享受15%折扣，专为本产品定制' -%}\n  {%- assign coupon_terms = '有效期至2023年9月30日' -%}\n{%- else -%}\n  {%- assign coupon_code = 'CODE: JULY4' -%}\n  {%- assign coupon_title = 'Celebrate\nIndependence Day' -%}\n  {%- assign coupon_description = '15% OFF SITEWIDE' -%}\n  {%- assign coupon_terms = '' -%}\n{%- endif -%}\n\n{%- if coupon_code -%}\n<div class=\"product-coupon-container\">\n  <div class=\"coupon-card\">\n    <h3 class=\"coupon-title\">{{ coupon_title }}</h3>\n    <p class=\"coupon-description\">{{ coupon_description }}</p>\n    \n    <div class=\"coupon-code-container\">\n      <span class=\"coupon-code\" id=\"couponCode\">{{ coupon_code }}</span>\n     \n    </div>\n    \n    <p class=\"coupon-terms\">{{ coupon_terms }}</p>\n  </div>\n</div>\n\n\n{%- endif -%}"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_quantity": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "country_checker": {
+          "type": "country_checker",
+          "settings": {}
+        },
+        "vitals_ub_product_bundles_DxRBEB": {
+          "type": "shopify://apps/vitals/blocks/ub-product-bundles/aeb48102-2a5a-4f39-bdbd-d8d49f4e20b8",
+          "settings": {}
+        },
+        "gift": {
+          "type": "gift",
+          "settings": {}
+        },
+        "add_ons": {
+          "type": "add_ons",
+          "settings": {}
+        },
+        "supported_devices": {
+          "type": "supported_devices",
+          "settings": {}
+        },
+        "text_with_icon_FJpD8f": {
+          "type": "text_with_icon",
+          "settings": {
+            "show_text_with_icon_1": true,
+            "icon_1": "delivery",
+            "text_1": "Fast Shipping",
+            "show_text_with_icon_2": true,
+            "icon_2": "shield",
+            "text_2": "High-quality Products",
+            "box_shadow": true,
+            "icon_style": "colored",
+            "icon_fill_type": "gradient"
+          }
+        },
+        "text_with_icon": {
+          "type": "text_with_icon",
+          "settings": {
+            "show_text_with_icon_1": true,
+            "icon_1": "wallet",
+            "text_1": "30 Day Return Guarantee",
+            "show_text_with_icon_2": true,
+            "icon_2": "user-1",
+            "text_2": "Professional Service Support",
+            "box_shadow": true,
+            "icon_style": "colored",
+            "icon_fill_type": "gradient"
+          }
+        },
+        "share_EAqH9P": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share",
+            "show_share_facebook": true,
+            "show_share_twitter": true,
+            "show_share_pinterest": true,
+            "show_share_copy": true
+          }
+        },
+        "popup_nzDhX7": {
+          "type": "popup",
+          "disabled": true,
+          "settings": {
+            "label": "Compare",
+            "heading": "",
+            "text": "",
+            "image": "shopify://shop_images/c23545ae333b999b21f3be3053b5c1cb.jpg",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "judge_me_reviews_preview_badge_dGyw7q",
+        "variant_picker",
+        "price",
+        "custom_liquid_wcHhw7",
+        "custom_liquid_F9zUct",
+        "buy_buttons",
+        "country_checker",
+        "vitals_ub_product_bundles_DxRBEB",
+        "gift",
+        "add_ons",
+        "supported_devices",
+        "text_with_icon_FJpD8f",
+        "text_with_icon",
+        "share_EAqH9P",
+        "popup_nzDhX7"
+      ],
+      "custom_css": [
+        "@media only screen and (min-width: 1200px) {.rte div {margin-right: 180px; margin-left: -180px; }}"
+      ],
+      "settings": {
+        "desktop_alignment": "right",
+        "mobile_alignment": "before",
+        "gallery_type": "slider_previews",
+        "aspect_ratio": "1/1",
+        "image_fit": "contain",
+        "image_fit_modal": "contain",
+        "padding_bottom": "l"
+      }
+    },
+    "custom_liquid_aPKfKb": {
+      "type": "custom-liquid",
+      "custom_css": [],
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<div style=\"display: flex; justify-content: center;\">\n <iframe width=\"315\" height=\"560\" src=\"https://www.youtube.com/embed/lOxcGxtNPVo\" title=\"How to activate eSlM with ios devices?#esim #glocalme esim\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
+      }
+    },
+    "image_text_separation_01": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_abNEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ESIM_01.jpg",
+            "image_link": ""
+          }
+        },
+        "text_abLEyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>What is eSIM?</strong></p>",
+            "text_color": "#3a3a3c",
+            "text_gradient_background": "linear-gradient(119deg, rgba(69, 15, 165, 1) 20%, rgba(43, 109, 123, 1) 60%)",
+            "text_font_size": 52,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 34,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 6,
+            "position_y": 18
+          }
+        },
+        "text_abUEyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>An eSIM (embedded SIM) is a digital SIM card that allows you to activate a mobile plan without needing a physical SIM. It's built into your device, making it easier than ever to switch carriers or plans</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 34,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 6,
+            "position_y": 46
+          }
+        }
+      },
+      "block_order": [
+        "image_abNEyF",
+        "text_abLEyF",
+        "text_abUEyF"
+      ],
+      "custom_css": [],
+      "settings": {
+        "display_devices": "desktop",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_02": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_a2xE1F": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ESIM_02.jpg",
+            "image_link": ""
+          }
+        },
+        "text_zx2EyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Core functions</strong></p>",
+            "text_color": "#3a3a3c",
+            "text_gradient_background": "linear-gradient(119deg, rgba(69, 15, 165, 1) 20%, rgba(43, 109, 123, 1) 60%)",
+            "text_font_size": 52,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 34,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 6,
+            "position_y": 5
+          }
+        },
+        "text_sx2L1F": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Global coverage</strong></p>",
+            "text_color": "#3a3a3c",
+            "text_gradient_background": "",
+            "text_font_size": 48,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 50,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 26,
+            "position_y": 25
+          }
+        },
+        "text_ds2SA1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>(Supported countries and regions)</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 50,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 26,
+            "position_y": 31
+          }
+        },
+        "text_zs1LxF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Multiple package options</strong></p>",
+            "text_color": "#3a3a3c",
+            "text_gradient_background": "",
+            "text_font_size": 48,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "right",
+            "max_text_container_max_width": 50,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 26,
+            "position_y": 39
+          }
+        },
+        "text_Os2sA1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>(7 days, 15 days, 30 days)</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "right",
+            "max_text_container_max_width": 50,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 26,
+            "position_y": 45
+          }
+        },
+        "text_Vx2L9F": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Instant activation</strong></p>",
+            "text_color": "#3a3a3c",
+            "text_gradient_background": "",
+            "text_font_size": 48,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 50,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 26,
+            "position_y": 36
+          }
+        },
+        "text_ZXsSA1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>(No need to wait for the SIM card to be delivered)</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 50,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 26,
+            "position_y": 33
+          }
+        },
+        "text_Js1PxF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Multi-device support</strong></p>",
+            "text_color": "#3a3a3c",
+            "text_gradient_background": "",
+            "text_font_size": 48,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "right",
+            "max_text_container_max_width": 50,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "btt",
+            "position_x": 26,
+            "position_y": 20
+          }
+        },
+        "text_Gs2sW1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>(Smartphones,tablets,smart watches, etc)</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "right",
+            "max_text_container_max_width": 50,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "btt",
+            "position_x": 26,
+            "position_y": 17
+          }
+        }
+      },
+      "block_order": [
+        "image_a2xE1F",
+        "text_zx2EyF",
+        "text_sx2L1F",
+        "text_ds2SA1",
+        "text_zs1LxF",
+        "text_Os2sA1",
+        "text_Vx2L9F",
+        "text_ZXsSA1",
+        "text_Js1PxF",
+        "text_Gs2sW1"
+      ],
+      "custom_css": [],
+      "settings": {
+        "display_devices": "desktop",
+        "padding_top": "m",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_03": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_B2xK1F": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ESIM_03.jpg",
+            "image_link": ""
+          }
+        },
+        "text_Xo2EyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Technical advantages</strong></p>",
+            "text_color": "#3a3a3c",
+            "text_gradient_background": "linear-gradient(119deg, rgba(69, 15, 165, 1) 20%, rgba(43, 109, 123, 1) 60%)",
+            "text_font_size": 50,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 34,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 6,
+            "position_y": 8
+          }
+        },
+        "text_Px2L1C": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Environmental protection</strong></p>",
+            "text_color": "#3a3a3c",
+            "text_gradient_background": "",
+            "text_font_size": 28,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 24,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 4,
+            "position_y": 66
+          }
+        },
+        "text_Ks2Sw1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>(reduce plastic waste)</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 24,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 4,
+            "position_y": 81
+          }
+        },
+        "text_Ku2L1C": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Convenient</strong></p>",
+            "text_color": "#3a3a3c",
+            "text_gradient_background": "",
+            "text_font_size": 38,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 24,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 37.4,
+            "position_y": 66
+          }
+        },
+        "text_Ui2Sw1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>(no need to replace physical SIM card)</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 24,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 37.4,
+            "position_y": 78
+          }
+        },
+        "text_Mu2b1C": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Security</strong></p>",
+            "text_color": "#3a3a3c",
+            "text_gradient_background": "",
+            "text_font_size": 38,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 24,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 71,
+            "position_y": 66
+          }
+        },
+        "text_Li2Sw3": {
+          "type": "text",
+          "settings": {
+            "text": "<p>(embedded chip, not easy to lose)</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 24,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 71,
+            "position_y": 78
+          }
+        }
+      },
+      "block_order": [
+        "image_B2xK1F",
+        "text_Xo2EyF",
+        "text_Px2L1C",
+        "text_Ks2Sw1",
+        "text_Ku2L1C",
+        "text_Ui2Sw1",
+        "text_Mu2b1C",
+        "text_Li2Sw3"
+      ],
+      "custom_css": [],
+      "settings": {
+        "display_devices": "desktop",
+        "padding_top": "m",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_04": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_Cb3EyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ESIM_04.jpg",
+            "image_link": ""
+          }
+        },
+        "text_Xb3EyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Comparison of GlocalMe with other eSIM services</strong></p>",
+            "text_color": "#3a3a3c",
+            "text_gradient_background": "linear-gradient(119deg, rgba(69, 15, 165, 1) 20%, rgba(43, 109, 123, 1) 60%)",
+            "text_font_size": 52,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "max_text_container_max_width": 100,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 0,
+            "position_y": 7
+          }
+        },
+        "text_Sb3y9c": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>GlocalMe eSIM</strong></p>",
+            "text_color": "#3a3a3c",
+            "text_gradient_background": "linear-gradient(119deg, rgba(69, 15, 165, 1) 20%, rgba(43, 109, 123, 1) 60%)",
+            "text_font_size": 24,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "max_text_container_max_width": 10,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 48,
+            "position_y": 20.5
+          }
+        },
+        "text_Nb3y4c": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Other<br/>eSIM Services</strong></p>",
+            "text_color": "#3a3a3c",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "max_text_container_max_width": 10,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 61,
+            "position_y": 17.5
+          }
+        },
+        "text_Vb1y5c": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>GlocalMe SIM Card</strong></p>",
+            "text_color": "#3a3a3c",
+            "text_gradient_background": "linear-gradient(119deg, rgba(69, 15, 165, 1) 20%, rgba(43, 109, 123, 1) 60%)",
+            "text_font_size": 24,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "max_text_container_max_width": 8,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 75,
+            "position_y": 20.5
+          }
+        },
+        "text_XbUE3F": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Support for multiple destinations</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 34,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 11,
+            "position_y": 34
+          }
+        },
+        "text_Kb3E9F": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Covered 5G over 80+ countries</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 34,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 11,
+            "position_y": 42
+          }
+        },
+        "text_Nb3c9F": {
+          "type": "text",
+          "settings": {
+            "text": "<p>24/7 online chat support</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 34,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 11,
+            "position_y": 52
+          }
+        },
+        "text_Jb3c6F": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Refund</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 34,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 11,
+            "position_y": 62
+          }
+        },
+        "text_Fb2c6F": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Security features</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 34,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 11,
+            "position_y": 72
+          }
+        },
+        "text_Tb2c7F": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Data saving feature</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 34,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 11,
+            "position_y": 82
+          }
+        }
+      },
+      "block_order": [
+        "image_Cb3EyF",
+        "text_Xb3EyF",
+        "text_Sb3y9c",
+        "text_Nb3y4c",
+        "text_Vb1y5c",
+        "text_XbUE3F",
+        "text_Kb3E9F",
+        "text_Nb3c9F",
+        "text_Jb3c6F",
+        "text_Fb2c6F",
+        "text_Tb2c7F"
+      ],
+      "custom_css": [],
+      "settings": {
+        "display_devices": "desktop",
+        "padding_top": "m",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_05": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_C2xY1F": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ESIM_05.jpg",
+            "image_link": ""
+          }
+        },
+        "text_Yx2L9F": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Traveling abroad?</strong></p>",
+            "text_color": "#3a3a3c",
+            "text_gradient_background": "",
+            "text_font_size": 32,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 30,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 4,
+            "position_y": 40.4
+          }
+        },
+        "text_Hs2Sz1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>eSIM allows you to surf the Internet easily without having to buy a local SIM card</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 30,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 4,
+            "position_y": 43
+          }
+        },
+        "text_Fx2r9F": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>International business trip?</strong></p>",
+            "text_color": "#3a3a3c",
+            "text_gradient_background": "",
+            "text_font_size": 32,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 30,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 7.2,
+            "position_y": 40.4
+          }
+        },
+        "text_Rs2Sy1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>eSIM provides a stable network so you canhandle work anytime, anywhere.</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 30,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 7.2,
+            "position_y": 43
+          }
+        },
+        "text_Ex2L5F": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Working remotely?</strong></p>",
+            "text_color": "#3a3a3c",
+            "text_gradient_background": "",
+            "text_font_size": 32,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 30,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 4,
+            "position_y": 9
+          }
+        },
+        "text_Vs2St1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>eSIM allows you to work efficiently anywhere inthe world.</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 30,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 4,
+            "position_y": 5
+          }
+        },
+        "text_Fy2rF1": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Traveling with your family?</strong></p>",
+            "text_color": "#3a3a3c",
+            "text_gradient_background": "",
+            "text_font_size": 32,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 30,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "btt",
+            "position_x": 7.2,
+            "position_y": 9
+          }
+        },
+        "text_Ru2Zy1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>eSIM supports sharing on multiple devices,saving money and worry.</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 30,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "btt",
+            "position_x": 7.2,
+            "position_y": 5
+          }
+        }
+      },
+      "block_order": [
+        "image_C2xY1F",
+        "text_Yx2L9F",
+        "text_Hs2Sz1",
+        "text_Fx2r9F",
+        "text_Rs2Sy1",
+        "text_Ex2L5F",
+        "text_Vs2St1",
+        "text_Fy2rF1",
+        "text_Ru2Zy1"
+      ],
+      "custom_css": [],
+      "settings": {
+        "display_devices": "desktop",
+        "padding_top": "m",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_06": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_a2xE1F": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ESIM_06.jpg",
+            "image_link": ""
+          }
+        },
+        "text_zx2EyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Why choose GlocalMe eSIM</strong></p>",
+            "text_color": "#3a3a3c",
+            "text_gradient_background": "",
+            "text_font_size": 52,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 6,
+            "position_y": 5
+          }
+        },
+        "text_sx2L1F": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Travel the World</strong></p>",
+            "text_color": "#3a3a3c",
+            "text_gradient_background": "",
+            "text_font_size": 45,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 34,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 26,
+            "position_y": 25
+          }
+        },
+        "text_ds2SA1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Unlimited access worldwide, hassle-free experience</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 34,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 26,
+            "position_y": 31
+          }
+        },
+        "text_zs1LxF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Easy Activation</strong></p>",
+            "text_color": "#3a3a3c",
+            "text_gradient_background": "",
+            "text_font_size": 45,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "right",
+            "max_text_container_max_width": 34,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 26,
+            "position_y": 42
+          }
+        },
+        "text_Os2sA1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Quick and easy eSIM installation process</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "right",
+            "max_text_container_max_width": 34,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 26,
+            "position_y": 48
+          }
+        },
+        "text_Vx2L9F": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Convenient and Flexible</strong></p>",
+            "text_color": "#3a3a3c",
+            "text_gradient_background": "",
+            "text_font_size": 45,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 34,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 26,
+            "position_y": 34
+          }
+        },
+        "text_ZXsSA1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Intelligent communications at your fingertips</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 28,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 26,
+            "position_y": 28
+          }
+        },
+        "text_Js1PxF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Affordable Prices</strong></p>",
+            "text_color": "#3a3a3c",
+            "text_gradient_background": "",
+            "text_font_size": 45,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "right",
+            "max_text_container_max_width": 34,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "btt",
+            "position_x": 26,
+            "position_y": 17
+          }
+        },
+        "text_Gs2sW1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>High-speed Internet for the price of a cupof coffee</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "right",
+            "max_text_container_max_width": 28,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "btt",
+            "position_x": 26,
+            "position_y": 11
+          }
+        }
+      },
+      "block_order": [
+        "image_a2xE1F",
+        "text_zx2EyF",
+        "text_sx2L1F",
+        "text_ds2SA1",
+        "text_zs1LxF",
+        "text_Os2sA1",
+        "text_Vx2L9F",
+        "text_ZXsSA1",
+        "text_Js1PxF",
+        "text_Gs2sW1"
+      ],
+      "custom_css": [],
+      "settings": {
+        "display_devices": "desktop",
+        "padding_top": "m",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_08": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_Y2xj1z": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ESIM_08.jpg",
+            "image_link": ""
+          }
+        },
+        "text_Zx2Th1": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>When should I set up my eSIM?</strong></p>",
+            "text_color": "#3a3a3c",
+            "text_gradient_background": "",
+            "text_font_size": 28,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 15,
+            "position_y": 10.6
+          }
+        },
+        "text_Tx3Xz1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>You need WiFi to set up your eSIM so we recommend that you install and activate your eSIM just before your departure. You can also wait until you arrive at your destination to activate the eSIM but remember that you need a prior WiFi connection for the set-up process.</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 15,
+            "position_y": 16.6
+          }
+        },
+        "text_Ux3Th8": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>When will I receive my eSIM?</strong></p>",
+            "text_color": "#3a3a3c",
+            "text_gradient_background": "",
+            "text_font_size": 28,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 15,
+            "position_y": 40.8
+          }
+        },
+        "text_Ix4XH1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Once you make the payment, we will send your GlocalMe eSIM to the email you entered during the purchase process. Say goodbye to the days of waiting for a physical SIM card in the mail.</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 15,
+            "position_y": 46.8
+          }
+        },
+        "text_Fx4Th8": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>What do I do if I delete or lose my eSIM's QR code?</strong></p>",
+            "text_color": "#3a3a3c",
+            "text_gradient_background": "",
+            "text_font_size": 28,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 15,
+            "position_y": 71.8
+          }
+        },
+        "text_Bx3XH1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>If you cannot find the code, please contact our 24/7 customer support team at support@glocalme.com or our online chat option. We will resend you the code through email.</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 15,
+            "position_y": 77.8
+          }
+        }
+      },
+      "block_order": [
+        "image_Y2xj1z",
+        "text_Zx2Th1",
+        "text_Tx3Xz1",
+        "text_Ux3Th8",
+        "text_Ix4XH1",
+        "text_Fx4Th8",
+        "text_Bx3XH1"
+      ],
+      "custom_css": [],
+      "settings": {
+        "display_devices": "desktop",
+        "padding_top": "m",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_09": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_U3N2yF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ESIM_09.jpg",
+            "image_link": ""
+          }
+        },
+        "text_YbL3yF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Are you ready<br/>to try using GlocalMe eSIM?</strong></p>",
+            "text_color": "#3a3a3c",
+            "text_gradient_background": "",
+            "text_font_size": 52,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 44,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 4,
+            "position_y": 16
+          }
+        },
+        "text_Ub2EyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Whether traveling domestically or abroad, working or studying overseas, GlocalMe eSIM can provide you with stable and high-speed internet connectivity, Keep you online at all times, stay in touch with family and friends, and enjoy various online services and applications.</p><p>Explore the new connection methods brought by GlocalMe eSIM and experience seamless, convenient, and flexible communication experience!</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 44,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 4,
+            "position_y": 46
+          }
+        }
+      },
+      "block_order": [
+        "image_U3N2yF",
+        "text_YbL3yF",
+        "text_Ub2EyF"
+      ],
+      "custom_css": [],
+      "settings": {
+        "display_devices": "desktop",
+        "padding_top": "m",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_10": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_C1bEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ESIM_10.jpg",
+            "image_link": ""
+          }
+        },
+        "text_D3LEyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Get your GlocalMe eSIM in 3 steps</strong></p>",
+            "text_color": "#3a3a3c",
+            "text_gradient_background": "linear-gradient(119deg, rgba(69, 15, 165, 1) 20%, rgba(43, 109, 123, 1) 60%)",
+            "text_font_size": 52,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 4,
+            "position_y": 5
+          }
+        },
+        "text_E9zEyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Confirm that your device is eSIM Compatible and Carrier Unlocked.</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "max_text_container_max_width": 22,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 8,
+            "position_y": 82
+          }
+        },
+        "text_C9zNyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Select and purchase an eSIM for your international travel.</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "max_text_container_max_width": 22,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 42,
+            "position_y": 82
+          }
+        },
+        "text_N9zjyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Scan QR code sent by Email to activate your eSIM.</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "max_text_container_max_width": 22,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 72,
+            "position_y": 82
+          }
+        }
+      },
+      "block_order": [
+        "image_C1bEyF",
+        "text_D3LEyF",
+        "text_E9zEyF",
+        "text_C9zNyF",
+        "text_N9zjyF"
+      ],
+      "custom_css": [],
+      "settings": {
+        "display_devices": "desktop",
+        "padding_top": "m",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "compare_device_7gYy8Y": {
+      "type": "compare-device",
+      "name": "t:sections.compare-device.presets.name",
+      "settings": {
+        "display_devices": "desktop",
+        "compare_device_group": "compare-device-group-ttfcpkey",
+        "padding_top": "xs",
+        "padding_bottom": "xs",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_11": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_U1z2yF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ESIM_11.jpg",
+            "image_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_U1z2yF"
+      ],
+      "custom_css": [],
+      "settings": {
+        "display_devices": "desktop",
+        "padding_top": "m",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_m_01": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_abNEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ESIM_m_01.jpg",
+            "image_link": ""
+          }
+        },
+        "text_abLEyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>What is eSIM?</strong></p>",
+            "text_color": "#3a3a3c",
+            "text_gradient_background": "linear-gradient(119deg, rgba(69, 15, 165, 1) 20%, rgba(43, 109, 123, 1) 60%)",
+            "text_font_size": 32,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 6,
+            "position_y": 6
+          }
+        },
+        "text_abUEyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>An eSIM (embedded SIM) is a digital SIM card that allows you to activate a mobile plan without needing a physical SIM. It's built into your device, making it easier than ever to switch carriers or plans</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 20,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 6,
+            "position_y": 18
+          }
+        }
+      },
+      "block_order": [
+        "image_abNEyF",
+        "text_abLEyF",
+        "text_abUEyF"
+      ],
+      "custom_css": [],
+      "settings": {
+        "display_devices": "mobile",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_m_02": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_a2xE1F": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ESIM_m_02.jpg",
+            "image_link": ""
+          }
+        },
+        "text_zx2EyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Core functions</strong></p>",
+            "text_color": "#3a3a3c",
+            "text_gradient_background": "linear-gradient(119deg, rgba(69, 15, 165, 1) 20%, rgba(43, 109, 123, 1) 60%)",
+            "text_font_size": 32,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 6,
+            "position_y": 4
+          }
+        },
+        "text_sx2L1F": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Global coverage</strong></p>",
+            "text_color": "#3a3a3c",
+            "text_gradient_background": "",
+            "text_font_size": 28,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 64,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 26,
+            "position_y": 20
+          }
+        },
+        "text_ds2SA1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>(Supported countries and regions)</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 20,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 64,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 26,
+            "position_y": 26
+          }
+        },
+        "text_zs1LxF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Multiple package options</strong></p>",
+            "text_color": "#3a3a3c",
+            "text_gradient_background": "",
+            "text_font_size": 28,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "right",
+            "max_text_container_max_width": 64,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 26,
+            "position_y": 40
+          }
+        },
+        "text_Os2sA1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>(7 days, 15 days, 30 days)</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 20,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "right",
+            "max_text_container_max_width": 64,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 26,
+            "position_y": 46
+          }
+        },
+        "text_Vx2L9F": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Instant activation</strong></p>",
+            "text_color": "#3a3a3c",
+            "text_gradient_background": "",
+            "text_font_size": 28,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 64,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 26,
+            "position_y": 39
+          }
+        },
+        "text_ZXsSA1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>(No need to wait for the SIM card to be delivered)</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 20,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 64,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 26,
+            "position_y": 31
+          }
+        },
+        "text_Js1PxF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Multi-device support</strong></p>",
+            "text_color": "#3a3a3c",
+            "text_gradient_background": "",
+            "text_font_size": 28,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "right",
+            "max_text_container_max_width": 64,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "btt",
+            "position_x": 26,
+            "position_y": 16
+          }
+        },
+        "text_Gs2sW1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>(Smartphones,tablets,smart watches, etc)</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 20,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "right",
+            "max_text_container_max_width": 64,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "btt",
+            "position_x": 26,
+            "position_y": 12
+          }
+        }
+      },
+      "block_order": [
+        "image_a2xE1F",
+        "text_zx2EyF",
+        "text_sx2L1F",
+        "text_ds2SA1",
+        "text_zs1LxF",
+        "text_Os2sA1",
+        "text_Vx2L9F",
+        "text_ZXsSA1",
+        "text_Js1PxF",
+        "text_Gs2sW1"
+      ],
+      "custom_css": [],
+      "settings": {
+        "display_devices": "mobile",
+        "padding_top": "xs",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_m_03": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_B2xK1F": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ESIM_m_03.jpg",
+            "image_link": ""
+          }
+        },
+        "text_Xo2EyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Technical advantages</strong></p>",
+            "text_color": "#3a3a3c",
+            "text_gradient_background": "linear-gradient(119deg, rgba(69, 15, 165, 1) 20%, rgba(43, 109, 123, 1) 60%)",
+            "text_font_size": 32,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 6,
+            "position_y": 8
+          }
+        },
+        "text_Px2L1C": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Environmental<br/>protection-Reduce plastic waste.</strong></p>",
+            "text_color": "#3a3a3c",
+            "text_gradient_background": "",
+            "text_font_size": 26,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 60,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 31,
+            "position_y": 24
+          }
+        },
+        "text_Ku2L1C": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Convenient-No need to replace physical SIM Card.</strong></p>",
+            "text_color": "#3a3a3c",
+            "text_gradient_background": "",
+            "text_font_size": 26,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 60,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 31,
+            "position_y": 50
+          }
+        },
+        "text_Mu2b1C": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Security-Embedded chip, hard to lose.</strong></p>",
+            "text_color": "#3a3a3c",
+            "text_gradient_background": "",
+            "text_font_size": 26,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 60,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 31,
+            "position_y": 76
+          }
+        }
+      },
+      "block_order": [
+        "image_B2xK1F",
+        "text_Xo2EyF",
+        "text_Px2L1C",
+        "text_Ku2L1C",
+        "text_Mu2b1C"
+      ],
+      "custom_css": [],
+      "settings": {
+        "display_devices": "mobile",
+        "padding_top": "xs",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_m_04": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_C2xY1F": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ESIM_m_04.jpg",
+            "image_link": ""
+          }
+        },
+        "text_Yx2L9F": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Traveling abroad?</strong></p>",
+            "text_color": "#3a3a3c",
+            "text_gradient_background": "",
+            "text_font_size": 16,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 30,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 4,
+            "position_y": 39.8
+          }
+        },
+        "text_Hs2Sz1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>eSIM lets you get online hassle.free, no need tobuy a local SIM card.</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 12,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 30,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 4,
+            "position_y": 42.8
+          }
+        },
+        "text_Fx2r9F": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Traveling internationally?</strong></p>",
+            "text_color": "#3a3a3c",
+            "text_gradient_background": "",
+            "text_font_size": 16,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 30,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 7.2,
+            "position_y": 39.8
+          }
+        },
+        "text_Rs2Sy1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>eSIM offers a stable connection so you can handle work anytime, anywhere.</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 12,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 30,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 7.2,
+            "position_y": 42.8
+          }
+        },
+        "text_Ex2L5F": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Working remotely?</strong></p>",
+            "text_color": "#3a3a3c",
+            "text_gradient_background": "",
+            "text_font_size": 16,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 30,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 4,
+            "position_y": 9.2
+          }
+        },
+        "text_Vs2St1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>eSIM keeps you productive no matter where you are in the world.</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 12,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 30,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 4,
+            "position_y": 4.8
+          }
+        },
+        "text_Fy2rF1": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Family trip?</strong></p>",
+            "text_color": "#3a3a3c",
+            "text_gradient_background": "",
+            "text_font_size": 16,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 30,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "btt",
+            "position_x": 7.2,
+            "position_y": 9.2
+          }
+        },
+        "text_Ru2Zy1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>eSIM supports multi-device sharing, saving youboth money and hassle.</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 12,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 30,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "btt",
+            "position_x": 7.2,
+            "position_y": 4.8
+          }
+        }
+      },
+      "block_order": [
+        "image_C2xY1F",
+        "text_Yx2L9F",
+        "text_Hs2Sz1",
+        "text_Fx2r9F",
+        "text_Rs2Sy1",
+        "text_Ex2L5F",
+        "text_Vs2St1",
+        "text_Fy2rF1",
+        "text_Ru2Zy1"
+      ],
+      "custom_css": [],
+      "settings": {
+        "display_devices": "mobile",
+        "padding_top": "xs",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_m_05": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_a2xE1F": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ESIM_m_05.jpg",
+            "image_link": ""
+          }
+        },
+        "text_zx2EyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Why choose GlocalMe eSIM</strong></p>",
+            "text_color": "#3a3a3c",
+            "text_gradient_background": "linear-gradient(119deg, rgba(69, 15, 165, 1) 20%, rgba(43, 109, 123, 1) 60%)",
+            "text_font_size": 32,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 6,
+            "position_y": 5
+          }
+        },
+        "text_sx2L1F": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Travel the World</strong></p>",
+            "text_color": "#3a3a3c",
+            "text_gradient_background": "",
+            "text_font_size": 28,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 64,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 22,
+            "position_y": 25
+          }
+        },
+        "text_ds2SA1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Unlimited access worldwide, hassle-free experience</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 20,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 64,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 22,
+            "position_y": 31
+          }
+        },
+        "text_zs1LxF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Easy Activation</strong></p>",
+            "text_color": "#3a3a3c",
+            "text_gradient_background": "",
+            "text_font_size": 28,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "right",
+            "max_text_container_max_width": 64,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 22,
+            "position_y": 42
+          }
+        },
+        "text_Os2sA1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Quick and easy eSIM installation process</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 20,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "right",
+            "max_text_container_max_width": 64,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 22,
+            "position_y": 48
+          }
+        },
+        "text_Vx2L9F": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Convenient and Flexible</strong></p>",
+            "text_color": "#3a3a3c",
+            "text_gradient_background": "",
+            "text_font_size": 28,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 64,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 22,
+            "position_y": 34
+          }
+        },
+        "text_ZXsSA1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Intelligent communications at your fingertips</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 20,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 64,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 22,
+            "position_y": 29
+          }
+        },
+        "text_Js1PxF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Affordable Prices</strong></p>",
+            "text_color": "#3a3a3c",
+            "text_gradient_background": "",
+            "text_font_size": 28,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "right",
+            "max_text_container_max_width": 64,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "btt",
+            "position_x": 22,
+            "position_y": 15
+          }
+        },
+        "text_Gs2sW1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>(Smartphones, tablets, smart watches, etc)</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 20,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "right",
+            "max_text_container_max_width": 64,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "btt",
+            "position_x": 22,
+            "position_y": 10
+          }
+        }
+      },
+      "block_order": [
+        "image_a2xE1F",
+        "text_zx2EyF",
+        "text_sx2L1F",
+        "text_ds2SA1",
+        "text_zs1LxF",
+        "text_Os2sA1",
+        "text_Vx2L9F",
+        "text_ZXsSA1",
+        "text_Js1PxF",
+        "text_Gs2sW1"
+      ],
+      "custom_css": [],
+      "settings": {
+        "display_devices": "mobile",
+        "padding_top": "xs",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_m_07": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_Y2xj1z": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ESIM_m_07.jpg",
+            "image_link": ""
+          }
+        },
+        "text_Zx2Th1": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>When should I set up my eSIM?</strong></p>",
+            "text_color": "#3a3a3c",
+            "text_gradient_background": "",
+            "text_font_size": 22,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 17,
+            "position_y": 7.6
+          }
+        },
+        "text_Tx3Xz1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>You need WiFi to set up your eSIM so we recommend that you install and activate your eSIM just before your departure. You can also wait until you arrive at your destination to activate the eSIM but remember that you need a prior WiFi connection for the set-up process.</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 20,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 17,
+            "position_y": 12.6
+          }
+        },
+        "text_Ux3Th8": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>When will I receive my eSIM?</strong></p>",
+            "text_color": "#3a3a3c",
+            "text_gradient_background": "",
+            "text_font_size": 22,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 17,
+            "position_y": 41.6
+          }
+        },
+        "text_Ix4XH1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Once you make the payment, we will send your GlocalMe eSIM to the email you entered during the purchase process. Say goodbye to the days of waiting for a physical SIM card in the mail.</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 20,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 17,
+            "position_y": 46.6
+          }
+        },
+        "text_Fx4Th8": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>What do I do if I delete or lose my eSIM's QR code?</strong></p>",
+            "text_color": "#3a3a3c",
+            "text_gradient_background": "",
+            "text_font_size": 22,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 17,
+            "position_y": 69.8
+          }
+        },
+        "text_Bx3XH1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>If you cannot find the code, please contact our 24/7 customer support team at support@glocalme.com or our online chat option. We will resend you the code through email.</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 20,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 17,
+            "position_y": 80
+          }
+        }
+      },
+      "block_order": [
+        "image_Y2xj1z",
+        "text_Zx2Th1",
+        "text_Tx3Xz1",
+        "text_Ux3Th8",
+        "text_Ix4XH1",
+        "text_Fx4Th8",
+        "text_Bx3XH1"
+      ],
+      "custom_css": [],
+      "settings": {
+        "display_devices": "mobile",
+        "padding_top": "xs",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_m_08": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_U3N2yF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ESIM_m_08.jpg",
+            "image_link": ""
+          }
+        },
+        "text_YbL3yF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Are you ready<br/>to try using GlocalMe eSIM?</strong></p>",
+            "text_color": "#3a3a3c",
+            "text_gradient_background": "linear-gradient(119deg, rgba(69, 15, 165, 1) 20%, rgba(43, 109, 123, 1) 60%)",
+            "text_font_size": 32,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 8,
+            "position_y": 7
+          }
+        },
+        "text_Ub2EyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Whether traveling domestically or abroad, working or studying overseas, GlocalMe eSIM can provide you with stable and high-speed internet connectivity, Keep you online at all times, stay in touch with family and friends, and enjoy various online services and applications.</p><p>Explore the new connection methods brought by GlocalMe eSIM and experience seamless, convenient, and flexible communication experience!</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 20,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 8,
+            "position_y": 23
+          }
+        }
+      },
+      "block_order": [
+        "image_U3N2yF",
+        "text_YbL3yF",
+        "text_Ub2EyF"
+      ],
+      "custom_css": [],
+      "settings": {
+        "display_devices": "mobile",
+        "padding_top": "xs",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_m_09": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_C1bEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ESIM_m_09.jpg",
+            "image_link": ""
+          }
+        },
+        "text_D3LEyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Get your GlocalMe eSIM in 3 steps</strong></p>",
+            "text_color": "#3a3a3c",
+            "text_gradient_background": "linear-gradient(119deg, rgba(69, 15, 165, 1) 20%, rgba(43, 109, 123, 1) 60%)",
+            "text_font_size": 32,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 4,
+            "position_y": 5
+          }
+        },
+        "text_E9zEyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Confirm that your device is eSIM Compatible and Carrier Unlocked.</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 18,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "max_text_container_max_width": 38,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 6,
+            "position_y": 47
+          }
+        },
+        "text_C9zNyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Select and purchase an eSIM for your international travel.</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 18,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "max_text_container_max_width": 38,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 52,
+            "position_y": 47
+          }
+        },
+        "text_N9zjyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Scan QR code sent by Email to activate your eSIM.</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 18,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "max_text_container_max_width": 38,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 6,
+            "position_y": 90
+          }
+        }
+      },
+      "block_order": [
+        "image_C1bEyF",
+        "text_D3LEyF",
+        "text_E9zEyF",
+        "text_C9zNyF",
+        "text_N9zjyF"
+      ],
+      "custom_css": [],
+      "settings": {
+        "display_devices": "mobile",
+        "padding_top": "xs",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_ye69VV": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_KpDdda": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ESIM_11.jpg",
+            "image_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_KpDdda"
+      ],
+      "settings": {
+        "display_devices": "mobile",
+        "padding_top": "xs",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "compare_device_8xgiRp": {
+      "type": "compare-device",
+      "name": "t:sections.compare-device.presets.name",
+      "settings": {
+        "display_devices": "mobile",
+        "compare_device_group": "compare-device-group-ttfcpkey",
+        "padding_top": "xs",
+        "padding_bottom": "xs",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "1755164461755ad001": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_q9gCYC": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_q9gCYC"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "color_scheme": "background-1",
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "subheading_icon": "none",
+        "heading": "You May Also Like",
+        "heading_size": "h2",
+        "text": "",
+        "products_limit": 6,
+        "image_ratio": "1/1",
+        "image_fit": "cover",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_desc": false,
+        "padding_top": "l",
+        "padding_bottom": "l"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "custom_liquid_aPKfKb",
+    "image_text_separation_01",
+    "image_text_separation_02",
+    "image_text_separation_03",
+    "image_text_separation_04",
+    "image_text_separation_05",
+    "image_text_separation_06",
+    "image_text_separation_08",
+    "image_text_separation_09",
+    "image_text_separation_10",
+    "compare_device_7gYy8Y",
+    "image_text_separation_11",
+    "image_text_separation_m_01",
+    "image_text_separation_m_02",
+    "image_text_separation_m_03",
+    "image_text_separation_m_04",
+    "image_text_separation_m_05",
+    "image_text_separation_m_07",
+    "image_text_separation_m_08",
+    "image_text_separation_m_09",
+    "image_text_separation_ye69VV",
+    "compare_device_8xgiRp",
+    "1755164461755ad001",
+    "product-recommendations"
+  ]
+}

@@ -1,0 +1,374 @@
+{{ 'component-image-text-accordion.css' | asset_url | stylesheet_tag }}
+<script defer src="{{ 'image-text-accordion.js' | asset_url }}"></script>
+
+{%- style -%}
+  {% render 'section-padding' %}
+  {% render 'section-margin' %}
+{%- endstyle -%}
+
+<div id="ImageTextAccordion-{{ section.id }}" class="image-text-accordion section-{{ section.id }}-padding">
+  <div class="container">
+    <div class="image-text-accordion__container">
+      <image-text-accordion>
+        <div class="image-text-accordion__wrapper">
+          {%- capture sizes -%}calc(100vw / {{ section.blocks.size }}){%- endcapture -%}
+          {%- for block in section.blocks -%}
+            {%- liquid
+              assign cover_ratio = section.settings.cover_ratio
+              if cover_ratio == 'adapt' and block.settings.image != blank
+                assign ratio_percent = 1 | divided_by: block.settings.image.aspect_ratio | times: 100 | round: 2
+              elsif cover_ratio == 'adapt' and block.settings.image == blank
+                assign ratio_percent = 100
+              else
+                assign cover_ratio = section.settings.cover_ratio
+                assign aspect_ratio = cover_ratio | split: '/'
+                assign temp = aspect_ratio[0] | append: '.0'
+                assign ratio_percent = aspect_ratio[1] | divided_by: temp | times: 100 | round: 2
+              endif
+            -%}
+            <div
+              class="image-text-accordion__image ratio{% if forloop.first %} active{% endif %}"
+              style="--ratio-percent: {{ ratio_percent }}%"
+            >
+              {%- if block.settings.image -%}
+                {{
+                  block.settings.image
+                  | image_url: width: 750
+                  | image_tag:
+                    widths: '360, 535, 720, 940, 1070, 1200, 1400, 1600, 1800, 2000, 2200',
+                    sizes: sizes,
+                    class: 'object-cover'
+                }}
+              {%- else -%}
+                {{ 'hero-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
+              {%- endif -%}
+            </div>
+            <div class="image-text-accordion__text color-{{ section.settings.color_scheme }}">
+              <div class="image-text-accordion__text-inner">
+                {%- if block.settings.title -%}
+                  <h3 class="body-large">{{ block.settings.title }}</h3>
+                {%- endif -%}
+                {%- if block.settings.description -%}
+                  <p>{{ block.settings.description }}</p>
+                {%- endif -%}
+              </div>
+            </div>
+          {%- endfor -%}
+        </div>
+      </image-text-accordion>
+      <swiper-component
+        class="image-text-accordion__swiper relative"
+        data-options='{"loop":{{ section.settings.enable_loop }},"spaceBetween":10}'
+        data-pagination="true"
+      >
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            {%- capture sizes -%}calc(100vw / {{ section.blocks.size }}){%- endcapture -%}
+            {%- for block in section.blocks -%}
+              <div class="swiper-slide">
+                <image-text-accordion class="image-text-accordion__grid h-full">
+                  {%- liquid
+                    assign cover_ratio = section.settings.cover_ratio
+                    if cover_ratio == 'adapt' and block.settings.image != blank
+                      assign ratio_percent = 1 | divided_by: block.settings.image.aspect_ratio | times: 100 | round: 2
+                    elsif cover_ratio == 'adapt' and block.settings.image == blank
+                      assign ratio_percent = 100
+                    else
+                      assign cover_ratio = section.settings.cover_ratio
+                      assign aspect_ratio = cover_ratio | split: '/'
+                      assign temp = aspect_ratio[0] | append: '.0'
+                      assign ratio_percent = aspect_ratio[1] | divided_by: temp | times: 100 | round: 2
+                    endif
+                  -%}
+                  <div
+                    class="image-text-accordion__image ratio"
+                    style="--ratio-percent: {{ ratio_percent }}%"
+                  >
+                    {%- if block.settings.image -%}
+                      {{
+                        block.settings.image
+                        | image_url: width: 750
+                        | image_tag:
+                          widths: '360, 535, 720, 940, 1070, 1200, 1400, 1600, 1800, 2000, 2200',
+                          sizes: sizes,
+                          class: 'object-cover'
+                      }}
+                    {%- else -%}
+                      {{ 'hero-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
+                    {%- endif -%}
+                  </div>
+                  <div class="image-text-accordion__text color-{{ section.settings.color_scheme }}">
+                    <div class="relative h-full">
+                      <div class="image-text-accordion__text-inner absolute top-0 left-0 w-full h-full">
+                        {%- if block.settings.title -%}
+                          <h3 class="body-large">{{ block.settings.title }}</h3>
+                        {%- endif -%}
+                        {%- if block.settings.description -%}
+                          <p>{{ block.settings.description }}</p>
+                        {%- endif -%}
+                      </div>
+                    </div>
+                  </div>
+                </image-text-accordion>
+              </div>
+            {%- endfor -%}
+          </div>
+        </div>
+        {%- if section.settings.enable_pagination -%}
+          <div class="swiper-pagination"></div>
+        {%- endif -%}
+      </swiper-component>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.image-text-accordion.name",
+  "class": "section-image-text-accordion spaced-section",
+  "enabled_on": {
+    "templates": ["*"]
+  },
+  "settings": [
+    {
+      "type": "select",
+      "id": "cover_ratio",
+      "options": [
+        {
+          "value": "1/2",
+          "label": "t:sections.all.image_ratio.options__2.label"
+        },
+        {
+          "value": "2/3",
+          "label": "t:sections.all.image_ratio.options__4.label"
+        },
+        {
+          "value": "3/4",
+          "label": "t:sections.all.image_ratio.options__6.label"
+        },
+        {
+          "value": "4/5",
+          "label": "t:sections.all.image_ratio.options__8.label"
+        },
+        {
+          "value": "9/16",
+          "label": "t:sections.all.image_ratio.options__10.label"
+        },
+        {
+          "value": "9/21",
+          "label": "t:sections.all.image_ratio.options__12.label"
+        },
+        {
+          "value": "adapt",
+          "label": "t:sections.all.image_ratio.options__14.label"
+        }
+      ],
+      "default": "2/3",
+      "label": "t:sections.all.image_ratio.label"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "default": "background-2",
+      "label": "t:sections.image-text-accordion.settings.color_scheme.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.slider.header__1.content"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_loop",
+      "default": true,
+      "label": "t:sections.all.slider.enable_loop.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_pagination",
+      "default": true,
+      "label": "t:sections.all.slider.enable_pagination.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.section-padding.header.content"
+    },
+    {
+      "type": "select",
+      "id": "padding_top",
+      "options": [
+        {
+          "value": "no-indent",
+          "label": "t:sections.all.section-padding.options__1.label"
+        },
+        {
+          "value": "xs",
+          "label": "t:sections.all.section-padding.options__2.label"
+        },
+        {
+          "value": "s",
+          "label": "t:sections.all.section-padding.options__3.label"
+        },
+        {
+          "value": "m",
+          "label": "t:sections.all.section-padding.options__4.label"
+        },
+        {
+          "value": "l",
+          "label": "t:sections.all.section-padding.options__5.label"
+        },
+        {
+          "value": "xl",
+          "label": "t:sections.all.section-padding.options__6.label"
+        }
+      ],
+      "default": "l",
+      "label": "t:sections.all.section-padding.padding_top.label"
+    },
+    {
+      "type": "select",
+      "id": "padding_bottom",
+      "options": [
+        {
+          "value": "no-indent",
+          "label": "t:sections.all.section-padding.options__1.label"
+        },
+        {
+          "value": "xs",
+          "label": "t:sections.all.section-padding.options__2.label"
+        },
+        {
+          "value": "s",
+          "label": "t:sections.all.section-padding.options__3.label"
+        },
+        {
+          "value": "m",
+          "label": "t:sections.all.section-padding.options__4.label"
+        },
+        {
+          "value": "l",
+          "label": "t:sections.all.section-padding.options__5.label"
+        },
+        {
+          "value": "xl",
+          "label": "t:sections.all.section-padding.options__6.label"
+        }
+      ],
+      "default": "l",
+      "label": "t:sections.all.section-padding.padding_bottom.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.section-margin.header.content"
+    },
+    {
+      "type": "select",
+      "id": "margin_top",
+      "options": [
+        {
+          "value": "no-indent",
+          "label": "t:sections.all.section-margin.options__1.label"
+        },
+        {
+          "value": "xs",
+          "label": "t:sections.all.section-margin.options__2.label"
+        },
+        {
+          "value": "s",
+          "label": "t:sections.all.section-margin.options__3.label"
+        },
+        {
+          "value": "m",
+          "label": "t:sections.all.section-margin.options__4.label"
+        },
+        {
+          "value": "l",
+          "label": "t:sections.all.section-margin.options__5.label"
+        },
+        {
+          "value": "xl",
+          "label": "t:sections.all.section-margin.options__6.label"
+        }
+      ],
+      "default": "no-indent",
+      "label": "t:sections.all.section-margin.margin_top.label"
+    },
+    {
+      "type": "select",
+      "id": "margin_bottom",
+      "options": [
+        {
+          "value": "no-indent",
+          "label": "t:sections.all.section-margin.options__1.label"
+        },
+        {
+          "value": "xs",
+          "label": "t:sections.all.section-margin.options__2.label"
+        },
+        {
+          "value": "s",
+          "label": "t:sections.all.section-margin.options__3.label"
+        },
+        {
+          "value": "m",
+          "label": "t:sections.all.section-margin.options__4.label"
+        },
+        {
+          "value": "l",
+          "label": "t:sections.all.section-margin.options__5.label"
+        },
+        {
+          "value": "xl",
+          "label": "t:sections.all.section-margin.options__6.label"
+        }
+      ],
+      "default": "no-indent",
+      "label": "t:sections.all.section-margin.margin_bottom.label"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "item",
+      "name": "t:sections.image-text-accordion.blocks.item.name",
+      "limit": 5,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "t:sections.image-text-accordion.blocks.item.settings.image.label"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "t:sections.image-text-accordion.blocks.item.settings.title.label",
+          "default": "Some heading"
+        },
+        {
+          "type": "text",
+          "id": "description",
+          "label": "t:sections.image-text-accordion.blocks.item.settings.description.label",
+          "default": "Some text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.image-text-accordion.presets.name",
+      "blocks": [
+        {
+          "type": "item"
+        },
+        {
+          "type": "item"
+        },
+        {
+          "type": "item"
+        },
+        {
+          "type": "item"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

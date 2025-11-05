@@ -1,0 +1,1016 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ product.vendor }}"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h3"
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "description": ""
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "inventory_ybzDtw": {
+          "type": "inventory",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_quantity": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "gift": {
+          "type": "gift",
+          "settings": {}
+        },
+        "add_ons": {
+          "type": "add_ons",
+          "settings": {}
+        },
+        "supported_devices": {
+          "type": "supported_devices",
+          "settings": {}
+        },
+        "text_with_icon_FJpD8f": {
+          "type": "text_with_icon",
+          "settings": {
+            "show_text_with_icon_1": true,
+            "icon_1": "delivery",
+            "text_1": "Fast Shipping",
+            "show_text_with_icon_2": true,
+            "icon_2": "shield",
+            "text_2": "High-quality Products",
+            "box_shadow": true,
+            "icon_style": "colored",
+            "icon_fill_type": "gradient"
+          }
+        },
+        "text_with_icon": {
+          "type": "text_with_icon",
+          "settings": {
+            "show_text_with_icon_1": true,
+            "icon_1": "wallet",
+            "text_1": "30 Day Return Guarantee",
+            "show_text_with_icon_2": true,
+            "icon_2": "user-1",
+            "text_2": "Professional Service Support",
+            "box_shadow": true,
+            "icon_style": "colored",
+            "icon_fill_type": "gradient"
+          }
+        },
+        "share_EAqH9P": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share",
+            "show_share_facebook": true,
+            "show_share_twitter": true,
+            "show_share_pinterest": true,
+            "show_share_copy": true
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "description",
+        "variant_picker",
+        "price",
+        "inventory_ybzDtw",
+        "buy_buttons",
+        "gift",
+        "add_ons",
+        "supported_devices",
+        "text_with_icon_FJpD8f",
+        "text_with_icon",
+        "share_EAqH9P"
+      ],
+      "custom_css": [
+        "@media only screen and (min-width: 1200px) {.rte div {margin-right: 180px; margin-left: -180px; }}"
+      ],
+      "settings": {
+        "desktop_alignment": "right",
+        "mobile_alignment": "before",
+        "gallery_type": "slider_previews",
+        "aspect_ratio": "1/1",
+        "image_fit": "contain",
+        "image_fit_modal": "contain",
+        "padding_bottom": "l"
+      }
+    },
+    "video_qjUJFR": {
+      "type": "video",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "full_width": false,
+        "height": "16/9",
+        "video_fit": "contain",
+        "subheading": "Subheading",
+        "subheading_style": "subtitle",
+        "subheading_icon": "none",
+        "heading": "Heading",
+        "heading_size": "h2",
+        "heading_level": "h2",
+        "opacity_overlay": 0.5,
+        "video_url": "https://www.youtube.com/watch?v=Pqw20wluh9I",
+        "video_autoplay": true,
+        "video_loop": true,
+        "video_muted": false,
+        "video_controls": true,
+        "description": "",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_banner_TDL7wJ": {
+      "type": "image-banner",
+      "settings": {
+        "full_width": false,
+        "color_scheme": "background-3",
+        "image": "shopify://shop_images/1-01_58a9c62b-db01-4360-8151-7b881b0847cb.jpg",
+        "image_mobile": "shopify://shop_images/1-02_821b5b8c-d217-401f-95a6-5d105e914090.jpg",
+        "image_ratio": "adapt",
+        "image_link": "",
+        "opacity_overlay": 0,
+        "icon": "none",
+        "icon_color_scheme": "background-1",
+        "icon_size": "large",
+        "icon_style": "colored",
+        "icon_fill_type": "gradient",
+        "box_shadow": false,
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "heading": "UniCord Plus",
+        "heading_size": "h1",
+        "heading_level": "h2",
+        "text_information": "<h4>The Ultimate 3-in-1 Universal Tracker</h4>",
+        "text_align": "bottom-left",
+        "text_width": "full",
+        "show_view_all": false,
+        "button_label": "Shop now",
+        "button_style": "primary",
+        "button_link": "",
+        "margin_top": "xs",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_banner_4ykeA7": {
+      "type": "image-banner",
+      "settings": {
+        "full_width": false,
+        "color_scheme": "background-3",
+        "image": "shopify://shop_images/1-03_c7f347f5-3cab-44a4-b1ae-3ab7e2b7e14d.jpg",
+        "image_mobile": "shopify://shop_images/1-04_875e85a5-54ec-41e2-a6e3-9a6244f1e2eb.jpg",
+        "image_ratio": "adapt",
+        "image_link": "",
+        "opacity_overlay": 0,
+        "icon": "none",
+        "icon_color_scheme": "background-1",
+        "icon_size": "large",
+        "icon_style": "colored",
+        "icon_fill_type": "gradient",
+        "box_shadow": false,
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "heading": "Keep Track, Never Lose Your Things —— 6-Tech Positioning Technology",
+        "heading_size": "h4",
+        "heading_level": "h2",
+        "text_information": "",
+        "text_align": "bottom-left",
+        "text_width": "full",
+        "show_view_all": false,
+        "button_label": "Shop now",
+        "button_style": "primary",
+        "button_link": "",
+        "margin_top": "xs",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "banner_grid_pPtrkx": {
+      "type": "banner-grid",
+      "blocks": {
+        "card_GXPGDX": {
+          "type": "card",
+          "settings": {
+            "color_scheme": "background-3",
+            "image": "shopify://shop_images/1-05_ca942566-478d-4c80-842a-9a739145b297.jpg",
+            "overlay_opacity": 0,
+            "icon": "none",
+            "icon_size": "recommended",
+            "logo_width": 135,
+            "heading": "Active Radar Positioning",
+            "heading_size": "h4",
+            "heading_level": "h2",
+            "show_button": false,
+            "button_style": "simple_link",
+            "button_label": "",
+            "button_link": "",
+            "full_link": true
+          }
+        },
+        "card_7GNAKm": {
+          "type": "card",
+          "settings": {
+            "color_scheme": "background-3",
+            "image": "shopify://shop_images/1-06_d10626b8-1dd5-466e-aeea-77c13e3eb582.jpg",
+            "overlay_opacity": 0,
+            "icon": "none",
+            "icon_size": "recommended",
+            "logo_width": 135,
+            "heading": "Map-based Navigation for Longer Distances",
+            "heading_size": "h4",
+            "heading_level": "h3",
+            "show_button": false,
+            "button_style": "simple_link",
+            "button_label": "",
+            "button_link": "",
+            "full_link": true
+          }
+        },
+        "card_UVyVrg": {
+          "type": "card",
+          "settings": {
+            "color_scheme": "background-3",
+            "image": "shopify://shop_images/1-07_90986b2d-322f-4ffd-8f62-3f811dac1aaf.jpg",
+            "overlay_opacity": 0,
+            "icon": "none",
+            "icon_size": "recommended",
+            "logo_width": 135,
+            "heading": "Lost Mode: Notifies When the Device is Out of Range",
+            "heading_size": "h4",
+            "heading_level": "h3",
+            "show_button": false,
+            "button_style": "simple_link",
+            "button_label": "",
+            "button_link": "",
+            "full_link": true
+          }
+        },
+        "card_tQiXVn": {
+          "type": "card",
+          "settings": {
+            "color_scheme": "background-3",
+            "image": "shopify://shop_images/1-08_d0f8f7c9-f52e-4bf7-8265-db6a49caae6b.jpg",
+            "overlay_opacity": 0,
+            "icon": "none",
+            "icon_size": "recommended",
+            "logo_width": 135,
+            "heading": "Triple-Pressing to Activate the Emergency Wi-Fi",
+            "heading_size": "h4",
+            "heading_level": "h3",
+            "show_button": false,
+            "button_style": "simple_link",
+            "button_label": "",
+            "button_link": "",
+            "full_link": true
+          }
+        }
+      },
+      "block_order": [
+        "card_GXPGDX",
+        "card_7GNAKm",
+        "card_UVyVrg",
+        "card_tQiXVn"
+      ],
+      "custom_css": [],
+      "settings": {
+        "layout": "columns",
+        "columns": 2,
+        "enable_mobile_overflow_slider": false,
+        "color_scheme": "background-1",
+        "enable_border": false,
+        "border_full": false,
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "subheading_icon": "none",
+        "heading": "",
+        "heading_size": "h2",
+        "heading_level": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "left",
+        "gap": "24",
+        "border_radius": true,
+        "text_align_content": "bottom-left",
+        "icon_style": "contrast",
+        "icon_fill_type": "gradient",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "xs",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "rich_text_c6K8P7": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_fVMPtP": {
+          "type": "heading",
+          "settings": {
+            "heading": "One Device, Endless Possibilities",
+            "heading_size": "medium",
+            "heading_level": "h3"
+          }
+        },
+        "text_TYmG6a": {
+          "type": "text",
+          "settings": {
+            "text": "<h5>Whether you’re at home, traveling, in the office, or on the road, UniCord Plus meets your needs. Use it for tracking, charging, data transfer, or emergency Wi-Fi – all from a compact, lightweight device that fits in your pocket.</h5>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_fVMPtP",
+        "text_TYmG6a"
+      ],
+      "custom_css": [],
+      "settings": {
+        "color_scheme": "",
+        "full_width": true,
+        "alignment": "center",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent",
+        "padding_top": "l",
+        "padding_bottom": "no-indent"
+      }
+    },
+    "image_banner_Hdinrk": {
+      "type": "image-banner",
+      "settings": {
+        "full_width": false,
+        "color_scheme": "background-3",
+        "image": "shopify://shop_images/1-09_1.jpg",
+        "image_mobile": "shopify://shop_images/1-10_1.jpg",
+        "image_ratio": "adapt",
+        "image_link": "",
+        "opacity_overlay": 0,
+        "icon": "none",
+        "icon_color_scheme": "background-1",
+        "icon_size": "large",
+        "icon_style": "colored",
+        "icon_fill_type": "gradient",
+        "box_shadow": false,
+        "subheading": "",
+        "subheading_style": "subtitle subtitle--secondary",
+        "heading": "Your Emergency Wi-Fi Hotspot——Never Be Offline Again",
+        "heading_size": "h3",
+        "heading_level": "h2",
+        "text_information": "<p>Activate the emergency Wi-Fi hotspot by triple-pressing the device button or with one click via the GlocalMe app</p>",
+        "text_align": "bottom-left",
+        "text_width": "full",
+        "show_view_all": false,
+        "button_label": "Shop now",
+        "button_style": "primary",
+        "button_link": "",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_with_text_qBWD8z": {
+      "type": "image-with-text",
+      "settings": {
+        "layout": "image_last",
+        "color_scheme": "background-1",
+        "subheading": "",
+        "subheading_style": "subtitle subtitle--secondary",
+        "subheading_icon": "none",
+        "heading": "",
+        "heading_size": "h3",
+        "heading_level": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "left",
+        "inner_subheading": "",
+        "inner_heading": "Built-in Cloud SIM Technology, No SIM Required",
+        "inner_heading_size": "h3",
+        "inner_heading_level": "h2",
+        "inner_heading_line": "simple",
+        "inner_line_color": "#1566e0",
+        "inner_word_break": false,
+        "description": "<p><br/>Auto-connects to the Best Local Network, Whether for business or leisure, stay connected without the hassle of switching SIMs or dealing with spotty signals.<br/><br/></p>",
+        "text_align_inner": "center",
+        "image": "shopify://shop_images/1-11_01874917-0e6b-42af-8910-e460f64d5337.jpg",
+        "height": "landscape",
+        "overlay_opacity": 0,
+        "logo_width": 75,
+        "add_text": "",
+        "author_color_scheme": "background-1",
+        "icon_size": "recommended",
+        "box_shadow": false,
+        "icon_style": "colored",
+        "show_button": false,
+        "button_label": "Button label",
+        "button_link": "",
+        "button_style": "primary",
+        "show_button_2": false,
+        "button_label_2": "Button label",
+        "button_link_2": "",
+        "button_style_2": "simple",
+        "padding_top": "s",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_with_text_ykyqDW": {
+      "type": "image-with-text",
+      "settings": {
+        "layout": "text_last",
+        "color_scheme": "background-1",
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "subheading_icon": "none",
+        "heading": "",
+        "heading_size": "h2",
+        "heading_level": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "left",
+        "inner_subheading": "",
+        "inner_heading": "Global Network Coverage With Over 390 Carriers in 200+ Countries",
+        "inner_heading_size": "h3",
+        "inner_heading_level": "h2",
+        "inner_heading_line": "simple",
+        "inner_line_color": "#1566e0",
+        "inner_word_break": false,
+        "description": "<p>Enjoy seamless global connectivity with UniCord Plus, offering extensive network coverage across <strong>200+ countries </strong>and compatibility with <strong>390+ carriers</strong>, ensuring reliable service wherever you travel.</p>",
+        "text_align_inner": "center",
+        "image": "shopify://shop_images/1-12_906ca3dc-b0b5-4d1f-b91d-59122027f264.jpg",
+        "height": "landscape",
+        "overlay_opacity": 0,
+        "logo_width": 75,
+        "add_text": "",
+        "author_color_scheme": "",
+        "icon_size": "recommended",
+        "box_shadow": false,
+        "icon_style": "colored",
+        "show_button": false,
+        "button_label": "Button label",
+        "button_link": "",
+        "button_style": "primary",
+        "show_button_2": false,
+        "button_label_2": "Button label",
+        "button_link_2": "",
+        "button_style_2": "simple",
+        "padding_top": "xs",
+        "padding_bottom": "m",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_with_text_VPw8qm": {
+      "type": "image-with-text",
+      "settings": {
+        "layout": "image_last",
+        "color_scheme": "background-1",
+        "subheading": "",
+        "subheading_style": "subtitle subtitle--secondary",
+        "subheading_icon": "none",
+        "heading": "",
+        "heading_size": "h3",
+        "heading_level": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "left",
+        "inner_subheading": "",
+        "inner_heading": "Uncompromising Security, Anytime, Anywhere",
+        "inner_heading_size": "h3",
+        "inner_heading_level": "h2",
+        "inner_heading_line": "simple",
+        "inner_line_color": "#1566e0",
+        "inner_word_break": false,
+        "description": "<ul><li>Advanced Encryption Protocols</li><li>Automatic Network Authentication</li><li>Multi-Layer Firewall Protection</li><li>End-to-End Data Protection</li></ul>",
+        "text_align_inner": "center",
+        "image": "shopify://shop_images/1-13_e3e20136-f447-4141-ac1b-92d0059cd20f.jpg",
+        "height": "landscape",
+        "overlay_opacity": 0,
+        "logo_width": 75,
+        "add_text": "",
+        "author_color_scheme": "background-1",
+        "icon_size": "recommended",
+        "box_shadow": false,
+        "icon_style": "colored",
+        "show_button": false,
+        "button_label": "Button label",
+        "button_link": "",
+        "button_style": "primary",
+        "show_button_2": false,
+        "button_label_2": "Button label",
+        "button_link_2": "",
+        "button_style_2": "simple",
+        "padding_top": "s",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_slider_with_text_WmdQmz": {
+      "type": "image-slider-with-text",
+      "blocks": {
+        "column_wXNXGE": {
+          "type": "column",
+          "settings": {
+            "icon": "pulse",
+            "icon_fill_type": "gradient",
+            "heading": "Fast Charging",
+            "text": "Experience fast charging with UniCord Plus at maximum charging speed of 60W",
+            "image": "shopify://shop_images/1-14_1647c823-91f3-41f8-aa8c-8808acaf9a2b.jpg"
+          }
+        },
+        "column_PNgHbM": {
+          "type": "column",
+          "settings": {
+            "icon": "like",
+            "icon_fill_type": "gradient",
+            "heading": "Retractable",
+            "text": "Extend to max. of 2ft. Auto-lock - Pull and stop at any length you want",
+            "image": "shopify://shop_images/1-15_a48e7e6a-2c7a-4092-8592-b837c26ae428.jpg"
+          }
+        },
+        "column_ggjLWe": {
+          "type": "column",
+          "settings": {
+            "icon": "delivery-box",
+            "icon_fill_type": "gradient",
+            "heading": "Super Lightweight",
+            "text": "81g(2.86lb)",
+            "image": "shopify://shop_images/1-16_56c4cdda-993f-45f2-9344-a360d98c0deb.jpg"
+          }
+        },
+        "column_dpY476": {
+          "type": "column",
+          "settings": {
+            "icon": "battery-3",
+            "icon_fill_type": "gradient",
+            "heading": "Long Battery Life",
+            "text": "Built-in 350mAh battery, gets charged the same time as your device.",
+            "image": "shopify://shop_images/1-17_503894b0-eb26-4d88-9a10-4b9af615ee78.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "column_wXNXGE",
+        "column_PNgHbM",
+        "column_ggjLWe",
+        "column_dpY476"
+      ],
+      "settings": {
+        "layout": "image_last",
+        "color_scheme": "",
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "subheading_icon": "none",
+        "heading": "",
+        "heading_size": "h2",
+        "heading_level": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "left",
+        "inner_subheading": "",
+        "inner_heading": "Retractable 60W Type-C Charging Cable",
+        "inner_heading_size": "h2",
+        "inner_heading_level": "h2",
+        "inner_heading_line": "simple",
+        "inner_line_color": "#1566e0",
+        "inner_word_break": false,
+        "description": "<p>UniCord Plus offers ultra-fast 60W charging, while its built-in 350mAh battery charges simultaneously. Weighing only 81g, it features a retractable design extending up to 2ft and an auto-lock function for adjustable length. Experience effortless, high-speed charging on the go.</p>",
+        "text_align_inner": "center",
+        "height": "square",
+        "overlay_opacity": 0,
+        "logo_width": 75,
+        "add_text": "",
+        "author_color_scheme": "",
+        "icon_size": "recommended",
+        "box_shadow": false,
+        "icon_style": "colored",
+        "show_button": false,
+        "button_label": "Button label",
+        "button_link": "",
+        "button_style": "primary",
+        "show_button_2": false,
+        "button_label_2": "Button label",
+        "button_link_2": "",
+        "button_style_2": "simple",
+        "padding_top": "l",
+        "padding_bottom": "m",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "rich_text_wTxndi": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_tGPqez": {
+          "type": "heading",
+          "settings": {
+            "heading": "UniCord Plus Use Case",
+            "heading_size": "medium",
+            "heading_level": "h3"
+          }
+        }
+      },
+      "block_order": [
+        "heading_tGPqez"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "full_width": true,
+        "alignment": "left",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent",
+        "padding_top": "xs",
+        "padding_bottom": "no-indent"
+      }
+    },
+    "image_slider_Az7tQD": {
+      "type": "image-slider",
+      "blocks": {
+        "slide_AGBQG9": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/1-27_7b32711a-dd29-4e53-a0f8-ddead9224cc7.jpg"
+          }
+        },
+        "slide_bBCVME": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/1-26_5c5bbf6c-d87e-4ae7-84c3-b5dd512b347c.jpg"
+          }
+        },
+        "slide_zc8BdM": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/1-25_942667a4-0009-44fd-a1d6-4c177851aff9.jpg"
+          }
+        },
+        "slide_MipLFH": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/1-28_55504331-db69-4b20-a542-4e743e30db56.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "slide_AGBQG9",
+        "slide_bBCVME",
+        "slide_zc8BdM",
+        "slide_MipLFH"
+      ],
+      "settings": {
+        "display_devices": "desktop",
+        "cover_ratio": "adapt",
+        "enable_autoplay": true,
+        "slide_duration": 5,
+        "enable_pagination": true,
+        "enable_navigation": true,
+        "padding_top": "no-indent",
+        "padding_bottom": "s",
+        "margin_top": "xs",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_slider_nKRntR": {
+      "type": "image-slider",
+      "blocks": {
+        "slide_MEqpRQ": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/1-27_7b32711a-dd29-4e53-a0f8-ddead9224cc7.jpg"
+          }
+        },
+        "slide_FYLXWC": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/1-26_5c5bbf6c-d87e-4ae7-84c3-b5dd512b347c.jpg"
+          }
+        },
+        "slide_jVtfjJ": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/1-25_942667a4-0009-44fd-a1d6-4c177851aff9.jpg"
+          }
+        },
+        "slide_7W6jdT": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/1-28_55504331-db69-4b20-a542-4e743e30db56.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "slide_MEqpRQ",
+        "slide_FYLXWC",
+        "slide_jVtfjJ",
+        "slide_7W6jdT"
+      ],
+      "settings": {
+        "display_devices": "mobile",
+        "cover_ratio": "adapt",
+        "enable_autoplay": true,
+        "slide_duration": 5,
+        "enable_pagination": true,
+        "enable_navigation": true,
+        "padding_top": "no-indent",
+        "padding_bottom": "s",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "rich_text_9GaiGD": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_kxLDrN": {
+          "type": "heading",
+          "settings": {
+            "heading": "Why Choose UniCord Plus",
+            "heading_size": "medium",
+            "heading_level": "h3"
+          }
+        }
+      },
+      "block_order": [
+        "heading_kxLDrN"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "full_width": true,
+        "alignment": "left",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent",
+        "padding_top": "m",
+        "padding_bottom": "xs"
+      }
+    },
+    "image_banner_TYbrTD": {
+      "type": "image-banner",
+      "custom_css": [
+        "{margin-top: 0px !important;}"
+      ],
+      "settings": {
+        "full_width": false,
+        "color_scheme": "",
+        "image": "shopify://shop_images/1-18_346a3b36-3e50-49cf-b7a7-7785756c2a9a.jpg",
+        "image_mobile": "shopify://shop_images/1-19_739386f2-72f1-47c4-913b-cb4374a938f1.jpg",
+        "image_ratio": "adapt",
+        "image_link": "",
+        "opacity_overlay": 0,
+        "icon": "none",
+        "icon_color_scheme": "",
+        "icon_size": "large",
+        "icon_style": "colored",
+        "icon_fill_type": "gradient",
+        "box_shadow": false,
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "heading": "",
+        "heading_size": "h2",
+        "heading_level": "h2",
+        "text_information": "",
+        "text_align": "left",
+        "text_width": "small",
+        "show_view_all": false,
+        "button_label": "Shop now",
+        "button_style": "primary",
+        "button_link": "",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "rich_text_PyPTXA": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_yDfQU8": {
+          "type": "heading",
+          "settings": {
+            "heading": "Product specifications",
+            "heading_size": "medium",
+            "heading_level": "h3"
+          }
+        }
+      },
+      "block_order": [
+        "heading_yDfQU8"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "full_width": true,
+        "alignment": "left",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent",
+        "padding_top": "m",
+        "padding_bottom": "xs"
+      }
+    },
+    "image_banner_zJDYij": {
+      "type": "image-banner",
+      "settings": {
+        "full_width": false,
+        "color_scheme": "",
+        "image": "shopify://shop_images/1-22_1eb4075c-c1fd-4fc0-9ab0-416479a9cc07.jpg",
+        "image_mobile": "shopify://shop_images/1-23_02450f03-d403-4224-8a74-c1b6e4c00c37.jpg",
+        "image_ratio": "adapt",
+        "image_link": "",
+        "opacity_overlay": 0,
+        "icon": "none",
+        "icon_color_scheme": "",
+        "icon_size": "large",
+        "icon_style": "colored",
+        "icon_fill_type": "gradient",
+        "box_shadow": false,
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "heading": "",
+        "heading_size": "h2",
+        "heading_level": "h2",
+        "text_information": "",
+        "text_align": "left",
+        "text_width": "small",
+        "show_view_all": false,
+        "button_label": "Shop now",
+        "button_style": "primary",
+        "button_link": "",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_banner_Nq8MJY": {
+      "type": "image-banner",
+      "settings": {
+        "full_width": false,
+        "color_scheme": "",
+        "image": "shopify://shop_images/1-20_b285755e-2be3-4e63-8e13-5d7541fd6758.jpg",
+        "image_mobile": "shopify://shop_images/1-21_37280325-349d-4f65-a706-ecc10707c1f7.jpg",
+        "image_ratio": "adapt",
+        "image_link": "",
+        "opacity_overlay": 0,
+        "icon": "none",
+        "icon_color_scheme": "",
+        "icon_size": "large",
+        "icon_style": "colored",
+        "icon_fill_type": "gradient",
+        "box_shadow": false,
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "heading": "",
+        "heading_size": "h2",
+        "heading_level": "h2",
+        "text_information": "",
+        "text_align": "left",
+        "text_width": "small",
+        "show_view_all": false,
+        "button_label": "Shop now",
+        "button_style": "primary",
+        "button_link": "",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_with_text_prWffc": {
+      "type": "image-with-text",
+      "settings": {
+        "layout": "image_last",
+        "color_scheme": "",
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "subheading_icon": "none",
+        "heading": "",
+        "heading_size": "h2",
+        "heading_level": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "left",
+        "inner_subheading": "",
+        "inner_heading": "<strong>GlocalMe Mobile APP</strong>",
+        "inner_heading_size": "h2",
+        "inner_heading_level": "h2",
+        "inner_heading_line": "simple",
+        "inner_line_color": "#1566e0",
+        "inner_word_break": false,
+        "description": "<ul><li>Location service/Pay as you go.</li><li>UniCord Plus must be used in conjunction with the GlocalMe Mobile APP. Users need to order service packages within the app (all new devices come with a complimentary trial service, ready for immediate use upon activation).</li><li>Usage records, clear historical data at a glance.</li><li>Distance device management.</li><li>24/7 online live customer support.</li></ul>",
+        "text_align_inner": "center",
+        "image": "shopify://shop_images/1-24_545de17b-d38a-497e-8746-1ba93f21ee41.jpg",
+        "height": "square",
+        "overlay_opacity": 0,
+        "logo_width": 75,
+        "add_text": "",
+        "author_color_scheme": "",
+        "icon_size": "recommended",
+        "box_shadow": false,
+        "icon_style": "colored",
+        "show_button": false,
+        "button_label": "Button label",
+        "button_link": "",
+        "button_style": "primary",
+        "show_button_2": false,
+        "button_label_2": "Button label",
+        "button_link_2": "",
+        "button_style_2": "simple",
+        "padding_top": "xs",
+        "padding_bottom": "m",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "color_scheme": "background-1",
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "subheading_icon": "none",
+        "heading": "You May Also Like",
+        "heading_size": "h2",
+        "text": "",
+        "products_limit": 6,
+        "image_ratio": "1/1",
+        "image_fit": "cover",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_desc": false,
+        "padding_top": "l",
+        "padding_bottom": "l"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "video_qjUJFR",
+    "image_banner_TDL7wJ",
+    "image_banner_4ykeA7",
+    "banner_grid_pPtrkx",
+    "rich_text_c6K8P7",
+    "image_banner_Hdinrk",
+    "image_with_text_qBWD8z",
+    "image_with_text_ykyqDW",
+    "image_with_text_VPw8qm",
+    "image_slider_with_text_WmdQmz",
+    "rich_text_wTxndi",
+    "image_slider_Az7tQD",
+    "image_slider_nKRntR",
+    "rich_text_9GaiGD",
+    "image_banner_TYbrTD",
+    "rich_text_PyPTXA",
+    "image_banner_zJDYij",
+    "image_banner_Nq8MJY",
+    "image_with_text_prWffc",
+    "product-recommendations"
+  ]
+}

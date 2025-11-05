@@ -1,0 +1,699 @@
+<!-- sections/static-product-protection.liquid -->
+ 
+<section class="section static-shipping-info">
+  <div class="responsive-container">
+    <h1 class="h2">{{ 'product_protection_faq_title' | t }}</h1>
+ 
+    <style>
+      .responsive-container {
+        max-width: 1200px;
+        margin: 50px auto;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+      .static-shipping-info {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        line-height: 1.6;
+        color: #333;
+      }
+      .static-shipping-info h1 {
+        font-size: 2em;
+        margin-bottom: 1em;
+        font-weight: 600;
+      }
+      .static-shipping-info h2 {
+        margin-top: 2em;
+        font-size: 1.6em;
+        font-weight: 600;
+        color: #111;
+      }
+      .static-shipping-info strong {
+        font-weight: 600;
+      }
+      .static-shipping-info ul,
+      .static-shipping-info ol {
+        margin-bottom: 1.2em;
+        padding-left: 1.8em;
+      }
+      .static-shipping-info table {
+        border-collapse: collapse;
+        width: 100%;
+        margin: 20px 0;
+        font-size: 0.95em;
+      }
+      .static-shipping-info table,
+      .static-shipping-info th,
+      .static-shipping-info td {
+        border: 1px solid #ddd;
+      }
+      .static-shipping-info th,
+      .static-shipping-info td {
+        padding: 10px;
+        text-align: center;
+      }
+      .static-shipping-info .note {
+        margin-top: 10px;
+        font-weight: 600;
+        color: #444;
+      }
+      .static-shipping-info a {
+        color: #0066cc;
+        text-decoration: underline;
+      }
+ 
+      @media (max-width: 768px) {
+        .responsive-container {
+          padding: 16px;
+        }
+        .static-shipping-info table {
+          font-size: 0.85em;
+          overflow-x: auto;
+          display: block;
+        }
+      }
+    </style>
+ 
+    <p><strong>{{ 'q1' | t }}</strong></p>
+    <p><strong>{{ 'q1_a1_title' | t }}</strong> {{ 'q1_a1_content' | t }}</p>
+    <p><strong>{{ 'q1_a2_title' | t }}</strong> {{ 'q1_a2_content' | t }}</p>
+    <p><strong>{{ 'q1_a3_title' | t }}</strong> {{ 'q1_a3_content' | t }}</p>
+    <p><strong>{{ 'q1_a4_title' | t }}</strong> {{ 'q1_a4_content' | t }}</p>
+ 
+    <p><strong>{{ 'q2' | t }}</strong></p>
+    <p><strong>{{ 'q2_a1_title' | t }}</strong> {{ 'q2_a1_content' | t }}</p>
+    <blockquote>
+      <p><strong>{{ 'q2_a2_title' | t }}</strong> {{ 'q2_a2_content' | t }}</p>
+      <p><strong>{{ 'q2_example' | t }}</strong></p>
+    </blockquote>
+ 
+    <table>
+      <thead>
+        <tr>
+          <th>{{ 'year_1' | t }}</th>
+          <th>{{ 'year_2' | t }}</th>
+          <th>{{ 'year_3' | t }}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>{{ 'accidental_damage' | t }}</td>
+          <td>{{ 'accidental_damage' | t }}</td>
+          <td>{{ 'accidental_damage' | t }}</td>
+        </tr>
+        <tr>
+          <td>{{ 'manufacturer_warranty' | t }}</td>
+          <td>{{ 'extended_warranty' | t }}</td>
+          <td>{{ 'extended_warranty' | t }}</td>
+        </tr>
+      </tbody>
+    </table>
+ 
+    <p><strong>{{ 'q3' | t }}</strong></p>
+    <p><u>{{ 'q3_within_60' | t }}</u></p>
+    <ul>
+      <li>{{ 'q3_refund_no_claims' | t }}</li>
+      <li>{{ 'q3_refund_with_claims' | t }}</li>
+    </ul>
+ 
+    <p><u>{{ 'q3_after_60' | t }}</u></p>
+    <ul>
+      <li>{{ 'q3_refund_formula' | t }}</li>
+    </ul>
+ 
+    <p><strong>{{ 'q4' | t }}</strong></p>
+    <ol>
+      <li>{{ 'q4_step1_html' | t }}</li>
+      <li>{{ 'q4_step2_html' | t: email: 'support@xcottons.com' }}</li>
+    </ol>
+ 
+    <p><strong>{{ 'key_note' | t }}</strong> {{ 'liability_limit' | t }}</p>
+ 
+  </div>
+</section>
+
+{% schema %}
+{
+  "locales": {
+    "en": {
+      "product_protection_faq_title": "Product Protection FAQ",
+      "q1": "Q1: What does the Product Protection Plan cover?",
+      "q1_a1_title": "Accidental Damage during Handling:",
+      "q1_a1_content": "Unintentional damage such as drops, spills, cracked screens during normal use.",
+      "q1_a2_title": "Extended Warranty:",
+      "q1_a2_content": "Mechanical or electrical failure after the manufacturer's warranty ends.",
+      "q1_a3_title": "Power Surge:",
+      "q1_a3_content": "Protection from voltage spikes that could damage electronics.",
+      "q1_a4_title": "Battery Failure:",
+      "q1_a4_content": "One-time battery replacement.",
+      "q2": "Q2: When does coverage begin?",
+      "q2_a1_title": "Accidental Damage Protection:",
+      "q2_a1_content": "Starts immediately upon plan purchase.",
+      "q2_a2_title": "Extended Warranty:",
+      "q2_a2_content": "Starts after the manufacturer's warranty expires.",
+      "q2_example": "Example: A 3-year plan for a product with 1-year manufacturer's warranty:",
+      "year_1": "Year 1",
+      "year_2": "Year 2",
+      "year_3": "Year 3",
+      "accidental_damage": "Accidental Damage",
+      "manufacturer_warranty": "Manufacturer's Warranty",
+      "extended_warranty": "Extended Warranty",
+      "q3": "Q3: Can I cancel the plan?",
+      "q3_within_60": "Within 60 days of purchase:",
+      "q3_refund_no_claims": "No claims filed: Full refund (100%)",
+      "q3_refund_with_claims": "Claims filed: Refund = Plan price − claim amount paid",
+      "q3_after_60": "After 60 days of purchase:",
+      "q3_refund_formula": "Refund = [(Total coverage days − Days used) ÷ Total coverage days] × Plan price − paid claims − admin fee (max $50)",
+      "q4": "Q4: How are claims resolved?",
+      "q4_step1_html": "Visit the <strong><a href=\"https://sp.xcottons.com/parcel#/productProtection/protection-login\" target=\"_blank\" rel=\"noopener noreferrer\">Xcotton Resolution Center</a></strong>",
+      "q4_step2_html": "Email <strong>support@xcottons.com</strong>",
+      "key_note": "Key Note – Liability Limit:",
+      "liability_limit": "The total reimbursement will not exceed the product's original purchase price."
+    },
+    "de": {
+      "product_protection_faq_title": "Produktschutz FAQ",
+      "q1": "F1: Was deckt der Produktschutzplan ab?",
+      "q1_a1_title": "Unfallschaden während der Handhabung:",
+      "q1_a1_content": "Unbeabsichtigte Schäden wie Stürze, Verschüttungen, gebrochene Bildschirme bei normaler Nutzung.",
+      "q1_a2_title": "Verlängerte Garantie:",
+      "q1_a2_content": "Mechanische oder elektrische Defekte nach Ablauf der Herstellergarantie.",
+      "q1_a3_title": "Stromspannungsspitzen:",
+      "q1_a3_content": "Schutz vor Spannungsspitzen, die Elektronik beschädigen könnten.",
+      "q1_a4_title": "Batterieausfall:",
+      "q1_a4_content": "Einmaliger Batterieersatz.",
+      "q2": "F2: Wann beginnt der Schutz?",
+      "q2_a1_title": "Unfallschutz:",
+      "q2_a1_content": "Beginnt sofort nach Kauf des Plans.",
+      "q2_a2_title": "Verlängerte Garantie:",
+      "q2_a2_content": "Beginnt nach Ablauf der Herstellergarantie.",
+      "q2_example": "Beispiel: Ein 3-Jahres-Plan für ein Produkt mit 1-jähriger Herstellergarantie:",
+      "year_1": "Jahr 1",
+      "year_2": "Jahr 2",
+      "year_3": "Jahr 3",
+      "accidental_damage": "Unfallschaden",
+      "manufacturer_warranty": "Herstellergarantie",
+      "extended_warranty": "Verlängerte Garantie",
+      "q3": "F3: Kann ich den Plan kündigen?",
+      "q3_within_60": "Innerhalb von 60 Tagen nach Kauf:",
+      "q3_refund_no_claims": "Keine Ansprüche geltend gemacht: Vollständige Rückerstattung (100%)",
+      "q3_refund_with_claims": "Ansprüche geltend gemacht: Rückerstattung = Planpreis − gezahlte Ansprüche",
+      "q3_after_60": "Nach 60 Tagen ab Kauf:",
+      "q3_refund_formula": "Rückerstattung = [(Gesamttage − Genutzte Tage) ÷ Gesamttage] × Planpreis − gezahlte Ansprüche − Bearbeitungsgebühr (max. 50 $)",
+      "q4": "F4: Wie werden Ansprüche bearbeitet?",
+      "q4_step1_html": "Besuchen Sie das <strong><a href=\"https://sp.xcottons.com/parcel#/productProtection/protection-login\" target=\"_blank\" rel=\"noopener noreferrer\">Xcotton Resolution Center</a></strong>",
+      "q4_step2_html": "E-Mail an <strong>support@xcottons.com</strong>",
+      "key_note": "Wichtiger Hinweis – Haftungsbeschränkung:",
+      "liability_limit": "Die Gesamterstattung übersteigt nicht den ursprünglichen Kaufpreis des Produkts."
+    },
+    "fi": {
+      "product_protection_faq_title": "Tuotesuojaus UKK",
+      "q1": "K1: Mitä tuotesuojasuunnitelma kattaa?",
+      "q1_a1_title": "Vahinkovauriot käsittelyn aikana:",
+      "q1_a1_content": "Vahingolliset vauriot kuten pudotukset, läikäytykset, rikkoutuneet näytöt normaalikäytön aikana.",
+      "q1_a2_title": "Pidennetty takuu:",
+      "q1_a2_content": "Mekaaninen tai sähköinen vika valmistajan takuun päättymisen jälkeen.",
+      "q1_a3_title": "Jännitepiikki:",
+      "q1_a3_content": "Suojaus jännitepiikeiltä, jotka voivat vaurioittaa elektroniikkaa.",
+      "q1_a4_title": "Akun vikaantuminen:",
+      "q1_a4_content": "Kertakorvaus akun vaihdosta.",
+      "q2": "K2: Milloin suojaus alkaa?",
+      "q2_a1_title": "Vahinkovauriosuoja:",
+      "q2_a1_content": "Alkaa välittömästi suunnitelman ostamisen jälkeen.",
+      "q2_a2_title": "Pidennetty takuu:",
+      "q2_a2_content": "Alkaa valmistajan takuun päättymisen jälkeen.",
+      "q2_example": "Esimerkki: 3 vuoden suunnitelma tuotteelle, jolla on 1 vuoden valmistajan takuu:",
+      "year_1": "Vuosi 1",
+      "year_2": "Vuosi 2",
+      "year_3": "Vuosi 3",
+      "accidental_damage": "Vahinkovaurio",
+      "manufacturer_warranty": "Valmistajan takuu",
+      "extended_warranty": "Pidennetty takuu",
+      "q3": "K3: Voinko peruuttaa suunnitelman?",
+      "q3_within_60": "60 päivän kuluessa ostosta:",
+      "q3_refund_no_claims": "Ei korvausvaatimuksia: Täysi hyvitys (100%)",
+      "q3_refund_with_claims": "Korvausvaatimuksia: Hyvitys = Suunnitelman hinta − maksetut korvaukset",
+      "q3_after_60": "60 päivän jälkeen ostosta:",
+      "q3_refund_formula": "Hyvitys = [(Kokonaispäivät − Käytetyt päivät) ÷ Kokonaispäivät] × Suunnitelman hinta − maksetut korvaukset − hallintomaksu (enintään 50 $)",
+      "q4": "K4: Miten korvausvaatimukset käsitellään?",
+      "q4_step1_html": "Vieraile <strong><a href=\"https://sp.xcottons.com/parcel#/productProtection/protection-login\" target=\"_blank\" rel=\"noopener noreferrer\">Xcotton Resolution Centerissä</a></strong>",
+      "q4_step2_html": "Lähetä sähköpostia <strong>support@xcottons.com</strong>",
+      "key_note": "Tärkeä huomio - Vastuuraja:",
+      "liability_limit": "Kokonaishyvitys ei ylitä tuotteen alkuperäistä ostohintaa."
+    },
+    "no": {
+      "product_protection_faq_title": "Produktbeskyttelse FAQ",
+      "q1": "Q1: Hva dekker produktbeskyttelsesplanen?",
+      "q1_a1_title": "Uhelleskade under håndtering:",
+      "q1_a1_content": "Utilsiktede skader som fall, søl, sprukne skjermer under normal bruk.",
+      "q1_a2_title": "Utvidet garanti:",
+      "q1_a2_content": "Mekanisk eller elektrisk svikt etter at produsentens garanti utløper.",
+      "q1_a3_title": "Strømsvings:",
+      "q1_a3_content": "Beskyttelse mot spenningsspisser som kan skade elektronikk.",
+      "q1_a4_title": "Batterisvikt:",
+      "q1_a4_content": "Enkelttilfelle av batteribytte.",
+      "q2": "Q2: Når begynner dekningen?",
+      "q2_a1_title": "Uhelleskadebeskyttelse:",
+      "q2_a1_content": "Starter umiddelbart ved kjøp av planen.",
+      "q2_a2_title": "Utvidet garanti:",
+      "q2_a2_content": "Starter etter at produsentens garanti utløper.",
+      "q2_example": "Eksempel: En 3-års plan for et produkt med 1-års produsentgaranti:",
+      "year_1": "År 1",
+      "year_2": "År 2",
+      "year_3": "År 3",
+      "accidental_damage": "Uhelleskade",
+      "manufacturer_warranty": "Produsentgaranti",
+      "extended_warranty": "Utvidet garanti",
+      "q3": "Q3: Kan jeg avbryte planen?",
+      "q3_within_60": "Innen 60 dager etter kjøp:",
+      "q3_refund_no_claims": "Ingen krav innsendt: Full refusjon (100%)",
+      "q3_refund_with_claims": "Krav innsendt: Refusjon = Planpris − utbetalt kravbeløp",
+      "q3_after_60": "Etter 60 dager etter kjøp:",
+      "q3_refund_formula": "Refusjon = [(Totale dekningsdager − Brukte dager) ÷ Totale dekningsdager] × Planpris − utbetalte krav − admingebyr (maks 50 $)",
+      "q4": "Q4: Hvordan håndteres krav?",
+      "q4_step1_html": "Besøk <strong><a href=\"https://sp.xcottons.com/parcel#/productProtection/protection-login\" target=\"_blank\" rel=\"noopener noreferrer\">Xcotton Resolution Center</a></strong>",
+      "q4_step2_html": "E-post til <strong>support@xcottons.com</strong>",
+      "key_note": "Viktig merknad - Ansvarsbegrensning:",
+      "liability_limit": "Total erstatning vil ikke overstige produktets opprinnelige kjøpesum."
+    },
+    "es": {
+      "product_protection_faq_title": "Preguntas frecuentes sobre Protección de Producto",
+      "q1": "P1: ¿Qué cubre el Plan de Protección de Producto?",
+      "q1_a1_title": "Daño accidental durante el manejo:",
+      "q1_a1_content": "Daño no intencional como caídas, derrames, pantallas agrietadas durante el uso normal.",
+      "q1_a2_title": "Garantía extendida:",
+      "q1_a2_content": "Falla mecánica o eléctrica después de que finalice la garantía del fabricante.",
+      "q1_a3_title": "Sobretensión eléctrica:",
+      "q1_a3_content": "Protección contra picos de voltaje que podrían dañar los electrónicos.",
+      "q1_a4_title": "Falla de batería:",
+      "q1_a4_content": "Reemplazo de batería por única vez.",
+      "q2": "P2: ¿Cuándo comienza la cobertura?",
+      "q2_a1_title": "Protección contra daños accidentales:",
+      "q2_a1_content": "Comienza inmediatamente al comprar el plan.",
+      "q2_a2_title": "Garantía extendida:",
+      "q2_a2_content": "Comienza después de que expire la garantía del fabricante.",
+      "q2_example": "Ejemplo: Un plan de 3 años para un producto con garantía de 1 año del fabricante:",
+      "year_1": "Año 1",
+      "year_2": "Año 2",
+      "year_3": "Año 3",
+      "accidental_damage": "Daño accidental",
+      "manufacturer_warranty": "Garantía del fabricante",
+      "extended_warranty": "Garantía extendida",
+      "q3": "P3: ¿Puedo cancelar el plan?",
+      "q3_within_60": "Dentro de los 60 días posteriores a la compra:",
+      "q3_refund_no_claims": "Sin reclamos presentados: Reembolso completo (100%)",
+      "q3_refund_with_claims": "Reclamos presentados: Reembolso = Precio del plan − monto de reclamo pagado",
+      "q3_after_60": "Después de 60 días de la compra:",
+      "q3_refund_formula": "Reembolso = [(Días totales de cobertura − Días usados) ÷ Días totales de cobertura] × Precio del plan − reclamos pagados − tarifa administrativa (máx. $50)",
+      "q4": "P4: ¿Cómo se resuelven los reclamos?",
+      "q4_step1_html": "Visite el <strong><a href=\"https://sp.xcottons.com/parcel#/productProtection/protection-login\" target=\"_blank\" rel=\"noopener noreferrer\">Centro de Resolución Xcotton</a></strong>",
+      "q4_step2_html": "Envíe un correo a <strong>support@xcottons.com</strong>",
+      "key_note": "Nota clave - Límite de responsabilidad:",
+      "liability_limit": "El reembolso total no excederá el precio de compra original del producto."
+    },
+    "ru": {
+      "product_protection_faq_title": "Часто задаваемые вопросы о защите продукта",
+      "q1": "В1: Что покрывает план защиты продукта?",
+      "q1_a1_title": "Случайные повреждения при обращении:",
+      "q1_a1_content": "Непреднамеренные повреждения, такие как падения, пролитие жидкости, треснувшие экраны при нормальном использовании.",
+      "q1_a2_title": "Расширенная гарантия:",
+      "q1_a2_content": "Механические или электрические неисправности после окончания гарантии производителя.",
+      "q1_a3_title": "Скачки напряжения:",
+      "q1_a3_content": "Защита от скачков напряжения, которые могут повредить электронику.",
+      "q1_a4_title": "Отказ батареи:",
+      "q1_a4_content": "Однократная замена батареи.",
+      "q2": "В2: Когда начинается покрытие?",
+      "q2_a1_title": "Защита от случайных повреждений:",
+      "q2_a1_content": "Начинается сразу после покупки плана.",
+      "q2_a2_title": "Расширенная гарантия:",
+      "q2_a2_content": "Начинается после окончания гарантии производителя.",
+      "q2_example": "Пример: 3-летний план для продукта с 1-летней гарантией производителя:",
+      "year_1": "Год 1",
+      "year_2": "Год 2",
+      "year_3": "Год 3",
+      "accidental_damage": "Случайные повреждения",
+      "manufacturer_warranty": "Гарантия производителя",
+      "extended_warranty": "Расширенная гарантия",
+      "q3": "В3: Могу ли я отменить план?",
+      "q3_within_60": "В течение 60 дней с момента покупки:",
+      "q3_refund_no_claims": "Нет заявленных претензий: Полный возврат (100%)",
+      "q3_refund_with_claims": "Есть претензии: Возврат = Цена плана − сумма выплаченных претензий",
+      "q3_after_60": "После 60 дней с момента покупки:",
+      "q3_refund_formula": "Возврат = [(Общее количество дней покрытия − Использованные дни) ÷ Общее количество дней покрытия] × Цена плана − выплаченные претензии − административный сбор (макс. $50)",
+      "q4": "В4: Как решаются претензии?",
+      "q4_step1_html": "Посетите <strong><a href=\"https://sp.xcottons.com/parcel#/productProtection/protection-login\" target=\"_blank\" rel=\"noopener noreferrer\">Центр разрешения вопросов Xcotton</a></strong>",
+      "q4_step2_html": "Напишите на <strong>support@xcottons.com</strong>",
+      "key_note": "Ключевое примечание - Ограничение ответственности:",
+      "liability_limit": "Общая сумма возмещения не превысит первоначальную цену покупки продукта."
+    },
+    "pl": {
+      "product_protection_faq_title": "FAQ dotyczące ochrony produktu",
+      "q1": "P1: Co obejmuje Plan Ochrony Produktu?",
+      "q1_a1_title": "Uszkodzenia przypadkowe podczas użytkowania:",
+      "q1_a1_content": "Nieumyślne uszkodzenia, takie jak upuszczenia, rozlania, pęknięte ekrany podczas normalnego użytkowania.",
+      "q1_a2_title": "Przedłużona gwarancja:",
+      "q1_a2_content": "Usterki mechaniczne lub elektryczne po wygaśnięciu gwarancji producenta.",
+      "q1_a3_title": "Skoki napięcia:",
+      "q1_a3_content": "Ochrona przed skokami napięcia, które mogą uszkodzić elektronikę.",
+      "q1_a4_title": "Awaria baterii:",
+      "q1_a4_content": "Jednorazowa wymiana baterii.",
+      "q2": "P2: Kiedy zaczyna się ochrona?",
+      "q2_a1_title": "Ochrona przed uszkodzeniami przypadkowymi:",
+      "q2_a1_content": "Rozpoczyna się natychmiast po zakupie planu.",
+      "q2_a2_title": "Przedłużona gwarancja:",
+      "q2_a2_content": "Rozpoczyna się po wygaśnięciu gwarancji producenta.",
+      "q2_example": "Przykład: 3-letni plan dla produktu z 1-letnią gwarancją producenta:",
+      "year_1": "Rok 1",
+      "year_2": "Rok 2",
+      "year_3": "Rok 3",
+      "accidental_damage": "Uszkodzenie przypadkowe",
+      "manufacturer_warranty": "Gwarancja producenta",
+      "extended_warranty": "Przedłużona gwarancja",
+      "q3": "P3: Czy mogę anulować plan?",
+      "q3_within_60": "W ciągu 60 dni od zakupu:",
+      "q3_refund_no_claims": "Brak zgłoszonych roszczeń: Pełny zwrot kosztów (100%)",
+      "q3_refund_with_claims": "Zgłoszone roszczenia: Zwrot = Cena planu − wypłacona kwota roszczeń",
+      "q3_after_60": "Po 60 dniach od zakupu:",
+      "q3_refund_formula": "Zwrot = [(Łączna liczba dni ochrony − Wykorzystane dni) ÷ Łączna liczba dni ochrony] × Cena planu − wypłacone roszczenia − opłata administracyjna (maks. 50 $)",
+      "q4": "P4: Jak rozpatrywane są roszczenia?",
+      "q4_step1_html": "Odwiedź <strong><a href=\"https://sp.xcottons.com/parcel#/productProtection/protection-login\" target=\"_blank\" rel=\"noopener noreferrer\">Centrum Rozwiązywania Problemów Xcotton</a></strong>",
+      "q4_step2_html": "Wyślij e-mail na <strong>support@xcottons.com</strong>",
+      "key_note": "Kluczowa uwaga - Limit odpowiedzialności:",
+      "liability_limit": "Całkowite odszkodowanie nie przekroczy pierwotnej ceny zakupu produktu."
+    },
+    "sv": {
+      "product_protection_faq_title": "Produktskydd FAQ",
+      "q1": "F1: Vad täcker Produktskyddsplanen?",
+      "q1_a1_title": "Olycksskador under hantering:",
+      "q1_a1_content": "Oavsiktliga skador som tapp, spill, spruckna skärmar vid normal användning.",
+      "q1_a2_title": "Förlängd garanti:",
+      "q1_a2_content": "Mekanisk eller elektrisk fel efter tillverkarens garanti upphör.",
+      "q1_a3_title": "Överspänning:",
+      "q1_a3_content": "Skydd mot spänningsspikar som kan skada elektronik.",
+      "q1_a4_title": "Batterifel:",
+      "q1_a4_content": "Engångsersättning av batteri.",
+      "q2": "F2: När börjar täckningen?",
+      "q2_a1_title": "Olycksskydd:",
+      "q2_a1_content": "Börjar omedelbart vid köp av planen.",
+      "q2_a2_title": "Förlängd garanti:",
+      "q2_a2_content": "Börjar efter tillverkarens garanti upphör.",
+      "q2_example": "Exempel: En 3-års plan för en produkt med 1-års tillverkargaranti:",
+      "year_1": "År 1",
+      "year_2": "År 2",
+      "year_3": "År 3",
+      "accidental_damage": "Olycksskada",
+      "manufacturer_warranty": "Tillverkarens garanti",
+      "extended_warranty": "Förlängd garanti",
+      "q3": "F3: Kan jag avbryta planen?",
+      "q3_within_60": "Inom 60 dagar från köp:",
+      "q3_refund_no_claims": "Inga anspråk inlämnade: Full återbetalning (100%)",
+      "q3_refund_with_claims": "Anspråk inlämnade: Återbetalning = Planpris − utbetalda anspråk",
+      "q3_after_60": "Efter 60 dagar från köp:",
+      "q3_refund_formula": "Återbetalning = [(Totala täckningsdagar − Använda dagar) ÷ Totala täckningsdagar] × Planpris − utbetalda anspråk − adminavgift (max 50 $)",
+      "q4": "F4: Hur hanteras anspråk?",
+      "q4_step1_html": "Besök <strong><a href=\"https://sp.xcottons.com/parcel#/productProtection/protection-login\" target=\"_blank\" rel=\"noopener noreferrer\">Xcottons Lösningscenter</a></strong>",
+      "q4_step2_html": "Mejla till <strong>support@xcottons.com</strong>",
+      "key_note": "Viktig notering - Ansvarigräns:",
+      "liability_limit": "Total ersättning överstiger inte produktens ursprungliga inköpspris."
+    },
+    "nl": {
+      "product_protection_faq_title": "Productbescherming FAQ",
+      "q1": "V1: Wat dekt het Productbeschermingsplan?",
+      "q1_a1_title": "Onopzettelijke schade tijdens gebruik:",
+      "q1_a1_content": "Onbedoelde schade zoals vallen, morsen, gebarsten schermen tijdens normaal gebruik.",
+      "q1_a2_title": "Verlengde garantie:",
+      "q1_a2_content": "Mechanisch of elektrisch falen na afloop van de fabrieksgarantie.",
+      "q1_a3_title": "Spanningspieken:",
+      "q1_a3_content": "Bescherming tegen spanningspieken die elektronica kunnen beschadigen.",
+      "q1_a4_title": "Batterijfalen:",
+      "q1_a4_content": "Eenmalige batterijvervanging.",
+      "q2": "V2: Wanneer begint de dekking?",
+      "q2_a1_title": "Onopzettelijke schadebescherming:",
+      "q2_a1_content": "Begint direct na aankoop van het plan.",
+      "q2_a2_title": "Verlengde garantie:",
+      "q2_a2_content": "Begint na afloop van de fabrieksgarantie.",
+      "q2_example": "Voorbeeld: Een 3-jarenplan voor een product met 1 jaar fabrieksgarantie:",
+      "year_1": "Jaar 1",
+      "year_2": "Jaar 2",
+      "year_3": "Jaar 3",
+      "accidental_damage": "Onopzettelijke schade",
+      "manufacturer_warranty": "Fabrieksgarantie",
+      "extended_warranty": "Verlengde garantie",
+      "q3": "V3: Kan ik het plan annuleren?",
+      "q3_within_60": "Binnen 60 dagen na aankoop:",
+      "q3_refund_no_claims": "Geen claims ingediend: Volledige terugbetaling (100%)",
+      "q3_refund_with_claims": "Claims ingediend: Terugbetaling = Planprijs − uitbetaald claimbedrag",
+      "q3_after_60": "Na 60 dagen na aankoop:",
+      "q3_refund_formula": "Terugbetaling = [(Totale dekkingdagen − Gebruikte dagen) ÷ Totale dekkingdagen] × Planprijs − uitbetaalde claims − administratiekosten (max €50)",
+      "q4": "V4: Hoe worden claims afgehandeld?",
+      "q4_step1_html": "Bezoek het <strong><a href=\"https://sp.xcottons.com/parcel#/productProtection/protection-login\" target=\"_blank\" rel=\"noopener noreferrer\">Xcotton Oplossingscentrum</a></strong>",
+      "q4_step2_html": "E-mail naar <strong>support@xcottons.com</strong>",
+      "key_note": "Belangrijke opmerking - Aansprakelijkheidslimiet:",
+      "liability_limit": "De totale vergoeding overschrijdt niet de oorspronkelijke aankoopprijs van het product."
+    },
+    "fr": {
+      "product_protection_faq_title": "FAQ sur la Protection Produit",
+      "q1": "Q1 : Que couvre le Plan de Protection Produit ?",
+      "q1_a1_title": "Dommages accidentels lors de la manipulation :",
+      "q1_a1_content": "Dommages involontaires tels que chutes, renversements, écrans fissurés lors d'une utilisation normale.",
+      "q1_a2_title": "Garantie prolongée :",
+      "q1_a2_content": "Défaillance mécanique ou électrique après la fin de la garantie du fabricant.",
+      "q1_a3_title": "Surtension :",
+      "q1_a3_content": "Protection contre les pics de tension pouvant endommager l'électronique.",
+      "q1_a4_title": "Défaillance de la batterie :",
+      "q1_a4_content": "Remplacement unique de la batterie.",
+      "q2": "Q2 : Quand la couverture commence-t-elle ?",
+      "q2_a1_title": "Protection contre les dommages accidentels :",
+      "q2_a1_content": "Commence immédiatement après l'achat du plan.",
+      "q2_a2_title": "Garantie prolongée :",
+      "q2_a2_content": "Commence après l'expiration de la garantie du fabricant.",
+      "q2_example": "Exemple : Un plan de 3 ans pour un produit avec une garantie fabricant de 1 an :",
+      "year_1": "Année 1",
+      "year_2": "Année 2",
+      "year_3": "Année 3",
+      "accidental_damage": "Dommage accidentel",
+      "manufacturer_warranty": "Garantie fabricant",
+      "extended_warranty": "Garantie prolongée",
+      "q3": "Q3 : Puis-je annuler le plan ?",
+      "q3_within_60": "Dans les 60 jours suivant l'achat :",
+      "q3_refund_no_claims": "Aucune réclamation déposée : Remboursement intégral (100%)",
+      "q3_refund_with_claims": "Réclamations déposées : Remboursement = Prix du plan − montant des réclamations payées",
+      "q3_after_60": "Après 60 jours d'achat :",
+      "q3_refund_formula": "Remboursement = [(Jours totaux de couverture − Jours utilisés) ÷ Jours totaux de couverture] × Prix du plan − réclamations payées − frais admin (max 50 $)",
+      "q4": "Q4 : Comment les réclamations sont-elles traitées ?",
+      "q4_step1_html": "Visitez le <strong><a href=\"https://sp.xcottons.com/parcel#/productProtection/protection-login\" target=\"_blank\" rel=\"noopener noreferrer\">Centre de Résolution Xcotton</a></strong>",
+      "q4_step2_html": "Envoyez un email à <strong>support@xcottons.com</strong>",
+      "key_note": "Note importante - Limite de responsabilité :",
+      "liability_limit": "Le remboursement total ne dépassera pas le prix d'achat original du produit."
+    },
+    "it": {
+      "product_protection_faq_title": "FAQ Protezione Prodotto",
+      "q1": "D1: Cosa copre il Piano di Protezione Prodotto?",
+      "q1_a1_title": "Danni accidentali durante l'uso:",
+      "q1_a1_content": "Danni involontari come cadute, versamenti, schermi incrinati durante l'uso normale.",
+      "q1_a2_title": "Garanzia estesa:",
+      "q1_a2_content": "Guasti meccanici o elettrici dopo la scadenza della garanzia del produttore.",
+      "q1_a3_title": "Sbalzi di tensione:",
+      "q1_a3_content": "Protezione da picchi di tensione che potrebbero danneggiare l'elettronica.",
+      "q1_a4_title": "Guasto della batteria:",
+      "q1_a4_content": "Sostituzione una tantum della batteria.",
+      "q2": "D2: Quando inizia la copertura?",
+      "q2_a1_title": "Protezione danni accidentali:",
+      "q2_a1_content": "Inizia immediatamente all'acquisto del piano.",
+      "q2_a2_title": "Garanzia estesa:",
+      "q2_a2_content": "Inizia dopo la scadenza della garanzia del produttore.",
+      "q2_example": "Esempio: Un piano di 3 anni per un prodotto con garanzia del produttore di 1 anno:",
+      "year_1": "Anno 1",
+      "year_2": "Anno 2",
+      "year_3": "Anno 3",
+      "accidental_damage": "Danno accidentale",
+      "manufacturer_warranty": "Garanzia del produttore",
+      "extended_warranty": "Garanzia estesa",
+      "q3": "D3: Posso annullare il piano?",
+      "q3_within_60": "Entro 60 giorni dall'acquisto:",
+      "q3_refund_no_claims": "Nessun reclamo presentato: Rimborso completo (100%)",
+      "q3_refund_with_claims": "Reclami presentati: Rimborso = Prezzo piano − importo reclamo pagato",
+      "q3_after_60": "Dopo 60 giorni dall'acquisto:",
+      "q3_refund_formula": "Rimborso = [(Giorni totali copertura − Giorni utilizzati) ÷ Giorni totali copertura] × Prezzo piano − reclami pagati − costo amministrativo (max 50 $)",
+      "q4": "D4: Come vengono gestiti i reclami?",
+      "q4_step1_html": "Visita il <strong><a href=\"https://sp.xcottons.com/parcel#/productProtection/protection-login\" target=\"_blank\" rel=\"noopener noreferrer\">Centro Risoluzione Xcotton</a></strong>",
+      "q4_step2_html": "Invia email a <strong>support@xcottons.com</strong>",
+      "key_note": "Nota importante - Limite di responsabilità:",
+      "liability_limit": "Il rimborso totale non supererà il prezzo originale di acquisto del prodotto."
+    },
+    "pt": {
+      "product_protection_faq_title": "Perguntas Frequentes sobre Proteção de Produto",
+      "q1": "P1: O que cobre o Plano de Proteção de Produto?",
+      "q1_a1_title": "Danos acidentais durante o manuseio:",
+      "q1_a1_content": "Danos não intencionais como quedas, derramamentos, telas rachadas durante o uso normal.",
+      "q1_a2_title": "Garantia estendida:",
+      "q1_a2_content": "Falha mecânica ou elétrica após o término da garantia do fabricante.",
+      "q1_a3_title": "Picos de energia:",
+      "q1_a3_content": "Proteção contra picos de tensão que podem danificar eletrônicos.",
+      "q1_a4_title": "Falha da bateria:",
+      "q1_a4_content": "Substituição única da bateria.",
+      "q2": "P2: Quando a cobertura começa?",
+      "q2_a1_title": "Proteção contra danos acidentais:",
+      "q2_a1_content": "Começa imediatamente após a compra do plano.",
+      "q2_a2_title": "Garantia estendida:",
+      "q2_a2_content": "Começa após o término da garantia do fabricante.",
+      "q2_example": "Exemplo: Um plano de 3 anos para um produto com garantia de 1 ano do fabricante:",
+      "year_1": "Ano 1",
+      "year_2": "Ano 2",
+      "year_3": "Ano 3",
+      "accidental_damage": "Danos acidentais",
+      "manufacturer_warranty": "Garantia do fabricante",
+      "extended_warranty": "Garantia estendida",
+      "q3": "P3: Posso cancelar o plano?",
+      "q3_within_60": "Dentro de 60 dias após a compra:",
+      "q3_refund_no_claims": "Nenhuma reclamação feita: Reembolso total (100%)",
+      "q3_refund_with_claims": "Reclamações feitas: Reembolso = Preço do plano − valor pago em reclamações",
+      "q3_after_60": "Após 60 dias da compra:",
+      "q3_refund_formula": "Reembolso = [(Dias totais de cobertura − Dias usados) ÷ Dias totais de cobertura] × Preço do plano − reclamações pagas − taxa administrativa (máx. $50)",
+      "q4": "P4: Como as reclamações são resolvidas?",
+      "q4_step1_html": "Visite o <strong><a href=\"https://sp.xcottons.com/parcel#/productProtection/protection-login\" target=\"_blank\" rel=\"noopener noreferrer\">Centro de Resolução Xcotton</a></strong>",
+      "q4_step2_html": "Envie email para <strong>support@xcottons.com</strong>",
+      "key_note": "Nota importante - Limite de responsabilidade:",
+      "liability_limit": "O reembolso total não excederá o preço original de compra do produto."
+    },
+    "uk": {
+      "product_protection_faq_title": "Часті запитання про захист продукту",
+      "q1": "З1: Що покриває план захисту продукту?",
+      "q1_a1_title": "Випадкові пошкодження під час використання:",
+      "q1_a1_content": "Ненавмисні пошкодження, такі як падіння, розливи, тріснуті екрани під час нормального використання.",
+      "q1_a2_title": "Розширена гарантія:",
+      "q1_a2_content": "Механічні або електричні несправності після закінчення гарантії виробника.",
+      "q1_a3_title": "Стрибки напруги:",
+      "q1_a3_content": "Захист від стрибків напруги, які можуть пошкодити електроніку.",
+      "q1_a4_title": "Вихід з ладу акумулятора:",
+      "q1_a4_content": "Одноразова заміна акумулятора.",
+      "q2": "З2: Коли починається покриття?",
+      "q2_a1_title": "Захист від випадкових пошкоджень:",
+      "q2_a1_content": "Починається відразу після придбання плану.",
+      "q2_a2_title": "Розширена гарантія:",
+      "q2_a2_content": "Починається після закінчення гарантії виробника.",
+      "q2_example": "Приклад: 3-річний план для продукту з 1-річною гарантією виробника:",
+      "year_1": "Рік 1",
+      "year_2": "Рік 2",
+      "year_3": "Рік 3",
+      "accidental_damage": "Випадкові пошкодження",
+      "manufacturer_warranty": "Гарантія виробника",
+      "extended_warranty": "Розширена гарантія",
+      "q3": "З3: Чи можу я скасувати план?",
+      "q3_within_60": "Протягом 60 днів з моменту покупки:",
+      "q3_refund_no_claims": "Жодних претензій не подано: Повне відшкодування (100%)",
+      "q3_refund_with_claims": "Подано претензії: Відшкодування = Ціна плану − сума виплачених претензій",
+      "q3_after_60": "Після 60 днів з моменту покупки:",
+      "q3_refund_formula": "Відшкодування = [(Загальна кількість днів покриття − Використані дні) ÷ Загальна кількість днів покриття] × Ціна плану − виплачені претензії − адміністративний збір (макс. 50 $)",
+      "q4": "З4: Як вирішуються претензії?",
+      "q4_step1_html": "Відвідайте <strong><a href=\"https://sp.xcottons.com/parcel#/productProtection/protection-login\" target=\"_blank\" rel=\"noopener noreferrer\">Центр вирішення питань Xcotton</a></strong>",
+      "q4_step2_html": "Напишіть на <strong>support@xcottons.com</strong>",
+      "key_note": "Ключова примітка - Обмеження відповідальності:",
+      "liability_limit": "Загальне відшкодування не перевищить початкову ціну покупки продукту."
+    },
+    "ro": {
+      "product_protection_faq_title": "Întrebări frecvente despre Protecția Produsului",
+      "q1": "Î1: Ce acoperă Planul de Protecție a Produsului?",
+      "q1_a1_title": "Daune accidentale în timpul manipulării:",
+      "q1_a1_content": "Daune neintenționate cum ar fi căderi, vărsături, ecrane sparte în timpul utilizării normale.",
+      "q1_a2_title": "Garanție extinsă:",
+      "q1_a2_content": "Defecțiuni mecanice sau electrice după expirarea garanției producătorului.",
+      "q1_a3_title": "Supratensiuni:",
+      "q1_a3_content": "Protecție împotriva supratensiunilor care ar putea deteriora electronicele.",
+      "q1_a4_title": "Defecțiunea bateriei:",
+      "q1_a4_content": "Înlocuire unică a bateriei.",
+      "q2": "Î2: Când începe acoperirea?",
+      "q2_a1_title": "Protecție împotriva daunelor accidentale:",
+      "q2_a1_content": "Începe imediat după achiziționarea planului.",
+      "q2_a2_title": "Garanție extinsă:",
+      "q2_a2_content": "Începe după expirarea garanției producătorului.",
+      "q2_example": "Exemplu: Un plan de 3 ani pentru un produs cu garanție producător de 1 an:",
+      "year_1": "Anul 1",
+      "year_2": "Anul 2",
+      "year_3": "Anul 3",
+      "accidental_damage": "Daune accidentale",
+      "manufacturer_warranty": "Garanția producătorului",
+      "extended_warranty": "Garanție extinsă",
+      "q3": "Î3: Pot anula planul?",
+      "q3_within_60": "În termen de 60 de zile de la achiziție:",
+      "q3_refund_no_claims": "Nicio cerere depusă: Rambursare integrală (100%)",
+      "q3_refund_with_claims": "Cereri depuse: Rambursare = Preț plan − suma plătită pentru cereri",
+      "q3_after_60": "După 60 de zile de la achiziție:",
+      "q3_refund_formula": "Rambursare = [(Zile totale acoperire − Zile utilizate) ÷ Zile totale acoperire] × Preț plan − cereri plătite − taxă administrare (max 50 $)",
+      "q4": "Î4: Cum se rezolvă cererile?",
+      "q4_step1_html": "Vizitați <strong><a href=\"https://sp.xcottons.com/parcel#/productProtection/protection-login\" target=\"_blank\" rel=\"noopener noreferrer\">Centrul de Rezolvare Xcotton</a></strong>",
+      "q4_step2_html": "Trimiteți email la <strong>support@xcottons.com</strong>",
+      "key_note": "Notă importantă - Limită de răspundere:",
+      "liability_limit": "Rambursarea totală nu va depăși prețul original de achiziție al produsului."
+    },
+    "ko": {
+      "product_protection_faq_title": "제품 보호 FAQ",
+      "q1": "Q1: 제품 보호 플랜은 무엇을 보장하나요?",
+      "q1_a1_title": "취급 중 우발적 손상:",
+      "q1_a1_content": "정상 사용 중 발생한 떨어뜨림, 흘림, 깨진 화면 등의 의도치 않은 손상.",
+      "q1_a2_title": "연장 보증:",
+      "q1_a2_content": "제조사 보증 종료 후 기계적 또는 전기적 고장.",
+      "q1_a3_title": "전력 서지:",
+      "q1_a3_content": "전자제품을 손상시킬 수 있는 전압 스파이크로부터의 보호.",
+      "q1_a4_title": "배터리 고장:",
+      "q1_a4_content": "일회성 배터리 교체.",
+      "q2": "Q2: 보장은 언제 시작되나요?",
+      "q2_a1_title": "우발적 손상 보호:",
+      "q2_a1_content": "플랜 구매 즉시 시작.",
+      "q2_a2_title": "연장 보증:",
+      "q2_a2_content": "제조사 보증 종료 후 시작.",
+      "q2_example": "예: 1년 제조사 보증 제품에 대한 3년 플랜:",
+      "year_1": "1년",
+      "year_2": "2년",
+      "year_3": "3년",
+      "accidental_damage": "우발적 손상",
+      "manufacturer_warranty": "제조사 보증",
+      "extended_warranty": "연장 보증",
+      "q3": "Q3: 플랜을 취소할 수 있나요?",
+      "q3_within_60": "구매 후 60일 이내:",
+      "q3_refund_no_claims": "청구 없음: 전액 환불 (100%)",
+      "q3_refund_with_claims": "청구 있음: 환불 = 플랜 가격 − 지급된 청구 금액",
+      "q3_after_60": "구매 60일 이후:",
+      "q3_refund_formula": "환불 = [(총 보장 일수 − 사용 일수) ÷ 총 보장 일수] × 플랜 가격 − 지급된 청구 − 관리 수수료 (최대 $50)",
+      "q4": "Q4: 청구는 어떻게 처리되나요?",
+      "q4_step1_html": "<strong><a href=\"https://sp.xcottons.com/parcel#/productProtection/protection-login\" target=\"_blank\" rel=\"noopener noreferrer\">Xcotton 해결 센터</a></strong> 방문",
+      "q4_step2_html": "<strong>support@xcottons.com</strong>으로 이메일",
+      "key_note": "중요 사항 - 책임 한도:",
+      "liability_limit": "총 보상금은 제품의 원래 구매 가격을 초과하지 않습니다."
+    },
+    "da": {
+      "product_protection_faq_title": "Produktbeskyttelse FAQ",
+      "q1": "S1: Hvad dækker Produktbeskyttelsesplanen?",
+      "q1_a1_title": "Uheldsskader under håndtering:",
+      "q1_a1_content": "Uforsætlige skader som tab, spild, revnede skærme under normal brug.",
+      "q1_a2_title": "Forlænget garanti:",
+      "q1_a2_content": "Mekanisk eller elektrisk fejl efter producentgarantiens udløb.",
+      "q1_a3_title": "Strømforsyning:",
+      "q1_a3_content": "Beskyttelse mod spændingsstød, der kan beskadige elektronik.",
+      "q1_a4_title": "Batterifejl:",
+      "q1_a4_content": "Engangsbatteriskift.",
+      "q2": "S2: Hvornår begynder dækningen?",
+      "q2_a1_title": "Uheldsskadesikring:",
+      "q2_a1_content": "Starter umiddelbart ved køb af planen.",
+      "q2_a2_title": "Forlænget garanti:",
+      "q2_a2_content": "Starter efter producentgarantiens udløb.",
+      "q2_example": "Eksempel: En 3-års plan for et produkt med 1-års producentgaranti:",
+      "year_1": "År 1",
+      "year_2": "År 2",
+      "year_3": "År 3",
+      "accidental_damage": "Uheldsskade",
+      "manufacturer_warranty": "Producentgaranti",
+      "extended_warranty": "Forlænget garanti",
+      "q3": "S3: Kan jeg annullere planen?",
+      "q3_within_60": "Inden for 60 dage efter køb:",
+      "q3_refund_no_claims": "Ingen krav indgivet: Fuldt refusion (100%)",
+      "q3_refund_with_claims": "Krav indgivet: Refusion = Planpris − udbetalt kravbeløb",
+      "q3_after_60": "Efter 60 dage efter køb:",
+      "q3_refund_formula": "Refusion = [(Samlet dækningsdage − Brugte dage) ÷ Samlet dækningsdage] × Planpris − udbetalte krav − admingebyr (max 50 $)",
+      "q4": "S4: Hvordan håndteres krav?",
+      "q4_step1_html": "Besøg <strong><a href=\"https://sp.xcottons.com/parcel#/productProtection/protection-login\" target=\"_blank\" rel=\"noopener noreferrer\">Xcotton Løsningscenter</a></strong>",
+      "q4_step2_html": "Email til <strong>support@xcottons.com</strong>",
+      "key_note": "Vigtig note - Ansvarsbegrænsning:",
+      "liability_limit": "Den samlede erstatning overstiger ikke produktets oprindelige købspris."
+    }
+  }
+}
+{% endschema %}

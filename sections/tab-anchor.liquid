@@ -1,0 +1,64 @@
+{{ 'component-tab-anchor.css' | asset_url | stylesheet_tag }}
+
+<script src="{{ 'tab-anchor.js' | asset_url }}" defer="defer"></script>
+
+<div
+  id="TabsProductsList-{{ section.id }}"
+  class="tab-anchor color-{{ section.settings.color_scheme }} background"
+>
+  <tab-anchor>
+    <div class="tab-anchor__list flex items-center justify-center" data-anchors>
+      {% for block in section.blocks %}
+        <div
+          class="tab-anchor__item {% if forloop.first %} active{% endif %}"
+          data-anchor
+          data-anchor-target-text="{{ block.settings.target_text }}"
+        >
+          {{ block.settings.text }}
+        </div>
+      {% endfor %}
+    </div>
+  </tab-anchor>
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.tab-anchor.name",
+  "tag": "section",
+  "class": "section-tab-anchor",
+  "enabled_on": {
+    "templates": ["*"]
+  },
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "default": "background-3",
+      "label": "t:sections.all.color_scheme.label"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "tab",
+      "name": "Tab",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "t:sections.tab-anchor.blocks.tab.settings.text.label"
+        },
+        {
+          "type": "text",
+          "id": "target_text",
+          "label": "t:sections.tab-anchor.blocks.tab.settings.target_text.label"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.tab-anchor.presets.name"
+    }
+  ]
+}
+{% endschema %}

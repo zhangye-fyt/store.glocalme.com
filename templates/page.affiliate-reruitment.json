@@ -1,0 +1,555 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": "no-indent",
+        "padding_bottom": "m"
+      }
+    },
+    "image_banner_LkiYHc": {
+      "type": "image-banner",
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "full_width": true,
+        "color_scheme": "",
+        "image": "shopify://shop_images/20250903105444.jpg",
+        "image_mobile": "shopify://shop_images/20250903105459.jpg",
+        "image_ratio": "adapt",
+        "image_link": "",
+        "opacity_overlay": 0,
+        "icon": "none",
+        "icon_color_scheme": "",
+        "icon_size": "large",
+        "icon_style": "colored",
+        "icon_fill_type": "gradient",
+        "box_shadow": false,
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "heading": "",
+        "heading_size": "h2",
+        "heading_level": "h2",
+        "text_information": "",
+        "text_align": "left",
+        "text_width": "small",
+        "show_view_all": false,
+        "button_label": "Shop now",
+        "button_style": "primary",
+        "button_link": "",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "rich_text_BBQBBh": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_3rAzex": {
+          "type": "heading",
+          "settings": {
+            "heading": "Why Join Us?",
+            "heading_size": "medium",
+            "heading_level": "h2"
+          }
+        },
+        "text_LWU4MA": {
+          "type": "text",
+          "settings": {
+            "text": "<p>1. Earn 10-15% commission on each validated sale you refer.<br/>2. Make use of 30-day cookies, which exceed the industry standard.<br/>3. Enjoy updated product feeds with high-quality, top trending products.<br/>4. Receive regular affiliate communications with attractive banners, product recommendations, and exclusive offers.<br/>5. Get support from a dedicated team, helping you optimize performance and maximize revenue.<br/>6. Unlock opportunities to earn extra commission and bonuses.</p>"
+          }
+        },
+        "button_LYHLTk": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style": "primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_3rAzex",
+        "text_LWU4MA",
+        "button_LYHLTk"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "color_scheme": "scheme-2c247732-f527-4f63-99fd-72efcb82538d",
+        "full_width": true,
+        "alignment": "center",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent",
+        "padding_top": "l",
+        "padding_bottom": "s"
+      }
+    },
+    "multicolumn_L4cnfY": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_6y3MHt": {
+          "type": "column",
+          "settings": {
+            "icon": "none",
+            "icon_color_scheme": "background-1",
+            "icon_fill_type": "gradient",
+            "image": "shopify://shop_images/191112_111656_aff1.png",
+            "heading": "",
+            "text": "Visit store.glocalme.com to apply for the affiliate program",
+            "show_button": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        },
+        "column_w9VG8T": {
+          "type": "column",
+          "settings": {
+            "icon": "none",
+            "icon_color_scheme": "",
+            "icon_fill_type": "solid",
+            "image": "shopify://shop_images/191112_111703_aff2.png",
+            "heading": "",
+            "text": "Share an\naffiliate link.",
+            "show_button": false,
+            "button_label": "",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        },
+        "column_NfE3A7": {
+          "type": "column",
+          "settings": {
+            "icon": "none",
+            "icon_color_scheme": "",
+            "icon_fill_type": "gradient",
+            "image": "shopify://shop_images/191112_111708_aff3.png",
+            "heading": "",
+            "text": "Encourage customers to\nclick your link and\npurchase.",
+            "show_button": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        },
+        "column_QtD4xU": {
+          "type": "column",
+          "settings": {
+            "icon": "none",
+            "icon_color_scheme": "",
+            "icon_fill_type": "gradient",
+            "image": "shopify://shop_images/191112_111721_aff5.png",
+            "heading": "",
+            "text": "Wait for your order to be confirmed and get commission!",
+            "show_button": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        }
+      },
+      "block_order": [
+        "column_6y3MHt",
+        "column_w9VG8T",
+        "column_NfE3A7",
+        "column_QtD4xU"
+      ],
+      "name": "t:sections.multicolumn.name",
+      "settings": {
+        "section_type": "transparent",
+        "color_scheme": "scheme-2c247732-f527-4f63-99fd-72efcb82538d",
+        "enable_border": false,
+        "border_full": false,
+        "multicolumn_to_show": 4,
+        "gap": "small",
+        "enable_mobile_overflow_slider": true,
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "subheading_icon": "none",
+        "heading": "How Do I Earn Commission?",
+        "heading_size": "h3",
+        "heading_level": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "center",
+        "icon_size": "recommended",
+        "box_shadow": true,
+        "icon_style": "colored",
+        "image_width": "small",
+        "image_ratio": "landscape",
+        "object_fit": "contain",
+        "card_heading_size": "h5",
+        "padding_top": "l",
+        "padding_bottom": "m",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "numbers_rgNRgQ": {
+      "type": "numbers",
+      "blocks": {
+        "column_U6QeMV": {
+          "type": "column",
+          "settings": {
+            "number": "2Billion+",
+            "heading": "GlocalMe Worldwide Users",
+            "description": "",
+            "icon": "user-1",
+            "icon_color": "colored",
+            "icon_fill_type": "gradient",
+            "show_button": false,
+            "button_label": "Label",
+            "button_link": ""
+          }
+        },
+        "column_GqiY3F": {
+          "type": "column",
+          "settings": {
+            "number": "200+",
+            "heading": "Countries and Regions Covered",
+            "description": "",
+            "icon": "flag",
+            "icon_color": "contrast",
+            "icon_fill_type": "solid",
+            "show_button": false,
+            "button_label": "Label",
+            "button_link": ""
+          }
+        },
+        "column_DYh8m4": {
+          "type": "column",
+          "settings": {
+            "number": "90+",
+            "heading": "5G NETWORK COUNTRIES COVERED",
+            "description": "",
+            "icon": "telephone-tower",
+            "icon_color": "contrast",
+            "icon_fill_type": "solid",
+            "show_button": false,
+            "button_label": "Label",
+            "button_link": ""
+          }
+        },
+        "column_yqtEVa": {
+          "type": "column",
+          "settings": {
+            "number": "390+",
+            "heading": "Global Carriers Access",
+            "description": "",
+            "icon": "luggage",
+            "icon_color": "contrast",
+            "icon_fill_type": "solid",
+            "show_button": false,
+            "button_label": "Label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_U6QeMV",
+        "column_GqiY3F",
+        "column_DYh8m4",
+        "column_yqtEVa"
+      ],
+      "name": "t:sections.numbers.name",
+      "settings": {
+        "layout": "columns",
+        "block_type": "subtle",
+        "columns_to_row": 4,
+        "color_scheme": "scheme-2c247732-f527-4f63-99fd-72efcb82538d",
+        "enable_border": false,
+        "border_full": true,
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "subheading_icon": "none",
+        "heading": "About GlocalMe",
+        "heading_size": "h3",
+        "heading_level": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "text": "Better Connection Empowers Better Life.",
+        "text_align": "center",
+        "number_size": "small",
+        "icon_size": "small",
+        "card_heading_size": "h4",
+        "number_size_first": "normal",
+        "icon_size_first": "large",
+        "card_heading_size_first": "h4",
+        "padding_top": "s",
+        "padding_bottom": "m"
+      }
+    },
+    "image_banner_LUMQ8D": {
+      "type": "image-banner",
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "full_width": true,
+        "color_scheme": "background-1",
+        "image": "shopify://shop_images/20250903163443_6831d3ad-f622-421e-bdf1-72a3b233efc3.jpg",
+        "image_mobile": "shopify://shop_images/20250903164033_5741c5fc-d94a-4329-83fd-b59680c79adc.jpg",
+        "image_ratio": "adapt",
+        "image_link": "https://ui.awin.com/express-signup/en/awin/89579/66210b48-1e66-47a8-9a04-9191407ed91a?t=YddLbM3rWzujTYlErjGcwVVZAx0eLzJVlYkCJzIUxp8",
+        "opacity_overlay": 0,
+        "icon": "none",
+        "icon_color_scheme": "",
+        "icon_size": "normal",
+        "icon_style": "colored",
+        "icon_fill_type": "gradient",
+        "box_shadow": false,
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "heading": "",
+        "heading_size": "h2",
+        "heading_level": "h2",
+        "text_information": "",
+        "text_align": "center",
+        "text_width": "small",
+        "show_view_all": false,
+        "button_label": "Join Us Now",
+        "button_style": "secondary",
+        "button_link": "https://ui.awin.com/express-signup/en/awin/89579/66210b48-1e66-47a8-9a04-9191407ed91a?t=YddLbM3rWzujTYlErjGcwVVZAx0eLzJVlYkCJzIUxp8",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "collapsible_content_Gdb7BE": {
+      "type": "collapsible-content",
+      "blocks": {
+        "accordion_7rcJih": {
+          "type": "accordion",
+          "settings": {
+            "question": "1. What is the GlocalMe Affiliate Program?",
+            "answer": "<p><br/>The GlocalMe Affiliate Program invites review sites, online communities, bloggers, and other content creators to promote products and services on their sites and earn commissions on the sales they refer to <a href=\"https://store.glocalme.com/\" title=\"https://store.glocalme.com/\"><strong>store.glocalme.com</strong></a>.<br/><br/></p>",
+            "opened": true
+          }
+        },
+        "accordion_Gmrq4m": {
+          "type": "accordion",
+          "settings": {
+            "question": "2. How much commission will l earn?",
+            "answer": "<p>Earn a minimum of 10% commission on qualifying purchases made through your affiliate links. Your exact earnings will be shown in your reports on affiliate networks</p>",
+            "opened": false
+          }
+        },
+        "accordion_z6t68z": {
+          "type": "accordion",
+          "settings": {
+            "question": "3. How can l start earning commission?",
+            "answer": "<p>Step 1: Apply for the affiliate program and sign up as an affiliate or a publisher. </p><p>Step 2: Receive our links, promote them, and watch your commissions roll in.</p>",
+            "opened": false
+          }
+        },
+        "accordion_cALjbN": {
+          "type": "accordion",
+          "settings": {
+            "question": "4. What types of promotions are not permitted?",
+            "answer": "<p>To keep the affiliate program fair, a number of promotion types are not permitted, including but not limited to the following: </p><ul><li>False links: The use of illegal means to tamper with the target user link.</li><li>Creation of pop-ups or scripts to simulate genuine purchase patterns.</li><li> Persistent pop-ups and full-screen pop-ups.</li><li>Hiding links under other content.</li><li>Putting links directly into search engines, including but not limited to Google, Yahoo, and Bing.</li><li>Tricking people into clicking links.</li><li> Creating seemingly official GlocalMe websites to mislead people into purchasing.</li><li>Any actions in violation of GlocalMe Affiliate Program terms.</li><li>GlocalMe has the right to penalize those who violate the GlocalMe Affiliate Program agreement.</li></ul>",
+            "opened": false
+          }
+        },
+        "accordion_nhqKb4": {
+          "type": "accordion",
+          "settings": {
+            "question": "5. Why was my commission withdrawn after the order was completed?",
+            "answer": "<ul><li>Commissions may be reversed in the following cases:</li><li>‒ The order is refunded or canceled.</li><li>‒ Fraudulent orders.</li><li>‒ The same order is attributed to multiple affiliate platforms (based on UTM parameters).</li><li>If you have any questions, please don't hesitate to contact affiliate@glocalme.com.</li></ul>",
+            "opened": false
+          }
+        }
+      },
+      "block_order": [
+        "accordion_7rcJih",
+        "accordion_Gmrq4m",
+        "accordion_z6t68z",
+        "accordion_cALjbN",
+        "accordion_nhqKb4"
+      ],
+      "name": "t:sections.collapsible-content.name",
+      "settings": {
+        "layout": "background",
+        "color_scheme": "scheme-2c247732-f527-4f63-99fd-72efcb82538d",
+        "enable_border": false,
+        "border_full": true,
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "subheading_icon": "none",
+        "heading": "FAQs",
+        "heading_size": "h3",
+        "heading_level": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "center",
+        "row_color_scheme": "",
+        "padding_top": "m",
+        "padding_bottom": "m",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "rich_text_biawbe": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_NQpcyJ": {
+          "type": "heading",
+          "settings": {
+            "heading": "Terms and Conditions",
+            "heading_size": "medium",
+            "heading_level": "h2"
+          }
+        },
+        "text_3gyiwg": {
+          "type": "text",
+          "settings": {
+            "text": "<p>1. Discounts are applicable to specific products or services as stated on the corporate promotion page.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_NQpcyJ",
+        "text_3gyiwg"
+      ],
+      "disabled": true,
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "color_scheme": "background-3",
+        "full_width": true,
+        "alignment": "center",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent",
+        "padding_top": "m",
+        "padding_bottom": "no-indent"
+      }
+    },
+    "rich_text_VVNzP8": {
+      "type": "rich-text",
+      "blocks": {
+        "text_H6jDVM": {
+          "type": "text",
+          "settings": {
+            "text": "<p>2. Full payment is required at the time of order placement.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_H6jDVM"
+      ],
+      "disabled": true,
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "color_scheme": "background-3",
+        "full_width": true,
+        "alignment": "center",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent"
+      }
+    },
+    "rich_text_FtwCVN": {
+      "type": "rich-text",
+      "blocks": {
+        "text_RTctGx": {
+          "type": "text",
+          "settings": {
+            "text": "<p>3. Shipping fees, if applicable, will be calculated based on the delivery address and weight of items. Excess will be charged separately.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_RTctGx"
+      ],
+      "disabled": true,
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "color_scheme": "background-3",
+        "full_width": true,
+        "alignment": "center",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent"
+      }
+    },
+    "rich_text_kjbFNL": {
+      "type": "rich-text",
+      "blocks": {
+        "text_GbWEzm": {
+          "type": "text",
+          "settings": {
+            "text": "<p>4. GlocalMe reserves the right to modify or terminate the corporate promotion at any time without prior notice. Any changes will not affect orders already placed.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_GbWEzm"
+      ],
+      "disabled": true,
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "color_scheme": "background-3",
+        "full_width": true,
+        "alignment": "center",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent"
+      }
+    },
+    "rich_text_P4AWnL": {
+      "type": "rich-text",
+      "blocks": {
+        "text_LQ67XV": {
+          "type": "text",
+          "settings": {
+            "text": "<p>5. For more details, refer to the company’s full Privacy Policy.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_LQ67XV"
+      ],
+      "disabled": true,
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "color_scheme": "background-3",
+        "full_width": true,
+        "alignment": "center",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent",
+        "padding_top": "no-indent",
+        "padding_bottom": "m"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_banner_LkiYHc",
+    "rich_text_BBQBBh",
+    "multicolumn_L4cnfY",
+    "numbers_rgNRgQ",
+    "image_banner_LUMQ8D",
+    "collapsible_content_Gdb7BE",
+    "rich_text_biawbe",
+    "rich_text_VVNzP8",
+    "rich_text_FtwCVN",
+    "rich_text_kjbFNL",
+    "rich_text_P4AWnL"
+  ]
+}

@@ -1,0 +1,3114 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ product.vendor }}"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h3"
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "description": ""
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "inventory_ybzDtw": {
+          "type": "inventory",
+          "settings": {}
+        },
+        "custom_liquid_CjG36M": {
+          "type": "custom_liquid",
+          "disabled": true,
+          "settings": {
+            "custom_liquid": "{%- style -%}\n  .product-coupon-container {\n    margin: 20px 0;\n    font-family: inherit;\n  }\n  \n  .coupon-card {\n    background: linear-gradient(135deg, #e3b337 0%, #f4e6cb 100%);\n    border-radius: 10px;\n    border: 1px dashed #d1d5db;\n    padding: 15px;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    text-align: center;\n    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);\n    position: relative;\n    overflow: hidden;\n  }\n  \n  .coupon-card::before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    background: radial-gradient(circle at 10% 20%, rgba(255,255,255,0.3) 0%, transparent 20%);\n    pointer-events: none;\n  }\n  \n  .coupon-title {\n    font-size: 24px;\n    font-weight: 600;\n    color: #1f2937;\n    margin-bottom: 8px;\n  }\n  \n  .coupon-description {\n    font-size: 18px;\n    color: #97520c;\n    margin-bottom: 12px;\n    line-height: 1.4;\n  }\n  \n  .coupon-code-container {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    width: 100%;\n    margin-bottom: 10px;\n  }\n  \n  .coupon-code {\n    font-size: 20px;\n    font-weight: 700;\n    letter-spacing: 1px;\n    color: #97520c;\n    background-color: white;\n    padding: 8px 15px;\n    border-radius: 6px;\n    border: 1px solid #d1d5db;\n    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);\n    flex-grow: 1;\n    text-align: center;\n    max-width: 70%;\n    word-break: break-all;\n  }\n  \n  .copy-btn {\n    background-color: #3b82f6;\n    color: white;\n    border: none;\n    padding: 8px 12px;\n    border-radius: 6px;\n    margin-left: 8px;\n    font-size: 14px;\n    font-weight: 500;\n    cursor: pointer;\n    transition: background-color 0.2s;\n  }\n  \n  .copy-btn:hover {\n    background-color: #2563eb;\n  }\n  \n  .coupon-terms {\n    font-size: 12px;\n    color: #6b7280;\n    margin-top: 8px;\n  }\n  \n  /* 移动端适配 */\n  @media screen and (max-width: 749px) {\n    .coupon-card {\n      padding: 12px;\n    }\n    \n    .coupon-title {\n      font-size: 15px;\n    }\n    \n    .coupon-description {\n      font-size: 13px;\n    }\n    \n    .coupon-code {\n      font-size: 16px;\n      padding: 6px 12px;\n    }\n    \n    .copy-btn {\n      padding: 6px 10px;\n      font-size: 13px;\n    }\n  }\n{%- endstyle -%}\n\n{%- comment -%}\n  在这里设置你的优惠码和活动信息\n  你可以为不同产品设置不同的优惠码，或者使用相同的优惠码\n{%- endcomment -%}\n\n{%- assign current_product_handle = product.handle -%}\n\n{%- comment -%} 示例：根据产品handle设置不同的优惠码 {%- endcomment -%}\n{%- if current_product_handle == 'product-1-handle' -%}\n  {%- assign coupon_code = 'SUMMER20' -%}\n  {%- assign coupon_title = '夏季特惠' -%}\n  {%- assign coupon_description = '限时享受20%折扣，仅限本产品使用' -%}\n  {%- assign coupon_terms = '有效期至2023年8月31日，不可与其他优惠同时使用' -%}\n{%- elsif current_product_handle == 'product-2-handle' -%}\n  {%- assign coupon_code = 'FALL15' -%}\n  {%- assign coupon_title = '秋季促销' -%}\n  {%- assign coupon_description = '享受15%折扣，专为本产品定制' -%}\n  {%- assign coupon_terms = '有效期至2023年9月30日' -%}\n{%- else -%}\n  {%- assign coupon_code = 'CODE: PD15' -%}\n  {%- assign coupon_title = 'Prime Day sale is on!' -%}\n  {%- assign coupon_description = '15% OFF SITEWIDE' -%}\n  {%- assign coupon_terms = '' -%}\n{%- endif -%}\n\n{%- if coupon_code -%}\n<div class=\"product-coupon-container\">\n  <div class=\"coupon-card\">\n    <h3 class=\"coupon-title\">{{ coupon_title }}</h3>\n    <p class=\"coupon-description\">{{ coupon_description }}</p>\n    \n    <div class=\"coupon-code-container\">\n      <span class=\"coupon-code\" id=\"couponCode\">{{ coupon_code }}</span>\n     \n    </div>\n    \n    <p class=\"coupon-terms\">{{ coupon_terms }}</p>\n  </div>\n</div>\n\n\n{%- endif -%}"
+          }
+        },
+        "gift": {
+          "type": "gift",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_quantity": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "add_ons": {
+          "type": "add_ons",
+          "settings": {}
+        },
+        "supported_devices": {
+          "type": "supported_devices",
+          "settings": {}
+        },
+        "dropdown_information_gyGwGJ": {
+          "type": "dropdown_information",
+          "settings": {
+            "characteristics": false,
+            "heading": "User Manual",
+            "description": "<h6><a href=\"https://cdn.shopify.com/s/files/1/0658/8963/2410/files/GlocalMe_KeyTracker_User_Manual-V1.1.pdf?v=1750747853\" target=\"_blank\" title=\"https://cdn.shopify.com/s/files/1/0658/8963/2410/files/GlocalMe_KeyTracker_User_Manual-V1.1.pdf?v=1750747853\">GlocalMe KeyTracker</a></h6>",
+            "button_show": false,
+            "button_label": "Button label",
+            "button_link": "",
+            "default_open": false
+          }
+        },
+        "text_with_icon_FJpD8f": {
+          "type": "text_with_icon",
+          "settings": {
+            "show_text_with_icon_1": true,
+            "icon_1": "delivery",
+            "text_1": "Fast Shipping",
+            "show_text_with_icon_2": true,
+            "icon_2": "shield",
+            "text_2": "High-quality Products",
+            "box_shadow": true,
+            "icon_style": "colored",
+            "icon_fill_type": "gradient"
+          }
+        },
+        "text_with_icon": {
+          "type": "text_with_icon",
+          "settings": {
+            "show_text_with_icon_1": true,
+            "icon_1": "wallet",
+            "text_1": "30 Day Return Guarantee",
+            "show_text_with_icon_2": true,
+            "icon_2": "user-1",
+            "text_2": "Professional Service Support",
+            "box_shadow": true,
+            "icon_style": "colored",
+            "icon_fill_type": "gradient"
+          }
+        },
+        "share_EAqH9P": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share",
+            "show_share_facebook": true,
+            "show_share_twitter": true,
+            "show_share_pinterest": true,
+            "show_share_copy": true
+          }
+        },
+        "popup_nzDhX7": {
+          "type": "popup",
+          "disabled": true,
+          "settings": {
+            "label": "Compare",
+            "heading": "",
+            "text": "",
+            "image": "shopify://shop_images/c23545ae333b999b21f3be3053b5c1cb.jpg",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "description",
+        "variant_picker",
+        "price",
+        "inventory_ybzDtw",
+        "custom_liquid_CjG36M",
+        "gift",
+        "buy_buttons",
+        "add_ons",
+        "supported_devices",
+        "dropdown_information_gyGwGJ",
+        "text_with_icon_FJpD8f",
+        "text_with_icon",
+        "share_EAqH9P",
+        "popup_nzDhX7"
+      ],
+      "custom_css": [
+        "@media only screen and (min-width: 1200px) {.rte div {margin-right: 180px; margin-left: -180px; }}"
+      ],
+      "settings": {
+        "desktop_alignment": "right",
+        "mobile_alignment": "before",
+        "gallery_type": "slider_previews",
+        "aspect_ratio": "1/1",
+        "image_fit": "contain",
+        "image_fit_modal": "contain",
+        "padding_bottom": "m"
+      }
+    },
+    "video_J4bz6g": {
+      "type": "video",
+      "settings": {
+        "color_scheme": "",
+        "full_width": false,
+        "height": "16/9",
+        "video_fit": "contain",
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "subheading_icon": "none",
+        "heading": "",
+        "heading_size": "h2",
+        "heading_level": "h2",
+        "cover_image": "shopify://shop_images/T10_17a81d81-56ab-4091-8810-6f484bcd104c.jpg",
+        "opacity_overlay": 0,
+        "video_url": "https://www.youtube.com/watch?v=BL2JrR6SAlg",
+        "video_autoplay": false,
+        "video_loop": false,
+        "video_muted": false,
+        "video_controls": true,
+        "description": "",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_01": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_abNEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/T10_01.jpg",
+            "image_link": ""
+          }
+        },
+        "text_abLEyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Where Other Trackers Failed, We locate it.</strong></p>",
+            "text_color": "#a2a9af",
+            "text_gradient_background": "",
+            "text_font_size": 72,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 3.2,
+            "position_y": 18.6
+          }
+        },
+        "text_abUEyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>GlocalMe KeyTracker</p>",
+            "text_color": "#a2a9af",
+            "text_gradient_background": "",
+            "text_font_size": 56,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 3.2,
+            "position_y": 11.6
+          }
+        }
+      },
+      "block_order": [
+        "image_abNEyF",
+        "text_abLEyF",
+        "text_abUEyF"
+      ],
+      "custom_css": [],
+      "settings": {
+        "display_devices": "desktop",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_02": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_bbNEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/T10_02.jpg",
+            "image_link": ""
+          }
+        },
+        "text_n6cFVf": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Person Location Guard</strong></p>",
+            "text_color": "#000000",
+            "text_gradient_background": "linear-gradient(119deg, rgba(29, 45, 64, 1) 20%, rgba(4, 6, 8, 1) 60%)",
+            "text_font_size": 36,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "max_text_container_max_width": 28,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 12,
+            "position_y": 41.6
+          }
+        },
+        "text_n7cFVf": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>ltems Location Tracking</strong></p>",
+            "text_color": "#000000",
+            "text_gradient_background": "linear-gradient(119deg, rgba(29, 45, 64, 1) 20%, rgba(4, 6, 8, 1) 60%)",
+            "text_font_size": 36,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "max_text_container_max_width": 28,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 13,
+            "position_y": 41.6
+          }
+        },
+        "text_y6cFVf": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Pet Anti-Lost Tracking</strong></p>",
+            "text_color": "#000000",
+            "text_gradient_background": "linear-gradient(119deg, rgba(29, 45, 64, 1) 20%, rgba(4, 6, 8, 1) 60%)",
+            "text_font_size": 36,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "max_text_container_max_width": 28,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 12.6,
+            "position_y": 88.6
+          }
+        },
+        "text_n6cnVf": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Seamless Global Network</strong></p>",
+            "text_color": "#000000",
+            "text_gradient_background": "linear-gradient(119deg, rgba(29, 45, 64, 1) 20%, rgba(4, 6, 8, 1) 60%)",
+            "text_font_size": 36,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "max_text_container_max_width": 28,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 13.6,
+            "position_y": 88.6
+          }
+        }
+      },
+      "block_order": [
+        "image_bbNEyF",
+        "text_n6cFVf",
+        "text_n7cFVf",
+        "text_y6cFVf",
+        "text_n6cnVf"
+      ],
+      "settings": {
+        "display_devices": "desktop",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_03": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_cbNEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/T10_03.jpg",
+            "image_link": ""
+          }
+        },
+        "text_abL4yF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Experience The Extraordinary Next-Gen Global Locator</strong></p>",
+            "text_color": "#30c71c",
+            "text_gradient_background": "linear-gradient(129deg, rgba(1, 156, 109, 1) 30%, rgba(255, 255, 255, 1) 90%)",
+            "text_font_size": 56,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 3.6,
+            "position_y": 18
+          }
+        },
+        "text_w4p3en": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Free Global Emergency Hotspot Connectivity</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 300,
+            "text_line_height": 1.4,
+            "text_align": "left",
+            "max_text_container_max_width": 20,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 9,
+            "position_y": 47.4
+          }
+        },
+        "text_Q4p3en": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Unique Innovative 6 </p><p>of Positioning Technologies</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 300,
+            "text_line_height": 1.4,
+            "text_align": "left",
+            "max_text_container_max_width": 22,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "btt",
+            "position_x": 6.4,
+            "position_y": 47.4
+          }
+        },
+        "text_w6p3en": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Active Radar, Precise Positioning in Last 100 Meters</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 300,
+            "text_line_height": 1.4,
+            "text_align": "left",
+            "max_text_container_max_width": 20,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 9,
+            "position_y": 30.6
+          }
+        },
+        "text_x5p3en": {
+          "type": "text",
+          "settings": {
+            "text": "<p>200+ Countries and Regions Global Coverage</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 300,
+            "text_line_height": 1.4,
+            "text_align": "left",
+            "max_text_container_max_width": 22,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rlt",
+            "direction_y": "btt",
+            "position_x": 6.4,
+            "position_y": 30.6
+          }
+        },
+        "text_m6p7en": {
+          "type": "text",
+          "settings": {
+            "text": "<p>45 Grams with Airplane Mode,No Worry to Bring with Your Flight</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 300,
+            "text_line_height": 1.4,
+            "text_align": "left",
+            "max_text_container_max_width": 22,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 9,
+            "position_y": 16
+          }
+        },
+        "text_y4p3en": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Maximum 9 Days </p><p>Ultra-long Battery Life</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 300,
+            "text_line_height": 1.4,
+            "text_align": "left",
+            "max_text_container_max_width": 22,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "bbt",
+            "position_x": 6.4,
+            "position_y": 16
+          }
+        }
+      },
+      "block_order": [
+        "image_cbNEyF",
+        "text_abL4yF",
+        "text_w4p3en",
+        "text_Q4p3en",
+        "text_w6p3en",
+        "text_x5p3en",
+        "text_m6p7en",
+        "text_y4p3en"
+      ],
+      "settings": {
+        "display_devices": "desktop",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_04": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_cbNEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/T10_04.jpg",
+            "image_link": ""
+          }
+        },
+        "text_c3L4yF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>6 Advanced Positioning Technologies</strong></p>",
+            "text_color": "#30c71c",
+            "text_gradient_background": "linear-gradient(119deg, rgba(29, 45, 64, 1) 20%, rgba(4, 6, 8, 1) 60%)",
+            "text_font_size": 56,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 3.6,
+            "position_y": 18
+          }
+        },
+        "text_x2pien": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>GPS</strong></p>",
+            "text_color": "#606060",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 600,
+            "text_line_height": 1.4,
+            "text_align": "center",
+            "max_text_container_max_width": 10,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 8.3,
+            "position_y": 16
+          }
+        },
+        "text_h3p4xn": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>AGPS</strong></p>",
+            "text_color": "#606060",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 600,
+            "text_line_height": 1.4,
+            "text_align": "center",
+            "max_text_container_max_width": 10,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 23,
+            "position_y": 16
+          }
+        },
+        "text_l2psxn": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>LBS</strong></p>",
+            "text_color": "#606060",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 600,
+            "text_line_height": 1.4,
+            "text_align": "center",
+            "max_text_container_max_width": 10,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 37.6,
+            "position_y": 16
+          }
+        },
+        "text_m1pexn": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>WiFi</strong></p>",
+            "text_color": "#606060",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 600,
+            "text_line_height": 1.4,
+            "text_align": "center",
+            "max_text_container_max_width": 10,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "btt",
+            "position_x": 38,
+            "position_y": 16
+          }
+        },
+        "text_p3qexn": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Bluetooth</strong></p>",
+            "text_color": "#606060",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 600,
+            "text_line_height": 1.4,
+            "text_align": "center",
+            "max_text_container_max_width": 10,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "btt",
+            "position_x": 22.9,
+            "position_y": 16
+          }
+        },
+        "text_k4q2xn": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Active Radar</strong></p>",
+            "text_color": "#606060",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 600,
+            "text_line_height": 1.4,
+            "text_align": "center",
+            "max_text_container_max_width": 10,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "btt",
+            "position_x": 8.2,
+            "position_y": 16
+          }
+        }
+      },
+      "block_order": [
+        "image_cbNEyF",
+        "text_c3L4yF",
+        "text_x2pien",
+        "text_h3p4xn",
+        "text_l2psxn",
+        "text_m1pexn",
+        "text_p3qexn",
+        "text_k4q2xn"
+      ],
+      "settings": {
+        "display_devices": "desktop",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_05": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_dbNEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/T10_05.jpg",
+            "image_link": ""
+          }
+        },
+        "text_x3L2yF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Your Ultimate Tracking Solution!</strong></p>",
+            "text_color": "#30c71c",
+            "text_gradient_background": "linear-gradient(119deg, rgba(29, 45, 64, 1) 20%, rgba(4, 6, 8, 1) 60%)",
+            "text_font_size": 56,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 3.6,
+            "position_y": 1.2
+          }
+        },
+        "text_o1Qa3A": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Unique innovative</strong></p><p><strong>positioning Technology</strong></p>",
+            "text_color": "#1f1f1f",
+            "text_gradient_background": "linear-gradient(119deg, rgba(29, 45, 64, 1) 20%, rgba(4, 6, 8, 1) 60%)",
+            "text_font_size": 52,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 36,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 6.6,
+            "position_y": 7.4
+          }
+        },
+        "text_y4p3en": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Glocalme KeyTracker uses Cloud SiM technology for global location services, supporting 6 types of location technology including GPS, AGPS, LBS, Bluetooth, WiFi, and active radar.<br/> The multi-network and multi-base station technology improves base station positioning accuracy when GPS and WiFi signals are unavailable, addressing large positioning deviation.</p>",
+            "text_color": "#666666",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 300,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 36,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 6.6,
+            "position_y": 12
+          }
+        },
+        "text_u2pa1A": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Active Radar Search</strong></p>",
+            "text_color": "#1f1f1f",
+            "text_gradient_background": "linear-gradient(119deg, rgba(29, 45, 64, 1) 20%, rgba(4, 6, 8, 1) 60%)",
+            "text_font_size": 52,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 32,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 4,
+            "position_y": 25
+          }
+        },
+        "text_w4p3en": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Traditional trackers often struggle in complex environments within the last 100 meters. But not ours! Our innovative active radar search feature guides you to your target even without GPS. With our tracker, you'll find what you're looking for no matter how challenging the terrain.</p>",
+            "text_color": "#666666",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 300,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 32,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 4,
+            "position_y": 27.6
+          }
+        },
+        "text_X7Pa1A": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Global Coverage</strong></p>",
+            "text_color": "#1f1f1f",
+            "text_gradient_background": "linear-gradient(119deg, rgba(29, 45, 64, 1) 20%, rgba(4, 6, 8, 1) 60%)",
+            "text_font_size": 52,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 36,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 6.6,
+            "position_y": 39.4
+          }
+        },
+        "text_u4p3eX": {
+          "type": "text",
+          "settings": {
+            "text": "<p>With the support of Cloud SlM technology, GlocalMe KeyTracker supports networks from 350+ carriers worldwide and provides service in 200+ countries and regions.With coverage from multiple operators, we enhance precision by over 50% and help the KeyTracker outperforms similar products in dense forests and indoor areas where GPS and WiFi signals struggle.</p>",
+            "text_color": "#666666",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 300,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 36,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 6.6,
+            "position_y": 42
+          }
+        },
+        "text_x1waQA": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Free Global Emergency</strong></p><p><strong>Hotspot Connectivity</strong></p>",
+            "text_color": "#1f1f1f",
+            "text_gradient_background": "linear-gradient(119deg, rgba(29, 45, 64, 1) 20%, rgba(4, 6, 8, 1) 60%)",
+            "text_font_size": 52,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 38,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 4,
+            "position_y": 54
+          }
+        },
+        "text_k2p7en": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our unique Cloud SlM technology eliminates the need for a physical SlM card. Keeping youconnected to the outside world at all times,bringing you a seamless global Internet access experience.<br/>In case of an emergency, just open KeyTracker and instantly access local 4G networks* to send message stay connected.</p>",
+            "text_color": "#666666",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 300,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 32,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 4,
+            "position_y": 58.6
+          }
+        },
+        "text_u7ja1A": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>45g only, featherlight</strong></p>",
+            "text_color": "#1f1f1f",
+            "text_gradient_background": "linear-gradient(119deg, rgba(29, 45, 64, 1) 20%, rgba(4, 6, 8, 1) 60%)",
+            "text_font_size": 52,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 37,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 5.6,
+            "position_y": 72.4
+          }
+        },
+        "text_Ip2ew3": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Smaller than a business card, only 45g. you can hang it on your backpack, suitcase, keychain, or any other item. Although only 45g, typically, it can achieve 7 days regular standby and 9 days extreme standby. keytracker also capable of Real-time tracking, historical trajectory,electronic fence and more.</p>",
+            "text_color": "#666666",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 300,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 37,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 5.6,
+            "position_y": 75
+          }
+        },
+        "text_x1w2Qs": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Airplane Mode</strong></p>",
+            "text_color": "#1f1f1f",
+            "text_gradient_background": "linear-gradient(119deg, rgba(29, 45, 64, 1) 20%, rgba(4, 6, 8, 1) 60%)",
+            "text_font_size": 52,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 34,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 4,
+            "position_y": 11
+          }
+        },
+        "text_m2px1n": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Glocalme Keytracker equipped with \"Airplane Mode\" just like your phone, the tracker can stop sending any signals during your flight and resume tracking when landed, ensuring that your luggage is traceable while does not interfere the aircraft.</p>",
+            "text_color": "#666666",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 300,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 34,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 4,
+            "position_y": 6
+          }
+        }
+      },
+      "block_order": [
+        "image_dbNEyF",
+        "text_x3L2yF",
+        "text_o1Qa3A",
+        "text_y4p3en",
+        "text_u2pa1A",
+        "text_w4p3en",
+        "text_X7Pa1A",
+        "text_u4p3eX",
+        "text_x1waQA",
+        "text_k2p7en",
+        "text_u7ja1A",
+        "text_Ip2ew3",
+        "text_x1w2Qs",
+        "text_m2px1n"
+      ],
+      "settings": {
+        "display_devices": "desktop",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_06": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_ebNEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/T10_06.jpg",
+            "image_link": ""
+          }
+        },
+        "text_1bx4yF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Why choose GlocalMe KeyTracker?</strong></p>",
+            "text_color": "#30c71c",
+            "text_gradient_background": "linear-gradient(129deg, rgba(1, 156, 109, 1) 30%, rgba(255, 255, 255, 1) 90%)",
+            "text_font_size": 56,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 3.6,
+            "position_y": 6
+          }
+        },
+        "text_a4p2ex": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Tracking Capability</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 300,
+            "text_line_height": 1.4,
+            "text_align": "left",
+            "max_text_container_max_width": 20,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 6.6,
+            "position_y": 14.4
+          }
+        },
+        "text_2wp5ex": {
+          "type": "text",
+          "settings": {
+            "text": "<p>GlocalMe KeyTracker</p>",
+            "text_color": "#1fc00a",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 600,
+            "text_line_height": 1.4,
+            "text_align": "left",
+            "max_text_container_max_width": 36,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 8,
+            "position_y": 32.6
+          }
+        },
+        "text_1sp3ex": {
+          "type": "text",
+          "settings": {
+            "text": "<p>With Active Rader, the last 200m(Outdoor)& 100m (lndoor) are easy to solve</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 300,
+            "text_line_height": 1.4,
+            "text_align": "left",
+            "max_text_container_max_width": 36,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 8,
+            "position_y": 35
+          }
+        },
+        "text_9ws5ex": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Other tracker &tags</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 600,
+            "text_line_height": 1.4,
+            "text_align": "right",
+            "max_text_container_max_width": 36,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 8,
+            "position_y": 32.6
+          }
+        },
+        "text_0qp4ex": {
+          "type": "text",
+          "settings": {
+            "text": "<p>No Active Rader, generally it ends up being limited to 5-20 meters</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 300,
+            "text_line_height": 1.4,
+            "text_align": "right",
+            "max_text_container_max_width": 36,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 8,
+            "position_y": 35
+          }
+        },
+        "text_k4p2ex": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Foolproof Coverage</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 300,
+            "text_line_height": 1.4,
+            "text_align": "left",
+            "max_text_container_max_width": 20,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 6.6,
+            "position_y": 43.4
+          }
+        },
+        "text_7wp5ex": {
+          "type": "text",
+          "settings": {
+            "text": "<p>GlocalMe KeyTracker</p>",
+            "text_color": "#1fc00a",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 600,
+            "text_line_height": 1.4,
+            "text_align": "left",
+            "max_text_container_max_width": 36,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 8,
+            "position_y": 61.6
+          }
+        },
+        "text_9sp3ex": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Based on global multi-network operator support, we covers rural areas, forests and other remote places</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 300,
+            "text_line_height": 1.4,
+            "text_align": "left",
+            "max_text_container_max_width": 38,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 8,
+            "position_y": 64
+          }
+        },
+        "text_4ws5ex": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Other tracker &tags</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 600,
+            "text_line_height": 1.4,
+            "text_align": "right",
+            "max_text_container_max_width": 38,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 8,
+            "position_y": 61.6
+          }
+        },
+        "text_8qp4ex": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Global coverage, but mav be limited in certain environments such as high mountain areas, dense urban areas, or wooded areas</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 300,
+            "text_line_height": 1.4,
+            "text_align": "right",
+            "max_text_container_max_width": 46,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 8,
+            "position_y": 64
+          }
+        },
+        "text_k4p2ox": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Positioning Technology</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 300,
+            "text_line_height": 1.4,
+            "text_align": "left",
+            "max_text_container_max_width": 20,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 6.6,
+            "position_y": 25.4
+          }
+        },
+        "text_3wp5ex": {
+          "type": "text",
+          "settings": {
+            "text": "<p>GlocalMe KeyTracker</p>",
+            "text_color": "#1fc00a",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 600,
+            "text_line_height": 1.4,
+            "text_align": "left",
+            "max_text_container_max_width": 36,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 8,
+            "position_y": 5
+          }
+        },
+        "text_vsp3ex": {
+          "type": "text",
+          "settings": {
+            "text": "<p>6 of technologies to make tracking more reliable</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 300,
+            "text_line_height": 1.4,
+            "text_align": "left",
+            "max_text_container_max_width": 40,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 8,
+            "position_y": 2.6
+          }
+        },
+        "text_6ws5ex": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Other tracker &tags</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 600,
+            "text_line_height": 1.4,
+            "text_align": "right",
+            "max_text_container_max_width": 38,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "btt",
+            "position_x": 8,
+            "position_y": 5
+          }
+        },
+        "text_jqp4ex": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Only GPS or only Bluetooth and WiFi, no active radar</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 300,
+            "text_line_height": 1.4,
+            "text_align": "right",
+            "max_text_container_max_width": 46,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "btt",
+            "position_x": 8,
+            "position_y": 2.6
+          }
+        }
+      },
+      "block_order": [
+        "image_ebNEyF",
+        "text_1bx4yF",
+        "text_a4p2ex",
+        "text_2wp5ex",
+        "text_1sp3ex",
+        "text_9ws5ex",
+        "text_0qp4ex",
+        "text_k4p2ex",
+        "text_7wp5ex",
+        "text_9sp3ex",
+        "text_4ws5ex",
+        "text_8qp4ex",
+        "text_k4p2ox",
+        "text_3wp5ex",
+        "text_vsp3ex",
+        "text_6ws5ex",
+        "text_jqp4ex"
+      ],
+      "settings": {
+        "display_devices": "desktop",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_07": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_01": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/T10_07.jpg",
+            "image_link": ""
+          }
+        },
+        "text_a4p3ex": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Signal Penetration Capability</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 300,
+            "text_line_height": 1.4,
+            "text_align": "left",
+            "max_text_container_max_width": 20,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 6.6,
+            "position_y": 2.4
+          }
+        },
+        "text_2wp7ex": {
+          "type": "text",
+          "settings": {
+            "text": "<p>GlocalMe KeyTracker</p>",
+            "text_color": "#1fc00a",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 600,
+            "text_line_height": 1.4,
+            "text_align": "left",
+            "max_text_container_max_width": 36,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 8,
+            "position_y": 22.6
+          }
+        },
+        "text_1sp9ex": {
+          "type": "text",
+          "settings": {
+            "text": "<p>GlocalMe KeyTracker: With 6 positioning technologies,the siqnal can penetrate walls or enclosed space</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 300,
+            "text_line_height": 1.4,
+            "text_align": "left",
+            "max_text_container_max_width": 40,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 8,
+            "position_y": 25
+          }
+        },
+        "text_9ws1ex": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Other tracker &tags</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 600,
+            "text_line_height": 1.4,
+            "text_align": "right",
+            "max_text_container_max_width": 36,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 8,
+            "position_y": 25.6
+          }
+        },
+        "text_0qp3ex": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The signals can't penetrate walls or closed boxes</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 300,
+            "text_line_height": 1.4,
+            "text_align": "right",
+            "max_text_container_max_width": 36,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 8,
+            "position_y": 28
+          }
+        },
+        "text_2bx4yF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Specifications</strong></p>",
+            "text_color": "#30c71c",
+            "text_gradient_background": "linear-gradient(129deg, rgba(1, 156, 109, 1) 10%, rgba(255, 255, 255, 1) 25%)",
+            "text_font_size": 68,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 6.6,
+            "position_y": 38
+          }
+        }
+      },
+      "block_order": [
+        "image_01",
+        "text_a4p3ex",
+        "text_2wp7ex",
+        "text_1sp9ex",
+        "text_9ws1ex",
+        "text_0qp3ex",
+        "text_2bx4yF"
+      ],
+      "settings": {
+        "display_devices": "desktop",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_08": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_01": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/T10_08.jpg",
+            "image_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_01"
+      ],
+      "settings": {
+        "display_devices": "desktop",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_slider_01": {
+      "type": "image-slider",
+      "blocks": {
+        "slide_x2NEyF": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/T10_s01.png"
+          }
+        },
+        "slide_n2ecyF": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/T10_s02.png"
+          }
+        },
+        "slide_x2b4yF": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/T10_s03.png"
+          }
+        },
+        "slide_e2xEyF": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/T10_s04.png"
+          }
+        }
+      },
+      "block_order": [
+        "slide_x2NEyF",
+        "slide_n2ecyF",
+        "slide_x2b4yF",
+        "slide_e2xEyF"
+      ],
+      "custom_css": [
+        "swiper-component {display: block; max-width: 1570px; margin: 0 auto;}"
+      ],
+      "settings": {
+        "display_devices": "desktop",
+        "cover_ratio": "adapt",
+        "enable_autoplay": true,
+        "slide_duration": 5,
+        "enable_pagination": true,
+        "enable_navigation": true,
+        "padding_top": "xs",
+        "padding_bottom": "xs",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_09": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_01": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/T10_09.jpg",
+            "image_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_01"
+      ],
+      "settings": {
+        "display_devices": "desktop",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_10": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_01": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/T10_10.jpg",
+            "image_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_01"
+      ],
+      "settings": {
+        "display_devices": "desktop",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_m_01": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_abNEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/T10_m_01.jpg",
+            "image_link": ""
+          }
+        },
+        "text_axL2yF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Where Other Trackers Failed, We locate it.</strong></p>",
+            "text_color": "#a2a9af",
+            "text_gradient_background": "",
+            "text_font_size": 26,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 3.2,
+            "position_y": 18.6
+          }
+        },
+        "text_xb2zyc": {
+          "type": "text",
+          "settings": {
+            "text": "<p>GlocalMe KeyTracker</p>",
+            "text_color": "#a2a9af",
+            "text_gradient_background": "",
+            "text_font_size": 20,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 3.2,
+            "position_y": 12.6
+          }
+        }
+      },
+      "block_order": [
+        "image_abNEyF",
+        "text_axL2yF",
+        "text_xb2zyc"
+      ],
+      "custom_css": [],
+      "settings": {
+        "display_devices": "mobile",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_m_02": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_01": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/T10_m_02.jpg",
+            "image_link": ""
+          }
+        },
+        "text_n6cFVf": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Person Location Guard</strong></p>",
+            "text_color": "#000000",
+            "text_gradient_background": "linear-gradient(119deg, rgba(29, 45, 64, 1) 20%, rgba(4, 6, 8, 1) 60%)",
+            "text_font_size": 16,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "max_text_container_max_width": 28,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 12,
+            "position_y": 41.4
+          }
+        },
+        "text_n7cFVf": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>ltems Location Tracking</strong></p>",
+            "text_color": "#000000",
+            "text_gradient_background": "linear-gradient(119deg, rgba(29, 45, 64, 1) 20%, rgba(4, 6, 8, 1) 60%)",
+            "text_font_size": 16,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "max_text_container_max_width": 28,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 13,
+            "position_y": 41.4
+          }
+        },
+        "text_y6cFVf": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Pet Anti-Lost Tracking</strong></p>",
+            "text_color": "#000000",
+            "text_gradient_background": "linear-gradient(119deg, rgba(29, 45, 64, 1) 20%, rgba(4, 6, 8, 1) 60%)",
+            "text_font_size": 16,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "max_text_container_max_width": 28,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 12.6,
+            "position_y": 88.4
+          }
+        },
+        "text_n6cnVf": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Seamless Global Network</strong></p>",
+            "text_color": "#000000",
+            "text_gradient_background": "linear-gradient(119deg, rgba(29, 45, 64, 1) 20%, rgba(4, 6, 8, 1) 60%)",
+            "text_font_size": 16,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "max_text_container_max_width": 28,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 13.6,
+            "position_y": 88.4
+          }
+        }
+      },
+      "block_order": [
+        "image_01",
+        "text_n6cFVf",
+        "text_n7cFVf",
+        "text_y6cFVf",
+        "text_n6cnVf"
+      ],
+      "settings": {
+        "display_devices": "mobile",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_m_03": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_01": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/T10_m_03.jpg",
+            "image_link": ""
+          }
+        },
+        "text_ax3y5F": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Experience The Extraordinary Next-Gen Global Locator</strong></p>",
+            "text_color": "#30c71c",
+            "text_gradient_background": "linear-gradient(129deg, rgba(1, 156, 109, 1) 30%, rgba(255, 255, 255, 1) 90%)",
+            "text_font_size": 24,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 3.6,
+            "position_y": 12
+          }
+        },
+        "text_z4p1en": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Free Global Emergency Hotspot Connectivity</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 14,
+            "text_font_weight": 300,
+            "text_line_height": 1.4,
+            "text_align": "left",
+            "max_text_container_max_width": 28,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 11,
+            "position_y": 56
+          }
+        },
+        "text_I4p7en": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Unique Innovative 6 </p><p>of Positioning Technologies</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 14,
+            "text_font_weight": 300,
+            "text_line_height": 1.4,
+            "text_align": "left",
+            "max_text_container_max_width": 28,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "btt",
+            "position_x": 2.6,
+            "position_y": 56
+          }
+        },
+        "text_K6p5en": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Active Radar, Precise Positioning in Last 100 Meters</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 14,
+            "text_font_weight": 300,
+            "text_line_height": 1.4,
+            "text_align": "left",
+            "max_text_container_max_width": 28,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 11,
+            "position_y": 37.6
+          }
+        },
+        "text_Z5p3eb": {
+          "type": "text",
+          "settings": {
+            "text": "<p>200+ Countries and Regions Global Coverage</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 14,
+            "text_font_weight": 300,
+            "text_line_height": 1.4,
+            "text_align": "left",
+            "max_text_container_max_width": 28,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rlt",
+            "direction_y": "btt",
+            "position_x": 2.6,
+            "position_y": 37.6
+          }
+        },
+        "text_N6p7ex": {
+          "type": "text",
+          "settings": {
+            "text": "<p>45 Grams with Airplane Mode,No Worry to Bring with Your Flight</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 14,
+            "text_font_weight": 300,
+            "text_line_height": 1.4,
+            "text_align": "left",
+            "max_text_container_max_width": 30,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 11,
+            "position_y": 20
+          }
+        },
+        "text_V4p1en": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Maximum 9 Days </p><p>Ultra-long Battery Life</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 14,
+            "text_font_weight": 300,
+            "text_line_height": 1.4,
+            "text_align": "left",
+            "max_text_container_max_width": 28,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "bbt",
+            "position_x": 2.6,
+            "position_y": 20
+          }
+        }
+      },
+      "block_order": [
+        "image_01",
+        "text_ax3y5F",
+        "text_z4p1en",
+        "text_I4p7en",
+        "text_K6p5en",
+        "text_Z5p3eb",
+        "text_N6p7ex",
+        "text_V4p1en"
+      ],
+      "settings": {
+        "display_devices": "mobile",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_m_04": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_01": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/T10_m_04.jpg",
+            "image_link": ""
+          }
+        },
+        "text_c1L8yF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>6 Advanced Positioning Technologies</strong></p>",
+            "text_color": "#30c71c",
+            "text_gradient_background": "linear-gradient(119deg, rgba(29, 45, 64, 1) 20%, rgba(4, 6, 8, 1) 60%)",
+            "text_font_size": 24,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 3.6,
+            "position_y": 18
+          }
+        },
+        "text_z2p0en": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>GPS</strong></p>",
+            "text_color": "#606060",
+            "text_gradient_background": "",
+            "text_font_size": 10,
+            "text_font_weight": 600,
+            "text_line_height": 1.4,
+            "text_align": "center",
+            "max_text_container_max_width": 10,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 8.3,
+            "position_y": 16
+          }
+        },
+        "text_k3p2xn": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>AGPS</strong></p>",
+            "text_color": "#606060",
+            "text_gradient_background": "",
+            "text_font_size": 10,
+            "text_font_weight": 600,
+            "text_line_height": 1.4,
+            "text_align": "center",
+            "max_text_container_max_width": 10,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 23,
+            "position_y": 16
+          }
+        },
+        "text_x2ps7n": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>LBS</strong></p>",
+            "text_color": "#606060",
+            "text_gradient_background": "",
+            "text_font_size": 10,
+            "text_font_weight": 600,
+            "text_line_height": 1.4,
+            "text_align": "center",
+            "max_text_container_max_width": 10,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 37.6,
+            "position_y": 16
+          }
+        },
+        "text_n1pe9n": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>WiFi</strong></p>",
+            "text_color": "#606060",
+            "text_gradient_background": "",
+            "text_font_size": 10,
+            "text_font_weight": 600,
+            "text_line_height": 1.4,
+            "text_align": "center",
+            "max_text_container_max_width": 10,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "btt",
+            "position_x": 38,
+            "position_y": 16
+          }
+        },
+        "text_e3qe2n": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Bluetooth</strong></p>",
+            "text_color": "#606060",
+            "text_gradient_background": "",
+            "text_font_size": 10,
+            "text_font_weight": 600,
+            "text_line_height": 1.4,
+            "text_align": "center",
+            "max_text_container_max_width": 10,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "btt",
+            "position_x": 22.9,
+            "position_y": 16
+          }
+        },
+        "text_z4q0xn": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Active Radar</strong></p>",
+            "text_color": "#606060",
+            "text_gradient_background": "",
+            "text_font_size": 10,
+            "text_font_weight": 600,
+            "text_line_height": 1.4,
+            "text_align": "center",
+            "max_text_container_max_width": 10,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "btt",
+            "position_x": 8.2,
+            "position_y": 16
+          }
+        }
+      },
+      "block_order": [
+        "image_01",
+        "text_c1L8yF",
+        "text_z2p0en",
+        "text_k3p2xn",
+        "text_x2ps7n",
+        "text_n1pe9n",
+        "text_e3qe2n",
+        "text_z4q0xn"
+      ],
+      "settings": {
+        "display_devices": "mobile",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_m_05": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_01": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/T10_m_05.jpg",
+            "image_link": ""
+          }
+        },
+        "text_z2L1yF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Your Ultimate Tracking Solution!</strong></p>",
+            "text_color": "#30c71c",
+            "text_gradient_background": "linear-gradient(119deg, rgba(29, 45, 64, 1) 20%, rgba(4, 6, 8, 1) 60%)",
+            "text_font_size": 24,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 3.6,
+            "position_y": 1.2
+          }
+        },
+        "text_k1Qa9A": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Unique innovative</strong></p><p><strong>positioning Technology</strong></p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 28,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 11.6,
+            "position_y": 34
+          }
+        },
+        "text_y3p7en": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Glocalme KeyTracker uses Cloud SiM technology for global location services, supporting 6 types of location technology including GPS, AGPS, LBS, Bluetooth, WiFi, and active radar.<br/> The multi-network and multi-base station technology improves base station positioning accuracy when GPS and WiFi signals are unavailable, addressing large positioning deviation.</p>",
+            "text_color": "#dddddd",
+            "text_gradient_background": "",
+            "text_font_size": 16,
+            "text_font_weight": 300,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 11.6,
+            "position_y": 41
+          }
+        },
+        "text_x2p1xA": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Active Radar Search</strong></p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 28,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 11.6,
+            "position_y": 11
+          }
+        },
+        "text_q4p3Xn": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Traditional trackers often struggle in complex environments within the last 100 meters. But not ours! Our innovative active radar search feature guides you to your target even without GPS. With our tracker, you'll find what you're looking for no matter how challenging the terrain.</p>",
+            "text_color": "#dddddd",
+            "text_gradient_background": "",
+            "text_font_size": 16,
+            "text_font_weight": 300,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 11.6,
+            "position_y": 4
+          }
+        }
+      },
+      "block_order": [
+        "image_01",
+        "text_z2L1yF",
+        "text_k1Qa9A",
+        "text_y3p7en",
+        "text_x2p1xA",
+        "text_q4p3Xn"
+      ],
+      "settings": {
+        "display_devices": "mobile",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_m_06": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_01": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/T10_m_06.jpg",
+            "image_link": ""
+          }
+        },
+        "text_z7Pa1n": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Global Coverage</strong></p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 28,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 11.6,
+            "position_y": 34
+          }
+        },
+        "text_Z4p1eX": {
+          "type": "text",
+          "settings": {
+            "text": "<p>With the support of Cloud SlM technology, GlocalMe KeyTracker supports networks from 350+ carriers worldwide and provides service in 200+ countries and regions.With coverage from multiple operators, we enhance precision by over 50% and help the KeyTracker outperforms similar products in dense forests and indoor areas where GPS and WiFi signals struggle.</p>",
+            "text_color": "#dddddd",
+            "text_gradient_background": "",
+            "text_font_size": 16,
+            "text_font_weight": 300,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 11.6,
+            "position_y": 39
+          }
+        },
+        "text_O1wa3z": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Free Global Emergency</strong></p><p><strong>Hotspot Connectivity</strong></p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 28,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 11.6,
+            "position_y": 13
+          }
+        },
+        "text_J2p7ez": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our unique Cloud SlM technology eliminates the need for a physical SlM card. Keeping youconnected to the outside world at all times,bringing you a seamless global Internet access experience.<br/>In case of an emergency, just open KeyTracker and instantly access local 4G networks* to send message stay connected.</p>",
+            "text_color": "#dddddd",
+            "text_gradient_background": "",
+            "text_font_size": 16,
+            "text_font_weight": 300,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 11.6,
+            "position_y": 4
+          }
+        }
+      },
+      "block_order": [
+        "image_01",
+        "text_z7Pa1n",
+        "text_Z4p1eX",
+        "text_O1wa3z",
+        "text_J2p7ez"
+      ],
+      "settings": {
+        "display_devices": "mobile",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_m_07": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_01": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/T10_m_07.jpg",
+            "image_link": ""
+          }
+        },
+        "text_U7ja1z": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>45g only, featherlight</strong></p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 28,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 11.6,
+            "position_y": 35
+          }
+        },
+        "text_Ip1e8w": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Smaller than a business card, only 45g. you can hang it on your backpack, suitcase, keychain, or any other item. Although only 45g, typically, it can achieve 7 days regular standby and 9 days extreme standby. keytracker also capable of Real-time tracking, historical trajectory,electronic fence and more.</p>",
+            "text_color": "#dddddd",
+            "text_gradient_background": "",
+            "text_font_size": 16,
+            "text_font_weight": 300,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 11.6,
+            "position_y": 39
+          }
+        },
+        "text_x7w1Qs": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Airplane Mode</strong></p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 28,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 11.6,
+            "position_y": 13
+          }
+        },
+        "text_z2px1L": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Glocalme Keytracker equipped with \"Airplane Mode\" just like your phone, the tracker can stop sending any signals during your flight and resume tracking when landed, ensuring that your luggage is traceable while does not interfere the aircraft.</p>",
+            "text_color": "#dddddd",
+            "text_gradient_background": "",
+            "text_font_size": 16,
+            "text_font_weight": 300,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 11.6,
+            "position_y": 5
+          }
+        }
+      },
+      "block_order": [
+        "image_01",
+        "text_U7ja1z",
+        "text_Ip1e8w",
+        "text_x7w1Qs",
+        "text_z2px1L"
+      ],
+      "settings": {
+        "display_devices": "mobile",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_m_08": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_01": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/T10_m_08.jpg",
+            "image_link": ""
+          }
+        },
+        "text_xbx3yF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Why choose GlocalMe KeyTracker?</strong></p>",
+            "text_color": "#30c71c",
+            "text_gradient_background": "linear-gradient(129deg, rgba(1, 156, 109, 1) 30%, rgba(255, 255, 255, 1) 90%)",
+            "text_font_size": 24,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 3.6,
+            "position_y": 4
+          }
+        },
+        "text_e4p5ex": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Tracking Capability</p>",
+            "text_color": "#dddddd",
+            "text_gradient_background": "",
+            "text_font_size": 14,
+            "text_font_weight": 300,
+            "text_line_height": 1.4,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 6.6,
+            "position_y": 7.6
+          }
+        },
+        "text_rwp6ex": {
+          "type": "text",
+          "settings": {
+            "text": "<p>GlocalMe KevTracker</p>",
+            "text_color": "#1fc00a",
+            "text_gradient_background": "",
+            "text_font_size": 18,
+            "text_font_weight": 600,
+            "text_line_height": 1.4,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 9,
+            "position_y": 23
+          }
+        },
+        "text_xsp5ex": {
+          "type": "text",
+          "settings": {
+            "text": "<p>With Active Rader, the last 200m(Outdoor)& 100m (lndoor) are easy to solve</p>",
+            "text_color": "#dddddd",
+            "text_gradient_background": "",
+            "text_font_size": 18,
+            "text_font_weight": 300,
+            "text_line_height": 1.4,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 9,
+            "position_y": 25.6
+          }
+        },
+        "text_zws4ex": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Other tracker &tags</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 18,
+            "text_font_weight": 600,
+            "text_line_height": 1.4,
+            "text_align": "right",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 12,
+            "position_y": 46
+          }
+        },
+        "text_3qp4xq": {
+          "type": "text",
+          "settings": {
+            "text": "<p>No Active Rader, generally it ends up being limited to 5-20 meters</p>",
+            "text_color": "#dddddd",
+            "text_gradient_background": "",
+            "text_font_size": 18,
+            "text_font_weight": 300,
+            "text_line_height": 1.4,
+            "text_align": "right",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 12,
+            "position_y": 48.6
+          }
+        },
+        "text_z4p3ex": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Foolproof Coverage</p>",
+            "text_color": "#dddddd",
+            "text_gradient_background": "",
+            "text_font_size": 14,
+            "text_font_weight": 300,
+            "text_line_height": 1.4,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 6.6,
+            "position_y": 54
+          }
+        },
+        "text_9wp5es": {
+          "type": "text",
+          "settings": {
+            "text": "<p>GlocalMe KevTracker</p>",
+            "text_color": "#1fc00a",
+            "text_gradient_background": "",
+            "text_font_size": 18,
+            "text_font_weight": 600,
+            "text_line_height": 1.4,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 9,
+            "position_y": 28.6
+          }
+        },
+        "text_7sp1ex": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Based on global multi-network operator support, we covers rural areas, forests and other remote places</p>",
+            "text_color": "#dddddd",
+            "text_gradient_background": "",
+            "text_font_size": 18,
+            "text_font_weight": 300,
+            "text_line_height": 1.4,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 9,
+            "position_y": 24
+          }
+        },
+        "text_sws1ex": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Other tracker &tags</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 18,
+            "text_font_weight": 600,
+            "text_line_height": 1.4,
+            "text_align": "right",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "btt",
+            "position_x": 12,
+            "position_y": 6.6
+          }
+        },
+        "text_zqp0ex": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Global coverage, but mav be limited in certain environments such as high mountain areas, dense urban areas, or wooded areas</p>",
+            "text_color": "#dddddd",
+            "text_gradient_background": "",
+            "text_font_size": 18,
+            "text_font_weight": 300,
+            "text_line_height": 1.4,
+            "text_align": "right",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "btt",
+            "position_x": 12,
+            "position_y": 2
+          }
+        }
+      },
+      "block_order": [
+        "image_01",
+        "text_xbx3yF",
+        "text_e4p5ex",
+        "text_rwp6ex",
+        "text_xsp5ex",
+        "text_zws4ex",
+        "text_3qp4xq",
+        "text_z4p3ex",
+        "text_9wp5es",
+        "text_7sp1ex",
+        "text_sws1ex",
+        "text_zqp0ex"
+      ],
+      "settings": {
+        "display_devices": "mobile",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_m_09": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_01": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/T10_m_09.jpg",
+            "image_link": ""
+          }
+        },
+        "text_4wp5zx": {
+          "type": "text",
+          "settings": {
+            "text": "<p>GlocalMe KevTracker</p>",
+            "text_color": "#1fc00a",
+            "text_gradient_background": "",
+            "text_font_size": 18,
+            "text_font_weight": 600,
+            "text_line_height": 1.4,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 9,
+            "position_y": 12
+          }
+        },
+        "text_Bsp1ex": {
+          "type": "text",
+          "settings": {
+            "text": "<p>6 of technologies to make tracking more reliable</p>",
+            "text_color": "#dddddd",
+            "text_gradient_background": "",
+            "text_font_size": 18,
+            "text_font_weight": 300,
+            "text_line_height": 1.4,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 9,
+            "position_y": 13.6
+          }
+        },
+        "text_tws1ex": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Other tracker &tags</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 18,
+            "text_font_weight": 600,
+            "text_line_height": 1.4,
+            "text_align": "right",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 12,
+            "position_y": 26
+          }
+        },
+        "text_jqp1e4": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Only GPS or only Bluetooth and WiFi, no active radar</p>",
+            "text_color": "#dddddd",
+            "text_gradient_background": "",
+            "text_font_size": 18,
+            "text_font_weight": 300,
+            "text_line_height": 1.4,
+            "text_align": "right",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 12,
+            "position_y": 27.6
+          }
+        },
+        "text_a1p9ex": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Signal Penetration Capability</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 14,
+            "text_font_weight": 300,
+            "text_line_height": 1.4,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 6.6,
+            "position_y": 30.8
+          }
+        },
+        "text_xwp6ex": {
+          "type": "text",
+          "settings": {
+            "text": "<p>GlocalMe KevTracker</p>",
+            "text_color": "#1fc00a",
+            "text_gradient_background": "",
+            "text_font_size": 18,
+            "text_font_weight": 600,
+            "text_line_height": 1.4,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 9,
+            "position_y": 41
+          }
+        },
+        "text_z2p9ex": {
+          "type": "text",
+          "settings": {
+            "text": "<p>GlocalMe KeyTracker: With 6 positioning technologies,the siqnal can penetrate walls or enclosed space</p>",
+            "text_color": "#dddddd",
+            "text_gradient_background": "",
+            "text_font_size": 18,
+            "text_font_weight": 300,
+            "text_line_height": 1.4,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 9,
+            "position_y": 42.6
+          }
+        },
+        "text_7ws2ex": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Other tracker &tags</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 18,
+            "text_font_weight": 600,
+            "text_line_height": 1.4,
+            "text_align": "right",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 12,
+            "position_y": 57
+          }
+        },
+        "text_3qp4ex": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The signals can't penetrate walls or closed boxes</p>",
+            "text_color": "#dddddd",
+            "text_gradient_background": "",
+            "text_font_size": 18,
+            "text_font_weight": 300,
+            "text_line_height": 1.4,
+            "text_align": "right",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 12,
+            "position_y": 58.6
+          }
+        }
+      },
+      "block_order": [
+        "image_01",
+        "text_4wp5zx",
+        "text_Bsp1ex",
+        "text_tws1ex",
+        "text_jqp1e4",
+        "text_a1p9ex",
+        "text_xwp6ex",
+        "text_z2p9ex",
+        "text_7ws2ex",
+        "text_3qp4ex"
+      ],
+      "settings": {
+        "display_devices": "mobile",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_slider_02": {
+      "type": "image-slider",
+      "blocks": {
+        "slide_x2NEyF": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/T10_s01.png"
+          }
+        },
+        "slide_n2ecyF": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/T10_s02.png"
+          }
+        },
+        "slide_x2b4yF": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/T10_s03.png"
+          }
+        },
+        "slide_e2xEyF": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/T10_s04.png"
+          }
+        }
+      },
+      "block_order": [
+        "slide_x2NEyF",
+        "slide_n2ecyF",
+        "slide_x2b4yF",
+        "slide_e2xEyF"
+      ],
+      "settings": {
+        "display_devices": "mobile",
+        "cover_ratio": "adapt",
+        "enable_autoplay": true,
+        "slide_duration": 5,
+        "enable_pagination": true,
+        "enable_navigation": true,
+        "padding_top": "xs",
+        "padding_bottom": "xs",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_m_10": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_01": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/T10_m_10.jpg",
+            "image_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_01"
+      ],
+      "settings": {
+        "display_devices": "mobile",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_m_11": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_01": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/T10_m_13.png",
+            "image_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_01"
+      ],
+      "settings": {
+        "display_devices": "mobile",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "video_J4bz6g",
+    "image_text_separation_01",
+    "image_text_separation_02",
+    "image_text_separation_03",
+    "image_text_separation_04",
+    "image_text_separation_05",
+    "image_text_separation_06",
+    "image_text_separation_07",
+    "image_text_separation_08",
+    "image_slider_01",
+    "image_text_separation_09",
+    "image_text_separation_10",
+    "image_text_separation_m_01",
+    "image_text_separation_m_02",
+    "image_text_separation_m_03",
+    "image_text_separation_m_04",
+    "image_text_separation_m_05",
+    "image_text_separation_m_06",
+    "image_text_separation_m_07",
+    "image_text_separation_m_08",
+    "image_text_separation_m_09",
+    "image_slider_02",
+    "image_text_separation_m_10",
+    "image_text_separation_m_11"
+  ]
+}

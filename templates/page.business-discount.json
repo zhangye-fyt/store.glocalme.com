@@ -1,0 +1,631 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": "no-indent",
+        "padding_bottom": "m"
+      }
+    },
+    "image_banner_LkiYHc": {
+      "type": "image-banner",
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "full_width": true,
+        "color_scheme": "",
+        "image": "shopify://shop_images/1__1_211fdaca-b7cb-4955-a53b-d734fd1a7d43.jpg",
+        "image_mobile": "shopify://shop_images/1-02_f4a2d125-e4a6-4d1d-adc8-57a78aab648e.jpg",
+        "image_ratio": "adapt",
+        "image_link": "",
+        "opacity_overlay": 0,
+        "icon": "none",
+        "icon_color_scheme": "",
+        "icon_size": "large",
+        "icon_style": "colored",
+        "icon_fill_type": "gradient",
+        "box_shadow": false,
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "heading": "",
+        "heading_size": "h2",
+        "heading_level": "h2",
+        "text_information": "",
+        "text_align": "left",
+        "text_width": "small",
+        "show_view_all": false,
+        "button_label": "Shop now",
+        "button_style": "primary",
+        "button_link": "",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_banner_VDCLG9": {
+      "type": "image-banner",
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "full_width": true,
+        "color_scheme": "",
+        "image": "shopify://shop_images/1-03_f3d36e0d-a25f-4d02-a4c4-d464b9bd3016.jpg",
+        "image_mobile": "shopify://shop_images/20250723115840.jpg",
+        "image_ratio": "adapt",
+        "image_link": "",
+        "opacity_overlay": 0,
+        "icon": "none",
+        "icon_color_scheme": "",
+        "icon_size": "large",
+        "icon_style": "colored",
+        "icon_fill_type": "gradient",
+        "box_shadow": false,
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "heading": "",
+        "heading_size": "h2",
+        "heading_level": "h2",
+        "text_information": "",
+        "text_align": "left",
+        "text_width": "small",
+        "show_view_all": false,
+        "button_label": "Shop now",
+        "button_style": "primary",
+        "button_link": "",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "multicolumn_L4cnfY": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_6y3MHt": {
+          "type": "column",
+          "settings": {
+            "icon": "none",
+            "icon_color_scheme": "background-1",
+            "icon_fill_type": "gradient",
+            "image": "shopify://shop_images/Frame_1288115027_3840x_7fccf92b-34ad-4385-9b2a-1523b8c1d27d.svg",
+            "heading": "Fast Shipping Worldwide",
+            "text": "Lightning-fast shipping, ensuring speedy arrival of your order!",
+            "show_button": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        },
+        "column_w9VG8T": {
+          "type": "column",
+          "settings": {
+            "icon": "none",
+            "icon_color_scheme": "",
+            "icon_fill_type": "solid",
+            "image": "shopify://shop_images/Frame_1288115026_3840x_96f1393d-bba1-4a17-b26e-57f2789d959b.svg",
+            "heading": "Quality Guaranteed",
+            "text": "Each product meets stringent quality and performance standards.",
+            "show_button": false,
+            "button_label": "",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        },
+        "column_NfE3A7": {
+          "type": "column",
+          "settings": {
+            "icon": "none",
+            "icon_color_scheme": "",
+            "icon_fill_type": "gradient",
+            "image": "shopify://shop_images/Frame_1288115028_3840x_f019bde1-d527-48a9-865a-bfdbdd7a63ef.svg",
+            "heading": "30-Day Money-Back Guarantee",
+            "text": "Get a 30-day refund guarantee, shop with zero risk!",
+            "show_button": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        },
+        "column_QtD4xU": {
+          "type": "column",
+          "settings": {
+            "icon": "none",
+            "icon_color_scheme": "",
+            "icon_fill_type": "gradient",
+            "image": "shopify://shop_images/Frame_1288115029_3840x_506abdb6-bcf1-4b53-9eb1-7b9c01132d73.svg",
+            "heading": "Lifetime Customer Support",
+            "text": "Lifetime after-sales service: We're here for you, always and forever.",
+            "show_button": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        }
+      },
+      "block_order": [
+        "column_6y3MHt",
+        "column_w9VG8T",
+        "column_NfE3A7",
+        "column_QtD4xU"
+      ],
+      "name": "t:sections.multicolumn.name",
+      "settings": {
+        "section_type": "separators",
+        "color_scheme": "background-1",
+        "enable_border": false,
+        "border_full": false,
+        "multicolumn_to_show": 4,
+        "gap": "small",
+        "enable_mobile_overflow_slider": true,
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "subheading_icon": "none",
+        "heading": "<strong>Shop With Confidence at GlocalMe</strong>",
+        "heading_size": "h3",
+        "heading_level": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "center",
+        "icon_size": "recommended",
+        "box_shadow": true,
+        "icon_style": "colored",
+        "image_width": "small",
+        "image_ratio": "landscape",
+        "object_fit": "contain",
+        "card_heading_size": "h5",
+        "padding_top": "s",
+        "padding_bottom": "m",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "popular_products_zDTmjR": {
+      "type": "popular-products",
+      "name": "t:sections.popular-products.presets.name",
+      "settings": {
+        "color_scheme": "background-1",
+        "enable_border": false,
+        "border_full": true,
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "subheading_icon": "none",
+        "heading": "Portable WiFi Series",
+        "heading_size": "h2",
+        "heading_level": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "Access special discounts exclusively on this page for a faster shopping experience.",
+        "product_list": [
+          "numen-air",
+          "g4-pro",
+          "meowgo-g40-pro",
+          "u3",
+          "upp",
+          "duoturbo"
+        ],
+        "products_to_show": 3,
+        "image_ratio": "1/1",
+        "image_fit": "cover",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_desc": false,
+        "columns_mobile": "2",
+        "enable_mobile_overflow_slider": false,
+        "button_show": false,
+        "button_label": "Button label",
+        "button_style": "primary",
+        "button_link": "",
+        "padding_top": "l",
+        "padding_bottom": "l",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "popular_products_MyKeDR": {
+      "type": "popular-products",
+      "name": "t:sections.popular-products.presets.name",
+      "settings": {
+        "color_scheme": "",
+        "enable_border": false,
+        "border_full": true,
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "subheading_icon": "none",
+        "heading": "Life Series",
+        "heading_size": "h2",
+        "heading_level": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "Travel-ready power duo!",
+        "product_list": [
+          "glocalme-keytracker-for-pet",
+          "keytracker",
+          "roamplug",
+          "unicord"
+        ],
+        "products_to_show": 4,
+        "image_ratio": "1/1",
+        "image_fit": "cover",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_desc": false,
+        "columns_mobile": "2",
+        "enable_mobile_overflow_slider": false,
+        "button_show": false,
+        "button_label": "Button label",
+        "button_style": "primary",
+        "button_link": "",
+        "padding_top": "l",
+        "padding_bottom": "l",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "numbers_rgNRgQ": {
+      "type": "numbers",
+      "blocks": {
+        "column_U6QeMV": {
+          "type": "column",
+          "settings": {
+            "number": "2,000,000,000",
+            "heading": "GlocalMe Worldwide Users",
+            "description": "",
+            "icon": "user-1",
+            "icon_color": "colored",
+            "icon_fill_type": "gradient",
+            "show_button": false,
+            "button_label": "Label",
+            "button_link": ""
+          }
+        },
+        "column_GqiY3F": {
+          "type": "column",
+          "settings": {
+            "number": "200+",
+            "heading": "Countries and Regions Covered",
+            "description": "",
+            "icon": "flag",
+            "icon_color": "contrast",
+            "icon_fill_type": "solid",
+            "show_button": false,
+            "button_label": "Label",
+            "button_link": ""
+          }
+        },
+        "column_DYh8m4": {
+          "type": "column",
+          "settings": {
+            "number": "90+",
+            "heading": "5G NETWORK COUNTRIES COVERED",
+            "description": "",
+            "icon": "telephone-tower",
+            "icon_color": "contrast",
+            "icon_fill_type": "solid",
+            "show_button": false,
+            "button_label": "Label",
+            "button_link": ""
+          }
+        },
+        "column_yqtEVa": {
+          "type": "column",
+          "settings": {
+            "number": "390+",
+            "heading": "Global Carriers Access",
+            "description": "",
+            "icon": "luggage",
+            "icon_color": "contrast",
+            "icon_fill_type": "solid",
+            "show_button": false,
+            "button_label": "Label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_U6QeMV",
+        "column_GqiY3F",
+        "column_DYh8m4",
+        "column_yqtEVa"
+      ],
+      "name": "t:sections.numbers.name",
+      "settings": {
+        "layout": "slider",
+        "block_type": "subtle",
+        "columns_to_row": 4,
+        "color_scheme": "background-3",
+        "enable_border": false,
+        "border_full": true,
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "subheading_icon": "none",
+        "heading": "About GlocalMe",
+        "heading_size": "h3",
+        "heading_level": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "text": "Better Connection Empowers Better Life.",
+        "text_align": "center",
+        "number_size": "small",
+        "icon_size": "small",
+        "card_heading_size": "h4",
+        "number_size_first": "normal",
+        "icon_size_first": "large",
+        "card_heading_size_first": "h4",
+        "padding_top": "s",
+        "padding_bottom": "m"
+      }
+    },
+    "collapsible_content_Gdb7BE": {
+      "type": "collapsible-content",
+      "blocks": {
+        "accordion_7rcJih": {
+          "type": "accordion",
+          "settings": {
+            "question": "Q: How do l get the discount?",
+            "answer": "<p>A: Our corporate offers have been pre-set in advance for different quantities of product discounts,once you have selected the quantity of products with discounts. You can submit your order and the discounts will be automatically applied to your cart.</p>",
+            "opened": true
+          }
+        },
+        "accordion_Gmrq4m": {
+          "type": "accordion",
+          "settings": {
+            "question": "Q: Do you have a dealer program?",
+            "answer": "<p>A: Yes, we do have a Dealer Program, please contact our Customer service to provide a general introduction of your situation,if you meet the requirements we will communicate with you by email to follow up on matters of cooperation.</p>",
+            "opened": false
+          }
+        },
+        "accordion_z6t68z": {
+          "type": "accordion",
+          "settings": {
+            "question": "Q: Can offer customization if purchased in large quantities?",
+            "answer": "<p>A: Please feel free to contact us with your needs and we will get back to you as soon as possible.</p>",
+            "opened": false
+          }
+        },
+        "accordion_cALjbN": {
+          "type": "accordion",
+          "settings": {
+            "question": "Q: When will my order be delivered after l completed?",
+            "answer": "<p>A: Normally, we will process your order for shipment within -3 working days after receiving your order, if there are special circumstances, we will contact you by<br/>email to inform you of the progress.</p>",
+            "opened": false
+          }
+        },
+        "accordion_nhqKb4": {
+          "type": "accordion",
+          "settings": {
+            "question": "Q: How do l track the status of my shipment?",
+            "answer": "<p>A: We will send you a shipment confirmation email together with the tracking number once the order has shipped. please pay attention to your registered email address.</p>",
+            "opened": false
+          }
+        }
+      },
+      "block_order": [
+        "accordion_7rcJih",
+        "accordion_Gmrq4m",
+        "accordion_z6t68z",
+        "accordion_cALjbN",
+        "accordion_nhqKb4"
+      ],
+      "name": "t:sections.collapsible-content.name",
+      "settings": {
+        "layout": "border",
+        "color_scheme": "background-3",
+        "enable_border": false,
+        "border_full": true,
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "subheading_icon": "none",
+        "heading": "FAQ",
+        "heading_size": "h2",
+        "heading_level": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "center",
+        "row_color_scheme": "",
+        "padding_top": "s",
+        "padding_bottom": "m",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "rich_text_biawbe": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_NQpcyJ": {
+          "type": "heading",
+          "settings": {
+            "heading": "Terms and Conditions",
+            "heading_size": "medium",
+            "heading_level": "h2"
+          }
+        },
+        "text_3gyiwg": {
+          "type": "text",
+          "settings": {
+            "text": "<p>1. Discounts are applicable to specific products or services as stated on the corporate promotion page.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_NQpcyJ",
+        "text_3gyiwg"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "color_scheme": "background-3",
+        "full_width": true,
+        "alignment": "center",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent",
+        "padding_top": "m",
+        "padding_bottom": "no-indent"
+      }
+    },
+    "rich_text_VVNzP8": {
+      "type": "rich-text",
+      "blocks": {
+        "text_H6jDVM": {
+          "type": "text",
+          "settings": {
+            "text": "<p>2. Full payment is required at the time of order placement.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_H6jDVM"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "color_scheme": "background-3",
+        "full_width": true,
+        "alignment": "center",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent"
+      }
+    },
+    "rich_text_FtwCVN": {
+      "type": "rich-text",
+      "blocks": {
+        "text_RTctGx": {
+          "type": "text",
+          "settings": {
+            "text": "<p>3. Shipping fees, if applicable, will be calculated based on the delivery address and weight of items. Excess will be charged separately.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_RTctGx"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "color_scheme": "background-3",
+        "full_width": true,
+        "alignment": "center",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent"
+      }
+    },
+    "rich_text_kjbFNL": {
+      "type": "rich-text",
+      "blocks": {
+        "text_GbWEzm": {
+          "type": "text",
+          "settings": {
+            "text": "<p>4. GlocalMe reserves the right to modify or terminate the corporate promotion at any time without prior notice. Any changes will not affect orders already placed.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_GbWEzm"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "color_scheme": "background-3",
+        "full_width": true,
+        "alignment": "center",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent"
+      }
+    },
+    "rich_text_P4AWnL": {
+      "type": "rich-text",
+      "blocks": {
+        "text_LQ67XV": {
+          "type": "text",
+          "settings": {
+            "text": "<p>5. For more details, refer to the company’s full Privacy Policy.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_LQ67XV"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "color_scheme": "background-3",
+        "full_width": true,
+        "alignment": "center",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent",
+        "padding_top": "no-indent",
+        "padding_bottom": "m"
+      }
+    },
+    "contact_form_YXJbRU": {
+      "type": "contact-form",
+      "name": "t:sections.contact-form.presets.name",
+      "settings": {
+        "position": "center",
+        "color_scheme": "",
+        "header_overlay": false,
+        "header_transparent": false,
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "subheading_icon": "none",
+        "heading": "Customized Offers",
+        "heading_size": "h2",
+        "heading_level": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "we’ve got competitive pricing on bulk orders. Let’s connect today and discuss which options are best for you. We will offer you exclusive wholesale prices.",
+        "text_align": "center",
+        "heading_form": "Contact form",
+        "heading_form_size": "h5",
+        "text_form": "Required fields are marked with *.",
+        "additional_text": "Additional text for contact form.",
+        "button_style": "primary",
+        "image": "shopify://shop_images/20250514093422_b70a98c9-c51a-4d95-8579-f373ab4f26d5.png",
+        "overlay_opacity": 0,
+        "padding_top": "m",
+        "padding_bottom": "m",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_banner_LkiYHc",
+    "image_banner_VDCLG9",
+    "multicolumn_L4cnfY",
+    "popular_products_zDTmjR",
+    "popular_products_MyKeDR",
+    "numbers_rgNRgQ",
+    "collapsible_content_Gdb7BE",
+    "rich_text_biawbe",
+    "rich_text_VVNzP8",
+    "rich_text_FtwCVN",
+    "rich_text_kjbFNL",
+    "rich_text_P4AWnL",
+    "contact_form_YXJbRU"
+  ]
+}

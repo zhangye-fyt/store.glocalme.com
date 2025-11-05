@@ -1,0 +1,343 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": "no-indent",
+        "padding_bottom": "m"
+      }
+    },
+    "video_grid_Xs21kN": {
+      "type": "video-grid",
+      "blocks": {
+        "video_OpY476": {
+          "type": "video",
+          "settings": {
+            "cover_image": "shopify://shop_images/petphone_11_1dcdba34-e856-4189-9ad0-3835b4d35d55.jpg",
+            "subheading": "",
+            "subheading_style": "subtitle",
+            "subheading_icon": "none",
+            "heading": "PetPhone-Service Activation",
+            "heading_size": "h6",
+            "heading_level": "h1",
+            "video_url": "https://youtu.be/qzORvpEXyDg"
+          }
+        },
+        "video_XpY476": {
+          "type": "video",
+          "settings": {
+            "cover_image": "shopify://shop_images/u50.jpg",
+            "subheading": "",
+            "subheading_style": "subtitle",
+            "subheading_icon": "none",
+            "heading": "Numen Air",
+            "heading_size": "h6",
+            "heading_level": "h1",
+            "video_url": "https://youtu.be/UgS37h2CN5o"
+          }
+        },
+        "video_ZpY476": {
+          "type": "video",
+          "settings": {
+            "cover_image": "shopify://shop_images/u20.jpg",
+            "subheading": "",
+            "subheading_style": "subtitle",
+            "subheading_icon": "none",
+            "heading": "UPP",
+            "heading_size": "h6",
+            "heading_level": "h1",
+            "video_url": "https://youtu.be/ctnW1tORPeo"
+          }
+        },
+        "video_LpY476": {
+          "type": "video",
+          "settings": {
+            "cover_image": "shopify://shop_images/t10_for_pet.jpg",
+            "subheading": "",
+            "subheading_style": "subtitle",
+            "subheading_icon": "none",
+            "heading": "KeyTracker for Pet",
+            "heading_size": "h6",
+            "heading_level": "h1",
+            "video_url": "https://youtu.be/RSx-3FvhjmU"
+          }
+        },
+        "video_KpY476": {
+          "type": "video",
+          "settings": {
+            "cover_image": "shopify://shop_images/t10.jpg",
+            "subheading": "",
+            "subheading_style": "subtitle",
+            "subheading_icon": "none",
+            "heading": "KeyTracker",
+            "heading_size": "h6",
+            "heading_level": "h1",
+            "video_url": "https://youtu.be/JxABYC4Djjk"
+          }
+        },
+        "video_TpY476": {
+          "type": "video",
+          "settings": {
+            "cover_image": "shopify://shop_images/duoturbo.jpg",
+            "subheading": "",
+            "subheading_style": "subtitle",
+            "subheading_icon": "none",
+            "heading": "DuoTurbo",
+            "heading_size": "h6",
+            "heading_level": "h1",
+            "video_url": "https://youtu.be/JuW-fX0oBeM"
+          }
+        },
+        "video_IpY476": {
+          "type": "video",
+          "settings": {
+            "cover_image": "shopify://shop_images/unicord.jpg",
+            "subheading": "",
+            "subheading_style": "subtitle",
+            "subheading_icon": "none",
+            "heading": "UniCord",
+            "heading_size": "h6",
+            "heading_level": "h1",
+            "video_url": "https://youtu.be/L5yUYFCKmv8"
+          }
+        },
+        "video_CpY476": {
+          "type": "video",
+          "settings": {
+            "cover_image": "shopify://shop_images/roamplug.jpg",
+            "subheading": "",
+            "subheading_style": "subtitle",
+            "subheading_icon": "none",
+            "heading": "RoamPlug",
+            "heading_size": "h6",
+            "heading_level": "h1",
+            "video_url": "https://youtu.be/WSXYHvuly-s"
+          }
+        }
+      },
+      "block_order": [
+        "video_OpY476",
+        "video_XpY476",
+        "video_ZpY476",
+        "video_LpY476",
+        "video_KpY476",
+        "video_TpY476",
+        "video_IpY476",
+        "video_CpY476"
+      ],
+      "settings": {
+        "aspect_ratio": "16/9",
+        "columns": 2,
+        "columns_mobile": "1",
+        "padding_top": "no-indent",
+        "padding_bottom": "m",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "multicolumn_qhTUhT": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_9KrirT": {
+          "type": "column",
+          "settings": {
+            "icon": "none",
+            "icon_color_scheme": "",
+            "icon_fill_type": "gradient",
+            "heading": "Numen Air",
+            "text": "",
+            "show_button": true,
+            "button_label": "View More",
+            "button_link": "https://cdn.shopify.com/s/files/1/0658/8963/2410/files/U50.pdf?v=1745475161",
+            "button_style": "simple"
+          }
+        },
+        "column_VGdth8": {
+          "type": "column",
+          "settings": {
+            "icon": "none",
+            "icon_color_scheme": "",
+            "icon_fill_type": "gradient",
+            "heading": "G4 PRO",
+            "text": "",
+            "show_button": true,
+            "button_label": "View More",
+            "button_link": "https://cdn.shopify.com/s/files/1/0658/8963/2410/files/G4P.pdf?v=1745475415",
+            "button_style": "simple"
+          }
+        },
+        "column_mec4pC": {
+          "type": "column",
+          "settings": {
+            "icon": "none",
+            "icon_color_scheme": "",
+            "icon_fill_type": "gradient",
+            "heading": "DuoTurbo",
+            "text": "",
+            "show_button": true,
+            "button_label": "View More",
+            "button_link": "https://cdn.shopify.com/s/files/1/0658/8963/2410/files/U3X.pdf?v=1745475415",
+            "button_style": "simple"
+          }
+        },
+        "column_8cxfa8": {
+          "type": "column",
+          "settings": {
+            "icon": "none",
+            "icon_color_scheme": "",
+            "icon_fill_type": "gradient",
+            "heading": "U3",
+            "text": "",
+            "show_button": true,
+            "button_label": "View More",
+            "button_link": "https://cdn.shopify.com/s/files/1/0658/8963/2410/files/U3.pdf?v=1745475415",
+            "button_style": "simple"
+          }
+        },
+        "column_Pnwk8e": {
+          "type": "column",
+          "settings": {
+            "icon": "none",
+            "icon_color_scheme": "background-1",
+            "icon_fill_type": "gradient",
+            "heading": "SIMBOX",
+            "text": "",
+            "show_button": true,
+            "button_label": "View More",
+            "button_link": "https://cdn.shopify.com/s/files/1/0658/8963/2410/files/SIMBOX.pdf?v=1745475740",
+            "button_style": "simple"
+          }
+        },
+        "column_KTCBew": {
+          "type": "column",
+          "settings": {
+            "icon": "none",
+            "icon_color_scheme": "background-1",
+            "icon_fill_type": "gradient",
+            "heading": "U20",
+            "text": "",
+            "show_button": true,
+            "button_label": "View More",
+            "button_link": "https://cdn.shopify.com/s/files/1/0658/8963/2410/files/U20.pdf?v=1745475742",
+            "button_style": "simple"
+          }
+        },
+        "column_UBdapt": {
+          "type": "column",
+          "settings": {
+            "icon": "none",
+            "icon_color_scheme": "background-1",
+            "icon_fill_type": "gradient",
+            "heading": "UniCord",
+            "text": "",
+            "show_button": true,
+            "button_label": "View More",
+            "button_link": "https://cdn.shopify.com/s/files/1/0658/8963/2410/files/UniCord-User-Manual.pdf?v=1745475740",
+            "button_style": "simple"
+          }
+        },
+        "column_WPytJY": {
+          "type": "column",
+          "settings": {
+            "icon": "none",
+            "icon_color_scheme": "background-1",
+            "icon_fill_type": "gradient",
+            "heading": "RoamPlug",
+            "text": "",
+            "show_button": true,
+            "button_label": "View More",
+            "button_link": "https://cdn.shopify.com/s/files/1/0658/8963/2410/files/RoamPlug-User-Manual.pdf?v=1745475742",
+            "button_style": "simple"
+          }
+        },
+        "column_JetBY3": {
+          "type": "column",
+          "settings": {
+            "icon": "none",
+            "icon_color_scheme": "background-1",
+            "icon_fill_type": "gradient",
+            "heading": "KeyTracker",
+            "text": "",
+            "show_button": true,
+            "button_label": "View More",
+            "button_link": "https://cdn.shopify.com/s/files/1/0658/8963/2410/files/GlocalMe_KeyTracker_User_Manual-V1.1.pdf?v=1750747853",
+            "button_style": "simple"
+          }
+        },
+        "column_dR8aDE": {
+          "type": "column",
+          "settings": {
+            "icon": "none",
+            "icon_color_scheme": "background-1",
+            "icon_fill_type": "gradient",
+            "heading": "PetPhone",
+            "text": "",
+            "show_button": true,
+            "button_label": "View More",
+            "button_link": "https://cdn.shopify.com/s/files/1/0658/8963/2410/files/20250703-GlocalMe-PetPhone.pdf?v=1751619957",
+            "button_style": "simple"
+          }
+        }
+      },
+      "block_order": [
+        "column_9KrirT",
+        "column_VGdth8",
+        "column_mec4pC",
+        "column_8cxfa8",
+        "column_Pnwk8e",
+        "column_KTCBew",
+        "column_UBdapt",
+        "column_WPytJY",
+        "column_JetBY3",
+        "column_dR8aDE"
+      ],
+      "settings": {
+        "section_type": "transparent",
+        "color_scheme": "",
+        "enable_border": false,
+        "border_full": false,
+        "multicolumn_to_show": 3,
+        "gap": "large",
+        "enable_mobile_overflow_slider": false,
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "subheading_icon": "none",
+        "heading": "Product Manual PDF Document",
+        "heading_size": "h3",
+        "heading_level": "h2",
+        "heading_line": "none",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "rolling",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "left",
+        "icon_size": "recommended",
+        "box_shadow": true,
+        "icon_style": "colored",
+        "image_width": "medium",
+        "image_ratio": "square",
+        "object_fit": "cover",
+        "card_heading_size": "h4",
+        "padding_top": "m",
+        "padding_bottom": "m",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "video_grid_Xs21kN",
+    "multicolumn_qhTUhT"
+  ]
+}

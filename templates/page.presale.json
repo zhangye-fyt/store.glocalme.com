@@ -1,0 +1,279 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": "no-indent",
+        "padding_bottom": "m"
+      }
+    },
+    "image_banner_9AXiWb": {
+      "type": "image-banner",
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "full_width": false,
+        "color_scheme": "",
+        "image": "shopify://shop_images/1-04_6d8f2b68-030c-47a9-9e9e-1cd7ffce44ef.jpg",
+        "image_mobile": "shopify://shop_images/1-05_a3f9d404-3f6e-4c81-a4f9-512c6630b438.jpg",
+        "image_ratio": "adapt",
+        "opacity_overlay": 0,
+        "icon": "none",
+        "icon_color_scheme": "",
+        "icon_size": "large",
+        "icon_style": "colored",
+        "icon_fill_type": "gradient",
+        "box_shadow": false,
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "heading": "",
+        "heading_size": "h2",
+        "heading_level": "h2",
+        "text_information": "",
+        "text_align": "left",
+        "text_width": "small",
+        "show_view_all": false,
+        "button_label": "Shop now",
+        "button_style": "primary",
+        "button_link": "",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_banner_RJJqTe": {
+      "type": "image-banner",
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "full_width": false,
+        "color_scheme": "",
+        "image": "shopify://shop_images/1-07_b1416788-4825-44f5-b9eb-87bee3e271f5.jpg",
+        "image_mobile": "shopify://shop_images/1-06_0ab5cda7-9ac7-4609-9057-73b67db34e28.jpg",
+        "image_ratio": "adapt",
+        "opacity_overlay": 0,
+        "icon": "none",
+        "icon_color_scheme": "",
+        "icon_size": "large",
+        "icon_style": "colored",
+        "icon_fill_type": "gradient",
+        "box_shadow": false,
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "heading": "",
+        "heading_size": "h2",
+        "heading_level": "h2",
+        "text_information": "",
+        "text_align": "left",
+        "text_width": "small",
+        "show_view_all": false,
+        "button_label": "Shop now",
+        "button_style": "primary",
+        "button_link": "",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "multicolumn_UaNQbM": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_9ttDaG": {
+          "type": "column",
+          "settings": {
+            "icon": "none",
+            "icon_color_scheme": "",
+            "icon_fill_type": "gradient",
+            "heading": "White Hotspot(U3/U3X/G40)-40%OFF",
+            "text": "Only З0 units available!",
+            "show_button": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        },
+        "column_WRDVX6": {
+          "type": "column",
+          "settings": {
+            "icon": "none",
+            "icon_color_scheme": "",
+            "icon_fill_type": "gradient",
+            "heading": "GlocalMe KeyTrackerfor Pet-30% off",
+            "text": "Only 20 units available!",
+            "show_button": false,
+            "button_label": "Label",
+            "button_link": "",
+            "button_style": "simple"
+          }
+        }
+      },
+      "block_order": [
+        "column_9ttDaG",
+        "column_WRDVX6"
+      ],
+      "name": "t:sections.multicolumn.name",
+      "settings": {
+        "section_type": "transparent",
+        "color_scheme": "",
+        "enable_border": false,
+        "border_full": false,
+        "multicolumn_to_show": 2,
+        "gap": "large",
+        "enable_mobile_overflow_slider": false,
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "subheading_icon": "none",
+        "heading": "Subscribe GlocalMe Today to Win Big!",
+        "heading_size": "h3",
+        "heading_level": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566E0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "Exclusive discount codes will be emailed one day before the event.",
+        "text_align": "center",
+        "icon_size": "recommended",
+        "box_shadow": true,
+        "icon_style": "colored",
+        "image_width": "medium",
+        "image_ratio": "square",
+        "object_fit": "cover",
+        "card_heading_size": "h4",
+        "padding_top": "m",
+        "padding_bottom": "m",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "newsletter_TCBWcN": {
+      "type": "newsletter",
+      "name": "Newsletter",
+      "settings": {
+        "align_content": "left",
+        "subheading": "Join GlocalMe",
+        "subheading_style": "subtitle",
+        "subheading_icon": "none",
+        "heading": "<em>Subscribe to be the first to get the flash-sales news.</em>",
+        "heading_size": "h2",
+        "heading_level": "h2",
+        "heading_line": "simple",
+        "word_break": false,
+        "text": "",
+        "newsletter_text": "Limited places available, don't miss it!",
+        "button_style": "secondary",
+        "padding_top": "m",
+        "padding_bottom": "m"
+      }
+    },
+    "numbers_aFjzxT": {
+      "type": "numbers",
+      "blocks": {
+        "column_4A6Meq": {
+          "type": "column",
+          "settings": {
+            "number": "1,600,000,000",
+            "heading": "GlocalMe Worldwide Users",
+            "description": "",
+            "icon": "none",
+            "icon_color": "contrast",
+            "icon_fill_type": "solid",
+            "show_button": false,
+            "button_label": "Label",
+            "button_link": ""
+          }
+        },
+        "column_RqPBML": {
+          "type": "column",
+          "settings": {
+            "number": "200+",
+            "heading": "Countries and Regions Covered",
+            "description": "",
+            "icon": "none",
+            "icon_color": "contrast",
+            "icon_fill_type": "solid",
+            "show_button": false,
+            "button_label": "Label",
+            "button_link": ""
+          }
+        },
+        "column_6f8r3f": {
+          "type": "column",
+          "settings": {
+            "number": "80+",
+            "heading": "5G NETWORK COUNTRIES COVERED",
+            "description": "",
+            "icon": "none",
+            "icon_color": "contrast",
+            "icon_fill_type": "solid",
+            "show_button": false,
+            "button_label": "Label",
+            "button_link": ""
+          }
+        },
+        "column_99hFmm": {
+          "type": "column",
+          "settings": {
+            "number": "390",
+            "heading": "Global Carriers Access",
+            "description": "",
+            "icon": "none",
+            "icon_color": "contrast",
+            "icon_fill_type": "solid",
+            "show_button": false,
+            "button_label": "Label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_4A6Meq",
+        "column_RqPBML",
+        "column_6f8r3f",
+        "column_99hFmm"
+      ],
+      "name": "t:sections.numbers.name",
+      "settings": {
+        "layout": "columns",
+        "block_type": "plain",
+        "columns_to_row": 4,
+        "color_scheme": "",
+        "enable_border": false,
+        "border_full": false,
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "subheading_icon": "none",
+        "heading": "About GlocalMe",
+        "heading_size": "h2",
+        "heading_level": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566E0",
+        "word_break": false,
+        "text": "Better Connection Empowers Better Life.",
+        "text_align": "left",
+        "number_size": "recommended",
+        "icon_size": "recommended",
+        "card_heading_size": "recommended",
+        "number_size_first": "large",
+        "icon_size_first": "extra-large",
+        "card_heading_size_first": "h4",
+        "padding_top": "m",
+        "padding_bottom": "m"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_banner_9AXiWb",
+    "image_banner_RJJqTe",
+    "multicolumn_UaNQbM",
+    "newsletter_TCBWcN",
+    "numbers_aFjzxT"
+  ]
+}

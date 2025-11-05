@@ -1,0 +1,1217 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h3"
+          }
+        },
+        "judge_me_reviews_preview_badge_xBHebn": {
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        },
+        "description_zAdwmP": {
+          "type": "description",
+          "settings": {
+            "description": ""
+          }
+        },
+        "custom_liquid_ezWPRU": {
+          "type": "custom_liquid",
+          "disabled": true,
+          "settings": {
+            "custom_liquid": "{%- style -%}\n  .product-coupon-container {\n    margin: 20px 0;\n    font-family: inherit;\n  }\n  \n  .coupon-card {\n    background: linear-gradient(135deg, #e3b337 0%, #f4e6cb 100%);\n    border-radius: 10px;\n    border: 1px dashed #d1d5db;\n    padding: 15px;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    text-align: center;\n    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);\n    position: relative;\n    overflow: hidden;\n  }\n  \n  .coupon-card::before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    background: radial-gradient(circle at 10% 20%, rgba(255,255,255,0.3) 0%, transparent 20%);\n    pointer-events: none;\n  }\n  \n  .coupon-title {\n    font-size: 24px;\n    font-weight: 600;\n    color: #1f2937;\n    margin-bottom: 8px;\n  }\n  \n  .coupon-description {\n    font-size: 18px;\n    color: #97520c;\n    margin-bottom: 12px;\n    line-height: 1.4;\n  }\n  \n  .coupon-code-container {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    width: 100%;\n    margin-bottom: 10px;\n  }\n  \n  .coupon-code {\n    font-size: 20px;\n    font-weight: 700;\n    letter-spacing: 1px;\n    color: #97520c;\n    background-color: white;\n    padding: 8px 15px;\n    border-radius: 6px;\n    border: 1px solid #d1d5db;\n    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);\n    flex-grow: 1;\n    text-align: center;\n    max-width: 70%;\n    word-break: break-all;\n  }\n  \n  .copy-btn {\n    background-color: #3b82f6;\n    color: white;\n    border: none;\n    padding: 8px 12px;\n    border-radius: 6px;\n    margin-left: 8px;\n    font-size: 14px;\n    font-weight: 500;\n    cursor: pointer;\n    transition: background-color 0.2s;\n  }\n  \n  .copy-btn:hover {\n    background-color: #2563eb;\n  }\n  \n  .coupon-terms {\n    font-size: 12px;\n    color: #6b7280;\n    margin-top: 8px;\n  }\n  \n  /* 移动端适配 */\n  @media screen and (max-width: 749px) {\n    .coupon-card {\n      padding: 12px;\n    }\n    \n    .coupon-title {\n      font-size: 15px;\n    }\n    \n    .coupon-description {\n      font-size: 13px;\n    }\n    \n    .coupon-code {\n      font-size: 16px;\n      padding: 6px 12px;\n    }\n    \n    .copy-btn {\n      padding: 6px 10px;\n      font-size: 13px;\n    }\n  }\n{%- endstyle -%}\n\n{%- comment -%}\n  在这里设置你的优惠码和活动信息\n  你可以为不同产品设置不同的优惠码，或者使用相同的优惠码\n{%- endcomment -%}\n\n{%- assign current_product_handle = product.handle -%}\n\n{%- comment -%} 示例：根据产品handle设置不同的优惠码 {%- endcomment -%}\n{%- if current_product_handle == 'product-1-handle' -%}\n  {%- assign coupon_code = 'SUMMER20' -%}\n  {%- assign coupon_title = '夏季特惠' -%}\n  {%- assign coupon_description = '限时享受20%折扣，仅限本产品使用' -%}\n  {%- assign coupon_terms = '有效期至2023年8月31日，不可与其他优惠同时使用' -%}\n{%- elsif current_product_handle == 'product-2-handle' -%}\n  {%- assign coupon_code = 'FALL15' -%}\n  {%- assign coupon_title = '秋季促销' -%}\n  {%- assign coupon_description = '享受15%折扣，专为本产品定制' -%}\n  {%- assign coupon_terms = '有效期至2023年9月30日' -%}\n{%- else -%}\n  {%- assign coupon_code = 'CODE: PD15' -%}\n  {%- assign coupon_title = 'Prime Day sale is on!' -%}\n  {%- assign coupon_description = '15% OFF SITEWIDE' -%}\n  {%- assign coupon_terms = '' -%}\n{%- endif -%}\n\n{%- if coupon_code -%}\n<div class=\"product-coupon-container\">\n  <div class=\"coupon-card\">\n    <h3 class=\"coupon-title\">{{ coupon_title }}</h3>\n    <p class=\"coupon-description\">{{ coupon_description }}</p>\n    \n    <div class=\"coupon-code-container\">\n      <span class=\"coupon-code\" id=\"couponCode\">{{ coupon_code }}</span>\n     \n    </div>\n    \n    <p class=\"coupon-terms\">{{ coupon_terms }}</p>\n  </div>\n</div>\n\n\n{%- endif -%}"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "inventory_ybzDtw": {
+          "type": "inventory",
+          "settings": {}
+        },
+        "gift": {
+          "type": "gift",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_quantity": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "add_ons": {
+          "type": "add_ons",
+          "settings": {}
+        },
+        "supported_devices": {
+          "type": "supported_devices",
+          "settings": {}
+        },
+        "country_checker_RzX4dr": {
+          "type": "country_checker",
+          "settings": {}
+        },
+        "popup_nzDhX7": {
+          "type": "popup",
+          "settings": {
+            "label": "Compare Hotspot Device",
+            "heading": "",
+            "text": "",
+            "image": "shopify://shop_images/0702.jpg",
+            "page": ""
+          }
+        },
+        "dropdown_information_QqPkMP": {
+          "type": "dropdown_information",
+          "settings": {
+            "characteristics": false,
+            "heading": "User Manual",
+            "description": "<h6><a href=\"https://cdn.shopify.com/s/files/1/0658/8963/2410/files/U3.pdf?v=1745475415\" target=\"_blank\" title=\"https://cdn.shopify.com/s/files/1/0658/8963/2410/files/U3.pdf?v=1745475415\">U3</a></h6>",
+            "button_show": false,
+            "button_label": "Button label",
+            "button_link": "",
+            "default_open": false
+          }
+        },
+        "vitals_ub_product_bundles_9HXXzg": {
+          "type": "shopify://apps/vitals/blocks/ub-product-bundles/aeb48102-2a5a-4f39-bdbd-d8d49f4e20b8",
+          "settings": {}
+        },
+        "text_with_icon_FJpD8f": {
+          "type": "text_with_icon",
+          "settings": {
+            "show_text_with_icon_1": true,
+            "icon_1": "delivery",
+            "text_1": "Fast Shipping",
+            "show_text_with_icon_2": true,
+            "icon_2": "shield",
+            "text_2": "High-quality Products",
+            "box_shadow": true,
+            "icon_style": "colored",
+            "icon_fill_type": "gradient"
+          }
+        },
+        "text_with_icon": {
+          "type": "text_with_icon",
+          "settings": {
+            "show_text_with_icon_1": true,
+            "icon_1": "wallet",
+            "text_1": "30 Day Return Guarantee",
+            "show_text_with_icon_2": true,
+            "icon_2": "user-1",
+            "text_2": "Professional Service Support",
+            "box_shadow": true,
+            "icon_style": "colored",
+            "icon_fill_type": "gradient"
+          }
+        },
+        "share_EAqH9P": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share",
+            "show_share_facebook": true,
+            "show_share_twitter": true,
+            "show_share_pinterest": true,
+            "show_share_copy": true
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "judge_me_reviews_preview_badge_xBHebn",
+        "description_zAdwmP",
+        "custom_liquid_ezWPRU",
+        "variant_picker",
+        "price",
+        "inventory_ybzDtw",
+        "gift",
+        "buy_buttons",
+        "add_ons",
+        "supported_devices",
+        "country_checker_RzX4dr",
+        "popup_nzDhX7",
+        "dropdown_information_QqPkMP",
+        "vitals_ub_product_bundles_9HXXzg",
+        "text_with_icon_FJpD8f",
+        "text_with_icon",
+        "share_EAqH9P"
+      ],
+      "custom_css": [
+        "@media only screen and (min-width: 1200px) {.rte div {margin-right: 180px; margin-left: -180px; }}"
+      ],
+      "settings": {
+        "desktop_alignment": "right",
+        "mobile_alignment": "before",
+        "gallery_type": "slider_previews",
+        "aspect_ratio": "1/1",
+        "image_fit": "contain",
+        "image_fit_modal": "contain",
+        "padding_bottom": "m"
+      }
+    },
+    "image_text_separation_01": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_abNEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/U3_01.jpg",
+            "image_link": ""
+          }
+        },
+        "text_abLEyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Powered by</strong></p><p><strong>Qualcomm's Technology</strong></p>",
+            "text_color": "#101011",
+            "text_gradient_background": "linear-gradient(173deg, rgba(246, 244, 187, 1) 15%, rgba(207, 235, 248, 1) 50%)",
+            "text_font_size": 36,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 3.2,
+            "position_y": 8
+          }
+        },
+        "text_abUEyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Experience 4G full-speed connectivity with </p><p>U3 portable WiFi hotspot powered by Qualcomm.</p>",
+            "text_color": "#bbbbbb",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 300,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 3.2,
+            "position_y": 8
+          }
+        }
+      },
+      "block_order": [
+        "image_abNEyF",
+        "text_abLEyF",
+        "text_abUEyF"
+      ],
+      "custom_css": [],
+      "settings": {
+        "display_devices": "desktop",
+        "padding_top": "m",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_02": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_bbNEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/U3_02.jpg",
+            "image_link": ""
+          }
+        },
+        "text_bbLEyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Share WiFi with Family & Friends</strong></p>",
+            "text_color": "#101011",
+            "text_gradient_background": "linear-gradient(173deg, rgba(246, 244, 187, 1) 15%, rgba(207, 235, 248, 1) 50%)",
+            "text_font_size": 48,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "text_letter_spacing": 1.2,
+            "max_text_container_max_width": 88,
+            "enable_text_underline": true,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 6.8,
+            "position_y": 19.6
+          }
+        },
+        "text_bbUEyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The download speed is up to 150 Mbps, and the upload speed is up to 50 Mbps.</p><p>Share your WiFi connection with up to 10 devices at the same time. Easily meet everyone's need: music, movie TikTok, Youtube, Facebook, video, etc.</p>",
+            "text_color": "#dddddd",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "text_letter_spacing": 0.8,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 6.8,
+            "position_y": 4.4
+          }
+        }
+      },
+      "block_order": [
+        "image_bbNEyF",
+        "text_bbLEyF",
+        "text_bbUEyF"
+      ],
+      "settings": {
+        "display_devices": "desktop",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_03": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_cbNEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/U3_03.jpg",
+            "image_link": ""
+          }
+        },
+        "text_cbLEyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Sleek and Slim wiFi Hotspot</strong></p>",
+            "text_color": "#101011",
+            "text_gradient_background": "linear-gradient(173deg, rgba(246, 244, 187, 1) 15%, rgba(207, 235, 248, 1) 50%)",
+            "text_font_size": 48,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "text_letter_spacing": 1.2,
+            "max_text_container_max_width": 44,
+            "enable_text_underline": true,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 5.6,
+            "position_y": 16
+          }
+        },
+        "text_cbUEyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Boasting a sleek and slim design with a thickness of only 0.39in/1cm. Ideal for travel, this compact hotspot device ensures you stay connected wherever you go without adding extra bulk to your luggage.</p>",
+            "text_color": "#dddddd",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "text_letter_spacing": 0.8,
+            "max_text_container_max_width": 40,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 5.6,
+            "position_y": 24
+          }
+        },
+        "text_cbPEyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Super Lightweight but Long Endurance</strong></p>",
+            "text_color": "#101011",
+            "text_gradient_background": "linear-gradient(173deg, rgba(246, 244, 187, 1) 15%, rgba(207, 235, 248, 1) 50%)",
+            "text_font_size": 48,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "text_letter_spacing": 1.2,
+            "max_text_container_max_width": 40,
+            "enable_text_underline": true,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "btt",
+            "position_x": 5.6,
+            "position_y": 28
+          }
+        },
+        "text_cbQEyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lightweight, portable: just 125g, fits easily into your pocket, a suitcase, backpack, or purse for connectivity on-the-go</p>",
+            "text_color": "#dddddd",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "text_letter_spacing": 0.8,
+            "max_text_container_max_width": 40,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "btt",
+            "position_x": 5.6,
+            "position_y": 16
+          }
+        }
+      },
+      "block_order": [
+        "image_cbNEyF",
+        "text_cbLEyF",
+        "text_cbUEyF",
+        "text_cbPEyF",
+        "text_cbQEyF"
+      ],
+      "settings": {
+        "display_devices": "desktop",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_04": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_dbNEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/U3_04.jpg",
+            "image_link": ""
+          }
+        },
+        "text_dbPEyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Long Lasting Battery Life</strong></p>",
+            "text_color": "#101011",
+            "text_gradient_background": "linear-gradient(173deg, rgba(246, 244, 187, 1) 15%, rgba(207, 235, 248, 1) 50%)",
+            "text_font_size": 48,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "text_letter_spacing": 1.2,
+            "enable_text_underline": true,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 7,
+            "position_y": 17
+          }
+        },
+        "text_dbQEyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>3,000mAh Long-lasting battery life support up to 12 hours of use, a perfect portable internet WiFi mobile hotspot device for travel, family tour, business, camping, remote activity, and more.</p>",
+            "text_color": "#dddddd",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "text_letter_spacing": 0.8,
+            "max_text_container_max_width": 88,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 7,
+            "position_y": 6
+          }
+        }
+      },
+      "block_order": [
+        "image_dbNEyF",
+        "text_dbPEyF",
+        "text_dbQEyF"
+      ],
+      "settings": {
+        "display_devices": "desktop",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_05": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_ebNEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/U3_05.jpg",
+            "image_link": ""
+          }
+        },
+        "text_ebLEyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Portable WiFi Hotspot for Travel</strong></p>",
+            "text_color": "#101011",
+            "text_gradient_background": "linear-gradient(173deg, rgba(246, 244, 187, 1) 15%, rgba(207, 235, 248, 1) 50%)",
+            "text_font_size": 62,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "text_letter_spacing": 1.2,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "bbt",
+            "position_x": 0,
+            "position_y": 7
+          }
+        }
+      },
+      "block_order": [
+        "image_ebNEyF",
+        "text_ebLEyF"
+      ],
+      "settings": {
+        "display_devices": "desktop",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_06": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_01": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/U3_06.jpg",
+            "image_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_01"
+      ],
+      "settings": {
+        "display_devices": "desktop",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_07": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_gbNEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/U3_07.jpg",
+            "image_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_gbNEyF"
+      ],
+      "settings": {
+        "display_devices": "desktop",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_08": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_01": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/U3_08.jpg",
+            "image_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_01"
+      ],
+      "settings": {
+        "display_devices": "desktop",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_09": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_01": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/U3_09.jpg",
+            "image_link": ""
+          }
+        },
+        "text_ebLtyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Coverage of More than 200 Countries and Regions</strong></p>",
+            "text_color": "#101011",
+            "text_gradient_background": "linear-gradient(173deg, rgba(246, 244, 187, 1) 15%, rgba(207, 235, 248, 1) 50%)",
+            "text_font_size": 54,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "text_letter_spacing": 1.2,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 0,
+            "position_y": 13.6
+          }
+        }
+      },
+      "block_order": [
+        "image_01",
+        "text_ebLtyF"
+      ],
+      "settings": {
+        "display_devices": "desktop",
+        "padding_top": "no-indent",
+        "padding_bottom": "m",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_10": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_01": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/U3_10.jpg",
+            "image_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_01"
+      ],
+      "settings": {
+        "display_devices": "desktop",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_11": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_01": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/U3_11.jpg",
+            "image_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_01"
+      ],
+      "settings": {
+        "display_devices": "desktop",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_m_01": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_abNEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/U3_m_01.jpg",
+            "image_link": ""
+          }
+        },
+        "text_abLEyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Powered by</strong></p><p><strong>Qualcomm's Technology</strong></p>",
+            "text_color": "#101011",
+            "text_gradient_background": "linear-gradient(173deg, rgba(246, 244, 187, 1) 15%, rgba(207, 235, 248, 1) 50%)",
+            "text_font_size": 20,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 4,
+            "position_y": 2.6
+          }
+        }
+      },
+      "block_order": [
+        "image_abNEyF",
+        "text_abLEyF"
+      ],
+      "custom_css": [],
+      "settings": {
+        "display_devices": "mobile",
+        "padding_top": "m",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_m_02": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_bbNEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/U3_m_02.jpg",
+            "image_link": ""
+          }
+        },
+        "text_bbLEyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Long Lasting Battery Life</strong></p>",
+            "text_color": "#101011",
+            "text_gradient_background": "linear-gradient(173deg, rgba(246, 244, 187, 1) 15%, rgba(207, 235, 248, 1) 50%)",
+            "text_font_size": 20,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "text_letter_spacing": 0.4,
+            "enable_text_underline": true,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 4,
+            "position_y": 24
+          }
+        },
+        "text_bbUEyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>3,000mAh Long-lasting battery life support up to 12 hours of use, a perfect portable internet WiFi mobile hotspot device for travel, family tour, business, camping, remote activity, and more.</p>",
+            "text_color": "#dddddd",
+            "text_gradient_background": "",
+            "text_font_size": 14,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "text_letter_spacing": 0.2,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 4,
+            "position_y": 7
+          }
+        }
+      },
+      "block_order": [
+        "image_bbNEyF",
+        "text_bbLEyF",
+        "text_bbUEyF"
+      ],
+      "settings": {
+        "display_devices": "mobile",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_m_03": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_cbNEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/U3_m_03.jpg",
+            "image_link": ""
+          }
+        },
+        "text_cbPEyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Share WiFi with Family & Friends</strong></p>",
+            "text_color": "#101011",
+            "text_gradient_background": "linear-gradient(173deg, rgba(246, 244, 187, 1) 15%, rgba(207, 235, 248, 1) 50%)",
+            "text_font_size": 20,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "text_letter_spacing": 0.4,
+            "enable_text_underline": true,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 4,
+            "position_y": 24
+          }
+        },
+        "text_cbQEyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The download speed is up to 150 Mbps, and the upload speed is up to 50 Mbps.</p><p>Share your WiFi connection with up to 10 devices at the same time. Easily meet everyone's need: music, movie TikTok, Youtube, Facebook, video, etc.</p>",
+            "text_color": "#dddddd",
+            "text_gradient_background": "",
+            "text_font_size": 14,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "text_letter_spacing": 0.2,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 4,
+            "position_y": 7
+          }
+        }
+      },
+      "block_order": [
+        "image_cbNEyF",
+        "text_cbPEyF",
+        "text_cbQEyF"
+      ],
+      "settings": {
+        "display_devices": "mobile",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_m_04": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_dbNEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/U3_m_04.jpg",
+            "image_link": ""
+          }
+        },
+        "text_dbLEyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Sleek and Slim wiFi Hotspot</strong></p>",
+            "text_color": "#101011",
+            "text_gradient_background": "linear-gradient(173deg, rgba(246, 244, 187, 1) 15%, rgba(207, 235, 248, 1) 50%)",
+            "text_font_size": 20,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "text_letter_spacing": 0.4,
+            "max_text_container_max_width": 44,
+            "enable_text_underline": true,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 4,
+            "position_y": 7
+          }
+        },
+        "text_dbUEyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Boasting a sleek and slim design with a thickness of only 0.39in/1cm. Ideal for travel, this compact hotspot device ensures you stay connected wherever you go without adding extra bulk to your luggage.</p>",
+            "text_color": "#dddddd",
+            "text_gradient_background": "",
+            "text_font_size": 14,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "text_letter_spacing": 0.2,
+            "max_text_container_max_width": 40,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 4,
+            "position_y": 20
+          }
+        },
+        "text_dbPEyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Super Lightweight but Long Endurance</strong></p>",
+            "text_color": "#101011",
+            "text_gradient_background": "linear-gradient(173deg, rgba(246, 244, 187, 1) 15%, rgba(207, 235, 248, 1) 50%)",
+            "text_font_size": 20,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "text_letter_spacing": 0.4,
+            "max_text_container_max_width": 40,
+            "enable_text_underline": true,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "btt",
+            "position_x": 7.4,
+            "position_y": 26.8
+          }
+        },
+        "text_dbQEyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lightweight, portable: just 125g, fits easily into your pocket, a suitcase, backpack, or purse for connectivity on-the-go</p>",
+            "text_color": "#dddddd",
+            "text_gradient_background": "",
+            "text_font_size": 14,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "text_letter_spacing": 0.2,
+            "max_text_container_max_width": 40,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "btt",
+            "position_x": 7.4,
+            "position_y": 8
+          }
+        }
+      },
+      "block_order": [
+        "image_dbNEyF",
+        "text_dbLEyF",
+        "text_dbUEyF",
+        "text_dbPEyF",
+        "text_dbQEyF"
+      ],
+      "settings": {
+        "display_devices": "mobile",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_m_05": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_ebNEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/U3_m_05.jpg",
+            "image_link": ""
+          }
+        },
+        "text_ebLEyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Portable WiFi Hotspot for Travel</strong></p>",
+            "text_color": "#101011",
+            "text_gradient_background": "linear-gradient(173deg, rgba(246, 244, 187, 1) 15%, rgba(207, 235, 248, 1) 50%)",
+            "text_font_size": 28,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "text_letter_spacing": 0.4,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 0,
+            "position_y": 6
+          }
+        }
+      },
+      "block_order": [
+        "image_ebNEyF",
+        "text_ebLEyF"
+      ],
+      "settings": {
+        "display_devices": "mobile",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_m_06": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_01": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/U3_m_06.jpg",
+            "image_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_01"
+      ],
+      "settings": {
+        "display_devices": "mobile",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_m_07": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_gbNEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/U3_m_07.jpg",
+            "image_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_gbNEyF"
+      ],
+      "settings": {
+        "display_devices": "mobile",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_m_08": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_01": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/U3_m_08.jpg",
+            "image_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_01"
+      ],
+      "settings": {
+        "display_devices": "mobile",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_m_09": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_01": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/U3_m_09.jpg",
+            "image_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_01"
+      ],
+      "settings": {
+        "display_devices": "mobile",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_m_10": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_01": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/U3_m_10.jpg",
+            "image_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_01"
+      ],
+      "settings": {
+        "display_devices": "mobile",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_m_11": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_01": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/U3_m_11.jpg",
+            "image_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_01"
+      ],
+      "settings": {
+        "display_devices": "mobile",
+        "padding_top": "no-indent",
+        "padding_bottom": "m",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "175583350442d3a106": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_EkdpfQ": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_EkdpfQ"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "product_recommendations_fGJkrE": {
+      "type": "product-recommendations",
+      "settings": {
+        "color_scheme": "",
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "subheading_icon": "none",
+        "heading": "You May Also Like",
+        "heading_size": "h2",
+        "text": "",
+        "products_limit": 6,
+        "image_ratio": "1/1",
+        "image_fit": "cover",
+        "show_secondary_image": true,
+        "show_vendor": true,
+        "show_desc": false,
+        "padding_top": "s",
+        "padding_bottom": "m"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_text_separation_01",
+    "image_text_separation_02",
+    "image_text_separation_03",
+    "image_text_separation_04",
+    "image_text_separation_05",
+    "image_text_separation_06",
+    "image_text_separation_07",
+    "image_text_separation_08",
+    "image_text_separation_09",
+    "image_text_separation_10",
+    "image_text_separation_11",
+    "image_text_separation_m_01",
+    "image_text_separation_m_02",
+    "image_text_separation_m_03",
+    "image_text_separation_m_04",
+    "image_text_separation_m_05",
+    "image_text_separation_m_06",
+    "image_text_separation_m_07",
+    "image_text_separation_m_08",
+    "image_text_separation_m_09",
+    "image_text_separation_m_10",
+    "image_text_separation_m_11",
+    "175583350442d3a106",
+    "product_recommendations_fGJkrE"
+  ]
+}

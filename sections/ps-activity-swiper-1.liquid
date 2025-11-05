@@ -1,0 +1,339 @@
+<style>
+   {% comment %} { text-decoration: none; } {% endcomment %}
+
+  ul, li {
+    list-style: none;
+    padding: 0 !important;
+    margin: 0 !important;
+  } 
+
+  {% comment %} img { border: none; } {% endcomment %}
+  @media (max-width: 768px) {
+    #slideBox-{{ section.id }} .swiper-button-next,
+    #slideBox-{{ section.id }} .swiper-button-prev{
+        width:30px !important;
+        height:30px !important;
+        top: 60%;
+    }
+    #slideBox-{{ section.id }} .hd ul li .dot {
+        width:30px !important;
+    }
+    {% comment %} #slideBox-{{ section.id }} .hd ul li { height: 26px !important; } {% endcomment %}
+  }
+
+  #slideBox-{{ section.id }} {
+    width: 100%;
+    padding:50px 0px;
+    {% comment %} overflow: hidden;
+    position: relative; {% endcomment %}
+  }
+
+  #slideBox-{{ section.id }} img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+
+  #slideBox-{{ section.id }} img:hover {
+    transform: scale(1.03);
+  }
+
+  /* hd 容器 */
+  #slideBox-{{ section.id }} .hd {
+    width: 100%;
+    {% comment %} position: absolute;
+    bottom: 0;
+    z-index: 1; {% endcomment %}
+    text-align: center;
+  }
+
+  #slideBox-{{ section.id }} .hd ul li {
+    {% comment %} width: 80px;
+    height: 36px;
+    margin: 0 3px; {% endcomment %}
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+  }
+
+  #slideBox-{{ section.id }} .hd ul li .dot {
+    width: 80px;
+    height: 4px;
+    background-color: hsla(0,0%,60%,0.4);
+  }
+
+  #slideBox-{{ section.id }} .hd ul li span {
+    display: none;
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    font-size: 14px;
+    left: 0;
+    top: 0;
+    line-height: 36px;
+  }
+
+  #slideBox-{{ section.id }} .hd ul li.on .liner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    {% comment %} background: linear-gradient(90deg, #198cff, #8847c1); {% endcomment %}
+    background: #000000;
+    animation: liner 4s linear forwards;
+  }
+
+  #slideBox-{{ section.id }} .hd ul li:hover span { display: inline-block; }
+
+  @keyframes liner {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+
+  /* 左右按钮 */
+  /* remove pseudo-element text content and use inline SVGs */
+  #slideBox-{{ section.id }} .swiper-button-next,
+  #slideBox-{{ section.id }} .swiper-button-prev{
+    background: #26262966;
+    border-radius: 50%;
+    width:50px;
+    height:50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+  }
+  #slideBox-{{ section.id }} .swiper-button-next svg,
+  #slideBox-{{ section.id }} .swiper-button-prev svg {
+    width: 24px;
+    height: 24px;
+    display: block;
+    color: #ffffff;
+  }
+  /* overlay */
+  #slideBox-{{ section.id }} .swiper-slide { position: relative; height: auto; }
+  #slideBox-{{ section.id }} .overlay { position: absolute; top: 0; right: 0; bottom: 0; left: 0; pointer-events: none; }
+  #slideBox-{{ section.id }} .overlay-inner {
+    position: absolute;
+    max-width: 90%;
+    color: #fff;
+    text-align: left;
+    pointer-events: auto;
+  }
+  #slideBox-{{ section.id }} .overlay-title { margin: 0 0 8px; font-size: 24px; font-weight: 600;color:#ffffff }
+  #slideBox-{{ section.id }} .overlay-desc { margin: 0 0 12px; font-size: 14px; line-height: 1.6; }
+
+  /* 让图片填满固定高的 slide */
+  #slideBox-{{ section.id }} .swiper-slide picture,
+  #slideBox-{{ section.id }} .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  /* 标题样式 */
+  #slideBox-{{ section.id }} .slide-title {
+    {% comment %} font-size: 36px;
+    font-weight: 700; {% endcomment %}
+    margin: 0 0 20px 0;
+    text-align: left;
+    max-width: 95%;
+  }
+
+  /* 响应式高度：移动端更矮 */
+  @media (max-width: 768px) {
+    {% comment %} #slideBox-{{ section.id }} .swiper-slide { height: 200px; } {% endcomment %}
+    #slideBox-{{ section.id }} .slide-title {
+        {% comment %} text-align: center;
+        max-width: 100%; {% endcomment %}
+    }
+  }
+</style>
+
+<div id="slideBox-{{ section.id }}" class="swiper slideBox" dir="rtl">
+  <h2 class="slide-title">{{ section.settings.title | default: '轮播图标题' }}</h2>
+  <div class="swiper-wrapper" style="padding:30px 0px;">
+    {% for block in section.blocks %}
+      <div class="swiper-slide" style="overflow: hidden;">
+        <a class="overlay-btn" href="{{ block.settings.link }}" target="_blank" rel="noopener noreferrer">
+          <picture>
+            <source
+              media="(max-width: 767px)"
+              srcset="{{ block.settings.mobile_image | default: block.settings.carousel_image | image_url }}"
+            >
+            <img
+              src="{{ block.settings.carousel_image | image_url }}"
+              alt="{{ block.settings.carousel_image.alt | default: shop.name }}"
+              loading="lazy"
+              decoding="async"
+              width="{{ block.settings.carousel_image.width }}"
+              height="{{ block.settings.carousel_image.height }}"
+            >
+          </picture>
+          <div class="overlay">
+            <div
+              class="overlay-inner"
+              style="{% if block.settings.v_align == 'top' %}top: {{ block.settings.offset_y | default: 0 }}px;{% elsif block.settings.v_align == 'middle' %}top: 50%;{% elsif block.settings.v_align == 'bottom' %}bottom: {{ block.settings.offset_y | default: 0 }}px;{% endif %} {% if block.settings.h_align == 'left' %}left: {{ block.settings.offset_x | default: 0 }}px;{% elsif block.settings.h_align == 'center' %}left: 50%;{% elsif block.settings.h_align == 'right' %}right: {{ block.settings.offset_x | default: 0 }}px;{% endif %} transform: translate({% if block.settings.h_align == 'center' %}-50%{% else %}0{% endif %}, {% if block.settings.v_align == 'middle' %}-50%{% else %}0{% endif %});"
+            >
+              {% if block.settings.title %}
+                <h3 class="overlay-title">{{ block.settings.title }}</h3>
+              {% endif %}
+              {% if block.settings.description %}
+                <div class="overlay-desc">{{ block.settings.description }}</div>
+              {% endif %}
+            </div>
+          </div>
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+
+  <!-- 自定义分页器 -->
+  <div class="hd">
+    <ul>
+      {% for block in section.blocks %}
+        <li>
+          <div class="dot"><div class="liner"></div></div>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <!-- 左右按钮 -->
+  <div class="swiper-button-prev">
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <path d="M15 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </div>
+  <div class="swiper-button-next">
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </div>
+</div>
+
+<!-- Swiper CDN -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const container = document.getElementById('slideBox-{{ section.id }}');
+    if (!container) return;
+
+    const dots = container.querySelectorAll('.hd ul li');
+
+    const swipers = new Swiper('#slideBox-{{ section.id }}', {
+      loop: true,
+      autoHeight: false,
+      slidesPerView: 1.2,
+      spaceBetween: 10,
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+        reverseDirection: true,
+      },
+      breakpoints: {
+        800: { // 当屏幕宽度 >= 640px
+          slidesPerView:2.3, // 显示 2 个 slide
+          spaceBetween: 30,
+        }
+      },
+      navigation: {
+        nextEl: '.swiper-button-prev',
+        prevEl: '.swiper-button-next',
+      },
+      on: {
+        init: function () {
+          updatePagination(this.realIndex);
+        },
+        slideChange: function () {
+          updatePagination(this.realIndex);
+        },
+      },
+    });
+
+    function updatePagination(index) {
+      if (!dots || dots.length === 0) return;
+      dots.forEach((li, i) => {
+        li.classList.remove('on');
+        const liner = li.querySelector('.liner');
+        if (liner) liner.style.animation = 'none';
+        if (i === index) {
+          li.classList.add('on');
+          void liner.offsetWidth;
+          liner.style.animation = null;
+        }
+      });
+    }
+  });
+</script>
+
+{% schema %}
+{
+  "name": "ps-activity-swiper-1",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "轮播图标题",
+      "default": "轮播图标题"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "testimonial",
+      "name": "轮播图幻灯片",
+      "settings": [
+        { "type": "text", "id": "title", "label": "标题", "default": "示例标题" },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "描述",
+          "default": "这里是一段示例描述文本，可在设置中进行编辑。"
+        },
+        { "type": "url", "id": "link", "label": "链接" },
+        { "type": "image_picker", "id": "carousel_image", "label": "PC端图片" },
+        { "type": "image_picker", "id": "mobile_image", "label": "手机端图片" },
+        {
+          "type": "select",
+          "id": "h_align",
+          "label": "水平对齐",
+          "default": "center",
+          "options": [
+            { "value": "left", "label": "左对齐" },
+            { "value": "center", "label": "居中" },
+            { "value": "right", "label": "右对齐" }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "v_align",
+          "label": "垂直对齐",
+          "default": "middle",
+          "options": [
+            { "value": "top", "label": "顶部" },
+            { "value": "middle", "label": "居中" },
+            { "value": "bottom", "label": "底部" }
+          ]
+        },
+        {
+          "type": "range",
+          "id": "offset_x",
+          "label": "水平偏移(px)",
+          "min": -200,
+          "max": 200,
+          "step": 5,
+          "default": 0
+        },
+        { "type": "range", "id": "offset_y", "label": "垂直偏移(px)", "min": -200, "max": 200, "step": 5, "default": 0 }
+      ]
+    }
+  ],
+  "presets": [{ "name": "ps-activity-swiper-1" }]
+}
+{% endschema %}

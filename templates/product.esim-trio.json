@@ -1,0 +1,3016 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ product.vendor }}"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h3"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "dropdown"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "custom_liquid_XVjEj4": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<span style=\"color: red;\">eSIM Trio can be activated by inserting into the mobile phone card slot, no need to use it on GlocalMe portable WiFi devices."
+          }
+        },
+        "inventory_ybzDtw": {
+          "type": "inventory",
+          "disabled": true,
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_quantity": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "country_checker": {
+          "type": "country_checker",
+          "settings": {}
+        },
+        "vitals_ub_product_bundles_DxRBEB": {
+          "type": "shopify://apps/vitals/blocks/ub-product-bundles/aeb48102-2a5a-4f39-bdbd-d8d49f4e20b8",
+          "settings": {}
+        },
+        "custom_liquid_6pDWQA": {
+          "type": "custom_liquid",
+          "disabled": true,
+          "settings": {
+            "custom_liquid": "<div id=\"izyrent\"></div>"
+          }
+        },
+        "gift": {
+          "type": "gift",
+          "settings": {}
+        },
+        "add_ons": {
+          "type": "add_ons",
+          "settings": {}
+        },
+        "supported_devices": {
+          "type": "supported_devices",
+          "settings": {}
+        },
+        "text_with_icon_FJpD8f": {
+          "type": "text_with_icon",
+          "settings": {
+            "show_text_with_icon_1": true,
+            "icon_1": "delivery",
+            "text_1": "Fast Shipping",
+            "show_text_with_icon_2": true,
+            "icon_2": "shield",
+            "text_2": "High-quality Products",
+            "box_shadow": true,
+            "icon_style": "colored",
+            "icon_fill_type": "gradient"
+          }
+        },
+        "text_with_icon": {
+          "type": "text_with_icon",
+          "settings": {
+            "show_text_with_icon_1": true,
+            "icon_1": "wallet",
+            "text_1": "30 Day Return Guarantee",
+            "show_text_with_icon_2": true,
+            "icon_2": "user-1",
+            "text_2": "Professional Service Support",
+            "box_shadow": true,
+            "icon_style": "colored",
+            "icon_fill_type": "gradient"
+          }
+        },
+        "share_EAqH9P": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share",
+            "show_share_facebook": true,
+            "show_share_twitter": true,
+            "show_share_pinterest": true,
+            "show_share_copy": true
+          }
+        },
+        "popup_nzDhX7": {
+          "type": "popup",
+          "disabled": true,
+          "settings": {
+            "label": "Compare",
+            "heading": "",
+            "text": "",
+            "image": "shopify://shop_images/c23545ae333b999b21f3be3053b5c1cb.jpg",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "variant_picker",
+        "price",
+        "custom_liquid_XVjEj4",
+        "inventory_ybzDtw",
+        "buy_buttons",
+        "country_checker",
+        "vitals_ub_product_bundles_DxRBEB",
+        "custom_liquid_6pDWQA",
+        "gift",
+        "add_ons",
+        "supported_devices",
+        "text_with_icon_FJpD8f",
+        "text_with_icon",
+        "share_EAqH9P",
+        "popup_nzDhX7"
+      ],
+      "custom_css": [
+        "@media only screen and (min-width: 1200px) {.rte div {margin-right: 180px; margin-left: -180px; }}"
+      ],
+      "settings": {
+        "desktop_alignment": "right",
+        "mobile_alignment": "before",
+        "gallery_type": "slider_previews",
+        "aspect_ratio": "1/1",
+        "image_fit": "contain",
+        "image_fit_modal": "contain",
+        "padding_bottom": "l"
+      }
+    },
+    "image_text_separation_QPVWHw": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_kmiqxE": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/01_d9365f73-0410-4b00-935f-23553c58741c.jpg",
+            "image_link": ""
+          }
+        },
+        "text_DYCi9X": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Disruptive Technology</strong></p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "linear-gradient(177deg, rgba(0, 255, 218, 1) 41%, rgba(158, 107, 232, 1) 57%)",
+            "text_font_size": 54,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "center",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 6,
+            "position_y": 4
+          }
+        },
+        "text_LY9ENm": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Global Three-in-One Super SlM Card</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "center",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 6,
+            "position_y": 14
+          }
+        },
+        "text_WhVNQE": {
+          "type": "text",
+          "settings": {
+            "text": "<p>This is not just a SlM card, it's your phone's </p><p>global passport.</p>",
+            "text_color": "#101011",
+            "text_gradient_background": "",
+            "text_font_size": 25,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 56,
+            "position_y": 44
+          }
+        }
+      },
+      "block_order": [
+        "image_kmiqxE",
+        "text_DYCi9X",
+        "text_LY9ENm",
+        "text_WhVNQE"
+      ],
+      "name": "t:sections.image-text-separation.presets.name",
+      "settings": {
+        "display_devices": "desktop",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_Q9bCdV": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_kx6KLP": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/02_2782cb7f-7aa5-404c-b654-398baba4a962.jpg",
+            "image_link": ""
+          }
+        },
+        "text_WntDAU": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Are you still worried about these situations?</strong></p>",
+            "text_color": "#101011",
+            "text_gradient_background": "linear-gradient(136deg, rgba(0, 255, 218, 1) 11%, rgba(158, 107, 232, 1) 62%)",
+            "text_font_size": 50,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "center",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 6,
+            "position_y": 4
+          }
+        },
+        "text_GUL8Pk": {
+          "type": "text",
+          "settings": {
+            "text": "<p>No signal during roaming</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 32,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 16,
+            "position_y": 50
+          }
+        },
+        "text_RETYR7": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Expensive roaming charges</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 32,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 60,
+            "position_y": 50
+          }
+        },
+        "text_ifYMXH": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The phone doesn't support eSIM</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 32,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 13,
+            "position_y": 6
+          }
+        },
+        "text_RjjbqM": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Hard to manage local calling cards</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 32,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 57,
+            "position_y": 6
+          }
+        }
+      },
+      "block_order": [
+        "image_kx6KLP",
+        "text_WntDAU",
+        "text_GUL8Pk",
+        "text_RETYR7",
+        "text_ifYMXH",
+        "text_RjjbqM"
+      ],
+      "name": "t:sections.image-text-separation.presets.name",
+      "settings": {
+        "display_devices": "desktop",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_9tjGWp": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_ByTUkc": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/10.jpg",
+            "image_link": ""
+          }
+        },
+        "text_xykVce": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Disruptive Technology</strong></p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "linear-gradient(177deg, rgba(0, 255, 218, 1) 41%, rgba(158, 107, 232, 1) 57%)",
+            "text_font_size": 50,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "center",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 6,
+            "position_y": 7
+          }
+        },
+        "text_AAdx6R": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Global Three-in-One Super SlM Card</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 26,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "center",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 6,
+            "position_y": 22
+          }
+        },
+        "text_tLpHHk": {
+          "type": "text",
+          "settings": {
+            "text": "<p>This is not just a SlM card, it's your phone's global passport.</p>",
+            "text_color": "#011624",
+            "text_gradient_background": "",
+            "text_font_size": 20,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 8,
+            "position_y": 3
+          }
+        }
+      },
+      "block_order": [
+        "image_ByTUkc",
+        "text_xykVce",
+        "text_AAdx6R",
+        "text_tLpHHk"
+      ],
+      "name": "t:sections.image-text-separation.presets.name",
+      "settings": {
+        "display_devices": "mobile",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_jmLnez": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_G7fFUX": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/11_801e9a1b-3739-40e9-af1e-f747f96a1077.jpg",
+            "image_link": ""
+          }
+        },
+        "text_kNaxV3": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Are you still worried about these situations?</strong></p>",
+            "text_color": "#101011",
+            "text_gradient_background": "linear-gradient(136deg, rgba(0, 255, 218, 1) 11%, rgba(158, 107, 232, 1) 62%)",
+            "text_font_size": 32,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "center",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 6,
+            "position_y": 4
+          }
+        },
+        "text_W36tEQ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>No signal during roaming</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 4,
+            "position_y": 51
+          }
+        },
+        "text_VeN7BX": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Expensive roaming charges</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 52,
+            "position_y": 51
+          }
+        },
+        "text_ECjeP4": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Doesn't support eSIM</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 6,
+            "position_y": 2
+          }
+        },
+        "text_HyJELd": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Hard to manage local cards</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 52,
+            "position_y": 2
+          }
+        }
+      },
+      "block_order": [
+        "image_G7fFUX",
+        "text_kNaxV3",
+        "text_W36tEQ",
+        "text_VeN7BX",
+        "text_ECjeP4",
+        "text_HyJELd"
+      ],
+      "name": "t:sections.image-text-separation.presets.name",
+      "settings": {
+        "display_devices": "mobile",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_kAVF9x": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_EhiAKh": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/03_407df49b-7028-4797-8a16-29d5216531f1.jpg",
+            "image_link": ""
+          }
+        },
+        "text_DijEJN": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The eSlM Trio, one card to end all worries.</p>",
+            "text_color": "#011624",
+            "text_gradient_background": "linear-gradient(228deg, rgba(0, 255, 218, 1) 48%, rgba(187, 48, 254, 1) 89%)",
+            "text_font_size": 48,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "center",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 6,
+            "position_y": 4
+          }
+        },
+        "text_C8dFhK": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Dimensions</p>",
+            "text_color": "#011624",
+            "text_gradient_background": "",
+            "text_font_size": 26,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 4,
+            "position_y": 28
+          }
+        }
+      },
+      "block_order": [
+        "image_EhiAKh",
+        "text_DijEJN",
+        "text_C8dFhK"
+      ],
+      "disabled": true,
+      "name": "t:sections.image-text-separation.presets.name",
+      "settings": {
+        "display_devices": "desktop",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_banner_f9UPM9": {
+      "type": "image-banner",
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "full_width": false,
+        "color_scheme": "",
+        "image": "shopify://shop_images/12_d9a59cd5-f8fd-425e-b208-4c081f33cbf4.jpg",
+        "image_mobile": "shopify://shop_images/03_6d4a8a40-dfd8-47cf-a746-20bef5dd314f.jpg",
+        "image_ratio": "adapt",
+        "image_link": "",
+        "opacity_overlay": 0,
+        "icon": "none",
+        "icon_color_scheme": "",
+        "icon_size": "large",
+        "icon_style": "colored",
+        "icon_fill_type": "gradient",
+        "box_shadow": false,
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "heading": "",
+        "heading_size": "h2",
+        "heading_level": "h2",
+        "text_information": "",
+        "text_align": "left",
+        "text_width": "small",
+        "show_view_all": false,
+        "button_label": "Shop now",
+        "button_style": "primary",
+        "button_link": "",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_7enrAQ": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_CN3EfB": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/04.jpg",
+            "image_link": ""
+          }
+        },
+        "text_cJXx8c": {
+          "type": "text",
+          "settings": {
+            "text": "<p>A second SlM card worth</p><p>having permanently</p>",
+            "text_color": "#101011",
+            "text_gradient_background": "linear-gradient(191deg, rgba(10, 234, 237, 1) 69%, rgba(250, 13, 253, 1) 100%)",
+            "text_font_size": 42,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 51,
+            "position_y": 28
+          }
+        },
+        "text_Hj9YAw": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Not to replace your main card, but to become</p><p> your permanent</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 22,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 51,
+            "position_y": 46
+          }
+        },
+        "text_CVKVT3": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Global backup card.</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 48,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "right",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "btt",
+            "position_x": 23,
+            "position_y": 32
+          }
+        }
+      },
+      "block_order": [
+        "image_CN3EfB",
+        "text_cJXx8c",
+        "text_Hj9YAw",
+        "text_CVKVT3"
+      ],
+      "name": "t:sections.image-text-separation.presets.name",
+      "settings": {
+        "display_devices": "desktop",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_nWYcqW": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_pYtX7J": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/13.jpg",
+            "image_link": ""
+          }
+        },
+        "text_fYYHnb": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>A second SlM card worth </strong></p><p><strong>having permanently</strong></p>",
+            "text_color": "#101011",
+            "text_gradient_background": "linear-gradient(191deg, rgba(10, 234, 237, 1) 69%, rgba(250, 13, 253, 1) 100%)",
+            "text_font_size": 25,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 52,
+            "position_y": 26
+          }
+        },
+        "text_UwJdw6": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Not to replace your main card, </p><p>but to become your permanent</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 19,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 51,
+            "position_y": 46
+          }
+        },
+        "text_GVWtW9": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Global backup card.</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 30,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "right",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "btt",
+            "position_x": 7,
+            "position_y": 32
+          }
+        }
+      },
+      "block_order": [
+        "image_pYtX7J",
+        "text_fYYHnb",
+        "text_UwJdw6",
+        "text_GVWtW9"
+      ],
+      "name": "t:sections.image-text-separation.presets.name",
+      "settings": {
+        "display_devices": "mobile",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_MmtJTx": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_Mwztct": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/14_cb3f3b8d-1b0f-480a-bd38-315137f30c9e.jpg",
+            "image_link": ""
+          }
+        },
+        "text_cY6GCj": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Function</p>",
+            "text_color": "#000000",
+            "text_gradient_background": "",
+            "text_font_size": 20,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 11,
+            "position_y": 19
+          }
+        },
+        "text_QBw6ML": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Primary card</p>",
+            "text_color": "#101011",
+            "text_gradient_background": "",
+            "text_font_size": 20,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 35,
+            "position_y": 20
+          }
+        },
+        "text_EHNpKD": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Secondary card</p>",
+            "text_color": "#eafd03",
+            "text_gradient_background": "",
+            "text_font_size": 20,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 64,
+            "position_y": 20
+          }
+        },
+        "text_9hxVkH": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Kore Purpose</p>",
+            "text_color": "#101011",
+            "text_gradient_background": "",
+            "text_font_size": 19,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 8,
+            "position_y": 33
+          }
+        },
+        "text_hTbJwp": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Domestic calls </p><p>& basic data</p>",
+            "text_color": "#101011",
+            "text_gradient_background": "",
+            "text_font_size": 19,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 35,
+            "position_y": 31
+          }
+        },
+        "text_tz9Qjy": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Global use</p>",
+            "text_color": "#eafd03",
+            "text_gradient_background": "",
+            "text_font_size": 20,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 67,
+            "position_y": 34
+          }
+        },
+        "text_9XHERj": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Plan Flexibility</p>",
+            "text_color": "#101011",
+            "text_gradient_background": "",
+            "text_font_size": 19,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 8,
+            "position_y": 47
+          }
+        },
+        "text_VWMaPR": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Fixed monthly fee </p><p>& contract period</p>",
+            "text_color": "#000000",
+            "text_gradient_background": "",
+            "text_font_size": 19,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 34,
+            "position_y": 44
+          }
+        },
+        "text_m7BNY9": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Purchased as needed,</p><p> ready to use</p>",
+            "text_color": "#eafd03",
+            "text_gradient_background": "",
+            "text_font_size": 19,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 63,
+            "position_y": 44
+          }
+        },
+        "text_CzjA6z": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Coverage</p>",
+            "text_color": "#101011",
+            "text_gradient_background": "",
+            "text_font_size": 20,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 10,
+            "position_y": 60
+          }
+        },
+        "text_eUwkWL": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Single operator</p><p>network</p>",
+            "text_color": "#101011",
+            "text_gradient_background": "",
+            "text_font_size": 20,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 35,
+            "position_y": 59
+          }
+        },
+        "text_Tk4Kbi": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Multi-country,</p><p>multi-network </p>",
+            "text_color": "#eafd03",
+            "text_gradient_background": "",
+            "text_font_size": 20,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 66,
+            "position_y": 58
+          }
+        },
+        "text_XjckTj": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Long-term </p><p>Value</p>",
+            "text_color": "#101011",
+            "text_gradient_background": "",
+            "text_font_size": 19,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 10,
+            "position_y": 18
+          }
+        },
+        "text_MNFTWg": {
+          "type": "text",
+          "settings": {
+            "text": "<p>/</p>",
+            "text_color": "#000000",
+            "text_gradient_background": "",
+            "text_font_size": 20,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 42,
+            "position_y": 20
+          }
+        },
+        "text_WJELVn": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Continuously upgraded</p><p>global service rights</p>",
+            "text_color": "#eafd03",
+            "text_gradient_background": "",
+            "text_font_size": 19,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 61,
+            "position_y": 16
+          }
+        }
+      },
+      "block_order": [
+        "image_Mwztct",
+        "text_cY6GCj",
+        "text_QBw6ML",
+        "text_EHNpKD",
+        "text_9hxVkH",
+        "text_hTbJwp",
+        "text_tz9Qjy",
+        "text_9XHERj",
+        "text_VWMaPR",
+        "text_m7BNY9",
+        "text_CzjA6z",
+        "text_eUwkWL",
+        "text_Tk4Kbi",
+        "text_XjckTj",
+        "text_MNFTWg",
+        "text_WJELVn"
+      ],
+      "name": "t:sections.image-text-separation.presets.name",
+      "settings": {
+        "display_devices": "mobile",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_QeKP8U": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_8p9w6P": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/05_c38cd05b-4d62-4a89-941a-b5045b1ebd5c.jpg",
+            "image_link": ""
+          }
+        },
+        "text_QF69t7": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Function</p>",
+            "text_color": "#011624",
+            "text_gradient_background": "",
+            "text_font_size": 26,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 8,
+            "position_y": 28
+          }
+        },
+        "text_w4CECz": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Primary card</p>",
+            "text_color": "#101011",
+            "text_gradient_background": "",
+            "text_font_size": 26,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 35,
+            "position_y": 29
+          }
+        },
+        "text_6XgFMA": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Secondary card</p>",
+            "text_color": "#eafd03",
+            "text_gradient_background": "",
+            "text_font_size": 26,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 69,
+            "position_y": 29
+          }
+        },
+        "text_fUheJE": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Kore Purpose</p>",
+            "text_color": "#101011",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 7,
+            "position_y": 39
+          }
+        },
+        "text_VeciDL": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Domestic calls & basic data</p>",
+            "text_color": "#101011",
+            "text_gradient_background": "",
+            "text_font_size": 26,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 30,
+            "position_y": 41
+          }
+        },
+        "text_4GGd8C": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Global use</p>",
+            "text_color": "#eafd03",
+            "text_gradient_background": "",
+            "text_font_size": 26,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 71,
+            "position_y": 41
+          }
+        },
+        "text_taQycd": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Plan Flexibility</p>",
+            "text_color": "#101011",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 6,
+            "position_y": 51
+          }
+        },
+        "text_My4Xff": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Fixed monthly fee & contract period</p>",
+            "text_color": "#000000",
+            "text_gradient_background": "",
+            "text_font_size": 26,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 27,
+            "position_y": 52
+          }
+        },
+        "text_htTCJE": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Purchased as needed, ready to use</p>",
+            "text_color": "#eafd03",
+            "text_gradient_background": "",
+            "text_font_size": 26,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 63,
+            "position_y": 52
+          }
+        },
+        "text_NNLgxP": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Coverage</p>",
+            "text_color": "#101011",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 7,
+            "position_y": 62
+          }
+        },
+        "text_XWpxwY": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Single operator network</p>",
+            "text_color": "#101011",
+            "text_gradient_background": "",
+            "text_font_size": 26,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 30,
+            "position_y": 63
+          }
+        },
+        "text_cWnrWe": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Multi-country, multi-network </p>",
+            "text_color": "#eafd03",
+            "text_gradient_background": "",
+            "text_font_size": 26,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 66,
+            "position_y": 63
+          }
+        },
+        "text_neCxdP": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Long-term Value</p>",
+            "text_color": "#101011",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 6,
+            "position_y": 23
+          }
+        },
+        "text_Me9F8x": {
+          "type": "text",
+          "settings": {
+            "text": "<p>/</p>",
+            "text_color": "#000000",
+            "text_gradient_background": "",
+            "text_font_size": 26,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 39,
+            "position_y": 23
+          }
+        },
+        "text_YA8A3Q": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Continuously upgraded global service rights</p>",
+            "text_color": "#eafd03",
+            "text_gradient_background": "",
+            "text_font_size": 26,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 60,
+            "position_y": 21
+          }
+        }
+      },
+      "block_order": [
+        "image_8p9w6P",
+        "text_QF69t7",
+        "text_w4CECz",
+        "text_6XgFMA",
+        "text_fUheJE",
+        "text_VeciDL",
+        "text_4GGd8C",
+        "text_taQycd",
+        "text_My4Xff",
+        "text_htTCJE",
+        "text_NNLgxP",
+        "text_XWpxwY",
+        "text_cWnrWe",
+        "text_neCxdP",
+        "text_Me9F8x",
+        "text_YA8A3Q"
+      ],
+      "name": "t:sections.image-text-separation.presets.name",
+      "settings": {
+        "display_devices": "desktop",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_VRq9XD": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_kVn7At": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/15_fd780540-208a-4e59-981d-229f66ef93d7.jpg",
+            "image_link": ""
+          }
+        },
+        "text_w7KgBX": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Four Core Functions Redefine the Second SIM Card</strong></p>",
+            "text_color": "#000000",
+            "text_gradient_background": "linear-gradient(106deg, rgba(0, 255, 218, 1) 14%, rgba(187, 48, 254, 1) 83%)",
+            "text_font_size": 32,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "center",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 6,
+            "position_y": 4
+          }
+        },
+        "text_CPTeq4": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Multiple resource integrations</strong></p>",
+            "text_color": "#0e6246",
+            "text_gradient_background": "",
+            "text_font_size": 19,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 9,
+            "position_y": 29
+          }
+        },
+        "text_r4TptV": {
+          "type": "text",
+          "settings": {
+            "text": "<p>OTA SIM + eSlM + CloudslM<br/>dynamicintegration,covering<br/>major countries in the world.</p>",
+            "text_color": "#101011",
+            "text_gradient_background": "",
+            "text_font_size": 17,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 11,
+            "position_y": 41
+          }
+        },
+        "text_YEgnFr": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>No restrictions, more freedom</strong></p>",
+            "text_color": "#0e6246",
+            "text_gradient_background": "",
+            "text_font_size": 19,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 52,
+            "position_y": 29
+          }
+        },
+        "text_9i8dnV": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Flexibly choose APP self-service </p><p>or third-party eSlM packages.</p>",
+            "text_color": "#101011",
+            "text_gradient_background": "",
+            "text_font_size": 18,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 52,
+            "position_y": 41
+          }
+        },
+        "text_KBLWAT": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Compatible with Apple &</strong></p><p><strong> Android phones</strong></p>",
+            "text_color": "#0e6246",
+            "text_gradient_background": "",
+            "text_font_size": 19,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 11,
+            "position_y": 30
+          }
+        },
+        "text_D3pBtH": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Breaking through Apple's eSlM </p><p>restrictions, the world's first inno-</p><p>vative consumer-grade eSlM card </p>",
+            "text_color": "#101011",
+            "text_gradient_background": "",
+            "text_font_size": 17,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 9,
+            "position_y": 15
+          }
+        },
+        "text_6KVynY": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>APP intelligent management</strong></p>",
+            "text_color": "#0e6246",
+            "text_gradient_background": "",
+            "text_font_size": 19,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 52,
+            "position_y": 33
+          }
+        },
+        "text_aNNNQW": {
+          "type": "text",
+          "settings": {
+            "text": "<p>APP-key activation and manage-</p><p>ment of multiple cards, flexible </p><p>packages buy and use immediately.</p>",
+            "text_color": "#101011",
+            "text_gradient_background": "",
+            "text_font_size": 17,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 52,
+            "position_y": 14
+          }
+        }
+      },
+      "block_order": [
+        "image_kVn7At",
+        "text_w7KgBX",
+        "text_CPTeq4",
+        "text_r4TptV",
+        "text_YEgnFr",
+        "text_9i8dnV",
+        "text_KBLWAT",
+        "text_D3pBtH",
+        "text_6KVynY",
+        "text_aNNNQW"
+      ],
+      "name": "t:sections.image-text-separation.presets.name",
+      "settings": {
+        "display_devices": "mobile",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_banner_8qQ3XE": {
+      "type": "image-banner",
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "full_width": false,
+        "color_scheme": "",
+        "image": "shopify://shop_images/06_bac091fd-5793-4a92-b152-9a799adb5923.jpg",
+        "image_ratio": "adapt",
+        "image_link": "",
+        "opacity_overlay": 0,
+        "icon": "none",
+        "icon_color_scheme": "",
+        "icon_size": "large",
+        "icon_style": "colored",
+        "icon_fill_type": "gradient",
+        "box_shadow": false,
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "heading": "",
+        "heading_size": "h2",
+        "heading_level": "h2",
+        "text_information": "",
+        "text_align": "left",
+        "text_width": "small",
+        "show_view_all": false,
+        "button_label": "Shop now",
+        "button_style": "primary",
+        "button_link": "",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_Q7QJQk": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_WgeXym": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/07_280aa613-17ce-4a7f-90f6-4648d17a5d9b.jpg",
+            "image_link": ""
+          }
+        },
+        "text_krzPcH": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Four Major Scenarios, one card covers all</strong></p>",
+            "text_color": "#101011",
+            "text_gradient_background": "linear-gradient(180deg, rgba(181, 113, 232, 1) 21%, rgba(158, 107, 232, 1) 25%, rgba(82, 218, 236, 1) 82%)",
+            "text_font_size": 50,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "center",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 6,
+            "position_y": 4
+          }
+        },
+        "text_JGj8mn": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Cross-border travel</strong></p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 42,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "right",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 26,
+            "position_y": 15
+          }
+        },
+        "text_qjw9jX": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Instantly connect to high-quality local networks at airports.</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 51,
+            "position_y": 19
+          }
+        },
+        "text_CwPHyE": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Foreign trade business</strong></p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 42,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 6,
+            "position_y": 43
+          }
+        },
+        "text_pdGVJN": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Multiple numbers switch at any time.</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 6,
+            "position_y": 47
+          }
+        },
+        "text_CPGHB6": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Overseas study</strong></p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 42,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 6,
+            "position_y": 41
+          }
+        },
+        "text_FqmBY8": {
+          "type": "text",
+          "settings": {
+            "text": "<p>No need to change cards, data packages buy and use immediately.</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 6,
+            "position_y": 38
+          }
+        },
+        "text_aVHeQb": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Cross-border e-commerce</strong></p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 42,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "right",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "btt",
+            "position_x": 6,
+            "position_y": 19
+          }
+        },
+        "text_PEt8G9": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Easily manage multiple overseas cards without </p><p>changing phones.</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 62,
+            "position_y": 14
+          }
+        }
+      },
+      "block_order": [
+        "image_WgeXym",
+        "text_krzPcH",
+        "text_JGj8mn",
+        "text_qjw9jX",
+        "text_CwPHyE",
+        "text_pdGVJN",
+        "text_CPGHB6",
+        "text_FqmBY8",
+        "text_aVHeQb",
+        "text_PEt8G9"
+      ],
+      "name": "t:sections.image-text-separation.presets.name",
+      "settings": {
+        "display_devices": "desktop",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_YwWXMf": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_ny7TRQ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/16.jpg",
+            "image_link": ""
+          }
+        },
+        "text_MntTCM": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Four Major Scenarios, one card covers all</strong></p>",
+            "text_color": "#101011",
+            "text_gradient_background": "linear-gradient(180deg, rgba(181, 113, 232, 1) 21%, rgba(158, 107, 232, 1) 25%, rgba(82, 218, 236, 1) 82%)",
+            "text_font_size": 36,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "center",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 6,
+            "position_y": 7
+          }
+        },
+        "text_HQbCR7": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Cross-border travel</strong></p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 29,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "right",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 7,
+            "position_y": 22
+          }
+        },
+        "text_rVWJPR": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Instantly connect to high-quality </p><p>local networks at airports.</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 20,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 51,
+            "position_y": 28
+          }
+        },
+        "text_taLbwT": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Foreign trade business</strong></p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 29,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 3,
+            "position_y": 46
+          }
+        },
+        "text_kbAYtU": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Multiple numbers switch at any time.</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 20,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 3,
+            "position_y": 52
+          }
+        },
+        "text_fxDWXp": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Overseas study</strong></p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 29,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 3,
+            "position_y": 37
+          }
+        },
+        "text_3CjztL": {
+          "type": "text",
+          "settings": {
+            "text": "<p>No need to change cards, data </p><p>packages buy and use immediately.</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 20,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 3,
+            "position_y": 30
+          }
+        },
+        "text_QqmGWp": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Cross-border </strong></p><p><strong>e-commerce</strong></p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 29,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "right",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "btt",
+            "position_x": 12,
+            "position_y": 16
+          }
+        },
+        "text_RaX7wN": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Easily manage multiple </p><p>overseas cards without</p><p> changing phones.</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 20,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 59,
+            "position_y": 7
+          }
+        }
+      },
+      "block_order": [
+        "image_ny7TRQ",
+        "text_MntTCM",
+        "text_HQbCR7",
+        "text_rVWJPR",
+        "text_taLbwT",
+        "text_kbAYtU",
+        "text_fxDWXp",
+        "text_3CjztL",
+        "text_QqmGWp",
+        "text_RaX7wN"
+      ],
+      "name": "t:sections.image-text-separation.presets.name",
+      "settings": {
+        "display_devices": "mobile",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_hhCkwj": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_krLtDL": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/08_98c56d64-4d7d-49c9-95f7-f64ad319b501.jpg",
+            "image_link": ""
+          }
+        },
+        "text_NyJpFD": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>How to Use eSlM Trio?</strong></p>",
+            "text_color": "#101011",
+            "text_gradient_background": "linear-gradient(136deg, rgba(10, 234, 237, 1) 11%, rgba(250, 13, 253, 1) 84%)",
+            "text_font_size": 50,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "center",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 6,
+            "position_y": 6
+          }
+        },
+        "text_XFHG9e": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>1</strong></p>",
+            "text_color": "#9e6be8",
+            "text_gradient_background": "",
+            "text_font_size": 50,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 25,
+            "position_y": 32
+          }
+        },
+        "text_h3QBHX": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Download the APP and </p><p>register an account.</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 30,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 25,
+            "position_y": 39
+          }
+        },
+        "text_YMyaXL": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>2</strong></p>",
+            "text_color": "#101011",
+            "text_gradient_background": "linear-gradient(228deg, rgba(21, 209, 252, 1) 14%, rgba(187, 48, 254, 1) 83%)",
+            "text_font_size": 50,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 72,
+            "position_y": 32
+          }
+        },
+        "text_mtrfi7": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Insert the eSlM Trio into your<br/>phone.</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 30,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 72,
+            "position_y": 39
+          }
+        },
+        "text_kNWDir": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>3</strong></p>",
+            "text_color": "#101011",
+            "text_gradient_background": "linear-gradient(180deg, rgba(196, 102, 238, 1) 80%, rgba(82, 218, 236, 1) 100%)",
+            "text_font_size": 50,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "right",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 26,
+            "position_y": 28
+          }
+        },
+        "text_ByCAyx": {
+          "type": "text",
+          "settings": {
+            "text": "<p>APP scans the OR code to<br/>add the eSlM Trio's lCClD.</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 30,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 72,
+            "position_y": 20
+          }
+        },
+        "text_wj9ULD": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>4</strong></p>",
+            "text_color": "#101011",
+            "text_gradient_background": "linear-gradient(136deg, rgba(10, 234, 237, 1), rgba(158, 107, 232, 1) 2%)",
+            "text_font_size": 50,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 25,
+            "position_y": 27
+          }
+        },
+        "text_YmFJBn": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Select the data plan or eSlM<br/>plan from GlocalMe official<br/>website to activate.</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 30,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 24,
+            "position_y": 16
+          }
+        }
+      },
+      "block_order": [
+        "image_krLtDL",
+        "text_NyJpFD",
+        "text_XFHG9e",
+        "text_h3QBHX",
+        "text_YMyaXL",
+        "text_mtrfi7",
+        "text_kNWDir",
+        "text_ByCAyx",
+        "text_wj9ULD",
+        "text_YmFJBn"
+      ],
+      "name": "t:sections.image-text-separation.presets.name",
+      "settings": {
+        "display_devices": "desktop",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_kTeVn6": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_inh4ky": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/17.jpg",
+            "image_link": ""
+          }
+        },
+        "text_WLhxLR": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>How to Use eSlM Trio?</strong></p>",
+            "text_color": "#101011",
+            "text_gradient_background": "linear-gradient(136deg, rgba(10, 234, 237, 1) 11%, rgba(250, 13, 253, 1) 84%)",
+            "text_font_size": 40,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "center",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 6,
+            "position_y": 0
+          }
+        },
+        "text_pGMzpC": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>1</strong></p>",
+            "text_color": "#9652f5",
+            "text_gradient_background": "linear-gradient(173deg, rgba(183, 112, 245, 1) 92.522%, rgba(156, 105, 245, 1) 93%, rgba(21, 209, 252, 1) 98%)",
+            "text_font_size": 30,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "center",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 46,
+            "position_y": 9
+          }
+        },
+        "text_9gcjBb": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Download the APP and </p><p>register an account.</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 26,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 51,
+            "position_y": 14
+          }
+        },
+        "text_8MDrjz": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>2</strong></p>",
+            "text_color": "#101011",
+            "text_gradient_background": "linear-gradient(228deg, rgba(21, 209, 252, 1) 14%, rgba(187, 48, 254, 1) 29%)",
+            "text_font_size": 30,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "center",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 46,
+            "position_y": 33
+          }
+        },
+        "text_aCCjaD": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Insert the eSlM Trio into </p><p>your phone.</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 26,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 51,
+            "position_y": 38
+          }
+        },
+        "text_C9eUHn": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>3</strong></p>",
+            "text_color": "#101011",
+            "text_gradient_background": "linear-gradient(180deg, rgba(196, 102, 238, 1) 80%, rgba(82, 218, 236, 1) 100%)",
+            "text_font_size": 30,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "right",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 48,
+            "position_y": 42
+          }
+        },
+        "text_fDUFTd": {
+          "type": "text",
+          "settings": {
+            "text": "<p>APP scans the OR code </p><p>to add the eSlM Trio's </p><p>lCClD.</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 26,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 51,
+            "position_y": 33
+          }
+        },
+        "text_iXx4ie": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>4</strong></p>",
+            "text_color": "#101011",
+            "text_gradient_background": "linear-gradient(136deg, rgba(10, 234, 237, 1), rgba(158, 107, 232, 1) 2%)",
+            "text_font_size": 30,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 51,
+            "position_y": 18
+          }
+        },
+        "text_wjRyph": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Select the data plan or</p><p> eSlM plan from GlocalMe </p><p>official website to activate.</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 26,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 51,
+            "position_y": 9
+          }
+        }
+      },
+      "block_order": [
+        "image_inh4ky",
+        "text_WLhxLR",
+        "text_pGMzpC",
+        "text_9gcjBb",
+        "text_8MDrjz",
+        "text_aCCjaD",
+        "text_C9eUHn",
+        "text_fDUFTd",
+        "text_iXx4ie",
+        "text_wjRyph"
+      ],
+      "name": "t:sections.image-text-separation.presets.name",
+      "settings": {
+        "display_devices": "mobile",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_MVeGeb": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_4gywtA": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/18.jpg",
+            "image_link": ""
+          }
+        },
+        "text_UKjeCq": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Frequently Asked Questions</strong></p>",
+            "text_color": "#101011",
+            "text_gradient_background": "linear-gradient(86deg, rgba(54, 212, 255, 1) 21%, rgba(249, 119, 255, 1) 53%, rgba(43, 252, 135, 1) 79%)",
+            "text_font_size": 32,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "center",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 6,
+            "position_y": 1
+          }
+        },
+        "text_ecQLKc": {
+          "type": "text",
+          "settings": {
+            "text": "<p>What is eSlM Trio?</p>",
+            "text_color": "#101011",
+            "text_gradient_background": "",
+            "text_font_size": 21,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 25,
+            "position_y": 11
+          }
+        },
+        "text_JWxx9e": {
+          "type": "text",
+          "settings": {
+            "text": "<p>This is a powerful multi-functional smart SlM card</p><p> that integrates multiple SlM resources, covering </p><p>global mainstream operators, making travel more </p><p>convenient and cost-effective.</p>",
+            "text_color": "#101011",
+            "text_gradient_background": "",
+            "text_font_size": 20,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 5,
+            "position_y": 23
+          }
+        },
+        "text_ggktVM": {
+          "type": "text",
+          "settings": {
+            "text": "<p>How long is this card valid?</p>",
+            "text_color": "#101011",
+            "text_gradient_background": "",
+            "text_font_size": 21,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 25,
+            "position_y": 43
+          }
+        },
+        "text_YrYkqC": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Generally valid for 6 months, can be </p><p>automatically renewed in the APP, or can </p><p>be used for a long time by purchasing data </p><p>packages.</p>",
+            "text_color": "#101011",
+            "text_gradient_background": "",
+            "text_font_size": 21,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 6,
+            "position_y": 34
+          }
+        },
+        "text_cDVMTq": {
+          "type": "text",
+          "settings": {
+            "text": "<p>How many times can the eSlM function be written?</p>",
+            "text_color": "#101011",
+            "text_gradient_background": "",
+            "text_font_size": 21,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "btt",
+            "position_x": 28,
+            "position_y": 23
+          }
+        },
+        "text_EipNC4": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Free use for 3 writes, exceeding that can be </p><p>purchased in the APP.</p>",
+            "text_color": "#101011",
+            "text_gradient_background": "",
+            "text_font_size": 21,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 7,
+            "position_y": 9
+          }
+        }
+      },
+      "block_order": [
+        "image_4gywtA",
+        "text_UKjeCq",
+        "text_ecQLKc",
+        "text_JWxx9e",
+        "text_ggktVM",
+        "text_YrYkqC",
+        "text_cDVMTq",
+        "text_EipNC4"
+      ],
+      "name": "t:sections.image-text-separation.presets.name",
+      "settings": {
+        "display_devices": "mobile",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_Wiydad": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_FVkQaJ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/09.jpg",
+            "image_link": ""
+          }
+        },
+        "text_yJiaCV": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Frequently Asked Questions</strong></p>",
+            "text_color": "#101011",
+            "text_gradient_background": "linear-gradient(86deg, rgba(54, 212, 255, 1) 21%, rgba(249, 119, 255, 1) 53%, rgba(43, 252, 135, 1) 79%)",
+            "text_font_size": 50,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "center",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 6,
+            "position_y": 4
+          }
+        },
+        "text_P9FjTK": {
+          "type": "text",
+          "settings": {
+            "text": "<p>What is eSlM Trio?</p>",
+            "text_color": "#101011",
+            "text_gradient_background": "",
+            "text_font_size": 30,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 22,
+            "position_y": 16
+          }
+        },
+        "text_bwrmDC": {
+          "type": "text",
+          "settings": {
+            "text": "<p>This is a powerful multi-functional smart SlM card that integrates</p><p>multiple SlM resources, covering global mainstream operators, making </p><p>travel more convenient and cost-effective.</p>",
+            "text_color": "#101011",
+            "text_gradient_background": "",
+            "text_font_size": 30,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 18,
+            "position_y": 28
+          }
+        },
+        "text_N6zPRy": {
+          "type": "text",
+          "settings": {
+            "text": "<p>How long is this card valid?</p>",
+            "text_color": "#101011",
+            "text_gradient_background": "",
+            "text_font_size": 30,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 22,
+            "position_y": 43
+          }
+        },
+        "text_ntGUzh": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Generally valid for 6 months, can be automatically renewed in the APP, </p><p>or can be used for a long time by purchasing data packages.</p>",
+            "text_color": "#101011",
+            "text_gradient_background": "",
+            "text_font_size": 30,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 18,
+            "position_y": 40
+          }
+        },
+        "text_ynFrgn": {
+          "type": "text",
+          "settings": {
+            "text": "<p>How many times can the eSlM function be written?</p>",
+            "text_color": "#101011",
+            "text_gradient_background": "",
+            "text_font_size": 30,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 22,
+            "position_y": 27
+          }
+        },
+        "text_fRX3AY": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Free use for 3 writes, exceeding that can be purchased in the APP.</p>",
+            "text_color": "#101011",
+            "text_gradient_background": "",
+            "text_font_size": 30,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 19,
+            "position_y": 13
+          }
+        }
+      },
+      "block_order": [
+        "image_FVkQaJ",
+        "text_yJiaCV",
+        "text_P9FjTK",
+        "text_bwrmDC",
+        "text_N6zPRy",
+        "text_ntGUzh",
+        "text_ynFrgn",
+        "text_fRX3AY"
+      ],
+      "name": "t:sections.image-text-separation.presets.name",
+      "settings": {
+        "display_devices": "desktop",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "color_scheme": "background-1",
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "subheading_icon": "none",
+        "heading": "You May Also Like",
+        "heading_size": "h2",
+        "text": "",
+        "products_limit": 6,
+        "image_ratio": "1/1",
+        "image_fit": "cover",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_desc": false,
+        "padding_top": "l",
+        "padding_bottom": "l"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_text_separation_QPVWHw",
+    "image_text_separation_Q9bCdV",
+    "image_text_separation_9tjGWp",
+    "image_text_separation_jmLnez",
+    "image_text_separation_kAVF9x",
+    "image_banner_f9UPM9",
+    "image_text_separation_7enrAQ",
+    "image_text_separation_nWYcqW",
+    "image_text_separation_MmtJTx",
+    "image_text_separation_QeKP8U",
+    "image_text_separation_VRq9XD",
+    "image_banner_8qQ3XE",
+    "image_text_separation_Q7QJQk",
+    "image_text_separation_YwWXMf",
+    "image_text_separation_hhCkwj",
+    "image_text_separation_kTeVn6",
+    "image_text_separation_MVeGeb",
+    "image_text_separation_Wiydad",
+    "product-recommendations"
+  ]
+}

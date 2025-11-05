@@ -1,0 +1,54 @@
+<script src="{{ 'full-screen-video.js' | asset_url }}" defer="defer"></script>
+
+{% style %}
+  .full-screen-video__pause {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    gap: 0.5rem;
+    padding: 0.8rem 1.6rem;
+    border-radius: 2rem;
+    color: rgb(255, 255, 255);
+    background-color: rgb(102, 102, 102);
+  }
+{% endstyle %}
+
+<full-screen-video>
+  <div id="FullScreenVideo-{{ section.id }}" class="full-screen-video fixed top-0 left-0 w-full h-full z-999">
+    {%- if section.settings.video != blank -%}
+      {{
+        section.settings.video
+        | video_tag:
+          image_size: '1300x',
+          class: 'w-full h-full object-cover',
+          controls: false,
+          muted: true,
+          autoplay: false,
+          playsinline: true,
+          loop: false
+      }}
+    {%- endif -%}
+    <div class="full-screen-video__pause flex items-center">
+      {% render 'icon-resume' %}
+      <span>{{ 'sections.video.skip_video' | t }}</span>
+    </div>
+  </div>
+</full-screen-video>
+
+{% schema %}
+{
+  "name": "t:sections.full-screen-video.name",
+  "settings": [
+    {
+      "type": "video",
+      "id": "video",
+      "label": "t:sections.full-screen-video.settings.video.label"
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.full-screen-video.presets.name"
+    }
+  ]
+}
+{% endschema %}

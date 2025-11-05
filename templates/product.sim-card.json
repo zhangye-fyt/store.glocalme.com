@@ -1,0 +1,3063 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ product.vendor }}"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h3"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "dropdown"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "custom_liquid_XVjEj4": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<span style=\"color: red;\">OTA SlM Card can be activated by inserting into the mobile phone card slot, no need to use it on GlocalMe portable WiFi devices."
+          }
+        },
+        "inventory_ybzDtw": {
+          "type": "inventory",
+          "disabled": true,
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_quantity": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "country_checker": {
+          "type": "country_checker",
+          "settings": {}
+        },
+        "vitals_ub_product_bundles_DxRBEB": {
+          "type": "shopify://apps/vitals/blocks/ub-product-bundles/aeb48102-2a5a-4f39-bdbd-d8d49f4e20b8",
+          "settings": {}
+        },
+        "custom_liquid_6pDWQA": {
+          "type": "custom_liquid",
+          "disabled": true,
+          "settings": {
+            "custom_liquid": "<div id=\"izyrent\"></div>"
+          }
+        },
+        "gift": {
+          "type": "gift",
+          "settings": {}
+        },
+        "add_ons": {
+          "type": "add_ons",
+          "settings": {}
+        },
+        "supported_devices": {
+          "type": "supported_devices",
+          "settings": {}
+        },
+        "text_with_icon_FJpD8f": {
+          "type": "text_with_icon",
+          "settings": {
+            "show_text_with_icon_1": true,
+            "icon_1": "delivery",
+            "text_1": "Fast Shipping",
+            "show_text_with_icon_2": true,
+            "icon_2": "shield",
+            "text_2": "High-quality Products",
+            "box_shadow": true,
+            "icon_style": "colored",
+            "icon_fill_type": "gradient"
+          }
+        },
+        "text_with_icon": {
+          "type": "text_with_icon",
+          "settings": {
+            "show_text_with_icon_1": true,
+            "icon_1": "wallet",
+            "text_1": "30 Day Return Guarantee",
+            "show_text_with_icon_2": true,
+            "icon_2": "user-1",
+            "text_2": "Professional Service Support",
+            "box_shadow": true,
+            "icon_style": "colored",
+            "icon_fill_type": "gradient"
+          }
+        },
+        "share_EAqH9P": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share",
+            "show_share_facebook": true,
+            "show_share_twitter": true,
+            "show_share_pinterest": true,
+            "show_share_copy": true
+          }
+        },
+        "popup_nzDhX7": {
+          "type": "popup",
+          "disabled": true,
+          "settings": {
+            "label": "Compare",
+            "heading": "",
+            "text": "",
+            "image": "shopify://shop_images/c23545ae333b999b21f3be3053b5c1cb.jpg",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "variant_picker",
+        "price",
+        "custom_liquid_XVjEj4",
+        "inventory_ybzDtw",
+        "buy_buttons",
+        "country_checker",
+        "vitals_ub_product_bundles_DxRBEB",
+        "custom_liquid_6pDWQA",
+        "gift",
+        "add_ons",
+        "supported_devices",
+        "text_with_icon_FJpD8f",
+        "text_with_icon",
+        "share_EAqH9P",
+        "popup_nzDhX7"
+      ],
+      "custom_css": [
+        "@media only screen and (min-width: 1200px) {.rte div {margin-right: 180px; margin-left: -180px; }}"
+      ],
+      "settings": {
+        "desktop_alignment": "right",
+        "mobile_alignment": "before",
+        "gallery_type": "slider_previews",
+        "aspect_ratio": "1/1",
+        "image_fit": "contain",
+        "image_fit_modal": "contain",
+        "padding_bottom": "l"
+      }
+    },
+    "image_text_separation_01": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_bbNEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/SIM_01.jpg",
+            "image_link": ""
+          }
+        },
+        "text_zx2EyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>GlocalMe SIM Card Features</strong></p>",
+            "text_color": "#3a3a3c",
+            "text_gradient_background": "linear-gradient(119deg, rgba(56, 221, 92, 1) 20%, rgba(3, 58, 160, 1) 60%)",
+            "text_font_size": 52,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 50,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 5,
+            "position_y": 8
+          }
+        },
+        "text_TL4QG7": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Burdenless</strong></p>",
+            "text_color": "#101011",
+            "text_gradient_background": "",
+            "text_font_size": 20,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "max_text_container_max_width": 24,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 31,
+            "position_y": 36
+          }
+        },
+        "text_n6cFVf": {
+          "type": "text",
+          "settings": {
+            "text": "<p>No additional device needed</p>",
+            "text_color": "#101011",
+            "text_gradient_background": "",
+            "text_font_size": 18,
+            "text_font_weight": 300,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "max_text_container_max_width": 24,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 31,
+            "position_y": 39
+          }
+        },
+        "text_miEj9x": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Wider coverage</strong></p>",
+            "text_color": "#101011",
+            "text_gradient_background": "",
+            "text_font_size": 20,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "max_text_container_max_width": 24,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 5.3,
+            "position_y": 36
+          }
+        },
+        "text_3HnjMy": {
+          "type": "text",
+          "settings": {
+            "text": "<p>One card for 46 countries</p>",
+            "text_color": "#101011",
+            "text_gradient_background": "",
+            "text_font_size": 18,
+            "text_font_weight": 300,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "max_text_container_max_width": 24,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 5.3,
+            "position_y": 39
+          }
+        },
+        "text_6TrDAm": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Eco-friendly</strong></p>",
+            "text_color": "#101011",
+            "text_gradient_background": "",
+            "text_font_size": 20,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "max_text_container_max_width": 24,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 31,
+            "position_y": 58
+          }
+        },
+        "text_Bmze4U": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Rechargable sim card</p>",
+            "text_color": "#101011",
+            "text_gradient_background": "",
+            "text_font_size": 18,
+            "text_font_weight": 300,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "max_text_container_max_width": 24,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 31,
+            "position_y": 61
+          }
+        },
+        "text_4tb9e9": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Various data plans</strong></p>",
+            "text_color": "#101011",
+            "text_gradient_background": "",
+            "text_font_size": 20,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "max_text_container_max_width": 24,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 5.3,
+            "position_y": 58
+          }
+        },
+        "text_WaCkVK": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Multiple data plans & combinations</p>",
+            "text_color": "#101011",
+            "text_gradient_background": "",
+            "text_font_size": 18,
+            "text_font_weight": 300,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "max_text_container_max_width": 24,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 5.3,
+            "position_y": 61
+          }
+        },
+        "text_n7A7PR": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Affordable price</strong></p>",
+            "text_color": "#101011",
+            "text_gradient_background": "",
+            "text_font_size": 20,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "max_text_container_max_width": 24,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "btt",
+            "position_x": 31,
+            "position_y": 17
+          }
+        },
+        "text_dWVn67": {
+          "type": "text",
+          "settings": {
+            "text": "<p>As low as $9.9</p>",
+            "text_color": "#101011",
+            "text_gradient_background": "",
+            "text_font_size": 18,
+            "text_font_weight": 300,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "max_text_container_max_width": 24,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "btt",
+            "position_x": 31,
+            "position_y": 14
+          }
+        },
+        "text_EtwQ9x": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Customer Support</strong></p>",
+            "text_color": "#101011",
+            "text_gradient_background": "",
+            "text_font_size": 20,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "max_text_container_max_width": 24,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "btt",
+            "position_x": 5.3,
+            "position_y": 17
+          }
+        },
+        "text_NcWbyK": {
+          "type": "text",
+          "settings": {
+            "text": "<p>7/24 hours customer service</p>",
+            "text_color": "#101011",
+            "text_gradient_background": "",
+            "text_font_size": 18,
+            "text_font_weight": 300,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "max_text_container_max_width": 24,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "btt",
+            "position_x": 5.3,
+            "position_y": 14
+          }
+        }
+      },
+      "block_order": [
+        "image_bbNEyF",
+        "text_zx2EyF",
+        "text_TL4QG7",
+        "text_n6cFVf",
+        "text_miEj9x",
+        "text_3HnjMy",
+        "text_6TrDAm",
+        "text_Bmze4U",
+        "text_4tb9e9",
+        "text_WaCkVK",
+        "text_n7A7PR",
+        "text_dWVn67",
+        "text_EtwQ9x",
+        "text_NcWbyK"
+      ],
+      "settings": {
+        "display_devices": "desktop",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_m_01": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_bbNEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/SIM_m_01.jpg",
+            "image_link": ""
+          }
+        },
+        "text_zx2EyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>GlocalMe SIM Card Features</strong></p>",
+            "text_color": "#3a3a3c",
+            "text_gradient_background": "linear-gradient(119deg, rgba(56, 221, 92, 1) 20%, rgba(3, 58, 160, 1) 60%)",
+            "text_font_size": 42,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 5,
+            "position_y": 4
+          }
+        },
+        "text_TL4QG7": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Burdenless</strong></p>",
+            "text_color": "#101011",
+            "text_gradient_background": "",
+            "text_font_size": 20,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "max_text_container_max_width": 41,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 6,
+            "position_y": 21
+          }
+        },
+        "text_n6cFVf": {
+          "type": "text",
+          "settings": {
+            "text": "<p>No additional device needed</p>",
+            "text_color": "#101011",
+            "text_gradient_background": "",
+            "text_font_size": 18,
+            "text_font_weight": 300,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "max_text_container_max_width": 41,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 6,
+            "position_y": 23
+          }
+        },
+        "text_miEj9x": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Wider coverage</strong></p>",
+            "text_color": "#101011",
+            "text_gradient_background": "",
+            "text_font_size": 20,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "max_text_container_max_width": 41,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 7,
+            "position_y": 21
+          }
+        },
+        "text_3HnjMy": {
+          "type": "text",
+          "settings": {
+            "text": "<p>One card for 46 countries</p>",
+            "text_color": "#101011",
+            "text_gradient_background": "",
+            "text_font_size": 18,
+            "text_font_weight": 300,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "max_text_container_max_width": 41,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 7,
+            "position_y": 23
+          }
+        },
+        "text_6TrDAm": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Eco-friendly</strong></p>",
+            "text_color": "#101011",
+            "text_gradient_background": "",
+            "text_font_size": 20,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "max_text_container_max_width": 41,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 6,
+            "position_y": 34
+          }
+        },
+        "text_Bmze4U": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Rechargable sim card</p>",
+            "text_color": "#101011",
+            "text_gradient_background": "",
+            "text_font_size": 18,
+            "text_font_weight": 300,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "max_text_container_max_width": 41,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 6,
+            "position_y": 36
+          }
+        },
+        "text_4tb9e9": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Various data plans</strong></p>",
+            "text_color": "#101011",
+            "text_gradient_background": "",
+            "text_font_size": 20,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "max_text_container_max_width": 41,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 7,
+            "position_y": 34
+          }
+        },
+        "text_WaCkVK": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Multiple data plans & combinations</p>",
+            "text_color": "#101011",
+            "text_gradient_background": "",
+            "text_font_size": 18,
+            "text_font_weight": 300,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "max_text_container_max_width": 41,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 7,
+            "position_y": 36
+          }
+        },
+        "text_n7A7PR": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Affordable price</strong></p>",
+            "text_color": "#101011",
+            "text_gradient_background": "",
+            "text_font_size": 20,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "max_text_container_max_width": 41,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 6,
+            "position_y": 47
+          }
+        },
+        "text_dWVn67": {
+          "type": "text",
+          "settings": {
+            "text": "<p>As low as $9.9</p>",
+            "text_color": "#101011",
+            "text_gradient_background": "",
+            "text_font_size": 18,
+            "text_font_weight": 300,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "max_text_container_max_width": 41,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 6,
+            "position_y": 49
+          }
+        },
+        "text_EtwQ9x": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Customer Support</strong></p>",
+            "text_color": "#101011",
+            "text_gradient_background": "",
+            "text_font_size": 20,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "max_text_container_max_width": 41,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 7,
+            "position_y": 47
+          }
+        },
+        "text_NcWbyK": {
+          "type": "text",
+          "settings": {
+            "text": "<p>7/24 hours customer service</p>",
+            "text_color": "#101011",
+            "text_gradient_background": "",
+            "text_font_size": 18,
+            "text_font_weight": 300,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "max_text_container_max_width": 41,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 7,
+            "position_y": 49
+          }
+        }
+      },
+      "block_order": [
+        "image_bbNEyF",
+        "text_zx2EyF",
+        "text_TL4QG7",
+        "text_n6cFVf",
+        "text_miEj9x",
+        "text_3HnjMy",
+        "text_6TrDAm",
+        "text_Bmze4U",
+        "text_4tb9e9",
+        "text_WaCkVK",
+        "text_n7A7PR",
+        "text_dWVn67",
+        "text_EtwQ9x",
+        "text_NcWbyK"
+      ],
+      "settings": {
+        "display_devices": "mobile",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_02": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_zC2EyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/SIM_02.jpg",
+            "image_link": ""
+          }
+        },
+        "text_JL4yG7": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Asia</strong></p>",
+            "text_color": "#89453a",
+            "text_gradient_background": "",
+            "text_font_size": 36,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 24,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 20,
+            "position_y": 5
+          }
+        },
+        "text_N2kEyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>China(Taiwan), China(HongKong), China(Macau), Japan, South Korea, Thailand, Malaysia, Singapore, Philippines, Cambodia, Vietnam, Indonesia, Saudi Arabia, UAE</p>",
+            "text_color": "#101011",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 300,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 24,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 20,
+            "position_y": 9
+          }
+        },
+        "text_JL3uG1": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Eastern Europe</strong></p>",
+            "text_color": "#89453a",
+            "text_gradient_background": "",
+            "text_font_size": 36,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 24,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 7,
+            "position_y": 5
+          }
+        },
+        "text_k2TE1F": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Czech Republic, Greece, Poland, Croatia, Romania, Bulgaria, Hungary, Lithuania</p>",
+            "text_color": "#101011",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 300,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 24,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 7,
+            "position_y": 9
+          }
+        },
+        "text_F3ryG7": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Western Europe</strong></p>",
+            "text_color": "#626461",
+            "text_gradient_background": "",
+            "text_font_size": 36,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 24,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 20,
+            "position_y": 38
+          }
+        },
+        "text_S2yE3F": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Germany, France, United Kingdom, Spain, Portugal, Italy, Netherlands, Norway, Switzerland ,Sweden, Denmark,Finland, Austria, Iceland</p>",
+            "text_color": "#101011",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 300,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 24,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 20,
+            "position_y": 42
+          }
+        },
+        "text_Uz3eG1": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Americas</strong></p>",
+            "text_color": "#2c6d9b",
+            "text_gradient_background": "",
+            "text_font_size": 36,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 24,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 7,
+            "position_y": 38
+          }
+        },
+        "text_H2xEc4": {
+          "type": "text",
+          "settings": {
+            "text": "<p>United States, Canada, Mexico, Brazil, Argentina, Chile, Peru, Colombia</p>",
+            "text_color": "#101011",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 300,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 24,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 7,
+            "position_y": 42
+          }
+        },
+        "text_Y2ryG6": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Africa</strong></p>",
+            "text_color": "#4b4c67",
+            "text_gradient_background": "",
+            "text_font_size": 36,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 24,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 20,
+            "position_y": 27
+          }
+        },
+        "text_R2yE6F": {
+          "type": "text",
+          "settings": {
+            "text": "<p>South Africa, Mauritius</p>",
+            "text_color": "#101011",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 300,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 24,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 20,
+            "position_y": 24
+          }
+        },
+        "text_Cz3eY1": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Oceania</strong></p>",
+            "text_color": "#4b4c67",
+            "text_gradient_background": "",
+            "text_font_size": 36,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 24,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "btt",
+            "position_x": 7,
+            "position_y": 27
+          }
+        },
+        "text_P2xEc3": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Australia, New Zealand</p>",
+            "text_color": "#101011",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 300,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 24,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "btt",
+            "position_x": 7,
+            "position_y": 24
+          }
+        }
+      },
+      "block_order": [
+        "image_zC2EyF",
+        "text_JL4yG7",
+        "text_N2kEyF",
+        "text_JL3uG1",
+        "text_k2TE1F",
+        "text_F3ryG7",
+        "text_S2yE3F",
+        "text_Uz3eG1",
+        "text_H2xEc4",
+        "text_Y2ryG6",
+        "text_R2yE6F",
+        "text_Cz3eY1",
+        "text_P2xEc3"
+      ],
+      "settings": {
+        "display_devices": "desktop",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_03": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_zC2EyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/SIM_03.jpg",
+            "image_link": ""
+          }
+        },
+        "text_Hx2CyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Why GlocalMe?</strong></p>",
+            "text_color": "#3a3a3c",
+            "text_gradient_background": "linear-gradient(119deg, rgba(56, 221, 92, 1) 20%, rgba(3, 58, 160, 1) 60%)",
+            "text_font_size": 86,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 5,
+            "position_y": 8
+          }
+        },
+        "text_Y2T2cF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>GlocalMe SIM Card</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 40,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 14,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 34,
+            "position_y": 29
+          }
+        },
+        "text_k2T7cF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>GlocalMe MiFi Device</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 40,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 14,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 52,
+            "position_y": 29
+          }
+        },
+        "text_O2T1cF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Other<br/>SIM Card</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 40,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 14,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 74,
+            "position_y": 29
+          }
+        },
+        "text_Y2c1cF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Price</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 36,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 20,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 6.8,
+            "position_y": 40.4
+          }
+        },
+        "text_C2c8cF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Best</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 36,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "max_text_container_max_width": 14,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 33,
+            "position_y": 40.4
+          }
+        },
+        "text_H2c1uF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Good</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 36,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "max_text_container_max_width": 14,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 54,
+            "position_y": 40.4
+          }
+        },
+        "text_P2c1zF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Good</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 36,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "max_text_container_max_width": 14,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 77,
+            "position_y": 40.4
+          }
+        },
+        "text_I2c1cd": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Data Package</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 36,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 20,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 6.8,
+            "position_y": 50
+          }
+        },
+        "text_U2c8c1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Rechargable</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 36,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "max_text_container_max_width": 14,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 33,
+            "position_y": 50
+          }
+        },
+        "text_Z2c1u4": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Rechargable</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 36,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "max_text_container_max_width": 14,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 54,
+            "position_y": 50
+          }
+        },
+        "text_L2c1zw": {
+          "type": "text",
+          "settings": {
+            "text": "<p>one-time use</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 36,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "max_text_container_max_width": 14,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 77,
+            "position_y": 50
+          }
+        },
+        "text_M2c1cN": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Multi-network Support</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 36,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 20,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 6.8,
+            "position_y": 61.4
+          }
+        },
+        "text_X2c8cd": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Unsupport</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 36,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "max_text_container_max_width": 14,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 33,
+            "position_y": 62.4
+          }
+        },
+        "text_R2c1uz": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Support</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 36,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "max_text_container_max_width": 14,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 54,
+            "position_y": 62.4
+          }
+        },
+        "text_J2c1zR": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Unsupport</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 36,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "max_text_container_max_width": 14,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 77,
+            "position_y": 62.4
+          }
+        },
+        "text_G2z1cE": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Signal strength & Stability</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 36,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 20,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 6.8,
+            "position_y": 72.4
+          }
+        },
+        "text_Xyc8d1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Good</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 36,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "max_text_container_max_width": 14,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 33,
+            "position_y": 74
+          }
+        },
+        "text_Ryc1u3": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Best</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 36,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "max_text_container_max_width": 14,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 54,
+            "position_y": 74
+          }
+        },
+        "text_JCc1z0": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Good</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 36,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "max_text_container_max_width": 14,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 77,
+            "position_y": 74
+          }
+        }
+      },
+      "block_order": [
+        "image_zC2EyF",
+        "text_Hx2CyF",
+        "text_Y2T2cF",
+        "text_k2T7cF",
+        "text_O2T1cF",
+        "text_Y2c1cF",
+        "text_C2c8cF",
+        "text_H2c1uF",
+        "text_P2c1zF",
+        "text_I2c1cd",
+        "text_U2c8c1",
+        "text_Z2c1u4",
+        "text_L2c1zw",
+        "text_M2c1cN",
+        "text_X2c8cd",
+        "text_R2c1uz",
+        "text_J2c1zR",
+        "text_G2z1cE",
+        "text_Xyc8d1",
+        "text_Ryc1u3",
+        "text_JCc1z0"
+      ],
+      "settings": {
+        "display_devices": "desktop",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_04": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_Cz2E1F": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/SIM_04.jpg",
+            "image_link": ""
+          }
+        },
+        "text_Jx2C3F": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Q&A</strong></p>",
+            "text_color": "#3a3a3c",
+            "text_gradient_background": "linear-gradient(119deg, rgba(56, 221, 92, 1) 20%, rgba(3, 58, 160, 1) 60%)",
+            "text_font_size": 86,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 5,
+            "position_y": 8
+          }
+        },
+        "text_Y2c5cX": {
+          "type": "text",
+          "settings": {
+            "text": "<p>What's the difference of your CloudSIM data plan and SIM Card plan?</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 36,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 52,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 18,
+            "position_y": 20
+          }
+        },
+        "text_Y5c5cj": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our CloudSIM data plan is associated with GlocalMe Hotspot device, but SIM Card plan corresponds to SIM card, which can not be inserted into our GlocalMe Hotspot device.</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 36,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 52,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 26,
+            "position_y": 32
+          }
+        },
+        "text_J2c5cu": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Is there a link to recharge the SIM card?</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 36,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 52,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 18,
+            "position_y": 48.4
+          }
+        },
+        "text_J5c3cj": {
+          "type": "text",
+          "settings": {
+            "text": "<p>You can recharge your SIM card through <a href=\"/products/glocalme-sim-card-recharge\" title=\"GlocalMe SIM Card Recharge\">GlocalMe SIM Card Recharge</a>. Please leave your ICCID NO. in the order notes on the checkout page, our team member will recharge the SIM card for you.</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 36,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 52,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 26,
+            "position_y": 57.4
+          }
+        },
+        "text_H2c5c7": {
+          "type": "text",
+          "settings": {
+            "text": "<p>How long is the validity period of a SIM card?</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 36,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 52,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 18,
+            "position_y": 77
+          }
+        },
+        "text_F5c3c5": {
+          "type": "text",
+          "settings": {
+            "text": "<p>You need to activate it within 3 months after purchase. It may become invalid after the expiration date.</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 36,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 52,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 26,
+            "position_y": 85
+          }
+        }
+      },
+      "block_order": [
+        "image_Cz2E1F",
+        "text_Jx2C3F",
+        "text_Y2c5cX",
+        "text_Y5c5cj",
+        "text_J2c5cu",
+        "text_J5c3cj",
+        "text_H2c5c7",
+        "text_F5c3c5"
+      ],
+      "settings": {
+        "display_devices": "desktop",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_05": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_Yz2c1F": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/SIM_05.jpg",
+            "image_link": ""
+          }
+        },
+        "text_Hx2C1F": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Q&A</strong></p>",
+            "text_color": "#3a3a3c",
+            "text_gradient_background": "linear-gradient(119deg, rgba(56, 221, 92, 1) 20%, rgba(3, 58, 160, 1) 60%)",
+            "text_font_size": 86,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 5,
+            "position_y": 8
+          }
+        },
+        "text_C2c5pX": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Why do you name it \"Rechargeable SlM Card\"?</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 36,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 52,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 18,
+            "position_y": 17.4
+          }
+        },
+        "text_R5c6cj": {
+          "type": "text",
+          "settings": {
+            "text": "<p>After the first data package is used up, you can turn to GlocalMe to buy another data package to add on to the SlM card and don' t need to buy a new SlM. It is reusable. Besides, we provide customized packages and renewal services.</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 36,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 52,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 26,
+            "position_y": 28
+          }
+        },
+        "text_O2c5cI": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Does GlocalMe WiFi device supports SlM card?</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 36,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 52,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 18,
+            "position_y": 50
+          }
+        },
+        "text_J7c3cT": {
+          "type": "text",
+          "settings": {
+            "text": "<p>No, currently SlM card cannot be used in the GlocalMe WiFi devices, needs to be inserted into mobile phone to use.</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 36,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 52,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 26,
+            "position_y": 58
+          }
+        },
+        "text_N2c5p7": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Does the rechargeable GlocalMe SlM Card connected to the same networks as the device does?</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 36,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 56,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 18,
+            "position_y": 72.6
+          }
+        },
+        "text_F8c3i5": {
+          "type": "text",
+          "settings": {
+            "text": "<p>No, the network operator will be determined when the SlM is activated while the device can select the optimal network signal at anytime.</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 36,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 52,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 26,
+            "position_y": 81
+          }
+        }
+      },
+      "block_order": [
+        "image_Yz2c1F",
+        "text_Hx2C1F",
+        "text_C2c5pX",
+        "text_R5c6cj",
+        "text_O2c5cI",
+        "text_J7c3cT",
+        "text_N2c5p7",
+        "text_F8c3i5"
+      ],
+      "settings": {
+        "display_devices": "desktop",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_m_02": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_zC2EyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/SIM_m_02.jpg",
+            "image_link": ""
+          }
+        },
+        "text_JL4yG7": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Asia</strong></p>",
+            "text_color": "#89453a",
+            "text_gradient_background": "",
+            "text_font_size": 32,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 48,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 38,
+            "position_y": 4
+          }
+        },
+        "text_N2kEyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>China(Taiwan), China(HongKong), China(Macau), Japan, South Korea, Thailand, Malaysia, Singapore, Philippines, Cambodia, Vietnam, Indonesia, Saudi Arabia, UAE</p>",
+            "text_color": "#101011",
+            "text_gradient_background": "",
+            "text_font_size": 20,
+            "text_font_weight": 300,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 48,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 38,
+            "position_y": 6.4
+          }
+        },
+        "text_JL3uG1": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Eastern Europe</strong></p>",
+            "text_color": "#89453a",
+            "text_gradient_background": "",
+            "text_font_size": 32,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 48,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 38,
+            "position_y": 47
+          }
+        },
+        "text_k2TE1F": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Czech Republic, Greece, Poland, Croatia, Romania, Bulgaria, Hungary, Lithuania</p>",
+            "text_color": "#101011",
+            "text_gradient_background": "",
+            "text_font_size": 20,
+            "text_font_weight": 300,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 48,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 38,
+            "position_y": 43.2
+          }
+        },
+        "text_F3ryG7": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Western Europe</strong></p>",
+            "text_color": "#626461",
+            "text_gradient_background": "",
+            "text_font_size": 32,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 48,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 38,
+            "position_y": 20
+          }
+        },
+        "text_S2yE3F": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Germany, France, United Kingdom, Spain, Portugal, Italy, Netherlands, Norway, Switzerland ,Sweden, Denmark,Finland, Austria, Iceland</p>",
+            "text_color": "#101011",
+            "text_gradient_background": "",
+            "text_font_size": 20,
+            "text_font_weight": 300,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 48,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 38,
+            "position_y": 22.4
+          }
+        },
+        "text_Uz3eG1": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Americas</strong></p>",
+            "text_color": "#2c6d9b",
+            "text_gradient_background": "",
+            "text_font_size": 32,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 48,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 38,
+            "position_y": 31
+          }
+        },
+        "text_H2xEc4": {
+          "type": "text",
+          "settings": {
+            "text": "<p>United States, Canada, Mexico, Brazil, Argentina, Chile, Peru, Colombia</p>",
+            "text_color": "#101011",
+            "text_gradient_background": "",
+            "text_font_size": 20,
+            "text_font_weight": 300,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 48,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 38,
+            "position_y": 27.2
+          }
+        },
+        "text_Y2ryG6": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Africa</strong></p>",
+            "text_color": "#4b4c67",
+            "text_gradient_background": "",
+            "text_font_size": 32,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 48,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 38,
+            "position_y": 36
+          }
+        },
+        "text_R2yE6F": {
+          "type": "text",
+          "settings": {
+            "text": "<p>South Africa, Mauritius</p>",
+            "text_color": "#101011",
+            "text_gradient_background": "",
+            "text_font_size": 20,
+            "text_font_weight": 300,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 48,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 38,
+            "position_y": 38.4
+          }
+        },
+        "text_Cz3eY1": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Oceania</strong></p>",
+            "text_color": "#4b4c67",
+            "text_gradient_background": "",
+            "text_font_size": 32,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 48,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 38,
+            "position_y": 14
+          }
+        },
+        "text_P2xEc3": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Australia, New Zealand</p>",
+            "text_color": "#101011",
+            "text_gradient_background": "",
+            "text_font_size": 20,
+            "text_font_weight": 300,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 48,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 38,
+            "position_y": 12.2
+          }
+        }
+      },
+      "block_order": [
+        "image_zC2EyF",
+        "text_JL4yG7",
+        "text_N2kEyF",
+        "text_JL3uG1",
+        "text_k2TE1F",
+        "text_F3ryG7",
+        "text_S2yE3F",
+        "text_Uz3eG1",
+        "text_H2xEc4",
+        "text_Y2ryG6",
+        "text_R2yE6F",
+        "text_Cz3eY1",
+        "text_P2xEc3"
+      ],
+      "settings": {
+        "display_devices": "mobile",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_m_03": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_zC2EyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/SIM_m_03.jpg",
+            "image_link": ""
+          }
+        },
+        "text_Hx2CyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Why GlocalMe?</strong></p>",
+            "text_color": "#3a3a3c",
+            "text_gradient_background": "linear-gradient(119deg, rgba(56, 221, 92, 1) 20%, rgba(3, 58, 160, 1) 60%)",
+            "text_font_size": 52,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 5,
+            "position_y": 8
+          }
+        },
+        "text_Y2T2cF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>GlocalMe SIM Card</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 22,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 14,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 33,
+            "position_y": 28
+          }
+        },
+        "text_k2T7cF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>GlocalMe MiFi Device</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 22,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 14,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 52,
+            "position_y": 28
+          }
+        },
+        "text_O2T1cF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Other<br/>SIM Card</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 22,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 14,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 74,
+            "position_y": 28
+          }
+        },
+        "text_Y2c1cF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Price</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 18,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 20,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 6.8,
+            "position_y": 40
+          }
+        },
+        "text_C2c8cF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Best</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 18,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "max_text_container_max_width": 14,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 33,
+            "position_y": 40
+          }
+        },
+        "text_H2c1uF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Good</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 18,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "max_text_container_max_width": 14,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 54,
+            "position_y": 40
+          }
+        },
+        "text_P2c1zF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Good</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 18,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "max_text_container_max_width": 14,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 77,
+            "position_y": 40
+          }
+        },
+        "text_I2c1cd": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Data Package</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 18,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 20,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 6.8,
+            "position_y": 49.8
+          }
+        },
+        "text_U2c8c1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Rechargable</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 18,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "max_text_container_max_width": 14,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 33,
+            "position_y": 49.8
+          }
+        },
+        "text_Z2c1u4": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Rechargable</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 18,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "max_text_container_max_width": 14,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 54,
+            "position_y": 49.8
+          }
+        },
+        "text_L2c1zw": {
+          "type": "text",
+          "settings": {
+            "text": "<p>one-time use</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 18,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "max_text_container_max_width": 14,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 77,
+            "position_y": 49.8
+          }
+        },
+        "text_M2c1cN": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Multi-network Support</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 18,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 20,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 6.8,
+            "position_y": 60.8
+          }
+        },
+        "text_X2c8cd": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Unsupport</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 18,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "max_text_container_max_width": 14,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 33,
+            "position_y": 62
+          }
+        },
+        "text_R2c1uz": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Support</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 18,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "max_text_container_max_width": 14,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 54,
+            "position_y": 62
+          }
+        },
+        "text_J2c1zR": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Unsupport</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 18,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "max_text_container_max_width": 14,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 77,
+            "position_y": 62
+          }
+        },
+        "text_G2z1cE": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Signal strength & Stability</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 18,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 20,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 6.8,
+            "position_y": 72.4
+          }
+        },
+        "text_Xyc8d1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Good</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 18,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "max_text_container_max_width": 14,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 33,
+            "position_y": 73.6
+          }
+        },
+        "text_Ryc1u3": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Best</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 18,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "max_text_container_max_width": 14,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 54,
+            "position_y": 73.6
+          }
+        },
+        "text_JCc1z0": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Good</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 18,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "max_text_container_max_width": 14,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 77,
+            "position_y": 73.6
+          }
+        }
+      },
+      "block_order": [
+        "image_zC2EyF",
+        "text_Hx2CyF",
+        "text_Y2T2cF",
+        "text_k2T7cF",
+        "text_O2T1cF",
+        "text_Y2c1cF",
+        "text_C2c8cF",
+        "text_H2c1uF",
+        "text_P2c1zF",
+        "text_I2c1cd",
+        "text_U2c8c1",
+        "text_Z2c1u4",
+        "text_L2c1zw",
+        "text_M2c1cN",
+        "text_X2c8cd",
+        "text_R2c1uz",
+        "text_J2c1zR",
+        "text_G2z1cE",
+        "text_Xyc8d1",
+        "text_Ryc1u3",
+        "text_JCc1z0"
+      ],
+      "settings": {
+        "display_devices": "mobile",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_m_04": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_Cz2E1F": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/SIM_m_04.jpg",
+            "image_link": ""
+          }
+        },
+        "text_Jx2C3F": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Q&A</strong></p>",
+            "text_color": "#3a3a3c",
+            "text_gradient_background": "linear-gradient(119deg, rgba(56, 221, 92, 1) 20%, rgba(3, 58, 160, 1) 60%)",
+            "text_font_size": 52,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 5,
+            "position_y": 4
+          }
+        },
+        "text_Y2c5cX": {
+          "type": "text",
+          "settings": {
+            "text": "<p>What's the difference of your CloudSIM data planand SIM Card plan?</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 18,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 60,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 20,
+            "position_y": 16
+          }
+        },
+        "text_Y5c5cj": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our CloudSIM data plan is associated with GlocalMe Hotspot device, but SIM Card plan corresponds to SIM card, which can not be inserted into our GlocalMe Hotspot device.</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 18,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 60,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 21.4,
+            "position_y": 28.4
+          }
+        },
+        "text_J2c5cu": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Is there a link to recharge the SIM card?</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 18,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 60,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 20,
+            "position_y": 46.8
+          }
+        },
+        "text_J5c3cj": {
+          "type": "text",
+          "settings": {
+            "text": "<p>You can recharge your SIM card through this link:https://www.glocalme.com/product/glocalme-sim-card-recharge. Please leave your ICCID NO. in the order notes on the checkout page, our team member will recharge the SIM card for you.</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 18,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 60,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 21.4,
+            "position_y": 56.4
+          }
+        },
+        "text_H2c5c7": {
+          "type": "text",
+          "settings": {
+            "text": "<p>How long is the validity period of a SIM card?</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 18,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 60,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 20,
+            "position_y": 78
+          }
+        },
+        "text_F5c3c5": {
+          "type": "text",
+          "settings": {
+            "text": "<p>You need to activate it within 3 months after purchase. It may become invalid after the expiration date.</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 18,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 60,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 21.4,
+            "position_y": 86.4
+          }
+        }
+      },
+      "block_order": [
+        "image_Cz2E1F",
+        "text_Jx2C3F",
+        "text_Y2c5cX",
+        "text_Y5c5cj",
+        "text_J2c5cu",
+        "text_J5c3cj",
+        "text_H2c5c7",
+        "text_F5c3c5"
+      ],
+      "settings": {
+        "display_devices": "mobile",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_m_05": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_Yz2c1F": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/SIM_m_05.jpg",
+            "image_link": ""
+          }
+        },
+        "text_Hx2C1F": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Q&A</strong></p>",
+            "text_color": "#3a3a3c",
+            "text_gradient_background": "linear-gradient(119deg, rgba(56, 221, 92, 1) 20%, rgba(3, 58, 160, 1) 60%)",
+            "text_font_size": 52,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 5,
+            "position_y": 4
+          }
+        },
+        "text_C2c5pX": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Why do you name it \"Rechargeable SlM Card\"?</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 18,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 60,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 20,
+            "position_y": 16
+          }
+        },
+        "text_R5c6cj": {
+          "type": "text",
+          "settings": {
+            "text": "<p>After the first data package is used up, you can turn to GlocalMe to buy another data package to add on to the SlM card and don' tneed to buy a new SlM.It is reusable. Besides, we provide customized packages and renewal services.</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 18,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 60,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 20,
+            "position_y": 26.4
+          }
+        },
+        "text_O2c5cI": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Does GlocalMe WiFi device supports SlM card?</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 18,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 60,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 20,
+            "position_y": 51.4
+          }
+        },
+        "text_J7c3cT": {
+          "type": "text",
+          "settings": {
+            "text": "<p>No, currently SlM card cannot be used in the GlocalMe WiFi devices, needs to be inserted into mobile phone to use.</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 18,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 60,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 20,
+            "position_y": 60.4
+          }
+        },
+        "text_N2c5p7": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Does the rechargeable GlocalMe SlM Card connected to the same networks as the device does?</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 18,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 62,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 20,
+            "position_y": 75
+          }
+        },
+        "text_F8c3i5": {
+          "type": "text",
+          "settings": {
+            "text": "<p>No, the network operator will be determined when the SlM is activated while the device can select the optimal network signal at anytime.</p>",
+            "text_color": "#4b4b4b",
+            "text_gradient_background": "",
+            "text_font_size": 18,
+            "text_font_weight": 400,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 60,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 20,
+            "position_y": 85.6
+          }
+        }
+      },
+      "block_order": [
+        "image_Yz2c1F",
+        "text_Hx2C1F",
+        "text_C2c5pX",
+        "text_R5c6cj",
+        "text_O2c5cI",
+        "text_J7c3cT",
+        "text_N2c5p7",
+        "text_F8c3i5"
+      ],
+      "settings": {
+        "display_devices": "mobile",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "rich_text_md7etn": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_Pii7hm": {
+          "type": "heading",
+          "settings": {
+            "heading": "Comparing GlocalMe's SIM Products",
+            "heading_size": "medium",
+            "heading_level": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Pii7hm"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "color_scheme": "",
+        "full_width": true,
+        "alignment": "center",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent",
+        "padding_top": "s",
+        "padding_bottom": "xs"
+      }
+    },
+    "compare_device_D4Ajhw": {
+      "type": "compare-device",
+      "name": "t:sections.compare-device.presets.name",
+      "settings": {
+        "display_devices": "desktop",
+        "compare_device_group": "compare-device-group-ttfcpkey",
+        "padding_top": "xs",
+        "padding_bottom": "xs",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "compare_device_zi7tFN": {
+      "type": "compare-device",
+      "name": "t:sections.compare-device.presets.name",
+      "settings": {
+        "display_devices": "mobile",
+        "compare_device_group": "compare-device-group-ttfcpkey",
+        "padding_top": "no-indent",
+        "padding_bottom": "xs",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "color_scheme": "background-1",
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "subheading_icon": "none",
+        "heading": "You May Also Like",
+        "heading_size": "h2",
+        "text": "",
+        "products_limit": 6,
+        "image_ratio": "1/1",
+        "image_fit": "cover",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_desc": false,
+        "padding_top": "l",
+        "padding_bottom": "l"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_text_separation_01",
+    "image_text_separation_m_01",
+    "image_text_separation_02",
+    "image_text_separation_03",
+    "image_text_separation_04",
+    "image_text_separation_05",
+    "image_text_separation_m_02",
+    "image_text_separation_m_03",
+    "image_text_separation_m_04",
+    "image_text_separation_m_05",
+    "rich_text_md7etn",
+    "compare_device_D4Ajhw",
+    "compare_device_zi7tFN",
+    "product-recommendations"
+  ]
+}

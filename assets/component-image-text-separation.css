@@ -1,0 +1,8 @@
+.image-text-separation__text {
+  position: absolute;
+  width: 100%;
+}
+.image-text-separation__text p {
+  color: inherit;
+  margin: 0;
+}

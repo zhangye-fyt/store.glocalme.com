@@ -1,0 +1,1880 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h3"
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "description": ""
+          }
+        },
+        "custom_liquid_Czd3wY": {
+          "type": "custom_liquid",
+          "disabled": true,
+          "settings": {
+            "custom_liquid": "{%- style -%}\n  .product-coupon-container {\n    margin: 20px 0;\n    font-family: inherit;\n  }\n  \n  .coupon-card {\n    background: linear-gradient(135deg, #e3b337 0%, #f4e6cb 100%);\n    border-radius: 10px;\n    border: 1px dashed #d1d5db;\n    padding: 15px;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    text-align: center;\n    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);\n    position: relative;\n    overflow: hidden;\n  }\n  \n  .coupon-card::before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    background: radial-gradient(circle at 10% 20%, rgba(255,255,255,0.3) 0%, transparent 20%);\n    pointer-events: none;\n  }\n  \n  .coupon-title {\n    font-size: 24px;\n    font-weight: 600;\n    color: #1f2937;\n    margin-bottom: 8px;\n  }\n  \n  .coupon-description {\n    font-size: 18px;\n    color: #97520c;\n    margin-bottom: 12px;\n    line-height: 1.4;\n  }\n  \n  .coupon-code-container {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    width: 100%;\n    margin-bottom: 10px;\n  }\n  \n  .coupon-code {\n    font-size: 20px;\n    font-weight: 700;\n    letter-spacing: 1px;\n    color: #97520c;\n    background-color: white;\n    padding: 8px 15px;\n    border-radius: 6px;\n    border: 1px solid #d1d5db;\n    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);\n    flex-grow: 1;\n    text-align: center;\n    max-width: 70%;\n    word-break: break-all;\n  }\n  \n  .copy-btn {\n    background-color: #3b82f6;\n    color: white;\n    border: none;\n    padding: 8px 12px;\n    border-radius: 6px;\n    margin-left: 8px;\n    font-size: 14px;\n    font-weight: 500;\n    cursor: pointer;\n    transition: background-color 0.2s;\n  }\n  \n  .copy-btn:hover {\n    background-color: #2563eb;\n  }\n  \n  .coupon-terms {\n    font-size: 12px;\n    color: #6b7280;\n    margin-top: 8px;\n  }\n  \n  /* 移动端适配 */\n  @media screen and (max-width: 749px) {\n    .coupon-card {\n      padding: 12px;\n    }\n    \n    .coupon-title {\n      font-size: 15px;\n    }\n    \n    .coupon-description {\n      font-size: 13px;\n    }\n    \n    .coupon-code {\n      font-size: 16px;\n      padding: 6px 12px;\n    }\n    \n    .copy-btn {\n      padding: 6px 10px;\n      font-size: 13px;\n    }\n  }\n{%- endstyle -%}\n\n{%- comment -%}\n  在这里设置你的优惠码和活动信息\n  你可以为不同产品设置不同的优惠码，或者使用相同的优惠码\n{%- endcomment -%}\n\n{%- assign current_product_handle = product.handle -%}\n\n{%- comment -%} 示例：根据产品handle设置不同的优惠码 {%- endcomment -%}\n{%- if current_product_handle == 'product-1-handle' -%}\n  {%- assign coupon_code = 'SUMMER20' -%}\n  {%- assign coupon_title = '夏季特惠' -%}\n  {%- assign coupon_description = '限时享受20%折扣，仅限本产品使用' -%}\n  {%- assign coupon_terms = '有效期至2023年8月31日，不可与其他优惠同时使用' -%}\n{%- elsif current_product_handle == 'product-2-handle' -%}\n  {%- assign coupon_code = 'FALL15' -%}\n  {%- assign coupon_title = '秋季促销' -%}\n  {%- assign coupon_description = '享受15%折扣，专为本产品定制' -%}\n  {%- assign coupon_terms = '有效期至2023年9月30日' -%}\n{%- else -%}\n  {%- assign coupon_code = 'CODE: PD15' -%}\n  {%- assign coupon_title = 'Prime Day sale is on!' -%}\n  {%- assign coupon_description = '15% OFF SITEWIDE' -%}\n  {%- assign coupon_terms = '' -%}\n{%- endif -%}\n\n{%- if coupon_code -%}\n<div class=\"product-coupon-container\">\n  <div class=\"coupon-card\">\n    <h3 class=\"coupon-title\">{{ coupon_title }}</h3>\n    <p class=\"coupon-description\">{{ coupon_description }}</p>\n    \n    <div class=\"coupon-code-container\">\n      <span class=\"coupon-code\" id=\"couponCode\">{{ coupon_code }}</span>\n     \n    </div>\n    \n    <p class=\"coupon-terms\">{{ coupon_terms }}</p>\n  </div>\n</div>\n\n\n{%- endif -%}"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "inventory_ybzDtw": {
+          "type": "inventory",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "gift": {
+          "type": "gift",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_quantity": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "add_ons": {
+          "type": "add_ons",
+          "settings": {}
+        },
+        "supported_devices": {
+          "type": "supported_devices",
+          "settings": {}
+        },
+        "dropdown_information_gyGwGJ": {
+          "type": "dropdown_information",
+          "settings": {
+            "characteristics": false,
+            "heading": "User Manual",
+            "description": "<h6><a href=\"https://cdn.shopify.com/s/files/1/0658/8963/2410/files/RoamPlug-User-Manual.pdf?v=1745475742\" target=\"_blank\" title=\"https://cdn.shopify.com/s/files/1/0658/8963/2410/files/RoamPlug-User-Manual.pdf?v=1745475742\">GlocalMe RoamPlug</a></h6>",
+            "button_show": false,
+            "button_label": "Button label",
+            "button_link": "",
+            "default_open": false
+          }
+        },
+        "text_with_icon_FJpD8f": {
+          "type": "text_with_icon",
+          "settings": {
+            "show_text_with_icon_1": true,
+            "icon_1": "delivery",
+            "text_1": "Fast Shipping",
+            "show_text_with_icon_2": true,
+            "icon_2": "mark",
+            "text_2": "High-quality Products",
+            "box_shadow": true,
+            "icon_style": "colored",
+            "icon_fill_type": "gradient"
+          }
+        },
+        "text_with_icon": {
+          "type": "text_with_icon",
+          "settings": {
+            "show_text_with_icon_1": true,
+            "icon_1": "wallet",
+            "text_1": "30 Day Return Guarantee",
+            "show_text_with_icon_2": true,
+            "icon_2": "user-1",
+            "text_2": "Professional Service Support",
+            "box_shadow": true,
+            "icon_style": "colored",
+            "icon_fill_type": "gradient"
+          }
+        },
+        "share_EAqH9P": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share",
+            "show_share_facebook": true,
+            "show_share_twitter": true,
+            "show_share_pinterest": true,
+            "show_share_copy": true
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "description",
+        "custom_liquid_Czd3wY",
+        "variant_picker",
+        "inventory_ybzDtw",
+        "price",
+        "gift",
+        "buy_buttons",
+        "add_ons",
+        "supported_devices",
+        "dropdown_information_gyGwGJ",
+        "text_with_icon_FJpD8f",
+        "text_with_icon",
+        "share_EAqH9P"
+      ],
+      "custom_css": [
+        "@media only screen and (min-width: 1200px) {.rte div {margin-right: 180px; margin-left: -180px; }}"
+      ],
+      "settings": {
+        "desktop_alignment": "right",
+        "mobile_alignment": "before",
+        "gallery_type": "slider_previews",
+        "aspect_ratio": "1/1",
+        "image_fit": "contain",
+        "image_fit_modal": "contain",
+        "padding_bottom": "m"
+      }
+    },
+    "video_jy9nWT": {
+      "type": "video",
+      "settings": {
+        "color_scheme": "",
+        "full_width": false,
+        "height": "16/9",
+        "video_fit": "contain",
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "subheading_icon": "none",
+        "heading": "",
+        "heading_size": "h2",
+        "heading_level": "h2",
+        "cover_image": "shopify://shop_images/X103.jpg",
+        "opacity_overlay": 0,
+        "video_url": "https://www.youtube.com/watch?v=ZodnuJ7nGBU",
+        "video_autoplay": false,
+        "video_loop": false,
+        "video_muted": false,
+        "video_controls": true,
+        "description": "",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_01": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_abNEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/X103_01.jpg",
+            "image_link": ""
+          }
+        },
+        "text_abLEyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Four-in-0ne</strong></p><p><strong>UniversalTravelAdapter</strong></p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 56,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "max_text_container_max_width": 40,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 3.6,
+            "position_y": 42
+          }
+        },
+        "text_abUEyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>GlocalMe RoamPlug</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 46,
+            "text_font_weight": 300,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "max_text_container_max_width": 40,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 3.6,
+            "position_y": 30
+          }
+        }
+      },
+      "block_order": [
+        "image_abNEyF",
+        "text_abLEyF",
+        "text_abUEyF"
+      ],
+      "custom_css": [],
+      "settings": {
+        "display_devices": "desktop",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_02": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_bbNEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/X103_02.jpg",
+            "image_link": ""
+          }
+        },
+        "text_TL4QG7": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>RoamPlug-Travel lighter and smarter,</strong></p><p><strong>one plug for all your tech.</strong></p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 56,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 4,
+            "position_y": 10
+          }
+        },
+        "text_n6cFVf": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Universal Adapter</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 28,
+            "text_font_weight": 300,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "max_text_container_max_width": 18,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 8.6,
+            "position_y": 52
+          }
+        },
+        "text_n7cFVf": {
+          "type": "text",
+          "settings": {
+            "text": "<p>65W Laptop Charger</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 28,
+            "text_font_weight": 300,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "max_text_container_max_width": 18,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 5.6,
+            "position_y": 52
+          }
+        },
+        "text_y6cFVf": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Multi-port Charging</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 28,
+            "text_font_weight": 300,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "max_text_container_max_width": 18,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 8.6,
+            "position_y": 86
+          }
+        },
+        "text_n6cnVf": {
+          "type": "text",
+          "settings": {
+            "text": "<p>WiFi Hotspot</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 28,
+            "text_font_weight": 300,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "max_text_container_max_width": 18,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 4.8,
+            "position_y": 86
+          }
+        }
+      },
+      "block_order": [
+        "image_bbNEyF",
+        "text_TL4QG7",
+        "text_n6cFVf",
+        "text_n7cFVf",
+        "text_y6cFVf",
+        "text_n6cnVf"
+      ],
+      "settings": {
+        "display_devices": "desktop",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_03": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_cbNEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/X103_03.jpg",
+            "image_link": ""
+          }
+        },
+        "text_abL4yF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>All-in-one Solution</strong></p>",
+            "text_color": "#30c71c",
+            "text_gradient_background": "",
+            "text_font_size": 56,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 3.6,
+            "position_y": 6
+          }
+        },
+        "text_xbL4yF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Say goodbye to lugging around multiple adapters and unsecured public WiFi</strong></p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 36,
+            "text_font_weight": 300,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 3.6,
+            "position_y": 18.8
+          }
+        },
+        "text_XUPaQA": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Global Connectivity</strong></p>",
+            "text_color": "#30c71c",
+            "text_gradient_background": "",
+            "text_font_size": 26,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 18,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 10,
+            "position_y": 38.4
+          }
+        },
+        "text_y4p3en": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Plug&Play, SlM-free, Roam-free, CloudSlM Technology, support 200+ countries service coverage</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 300,
+            "text_line_height": 1.4,
+            "text_align": "left",
+            "max_text_container_max_width": 22,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 6.8,
+            "position_y": 44
+          }
+        },
+        "text_PUPaQA": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Powerful Charging</strong></p>",
+            "text_color": "#30c71c",
+            "text_gradient_background": "",
+            "text_font_size": 26,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 18,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 9.2,
+            "position_y": 40.2
+          }
+        },
+        "text_w4p3en": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Charge your devices quickly and efficiently with the 70W power output. Supports laptops, tablets smartphones, and more</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 300,
+            "text_line_height": 1.4,
+            "text_align": "left",
+            "max_text_container_max_width": 22,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 9,
+            "position_y": 46
+          }
+        },
+        "text_eUPaQA": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Universal Adapter</strong></p>",
+            "text_color": "#30c71c",
+            "text_gradient_background": "",
+            "text_font_size": 26,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 18,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 10,
+            "position_y": 31.6
+          }
+        },
+        "text_Q4p3en": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Built-in US/JP/CN, AU, EU, UK, sockets, covering 150+ countries worldwide.</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 300,
+            "text_line_height": 1.4,
+            "text_align": "left",
+            "max_text_container_max_width": 22,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 6.8,
+            "position_y": 18
+          }
+        },
+        "text_oUPaQA": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Multi-port charging</strong></p>",
+            "text_color": "#30c71c",
+            "text_gradient_background": "",
+            "text_font_size": 26,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 18,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "btt",
+            "position_x": 8.6,
+            "position_y": 30.6
+          }
+        },
+        "text_w6p3en": {
+          "type": "text",
+          "settings": {
+            "text": "<p>3C1A USB ports provide flexible charging options for multiple devices simultaneously.</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 300,
+            "text_line_height": 1.4,
+            "text_align": "left",
+            "max_text_container_max_width": 22,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "btt",
+            "position_x": 9,
+            "position_y": 17
+          }
+        }
+      },
+      "block_order": [
+        "image_cbNEyF",
+        "text_abL4yF",
+        "text_xbL4yF",
+        "text_XUPaQA",
+        "text_y4p3en",
+        "text_PUPaQA",
+        "text_w4p3en",
+        "text_eUPaQA",
+        "text_Q4p3en",
+        "text_oUPaQA",
+        "text_w6p3en"
+      ],
+      "settings": {
+        "display_devices": "desktop",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_04": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_dbNEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/X103_04.jpg",
+            "image_link": ""
+          }
+        },
+        "text_XUPaQA": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>SIM Free,</strong></p><p><strong>Roaming Free Portable WiFi Hotspot</strong></p>",
+            "text_color": "#1f1f1f",
+            "text_gradient_background": "",
+            "text_font_size": 36,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 42,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 6,
+            "position_y": 7
+          }
+        },
+        "text_y4p3en": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Smart network selection from 350+ global carriers.</p><p><br/>4G internet access in 200+ countries/regions.</p>",
+            "text_color": "#666666",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 300,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 42,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 6,
+            "position_y": 12
+          }
+        },
+        "text_PUPaQA": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Multi-port Charging</strong></p>",
+            "text_color": "#1f1f1f",
+            "text_gradient_background": "",
+            "text_font_size": 36,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 42,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 6,
+            "position_y": 24
+          }
+        },
+        "text_w4p3en": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Four-port charging suitable for smartphones, tablets, earbuds and smart watches.</p><p><br/>3C1A Multi-port charging, Support mainstream fast charging technology standards for smartphones.</p>",
+            "text_color": "#666666",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 300,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 42,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 6,
+            "position_y": 27
+          }
+        },
+        "text_h4p3en": {
+          "type": "text",
+          "settings": {
+            "text": "<p>PPS</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 300,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 4,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 7.2,
+            "position_y": 34.4
+          }
+        },
+        "text_h4p3in": {
+          "type": "text",
+          "settings": {
+            "text": "<p>PD3.0</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 300,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 4,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 13.6,
+            "position_y": 34.4
+          }
+        },
+        "text_h4p7en": {
+          "type": "text",
+          "settings": {
+            "text": "<p>AFC</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 300,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 4,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 21.2,
+            "position_y": 34.4
+          }
+        },
+        "text_h4c3en": {
+          "type": "text",
+          "settings": {
+            "text": "<p>QC4.0+</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 300,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 4,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 27,
+            "position_y": 34.4
+          }
+        },
+        "text_eUPaQA": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Universal Adapter</strong></p>",
+            "text_color": "#1f1f1f",
+            "text_gradient_background": "",
+            "text_font_size": 36,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 42,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "btt",
+            "position_x": 6,
+            "position_y": 54.4
+          }
+        },
+        "text_Q4p3en": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Built-in US/JP/CN, AU, EU, UK sockets, covering 150+ countries worldwide.</p><p><br/>Max single output port of 65W for laptops of mainstream brands, including Apple, Microsoft, Lenovo, HP, etc.</p>",
+            "text_color": "#666666",
+            "text_gradient_background": "",
+            "text_font_size": 26,
+            "text_font_weight": 300,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 42,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "btt",
+            "position_x": 6,
+            "position_y": 47
+          }
+        },
+        "text_oUPaQA": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Powerful charging</strong></p>",
+            "text_color": "#1f1f1f",
+            "text_gradient_background": "",
+            "text_font_size": 36,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 42,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 6,
+            "position_y": 38.6
+          }
+        },
+        "text_w6p3en": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Total 70W Max Single output 65W Max.</p><p><br/>Capable of delivering a maximum power of 2500W at 250 voltage, ensures efficient and reliablecharging wherever you are.</p><p><br/>GaN cooling and fireproof PC material, 10A overload dual fuse, safety shutters and plug lock system, which can effectively avoid the danger.</p>",
+            "text_color": "#666666",
+            "text_gradient_background": "",
+            "text_font_size": 26,
+            "text_font_weight": 300,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 42,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 6,
+            "position_y": 25.6
+          }
+        },
+        "text_oxPaQA": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Portable Wifi Hotspot</strong></p>",
+            "text_color": "#1f1f1f",
+            "text_gradient_background": "",
+            "text_font_size": 36,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 42,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "btt",
+            "position_x": 6,
+            "position_y": 17
+          }
+        },
+        "text_w6pxen": {
+          "type": "text",
+          "settings": {
+            "text": "<p>When you need to connect to the Internet while you are outdoors and can't get the RoamPlug plug-in. You may use an external power source to reverse charge the RoamPlug, then it can work as a portable wifi hotspot to provide a stable network.</p>",
+            "text_color": "#666666",
+            "text_gradient_background": "",
+            "text_font_size": 26,
+            "text_font_weight": 300,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 42,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "btt",
+            "position_x": 6,
+            "position_y": 9.6
+          }
+        },
+        "text_kbLEyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>All-in-one Solution</strong></p>",
+            "text_color": "#1f1f1f",
+            "text_gradient_background": "linear-gradient(119deg, rgba(5, 6, 34, 1) 20%, rgba(0, 67, 145, 1) 60%)",
+            "text_font_size": 56,
+            "text_font_weight": 600,
+            "text_line_height": 1,
+            "text_align": "center",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 3.6,
+            "position_y": 0
+          }
+        }
+      },
+      "block_order": [
+        "image_dbNEyF",
+        "text_XUPaQA",
+        "text_y4p3en",
+        "text_PUPaQA",
+        "text_w4p3en",
+        "text_h4p3en",
+        "text_h4p3in",
+        "text_h4p7en",
+        "text_h4c3en",
+        "text_eUPaQA",
+        "text_Q4p3en",
+        "text_oUPaQA",
+        "text_w6p3en",
+        "text_oxPaQA",
+        "text_w6pxen",
+        "text_kbLEyF"
+      ],
+      "settings": {
+        "display_devices": "desktop",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_slider_01": {
+      "type": "image-slider",
+      "blocks": {
+        "slide_x2NEyF": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/X103_s01.jpg"
+          }
+        },
+        "slide_n2ecyF": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/X103_s02.jpg"
+          }
+        },
+        "slide_x2b4yF": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/X103_s03.jpg"
+          }
+        },
+        "slide_e2xEyF": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/X103_s04.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "slide_x2NEyF",
+        "slide_n2ecyF",
+        "slide_x2b4yF",
+        "slide_e2xEyF"
+      ],
+      "custom_css": [
+        "swiper-component {display: block; max-width: 1578px; margin: 0 auto;}"
+      ],
+      "settings": {
+        "display_devices": "desktop",
+        "cover_ratio": "adapt",
+        "enable_autoplay": true,
+        "slide_duration": 5,
+        "enable_pagination": true,
+        "enable_navigation": true,
+        "padding_top": "xs",
+        "padding_bottom": "xs",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_05": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_ebNEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/X103_05.jpg",
+            "image_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_ebNEyF"
+      ],
+      "settings": {
+        "display_devices": "desktop",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_07": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_gbNEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/X103_06.jpg",
+            "image_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_gbNEyF"
+      ],
+      "settings": {
+        "display_devices": "desktop",
+        "padding_top": "no-indent",
+        "padding_bottom": "m",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_m_01": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_abNEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/X103_m_01.jpg",
+            "image_link": ""
+          }
+        },
+        "text_abLEyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Four-in-0ne</strong></p><p><strong>UniversalTravelAdapter</strong></p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "max_text_container_max_width": 40,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 3.6,
+            "position_y": 42
+          }
+        },
+        "text_abUEyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>GlocalMe RoamPlug</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 20,
+            "text_font_weight": 300,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "max_text_container_max_width": 40,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 3.6,
+            "position_y": 30
+          }
+        }
+      },
+      "block_order": [
+        "image_abNEyF",
+        "text_abLEyF",
+        "text_abUEyF"
+      ],
+      "custom_css": [],
+      "settings": {
+        "display_devices": "mobile",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_m_02": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_gbNEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/X103_m_02.png",
+            "image_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_gbNEyF"
+      ],
+      "settings": {
+        "display_devices": "mobile",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_m_03": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_cbNEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/X103_m_03.jpg",
+            "image_link": ""
+          }
+        },
+        "text_vbL4yF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>All-in-one Solution</strong></p>",
+            "text_color": "#30c71c",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 3.6,
+            "position_y": 6
+          }
+        },
+        "text_xv14yF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Say goodbye to lugging around multiple adapters and unsecured public WiFi</strong></p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 16,
+            "text_font_weight": 300,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 3.6,
+            "position_y": 18.8
+          }
+        },
+        "text_s2PaQA": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Global Connectivity</strong></p>",
+            "text_color": "#30c71c",
+            "text_gradient_background": "",
+            "text_font_size": 16,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 22,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 11.4,
+            "position_y": 33.4
+          }
+        },
+        "text_y4c1en": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Plug&Play, SlM-free, Roam-free, CloudSlM Technology, support 200+ countries service coverage</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 12,
+            "text_font_weight": 300,
+            "text_line_height": 1.4,
+            "text_align": "left",
+            "max_text_container_max_width": 24,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 6.8,
+            "position_y": 42
+          }
+        },
+        "text_x2PaQA": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Powerful Charging</strong></p>",
+            "text_color": "#30c71c",
+            "text_gradient_background": "",
+            "text_font_size": 16,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 22,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 7.2,
+            "position_y": 35.4
+          }
+        },
+        "text_w3p0en": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Charge your devices quickly and efficiently with the 70W power output. Supports laptops, tablets smartphones, and more</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 12,
+            "text_font_weight": 300,
+            "text_line_height": 1.4,
+            "text_align": "left",
+            "max_text_container_max_width": 24,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "ttb",
+            "position_x": 10.4,
+            "position_y": 43
+          }
+        },
+        "text_exPaQ1": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Universal Adapter</strong></p>",
+            "text_color": "#30c71c",
+            "text_gradient_background": "",
+            "text_font_size": 16,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 22,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 11.4,
+            "position_y": 27.6
+          }
+        },
+        "text_k4p4en": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Built-in US/JP/CN, AU, EU, UK, sockets, covering 150+ countries worldwide.</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 12,
+            "text_font_weight": 300,
+            "text_line_height": 1.4,
+            "text_align": "left",
+            "max_text_container_max_width": 24,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 6.8,
+            "position_y": 12
+          }
+        },
+        "text_oxPa2A": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Multi-port charging</strong></p>",
+            "text_color": "#30c71c",
+            "text_gradient_background": "",
+            "text_font_size": 16,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 22,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "btt",
+            "position_x": 7.2,
+            "position_y": 26.6
+          }
+        },
+        "text_Q6p1en": {
+          "type": "text",
+          "settings": {
+            "text": "<p>3C1A USB ports provide flexible charging options for multiple devices simultaneously.</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 12,
+            "text_font_weight": 300,
+            "text_line_height": 1.4,
+            "text_align": "left",
+            "max_text_container_max_width": 24,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "rtl",
+            "direction_y": "btt",
+            "position_x": 10.4,
+            "position_y": 11
+          }
+        }
+      },
+      "block_order": [
+        "image_cbNEyF",
+        "text_vbL4yF",
+        "text_xv14yF",
+        "text_s2PaQA",
+        "text_y4c1en",
+        "text_x2PaQA",
+        "text_w3p0en",
+        "text_exPaQ1",
+        "text_k4p4en",
+        "text_oxPa2A",
+        "text_Q6p1en"
+      ],
+      "settings": {
+        "display_devices": "mobile",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_m_04": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_dbNEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/X103_m_04.jpg",
+            "image_link": ""
+          }
+        },
+        "text_XePaQA": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>SIM Free,</strong></p><p><strong>Roaming Free Portable WiFi Hotspot</strong></p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 28,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 8,
+            "position_y": 23.6
+          }
+        },
+        "text_I4p3en": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Smart network selection from 350+ global carriers.</p><p><br/>4G internet access in 200+ countries/regions.</p>",
+            "text_color": "#dddddd",
+            "text_gradient_background": "",
+            "text_font_size": 18,
+            "text_font_weight": 300,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 8,
+            "position_y": 28.6
+          }
+        },
+        "text_ke1aQA": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Multi-port Charging</strong></p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 28,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 8,
+            "position_y": 53
+          }
+        },
+        "text_u2p3en": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Four-port charging suitable for smartphones, tablets, earbuds and smart watches.</p><p><br/>3C1A Multi-port charging, Support mainstream fast charging technology standards for smartphones.</p>",
+            "text_color": "#dddddd",
+            "text_gradient_background": "",
+            "text_font_size": 18,
+            "text_font_weight": 300,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 8,
+            "position_y": 56.6
+          }
+        },
+        "text_x4p3en": {
+          "type": "text",
+          "settings": {
+            "text": "<p>PPS</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 18,
+            "text_font_weight": 300,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 4,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 10.6,
+            "position_y": 63.6
+          }
+        },
+        "text_e2p3in": {
+          "type": "text",
+          "settings": {
+            "text": "<p>PD3.0</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 18,
+            "text_font_weight": 300,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 4,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 22,
+            "position_y": 63.6
+          }
+        },
+        "text_dsp7en": {
+          "type": "text",
+          "settings": {
+            "text": "<p>AFC</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 18,
+            "text_font_weight": 300,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 4,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 35.4,
+            "position_y": 63.6
+          }
+        },
+        "text_1xc3en": {
+          "type": "text",
+          "settings": {
+            "text": "<p>QC4.0+</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 18,
+            "text_font_weight": 300,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "max_text_container_max_width": 4,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 45.6,
+            "position_y": 63.6
+          }
+        },
+        "text_qw1aQA": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Universal Adapter</strong></p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 28,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 8,
+            "position_y": 88
+          }
+        },
+        "text_x4p3tn": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Built-in US/JP/CN, AU, EU, UK sockets, covering 150+ countries worldwide.</p><p><br/>Max single output port of 65W for laptops of mainstream brands, including Apple, Microsoft, Lenovo, HP, etc.</p>",
+            "text_color": "#dddddd",
+            "text_gradient_background": "",
+            "text_font_size": 18,
+            "text_font_weight": 300,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 8,
+            "position_y": 91.6
+          }
+        }
+      },
+      "block_order": [
+        "image_dbNEyF",
+        "text_XePaQA",
+        "text_I4p3en",
+        "text_ke1aQA",
+        "text_u2p3en",
+        "text_x4p3en",
+        "text_e2p3in",
+        "text_dsp7en",
+        "text_1xc3en",
+        "text_qw1aQA",
+        "text_x4p3tn"
+      ],
+      "settings": {
+        "display_devices": "mobile",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_m_05": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_ebNEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/X103_m_05.jpg",
+            "image_link": ""
+          }
+        },
+        "text_ew1aQA": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Powerful charging</strong></p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 28,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 8,
+            "position_y": 30
+          }
+        },
+        "text_v4p3tn": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Total 70W Max Single output 65W Max.</p><p><br/>Capable of delivering a maximum power of 2500W at 250 voltage, ensures efficient and reliablecharging wherever you are.</p><p><br/>GaN cooling and fireproof PC material, 10A overload dual fuse, safety shutters and plug lock system, which can effectively avoid the danger.</p>",
+            "text_color": "#dddddd",
+            "text_gradient_background": "",
+            "text_font_size": 18,
+            "text_font_weight": 300,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 8,
+            "position_y": 34.6
+          }
+        },
+        "text_ex3aQA": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Portable Wifi Hotspot</strong></p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 28,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "bbt",
+            "position_x": 8,
+            "position_y": 19
+          }
+        },
+        "text_v4s9tn": {
+          "type": "text",
+          "settings": {
+            "text": "<p>When you need to connect to the Internet while you are outdoors and can't get the RoamPlug plug-in. You may use an external power source to reverse charge the RoamPlug, then it can work as a portable wifi hotspot to provide a stable network.</p>",
+            "text_color": "#dddddd",
+            "text_gradient_background": "",
+            "text_font_size": 18,
+            "text_font_weight": 300,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "bbt",
+            "position_x": 8,
+            "position_y": 11
+          }
+        },
+        "text_kbx2yF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>All-in-one Solution</strong></p>",
+            "text_color": "#1f1f1f",
+            "text_gradient_background": "linear-gradient(119deg, rgba(5, 6, 34, 1) 20%, rgba(0, 67, 145, 1) 60%)",
+            "text_font_size": 42,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 3.6,
+            "position_y": 1.8
+          }
+        }
+      },
+      "block_order": [
+        "image_ebNEyF",
+        "text_ew1aQA",
+        "text_v4p3tn",
+        "text_ex3aQA",
+        "text_v4s9tn",
+        "text_kbx2yF"
+      ],
+      "settings": {
+        "display_devices": "mobile",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_slider_02": {
+      "type": "image-slider",
+      "blocks": {
+        "slide_x2NEyF": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/X103_s01.jpg"
+          }
+        },
+        "slide_n2ecyF": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/X103_s02.jpg"
+          }
+        },
+        "slide_x2b4yF": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/X103_s03.jpg"
+          }
+        },
+        "slide_e2xEyF": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/X103_s04.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "slide_x2NEyF",
+        "slide_n2ecyF",
+        "slide_x2b4yF",
+        "slide_e2xEyF"
+      ],
+      "settings": {
+        "display_devices": "mobile",
+        "cover_ratio": "adapt",
+        "enable_autoplay": true,
+        "slide_duration": 5,
+        "enable_pagination": true,
+        "enable_navigation": true,
+        "padding_top": "xs",
+        "padding_bottom": "xs",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_m_06": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_01": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/X103_m_06.jpg",
+            "image_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_01"
+      ],
+      "settings": {
+        "display_devices": "mobile",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_m_07": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_gbNEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/X103_m_07.jpg",
+            "image_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_gbNEyF"
+      ],
+      "settings": {
+        "display_devices": "mobile",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "product_recommendations_kGBRgX": {
+      "type": "product-recommendations",
+      "settings": {
+        "color_scheme": "",
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "subheading_icon": "none",
+        "heading": "You May Also Like",
+        "heading_size": "h2",
+        "text": "",
+        "products_limit": 6,
+        "image_ratio": "1/1",
+        "image_fit": "cover",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_desc": false,
+        "padding_top": "s",
+        "padding_bottom": "m"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "video_jy9nWT",
+    "image_text_separation_01",
+    "image_text_separation_02",
+    "image_text_separation_03",
+    "image_text_separation_04",
+    "image_slider_01",
+    "image_text_separation_05",
+    "image_text_separation_07",
+    "image_text_separation_m_01",
+    "image_text_separation_m_02",
+    "image_text_separation_m_03",
+    "image_text_separation_m_04",
+    "image_text_separation_m_05",
+    "image_slider_02",
+    "image_text_separation_m_06",
+    "image_text_separation_m_07",
+    "product_recommendations_kGBRgX"
+  ]
+}

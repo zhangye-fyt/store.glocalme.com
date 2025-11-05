@@ -1,0 +1,130 @@
+{%- liquid
+  assign product_collections_handles = ''
+  for collection_item in product.collections
+    if forloop.last
+      assign product_collections_handles = product_collections_handles | append: collection_item.handle
+    else
+      assign product_collections_handles = product_collections_handles | append: collection_item.handle | append: ';'
+    endif
+  endfor
+
+  assign is_applicable = false
+  for collection_item in settings.country_checker_for_which_collections
+    if product_collections_handles contains collection_item.handle
+      assign is_applicable = true
+      break
+    endif
+  endfor
+-%}
+
+{%- if is_applicable -%}
+  {{ 'component-country-checker.css' | asset_url | stylesheet_tag }}
+  <script src="{{ 'country-checker.js' | asset_url }}" defer="defer"></script>
+  
+  <div class="product__country-checker">
+    <modal-opener
+      class="no-js-hidden"
+      data-modal="#PopupModal-{{ block.id }}"
+      {{ block.shopify_attributes }}
+    >
+      <button
+        id="ProductPopup-{{ block.id }}"
+        class="button button--simple button--arrow focus-inset"
+        type="button"
+        aria-haspopup="dialog"
+      >
+        <span>{{ settings.country_checker_button_text }}</span>
+        {% render 'icon-button-arrow' %}
+      </button>
+    </modal-opener>
+
+    <modal-dialog id="PopupModal-{{ block.id }}" class="product-popup-modal" {{ block.shopify_attributes }}>
+      <div
+        role="dialog"
+        aria-label="{{ settings.country_checker_button_text }}"
+        aria-modal="true"
+        class="product-popup-modal__content"
+        style="max-width: 74rem;"
+        tabindex="-1"
+      >
+        <button
+          id="ModalClose-{{ block.id }}"
+          type="button"
+          class="product-popup-modal__close modal-close-button focus-inset"
+          aria-label="{{ 'accessibility.close' | t }}"
+        >
+          {% render 'icon-close' %}
+        </button>
+        <div class="product-popup-modal__content-info">
+          <country-checker
+            class="country-checker"
+          >
+            <div class="country-checker__search">
+              <h2 class="country-checker__headline body-large">{{ settings.country_checker_title }}</h2>
+              <p class="country-checker__sub-headline body-normal">{{ settings.country_checker_sub_title }}</p>
+              {% render 'country-dropdown', class: 'dropdown--round' %}
+            </div>
+            <div class="country-checker__result">
+              <div class="country-checker__image">
+                <picture>
+                  <source
+                    height="300"
+                    media="(max-width: 767px)"
+                    srcset="
+                      {{ settings.country_checker_background_image | image_url: width: 320 }} 320w,
+                      {{ settings.country_checker_background_image | image_url: width: 375 }} 375w,
+                      {{ settings.country_checker_background_image | image_url: width: 414 }} 414w,
+                      {{ settings.country_checker_background_image | image_url: width: 480 }} 480w,
+                      {{ settings.country_checker_background_image | image_url: width: 667 }} 667w,
+                      {{ settings.country_checker_background_image | image_url: width: 780 }} 780w
+                    "
+                  >
+                  <source
+                    height="450"
+                    media="(min-width: 768px)"
+                    srcset="
+                      {{ settings.country_checker_background_image | image_url: width: 900 }} 900w,
+                      {{ settings.country_checker_background_image | image_url: width: 1320 }} 1320w,
+                      {{ settings.country_checker_background_image | image_url: width: 1800 }} 1800w,
+                      {{ settings.country_checker_background_image | image_url: width: 2136 }} 2136w,
+                      {{ settings.country_checker_background_image | image_url: width: 2400 }} 2400w,
+                      {{ settings.country_checker_background_image | image_url: width: 3600 }} 3600w
+                    "
+                  >
+                  <img
+                    src="{{ settings.country_checker_background_image | image_url }}"
+                    width="{{ settings.country_checker_background_image.width }}"
+                    height="{{ settings.country_checker_background_image.height }}"
+                    alt="{{ settings.country_checker_background_image.alt }}"
+                    loading="lazy"
+                  >
+                </picture>
+              </div>
+              <div class="country-checker__content hidden">
+                <div class="country-checker__icon">
+                  {% render 'icon-coverage-vector' %}
+                  <img
+                    class="country-checker__flag"
+                    src="https://cdn.shopify.com/static/images/flags/{{- localization.country.iso_code | downcase -}}.svg"
+                    width="88"
+                    height="auto"
+                  >
+                </div>
+                <div
+                  class="country-checker__description"
+                  data-available-text="{{ settings.country_checker_available_text }}"
+                  data-not-available-text="{{ settings.country_checker_not_available_text }}"
+                >
+                  <strong class="block body-large">{{- localization.country.name }}</strong>
+                </div>
+              </div>
+            </div>
+            <script type="application/json">
+              {{ settings.country_checker_coverage_area | json }}
+            </script>
+          </country-checker>
+        </div>
+      </div>
+    </modal-dialog>
+  </div>
+{%- endif -%}

@@ -1,0 +1,38 @@
+{%- assign origin = request.origin | default: shop.primary_domain.url -%}
+{%- assign markets = '
+    en:/,
+    en-FR:/fr,
+    en-DE:/de,
+    en-JP:/jp,
+    en-AE:/ae,
+    en-GR:/gr,
+    en-ID:/id,
+    en-IT:/it,
+    en-KR:/kr,
+    en-LA:/la,
+    en-MY:/my,
+    en-PT:/pt,
+    en-RU:/ru,
+    en-ES:/es,
+    en-SE:/se,
+    en-TH:/th,
+    en-TR:/tr,
+    en-PH:/ph
+'
+  | strip
+  | split: ','
+-%}
+
+{%- for item in markets -%}
+  {%- assign kv = item | strip | split: ':' -%}
+  {%- assign lang_region = kv[0] | upcase | replace: 'EN', 'en' -%}
+  {%- assign dir = kv[1] | strip -%}
+  {%- assign href = origin | append: dir -%}
+  <link
+    rel="alternate"
+    hreflang="{{ lang_region }}"
+    href="{{ href }}"
+    data-custom-hreflang
+  >
+{%- endfor -%}
+<link rel="alternate" hreflang="x-default" href="{{ origin }}" data-custom-hreflang>

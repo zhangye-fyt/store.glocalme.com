@@ -1,0 +1,104 @@
+.discovery-collections__title {
+  margin-bottom: 3rem;
+}
+
+.discovery-collections__content-swiper .swiper-slide {
+  width: calc(100% / 3);
+  height: auto;
+}
+
+.discovery-collections__content-swiper .swiper-pagination {
+  margin-top: 2.4rem;
+}
+
+.discovery-collections__content-image {
+  display: none;
+  border-radius: 1.2rem;
+}
+
+.discovery-collections__content-image-text {
+  position: absolute;
+  padding: 2rem;
+  z-index: 1;
+  border-radius: 1.2rem;
+  max-width: 68%;
+}
+
+.discovery-collections__content-image-text p {
+  font-size: 3rem;
+  font-weight: 600;
+  margin: 0 0 1rem;
+}
+
+.discovery-collections__content-swiper .swiper-navigation {
+  padding: 0 2rem;
+  pointer-events: none;
+}
+
+.discovery-collections__content-swiper .swiper-navigation .swiper-button-prev:not(.swiper-button-disabled),
+.discovery-collections__content-swiper .swiper-navigation .swiper-button-next:not(.swiper-button-disabled) {
+  transform: translate(0);
+  pointer-events: all;
+}
+
+.discovery-collections__product .collection-product-card .card__title {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.discovery-collections__product .button {
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 989px) {
+  .discovery-collections__title h2 {
+    margin-bottom: 1.5rem;
+  }
+
+  .discovery-collections__content-swiper .swiper-navigation {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .discovery-collections__product .collection-product-card .card__title {
+    font-size: calc(var(--font-heading-card-scale) * 0.9rem);
+  }
+
+  .discovery-collections__product .collection-product-card .price {
+    font-size: 1.2rem;
+  }
+
+  .discovery-collections__product .button {
+    min-height: 4rem;
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .discovery-collections__title {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+  }
+
+  .discovery-collections .discovery-collections__content {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  .discovery-collections .discovery-collections__content-image {
+    display: block;
+    width: 34%;
+  }
+
+  .discovery-collections__content-swiper .swiper-pagination {
+    display: none;
+  }
+
+  .discovery-collections__product .button {
+    margin-top: 3rem;
+  }
+}

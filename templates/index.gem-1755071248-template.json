@@ -1,0 +1,746 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_banner_w9xaxc": {
+      "type": "image-banner",
+      "settings": {
+        "full_width": true,
+        "color_scheme": "",
+        "image": "shopify:\/\/shop_images\/banner2.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/banner_a63e5298-48fb-42cf-b0cd-3d43b756e0f0.jpg",
+        "image_ratio": "adapt",
+        "image_link": "shopify:\/\/pages\/july-summer-sale",
+        "opacity_overlay": 0,
+        "icon": "none",
+        "icon_color_scheme": "scheme-2c247732-f527-4f63-99fd-72efcb82538d",
+        "icon_size": "large",
+        "icon_style": "colored",
+        "icon_fill_type": "gradient",
+        "box_shadow": false,
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "heading": "",
+        "heading_size": "h2",
+        "heading_level": "h2",
+        "text_information": "",
+        "text_align": "bottom-left",
+        "text_width": "small",
+        "show_view_all": false,
+        "button_label": "SHOP NOW",
+        "button_style": "tertiary",
+        "button_link": "https:\/\/us.glocalme.com\/pages\/glocalme-sale-page",
+        "margin_top": "no-indent",
+        "margin_bottom": "m"
+      }
+    },
+    "image_banner_with_newsletter_w9xaxc": {
+      "type": "banner-newsletter",
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "opacity_overlay": 0,
+        "image": "shopify:\/\/shop_images\/jackery_banner_pc.png",
+        "image_mobile": "shopify:\/\/shop_images\/jackery_banner_m.png",
+        "image_ratio": "adapt",
+        "image_link": "shopify:\/\/pages\/july-summer-sale",
+        "color_scheme": "scheme-bcde7e2e-ab62-49ee-8c11-c24a3b9e9d77",
+        "heading": "UP TO 50% OFF",
+        "heading_level": "h2",
+        "subheading": "Jackery Member Sale | July 25th - 31st",
+        "subheading_style": "subtitle",
+        "text_information": "Power Your Summer, Backup Your Fridge",
+        "text_align": "bottom-left",
+        "newsletter_color_background": "linear-gradient(85deg, rgba(255, 255, 255, 0.8), rgba(238, 137, 66, 0.5) 100%)",
+        "newsletter_heading": "Subscribe now for Jackery updates!",
+        "newsletter_button_style": "primary",
+        "newsletter_agreement": "<p>I agree to Jackery Terms of Service and Privacy policy<\/p>",
+        "newsletter_agreement_error": "Please agree to the Terms of Service and Privacy policy.",
+        "margin_top": "no-indent",
+        "margin_bottom": "m"
+      }
+    },
+    "rich_text_GhWRWW": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_787TVf": {
+          "type": "heading",
+          "settings": {
+            "heading": "Why Choose GlocalMe Wi-Fi Hotspots?",
+            "heading_size": "medium",
+            "heading_level": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "heading_787TVf"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "full_width": true,
+        "alignment": "left",
+        "margin_top": "m",
+        "margin_bottom": "no-indent",
+        "padding_top": "m",
+        "padding_bottom": "no-indent"
+      }
+    },
+    "1747735129aedc0ae3": {
+      "type": "apps",
+      "blocks": {
+        "trustview_app_review_widget_FqPwTm": {
+          "type": "shopify:\/\/apps\/trustview\/blocks\/app_review_widget\/bda8b0f7-273b-4b6e-ab43-02c3fec9d11a",
+          "settings": {
+            "widget_design": "design1",
+            "widget_theme": "light",
+            "which_reviews_to_show": "only5",
+            "reviews_per_page": "20",
+            "show_reviews_on_mobile": true,
+            "hide_trust_logo": false
+          }
+        }
+      },
+      "block_order": [
+        "trustview_app_review_widget_FqPwTm"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "discovery_collections_B6fNwW": {
+      "type": "discovery-collections",
+      "blocks": {
+        "collection_Y4MzrW": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/glocalme_wifi_hotspot_20.jpg",
+            "collection": "portable-wifi",
+            "products": [
+              "meowgo-g40-pro",
+              "numen-air",
+              "g4-pro",
+              "u3",
+              "duoturbo"
+            ]
+          }
+        },
+        "collection_mBA8g3": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/glocalme_wifi_hotspot_21.jpg",
+            "collection": "life-series",
+            "products": [
+              "petphone",
+              "unicord",
+              "roamplug"
+            ]
+          }
+        },
+        "collection_gQz7RG": {
+          "type": "collection",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/glocalme_wifi_hotspot_22.jpg",
+            "collection": "data-package",
+            "products": []
+          }
+        },
+        "collection_g4Ddgr": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/glocalme_wifi_hotspot_1.jpg",
+            "collection": "refurbished-portable-wifi",
+            "products": []
+          }
+        }
+      },
+      "block_order": [
+        "collection_Y4MzrW",
+        "collection_mBA8g3",
+        "collection_gQz7RG",
+        "collection_g4Ddgr"
+      ],
+      "settings": {
+        "title": "Top Recommended",
+        "cover_ratio": "1\/1",
+        "cover_fit": "cover",
+        "link_text": "Learn more",
+        "text_color_scheme": "background-5",
+        "direction_x": "ltr",
+        "direction_y": "ttb",
+        "position_x": 4,
+        "position_y": 4,
+        "image_ratio": "1\/1",
+        "image_fit": "cover",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "products_limit": 6,
+        "button_text": "Shop Now",
+        "padding_top": "m",
+        "padding_bottom": "l",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "collections_grid_3x7VUA": {
+      "type": "collections-grid",
+      "blocks": {
+        "collection_Y4MzrW": {
+          "type": "collection",
+          "settings": {
+            "collection": "portable-wifi",
+            "image": "shopify:\/\/shop_images\/portable_wifi.jpg"
+          }
+        },
+        "collection_mBA8g3": {
+          "type": "collection",
+          "settings": {
+            "collection": "life-series",
+            "image": "shopify:\/\/shop_images\/1111_1.jpg"
+          }
+        },
+        "collection_gQz7RG": {
+          "type": "collection",
+          "settings": {
+            "collection": "data-package",
+            "image": "shopify:\/\/shop_images\/glocalme_wifi_hotspot_25.jpg"
+          }
+        },
+        "collection_mfgBiB": {
+          "type": "collection",
+          "settings": {
+            "collection": "sim-card",
+            "image": "shopify:\/\/shop_images\/glocalme_wifi_hotspot_26.jpg"
+          }
+        },
+        "collection_4TmiLU": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "collection": "refurbished-portable-wifi",
+            "image": "shopify:\/\/shop_images\/glocalme_wifi_hotspot_1.jpg"
+          }
+        },
+        "collection_FpkFXT": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "collection": "get-device-free",
+            "image": "shopify:\/\/shop_images\/glocalme_wifi_hotspot_27.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "collection_Y4MzrW",
+        "collection_mBA8g3",
+        "collection_gQz7RG",
+        "collection_mfgBiB",
+        "collection_4TmiLU",
+        "collection_FpkFXT"
+      ],
+      "settings": {
+        "layout": "simple",
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "subheading_icon": "none",
+        "heading": "Popular Collection",
+        "heading_size": "h3",
+        "heading_level": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "left",
+        "color_scheme": "",
+        "image_ratio": "square",
+        "image_fit": "contain",
+        "show_desc": true,
+        "alt_desc": false,
+        "overlay_opacity": 0,
+        "collections_to_show": 4,
+        "columns_mobile": "2",
+        "padding_top": "m",
+        "padding_bottom": "l"
+      }
+    },
+    "hero_HYDeyJ": {
+      "type": "hero",
+      "blocks": {
+        "subtitle_kMXN9e": {
+          "type": "subtitle",
+          "settings": {
+            "subheading": "COMING SOON",
+            "subheading_style": "subtitle subtitle--secondary",
+            "subheading_icon": "star"
+          }
+        },
+        "title_T8HfhA": {
+          "type": "title",
+          "settings": {
+            "heading": "PetPhone",
+            "heading_size": "h1",
+            "heading_level": "h2",
+            "heading_line": "simple",
+            "line_color": "#1566e0",
+            "word_break": false,
+            "heading_animation": "none",
+            "word_break_an": false
+          }
+        },
+        "description_AGmG96": {
+          "type": "description",
+          "settings": {
+            "description": "The World First Smartphone Designed For Pet, Subscribe to us to be notified when it is live!"
+          }
+        },
+        "buttons_74bTdJ": {
+          "type": "buttons",
+          "settings": {
+            "show_button_1": true,
+            "button_label_1": "Learn More",
+            "button_link_1": "shopify:\/\/products\/petphone",
+            "button_style_1": "secondary",
+            "show_button_2": false,
+            "button_label_2": "Label",
+            "button_link_2": "",
+            "button_style_2": "simple"
+          }
+        }
+      },
+      "block_order": [
+        "subtitle_kMXN9e",
+        "title_T8HfhA",
+        "description_AGmG96",
+        "buttons_74bTdJ"
+      ],
+      "settings": {
+        "layout": "horizontal",
+        "header_overlay": false,
+        "header_transparent": false,
+        "block_type": "subtle",
+        "color_scheme": "",
+        "full_screen": true,
+        "image": "shopify:\/\/shop_images\/petphone_1_faf72004-945c-476e-b487-6c0e16839b1b.jpg",
+        "show_video": false,
+        "overlay_opacity": 0,
+        "image_ratio": "adapt",
+        "object_fit": "contain",
+        "desktop_image_position": "before",
+        "mobile_image_position": "before",
+        "mobile_image_overlay": "overlay",
+        "horizontal_alignment": "center",
+        "vertical_alignment": "bottom",
+        "padding_top": "xs",
+        "padding_bottom": "m"
+      }
+    },
+    "video_eRe3DH": {
+      "type": "video",
+      "settings": {
+        "color_scheme": "",
+        "full_width": false,
+        "height": "16\/9",
+        "video_fit": "contain",
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "subheading_icon": "none",
+        "heading": "",
+        "heading_size": "h2",
+        "heading_level": "h2",
+        "cover_image": "shopify:\/\/shop_images\/petphone_31_ce2e6957-eec1-4c85-9ed8-3ee2378f2922.jpg",
+        "opacity_overlay": 0,
+        "video_url": "https:\/\/www.youtube.com\/watch?v=Pqw20wluh9I",
+        "video_autoplay": false,
+        "video_loop": false,
+        "video_muted": false,
+        "video_controls": true,
+        "description": "",
+        "margin_top": "no-indent",
+        "margin_bottom": "m"
+      }
+    },
+    "bundle_up_X6fNwW": {
+      "type": "bundle-up",
+      "blocks": {
+        "marker_3X6fNw": {
+          "type": "marker",
+          "settings": {
+            "product": "numen-air",
+            "direction_x": "rtl",
+            "direction_y": "btt",
+            "position_x": 13,
+            "position_y": 14
+          }
+        },
+        "product_3XSdfNw": {
+          "type": "product",
+          "settings": {
+            "product": "unicord",
+            "description": "Get The Power and Internet at Once"
+          }
+        },
+        "product_4XSdfNw": {
+          "type": "product",
+          "settings": {
+            "product": "roamplug",
+            "description": "Four-in-One Universal Travel Adapter"
+          }
+        },
+        "product_5XSdfNw": {
+          "type": "product",
+          "settings": {
+            "product": "numen-air",
+            "description": "Global 5G Mobile Hotspot with Touch Screen"
+          }
+        }
+      },
+      "block_order": [
+        "marker_3X6fNw",
+        "product_3XSdfNw",
+        "product_4XSdfNw",
+        "product_5XSdfNw"
+      ],
+      "settings": {
+        "cover_width": 30,
+        "cover": "shopify:\/\/shop_images\/222_c6e5a559-a802-4474-bb26-bfef15189ba5.jpg",
+        "cover_ratio": "adapt",
+        "title": "Efficient Office Kit",
+        "sub_title": "",
+        "title_color_scheme": "background-4",
+        "marker_color_scheme": "",
+        "marker_heading_color_scheme": "",
+        "checkbox_color_scheme": "",
+        "image_ratio": "1\/1",
+        "image_fit": "cover",
+        "padding_top": "m",
+        "padding_bottom": "m",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_banner_mAKT48": {
+      "type": "image-banner",
+      "settings": {
+        "full_width": false,
+        "color_scheme": "",
+        "image": "shopify:\/\/shop_images\/1-26_2c1a72b4-d561-452b-b690-a93e20f79dfe.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/1-27_ef569d9d-93b7-4af7-9fe8-52c71c683163.jpg",
+        "image_ratio": "adapt",
+        "image_link": "https:\/\/www.glocalme.com\/US\/rent-wifi?utm_source=traffic&utm_medium=rental+banner&utm_campaign=homepage",
+        "opacity_overlay": 0,
+        "icon": "none",
+        "icon_color_scheme": "background-1",
+        "icon_size": "large",
+        "icon_style": "colored",
+        "icon_fill_type": "gradient",
+        "box_shadow": false,
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "heading": "",
+        "heading_size": "h2",
+        "heading_level": "h2",
+        "text_information": "",
+        "text_align": "bottom-left",
+        "text_width": "small",
+        "show_view_all": false,
+        "button_label": "SHOP NOW",
+        "button_style": "tertiary",
+        "button_link": "https:\/\/us.glocalme.com\/pages\/glocalme-sale-page",
+        "margin_top": "no-indent",
+        "margin_bottom": "xs"
+      }
+    },
+    "case_studies_AcWKyC": {
+      "type": "case-studies",
+      "blocks": {
+        "case_slide_Ufxmd7": {
+          "type": "case_slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/glocalme_wifi_hotspot_16.jpg",
+            "overlay_opacity": 0,
+            "heading": "200+",
+            "text": "",
+            "quote": "“Great device works perfectly! I am digital nomad traveling with 4 laptops and working around Europe. Great package! I get expensive one because I need more speed for zoom meeting but working perfect.”",
+            "quote_size": "h4",
+            "author_name": "",
+            "author_position": "",
+            "show_button": false,
+            "button_style": "simple",
+            "button_label": "Link label",
+            "button_link": "",
+            "logo_width": 130
+          }
+        },
+        "case_slide_mxmBar": {
+          "type": "case_slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/glocalme_wifi_hotspot_17.jpg",
+            "overlay_opacity": 0,
+            "heading": "80+",
+            "text": "Some description",
+            "quote": "“Some quote”",
+            "quote_size": "recommended",
+            "author_name": "",
+            "author_position": "",
+            "show_button": false,
+            "button_style": "simple",
+            "button_label": "Link label",
+            "button_link": "",
+            "logo_width": 130
+          }
+        },
+        "case_slide_6KBQKX": {
+          "type": "case_slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/glocalme_wifi_hotspot_18.jpg",
+            "overlay_opacity": 0,
+            "heading": "1.6 Billion+",
+            "text": "Some description",
+            "quote": "“Some quote”",
+            "quote_size": "recommended",
+            "author_name": "",
+            "author_position": "",
+            "show_button": false,
+            "button_style": "simple",
+            "button_label": "Link label",
+            "button_link": "",
+            "logo_width": 130
+          }
+        },
+        "case_slide_mfji7e": {
+          "type": "case_slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/glocalme_wifi_hotspot_19.jpg",
+            "overlay_opacity": 0,
+            "heading": "390+",
+            "text": "Some description",
+            "quote": "“Some quote”",
+            "quote_size": "recommended",
+            "author_name": "",
+            "author_position": "",
+            "show_button": false,
+            "button_style": "simple",
+            "button_label": "Link label",
+            "button_link": "",
+            "logo_width": 130
+          }
+        }
+      },
+      "block_order": [
+        "case_slide_Ufxmd7",
+        "case_slide_mxmBar",
+        "case_slide_6KBQKX",
+        "case_slide_mfji7e"
+      ],
+      "disabled": true,
+      "settings": {
+        "layout": "tabs_bottom",
+        "color_scheme": "",
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "subheading_icon": "none",
+        "heading": "Why Choose GlocalMe Wi-Fi Hotspots?",
+        "heading_size": "h3",
+        "heading_level": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "center",
+        "image_ratio": "square",
+        "slide_color_scheme": "",
+        "tabs_color_scheme": "",
+        "enable_navigation": true,
+        "navigation_color_scheme": "",
+        "padding_top": "m",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_slider_izzR7B": {
+      "type": "image-slider",
+      "blocks": {
+        "slide_pkwkt9": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/glocalme_wifi_hotspot_23.jpg"
+          }
+        },
+        "slide_nKcndg": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/glocalme_wifi_hotspot_3.jpg"
+          }
+        },
+        "slide_9m3TQj": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/glocalme_wifi_hotspot_9.jpg"
+          }
+        },
+        "slide_GfQxYP": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1-21_6d1b9da7-c825-45a1-bd8d-f8a5b0e31e6d.jpg"
+          }
+        },
+        "slide_BWefgh": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1-20_7b2513ff-098d-4d7d-8726-6bc70f132bb8.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "slide_pkwkt9",
+        "slide_nKcndg",
+        "slide_9m3TQj",
+        "slide_GfQxYP",
+        "slide_BWefgh"
+      ],
+      "settings": {
+        "display_devices": "desktop",
+        "cover_ratio": "adapt",
+        "enable_autoplay": true,
+        "slide_duration": 5,
+        "enable_pagination": true,
+        "enable_navigation": true,
+        "padding_top": "xs",
+        "padding_bottom": "m",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_slider_3A4kPL": {
+      "type": "image-slider",
+      "blocks": {
+        "slide_BCckLW": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/glocalme_wifi_hotspot_23.jpg"
+          }
+        },
+        "slide_gN6Fmm": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/glocalme_wifi_hotspot_3.jpg"
+          }
+        },
+        "slide_cBpK9d": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/glocalme_wifi_hotspot_9.jpg"
+          }
+        },
+        "slide_Pyqtgx": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1-21_6d1b9da7-c825-45a1-bd8d-f8a5b0e31e6d.jpg"
+          }
+        },
+        "slide_CYLYhy": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1-20_7b2513ff-098d-4d7d-8726-6bc70f132bb8.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "slide_BCckLW",
+        "slide_gN6Fmm",
+        "slide_cBpK9d",
+        "slide_Pyqtgx",
+        "slide_CYLYhy"
+      ],
+      "settings": {
+        "display_devices": "mobile",
+        "cover_ratio": "adapt",
+        "enable_autoplay": true,
+        "slide_duration": 5,
+        "enable_pagination": true,
+        "enable_navigation": true,
+        "padding_top": "xs",
+        "padding_bottom": "m",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "featured_blog_jYq4Nk": {
+      "type": "featured-blog",
+      "settings": {
+        "blog": "news",
+        "color_scheme": "",
+        "post_layout": "columns",
+        "enable_carousel": true,
+        "navigation_color_scheme": "",
+        "background_card": false,
+        "columns": 3,
+        "post_limit": 6,
+        "card_color_scheme": "",
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "subheading_icon": "none",
+        "heading": "Latest Articles",
+        "heading_size": "h2",
+        "heading_level": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566e0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "image_ratio": "landscape",
+        "post_heading_size": "recommended",
+        "show_image": true,
+        "show_tags": false,
+        "show_date": false,
+        "show_author": false,
+        "show_excerpt": false,
+        "show_view_all": true,
+        "button_label": "View More",
+        "button_style": "primary",
+        "padding_top": "s",
+        "padding_bottom": "l",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "full_screen_video_QxzqV2": {
+      "type": "full-screen-video",
+      "disabled": true,
+      "settings": {
+        "video": "shopify:\/\/files\/videos\/bd8dbfa0-54db-4e6a-9452-568d9ef9b2af.mp4"
+      }
+    }
+  },
+  "order": [
+    "image_banner_w9xaxc",
+    "image_banner_with_newsletter_w9xaxc",
+    "rich_text_GhWRWW",
+    "1747735129aedc0ae3",
+    "discovery_collections_B6fNwW",
+    "collections_grid_3x7VUA",
+    "hero_HYDeyJ",
+    "video_eRe3DH",
+    "bundle_up_X6fNwW",
+    "image_banner_mAKT48",
+    "case_studies_AcWKyC",
+    "image_slider_izzR7B",
+    "image_slider_3A4kPL",
+    "featured_blog_jYq4Nk",
+    "full_screen_video_QxzqV2"
+  ]
+}

@@ -1,0 +1,80 @@
+.banner-column__wrapper {
+  display: none;
+}
+.banner-column__wrapper .banner-column__image img,
+.banner-column__wrapper .banner-column__image svg {
+  transition: all 0.5s ease-in-out;
+}
+.banner-column__wrapper .banner-column__item:hover img,
+.banner-column__wrapper .banner-column__item:hover svg {
+  transform: scale(1.05);
+}
+.banner-column__wrapper .banner-column__image::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.8) 100%);
+}
+.banner-column__wrapper .banner-column__item .banner-column__text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease-in-out;
+  background-color: transparent;
+}
+.banner-column__wrapper .banner-column__text .banner-column__text-inner {
+  margin-top: auto;
+}
+.banner-column__wrapper .banner-column__text .banner-column__text-inner > * {
+  margin: 0;
+}
+.banner-column__wrapper .banner-column__text .banner-column__text-inner h3 {
+  pointer-events: none;
+  transition: transform 0.5s cubic-bezier(0.7, 0, 0.2, 1);
+}
+.banner-column__wrapper .banner-column__text .banner-column__text-inner p {
+  position: absolute;
+  top: auto;
+  opacity: 0;
+  transition: transform 0.5s cubic-bezier(0.7, 0, 0.2, 1), opacity 0.5s cubic-bezier(0.7, 0, 0.2, 1),
+    color var(--duration-default);
+  font-size: 1.6rem;
+}
+.banner-column__wrapper .banner-column__item:hover .banner-column__text-inner h3 {
+  transform: translateY(-4.6rem);
+}
+.banner-column__wrapper .banner-column__item:hover .banner-column__text-inner p {
+  opacity: 1;
+  transform: translateY(-3rem);
+}
+.banner-column__wrapper .banner-column__text-inner .button {
+  margin-top: 2.4rem;
+}
+.banner-column__swiper .banner-column__text {
+  padding: 1rem 0;
+}
+.banner-column__swiper .banner-column__text .banner-column__text-inner h3 {
+  margin: 0 0 0.5rem;
+}
+@media screen and (min-width: 750px) {
+  .banner-column__wrapper {
+    display: grid;
+  }
+  .banner-column__swiper {
+    display: none;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .banner-column__wrapper {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}

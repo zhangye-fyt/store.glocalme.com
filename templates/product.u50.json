@@ -1,0 +1,1462 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h3"
+          }
+        },
+        "judge_me_reviews_preview_badge_VYe6DM": {
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "description": ""
+          }
+        },
+        "custom_liquid_7bnC73": {
+          "type": "custom_liquid",
+          "disabled": true,
+          "settings": {
+            "custom_liquid": "{%- style -%}\n  .product-coupon-container {\n    margin: 20px 0;\n    font-family: inherit;\n  }\n  \n  .coupon-card {\n    background: linear-gradient(135deg, #e3b337 0%, #f4e6cb 100%);\n    border-radius: 10px;\n    border: 1px dashed #d1d5db;\n    padding: 15px;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    text-align: center;\n    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);\n    position: relative;\n    overflow: hidden;\n  }\n  \n  .coupon-card::before {\n    content: \"\";\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    background: radial-gradient(circle at 10% 20%, rgba(255,255,255,0.3) 0%, transparent 20%);\n    pointer-events: none;\n  }\n  \n  .coupon-title {\n    font-size: 24px;\n    font-weight: 600;\n    color: #1f2937;\n    margin-bottom: 8px;\n  }\n  \n  .coupon-description {\n    font-size: 18px;\n    color: #97520c;\n    margin-bottom: 12px;\n    line-height: 1.4;\n  }\n  \n  .coupon-code-container {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    width: 100%;\n    margin-bottom: 10px;\n  }\n  \n  .coupon-code {\n    font-size: 20px;\n    font-weight: 700;\n    letter-spacing: 1px;\n    color: #97520c;\n    background-color: white;\n    padding: 8px 15px;\n    border-radius: 6px;\n    border: 1px solid #d1d5db;\n    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);\n    flex-grow: 1;\n    text-align: center;\n    max-width: 70%;\n    word-break: break-all;\n  }\n  \n  .copy-btn {\n    background-color: #3b82f6;\n    color: white;\n    border: none;\n    padding: 8px 12px;\n    border-radius: 6px;\n    margin-left: 8px;\n    font-size: 14px;\n    font-weight: 500;\n    cursor: pointer;\n    transition: background-color 0.2s;\n  }\n  \n  .copy-btn:hover {\n    background-color: #2563eb;\n  }\n  \n  .coupon-terms {\n    font-size: 12px;\n    color: #6b7280;\n    margin-top: 8px;\n  }\n  \n  /* 移动端适配 */\n  @media screen and (max-width: 749px) {\n    .coupon-card {\n      padding: 12px;\n    }\n    \n    .coupon-title {\n      font-size: 15px;\n    }\n    \n    .coupon-description {\n      font-size: 13px;\n    }\n    \n    .coupon-code {\n      font-size: 16px;\n      padding: 6px 12px;\n    }\n    \n    .copy-btn {\n      padding: 6px 10px;\n      font-size: 13px;\n    }\n  }\n{%- endstyle -%}\n\n{%- comment -%}\n  在这里设置你的优惠码和活动信息\n  你可以为不同产品设置不同的优惠码，或者使用相同的优惠码\n{%- endcomment -%}\n\n{%- assign current_product_handle = product.handle -%}\n\n{%- comment -%} 示例：根据产品handle设置不同的优惠码 {%- endcomment -%}\n{%- if current_product_handle == 'product-1-handle' -%}\n  {%- assign coupon_code = 'SUMMER20' -%}\n  {%- assign coupon_title = '夏季特惠' -%}\n  {%- assign coupon_description = '限时享受20%折扣，仅限本产品使用' -%}\n  {%- assign coupon_terms = '有效期至2023年8月31日，不可与其他优惠同时使用' -%}\n{%- elsif current_product_handle == 'product-2-handle' -%}\n  {%- assign coupon_code = 'FALL15' -%}\n  {%- assign coupon_title = '秋季促销' -%}\n  {%- assign coupon_description = '享受15%折扣，专为本产品定制' -%}\n  {%- assign coupon_terms = '有效期至2023年9月30日' -%}\n{%- else -%}\n  {%- assign coupon_code = 'CODE: PD15' -%}\n  {%- assign coupon_title = 'Prime Day sale is on!' -%}\n  {%- assign coupon_description = '15% OFF SITEWIDE' -%}\n  {%- assign coupon_terms = '' -%}\n{%- endif -%}\n\n{%- if coupon_code -%}\n<div class=\"product-coupon-container\">\n  <div class=\"coupon-card\">\n    <h3 class=\"coupon-title\">{{ coupon_title }}</h3>\n    <p class=\"coupon-description\">{{ coupon_description }}</p>\n    \n    <div class=\"coupon-code-container\">\n      <span class=\"coupon-code\" id=\"couponCode\">{{ coupon_code }}</span>\n     \n    </div>\n    \n    <p class=\"coupon-terms\">{{ coupon_terms }}</p>\n  </div>\n</div>\n\n\n{%- endif -%}"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "inventory_ybzDtw": {
+          "type": "inventory",
+          "settings": {}
+        },
+        "gift": {
+          "type": "gift",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_quantity": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "add_ons": {
+          "type": "add_ons",
+          "settings": {}
+        },
+        "klarna_on_site_messaging_app_block_bTBWxk": {
+          "type": "shopify://apps/klarna-on-site-messaging/blocks/app-block/b95936a9-74b6-4a95-8103-6a1b6459c25e",
+          "disabled": true,
+          "settings": {
+            "data_key": "credit-promotion-badge",
+            "theme": "default",
+            "topPadding": "0",
+            "bottomPadding": "0",
+            "messagePrefix": ""
+          }
+        },
+        "country_checker_YmMaHM": {
+          "type": "country_checker",
+          "settings": {}
+        },
+        "supported_devices": {
+          "type": "supported_devices",
+          "settings": {}
+        },
+        "popup_nzDhX7": {
+          "type": "popup",
+          "settings": {
+            "label": "Compare Hotspot Device",
+            "heading": "",
+            "text": "",
+            "image": "shopify://shop_images/0702.jpg",
+            "page": ""
+          }
+        },
+        "popup_MJDGN8": {
+          "type": "popup",
+          "settings": {
+            "label": "Supported Languages",
+            "heading": "",
+            "text": "",
+            "image": "shopify://shop_images/U50PC_1.jpg",
+            "image_mobile": "shopify://shop_images/glocalme_2.jpg",
+            "page": ""
+          }
+        },
+        "dropdown_information_FHNUKr": {
+          "type": "dropdown_information",
+          "settings": {
+            "characteristics": false,
+            "heading": "User Manual",
+            "description": "<h6><a href=\"https://cdn.shopify.com/s/files/1/0658/8963/2410/files/U50.pdf?v=1745475161\" target=\"_blank\" title=\"https://cdn.shopify.com/s/files/1/0658/8963/2410/files/U50.pdf?v=1745475161\">Numen Air</a></h6>",
+            "button_show": false,
+            "button_label": "Button label",
+            "button_link": "",
+            "default_open": false
+          }
+        },
+        "text_with_icon_FJpD8f": {
+          "type": "text_with_icon",
+          "settings": {
+            "show_text_with_icon_1": true,
+            "icon_1": "delivery",
+            "text_1": "Fast Shipping",
+            "show_text_with_icon_2": true,
+            "icon_2": "shield",
+            "text_2": "High-quality Products",
+            "box_shadow": true,
+            "icon_style": "colored",
+            "icon_fill_type": "gradient"
+          }
+        },
+        "text_with_icon": {
+          "type": "text_with_icon",
+          "settings": {
+            "show_text_with_icon_1": true,
+            "icon_1": "wallet",
+            "text_1": "30 Day Return Guarantee",
+            "show_text_with_icon_2": true,
+            "icon_2": "user-1",
+            "text_2": "Professional Service Support",
+            "box_shadow": true,
+            "icon_style": "colored",
+            "icon_fill_type": "gradient"
+          }
+        },
+        "share_EAqH9P": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share",
+            "show_share_facebook": true,
+            "show_share_twitter": true,
+            "show_share_pinterest": true,
+            "show_share_copy": true
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "judge_me_reviews_preview_badge_VYe6DM",
+        "description",
+        "custom_liquid_7bnC73",
+        "variant_picker",
+        "price",
+        "inventory_ybzDtw",
+        "gift",
+        "buy_buttons",
+        "add_ons",
+        "klarna_on_site_messaging_app_block_bTBWxk",
+        "country_checker_YmMaHM",
+        "supported_devices",
+        "popup_nzDhX7",
+        "popup_MJDGN8",
+        "dropdown_information_FHNUKr",
+        "text_with_icon_FJpD8f",
+        "text_with_icon",
+        "share_EAqH9P"
+      ],
+      "custom_css": [
+        "@media only screen and (min-width: 1200px) {.rte div {margin-right: 180px; margin-left: -180px; }}"
+      ],
+      "settings": {
+        "desktop_alignment": "right",
+        "mobile_alignment": "before",
+        "gallery_type": "slider_previews",
+        "aspect_ratio": "1/1",
+        "image_fit": "contain",
+        "image_fit_modal": "contain",
+        "padding_bottom": "m"
+      }
+    },
+    "image_text_separation_01": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_abNEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/U50_01.jpg",
+            "image_link": ""
+          }
+        },
+        "text_abLEyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Powered by</strong></p><p><strong>Qualcomm's Technology</strong></p>",
+            "text_color": "#101011",
+            "text_gradient_background": "linear-gradient(125deg, rgba(88, 80, 142, 1) 11%, rgba(141, 106, 108, 1) 81%)",
+            "text_font_size": 36,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 2.4,
+            "position_y": 7
+          }
+        },
+        "text_abUEyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Experience 5G full-speed connectivity with </p><p>Numen Air portable WiFi hotspot</p><p>powered by Qualcomm.</p>",
+            "text_color": "#888888",
+            "text_gradient_background": "",
+            "text_font_size": 24,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 2.4,
+            "position_y": 7
+          }
+        }
+      },
+      "block_order": [
+        "image_abNEyF",
+        "text_abLEyF",
+        "text_abUEyF"
+      ],
+      "custom_css": [],
+      "settings": {
+        "display_devices": "desktop",
+        "padding_top": "m",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_02": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_bbNEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/U50_02.jpg",
+            "image_link": ""
+          }
+        },
+        "text_bbLEyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Ultra Full-Speed, Dual-band 5G WiFi</strong></p>",
+            "text_color": "#101011",
+            "text_gradient_background": "linear-gradient(86deg, rgba(223, 205, 185, 1) 15%, rgba(182, 161, 227, 1) 50%, rgba(88, 200, 145, 1) 85%)",
+            "text_font_size": 52,
+            "text_font_weight": 600,
+            "text_line_height": 1,
+            "text_align": "left",
+            "text_letter_spacing": 1.2,
+            "max_text_container_max_width": 88,
+            "enable_text_underline": true,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "linear-gradient(86deg, rgba(223, 205, 185, 1) 15%, rgba(182, 161, 227, 1) 50%, rgba(88, 200, 145, 1) 75%, rgba(88, 200, 145, 0) 90%)",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 6,
+            "position_y": 30
+          }
+        },
+        "text_bbUEyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>·Speed up to 2.5Gbps, 15x faster than 4G with 30% lower latency. Enjoy seamless browsing with incredible download/upload speeds.</p><p><br/>·Supports 2.4GHz & 5GHz bands for flexible network management and reduced interference in crowded areas. </p>",
+            "text_color": "#dddddd",
+            "text_gradient_background": "",
+            "text_font_size": 30,
+            "text_font_weight": 300,
+            "text_line_height": 1.4,
+            "text_align": "left",
+            "text_letter_spacing": 2,
+            "max_text_container_max_width": 80,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 6,
+            "position_y": 6.5
+          }
+        }
+      },
+      "block_order": [
+        "image_bbNEyF",
+        "text_bbLEyF",
+        "text_bbUEyF"
+      ],
+      "settings": {
+        "display_devices": "desktop",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_03": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_cbNEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/U50_03.jpg",
+            "image_link": ""
+          }
+        },
+        "text_cbLEyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Long Lasting Battery Life</strong></p>",
+            "text_color": "#101011",
+            "text_gradient_background": "linear-gradient(86deg, rgba(223, 205, 185, 1) 15%, rgba(182, 161, 227, 1) 50%, rgba(88, 200, 145, 1) 85%)",
+            "text_font_size": 52,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "text_letter_spacing": 1.2,
+            "max_text_container_max_width": 44,
+            "enable_text_underline": true,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "linear-gradient(86deg, rgba(223, 205, 185, 1) 15%, rgba(182, 161, 227, 1) 50%, rgba(88, 200, 145, 1) 75%, rgba(88, 200, 145, 0) 90%)",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 53,
+            "position_y": 10
+          }
+        },
+        "text_cbUEyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>·The 5,400mAh long-lasting battery provides up to 11 hours of 5G network usage and up to 15 hours of 4G network usage.</p><p><br/>·Numen Air is the perfect portable internet WiFi mobile hotspot device for travel, family tours, business trips, camping, remote activities, and more.</p>",
+            "text_color": "#dddddd",
+            "text_gradient_background": "",
+            "text_font_size": 30,
+            "text_font_weight": 300,
+            "text_line_height": 1.4,
+            "text_align": "left",
+            "text_letter_spacing": 1,
+            "max_text_container_max_width": 40,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 53,
+            "position_y": 18
+          }
+        },
+        "text_cbPEyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>2.4-inch LCD Touch Screen</strong></p>",
+            "text_color": "#101011",
+            "text_gradient_background": "linear-gradient(86deg, rgba(223, 205, 185, 1) 15%, rgba(182, 161, 227, 1) 50%, rgba(88, 200, 145, 1) 85%)",
+            "text_font_size": 52,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "text_letter_spacing": 1.2,
+            "max_text_container_max_width": 50,
+            "enable_text_underline": true,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "linear-gradient(86deg, rgba(223, 205, 185, 1) 15%, rgba(182, 161, 227, 1) 50%, rgba(88, 200, 145, 1) 75%, rgba(88, 200, 145, 0) 90%)",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 2.6,
+            "position_y": 32
+          }
+        },
+        "text_cbQEyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>This 5G WiFi device is equipped with a 2.4-inch LCD touch screen, providing the ability to monitor data usage, signal strength, connected devices, network settings, etc</p>",
+            "text_color": "#dddddd",
+            "text_gradient_background": "",
+            "text_font_size": 30,
+            "text_font_weight": 300,
+            "text_line_height": 1.4,
+            "text_align": "left",
+            "text_letter_spacing": 1,
+            "max_text_container_max_width": 40,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 2.6,
+            "position_y": 15.2
+          }
+        }
+      },
+      "block_order": [
+        "image_cbNEyF",
+        "text_cbLEyF",
+        "text_cbUEyF",
+        "text_cbPEyF",
+        "text_cbQEyF"
+      ],
+      "settings": {
+        "display_devices": "desktop",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_04": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_dbNEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/U50_04.jpg",
+            "image_link": ""
+          }
+        },
+        "text_dbLEyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Ultra-Slim and </strong></p><p><strong>Lightweight 5G Hotspot</strong></p>",
+            "text_color": "#101011",
+            "text_gradient_background": "linear-gradient(86deg, rgba(223, 205, 185, 1) 15%, rgba(182, 161, 227, 1) 50%, rgba(88, 200, 145, 1) 85%)",
+            "text_font_size": 52,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "text_letter_spacing": 1.2,
+            "max_text_container_max_width": 44,
+            "enable_text_underline": true,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "linear-gradient(86deg, rgba(223, 205, 185, 1) 15%, rgba(182, 161, 227, 1) 50%, rgba(88, 200, 145, 1) 75%, rgba(88, 200, 145, 0) 90%)",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 53,
+            "position_y": 5
+          }
+        },
+        "text_dbUEyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>·Boasting a sleek and slim design with a thickness of only 0.56in (1.43cm), Numen Air is ideal for travel, ensuring you stay connected wherever you go without adding extra bulk to your luggage.</p><p>·Lightweight and portable at just 194g,it fits easily into your pocket, suitcase, backpack, or purse for connectivity on-the-go.</p>",
+            "text_color": "#dddddd",
+            "text_gradient_background": "",
+            "text_font_size": 30,
+            "text_font_weight": 300,
+            "text_line_height": 1.4,
+            "text_align": "left",
+            "text_letter_spacing": 1,
+            "max_text_container_max_width": 40,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 53,
+            "position_y": 17
+          }
+        },
+        "text_dbPEyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Stay Connected, Never Go offline</strong></p>",
+            "text_color": "#101011",
+            "text_gradient_background": "linear-gradient(86deg, rgba(223, 205, 185, 1) 15%, rgba(182, 161, 227, 1) 50%, rgba(88, 200, 145, 1) 85%)",
+            "text_font_size": 52,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "text_letter_spacing": 1.2,
+            "max_text_container_max_width": 88,
+            "enable_text_underline": true,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "linear-gradient(86deg, rgba(223, 205, 185, 1) 15%, rgba(182, 161, 227, 1) 50%, rgba(88, 200, 145, 1) 75%, rgba(88, 200, 145, 0) 90%)",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 6,
+            "position_y": 12
+          }
+        },
+        "text_dbQEyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Numen Air automatically switches between networks to give you the best signal, no matter where you are.</p>",
+            "text_color": "#dddddd",
+            "text_gradient_background": "",
+            "text_font_size": 30,
+            "text_font_weight": 300,
+            "text_line_height": 1.4,
+            "text_align": "left",
+            "text_letter_spacing": 1,
+            "max_text_container_max_width": 88,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 6,
+            "position_y": 4
+          }
+        }
+      },
+      "block_order": [
+        "image_dbNEyF",
+        "text_dbLEyF",
+        "text_dbUEyF",
+        "text_dbPEyF",
+        "text_dbQEyF"
+      ],
+      "settings": {
+        "display_devices": "desktop",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_05": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_ebNEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/U50_05.jpg",
+            "image_link": ""
+          }
+        },
+        "text_ebLEyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>5G Portable WiFi Hotspot for Business Trips</strong></p>",
+            "text_color": "#101011",
+            "text_gradient_background": "linear-gradient(86deg, rgba(223, 205, 185, 1) 15%, rgba(182, 161, 227, 1) 50%, rgba(88, 200, 145, 1) 85%)",
+            "text_font_size": 52,
+            "text_font_weight": 600,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "text_letter_spacing": 1.2,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 0,
+            "position_y": 42.6
+          }
+        }
+      },
+      "block_order": [
+        "image_ebNEyF",
+        "text_ebLEyF"
+      ],
+      "settings": {
+        "display_devices": "desktop",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_06": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_01": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/U50_06.jpg",
+            "image_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_01"
+      ],
+      "settings": {
+        "display_devices": "desktop",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_07": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_gbNEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/20250928102805_9_24_1.jpg",
+            "image_link": "shopify://pages/coverage"
+          }
+        },
+        "text_gbLEyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>5G network covers 90+ countries and regions</strong></p><p><strong>4G network covers 200+ countries and regions</strong></p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 28,
+            "text_font_weight": 600,
+            "text_line_height": 1.4,
+            "text_align": "left",
+            "text_letter_spacing": 1.2,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 3.6,
+            "position_y": 7
+          }
+        },
+        "text_gUEyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><em><strong>America</strong></em>: Argentina, Brazil, Canada, Colombia, Guatemala, Mexico, Peru, United States, Uruguay, Puerto Rico, United States Virgin Islands, Guam, Northern Mariana Islands</p><p><br/><em><strong>Europe</strong></em>: Albania, Andorra, Austria, Belgium, Bulgaria, Croatia, Cyprus, Czech Republic, Denmark, Estonia, Faroe Islands, Finland, France, Germany, Greece, Hungary, Iceland, Ireland, Italy, Latvia, Liechtenstein, Lithuania, Luxembourg, Malta, Monaco, Montenegro, Netherlands, Norway, Poland, Portugal, Romania, San Marino, Slovakia, Slovenia, Spain, Sweden, Switzerland, United Kingdom, Vatican City, Réunion</p><p><br/><em><strong>Asia</strong></em>: Bahrain, Brunei Darussalam, China (Mainland), Hong Kong (China), Macao (China), Taiwan (China), India, Indonesia, Japan, Jordan, Kazakhstan, Kuwait, Laos, Malaysia, Maldives, Philippines, Qatar, Saudi Arabia, Singapore, South Korea, Sri Lanka, Thailand, Turkey, United Arab Emirates, Vietnam, Georgia, Israel</p><p><br/><em><strong>Oceania</strong></em>: Australia, New Zealand</p><p><br/><em><strong>Africa</strong></em>: Egypt, Kenya, Mauritius, Nigeria, Seychelles, South Africa, Tanzania, Tunisia</p>",
+            "text_color": "#dddddd",
+            "text_gradient_background": "",
+            "text_font_size": 18,
+            "text_font_weight": 300,
+            "text_line_height": 1.3,
+            "text_align": "left",
+            "text_letter_spacing": 1.2,
+            "max_text_container_max_width": 53,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 3.6,
+            "position_y": 22
+          }
+        },
+        "text_wppLH9": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Learn more&gt;&gt;</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 20,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 4,
+            "position_y": 3
+          }
+        }
+      },
+      "block_order": [
+        "image_gbNEyF",
+        "text_gbLEyF",
+        "text_gUEyF",
+        "text_wppLH9"
+      ],
+      "settings": {
+        "display_devices": "desktop",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_08": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_01": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/U50_08.jpg",
+            "image_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_01"
+      ],
+      "settings": {
+        "display_devices": "desktop",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_09": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_01": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/U50_09.jpg",
+            "image_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_01"
+      ],
+      "settings": {
+        "display_devices": "desktop",
+        "padding_top": "no-indent",
+        "padding_bottom": "m",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_m_01": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_abNEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/U50_m_01.jpg",
+            "image_link": ""
+          }
+        },
+        "text_abLEyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Powered by Qualcomm's Technology</strong></p>",
+            "text_color": "#101011",
+            "text_gradient_background": "linear-gradient(125deg, rgba(88, 80, 142, 1) 11%, rgba(141, 106, 108, 1) 81%)",
+            "text_font_size": 23,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 3.5,
+            "position_y": 8
+          }
+        },
+        "text_abUEyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Experience 5G full-speed connectivity with </p><p>Numen Air portable WiFi hotspot</p><p>powered by Qualcomm.</p>",
+            "text_color": "#888888",
+            "text_gradient_background": "",
+            "text_font_size": 16,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 3.5,
+            "position_y": 42.5
+          }
+        }
+      },
+      "block_order": [
+        "image_abNEyF",
+        "text_abLEyF",
+        "text_abUEyF"
+      ],
+      "custom_css": [],
+      "settings": {
+        "display_devices": "mobile",
+        "padding_top": "m",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_m_02": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_bbNEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/U50_m_02.jpg",
+            "image_link": ""
+          }
+        },
+        "text_bbLEyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Ultra Full-Speed, Dual-band 5G WiFi</strong></p>",
+            "text_color": "#101011",
+            "text_gradient_background": "linear-gradient(86deg, rgba(223, 205, 185, 1) 15%, rgba(182, 161, 227, 1) 50%, rgba(88, 200, 145, 1) 85%)",
+            "text_font_size": 22,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "text_letter_spacing": 0.5,
+            "max_text_container_max_width": 88,
+            "enable_text_underline": true,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "linear-gradient(86deg, rgba(223, 205, 185, 1) 15%, rgba(182, 161, 227, 1) 50%, rgba(88, 200, 145, 1) 75%, rgba(88, 200, 145, 0) 90%)",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 4,
+            "position_y": 33
+          }
+        },
+        "text_bbUEyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>·Speed up to 2.5Gbps, 15x faster than 4G with 30% lower latency. Enjoy seamless browsing with incredible download/upload speeds.</p><p><br/>·Supports 2.4GHz & 5GHz bands for flexible network management and reduced interference in crowded areas. </p>",
+            "text_color": "#dddddd",
+            "text_gradient_background": "",
+            "text_font_size": 17,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "text_letter_spacing": 0.4,
+            "max_text_container_max_width": 92,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 4,
+            "position_y": 5.4
+          }
+        }
+      },
+      "block_order": [
+        "image_bbNEyF",
+        "text_bbLEyF",
+        "text_bbUEyF"
+      ],
+      "settings": {
+        "display_devices": "mobile",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_m_03": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_cbNEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/U50_m_03.jpg",
+            "image_link": ""
+          }
+        },
+        "text_cbLEyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Long Lasting Battery Life</strong></p>",
+            "text_color": "#101011",
+            "text_gradient_background": "linear-gradient(86deg, rgba(223, 205, 185, 1) 15%, rgba(182, 161, 227, 1) 50%, rgba(88, 200, 145, 1) 85%)",
+            "text_font_size": 22,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "text_letter_spacing": 0.5,
+            "max_text_container_max_width": 46,
+            "enable_text_underline": true,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "linear-gradient(86deg, rgba(223, 205, 185, 1) 15%, rgba(182, 161, 227, 1) 50%, rgba(88, 200, 145, 1) 75%, rgba(88, 200, 145, 0) 90%)",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 52.5,
+            "position_y": 10
+          }
+        },
+        "text_cbUEyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>·The 5,400mAh long-lasting battery provides up to 11 hours of 5G network usage and up to 15 hours of 4G network usage.</p><p><br/>·Numen Air is the perfect portable internet WiFi mobile hotspot device for travel, family tours, business trips, camping, remote activities, and more.</p>",
+            "text_color": "#dddddd",
+            "text_gradient_background": "",
+            "text_font_size": 17,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "text_letter_spacing": 0.4,
+            "max_text_container_max_width": 46,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 52.5,
+            "position_y": 17
+          }
+        },
+        "text_cbPEyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>2.4-inch LCD Touch Screen</strong></p>",
+            "text_color": "#101011",
+            "text_gradient_background": "linear-gradient(86deg, rgba(223, 205, 185, 1) 15%, rgba(182, 161, 227, 1) 50%, rgba(88, 200, 145, 1) 85%)",
+            "text_font_size": 22,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "text_letter_spacing": 0.5,
+            "max_text_container_max_width": 50,
+            "enable_text_underline": true,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "linear-gradient(86deg, rgba(223, 205, 185, 1) 15%, rgba(182, 161, 227, 1) 50%, rgba(88, 200, 145, 1) 75%, rgba(88, 200, 145, 0) 90%)",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 1.8,
+            "position_y": 32
+          }
+        },
+        "text_cbQEyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>This 5G WiFi device is equipped with a 2.4-inch LCD touch screen, providing the ability to monitor data usage, signal strength, connected devices, network settings, etc</p>",
+            "text_color": "#dddddd",
+            "text_gradient_background": "",
+            "text_font_size": 17,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "text_letter_spacing": 0.4,
+            "max_text_container_max_width": 44,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 1.8,
+            "position_y": 14
+          }
+        }
+      },
+      "block_order": [
+        "image_cbNEyF",
+        "text_cbLEyF",
+        "text_cbUEyF",
+        "text_cbPEyF",
+        "text_cbQEyF"
+      ],
+      "settings": {
+        "display_devices": "mobile",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_m_04": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_dbNEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/U50_m_04.jpg",
+            "image_link": ""
+          }
+        },
+        "text_dbLEyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Ultra-Slim and </strong></p><p><strong>Lightweight 5G Hotspot</strong></p>",
+            "text_color": "#101011",
+            "text_gradient_background": "linear-gradient(86deg, rgba(223, 205, 185, 1) 15%, rgba(182, 161, 227, 1) 50%, rgba(88, 200, 145, 1) 85%)",
+            "text_font_size": 22,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "text_letter_spacing": 0.5,
+            "max_text_container_max_width": 46,
+            "enable_text_underline": true,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "linear-gradient(86deg, rgba(223, 205, 185, 1) 15%, rgba(182, 161, 227, 1) 50%, rgba(88, 200, 145, 1) 75%, rgba(88, 200, 145, 0) 90%)",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 52.5,
+            "position_y": 8
+          }
+        },
+        "text_dbUEyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>·Boasting a sleek and slim design with a thickness of only 0.56in (1.43cm), Numen Air is ideal for travel, ensuring you stay connected wherever you go without adding extra bulk to your luggage.</p><p>·Lightweight and portable at just 194g,it fits easily into your pocket, suitcase, backpack, or purse for connectivity on-the-go.</p>",
+            "text_color": "#dddddd",
+            "text_gradient_background": "",
+            "text_font_size": 17,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "text_letter_spacing": 0.4,
+            "max_text_container_max_width": 46,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 52.5,
+            "position_y": 19
+          }
+        },
+        "text_dbPEyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Stay Connected, Never Go offline</strong></p>",
+            "text_color": "#101011",
+            "text_gradient_background": "linear-gradient(86deg, rgba(223, 205, 185, 1) 15%, rgba(182, 161, 227, 1) 50%, rgba(88, 200, 145, 1) 85%)",
+            "text_font_size": 22,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "text_letter_spacing": 0.5,
+            "max_text_container_max_width": 92,
+            "enable_text_underline": true,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "linear-gradient(86deg, rgba(223, 205, 185, 1) 15%, rgba(182, 161, 227, 1) 50%, rgba(88, 200, 145, 1) 75%, rgba(88, 200, 145, 0) 90%)",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 4,
+            "position_y": 12
+          }
+        },
+        "text_dbQEyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Numen Air automatically switches between networks to give you the best signal, no matter where you are.</p>",
+            "text_color": "#dddddd",
+            "text_gradient_background": "",
+            "text_font_size": 17,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "text_letter_spacing": 0.4,
+            "max_text_container_max_width": 92,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 4,
+            "position_y": 4
+          }
+        }
+      },
+      "block_order": [
+        "image_dbNEyF",
+        "text_dbLEyF",
+        "text_dbUEyF",
+        "text_dbPEyF",
+        "text_dbQEyF"
+      ],
+      "settings": {
+        "display_devices": "mobile",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_m_05": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_ebNEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/U50_m_05.jpg",
+            "image_link": ""
+          }
+        },
+        "text_ebLEyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>5G Portable WiFi Hotspot for Business Trips</strong></p>",
+            "text_color": "#101011",
+            "text_gradient_background": "linear-gradient(86deg, rgba(223, 205, 185, 1) 15%, rgba(182, 161, 227, 1) 50%, rgba(88, 200, 145, 1) 85%)",
+            "text_font_size": 22,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "center",
+            "text_letter_spacing": 0.5,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 0,
+            "position_y": 42.6
+          }
+        }
+      },
+      "block_order": [
+        "image_ebNEyF",
+        "text_ebLEyF"
+      ],
+      "settings": {
+        "display_devices": "mobile",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_m_06": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_01": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/U50_m_06.jpg",
+            "image_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_01"
+      ],
+      "settings": {
+        "display_devices": "mobile",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_m_07": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_gbNEyF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/20250928102533_8_24_1.jpg",
+            "image_link": "shopify://pages/coverage"
+          }
+        },
+        "text_gbLEyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>5G network covers 90+ countries and regions</strong></p><p><strong>4G network covers 200+ countries and regions</strong></p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 20,
+            "text_font_weight": 500,
+            "text_line_height": 1.4,
+            "text_align": "left",
+            "text_letter_spacing": 0.4,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 3.6,
+            "position_y": 2
+          }
+        },
+        "text_gUEyF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>America</strong>: Argentina, Brazil, Canada, Colombia, Guatemala, Mexico, Peru, United States, Uruguay, Puerto Rico, United States Virgin Islands, Guam, Northern Mariana Islands</p><p><br/><strong>Europe</strong>: Albania, Andorra, Austria, Belgium, Bulgaria, Croatia, Cyprus, Czech Republic, Denmark, Estonia, Faroe Islands, Finland, France, Germany, Greece, Hungary, Iceland, Ireland, Italy, Latvia, Liechtenstein, Lithuania, Luxembourg, Malta, Monaco, Montenegro, Netherlands, Norway, Poland, Portugal, Romania, San Marino, Slovakia, Slovenia, Spain, Sweden, Switzerland, United Kingdom, Vatican City, Réunion</p><p><br/><strong>Asia</strong>: Bahrain, Brunei Darussalam, China (Mainland), Hong Kong (China), Macao (China), Taiwan (China), India, Indonesia, Japan, Jordan, Kazakhstan, Kuwait, Laos, Malaysia, Maldives, Philippines, Qatar, Saudi Arabia, Singapore, South Korea, Sri Lanka, Thailand, Turkey, United Arab Emirates, Vietnam, Georgia, Israel</p><p><br/><strong>Oceania</strong>: Australia, New Zealand</p><p><br/><strong>Africa</strong>: Egypt, Kenya, Mauritius, Nigeria, Seychelles, South Africa, Tanzania, Tunisia</p>",
+            "text_color": "#dddddd",
+            "text_gradient_background": "",
+            "text_font_size": 12,
+            "text_font_weight": 500,
+            "text_line_height": 1.2,
+            "text_align": "left",
+            "text_letter_spacing": 0.5,
+            "max_text_container_max_width": 54,
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "ttb",
+            "position_x": 3.6,
+            "position_y": 16
+          }
+        },
+        "text_UDhppG": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Learn more&gt;&gt;</p>",
+            "text_color": "#ffffff",
+            "text_gradient_background": "",
+            "text_font_size": 16,
+            "text_font_weight": 500,
+            "text_line_height": 1,
+            "text_align": "left",
+            "enable_text_underline": false,
+            "text_underline_width": 100,
+            "text_underline_height": 2,
+            "text_underline_gradient_background": "",
+            "direction_x": "ltr",
+            "direction_y": "btt",
+            "position_x": 4,
+            "position_y": 1
+          }
+        }
+      },
+      "block_order": [
+        "image_gbNEyF",
+        "text_gbLEyF",
+        "text_gUEyF",
+        "text_UDhppG"
+      ],
+      "settings": {
+        "display_devices": "mobile",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_m_08": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_01": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/U50_m_08.jpg",
+            "image_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_01"
+      ],
+      "settings": {
+        "display_devices": "mobile",
+        "padding_top": "no-indent",
+        "padding_bottom": "no-indent",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "image_text_separation_m_09": {
+      "type": "image-text-separation",
+      "blocks": {
+        "image_01": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/U50_m_09.jpg",
+            "image_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_01"
+      ],
+      "settings": {
+        "display_devices": "mobile",
+        "padding_top": "no-indent",
+        "padding_bottom": "m",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "collapsible_content_FWm6Pt": {
+      "type": "collapsible-content",
+      "blocks": {
+        "accordion_LEXeqE": {
+          "type": "accordion",
+          "settings": {
+            "question": "Does it support both the 2.4 GHz and 5 GHz bands simultaneously?",
+            "answer": "<p>No, it does not support simultaneous operation of both bands. While the Numen Air is a dual-band 5G Wi-Fi device supporting both 2.4 GHz and 5 GHz bands, only one band can be active at a time. We recommend switching to 5 GHz in crowded areas to reduce interference; use 2.4 GHz when requiring longer transmission distances or connecting legacy devices.</p>",
+            "opened": false
+          }
+        },
+        "accordion_9n99Ub": {
+          "type": "accordion",
+          "settings": {
+            "question": "How secure is the work hotspot?",
+            "answer": "<p>Users can set their own Wi-Fi password, manage connected devices via the touchscreen, restrict access to authorized personnel, and enable anti-trespassing features.</p>",
+            "opened": false
+          }
+        },
+        "accordion_eVY6gh": {
+          "type": "accordion",
+          "settings": {
+            "question": "Will it auto switch between 5G and 4G if 5G is weak?",
+            "answer": "<p>Yes, it can switch networks automatically to keep the best signal so I don’t drop off during calls or uploads.</p>",
+            "opened": false
+          }
+        },
+        "accordion_qRbcqi": {
+          "type": "accordion",
+          "settings": {
+            "question": "What happens if I travel to a country not covered by 5G?",
+            "answer": "<p>It falls back to 4G (which covers 200+ countries/regions). I’ll still have connectivity—just with 4G performance.</p>",
+            "opened": false
+          }
+        },
+        "accordion_3XmM6g": {
+          "type": "accordion",
+          "settings": {
+            "question": "Is it truly easy to manage especially when I'm traveling between countries?",
+            "answer": "<p>Yes, it's designed to be very simple. You just turn it on and it's ready to use. You can manage everything through the user-friendly \"GlocalMe\" app on your phone, where you can see your real-time data usage, top up credit, and check the network status. When you travel to a new country, it will automatically connect to a local network for you, making the process completely hassle-free.</p>",
+            "opened": false
+          }
+        },
+        "accordion_XYQXwH": {
+          "type": "accordion",
+          "settings": {
+            "question": "How good is the signal and speed in real-world use, like inside a hotel or on a train?",
+            "answer": "<p>The signal and speed depend entirely on the local cellular network coverage in your area, just like a phone. Inside buildings with thick walls, the signal may be weaker. The device will show you its signal strength. On a moving train, the connection will fluctuate as it switches between cell towers, so it's fine for browsing and email but may not be stable enough for a continuous HD video call.</p>",
+            "opened": false
+          }
+        }
+      },
+      "block_order": [
+        "accordion_LEXeqE",
+        "accordion_9n99Ub",
+        "accordion_eVY6gh",
+        "accordion_qRbcqi",
+        "accordion_3XmM6g",
+        "accordion_XYQXwH"
+      ],
+      "name": "t:sections.collapsible-content.name",
+      "settings": {
+        "layout": "background",
+        "color_scheme": "",
+        "enable_border": false,
+        "border_full": false,
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "subheading_icon": "none",
+        "heading": "Let's Answer Your Questions",
+        "heading_size": "h2",
+        "heading_level": "h2",
+        "heading_line": "simple",
+        "line_color": "#1566E0",
+        "word_break": false,
+        "heading_animation": "none",
+        "word_break_an": false,
+        "text": "",
+        "text_align": "center",
+        "row_color_scheme": "",
+        "padding_top": "s",
+        "padding_bottom": "l",
+        "margin_top": "no-indent",
+        "margin_bottom": "no-indent"
+      }
+    },
+    "1755256166f5cac2e9": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_AiDgDX": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "real_data",
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget",
+            "max_width": 1200
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_AiDgDX"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "product_recommendations_qyJhmL": {
+      "type": "product-recommendations",
+      "settings": {
+        "color_scheme": "",
+        "subheading": "",
+        "subheading_style": "subtitle",
+        "subheading_icon": "none",
+        "heading": "You May Also Like",
+        "heading_size": "h2",
+        "text": "",
+        "products_limit": 6,
+        "image_ratio": "1/1",
+        "image_fit": "cover",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_desc": false,
+        "padding_top": "s",
+        "padding_bottom": "m"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_text_separation_01",
+    "image_text_separation_02",
+    "image_text_separation_03",
+    "image_text_separation_04",
+    "image_text_separation_05",
+    "image_text_separation_06",
+    "image_text_separation_07",
+    "image_text_separation_08",
+    "image_text_separation_09",
+    "image_text_separation_m_01",
+    "image_text_separation_m_02",
+    "image_text_separation_m_03",
+    "image_text_separation_m_04",
+    "image_text_separation_m_05",
+    "image_text_separation_m_06",
+    "image_text_separation_m_07",
+    "image_text_separation_m_08",
+    "image_text_separation_m_09",
+    "collapsible_content_FWm6Pt",
+    "1755256166f5cac2e9",
+    "product_recommendations_qyJhmL"
+  ]
+}

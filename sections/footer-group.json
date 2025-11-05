@@ -1,0 +1,117 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "footer",
+  "name": "t:sections.footer.settings.footer-group.label",
+  "sections": {
+    "newsletter_hxYqVB": {
+      "type": "newsletter",
+      "name": "Newsletter",
+      "settings": {
+        "align_content": "right",
+        "subheading": "Get notified about new updates, products and promotion.",
+        "subheading_style": "subtitle subtitle--secondary",
+        "subheading_icon": "none",
+        "heading": "Subscribe now to get a gift with your first order!",
+        "heading_size": "h2",
+        "heading_level": "h2",
+        "heading_line": "simple",
+        "word_break": false,
+        "text": "",
+        "newsletter_text": "",
+        "button_style": "secondary",
+        "color_scheme": "background-1",
+        "padding_top": "s",
+        "padding_bottom": "m"
+      }
+    },
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "footer-0": {
+          "type": "logo_info",
+          "settings": {
+            "logo": "shopify://shop_images/logo.png",
+            "logo_width": 155,
+            "description": "GlocalMe aims to cultivate meaningful connections among individuals across the globe through seamless connectivity. We believe that everyone and anyone can enjoy ‘better connection’."
+          }
+        },
+        "footer-3": {
+          "type": "subscribe",
+          "disabled": true,
+          "settings": {
+            "color_scheme_subscribe": "background-1",
+            "enable_box_shadow": true,
+            "heading": "Subscribe now to get a gift with your first order!",
+            "text": "Get notified about new updates, products  and promotion.",
+            "additional_text": "",
+            "button_style": "secondary"
+          }
+        },
+        "footer-1": {
+          "type": "link_list",
+          "settings": {
+            "heading": "SHOP",
+            "menu": "main-menu",
+            "default_open": true
+          }
+        },
+        "link_list_3Vb8pp": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Partnership",
+            "menu": "partnership",
+            "default_open": false
+          }
+        },
+        "footer-2": {
+          "type": "link_list",
+          "settings": {
+            "heading": "SERVICE",
+            "menu": "footer",
+            "default_open": false
+          }
+        },
+        "contacts_3WXnNT": {
+          "type": "contacts",
+          "settings": {
+            "heading": "Contact Us",
+            "contact_info": "<p>US Office Address: 1309 West 15th Street, Suite 260, Plano, TX, United States, Texas</p><p>JP Office Address: 東京都港区南青山2-26-37 VORT外苑前Ⅰ 6階  </p><p>Return Address: 1309 West 15th Street, Suite 260, Plano, TX, United States, Texas<br/><br/>Purchase Inquiry: support@glocalme.com<br/><br/>Pre-sales: +1 (877) 715-9177 ( 9:30 PM-6:00AM GMT-4)</p><p>After-sales: +1 833-588-0367 / +1 833-588-0368</p><p>24/7 Technical Support: <a href=\"https://1335653.udeskglobal.com/im_client/?web_plugin_id=3035&language=en-us\" target=\"_blank\" title=\"Technical Support\">click here</a></p><p></p>",
+            "default_open": true
+          }
+        }
+      },
+      "block_order": [
+        "footer-0",
+        "footer-3",
+        "footer-1",
+        "link_list_3Vb8pp",
+        "footer-2",
+        "contacts_3WXnNT"
+      ],
+      "settings": {
+        "color_scheme": "background-3",
+        "enable_country_selector": false,
+        "enable_language_selector": false,
+        "payment_enable": true,
+        "show_social": true,
+        "enable_copyright_date": true,
+        "enable_copyright_shopname": true,
+        "menu_bottom": "",
+        "show_policy": false,
+        "enable_follow_on_shop": true
+      }
+    }
+  },
+  "order": [
+    "newsletter_hxYqVB",
+    "footer"
+  ]
+}
