@@ -365,6 +365,27 @@ opacity: 0;
         <div
           class="popup-content popup-content--{{ section.settings.content_align }} {% if section.settings.background != blank %} popup-content_bg {% endif %}"
           style="--opacity: {{ section.settings.overlay_opacity }};"
+          x-data="{
+        accepted: false,
+        check() {
+          // 检查页面上任意 .number_one_policy 是否被选中
+          this.accepted = Array.from($el.querySelectorAll('.number_one_policy'))
+                               .some(cb => cb.checked);
+        },
+        submitIfAccepted(e) {
+          // 如果 accepted 为 false，阻止提交并显示提示
+          if (!this.accepted) {
+            e.preventDefault();
+            // 触发提示（可见性用 x-show 控制）
+            this.$refs.policyMsg.classList.add('shake'); // 可选：添加动画
+            this.$refs.policyMsg.focus();
+          }
+          // 否则允许表单正常提交（不需要额外处理）
+        }
+      }"
+      x-init="check()"
+      @change="check()"
+      @submit="submitIfAccepted($event)"
         >
           {%- assign content_before_divider = '' -%}
           {%- assign content_after_divider = '' -%}
@@ -392,27 +413,7 @@ opacity: 0;
                     class: 'popup'
                   %}
                 {%- when 'subscribe_form' -%}
-                  {% form 'customer', class: 'newsletter-form_popu' x-data="{
-                    accepted: false,
-                    check() {
-                      // 检查页面上任意 .number_one_policy 是否被选中
-                      this.accepted = Array.from($el.querySelectorAll('.number_one_policy'))
-                                           .some(cb => cb.checked);
-                    },
-                    submitIfAccepted(e) {
-                      // 如果 accepted 为 false，阻止提交并显示提示
-                      if (!this.accepted) {
-                        e.preventDefault();
-                        // 触发提示（可见性用 x-show 控制）
-                        this.$refs.policyMsg.classList.add('shake'); // 可选：添加动画
-                        this.$refs.policyMsg.focus();
-                      }
-                      // 否则允许表单正常提交（不需要额外处理）
-                    }
-                  }"
-                  x-init:"check()"
-                  @change:"check()"
-                  @submit:"submitIfAccepted($event)" %}
+                  {% form 'customer', class: 'newsletter-form_popu' %}
                     <div class="newsletter-form__inner {% if section.settings.width <= 500 %} newsletter-form__inner_column {% endif %} color-{{ block.settings.color_scheme }}" {{ block.shopify_attributes }}>
                       <input type="hidden" name="contact[tags]" value="newsletter">
                       <div class="newsletter-form__field-wrapper">
@@ -460,6 +461,15 @@ opacity: 0;
                                     <a href="/policies/privacy-policy" target="_blank" rel="noopener noreferrer">Privacy Policy</a>.
                                   </span>
                                 </p>
+                                <p x-ref="policyMsg"
+                                  x-show="!accepted"
+                                  tabindex="-1"
+                                  style="display:none"
+                                  x-transition
+                                  class="policy-error"
+                                >
+                                  请先勾选同意条款，才能提交哦 ~
+                                </p>
                         {%- if form.errors -%}
                           <small
                             class="newsletter-form__message form__message"
@@ -475,6 +485,8 @@ opacity: 0;
                         type="submit"
                         class="button button--{{ block.settings.button_style }} focus-inset desc_button"
                         name="commit"
+                        :disabled="!accepted"
+                        x-bind:aria-disabled="!accepted ? 'true' : 'false'"
                       >
                         {{ block.settings.button_label }}
                       </button>
