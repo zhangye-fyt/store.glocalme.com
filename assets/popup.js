@@ -89,7 +89,7 @@ jQuery(document).ready(function($) {
 				$( popup ).data( 'init-scroll-percent', $this.getScrollPercent() );
 
 				$(popup).prev('.theoneopo').addClass('move');
-				
+
 				// Open animation.
 				let animation = $( popup ).data( 'open-animation' );
 
@@ -106,6 +106,7 @@ jQuery(document).ready(function($) {
 			*/
 			popupInit: function( e ) {
 
+				
 				// Set scroll direction.
 				$( document ).on( 'scroll', function() {
 
@@ -123,6 +124,10 @@ jQuery(document).ready(function($) {
 
 				// Open popup
 				$( '.popup' ).each(function(index, popup) {
+
+
+					let isClickOnly = $popup.data('open-is-clicktheone') === 'is-click';
+
 
 					// Manual Launch.
 					if ( 'manual' === $( popup ).data( 'open-trigger' ) ) {
@@ -149,6 +154,10 @@ jQuery(document).ready(function($) {
 
 
 					}
+					if ( isClickOnly ) {
+						// 这里直接跳过自动触发逻辑即可（不要跳过手动绑定）
+						return; // 在 jQuery.each 的回调中，return 等于是继续下一个元素
+					  }
 
 					// Checks whether a popup should be displayed or not.
 					if ( ! $this.isAllowPopup( popup ) && ! $(popup).hasClass('age-verification')) {

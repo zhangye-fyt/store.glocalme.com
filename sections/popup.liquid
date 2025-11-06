@@ -235,6 +235,9 @@ opacity: 0;
   {% if section.settings['manual-selector'] != blank %}
     data-open-manual-selector="{{ section.settings.manual-selector }}"
   {% endif %}
+  
+  data-open-is-clicktheone="{% if section.settings.is-clicked %}is-click{% else %}none{% endif %}"
+  
   data-close-trigger="{{ section.settings.trigger-close }}"
   data-close-delay-number="{{ section.settings.trigger-close-delay }}"
   data-close-scroll-position="{{ section.settings.close-scroll-position }}"
@@ -1011,6 +1014,70 @@ opacity: 0;
       "label": "t:sections.overlay-group.all.settings.advanced.f4-close.label",
       "info": "t:sections.overlay-group.all.settings.advanced.f4-close.info",
       "default": false
+    },
+    {
+      "type": "header",
+      "content": "侧边点击框设置",
+     
+      "info": "侧边点击框设置"
+     
+    },
+    {
+      "type": "checkbox",
+      "id": "is-clicked",
+      "label": "仅点击侧边弹出弹窗",
+      "info": "打开后，仅点击侧边栏时才显示弹窗，否则按原逻辑，并且点击侧边栏开启弹窗",
+      "default": false
+    },
+    {
+      "type": "select",
+      "id": "is_position",
+      "label": "显示位置",
+      "options": [
+        {
+          "value": "left",
+          "label": "left"
+        },
+        {
+          "value": "right",
+          "label": "Middle"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "range",
+      "id": "is_pensent",
+      "min": 1,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "label": "距离顶部",
+      "default": 50
+    },
+    {
+      "type": "text",
+      "id": "the_text",
+      "label": "侧边点击框文本",
+      "info": "只有编辑文本才显示"
+    },
+    {
+      "type": "color_background",
+      "id": "the_background",
+      "label": "框背景颜色",
+      "default": "linear-gradient(92deg, #84035F 0%, #2A0524 26.56%, #241359 51.21%, #2A3090 70.3%, #8B079B 100%)"
+    },
+    {
+      "type": "color",
+      "id": "the_clo_background",
+      "label": "关闭颜色",
+      "default": "#fff"
+    },
+    {
+      "type": "color_background",
+      "id": "the_clobg_background",
+      "label": "关闭背景颜色",
+      "default": "linear-gradient(92deg, #84035F 0%, #2A0524 26.56%, #241359 51.21%, #2A3090 70.3%, #8B079B 100%)"
     }
   ],
   "blocks": [
