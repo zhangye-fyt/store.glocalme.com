@@ -68,7 +68,7 @@ jQuery(document).ready(function($) {
 			 */
 
 			openInitPoup: function( e ) { 
-				
+				console.log("is openpopu")
 				let popup = ( e.originalEvent ) ? this : e;
 
 				if ( $( popup ).hasClass( 'popup-open' ) ) {
