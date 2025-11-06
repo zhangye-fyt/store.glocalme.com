@@ -126,7 +126,7 @@ jQuery(document).ready(function($) {
 				$( '.popup' ).each(function(index, popup) {
 
 
-					let isClickOnly = $( popup ).data('open-is-clicktheone') === 'is-click';
+					let isClickOnly = $( popup ).data('open-is-clicktheone') === 'is-click'; 
 
 
 					// Manual Launch.
