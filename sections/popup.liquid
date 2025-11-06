@@ -195,12 +195,12 @@ opacity: 0;
 
 <div class="needsclick kl-teaser-SA25iC undefined kl-private-reset-css-Xuajs1 theoneopo " tabindex="0">
     <div data-testid="animated-teaser" class="needsclick  kl-private-reset-css-Xuajs1" style="height: 100%; width: 100%;">
-      <span class="needsclick go681896951 kl-private-reset-css-Xuajs1 clicked_bigopo" style="overflow: hidden; box-sizing: border-box; border-radius: 0px 0px 4px 4px; background-color: rgb(255, 197, 32); min-height: 50px; height: 100%; padding: 8px; display: flex; flex-direction: column; justify-content: center;">
+      <span class="needsclick go681896951 kl-private-reset-css-Xuajs1 clicked_bigopo" style="overflow: hidden; box-sizing: border-box; border-radius: 0px 0px 4px 4px; background:{{section.settings.the_background}}; min-height: 50px; height: 100%; padding: 8px; display: flex; flex-direction: column; justify-content: center;">
             <div class="needsclick  kl-private-reset-css-Xuajs1">
                 <div class="needsclick  kl-private-reset-css-Xuajs1">
                     <div class="kl-private-reset-css-Xuajs1 go3176171171" id="rich-text-01JE7KH011AFYCZ52C0XX7J89G" style="width: 100%;">
                         <p style="text-align: center; font-size: 14px; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: 400;">
-                            <span style="color: rgb(5, 5, 5); font-weight: bold;cursor: pointer;">dfdf</span></p>
+                            <span style="color: {{section.settings.the_text_color}}; font-weight: bold;cursor: pointer;">dfdf</span></p>
                     </div>
                 </div>
             </div>
@@ -208,9 +208,9 @@ opacity: 0;
         <div tabindex="0" class="needsclick klaviyo-close-form thisoneclose go2324193863 kl-private-reset-css-Xuajs1" aria-label="Close teaser" style="bottom: -16px; right: -16px; position: absolute; z-index: 6; cursor: pointer; height: 20px; width: 20px; border-radius: 50%;">
             <svg role="img" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="needsclick  kl-private-reset-css-Xuajs1">
                 <title id="title-Close-teaser">Close teaser</title>
-                <circle cx="10" cy="10" r="9.5" fill="#000000" stroke="#FFFFFF" style="cursor: pointer;">
+                <circle cx="10" cy="10" r="9.5" fill="{{section.settings.the_clobg_background}}" stroke="#FFFFFF" style="cursor: pointer;">
                 </circle>
-                <path d="M6 6L14 14M6 14L14 6L6 14Z" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="cursor: pointer;"></path>
+                <path d="M6 6L14 14M6 14L14 6L6 14Z" stroke="{{section.settings.the_color_close}}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="cursor: pointer;"></path>
             </svg></div>
     </div>
 </div>
@@ -1062,22 +1062,28 @@ opacity: 0;
       "info": "只有编辑文本才显示"
     },
     {
+      "type": "color",
+      "id": "the_text_color",
+      "label": "侧边文本颜色",
+      "default": "#000"
+    },
+    {
       "type": "color_background",
       "id": "the_background",
-      "label": "框背景颜色",
+      "label": "侧边框背景颜色",
       "default": "linear-gradient(92deg, #84035F 0%, #2A0524 26.56%, #241359 51.21%, #2A3090 70.3%, #8B079B 100%)"
     },
     {
       "type": "color",
-      "id": "the_clo_background",
+      "id": "the_color_close",
       "label": "关闭颜色",
       "default": "#fff"
     },
     {
-      "type": "color_background",
+      "type": "color",
       "id": "the_clobg_background",
       "label": "关闭背景颜色",
-      "default": "linear-gradient(92deg, #84035F 0%, #2A0524 26.56%, #241359 51.21%, #2A3090 70.3%, #8B079B 100%)"
+      "default": "#000"
     }
   ],
   "blocks": [
