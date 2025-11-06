@@ -365,27 +365,6 @@ opacity: 0;
         <div
           class="popup-content popup-content--{{ section.settings.content_align }} {% if section.settings.background != blank %} popup-content_bg {% endif %}"
           style="--opacity: {{ section.settings.overlay_opacity }};"
-          x-data="{
-        accepted: false,
-        check() {
-          // 检查页面上任意 .number_one_policy 是否被选中
-          this.accepted = Array.from($el.querySelectorAll('.number_one_policy'))
-                               .some(cb => cb.checked);
-        },
-        submitIfAccepted(e) {
-          // 如果 accepted 为 false，阻止提交并显示提示
-          if (!this.accepted) {
-            e.preventDefault();
-            // 触发提示（可见性用 x-show 控制）
-            this.$refs.policyMsg.classList.add('shake'); // 可选：添加动画
-            this.$refs.policyMsg.focus();
-          }
-          // 否则允许表单正常提交（不需要额外处理）
-        }
-      }"
-      x-init="check()"
-      @change="check()"
-      @submit="submitIfAccepted($event)"
         >
           {%- assign content_before_divider = '' -%}
           {%- assign content_after_divider = '' -%}
@@ -444,7 +423,7 @@ opacity: 0;
                           </label>
                         </div>
                                 <p class="one_policy just_policy">
-                                  <input class="number_one_policy" name="policy[policy]" type="checkbox" checked="">
+                                  <input class="number_one_policy" name="policy[policy]" type="checkbox" checked="" data-required="true">
                                   <span class="number_one_policy_text">
                                     By signing up, you agree to Anker's 
                                     <a href="/policies/terms-of-service" target="_blank" rel="noopener noreferrer">Terms of Use</a> 
@@ -456,7 +435,7 @@ opacity: 0;
                                   请先勾选同意条款，才能提交哦～
                                 </p>
                                 <p class="the_two_policy just_policy">
-                                  <input class="number_one_policy" name="policy[policy]" type="checkbox" checked="">
+                                  <input class="number_one_policy" name="policy[policy]" type="checkbox" checked="" data-required="true">
                                   <span class="number_one_policy_text">
                                     By signing up, you agree to Anker's 
                                     <a href="/policies/terms-of-service" target="_blank" rel="noopener noreferrer">Terms of Use</a> 
@@ -516,12 +495,15 @@ opacity: 0;
                       const msg = form.querySelector('.policy-error'); 
 
                       function checkAccepted() {
-                      // ✅ 两个都勾选才算 accepted
-                      const accepted = Array.from(checkboxes).every(cb => cb.checked);
-                      submitBtn.disabled = !accepted;
-                      msg.style.display = accepted ? 'none' : 'block';
-                      return accepted;
-                    }
+                        // 遍历每个复选框，看看必选的是否都勾选
+                        const accepted = Array.from(checkboxes)
+                                              .filter(cb => cb.dataset.required === "true")
+                                              .every(cb => cb.checked);
+
+                        if (submitBtn) submitBtn.disabled = !accepted;
+                        if (msg) msg.style.display = accepted ? 'none' : 'block';
+                        return accepted;
+                      }
 
                     // 初始化按钮状态
                     checkAccepted();
