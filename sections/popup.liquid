@@ -9,6 +9,204 @@
     assign width = section.settings.width | append: 'px'
   endif
 %}
+<style>
+  .popup-main{
+    overflow-y: auto;
+        max-height: calc(100vh - 48 * 2px);
+        
+  }
+  .popup-heading.image_zhong{
+    width: 100%;
+    
+    text-align: center;
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 120%;
+    position: absolute;
+    top: 40px;
+    z-index:3;
+    max-width: 100%;
+  }
+  .desc_button{
+    position:unset !important;
+    width: 100% !important;
+    cursor: pointer;
+    padding: 15px 24px;
+    border-radius: 40px;
+    transform:unset !important;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 100%;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-duration: .2s;
+    margin-top: 24px;
+    
+  }
+  .just_policy{
+    margin: 0;
+   
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .just_policy.one_policy{
+   
+    margin-top: 24px;
+   
+  }
+  .just_policy.the_two_policy{
+    margin-top: 10px;
+  }
+  .number_one_policy[type="checkbox"]{
+    -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      background-color: #fff;
+      border: 1px solid #333;
+      height: 16px;
+      width: 16px;
+      border-radius: 2px;
+      position: relative;
+  }
+  .number_one_policy[type="checkbox"]:checked {
+      background-color: #333;
+      
+    }
+    .number_one_policy[type="checkbox"]:checked::after {
+      content: "";
+      position: absolute;
+      width: 5px;
+      height: 10px;
+      border: solid #fff;
+        border-top-width: medium;
+        border-right-width: medium;
+        border-bottom-width: medium;
+        border-left-width: medium;
+      border-width: 0 2px 2px 0;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%) rotate(45deg);
+    }
+    .number_one_policy_text{
+      color: #6d6d6f;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 120%;
+      flex: 1 1;
+    }
+    .number_one_policy_text a {
+      color: inherit;
+      text-decoration: underline;
+    }
+  .popup-main .newsletter-form__inner{
+    display:block
+  }
+  .popup-main .popup-content .modal-close-button.jsut_close_buttom{
+    cursor: pointer;
+    z-index: 2;
+    background: transparent;
+    border: none;
+    padding: 0;
+    top: 16px;
+    right: 16px;
+    width: auto;
+    height: unset;
+  }
+  .jsut_letter_popup{
+    background-color: #fff !important;
+    border: 1px solid #333 !important;
+  }
+  .popup-main .popup-content{
+    padding: 40px 20px;
+  }
+  .popup-main .newsletter-form .field__input{
+    padding-right:1.2rem
+  }
+  .popup-main-image--top .popup-thumbnail{
+    padding-bottom: 100%;
+  }
+
+
+.theoneopo {
+    position: fixed;
+    z-index: 9000;
+    filter: drop-shadow(rgba(249, 249, 249, 0.15) 0px 0px 30px);
+    top: 50%;
+    left: 0;
+    transform-origin: left top;
+    margin-left: 0px;
+    width: 84px;
+    opacity: 0;
+    transform: translateX(-100%) rotate(-90deg);
+    animation: slideInproduct 0.5s ease-in-out 2s forwards;
+}
+.needsclick.kl-teaser-SA25iC p {
+    margin: 0;
+}
+
+@keyframes slideInproduct {
+    from {
+        transform: translateX(-100%) rotate(-90deg);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0) rotate(-90deg);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOutproduct {
+    from {
+        transform: translateX(0) rotate(-90deg);
+        opacity: 1;
+
+    }
+    to {
+        transform: translateX(-100%) rotate(-90deg);
+        opacity: 0;
+    }
+}
+
+  @media (min-width: 768px) {
+  .popup-heading.image_zhong {
+    font-size: 30px;
+  }
+  .popup-main .popup-content .modal-close-button.jsut_close_buttom{
+    top: 26px;
+    right: 26px;
+  }
+
+  .popup-main .popup-content{
+    padding: 40px 48px;
+  }
+}
+</style>
+
+<div class="needsclick kl-teaser-SA25iC undefined kl-private-reset-css-Xuajs1 theoneopo " tabindex="0">
+    <div data-testid="animated-teaser" class="needsclick  kl-private-reset-css-Xuajs1" style="height: 100%; width: 100%;">
+      <span class="needsclick go681896951 kl-private-reset-css-Xuajs1 clicked_bigopo" style="overflow: hidden; box-sizing: border-box; border-radius: 0px 0px 4px 4px; background-color: rgb(255, 197, 32); min-height: 50px; height: 100%; padding: 8px; display: flex; flex-direction: column; justify-content: center;">
+            <div class="needsclick  kl-private-reset-css-Xuajs1">
+                <div class="needsclick  kl-private-reset-css-Xuajs1">
+                    <div class="kl-private-reset-css-Xuajs1 go3176171171" id="rich-text-01JE7KH011AFYCZ52C0XX7J89G" style="width: 100%;">
+                        <p style="text-align: center; font-size: 14px; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: 400;">
+                            <span style="color: rgb(5, 5, 5); font-weight: bold;cursor: pointer;">dfdf</span></p>
+                    </div>
+                </div>
+            </div>
+        </span>
+        <div tabindex="0" class="needsclick klaviyo-close-form thisoneclose go2324193863 kl-private-reset-css-Xuajs1" aria-label="Close teaser" style="bottom: -16px; right: -16px; position: absolute; z-index: 6; cursor: pointer; height: 20px; width: 20px; border-radius: 50%;">
+            <svg role="img" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="needsclick  kl-private-reset-css-Xuajs1">
+                <title id="title-Close-teaser">Close teaser</title>
+                <circle cx="10" cy="10" r="9.5" fill="#000000" stroke="#FFFFFF" style="cursor: pointer;">
+                </circle>
+                <path d="M6 6L14 14M6 14L14 6L6 14Z" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="cursor: pointer;"></path>
+            </svg></div>
+    </div>
+</div>
+
 
 <div
   class="
@@ -62,7 +260,19 @@
               | image_url: width: section.settings.image.width
               | image_tag: loading: 'lazy', widths: '275, 550, 750, 990, 1200, 1360, 1600, 1800', style: style
             }}
+            
           </div>
+           {%- for block in section.blocks -%}
+            
+              {%- case block.type -%}
+                {%- when 'popup_heading' -%}
+                  {% if block.settings.heading != blank %}
+                    <h2 class="popup-heading image_zhong" {{ block.shopify_attributes }} style="color: {{ block.settings.heading_color }};">
+                      {{ block.settings.heading }}
+                    </h2>
+                  {% endif %}
+                {% endcase %}
+              {% endfor %}
         {% endif %}
         <div
           class="popup-content popup-content--{{ section.settings.content_align }} {% if section.settings.background != blank %} popup-content_bg {% endif %}"
@@ -76,7 +286,7 @@
               {%- case block.type -%}
                 {%- when 'popup_heading' -%}
                   {% if block.settings.heading != blank %}
-                    <h2 class="popup-heading" {{ block.shopify_attributes }}>
+                    <h2 class="popup-heading" {{ block.shopify_attributes }} style="display:none">
                       {{ block.settings.heading }}
                     </h2>
                   {% endif %}
@@ -94,7 +304,7 @@
                     class: 'popup'
                   %}
                 {%- when 'subscribe_form' -%}
-                  {% form 'customer', class: 'newsletter-form' %}
+                  {% form 'customer', class: 'newsletter-form_popu' %}
                     <div class="newsletter-form__inner {% if section.settings.width <= 500 %} newsletter-form__inner_column {% endif %} color-{{ block.settings.color_scheme }}" {{ block.shopify_attributes }}>
                       <input type="hidden" name="contact[tags]" value="newsletter">
                       <div class="newsletter-form__field-wrapper">
@@ -103,7 +313,7 @@
                             id="NewsletterForm--{{ section.id }}"
                             type="email"
                             name="contact[email]"
-                            class="field__input field"
+                            class="field__input field jsut_letter_popup"
                             value="{{ form.email }}"
                             aria-required="true"
                             autocorrect="off"
@@ -124,6 +334,24 @@
                             {{ 'newsletter.label' | t }}
                           </label>
                         </div>
+                                <p class="one_policy just_policy">
+                                  <input class="number_one_policy" name="policy[policy]" type="checkbox" checked="">
+                                  <span class="number_one_policy_text">
+                                    By signing up, you agree to Anker's 
+                                    <a href="/policies/terms-of-service" target="_blank" rel="noopener noreferrer">Terms of Use</a> 
+                                    and 
+                                    <a href="/policies/privacy-policy" target="_blank" rel="noopener noreferrer">Privacy Policy</a>.
+                                  </span>
+                                </p>
+                                <p class="the_two_policy just_policy">
+                                  <input class="number_one_policy" name="policy[policy]" type="checkbox" checked="">
+                                  <span class="number_one_policy_text">
+                                    By signing up, you agree to Anker's 
+                                    <a href="/policies/terms-of-service" target="_blank" rel="noopener noreferrer">Terms of Use</a> 
+                                    and 
+                                    <a href="/policies/privacy-policy" target="_blank" rel="noopener noreferrer">Privacy Policy</a>.
+                                  </span>
+                                </p>
                         {%- if form.errors -%}
                           <small
                             class="newsletter-form__message form__message"
@@ -137,7 +365,7 @@
                       </div>
                       <button
                         type="submit"
-                        class="button button--{{ block.settings.button_style }} focus-inset"
+                        class="button button--{{ block.settings.button_style }} focus-inset desc_button"
                         name="commit"
                       >
                         {{ block.settings.button_label }}
@@ -346,7 +574,7 @@
 
           <button
             type="button"
-            class="link modal-close-button popup-close focus-inset"
+            class="link modal-close-button popup-close focus-inset jsut_close_buttom"
             aria-label="{{ 'accessibility.close' | t }}"
           >
             {% render 'icon-close' %}
@@ -355,6 +583,9 @@
       </div>
     </div>
   </div>
+</div>
+<div>
+
 </div>
 {% if section.settings['show-overlay'] %}
   <div class="popup-overlay"></div>
@@ -751,6 +982,12 @@
           "id": "heading",
           "default": "Some heading",
           "label": "t:sections.overlay-group.popup.blocks.popup_heading.settings.heading.label"
+        },
+        {
+           "type": "color",
+          "id": "heading_color",
+          "default": "#333",
+          "label": "颜色"
         }
       ]
     },

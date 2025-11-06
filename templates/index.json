@@ -9,20 +9,7 @@
  */
 {
   "sections": {
-    "video_player_epBkVT": {
-      "type": "video-player",
-      "disabled": true,
-      "name": "Video Player",
-      "settings": {
-        "enable_video_looping": true,
-        "video": "shopify://files/videos/T20官网视频-3.mp4",
-        "title": "GlocalMe PetPhone",
-        "highlight": "",
-        "subtitle": "First Smartphone Designed For Pet.",
-        "button_text": "LEARN MORE",
-        "button_link": "https://store.glocalme.com/products/petphone"
-      }
-    },
+
     "image_banner_w9xaxc": {
       "type": "image-banner",
       "settings": {
@@ -1131,7 +1118,7 @@
     }
   },
   "order": [
-    "video_player_epBkVT",
+    
     "image_banner_w9xaxc",
     "1747735129aedc0ae3",
     "discovery_collections_B6fNwW",

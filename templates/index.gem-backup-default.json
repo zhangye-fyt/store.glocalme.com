@@ -344,31 +344,7 @@
         "padding_bottom": "m"
       }
     },
-    "video_eRe3DH": {
-      "type": "video",
-      "settings": {
-        "color_scheme": "",
-        "full_width": false,
-        "height": "16\/9",
-        "video_fit": "contain",
-        "subheading": "",
-        "subheading_style": "subtitle",
-        "subheading_icon": "none",
-        "heading": "",
-        "heading_size": "h2",
-        "heading_level": "h2",
-        "cover_image": "shopify:\/\/shop_images\/petphone_31_ce2e6957-eec1-4c85-9ed8-3ee2378f2922.jpg",
-        "opacity_overlay": 0,
-        "video_url": "https:\/\/www.youtube.com\/watch?v=Pqw20wluh9I",
-        "video_autoplay": false,
-        "video_loop": false,
-        "video_muted": false,
-        "video_controls": true,
-        "description": "",
-        "margin_top": "no-indent",
-        "margin_bottom": "m"
-      }
-    },
+   
     "bundle_up_X6fNwW": {
       "type": "bundle-up",
       "blocks": {
@@ -718,13 +694,7 @@
         "margin_bottom": "no-indent"
       }
     },
-    "full_screen_video_QxzqV2": {
-      "type": "full-screen-video",
-      "disabled": true,
-      "settings": {
-        "video": "shopify:\/\/files\/videos\/bd8dbfa0-54db-4e6a-9452-568d9ef9b2af.mp4"
-      }
-    }
+ 
   },
   "order": [
     "image_banner_w9xaxc",
@@ -734,13 +704,13 @@
     "discovery_collections_B6fNwW",
     "collections_grid_3x7VUA",
     "hero_HYDeyJ",
-    "video_eRe3DH",
+   
     "bundle_up_X6fNwW",
     "image_banner_mAKT48",
     "case_studies_AcWKyC",
     "image_slider_izzR7B",
     "image_slider_3A4kPL",
     "featured_blog_jYq4Nk",
-    "full_screen_video_QxzqV2"
+    
   ]
 }
