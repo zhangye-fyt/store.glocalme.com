@@ -269,6 +269,7 @@ opacity: 0;
 
 {% endif %}
 
+{% if section.settings.the_text != blank %}
 <div class="needsclick kl-teaser-SA25iC undefined kl-private-reset-css-Xuajs1 theoneopo {{section.settings.is_position}}" tabindex="0">
     <div data-testid="animated-teaser" class="needsclick  kl-private-reset-css-Xuajs1" style="height: 100%; width: 100%;">
       <span class="needsclick go681896951 kl-private-reset-css-Xuajs1 clicked_bigopo" style="overflow: hidden; box-sizing: border-box; border-radius: 0px 0px 4px 4px; background:{{section.settings.the_background}}; min-height: 50px; height: 100%; padding: 8px; display: flex; flex-direction: column; justify-content: center;">
@@ -276,7 +277,7 @@ opacity: 0;
                 <div class="needsclick  kl-private-reset-css-Xuajs1">
                     <div class="kl-private-reset-css-Xuajs1 go3176171171" id="rich-text-01JE7KH011AFYCZ52C0XX7J89G" style="width: 100%;">
                         <p style="text-align: center; font-size: 14px; font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; font-weight: 400;">
-                            <span style="color: {{section.settings.the_text_color}}; font-weight: bold;cursor: pointer;">dfdf</span></p>
+                            <span style="color: {{section.settings.the_text_color}}; font-weight: bold;cursor: pointer;">{{section.settings.the_text | escape}}</span></p>
                     </div>
                 </div>
             </div>
@@ -291,7 +292,7 @@ opacity: 0;
     </div>
 </div>
 
-
+{% endif %}
 <div
   class="
     popup-main popup popup-main_letter
