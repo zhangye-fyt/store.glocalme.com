@@ -26,10 +26,6 @@
             "description": "Code: WEL12"
           }
         },
-        "divider_3Vmrbq": {
-          "type": "divider",
-          "settings": {}
-        },
         "subscribe_form_hQM3tK": {
           "type": "subscribe_form",
           "settings": {
@@ -44,7 +40,6 @@
       "block_order": [
         "popup_heading_7Xhb79",
         "popup_description_e4gi7F",
-        "divider_3Vmrbq",
         "subscribe_form_hQM3tK"
       ],
       "settings": {
@@ -67,7 +62,7 @@
         "close-scroll-position": 50,
         "background": "linear-gradient(133deg, rgba(255, 255, 255, 1) 11%, rgba(255, 255, 255, 1) 85%, rgba(255, 255, 255, 1) 100%)",
         "overlay_opacity": 0,
-        "width": 760,
+        "width": 540,
         "color_scheme": "scheme-4712c4d2-8d82-4389-bd2d-304e1a924e46",
         "open-animation": "Fade",
         "exit-animation": "Fade",

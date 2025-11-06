@@ -9,7 +9,6 @@
  */
 {
   "sections": {
-
     "image_banner_w9xaxc": {
       "type": "image-banner",
       "settings": {
@@ -44,22 +43,6 @@
     },
     "1747735129aedc0ae3": {
       "type": "apps",
-      "blocks": {
-        "trustview_app_review_widget_FqPwTm": {
-          "type": "shopify://apps/trustview/blocks/app_review_widget/bda8b0f7-273b-4b6e-ab43-02c3fec9d11a",
-          "settings": {
-            "widget_design": "design1",
-            "widget_theme": "light",
-            "which_reviews_to_show": "only5",
-            "reviews_per_page": "20",
-            "show_reviews_on_mobile": true,
-            "hide_trust_logo": false
-          }
-        }
-      },
-      "block_order": [
-        "trustview_app_review_widget_FqPwTm"
-      ],
       "settings": {
         "include_margins": true
       }
@@ -358,30 +341,6 @@
     },
     "1756718574dd959546": {
       "type": "apps",
-      "blocks": {
-        "lookfy_gallery_lookfy_gallery_HbAXLL": {
-          "type": "shopify://apps/lookfy-gallery/blocks/lookfy-gallery/596af5f6-9933-4730-95c2-f7d8d52a0c3e",
-          "settings": {
-            "gallery_id": 30822,
-            "dynamic_source": "",
-            "title": "",
-            "subtitle": "",
-            "heading_size": "1.2",
-            "heading_color": "",
-            "heading_align": "left",
-            "desc_style": "subtitle",
-            "desc_color": "",
-            "custom_class": "",
-            "background_color": "",
-            "padding_top": 36,
-            "padding_bottom": 16,
-            "padding_left_right": 0
-          }
-        }
-      },
-      "block_order": [
-        "lookfy_gallery_lookfy_gallery_HbAXLL"
-      ],
       "settings": {
         "include_margins": true
       }
@@ -1118,7 +1077,6 @@
     }
   },
   "order": [
-    
     "image_banner_w9xaxc",
     "1747735129aedc0ae3",
     "discovery_collections_B6fNwW",
