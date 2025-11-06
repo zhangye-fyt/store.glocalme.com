@@ -491,20 +491,22 @@ opacity: 0;
                       const form = document.querySelector('form.newsletter-form_popu');
                       if (!form) return;
 
-                      const checkboxes = form.querySelectorAll('.number_one_policy');
-                      const submitBtn = form.querySelector('button[type="submit"]');
+                      const justPolicies = form.querySelectorAll('.just_policy');
+                      const submitBtn = form.querySelector('#submitBtn');
 
                       function checkAccepted() {
                         let allAccepted = true;
 
-                        checkboxes.forEach(cb => {
-                          const required = cb.dataset.required === "true";
-                          const errorMsg = cb.nextElementSibling; // 对应的 <span class="policy-error">
+                        justPolicies.forEach((policy, index) => {
+                          const input = policy.querySelector('.number_one_policy');
+                          const required = input.dataset.required === "true";
+                          const errorMsg = policy.nextElementSibling; // 同级下一个 <p class="policy-error">
+
                           if (required) {
-                            if (cb.checked) {
+                            if (input.checked) {
                               errorMsg.style.display = 'none';
                             } else {
-                              errorMsg.style.display = 'inline';
+                              errorMsg.style.display = 'block';
                               allAccepted = false;
                             }
                           }
@@ -518,19 +520,22 @@ opacity: 0;
                       checkAccepted();
 
                       // 每次勾选变化时重新检查
-                      checkboxes.forEach(cb => {
-                        cb.addEventListener('change', checkAccepted);
+                      justPolicies.forEach(policy => {
+                        const input = policy.querySelector('.number_one_policy');
+                        input.addEventListener('change', checkAccepted);
                       });
 
-                      // 提交前再次检查
+                      // 提交前检查
                       form.addEventListener('submit', function (e) {
                         if (!checkAccepted()) {
                           e.preventDefault();
-                          // 添加动画效果可选
-                          checkboxes.forEach(cb => {
-                            const required = cb.dataset.required === "true";
-                            const errorMsg = cb.nextElementSibling;
-                            if (required && !cb.checked) {
+
+                          // 给没勾选的提示加摇晃动画
+                          justPolicies.forEach(policy => {
+                            const input = policy.querySelector('.number_one_policy');
+                            const required = input.dataset.required === "true";
+                            const errorMsg = policy.nextElementSibling;
+                            if (required && !input.checked) {
                               errorMsg.classList.add('shake');
                               setTimeout(() => errorMsg.classList.remove('shake'), 400);
                             }
@@ -538,6 +543,7 @@ opacity: 0;
                         }
                       });
                     });
+
                    
                     </script>
 
