@@ -75,7 +75,7 @@
         "f4-close": false,
         "is-clicked": false,
         "is_position": "position_right",
-        "is_pensent": 50,
+        "is_pensent": 41,
         "the_text": "",
         "the_text_color": "#000000",
         "the_background": "linear-gradient(92deg, rgba(132, 3, 95, 1), rgba(42, 5, 36, 1) 26.56%, rgba(36, 19, 89, 1) 51.21%, rgba(42, 48, 144, 1) 70.3%, rgba(139, 7, 155, 1) 100%)",
