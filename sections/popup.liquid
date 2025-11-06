@@ -64,7 +64,7 @@
     -webkit-appearance: none;
       -moz-appearance: none;
       appearance: none;
-      background-color: #fff;
+      /* background-color: #fff; */
       border: 1px solid #333;
       height: 16px;
       width: 16px;
@@ -72,7 +72,7 @@
       position: relative;
   }
   .number_one_policy[type="checkbox"]:checked {
-      background-color: #333;
+      background: {{ section.settings.isright_bg }};
       
     }
     .number_one_policy[type="checkbox"]:checked::after {
@@ -80,7 +80,7 @@
       position: absolute;
       width: 5px;
       height: 10px;
-      border: solid #fff;
+      border: solid {{ section.settings.ischeck_color }};
         border-top-width: medium;
         border-right-width: medium;
         border-bottom-width: medium;
@@ -91,11 +91,14 @@
       transform: translate(-50%,-50%) rotate(45deg);
     }
     .number_one_policy_text{
-      color: #6d6d6f;
+      /* color: #6d6d6f; */
       font-size: 14px;
       font-weight: 600;
       line-height: 120%;
       flex: 1 1;
+      background: {{ section.settings.ischecker_text }};
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     }
     .number_one_policy_text a {
       color: inherit;
@@ -129,10 +132,27 @@
     padding-bottom: 100%;
   }
 
-
-
+  .popup .is_ok_message{
+  font-size: 22px;
+    text-align: {{ section.settings.successfultext_position }};
+    /* color: red; */
+    background: {{ section.settings.successfulytext_color }};
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.popup .policy-error{
+  margin: 8px 0 8px 40px;
+  font-size: 14px;
+    text-align: left;
+    background: {{ section.settings.tip_text_bg }};
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
   @media (min-width: 768px) {
   .popup-heading.image_zhong {
+    font-size: 30px;
+  }
+  .is_ok_message{
     font-size: 30px;
   }
   .popup-main .popup-content .modal-close-button.jsut_close_buttom{
@@ -422,31 +442,32 @@ opacity: 0;
                             {{ 'newsletter.label' | t }}
                           </label>
                         </div>
+                        {% if section.settings.must_slection != blank %}
                                 <p class="one_policy just_policy">
-                                  <input class="number_one_policy" name="policy[policy]" type="checkbox" checked="" data-required="true">
+                                  <input class="number_one_policy" name="policy[policy]" type="checkbox" checked="" data-required="{% if section.settings.is_checked_out %}true{% else %}false{% endif %}">
                                   <span class="number_one_policy_text">
-                                    By signing up, you agree to Anker's 
-                                    <a href="/policies/terms-of-service" target="_blank" rel="noopener noreferrer">Terms of Use</a> 
-                                    and 
-                                    <a href="/policies/privacy-policy" target="_blank" rel="noopener noreferrer">Privacy Policy</a>.
+                                    {{section.settings.must_slection | newline_to_br}}
                                   </span>
                                 </p>
+                            {% endif %}
+                            {% if section.settings.guke_tip != blank %}
                                 <p id="policyMsg" class="policy-error" style="display:none;">
-                                  请先勾选同意条款，才能提交哦～
+                                  {{section.settings.guke_tip | newline_to_br}}
                                 </p>
+                              {% endif %}
+                                {% if section.settings.must_slection2 != blank %}
                                 <p class="the_two_policy just_policy">
-                                  <input class="number_one_policy" name="policy[policy]" type="checkbox" checked="" data-required="true">
+                                  <input class="number_one_policy" name="policy[policy]" type="checkbox" checked="" data-required="{% if section.settings.is_checked_out2 %}true{% else %}false{% endif %}">
                                   <span class="number_one_policy_text">
-                                    By signing up, you agree to Anker's 
-                                    <a href="/policies/terms-of-service" target="_blank" rel="noopener noreferrer">Terms of Use</a> 
-                                    and 
-                                    <a href="/policies/privacy-policy" target="_blank" rel="noopener noreferrer">Privacy Policy</a>.
+                                    {{section.settings.must_slection2 | newline_to_br}}
                                   </span>
                                 </p>
-                              
+                              {% endif %}
+                              {% if section.settings.guke_tip2 != blank %}
                                 <p id="policyMsg" class="policy-error" style="display:none;">
-                                  请先勾选同意条款，才能提交哦～
+                                  {{section.settings.guke_tip2 | newline_to_br}}
                                 </p>
+                              {% endif %}
                         {%- if form.errors -%}
                           <small
                             class="newsletter-form__message form__message"
@@ -469,18 +490,20 @@ opacity: 0;
                     </div>
                     {%- if form.posted_successfully? -%}
                       <h3
-                        class="newsletter-form__message newsletter-form__message--success form__message"
+                        class="newsletter-form__message newsletter-form__message--success form__message is_ok_message"
                         id="Newsletter-success--{{ section.id }}"
                         tabindex="-1"
                         autofocus
                       >
-                        YOU ARE OK
+                        {{section.settings.successful_text | newline_to_br}}
                       </h3>
                       <script>
                          document.addEventListener('DOMContentLoaded', function () {
                              const popup = document.querySelector('.popup');
                              popup.classList.add('popup-open');
-                            
+                             setTimeout(() => {
+                              popup.classList.remove('popup-open');
+                            }, 10000);
                         })
                       </script>
                     {%- endif -%}
@@ -1148,6 +1171,73 @@ opacity: 0;
     },
     {
       "type": "header",
+      "content": "设置必选选项",
+     
+      "info": "设置选项"
+     
+    },
+    {
+      "type": "textarea",
+      "id": "must_slection",
+      "label": "选项文本一"
+    },
+    {
+      "type": "checkbox",
+      "id": "is_checked_out",
+      "label": "必选一",
+      "info": "顾客必须选中",
+      "default": false
+    },
+    {
+      "type": "textarea",
+      "id": "guke_tip",
+      "label": "必选提示词一",
+      "info": "若顾客没有勾选，则显示此提示",
+    },
+    {
+      "type": "textarea",
+      "id": "must_slection2",
+      "label": "选项文本二"
+    },
+    {
+      "type": "checkbox",
+      "id": "is_checked_out2",
+      "label": "必选二",
+      "info": "顾客必须选中",
+      "default": false
+    },
+    {
+      "type": "textarea",
+      "id": "guke_tip2",
+      "label": "必选提示词一",
+      "info": "若顾客没有勾选，则显示此提示",
+    },
+    {
+      "type": "color_background",
+      "id": "ischecker_text",
+      "label": "文本颜色",
+      "default": "linear-gradient(92deg, #84035F 0%, #2A0524 26.56%, #241359 51.21%, #2A3090 70.3%, #8B079B 100%)"
+    },
+    {
+      "type": "color_background",
+      "id": "isright_bg",
+      "label": "勾选框颜色",
+      "default": "linear-gradient(92deg, #84035F 0%, #2A0524 26.56%, #241359 51.21%, #2A3090 70.3%, #8B079B 100%)"
+    },
+    {
+      "type": "color_background",
+      "id": "ischeck_color",
+      "label": "选中颜色",
+      "default": "#fff"
+    },
+    {
+      "type": "color_background",
+      "id": "tip_text_bg",
+      "label": "提示词颜色",
+      "default": "linear-gradient(92deg, #84035F 0%, #2A0524 26.56%, #241359 51.21%, #2A3090 70.3%, #8B079B 100%)"
+    },
+    {
+      "type": "header",
       "content": "侧边点击框设置",
      
       "info": "侧边点击框设置"
@@ -1215,7 +1305,44 @@ opacity: 0;
       "id": "the_clobg_background",
       "label": "关闭背景颜色",
       "default": "#000"
-    }
+    },
+    {
+      "type": "header",
+      "content": "提交表单后的设置"
+     
+    },
+    {
+      "type": "textarea",
+      "id": "successful_text",
+      "label": "成功后的文本",
+      "default": "Is Sended"
+    },
+    {
+      "type": "select",
+      "id": "successfultext_position",
+      "label": "文本显示",
+      "options": [
+        {
+          "value": "left",
+          "label": "left"
+        },
+        {
+          "value": "right",
+          "label": "right"
+        },
+        {
+          "value": "center",
+          "label": "center"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "color_background",
+      "id": "successfulytext_color",
+      "label": "文本颜色",
+      "default": "linear-gradient(92deg, #84035F 0%, #2A0524 26.56%, #241359 51.21%, #2A3090 70.3%, #8B079B 100%)"
+    },
   ],
   "blocks": [
     {
