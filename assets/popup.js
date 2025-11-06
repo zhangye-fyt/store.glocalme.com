@@ -323,8 +323,8 @@ jQuery(document).ready(function($) {
 				$( popup ).data( 'init-scroll-px', window.scrollY );
 				$( popup ).data( 'init-scroll-percent', $this.getScrollPercent() );
 
-				$(popup).prev('.theoneopo').removeClass('move');
-				
+				$(popup).prev('.theoneopo').addClass('move');
+
 				// Open animation.
 				let animation = $( popup ).data( 'open-animation' );
 
