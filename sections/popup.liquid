@@ -393,7 +393,7 @@ opacity: 0;
                   %}
                 {%- when 'subscribe_form' -%}
                   {% form 'customer', class: 'newsletter-form_popu'  %}
-                    <div class="newsletter-form__inner {% if section.settings.width <= 500 %} newsletter-form__inner_column {% endif %} color-{{ block.settings.color_scheme }}" {{ block.shopify_attributes }}>
+                    <div class="newsletter-form__inner {% if section.settings.width <= 500 %} newsletter-form__inner_column {% endif %} color-{{ block.settings.color_scheme }}" {{ block.shopify_attributes }} {%- if form.posted_successfully? -%}style="display: none;"{%- endif -%}>
                       <input type="hidden" name="contact[tags]" value="newsletter">
                       <div class="newsletter-form__field-wrapper">
                         <div class="field">
