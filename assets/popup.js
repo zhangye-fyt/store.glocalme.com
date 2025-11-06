@@ -68,49 +68,45 @@ jQuery(document).ready(function($) {
 			 */
 
 			openInitPoup: function( e ) { 
-				let scrollCurrent = window.scrollY;
+				
+				let popup = ( e.originalEvent ) ? this : e;
 
-				// Set scroll temporary vars.
-				if ( scrollCurrent > $this.sPrevious ) {
-					$this.sDirection = 'down';
-				} else {
-					$this.sDirection = 'up';
+				if ( $( popup ).hasClass( 'popup-open' ) ) {
+					return;
 				}
 
-				$this.sPrevious = scrollCurrent;
-				$( '.popup' ).each(function(index, popup) {
+				// Check already opened.
+				if ( $( popup ).hasClass( 'popup-already-opened' ) ) {
+					return;
+				}
 
-					// Manual Launch.
-					if ( 'manual' === $( popup ).data( 'open-trigger' ) ) {
+				// Hide body scroll.
+				if ( $( popup ).is( '[data-body-scroll-disable="true"]' ) ) {
+					$( 'body' ).addClass( 'popup-scroll-hidden' );
+				}
+				// Set Cookie of Limit display.
+				// let limit = parseInt( $this.getCookie( 'popup-' + $( popup ).data( 'id' ) ) || 0 ) + 1;
 
-						let selector = $( popup ).data( 'open-manual-selector' );
+				// $this.setCookie( 'popup-' + $( popup ).data( 'id' ), limit, {
+				// 	expires: $( popup ).data( 'limit-lifetime' )
+				// } );
 
-						if ( selector ) {
-							$(selector).addClass('popup-trigger')
+				// Display popup.
+				$( popup ).addClass( 'popup-open' );
 
-							$( document ).on( 'click', selector, function( e ) {
-								e.preventDefault();
+				// Set current scroll.
+				$( popup ).data( 'init-scroll-px', window.scrollY );
+				$( popup ).data( 'init-scroll-percent', $this.getScrollPercent() );
 
-								$( popup ).removeClass( 'popup-already-opened' );
+				// Open animation.
+				let animation = $( popup ).data( 'open-animation' );
 
-								$this.openPopup( popup );
+				$this.applyAnimation( popup, animation );
 
-								if (e.currentTarget.classList.contains('popup')) {
-									$this.closePopup(selector);
-								}
-							} );
-						}
+				// Init close trigger.
+				$this.closeTriggerPopup( popup );
 
 
-					}
-
-					// Checks whether a popup should be displayed or not.
-					if ( ! $this.isAllowPopup( popup ) && ! $(popup).hasClass('age-verification')) {
-						return;
-					}
-
-					$this.openTriggerPopup( popup );
-				});
 			},
 
 			/*
