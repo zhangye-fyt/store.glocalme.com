@@ -485,8 +485,7 @@ opacity: 0;
                         type="submit"
                         class="button button--{{ block.settings.button_style }} focus-inset desc_button"
                         name="commit"
-                        :disabled="!accepted"
-                        x-bind:aria-disabled="!accepted ? 'true' : 'false'"
+                       id="submitBtn"
                       >
                         {{ block.settings.button_label }}
                       </button>
