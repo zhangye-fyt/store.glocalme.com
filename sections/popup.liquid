@@ -488,43 +488,56 @@ opacity: 0;
 
                   <script>
                     document.addEventListener('DOMContentLoaded', function () {
-                      const form = document.getElementById('contact_form');
+                      const form = document.querySelector('form.newsletter-form_popu');
+                      if (!form) return;
 
                       const checkboxes = form.querySelectorAll('.number_one_policy');
-                      const submitBtn = document.getElementById('submitBtn');
-                      const msg = form.querySelector('.policy-error'); 
+                      const submitBtn = form.querySelector('button[type="submit"]');
 
                       function checkAccepted() {
-                        // 遍历每个复选框，看看必选的是否都勾选
-                        const accepted = Array.from(checkboxes)
-                                              .filter(cb => cb.dataset.required === "true")
-                                              .every(cb => cb.checked);
+                        let allAccepted = true;
 
-                        if (submitBtn) submitBtn.disabled = !accepted;
-                        if (msg) msg.style.display = accepted ? 'none' : 'block';
-                        return accepted;
+                        checkboxes.forEach(cb => {
+                          const required = cb.dataset.required === "true";
+                          const errorMsg = cb.nextElementSibling; // 对应的 <span class="policy-error">
+                          if (required) {
+                            if (cb.checked) {
+                              errorMsg.style.display = 'none';
+                            } else {
+                              errorMsg.style.display = 'inline';
+                              allAccepted = false;
+                            }
+                          }
+                        });
+
+                        if (submitBtn) submitBtn.disabled = !allAccepted;
+                        return allAccepted;
                       }
 
-                    // 初始化按钮状态
-                    checkAccepted();
+                      // 初始化状态
+                      checkAccepted();
 
-                    // 每次勾选变化时更新状态
-                    checkboxes.forEach(cb => {
-                      cb.addEventListener('change', checkAccepted);
-                    });
+                      // 每次勾选变化时重新检查
+                      checkboxes.forEach(cb => {
+                        cb.addEventListener('change', checkAccepted);
+                      });
 
-                    // 提交前检查
-                    form.addEventListener('submit', function (e) {
-                      if (!checkAccepted()) {
-                        e.preventDefault();
-                        msg.classList.add('shake');
-                        setTimeout(() => msg.classList.remove('shake'), 400);
-                        
-      e.preventDefault(); // 阻止提交
-  
-                      }
+                      // 提交前再次检查
+                      form.addEventListener('submit', function (e) {
+                        if (!checkAccepted()) {
+                          e.preventDefault();
+                          // 添加动画效果可选
+                          checkboxes.forEach(cb => {
+                            const required = cb.dataset.required === "true";
+                            const errorMsg = cb.nextElementSibling;
+                            if (required && !cb.checked) {
+                              errorMsg.classList.add('shake');
+                              setTimeout(() => errorMsg.classList.remove('shake'), 400);
+                            }
+                          });
+                        }
+                      });
                     });
-                  });
                    
                     </script>
 
