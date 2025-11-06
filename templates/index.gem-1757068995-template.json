@@ -9,17 +9,16 @@
  */
 {
   "sections": {
-
     "image_banner_w9xaxc": {
       "type": "image-banner",
       "disabled": true,
       "settings": {
         "full_width": true,
         "color_scheme": "",
-        "image": "shopify:\/\/shop_images\/1-01_1_993b64d9-d242-4c79-9352-b9d208e96cf5.jpg",
-        "image_mobile": "shopify:\/\/shop_images\/1-02_52940433-96b3-4e1b-8039-9ac3d319c577.jpg",
+        "image": "shopify://shop_images/1-01_1_993b64d9-d242-4c79-9352-b9d208e96cf5.jpg",
+        "image_mobile": "shopify://shop_images/1-02_52940433-96b3-4e1b-8039-9ac3d319c577.jpg",
         "image_ratio": "adapt",
-        "image_link": "shopify:\/\/pages\/back-to-school",
+        "image_link": "shopify://pages/back-to-school",
         "opacity_overlay": 0,
         "icon": "none",
         "icon_color_scheme": "scheme-2c247732-f527-4f63-99fd-72efcb82538d",
@@ -38,7 +37,7 @@
         "show_view_all": false,
         "button_label": "SHOP NOW",
         "button_style": "tertiary",
-        "button_link": "https:\/\/us.glocalme.com\/pages\/glocalme-sale-page",
+        "button_link": "https://us.glocalme.com/pages/glocalme-sale-page",
         "margin_top": "no-indent",
         "margin_bottom": "m"
       }
@@ -71,22 +70,6 @@
     },
     "1747735129aedc0ae3": {
       "type": "apps",
-      "blocks": {
-        "trustview_app_review_widget_FqPwTm": {
-          "type": "shopify:\/\/apps\/trustview\/blocks\/app_review_widget\/bda8b0f7-273b-4b6e-ab43-02c3fec9d11a",
-          "settings": {
-            "widget_design": "design1",
-            "widget_theme": "light",
-            "which_reviews_to_show": "only5",
-            "reviews_per_page": "20",
-            "show_reviews_on_mobile": true,
-            "hide_trust_logo": false
-          }
-        }
-      },
-      "block_order": [
-        "trustview_app_review_widget_FqPwTm"
-      ],
       "settings": {
         "include_margins": true
       }
@@ -97,7 +80,7 @@
         "collection_Y4MzrW": {
           "type": "collection",
           "settings": {
-            "image": "shopify:\/\/shop_images\/glocalme_wifi_hotspot_20.jpg",
+            "image": "shopify://shop_images/glocalme_wifi_hotspot_20.jpg",
             "collection": "portable-wifi",
             "products": [
               "meowgo-g40-pro",
@@ -111,7 +94,7 @@
         "collection_mBA8g3": {
           "type": "collection",
           "settings": {
-            "image": "shopify:\/\/shop_images\/glocalme_wifi_hotspot_21.jpg",
+            "image": "shopify://shop_images/glocalme_wifi_hotspot_21.jpg",
             "collection": "life-series",
             "products": [
               "petphone",
@@ -123,7 +106,7 @@
         "collection_gQz7RG": {
           "type": "collection",
           "settings": {
-            "image": "shopify:\/\/shop_images\/glocalme_wifi_hotspot_22.jpg",
+            "image": "shopify://shop_images/glocalme_wifi_hotspot_22.jpg",
             "collection": "data-package",
             "products": []
           }
@@ -132,7 +115,7 @@
           "type": "collection",
           "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/glocalme_wifi_hotspot_1.jpg",
+            "image": "shopify://shop_images/glocalme_wifi_hotspot_1.jpg",
             "collection": "refurbished-portable-wifi",
             "products": []
           }
@@ -146,7 +129,7 @@
       ],
       "settings": {
         "title": "Top Recommended",
-        "cover_ratio": "1\/1",
+        "cover_ratio": "1/1",
         "cover_fit": "cover",
         "link_text": "Learn more",
         "text_color_scheme": "background-5",
@@ -154,7 +137,7 @@
         "direction_y": "ttb",
         "position_x": 4,
         "position_y": 4,
-        "image_ratio": "1\/1",
+        "image_ratio": "1/1",
         "image_fit": "cover",
         "show_secondary_image": true,
         "show_vendor": false,
@@ -173,28 +156,28 @@
           "type": "collection",
           "settings": {
             "collection": "portable-wifi",
-            "image": "shopify:\/\/shop_images\/portable_wifi.jpg"
+            "image": "shopify://shop_images/portable_wifi.jpg"
           }
         },
         "collection_mBA8g3": {
           "type": "collection",
           "settings": {
             "collection": "life-series",
-            "image": "shopify:\/\/shop_images\/1111_1.jpg"
+            "image": "shopify://shop_images/1111_1.jpg"
           }
         },
         "collection_gQz7RG": {
           "type": "collection",
           "settings": {
             "collection": "data-package",
-            "image": "shopify:\/\/shop_images\/glocalme_wifi_hotspot_25.jpg"
+            "image": "shopify://shop_images/glocalme_wifi_hotspot_25.jpg"
           }
         },
         "collection_mfgBiB": {
           "type": "collection",
           "settings": {
             "collection": "sim-card",
-            "image": "shopify:\/\/shop_images\/glocalme_wifi_hotspot_26.jpg"
+            "image": "shopify://shop_images/glocalme_wifi_hotspot_26.jpg"
           }
         },
         "collection_4TmiLU": {
@@ -202,7 +185,7 @@
           "disabled": true,
           "settings": {
             "collection": "refurbished-portable-wifi",
-            "image": "shopify:\/\/shop_images\/glocalme_wifi_hotspot_1.jpg"
+            "image": "shopify://shop_images/glocalme_wifi_hotspot_1.jpg"
           }
         },
         "collection_FpkFXT": {
@@ -210,7 +193,7 @@
           "disabled": true,
           "settings": {
             "collection": "get-device-free",
-            "image": "shopify:\/\/shop_images\/glocalme_wifi_hotspot_27.jpg"
+            "image": "shopify://shop_images/glocalme_wifi_hotspot_27.jpg"
           }
         }
       },
@@ -263,7 +246,7 @@
         "title_T8HfhA": {
           "type": "title",
           "settings": {
-            "heading": "<a href=\"https:\/\/store.glocalme.com\/products\/meowgo-g40-pro\">MeowGo G40 Pro<\/a>",
+            "heading": "<a href=\"https://store.glocalme.com/products/meowgo-g40-pro\">MeowGo G40 Pro</a>",
             "heading_size": "h1",
             "heading_level": "h2",
             "heading_line": "simple",
@@ -284,7 +267,7 @@
           "settings": {
             "show_button_1": true,
             "button_label_1": "Learn More",
-            "button_link_1": "shopify:\/\/products\/meowgo-g40-pro",
+            "button_link_1": "shopify://products/meowgo-g40-pro",
             "button_style_1": "secondary",
             "show_button_2": false,
             "button_label_2": "Label",
@@ -306,7 +289,7 @@
         "block_type": "subtle",
         "color_scheme": "",
         "full_screen": true,
-        "image": "shopify:\/\/shop_images\/meowgo_g40pro_2_1b226b98-b23a-476f-afe4-619a35e147ee.jpg",
+        "image": "shopify://shop_images/meowgo_g40pro_2_1b226b98-b23a-476f-afe4-619a35e147ee.jpg",
         "show_video": false,
         "overlay_opacity": 0,
         "image_ratio": "adapt",
@@ -320,7 +303,6 @@
         "padding_bottom": "m"
       }
     },
-    
     "bundle_up_X6fNwW": {
       "type": "bundle-up",
       "blocks": {
@@ -364,7 +346,7 @@
       ],
       "settings": {
         "cover_width": 30,
-        "cover": "shopify:\/\/shop_images\/222_c6e5a559-a802-4474-bb26-bfef15189ba5.jpg",
+        "cover": "shopify://shop_images/222_c6e5a559-a802-4474-bb26-bfef15189ba5.jpg",
         "cover_ratio": "adapt",
         "title": "Efficient Office Kit",
         "sub_title": "",
@@ -372,7 +354,7 @@
         "marker_color_scheme": "",
         "marker_heading_color_scheme": "",
         "checkbox_color_scheme": "",
-        "image_ratio": "1\/1",
+        "image_ratio": "1/1",
         "image_fit": "cover",
         "padding_top": "m",
         "padding_bottom": "m",
@@ -382,30 +364,6 @@
     },
     "1756718574dd959546": {
       "type": "apps",
-      "blocks": {
-        "lookfy_gallery_lookfy_gallery_HbAXLL": {
-          "type": "shopify:\/\/apps\/lookfy-gallery\/blocks\/lookfy-gallery\/596af5f6-9933-4730-95c2-f7d8d52a0c3e",
-          "settings": {
-            "gallery_id": 30822,
-            "dynamic_source": "",
-            "title": "",
-            "subtitle": "",
-            "heading_size": "1.2",
-            "heading_color": "",
-            "heading_align": "left",
-            "desc_style": "subtitle",
-            "desc_color": "",
-            "custom_class": "",
-            "background_color": "",
-            "padding_top": 36,
-            "padding_bottom": 36,
-            "padding_left_right": 0
-          }
-        }
-      },
-      "block_order": [
-        "lookfy_gallery_lookfy_gallery_HbAXLL"
-      ],
       "settings": {
         "include_margins": true
       }
@@ -415,10 +373,10 @@
       "settings": {
         "full_width": false,
         "color_scheme": "",
-        "image": "shopify:\/\/shop_images\/1-26_2c1a72b4-d561-452b-b690-a93e20f79dfe.jpg",
-        "image_mobile": "shopify:\/\/shop_images\/1-27_ef569d9d-93b7-4af7-9fe8-52c71c683163.jpg",
+        "image": "shopify://shop_images/1-26_2c1a72b4-d561-452b-b690-a93e20f79dfe.jpg",
+        "image_mobile": "shopify://shop_images/1-27_ef569d9d-93b7-4af7-9fe8-52c71c683163.jpg",
         "image_ratio": "adapt",
-        "image_link": "https:\/\/www.glocalme.com\/US\/rent-wifi?utm_source=traffic&utm_medium=rental+banner&utm_campaign=homepage",
+        "image_link": "https://www.glocalme.com/US/rent-wifi?utm_source=traffic&utm_medium=rental+banner&utm_campaign=homepage",
         "opacity_overlay": 0,
         "icon": "none",
         "icon_color_scheme": "background-1",
@@ -437,7 +395,7 @@
         "show_view_all": false,
         "button_label": "SHOP NOW",
         "button_style": "tertiary",
-        "button_link": "https:\/\/us.glocalme.com\/pages\/glocalme-sale-page",
+        "button_link": "https://us.glocalme.com/pages/glocalme-sale-page",
         "margin_top": "no-indent",
         "margin_bottom": "xs"
       }
@@ -448,7 +406,7 @@
         "case_slide_Ufxmd7": {
           "type": "case_slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/glocalme_wifi_hotspot_16.jpg",
+            "image": "shopify://shop_images/glocalme_wifi_hotspot_16.jpg",
             "overlay_opacity": 0,
             "heading": "200+",
             "text": "",
@@ -466,7 +424,7 @@
         "case_slide_mxmBar": {
           "type": "case_slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/glocalme_wifi_hotspot_17.jpg",
+            "image": "shopify://shop_images/glocalme_wifi_hotspot_17.jpg",
             "overlay_opacity": 0,
             "heading": "80+",
             "text": "Some description",
@@ -484,7 +442,7 @@
         "case_slide_6KBQKX": {
           "type": "case_slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/glocalme_wifi_hotspot_18.jpg",
+            "image": "shopify://shop_images/glocalme_wifi_hotspot_18.jpg",
             "overlay_opacity": 0,
             "heading": "1.6 Billion+",
             "text": "Some description",
@@ -502,7 +460,7 @@
         "case_slide_mfji7e": {
           "type": "case_slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/glocalme_wifi_hotspot_19.jpg",
+            "image": "shopify://shop_images/glocalme_wifi_hotspot_19.jpg",
             "overlay_opacity": 0,
             "heading": "390+",
             "text": "Some description",
@@ -558,31 +516,31 @@
         "slide_pkwkt9": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/glocalme_wifi_hotspot_23.jpg"
+            "image": "shopify://shop_images/glocalme_wifi_hotspot_23.jpg"
           }
         },
         "slide_nKcndg": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/glocalme_wifi_hotspot_3.jpg"
+            "image": "shopify://shop_images/glocalme_wifi_hotspot_3.jpg"
           }
         },
         "slide_9m3TQj": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/glocalme_wifi_hotspot_9.jpg"
+            "image": "shopify://shop_images/glocalme_wifi_hotspot_9.jpg"
           }
         },
         "slide_GfQxYP": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/1-21_6d1b9da7-c825-45a1-bd8d-f8a5b0e31e6d.jpg"
+            "image": "shopify://shop_images/1-21_6d1b9da7-c825-45a1-bd8d-f8a5b0e31e6d.jpg"
           }
         },
         "slide_BWefgh": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/1-20_7b2513ff-098d-4d7d-8726-6bc70f132bb8.jpg"
+            "image": "shopify://shop_images/1-20_7b2513ff-098d-4d7d-8726-6bc70f132bb8.jpg"
           }
         }
       },
@@ -612,31 +570,31 @@
         "slide_BCckLW": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/glocalme_wifi_hotspot_23.jpg"
+            "image": "shopify://shop_images/glocalme_wifi_hotspot_23.jpg"
           }
         },
         "slide_gN6Fmm": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/glocalme_wifi_hotspot_3.jpg"
+            "image": "shopify://shop_images/glocalme_wifi_hotspot_3.jpg"
           }
         },
         "slide_cBpK9d": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/glocalme_wifi_hotspot_9.jpg"
+            "image": "shopify://shop_images/glocalme_wifi_hotspot_9.jpg"
           }
         },
         "slide_Pyqtgx": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/1-21_6d1b9da7-c825-45a1-bd8d-f8a5b0e31e6d.jpg"
+            "image": "shopify://shop_images/1-21_6d1b9da7-c825-45a1-bd8d-f8a5b0e31e6d.jpg"
           }
         },
         "slide_CYLYhy": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/1-20_7b2513ff-098d-4d7d-8726-6bc70f132bb8.jpg"
+            "image": "shopify://shop_images/1-20_7b2513ff-098d-4d7d-8726-6bc70f132bb8.jpg"
           }
         }
       },
@@ -794,18 +752,15 @@
         "margin_top": "no-indent",
         "margin_bottom": "no-indent"
       }
-    },
- 
+    }
   },
   "order": [
- 
     "image_banner_w9xaxc",
     "rich_text_GhWRWW",
     "1747735129aedc0ae3",
     "discovery_collections_B6fNwW",
     "collections_grid_3x7VUA",
     "hero_HYDeyJ",
-   
     "bundle_up_X6fNwW",
     "1756718574dd959546",
     "image_banner_mAKT48",
@@ -813,7 +768,6 @@
     "image_slider_izzR7B",
     "image_slider_3A4kPL",
     "numbers_pPDDTC",
-    "featured_blog_jYq4Nk",
-   
+    "featured_blog_jYq4Nk"
   ]
 }

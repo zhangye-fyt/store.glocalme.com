@@ -26,10 +26,6 @@
             "description": "Code: WEL12"
           }
         },
-        "divider_3Vmrbq": {
-          "type": "divider",
-          "settings": {}
-        },
         "subscribe_form_hQM3tK": {
           "type": "subscribe_form",
           "settings": {
@@ -44,7 +40,6 @@
       "block_order": [
         "popup_heading_7Xhb79",
         "popup_description_e4gi7F",
-        "divider_3Vmrbq",
         "subscribe_form_hQM3tK"
       ],
       "settings": {
