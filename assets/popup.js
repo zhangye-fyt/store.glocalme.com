@@ -34,8 +34,8 @@ jQuery(document).ready(function($) {
 				$( document ).on( 'click', '.age-verification__popup-close', $this.agePopup );
 				$( document ).on( 'click', '.age-verification__popup-close', $this.closePopup );
 				$( document ).on( 'click', '.age-verification__button-no', $this.ageDeclined );
-				$( document ).on( 'click', '.theoneopo', $this.openPopup ); //小按钮点击打开弹窗
-				// $( document ).on( 'click', '.thisoneclose', $this.closeSmall );
+				$( document ).on( 'click', '.theoneopo', $this.openInitPoup ); //小按钮点击打开弹窗
+				$( document ).on( 'click', '.thisoneclose', $this.closeSmall );
 				// Checking this will cause popup to close when user presses key.
 				$( document ).keyup(function(e) {
 					// Press ESC to Close.
@@ -60,6 +60,57 @@ jQuery(document).ready(function($) {
 						//$this.closePopup( $( this).prev() );
 					})
 				} );
+			},
+
+			/******
+			 * 
+			 * 打开弹窗
+			 */
+
+			openInitPoup: function( e ) { 
+				let scrollCurrent = window.scrollY;
+
+				// Set scroll temporary vars.
+				if ( scrollCurrent > $this.sPrevious ) {
+					$this.sDirection = 'down';
+				} else {
+					$this.sDirection = 'up';
+				}
+
+				$this.sPrevious = scrollCurrent;
+				$( '.popup' ).each(function(index, popup) {
+
+					// Manual Launch.
+					if ( 'manual' === $( popup ).data( 'open-trigger' ) ) {
+
+						let selector = $( popup ).data( 'open-manual-selector' );
+
+						if ( selector ) {
+							$(selector).addClass('popup-trigger')
+
+							$( document ).on( 'click', selector, function( e ) {
+								e.preventDefault();
+
+								$( popup ).removeClass( 'popup-already-opened' );
+
+								$this.openPopup( popup );
+
+								if (e.currentTarget.classList.contains('popup')) {
+									$this.closePopup(selector);
+								}
+							} );
+						}
+
+
+					}
+
+					// Checks whether a popup should be displayed or not.
+					if ( ! $this.isAllowPopup( popup ) && ! $(popup).hasClass('age-verification')) {
+						return;
+					}
+
+					$this.openTriggerPopup( popup );
+				});
 			},
 
 			/*
