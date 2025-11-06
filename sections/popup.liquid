@@ -489,6 +489,7 @@ opacity: 0;
                   <script>
                     document.addEventListener('DOMContentLoaded', function () {
                       const form = document.querySelector('form.newsletter-form_popu');
+                      const popup = document.querySelector('.popup');
                       if (!form) return;
 
                       const justPolicies = form.querySelectorAll('.just_policy');
@@ -540,6 +541,13 @@ opacity: 0;
                               setTimeout(() => errorMsg.classList.remove('shake'), 400);
                             }
                           });
+                        
+                        return; // 验证不通过直接返回
+                        }
+
+                        // ✅ 验证通过，保持弹窗
+                        if (!popup.classList.contains('popup-open')) {
+                          popup.classList.add('popup-open');
                         }
                       });
                     });
