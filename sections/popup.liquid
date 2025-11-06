@@ -169,6 +169,14 @@
         opacity: 0;
     }
 }
+.theoneopo.move {
+    animation: slideOutproduct 0.5s ease-in-out forwards;
+    z-index: 0; /* 退出时降低层级 */
+}
+.theoneopo.hidden {
+opacity: 0;
+  left: -35%;
+}
 
   @media (min-width: 768px) {
   .popup-heading.image_zhong {
@@ -210,7 +218,7 @@
 
 <div
   class="
-    popup-main popup
+    popup-main popup popup-main_letter
     popup--{{ section.settings.position }}
     popup-main-image--{{ section.settings.image_layout }}
     {% if section.settings.image == blank %} popup-main--no-image {% endif %}
@@ -587,9 +595,42 @@
 <div>
 
 </div>
+
 {% if section.settings['show-overlay'] %}
   <div class="popup-overlay"></div>
 {% endif %}
+<script> 
+document.addEventListener("DOMContentLoaded", function () {
+  let elementpop = document.querySelector(".theoneopo"); // 小按钮
+  let allpopcloseButton = document.querySelector(".thisoneclose"); // 关闭按钮
+  let bigpopup = document.querySelector("#popup-main_letter"); // 弹窗
+  let all_none_pop  = document.querySelector(".all_none_pop");
+  let clicked_bigopo = document.querySelector(".clicked_bigopo");
+  // 3秒后显示按钮
+
+
+  // 点击 `theoneopo` 显示 `bigpopup`
+  clicked_bigopo.addEventListener("click", function () {
+    if (bigpopup) {
+
+      bigpopup.classList.add("popup-open");
+     
+      elementpop.classList.add("move"); // 小按钮缓慢隐藏
+    }
+  });
+
+  // 点击 `thisoneclose` 关闭 `bigpopup`
+  allpopcloseButton.addEventListener("click", function () {
+    if (elementpop) {
+
+      // 延迟 0.5s 让 bigpopup 动画完成再显示 theoneopo
+    //   setTimeout(() => {
+      elementpop.classList.add("move");
+    //   }, 500);
+    }
+  });
+});
+</script>
 
 {% schema %}
 {
