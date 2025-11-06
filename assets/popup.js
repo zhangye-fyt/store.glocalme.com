@@ -14,7 +14,7 @@ jQuery(document).ready(function($) {
 			/*
 			* Initialize
 			*/
-			init: function( e ) {
+			init: function( e ) { 
 				$this = adpPopup;
 
 				$this.popupInit( e );
@@ -34,7 +34,7 @@ jQuery(document).ready(function($) {
 				$( document ).on( 'click', '.age-verification__popup-close', $this.agePopup );
 				$( document ).on( 'click', '.age-verification__popup-close', $this.closePopup );
 				$( document ).on( 'click', '.age-verification__button-no', $this.ageDeclined );
-
+				$( document ).on( 'click', '.theoneopo', $this.popupInit ); //小按钮点击打开弹窗
 				// Checking this will cause popup to close when user presses key.
 				$( document ).keyup(function(e) {
 					// Press ESC to Close.
