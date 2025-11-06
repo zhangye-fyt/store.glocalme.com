@@ -68,28 +68,18 @@ jQuery(document).ready(function($) {
 			 */
 
 			openInitPoup: function( e ) { 
-				console.log("is openpopu")
-				// let popup = ( e.originalEvent ) ? this : e;
+				
 				let popup = $(this).next('.popup');
+
 				if ( $( popup ).hasClass( 'popup-open' ) ) {
 					return;
 				}
-
-				// Check already opened.
-				// if ( $( popup ).hasClass( 'popup-already-opened' ) ) {
-				// 	return;
-				// }
 
 				// Hide body scroll.
 				if ( $( popup ).is( '[data-body-scroll-disable="true"]' ) ) {
 					$( 'body' ).addClass( 'popup-scroll-hidden' );
 				}
-				// Set Cookie of Limit display.
-				// let limit = parseInt( $this.getCookie( 'popup-' + $( popup ).data( 'id' ) ) || 0 ) + 1;
-
-				// $this.setCookie( 'popup-' + $( popup ).data( 'id' ), limit, {
-				// 	expires: $( popup ).data( 'limit-lifetime' )
-				// } );
+				
 
 				// Display popup.
 				$( popup ).addClass( 'popup-open' );
@@ -146,6 +136,8 @@ jQuery(document).ready(function($) {
 								$( popup ).removeClass( 'popup-already-opened' );
 
 								$this.openPopup( popup );
+
+								$(popup).prev('.theoneopo').addClass('move');
 
 								if (e.currentTarget.classList.contains('popup')) {
 									$this.closePopup(selector);
