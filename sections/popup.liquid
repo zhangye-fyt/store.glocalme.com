@@ -130,11 +130,29 @@
   }
 
 
+
+  @media (min-width: 768px) {
+  .popup-heading.image_zhong {
+    font-size: 30px;
+  }
+  .popup-main .popup-content .modal-close-button.jsut_close_buttom{
+    top: 26px;
+    right: 26px;
+  }
+
+  .popup-main .popup-content{
+    padding: 40px 48px;
+  }
+}
+</style>
+{% if section.settings.is_position == 'position_left' %}
+  {% style %}
+
 .theoneopo {
     position: fixed;
     z-index: 9000;
     filter: drop-shadow(rgba(249, 249, 249, 0.15) 0px 0px 30px);
-    top: 50%;
+    top: {{section.settings.is_pensent}};
     left: 0;
     transform-origin: left top;
     margin-left: 0px;
@@ -177,23 +195,81 @@
 opacity: 0;
   left: -35%;
 }
+.thisoneclose{
+  bottom: -16px; 
+  right: -16px; 
+  position: absolute; 
+  z-index: 6; 
+  cursor: pointer; 
+  height: 20px; 
+  width: 20px; 
+  border-radius: 50%;
+}
+  {% endstyle %}
 
-  @media (min-width: 768px) {
-  .popup-heading.image_zhong {
-    font-size: 30px;
-  }
-  .popup-main .popup-content .modal-close-button.jsut_close_buttom{
-    top: 26px;
-    right: 26px;
-  }
+  {% else %}
 
-  .popup-main .popup-content{
-    padding: 40px 48px;
+
+  {% style %}
+
+.position_right {
+    position: fixed;
+    z-index: 9000;
+    filter: drop-shadow(rgba(249, 249, 249, 0.15) 0px 0px 30px);
+    top: {{section.settings.is_pensent}};
+    right: 0;              /* ✅ 改成 right 固定在右边 */
+    transform-origin: right top; /* ✅ 动画基准点改右上角 */
+    margin-right: 0;
+    width: 84px;
+    opacity: 0;
+    transform: translateX(100%) rotate(90deg); /* ✅ 初始从右边滑入 */
+    animation: slideInproductRight 0.5s ease-in-out 2s forwards;
+}
+@keyframes slideInproductRight {
+  from {
+    transform: translateX(100%) rotate(90deg);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0) rotate(90deg);
+    opacity: 1;
   }
 }
-</style>
+@keyframes slideOutproductRight {
+  from {
+    transform: translateX(0) rotate(90deg);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(100%) rotate(90deg);
+    opacity: 0;
+  }
+}
+.position_right.move {
+  animation: slideOutproductRight 0.5s ease-in-out forwards;
+  z-index: 0;
+}
 
-<div class="needsclick kl-teaser-SA25iC undefined kl-private-reset-css-Xuajs1 theoneopo " tabindex="0">
+.position_right.hidden {
+  opacity: 0;
+  right: -35%;
+}
+.thisoneclose{
+  bottom: -16px; 
+  left: -16px; 
+  position: absolute; 
+  z-index: 6; 
+  cursor: pointer; 
+  height: 20px; 
+  width: 20px; 
+  border-radius: 50%;
+}
+
+  {% endstyle %}
+
+{% endif %}
+
+<div class="needsclick kl-teaser-SA25iC undefined kl-private-reset-css-Xuajs1 theoneopo {{section.settings.is_position}}" tabindex="0">
     <div data-testid="animated-teaser" class="needsclick  kl-private-reset-css-Xuajs1" style="height: 100%; width: 100%;">
       <span class="needsclick go681896951 kl-private-reset-css-Xuajs1 clicked_bigopo" style="overflow: hidden; box-sizing: border-box; border-radius: 0px 0px 4px 4px; background:{{section.settings.the_background}}; min-height: 50px; height: 100%; padding: 8px; display: flex; flex-direction: column; justify-content: center;">
             <div class="needsclick  kl-private-reset-css-Xuajs1">
@@ -205,7 +281,7 @@ opacity: 0;
                 </div>
             </div>
         </span>
-        <div tabindex="0" class="needsclick klaviyo-close-form thisoneclose go2324193863 kl-private-reset-css-Xuajs1" aria-label="Close teaser" style="bottom: -16px; right: -16px; position: absolute; z-index: 6; cursor: pointer; height: 20px; width: 20px; border-radius: 50%;">
+        <div tabindex="0" class="needsclick klaviyo-close-form thisoneclose go2324193863 kl-private-reset-css-Xuajs1" aria-label="Close teaser" style="">
             <svg role="img" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="needsclick  kl-private-reset-css-Xuajs1">
                 <title id="title-Close-teaser">Close teaser</title>
                 <circle cx="10" cy="10" r="9.5" fill="{{section.settings.the_clobg_background}}" stroke="#FFFFFF" style="cursor: pointer;">
@@ -1035,15 +1111,15 @@ opacity: 0;
       "label": "显示位置",
       "options": [
         {
-          "value": "left",
+          "value": "position_left",
           "label": "left"
         },
         {
-          "value": "right",
-          "label": "Middle"
+          "value": "position_right",
+          "label": "right"
         }
       ],
-      "default": "left"
+      "default": "position_left"
     },
     {
       "type": "range",
