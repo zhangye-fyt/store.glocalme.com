@@ -413,7 +413,7 @@ opacity: 0;
                     class: 'popup'
                   %}
                 {%- when 'subscribe_form' -%}
-                  {% form 'customer', class: 'newsletter-form_popu' %}
+                  {% form 'customer', class: 'newsletter-form_popu' id:'popup-form' %}
                     <div class="newsletter-form__inner {% if section.settings.width <= 500 %} newsletter-form__inner_column {% endif %} color-{{ block.settings.color_scheme }}" {{ block.shopify_attributes }}>
                       <input type="hidden" name="contact[tags]" value="newsletter">
                       <div class="newsletter-form__field-wrapper">
@@ -452,6 +452,9 @@ opacity: 0;
                                     <a href="/policies/privacy-policy" target="_blank" rel="noopener noreferrer">Privacy Policy</a>.
                                   </span>
                                 </p>
+                                <p id="policyMsg" class="policy-error" style="display:none;">
+                                  请先勾选同意条款，才能提交哦～
+                                </p>
                                 <p class="the_two_policy just_policy">
                                   <input class="number_one_policy" name="policy[policy]" type="checkbox" checked="">
                                   <span class="number_one_policy_text">
@@ -461,15 +464,7 @@ opacity: 0;
                                     <a href="/policies/privacy-policy" target="_blank" rel="noopener noreferrer">Privacy Policy</a>.
                                   </span>
                                 </p>
-                                <p x-ref="policyMsg"
-                                  x-show="!accepted"
-                                  tabindex="-1"
-                                  style="display:none"
-                                  x-transition
-                                  class="policy-error"
-                                >
-                                  请先勾选同意条款，才能提交哦 ~
-                                </p>
+                              
                                 <p id="policyMsg" class="policy-error" style="display:none;">
                                   请先勾选同意条款，才能提交哦～
                                 </p>
@@ -514,38 +509,41 @@ opacity: 0;
 
                   <script>
                     document.addEventListener('DOMContentLoaded', function () {
-                      const form = document.getElementById('contact_form');
+                      const form = document.getElementById('popup-form');
+
                       const checkboxes = form.querySelectorAll('.number_one_policy');
                       const submitBtn = document.getElementById('submitBtn');
-                      const msg = document.getElementById('policyMsg');
+                      const msg = form.querySelector('.policy-error'); 
 
                       function checkAccepted() {
-                        const accepted = Array.from(checkboxes).some(cb => cb.checked);
-                        submitBtn.disabled = !accepted;
-                        if (accepted) {
-                          msg.style.display = 'none';
-                        }
-                        return accepted;
-                      }
+                      // ✅ 两个都勾选才算 accepted
+                      const accepted = Array.from(checkboxes).every(cb => cb.checked);
+                      submitBtn.disabled = !accepted;
+                      msg.style.display = accepted ? 'none' : 'block';
+                      return accepted;
+                    }
 
-                      // 初始化按钮状态
-                      checkAccepted();
+                    // 初始化按钮状态
+                    checkAccepted();
 
-                      // 每次勾选变化时更新状态
-                      checkboxes.forEach(cb => {
-                        cb.addEventListener('change', checkAccepted);
-                      });
-
-                      // 提交前检查
-                      form.addEventListener('submit', function (e) {
-                        if (!checkAccepted()) {
-                          e.preventDefault();
-                          msg.style.display = 'block';
-                          msg.classList.add('shake');
-                          setTimeout(() => msg.classList.remove('shake'), 400);
-                        }
-                      });
+                    // 每次勾选变化时更新状态
+                    checkboxes.forEach(cb => {
+                      cb.addEventListener('change', checkAccepted);
                     });
+
+                    // 提交前检查
+                    form.addEventListener('submit', function (e) {
+                      if (!checkAccepted()) {
+                        e.preventDefault();
+                        msg.classList.add('shake');
+                        setTimeout(() => msg.classList.remove('shake'), 400);
+                        
+      e.preventDefault(); // 阻止提交
+  
+                      }
+                    });
+                  });
+                   
                     </script>
 
 
