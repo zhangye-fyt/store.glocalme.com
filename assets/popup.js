@@ -323,6 +323,8 @@ jQuery(document).ready(function($) {
 				$( popup ).data( 'init-scroll-px', window.scrollY );
 				$( popup ).data( 'init-scroll-percent', $this.getScrollPercent() );
 
+				$(popup).prev('.theoneopo').removeClass('move');
+				
 				// Open animation.
 				let animation = $( popup ).data( 'open-animation' );
 
@@ -393,6 +395,7 @@ jQuery(document).ready(function($) {
 					// Hide popup.
 					$( popup ).removeClass( 'popup-open' );
 
+					$(popup).prev('.theoneopo').removeClass('move');
 					// Remove classes from body.
 					//$( 'body' ).removeClass( 'popup-scroll-hidden' );
 				} );
