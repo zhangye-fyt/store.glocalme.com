@@ -413,7 +413,7 @@ opacity: 0;
                     class: 'popup'
                   %}
                 {%- when 'subscribe_form' -%}
-                  {% form 'customer', class: 'newsletter-form_popu' id:'contact_form' %}
+                  {% form 'customer', class: 'newsletter-form_popu' %}
                     <div class="newsletter-form__inner {% if section.settings.width <= 500 %} newsletter-form__inner_column {% endif %} color-{{ block.settings.color_scheme }}" {{ block.shopify_attributes }}>
                       <input type="hidden" name="contact[tags]" value="newsletter">
                       <div class="newsletter-form__field-wrapper">
