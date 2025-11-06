@@ -477,6 +477,12 @@ opacity: 0;
                         {% render 'icon-success' -%}
                         {{- 'newsletter.success' | t }}
                       </h3>
+                      <script>
+                         document.addEventListener('DOMContentLoaded', function () {
+                             const popup = document.querySelector('.popup');
+                             popup.classList.add('popup-open');
+                        })
+                      </script>
                     {%- endif -%}
                   {% endform %}
                   {% if block.settings.description != blank %}
@@ -489,7 +495,7 @@ opacity: 0;
                   <script>
                     document.addEventListener('DOMContentLoaded', function () {
                       const form = document.querySelector('form.newsletter-form_popu');
-                      const popup = document.querySelector('.popup');
+                     
                       if (!form) return;
 
                       const justPolicies = form.querySelectorAll('.just_policy');
@@ -545,10 +551,7 @@ opacity: 0;
                         return; // 验证不通过直接返回
                         }
 
-                        // ✅ 验证通过，保持弹窗
-                        if (!popup.classList.contains('popup-open')) {
-                          popup.classList.add('popup-open');
-                        }
+                        
                       });
                     });
 
