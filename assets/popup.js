@@ -88,6 +88,8 @@ jQuery(document).ready(function($) {
 				$( popup ).data( 'init-scroll-px', window.scrollY );
 				$( popup ).data( 'init-scroll-percent', $this.getScrollPercent() );
 
+				$(popup).prev('.theoneopo').addClass('move');
+				
 				// Open animation.
 				let animation = $( popup ).data( 'open-animation' );
 
@@ -308,7 +310,7 @@ jQuery(document).ready(function($) {
 				if ( $( popup ).is( '[data-body-scroll-disable="true"]' ) ) {
 					$( 'body' ).addClass( 'popup-scroll-hidden' );
 				}
-
+				
 				// Set Cookie of Limit display.
 				let limit = parseInt( $this.getCookie( 'popup-' + $( popup ).data( 'id' ) ) || 0 ) + 1;
 
