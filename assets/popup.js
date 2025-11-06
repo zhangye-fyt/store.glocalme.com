@@ -76,9 +76,9 @@ jQuery(document).ready(function($) {
 				}
 
 				// Check already opened.
-				if ( $( popup ).hasClass( 'popup-already-opened' ) ) {
-					return;
-				}
+				// if ( $( popup ).hasClass( 'popup-already-opened' ) ) {
+				// 	return;
+				// }
 
 				// Hide body scroll.
 				if ( $( popup ).is( '[data-body-scroll-disable="true"]' ) ) {
