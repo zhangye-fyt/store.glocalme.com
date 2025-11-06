@@ -416,7 +416,7 @@ jQuery(document).ready(function($) {
 				let el= ( e.originalEvent ) ? this : e;
 
 				// Get popup container.
-				let closeSmall = $( $el ).parents( '.theoneopo' );
+				let closeSmall = $( el ).parents( '.theoneopo' );
 				$( closeSmall ).addClass( 'move' );
 
 			},
