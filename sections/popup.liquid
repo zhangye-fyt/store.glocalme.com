@@ -392,7 +392,27 @@ opacity: 0;
                     class: 'popup'
                   %}
                 {%- when 'subscribe_form' -%}
-                  {% form 'customer', class: 'newsletter-form_popu' %}
+                  {% form 'customer', class: 'newsletter-form_popu' x-data="{
+                    accepted: false,
+                    check() {
+                      // 检查页面上任意 .number_one_policy 是否被选中
+                      this.accepted = Array.from($el.querySelectorAll('.number_one_policy'))
+                                           .some(cb => cb.checked);
+                    },
+                    submitIfAccepted(e) {
+                      // 如果 accepted 为 false，阻止提交并显示提示
+                      if (!this.accepted) {
+                        e.preventDefault();
+                        // 触发提示（可见性用 x-show 控制）
+                        this.$refs.policyMsg.classList.add('shake'); // 可选：添加动画
+                        this.$refs.policyMsg.focus();
+                      }
+                      // 否则允许表单正常提交（不需要额外处理）
+                    }
+                  }"
+                  x-init:"check()"
+                  @change:"check()"
+                  @submit:"submitIfAccepted($event)" %}
                     <div class="newsletter-form__inner {% if section.settings.width <= 500 %} newsletter-form__inner_column {% endif %} color-{{ block.settings.color_scheme }}" {{ block.shopify_attributes }}>
                       <input type="hidden" name="contact[tags]" value="newsletter">
                       <div class="newsletter-form__field-wrapper">
