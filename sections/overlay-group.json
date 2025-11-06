@@ -17,7 +17,8 @@
         "popup_heading_7Xhb79": {
           "type": "popup_heading",
           "settings": {
-            "heading": "Subscribe to get a discount on your order."
+            "heading": "Subscribe to get a discount on your order.",
+            "heading_color": "#333333"
           }
         },
         "popup_description_e4gi7F": {
@@ -71,7 +72,15 @@
         "scrolling": false,
         "overlay-close": true,
         "esc-close": false,
-        "f4-close": false
+        "f4-close": false,
+        "is-clicked": false,
+        "is_position": "position_right",
+        "is_pensent": 50,
+        "the_text": "",
+        "the_text_color": "#000000",
+        "the_background": "linear-gradient(92deg, rgba(132, 3, 95, 1), rgba(42, 5, 36, 1) 26.56%, rgba(36, 19, 89, 1) 51.21%, rgba(42, 48, 144, 1) 70.3%, rgba(139, 7, 155, 1) 100%)",
+        "the_color_close": "#ffffff",
+        "the_clobg_background": "#000000"
       }
     },
     "notification_banner_TQNprw": {
