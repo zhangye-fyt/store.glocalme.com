@@ -438,7 +438,8 @@ jQuery(document).ready(function($) {
 			* Apply animation
 			*/
 			applyAnimation: function( el, name, callback ) {
-				var popup = $( el ).closest( '.popup' );
+				// var popup = $( el ).closest( '.popup' );
+				var popup = $(el).hasClass('popup') ? $(el) : $(el).closest('.popup');
 
 				if ( typeof callback === 'function' ) {
 					var overlayName = 'popupExitFade';
