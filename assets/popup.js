@@ -443,6 +443,10 @@ jQuery(document).ready(function($) {
 				var popup = $(el).hasClass('popup') ? $(el) : $(el).closest('.popup');
 				console.log("popup",popup)
 
+				// if (!popup.length) {
+				// 	popup = $(el).prev('.popup');
+				//   }
+
 				if ( typeof callback === 'function' ) {
 					var overlayName = 'popupExitFade';
 				} else {
