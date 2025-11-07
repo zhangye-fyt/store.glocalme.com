@@ -14,8 +14,7 @@
       "settings": {
         "full_width": true,
         "color_scheme": "",
-        "image": "shopify://shop_images/glocalme_Halloween_1_0ef256ca-ab85-4f92-88e5-d7f294a1f8fb.jpg",
-        "image_mobile": "shopify://shop_images/glocalme_Halloween_2_4ec35a9e-b9f1-4344-9fe6-e22cd93b9b7f.jpg",
+        "image": "shopify://shop_images/15_13d460de-47eb-4911-bd6c-a8c36d4a16d3.jpg",
         "image_ratio": "adapt",
         "image_link": "shopify://pages/halloween-savings",
         "opacity_overlay": 0,
@@ -53,7 +52,6 @@
         "collection_Y4MzrW": {
           "type": "collection",
           "settings": {
-            "image": "shopify://shop_images/glocalme_wifi_hotspot_20.jpg",
             "collection": "portable-wifi",
             "products": [
               "meowgo-g40-pro",
@@ -67,7 +65,6 @@
         "collection_mBA8g3": {
           "type": "collection",
           "settings": {
-            "image": "shopify://shop_images/glocalme_wifi_hotspot_21.jpg",
             "collection": "life-series",
             "products": [
               "petphone",
@@ -79,7 +76,6 @@
         "collection_gQz7RG": {
           "type": "collection",
           "settings": {
-            "image": "shopify://shop_images/glocalme_wifi_hotspot_22.jpg",
             "collection": "data-package",
             "products": []
           }
@@ -88,7 +84,6 @@
           "type": "collection",
           "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/glocalme_wifi_hotspot_1.jpg",
             "collection": "refurbished-portable-wifi",
             "products": []
           }
@@ -130,45 +125,39 @@
         "collection_Y4MzrW": {
           "type": "collection",
           "settings": {
-            "collection": "portable-wifi",
-            "image": "shopify://shop_images/portable_wifi.jpg"
+            "collection": "portable-wifi"
           }
         },
         "collection_mBA8g3": {
           "type": "collection",
           "settings": {
-            "collection": "life-series",
-            "image": "shopify://shop_images/1111_1.jpg"
+            "collection": "life-series"
           }
         },
         "collection_gQz7RG": {
           "type": "collection",
           "settings": {
-            "collection": "data-package",
-            "image": "shopify://shop_images/glocalme_wifi_hotspot_25.jpg"
+            "collection": "data-package"
           }
         },
         "collection_mfgBiB": {
           "type": "collection",
           "settings": {
-            "collection": "sim-card",
-            "image": "shopify://shop_images/sim_card_7465c6c6-6b1a-4c0f-b447-c4c7988919cb.jpg"
+            "collection": "sim-card"
           }
         },
         "collection_4TmiLU": {
           "type": "collection",
           "disabled": true,
           "settings": {
-            "collection": "refurbished-portable-wifi",
-            "image": "shopify://shop_images/glocalme_wifi_hotspot_1.jpg"
+            "collection": "refurbished-portable-wifi"
           }
         },
         "collection_FpkFXT": {
           "type": "collection",
           "disabled": true,
           "settings": {
-            "collection": "get-device-free",
-            "image": "shopify://shop_images/glocalme_wifi_hotspot_27.jpg"
+            "collection": "get-device-free"
           }
         }
       },
@@ -264,7 +253,6 @@
         "block_type": "subtle",
         "color_scheme": "",
         "full_screen": true,
-        "image": "shopify://shop_images/meowgo_g40pro_2_1b226b98-b23a-476f-afe4-619a35e147ee.jpg",
         "show_video": false,
         "overlay_opacity": 0,
         "image_ratio": "adapt",
@@ -323,7 +311,6 @@
       "settings": {
         "color_scheme": "",
         "cover_width": 30,
-        "cover": "shopify://shop_images/3333_1.jpg",
         "cover_ratio": "adapt",
         "title": "",
         "sub_title": "",
@@ -418,7 +405,6 @@
         "inner_word_break": false,
         "description": "<p>Unlimited data Wi-Fi rental – 24/7 support, no hidden fees, connect your world!</p>",
         "text_align_inner": "center",
-        "image": "shopify://shop_images/Asia-Japan-Tokyo_d1af7d3b-1626-42fd-9e5d-f8ed0fc1e320.jpg",
         "height": "adapt",
         "overlay_opacity": 0,
         "logo_width": 75,
@@ -446,8 +432,6 @@
       "settings": {
         "full_width": true,
         "color_scheme": "",
-        "image": "shopify://shop_images/20250929091358_2_4_1.jpg",
-        "image_mobile": "shopify://shop_images/20250929091357_1_4_1.jpg",
         "image_ratio": "adapt",
         "image_link": "https://www.glocalme.com/US/rent-wifi",
         "opacity_overlay": 0,
@@ -479,7 +463,6 @@
         "case_slide_Ufxmd7": {
           "type": "case_slide",
           "settings": {
-            "image": "shopify://shop_images/glocalme_wifi_hotspot_16.jpg",
             "overlay_opacity": 0,
             "heading": "200+",
             "text": "",
@@ -497,7 +480,6 @@
         "case_slide_mxmBar": {
           "type": "case_slide",
           "settings": {
-            "image": "shopify://shop_images/glocalme_wifi_hotspot_17.jpg",
             "overlay_opacity": 0,
             "heading": "80+",
             "text": "Some description",
@@ -515,7 +497,6 @@
         "case_slide_6KBQKX": {
           "type": "case_slide",
           "settings": {
-            "image": "shopify://shop_images/glocalme_wifi_hotspot_18.jpg",
             "overlay_opacity": 0,
             "heading": "1.6 Billion+",
             "text": "Some description",
@@ -533,7 +514,6 @@
         "case_slide_mfji7e": {
           "type": "case_slide",
           "settings": {
-            "image": "shopify://shop_images/glocalme_wifi_hotspot_19.jpg",
             "overlay_opacity": 0,
             "heading": "390+",
             "text": "Some description",
@@ -588,33 +568,23 @@
       "blocks": {
         "slide_pkwkt9": {
           "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/glocalme_wifi_hotspot_23.jpg"
-          }
+          "settings": {}
         },
         "slide_nKcndg": {
           "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/glocalme_wifi_hotspot_3.jpg"
-          }
+          "settings": {}
         },
         "slide_9m3TQj": {
           "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/glocalme_wifi_hotspot_9.jpg"
-          }
+          "settings": {}
         },
         "slide_GfQxYP": {
           "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/1-21_6d1b9da7-c825-45a1-bd8d-f8a5b0e31e6d.jpg"
-          }
+          "settings": {}
         },
         "slide_BWefgh": {
           "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/1-20_7b2513ff-098d-4d7d-8726-6bc70f132bb8.jpg"
-          }
+          "settings": {}
         }
       },
       "block_order": [
@@ -642,33 +612,23 @@
       "blocks": {
         "slide_BCckLW": {
           "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/glocalme_wifi_hotspot_23.jpg"
-          }
+          "settings": {}
         },
         "slide_gN6Fmm": {
           "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/glocalme_wifi_hotspot_3.jpg"
-          }
+          "settings": {}
         },
         "slide_cBpK9d": {
           "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/glocalme_wifi_hotspot_9.jpg"
-          }
+          "settings": {}
         },
         "slide_Pyqtgx": {
           "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/1-21_6d1b9da7-c825-45a1-bd8d-f8a5b0e31e6d.jpg"
-          }
+          "settings": {}
         },
         "slide_CYLYhy": {
           "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/1-20_7b2513ff-098d-4d7d-8726-6bc70f132bb8.jpg"
-          }
+          "settings": {}
         }
       },
       "block_order": [
@@ -938,8 +898,6 @@
             "title": "PetPhone vs. Traditional Pet Trackers: Why It’s the Best Alternative in 2025",
             "description": "",
             "link": "shopify://blogs/news/pet-phone-vs-traditional-pet-trackers-how-to-pick-in-2025",
-            "carousel_image": "shopify://shop_images/5_7808d46a-39c5-4f25-8017-3debec8dd438.jpg",
-            "mobile_image": "shopify://shop_images/6_cd691cc1-d18f-45c5-b131-b10b3135ec8e.jpg",
             "h_align": "left",
             "v_align": "bottom",
             "offset_x": 25,
@@ -952,8 +910,6 @@
             "title": "Top 5 Features to Look for in the Best Dog Activity Tracker",
             "description": "",
             "link": "shopify://blogs/news/top-5-features-to-look-for-in-the-best-dog-activity-tracker",
-            "carousel_image": "shopify://shop_images/20251024180149.jpg",
-            "mobile_image": "shopify://shop_images/1_06dee8a1-fe4d-4e50-b061-30e73be84609.jpg",
             "h_align": "left",
             "v_align": "bottom",
             "offset_x": 25,
@@ -966,8 +922,6 @@
             "title": "Dog Fitness Tracker: The Best Companions for Pet Parents",
             "description": "",
             "link": "shopify://blogs/news/top-dog-fitness-trackers-keeping-your-canine-companion-healthy-happy",
-            "carousel_image": "shopify://shop_images/1080-690.jpg",
-            "mobile_image": "shopify://shop_images/2_fc950274-1a94-40ea-8caf-f1d20b0026fc.jpg",
             "h_align": "left",
             "v_align": "bottom",
             "offset_x": 25,
@@ -980,8 +934,6 @@
             "title": "How PetPhone redefines safety and emotional connection",
             "description": "",
             "link": "shopify://blogs/news/how-petphone-redefines-safety-and-emotional-connection",
-            "carousel_image": "shopify://shop_images/How_PetPhone_redefines_safety_and_emotional_connection.jpg",
-            "mobile_image": "shopify://shop_images/20250915172130_859ddfc5-a37e-4597-b7e5-89563adba391.jpg",
             "h_align": "left",
             "v_align": "bottom",
             "offset_x": 25,
@@ -994,8 +946,6 @@
             "title": "GlocalMe Launches PetPhone in Pet Wearable Technology",
             "description": "",
             "link": "shopify://blogs/news/glocalme-launches-petphone-in-pet-wearable-technology",
-            "carousel_image": "shopify://shop_images/1_Group_Photo_At_The_Product_Sales_Launch_Ceremony_610d4f6c-6c96-4a77-b2f8-93f94a0c5034.jpg",
-            "mobile_image": "shopify://shop_images/20250917152653.jpg",
             "h_align": "left",
             "v_align": "bottom",
             "offset_x": 0,
@@ -1008,8 +958,6 @@
             "title": "GlocalMe Delivers Award-Winning Connectivity Solutions at IFA 2025",
             "description": "",
             "link": "shopify://blogs/news/glocalme-delivers-award-winning-connectivity-solutions-at-ifa-2025",
-            "carousel_image": "shopify://shop_images/GlocalMe_Delivers_Award-Winning_Connectivity_Solutions_at_IFA_2025.jpg",
-            "mobile_image": "shopify://shop_images/20250917152615.jpg",
             "h_align": "left",
             "v_align": "bottom",
             "offset_x": 25,
@@ -1022,8 +970,6 @@
             "title": "GlocalMe Unveils New Brand Identity, Marking a Transformative Step Towards Globalization",
             "description": "",
             "link": "shopify://blogs/news/glocalme-unveils-new-brand-identity-and-cutting-edge-innovations-at-ces-2025",
-            "carousel_image": "shopify://shop_images/20250917162856.jpg",
-            "mobile_image": "shopify://shop_images/20250917152657.jpg",
             "h_align": "left",
             "v_align": "bottom",
             "offset_x": 25,
@@ -1036,8 +982,6 @@
             "title": "GlocalMe UniCord wins CES 2025 Breakthrough Awards",
             "description": "",
             "link": "shopify://blogs/news/glocalme-unicord-wins-ces-2025-breakthrough-awards",
-            "carousel_image": "shopify://shop_images/UniCord_CES_Reward_2ea51165-eef4-47d7-b8be-3bfb640c2b2b.jpg",
-            "mobile_image": "shopify://shop_images/20250917162836.jpg",
             "h_align": "center",
             "v_align": "bottom",
             "offset_x": 25,
@@ -1050,8 +994,6 @@
             "title": "GlocalMe Unveils New Brand Identity and Cutting-Edge Innovations at CES 2025",
             "description": "",
             "link": "shopify://blogs/news/glocalme-unveils-new-brand-identity-and-cutting-edge-innovations-at-ces-2025",
-            "carousel_image": "shopify://shop_images/ces-1_eaedc95a-fd2f-4610-84cd-8f6259894f71.jpg",
-            "mobile_image": "shopify://shop_images/20250917152648.jpg",
             "h_align": "left",
             "v_align": "bottom",
             "offset_x": 25,
