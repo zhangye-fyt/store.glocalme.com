@@ -44,7 +44,7 @@
         "subscribe_form_hQM3tK"
       ],
       "settings": {
-        "image": "shopify://shop_images/3_8dae6762-52bd-48ad-84a2-d41aaa9f5254.jpg",
+        "image": "shopify://shop_images/7.webp",
         "image_layout": "top",
         "image_fit": "cover",
         "content_align": "center",
@@ -73,6 +73,16 @@
         "overlay-close": true,
         "esc-close": false,
         "f4-close": false,
+        "must_slection": "",
+        "is_checked_out": false,
+        "guke_tip": "",
+        "must_slection2": "",
+        "is_checked_out2": false,
+        "guke_tip2": "",
+        "ischecker_text": "linear-gradient(92deg, rgba(132, 3, 95, 1), rgba(42, 5, 36, 1) 26.56%, rgba(36, 19, 89, 1) 51.21%, rgba(42, 48, 144, 1) 70.3%, rgba(139, 7, 155, 1) 100%)",
+        "isright_bg": "linear-gradient(92deg, rgba(132, 3, 95, 1), rgba(42, 5, 36, 1) 26.56%, rgba(36, 19, 89, 1) 51.21%, rgba(42, 48, 144, 1) 70.3%, rgba(139, 7, 155, 1) 100%)",
+        "ischeck_color": "#fff",
+        "tip_text_bg": "linear-gradient(92deg, rgba(132, 3, 95, 1), rgba(42, 5, 36, 1) 26.56%, rgba(36, 19, 89, 1) 51.21%, rgba(42, 48, 144, 1) 70.3%, rgba(139, 7, 155, 1) 100%)",
         "is-clicked": false,
         "is_position": "position_right",
         "is_pensent": 50,
@@ -80,7 +90,10 @@
         "the_text_color": "#ffffff",
         "the_background": "linear-gradient(92deg, rgba(132, 3, 95, 1), rgba(42, 5, 36, 1) 26.56%, rgba(36, 19, 89, 1) 51.21%, rgba(42, 48, 144, 1) 70.3%, rgba(139, 7, 155, 1) 100%)",
         "the_color_close": "#ffffff",
-        "the_clobg_background": "#000000"
+        "the_clobg_background": "#000000",
+        "successful_text": "Is Sended",
+        "successfultext_position": "left",
+        "successfulytext_color": "linear-gradient(92deg, rgba(132, 3, 95, 1), rgba(42, 5, 36, 1) 26.56%, rgba(36, 19, 89, 1) 51.21%, rgba(42, 48, 144, 1) 70.3%, rgba(139, 7, 155, 1) 100%)"
       }
     },
     "notification_banner_TQNprw": {
