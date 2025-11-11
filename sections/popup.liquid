@@ -493,9 +493,11 @@ opacity: 0;
                     </div>
                     {% if section.settings.is_open_successful%}
                     {%- if form.posted_successfully? -%}
+                      {% assign visitor_id = 'visitor_' | append: form.id | append: '_' | append: 'now' | date: '%s' %}
                       <h3
                         class="newsletter-form__message newsletter-form__message--success form__message is_ok_message"
                         id="Newsletter-success--{{ section.id }}"
+                        data-visitor-id="{{ visitor_id }}"
                         tabindex="-1"
                         autofocus
                       >
@@ -511,57 +513,7 @@ opacity: 0;
                         })
                       </script>
 
-                      <script>
-                          (function() {
-                            const TARGET_SELECTOR = '.theoneopo';
-                            const MOVE_CLASS = 'move';
-                            const COOKIE_NAME = 'visitor_id';
-                            const COOKIE_DAYS = 3;
-                          
-                            // 写入 Cookie
-                            function setCookie(name, value, days) {
-                              const d = new Date();
-                              d.setTime(d.getTime() + (days * 24 * 60 * 60 * 1000));
-                              document.cookie = `${name}=${value};expires=${d.toUTCString()};path=/`;
-                            }
-                          
-                            // 读取 Cookie
-                            function getCookie(name) {
-                              const value = `; ${document.cookie}`;
-                              const parts = value.split(`; ${name}=`);
-                              if (parts.length === 2) return parts.pop().split(';').shift();
-                            }
-                          
-                            // 生成随机 ID
-                            function createVisitorId() {
-                              return 'visitor_' + Math.random().toString(36).substring(2, 12);
-                            }
-                          
-                            // 给元素添加 move 类
-                            function addMoveClass() {
-                              const el = document.querySelector(TARGET_SELECTOR);
-                              if (el && !el.classList.contains(MOVE_CLASS)) {
-                                el.classList.add(MOVE_CLASS);
-                              }
-                            }
-                          
-                            document.addEventListener('DOMContentLoaded', function() {
-                              let visitorId = getCookie(COOKIE_NAME);
-                          
-                              if (!visitorId) {
-                                // 没有ID时创建新ID并添加move
-                                visitorId = createVisitorId();
-                                setCookie(COOKIE_NAME, visitorId, COOKIE_DAYS);
-                                console.log('🆕 新访客 ID 创建:', visitorId);
-                                addMoveClass();
-                              } else {
-                                // 已存在ID，也添加move
-                                console.log('✅ 已存在访客 ID:', visitorId);
-                                addMoveClass();
-                              }
-                            });
-                          })();
-                          </script>
+                     
   
                     {%- endif -%}
                   {%- endif -%}
@@ -842,6 +794,55 @@ opacity: 0;
 {% if section.settings['show-overlay'] %}
   <div class="popup-overlay"></div>
 {% endif %}
+
+
+<script>
+(function() {
+  const TARGET_SELECTOR = '.theoneopo';
+  const MOVE_CLASS = 'move';
+  const COOKIE_NAME = 'visitor_id';
+  const COOKIE_DAYS = 3;
+
+  function setCookie(name, value, days) {
+    const d = new Date();
+    d.setTime(d.getTime() + (days*24*60*60*1000));
+    document.cookie = `${name}=${value};expires=${d.toUTCString()};path=/`;
+  }
+
+  function getCookie(name) {
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; ${name}=`);
+    if (parts.length === 2) return parts.pop().split(';').shift();
+  }
+
+  function addMoveClass() {
+    const el = document.querySelector(TARGET_SELECTOR);
+    if (el && !el.classList.contains(MOVE_CLASS)) {
+      el.classList.add(MOVE_CLASS);
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    let visitorId = getCookie(COOKIE_NAME);
+    const successDiv = document.querySelector('#Newsletter-success--{{ section.id }}');
+
+    // 如果当前页面有新生成的 visitor_id（表单刚提交成功）
+    if (successDiv && successDiv.dataset.visitorId) {
+      visitorId = successDiv.dataset.visitorId;
+      setCookie(COOKIE_NAME, visitorId, COOKIE_DAYS);
+      console.log('✅ 表单成功生成 ID:', visitorId);
+      addMoveClass();
+      return; // 不需要再查 cookie
+    }
+
+    // 如果 cookie 中已有 visitor_id，也添加 move
+    if (visitorId) {
+      console.log('🌐 已存在访客 ID:', visitorId);
+      addMoveClass();
+    }
+  });
+})();
+</script>
 
 
 
