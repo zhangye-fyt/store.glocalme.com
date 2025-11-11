@@ -439,9 +439,9 @@ jQuery(document).ready(function($) {
 			*/
 			applyAnimation: function( el, name, callback ) {
 				// var popup = $( el ).closest( '.popup' );
-				console.log("111111111")
+				// console.log("111111111")
 				var popup = $(el).hasClass('popup') ? $(el) : $(el).closest('.popup');
-				console.log("popup",popup)
+				// console.log("popup",popup)
 
 				// if (!popup.length) {
 				// 	popup = $(el).prev('.popup');

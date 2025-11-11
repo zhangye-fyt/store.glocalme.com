@@ -129,7 +129,10 @@
     padding-right:1.2rem
   }
   .popup-main-image--top .popup-thumbnail{
-    padding-bottom: 100%;
+    padding-bottom: unset;
+  }
+  .popup-main-image--top .popup-thumbnail img{
+    position: unset;
   }
 
   .popup .is_ok_message{
@@ -413,7 +416,7 @@ opacity: 0;
                   %}
                 {%- when 'subscribe_form' -%}
                   {% form 'customer', class: 'newsletter-form_popu'  %}
-                    <div class="newsletter-form__inner {% if section.settings.width <= 500 %} newsletter-form__inner_column {% endif %} color-{{ block.settings.color_scheme }}" {{ block.shopify_attributes }} {%- if form.posted_successfully? -%}style="display: none;"{%- endif -%}>
+                    <div class="newsletter-form__inner {% if section.settings.width <= 500 %} newsletter-form__inner_column {% endif %} color-{{ block.settings.color_scheme }}" {{ block.shopify_attributes }} {% if section.settings.is_open_successful%} {%- if form.posted_successfully? -%}style="display: none;"{%- endif -%}{%- endif -%}>
                       <input type="hidden" name="contact[tags]" value="newsletter">
                       <div class="newsletter-form__field-wrapper">
                         <div class="field">
@@ -488,6 +491,7 @@ opacity: 0;
                         {{ block.settings.button_label }}
                       </button>
                     </div>
+                    {% if section.settings.is_open_successful%}
                     {%- if form.posted_successfully? -%}
                       <h3
                         class="newsletter-form__message newsletter-form__message--success form__message is_ok_message"
@@ -506,7 +510,45 @@ opacity: 0;
                             }, 10000);
                         })
                       </script>
+
+                      <script>
+                        document.addEventListener('DOMContentLoaded', function() {
+                          const TARGET_CLASS = '.theoneopo';
+                          const MOVE_CLASS = 'move';
+                          const DAYS_VALID = 3;
+
+                          // 生成或获取用户ID
+                          function getOrCreateUserId() {
+                            let userId = localStorage.getItem('visitor_id');
+                            let createdAt = localStorage.getItem('visitor_created_at');
+
+                            const now = Date.now();
+
+                            // 如果没有ID，或超过3天，就重置
+                            if (!userId || !createdAt || (now - parseInt(createdAt, 10)) > DAYS_VALID * 24 * 60 * 60 * 1000) {
+                              userId = 'visitor_' + Math.random().toString(36).substring(2, 12);
+                              localStorage.setItem('visitor_id', userId);
+                              localStorage.setItem('visitor_created_at', now);
+                            }
+
+                            return userId;
+                          }
+
+                          // 获取当前访客ID
+                          const userId = getOrCreateUserId();
+
+                          // 根据ID添加类
+                          const target = document.querySelector(TARGET_CLASS);
+                          if (target) {
+                            target.classList.add(MOVE_CLASS);
+                          }
+
+                          // 仅调试用：查看当前访客信息
+                          console.log('Visitor ID:', userId);
+                        });
+                        </script>
                     {%- endif -%}
+                  {%- endif -%}
                   {% endform %}
                   {% if block.settings.description != blank %}
                     <div class = "popup-text" {{ block.shopify_attributes }}>
@@ -1308,6 +1350,13 @@ opacity: 0;
       "type": "header",
       "content": "提交表单后的设置"
      
+    },
+    {
+      "type": "checkbox",
+      "id": "is_open_successful",
+      "label": "成功后显示弹窗",
+      "info": "提交成功后在弹窗显示提交成功信息，否则不再出现弹窗提示提交成功信息",
+      "default": true
     },
     {
       "type": "textarea",
