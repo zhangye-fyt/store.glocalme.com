@@ -1,0 +1,111 @@
+<script src="{{ 'add-ons.js' | asset_url }}" defer="defer"></script>
+
+<style>
+    .description-tab .description-tab-content{
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
+    .description-tab .description-tab-item{
+      width: 47%;
+      text-align: center;
+      border: 1px solid #333;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 20px;
+      background: #fff;
+      color: #333;
+    }
+    .description-tab .description-tab-item.tab-active{
+      background: #fff;
+      color: #c01515;
+      border: 1px solid #e40c0c;
+    }
+   
+    .country-select {
+  width: 200px;
+  border: 1px solid #ccc;
+  position: relative;
+  font-size: 14px;
+}
+
+.selected-value {
+  padding: 8px 10px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.description-tab-select-country {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #ccc;
+  z-index: 99;
+}
+
+.description-tab-select-country span {
+  display: block;
+  padding: 8px 10px;
+  cursor: pointer;
+}
+
+.description-tab-select-country span:hover {
+  background: #f5f5f5;
+}
+
+
+
+  </style>
+  
+<div class="description-tab">
+  <div class="description-tab-content">
+    <div class="description-tab-item tab-active">
+      大洲1
+    </div>
+    <div class="description-tab-item">
+      大洲1
+    </div>
+    <div class="description-tab-item">
+      大洲1
+    </div>
+    <div class="description-tab-item">
+      大洲1
+    </div>
+    <div class="description-tab-item">
+      大洲1
+    </div>
+    <div class="description-tab-item">
+      大洲1
+    </div>
+
+  </div>
+  <div class="description-tab-select">
+    <dropdown-component class="dropdown">
+      <!-- 输入框（可选：有输入框就是可搜索下拉） -->
+      <input
+        type="text"
+        class="dropdown__input"
+        placeholder="请选择国家"
+      />
+    
+      <!-- 下拉列表 -->
+      <div class="dropdown__list">
+        <div class="dropdown__item" data-value="中国" data-param="CN">中国</div>
+        <div class="dropdown__item" data-value="美国" data-param="US">美国</div>
+        <div class="dropdown__item" data-value="泰国" data-param="TH">泰国</div>
+        <div class="dropdown__item" data-value="韩国" data-param="KR">韩国</div>
+        <div class="dropdown__item" data-value="英国" data-param="UK">英国</div>
+        <div class="dropdown__item" data-value="法国" data-param="FR">法国</div>
+        <div class="dropdown__item" data-value="德国" data-param="DE">德国</div>
+      </div>
+    </dropdown-component>
+
+  </div>
+
+</div>
